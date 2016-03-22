@@ -1,0 +1,219 @@
+
+.activeMenuPrincipal{
+  height: 40px;
+  transform: skewX(20deg);
+}
+
+.activeMenuPrincipal:hover{
+  margin-left: -15px;
+}
+
+.activeMenuPrincipal img{
+  background: #1f285d;
+}
+
+
+
+.btnEfecto {
+  height: 40px;
+  background: #838383;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  transform: skewX(20deg);
+}
+
+.btnEfecto img{
+  transform: skewX(-20deg);
+  width: 92%;
+}
+
+.btnEfecto .hover-text {
+  color: #fff;
+  opacity: 1;
+  position: absolute;
+  left: 55%;
+  opacity: 0;
+  -webkit-transform: skew(42deg) translateX(-39px);
+  -moz-transform: skew(42deg) translateX(-39px);
+  -ms-transform: skew(42deg) translateX(-39px);
+  -o-transform: skew(42deg) translateX(-39px);
+  transform: skew(42deg) translateX(-39px);
+}
+
+.hover-text.enter {
+  left: 57%;
+  opacity: 1;
+  -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+  -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+  -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+  -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+  transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+}
+
+.hover-text.leave {
+  left: 100%;
+  opacity: 0;
+  -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+  -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+  -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+  -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+  transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+}
+
+.hover-text.reset {
+  left: 55%;
+  opacity: 1;
+}
+
+.btnEfecto .hover-bg {
+  padding: 14px;
+  display: block;
+  background-color: #0e124e;
+  width: 122%;
+  height: 102%;
+  position: absolute;
+  -webkit-transform: skew(-42deg);
+  -moz-transform: skew(-42deg);
+  -ms-transform: skew(-42deg);
+  -o-transform: skew(-42deg);
+  transform: skew(-42deg);
+  left: -133%;
+  top: 0;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.hover-bg.enter {
+  left: 50%;
+  -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover-bg.leave {
+  padding: 14px;
+  left: -133%;
+  -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover-bg.reset {
+  left: -133%;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+
+
+
+/* MENU ASPIRANTES */
+
+.btnMenu {
+  width: 100%;
+  height: 40px;
+  background: #eeeeee;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btnMenu .hover-text {
+  color: #fff;
+  opacity: 1;
+  position: absolute;
+  left: 55%;
+  opacity: 0;
+  -webkit-transform: skew(42deg) translateX(-39px);
+  -moz-transform: skew(42deg) translateX(-39px);
+  -ms-transform: skew(42deg) translateX(-39px);
+  -o-transform: skew(42deg) translateX(-39px);
+  transform: skew(42deg) translateX(-39px);
+}
+
+.hover-text.enter {
+  padding: 14px;
+  left: 57%;
+  opacity: 1;
+  -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+  -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+  -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+  -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+  transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s;
+}
+
+.hover-text.leave {
+  left: 100%;
+  opacity: 0;
+  -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+  -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+  -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+  -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+  transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s, opacity 0.5s;
+}
+
+.hover-text.reset {
+  left: 55%;
+  opacity: 1;
+}
+
+.btnMenu .hover-bg {
+
+  display: block;
+  background-color: #e51937;
+  width: 122%;
+  height: 102%;
+  position: absolute;
+  -webkit-transform: skew(-42deg);
+  -moz-transform: skew(-42deg);
+  -ms-transform: skew(-42deg);
+  -o-transform: skew(-42deg);
+  transform: skew(-42deg);
+  left: -133%;
+  top: 0;
+  z-index: 4;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hover-bg.enter {
+  left: 77%;
+  -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover-bg.leave {
+  left: -133%;
+  -webkit-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: left 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover-bg.reset {
+  left: -136%;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+

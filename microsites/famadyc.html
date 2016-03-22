@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>La Salle</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Number Safari
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="format-detection" content="telephone=no">
+
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/noticias/noticias.css">
+  <link rel="stylesheet" href="../css/modal/remodal.css">
+  <link rel="stylesheet" href="../css/modal/remodal-default-theme.css">
+  <link rel="stylesheet" href="../css/calendario/responsive-calendar.css">
+  <link rel="stylesheet" href="../css/menuFullScreen/menuFullScreen.css" />
+  <link rel="stylesheet" href="../css/buttons/button.css">
+
+  <!-- SLIDER PRINCIPAL
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/sliderPrincipal/sliderPrincipal.css"/>
+
+  <!-- CSS Calendario
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="http://www.lasalle.mx/wp-content/themes/lasalle/images/favicon.ico">
+
+  <!-- js -->
+
+</head>
+<body>
+	<!--  REDES SOCIALES -->
+  <div class="redesSociales">
+    <div class="contenedorBotonMenuRedesSociales">
+      <button id="botonMenuRedesSociales" class="botonMenuRedesSociales"><img src="../images/nuevosArtes/redesSociales/botonRedesSociales.png"></button>
+    </div>
+    <div id="contenedorBotonesRedesSociales" class="contenedorBotonesRedesSociales">
+      <ul>
+        <li><a class="lasillistas" href="#"></a></li>
+        <li><a class="facebook" href="#"></a></li>
+        <li><a class="twitter" href="#"></a></li>
+        <li><a class="youtube" href="#"></a></li>
+        <li><a class="instagram" href="#"></a></li>
+        <li><a class="pinterest" href="#"></a></li>
+        <li><a class="vimeo" href="#"></a></li>
+        <li><a class="foursquare" href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+  <!--<div class="header">-->
+	<div class="container" id="buttonsHeader">
+    <div class="row">
+     	<header>
+      	<div class="six columns logo">
+      		<img src="../images/header/logo.png" alt="La Salle">
+      	</div>
+      	<div class="six columns searchBar">
+      		<div class="contenedorIdioma">
+      			<img class="" alt="En" src="../images/nuevosArtes/idioma_botones/button_english_selected.png" usemap="#en">
+      			<map name="en" id="en">
+    					<area alt="" title="" href="#" shape="poly" coords="10,1,17,9,2,30,33,31,41,7,38,3,13,1" />
+						</map>
+      			<img class="" alt="Es" src="../images/nuevosArtes/idioma_botones/button_spanish_Selected.png" usemap="#es">
+      			<map name="es" id="es">
+    					<area alt="" title="" href="#" shape="poly" coords="10,1,17,9,2,30,33,31,41,7,38,3,13,1" />
+						</map>
+				  </div>
+				  <div class="contenedorFormulario">
+      			<form class="formSearch">
+      				<input class="search" type="text" name="search" placeholder="Ingresa tu busqueda" />
+      				<input class="submit" type="submit" value="" />
+      			</form>
+      		</div>
+      		<div class="menuPrincipal">
+            <nav id="nav_main_closed" style="z-index:1000; display:block !important;" class=""> 
+              <a href="#"  class="menu backgroundMenu">Show Menu
+                <span class="top"></span>
+              	<span class="middle"></span>
+              	<span class="bottom"></span>  
+            	</a>
+          	</nav> 
+           </div>
+      	  </div>
+        </header>
+      </div>
+    </div>
+
+    <div id="tituloMicroSitioFamadyc">
+    	<div class="container">
+    		<div class="titleUnidadMedica ">
+    			Bienvenid@s: <span>FAMADYC<span>
+    		</div>
+    	</div>
+    </div>
+
+    <!--  MENU PERFILES -->
+	<div class="container segundo">
+    	<div class="">
+    		<div class="menuPerfiles">
+    			<nav>
+    				<ul>
+    					<li>
+                <button class="btnMenu btnMenubtn skip" id="botonAspirante">
+          			  <span class="hover-bg reset">
+          				  <span class="hover-text reset"></span>
+          			  </span>
+          				Aspirante
+        				</button>
+        			</li>
+        			<li>
+                <button class="btnMenu btnMenubtn skip"  id="botonEstudiante">
+          			  <span class="hover-bg reset">
+          				  <span class="hover-text reset"></span>
+          			  </span>
+          				Estudiante
+        				</button>
+        			</li>
+        				<li>
+                  <button class="btnMenu btnMenubtn skip" id="botonDocente">
+          					<span class="hover-bg reset">
+          						<span class="hover-text reset"></span>
+          					</span>
+          						Docente
+        					</button>
+        				</li>
+                <li>
+                  <button class="btnMenu btnMenubtn skip"  id="botonAdministrativo">
+                    <span class="hover-bg reset">
+                      <span class="hover-text reset"></span>
+                    </span>
+                      Administrativo
+                  </button>
+                </li>
+        				<li>
+                  <button class="btnMenu btnMenubtn skip"  id="botonEgresado">
+          					<span class="hover-bg reset">
+          						<span class="hover-text reset"></span>
+          					</span>
+          						Egresado
+        					</button>
+        				</li>
+        				
+        				<li>
+                  <button class="btnMenu btnMenubtn skip"  id="botonPadre">
+          					<span class="hover-bg reset">
+          						<span class="hover-text reset"></span>
+          					</span>
+          						Padre de<br> familia
+        					</button>
+        				</li>
+        				
+        				<li>
+                  <button class="btnMenu btnMenubtn skip"  id="botonInternational">
+          					<span class="hover-bg reset">
+          						<span class="hover-text reset"></span>
+          					</span>
+          						International<br> Student
+        					</button>
+        				</li>
+    				</ul>
+    			</nav>
+    		</div>
+    	</div>
+    </div>
+
+
+    <div class="bannerPrincipalMicrositio marginEntreSecciones">
+    	  <div class="container">
+		      <div class="botonesMenu" id="menuNavegacionPrincipal">
+			      <div class="contenedorBotonesMenu">	
+  				    <div class="botonPrueba botonUnoMenu">
+        			<!--<button class="botonAnimacion">Lau</button>-->
+        			  <a href="#" class="btnEfecto skip" id="botonUno">
+          		  	<span class="hover-bg reset">
+          				  <span class="hover-text reset"></span>
+          			  </span>
+          			  <img src="../images/nuevosArtes/menu/universidad-la-salle.png">
+        			  </a>       
+     			    </div>
+
+     			    <div class="botonPrueba botonCuatroMenu">
+        			<!--<button class="botonAnimacion">Lau</button>-->
+        			  <a href="#" class="btnEfecto skip" id="botonCuatro">
+          			  <span class="hover-bg reset">
+          				  <span class="hover-text reset"></span>
+          			  </span>
+          			  <img src="../images/nuevosArtes/menu/servicio.png">
+        			  </a>       
+     			    </div>
+
+  
+     			    <div class="botonPrueba botonDosMenu">
+        		  <!--<button class="botonAnimacion">Lau</button>-->
+        			  <a href="#" class="btnEfecto skip" id="botonDos">
+          		  	<span class="hover-bg reset">
+          				  <span class="hover-text reset"></span>
+          			  </span>
+          			  <img src="../images/nuevosArtes/menu/oferta-educativa.png">
+        			  </a>       
+     			    </div>
+     		
+     			    <div class="botonPrueba botonTresMenu">
+        			<!--<button class="botonAnimacion">Lau</button>-->
+        			  <a href="#" class="btnEfecto skip" id="botonTres">
+          			  <span class="hover-bg reset">
+          				  <span class="hover-text reset"></span>
+          			  </span>
+          			  <img src="../images/nuevosArtes/menu/vida-estudiantil.png">
+        			  </a>       
+     			    </div>
+     		
+
+     			    <div class="botonPrueba botonCincoMenu" >
+        			<!--<button class="botonAnimacion">Lau</button>-->
+        			  <a href="#" class="btnEfecto skip" id="botonCinco">
+          				<span class="hover-bg reset">
+          					<span class="hover-text reset"></span>
+          				</span>
+          			  <img src="../images/nuevosArtes/menu/vinculacion.png">
+        			  </a>       
+     			    </div>
+
+     		      <div class="botonPrueba botonSeisMenu">
+        			<!--<button class="botonAnimacion">Lau</button>-->
+        			  <a href="#" class="btnEfecto skip" id="botonSeis">
+          			  <span class="hover-bg reset">
+          				  <span class="hover-text reset"></span>
+          			  </span>
+          		  	<img src="../images/nuevosArtes/menu/accion-social.png">
+        			  </a>       
+     			    </div>
+
+     			    <div class="botonPrueba botonSieteMenu">
+        			<!--<button class="botonAnimacion">Lau</button>-->
+        			  <a href="#" class="btnEfecto skip" id="botonSiete">
+          			  <span class="hover-bg reset">
+          				  <span class="hover-text reset"></span>
+          			  </span>
+          			  <img src="../images/nuevosArtes/menu/investigacion.png">
+        			  </a>       
+     			    </div>
+     			    <div class="botonPrueba botonOchoMenu">
+        			<!--<button class="botonAnimacion">Lau</button>-->
+        			  <a href="#" class="btnEfecto skip" id="botonOcho">
+          			  <span class="hover-bg reset">
+          				  <span class="hover-text reset"></span>
+          			  </span>
+          			  <img src="../images/nuevosArtes/menu/contacto.png">
+        			  </a>       
+     			    </div>
+            </div>
+    		  </div>
+    	  </div>
+	  </div>
+<!--  </div>
+</div>-->
+	
+
+  
+
+    <!-- PUNTERO DE PERFILES-->
+
+    <div id="punteroPerfiles">
+    </div>
+
+    <!-- APIRANTES-->
+    <div class="container marginInteriorBottom" id="aspirantes">
+      <div class="row">
+        <div class="contenedorCuadrosEstudiante">
+          <div id="estudiante" class="cuadroEstudiante"><p>ADMISIONES</p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
+          <div id="estudiante2" class="cuadroEstudiante"><p>Examen de<br><span class="azul">ADMISION</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
+          <div id="estudiante3" class="cuadroEstudiante"><p><span class="azul">REQUISITOS</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
+          <div id="estudiante4" class="cuadroEstudiante"><p><span class="azul">ADMITIDOS</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERFIL ESTUDIANTE-->
+
+    <div class="container marginInteriorBottom" id="perfilEstudiante">
+      <div class="row">
+        <div class="contenedorCuadrosEstudiante">
+          <div class="four columns"><div id="perfil" class="cuadroPerfilEstudiante"><p>PREPARATORIA</p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          <div class="four columns"><div id="perfil2" class="cuadroPerfilEstudiante"><p>LICENCIATURA</p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          <div class="four columns"><div id="perfil3" class="cuadroPerfilEstudiante"><p>POSGRADO</p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERFIL DOCENTE-->
+
+    <div class="container marginInteriorBottom" id="perfilDocente">
+      <div class="row">
+        <div class="contenedorCuadrosEstudiante">
+          <div class="four columns"><div id="docente" class="cuadroPerfilDocente"><p><span class="primerPalabraAdmin">Vida</span> <br><span class="azul">ACADÉMICA</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          <div class="four columns"><div id="docente2" class="cuadroPerfilDocente"><p>Formacion<br><span class="azul">INTEGRAL</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          <div class="four columns"><div id="docente3" class="cuadroPerfilDocente"><p><span class="azul">SERVICIOS</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERFIL ADMINISTRATIVO-->
+
+    <div class="container marginInteriorBottom" id="perfilAdministrativo">
+      <div class="row">
+        <div class="contenedorCuadrosEstudiante">
+          <div class="four columns"><div id="administrativo" class="cuadroPerfilAdmin"><p><span class="primerPalabraAdmin">Apoyo</span> <br><span class="azul">ACADÉMICO</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          <div class="four columns"><div id="administrativo2" class="cuadroPerfilAdmin"><p>Formacion<br><span class="azul">INTEGRAL</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          <div class="four columns"><div id="administrativo3" class="cuadroPerfilAdmin"><p><span class="azul">SERVICIOS</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PERFIL EGRESADO-->
+
+    <div class="container marginInteriorBottom" id="perfilEgresado">
+      <div class="row">
+        <div class="contenedorCuadrosEstudiante">
+          <div class="four columns"><div id="egresado" class="cuadroPerfilEgresado"><p><span class="primerPalabraEgresado">Apoyo</span> <br><span class="azul">ACADÉMICO</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          <div class="four columns"><div id="egresado2" class="cuadroPerfilEgresado"><p><span class="azul">SERVICIOS</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERFIL PADRE DE FAMILIA-->
+
+    <div class="container marginInteriorBottom" id="perfilPadre">
+      <div class="row">
+        <div class="contenedorCuadrosEstudiante">
+          <div class="four columns"><div id="padre" class="cuadroPerfilPadre"><p><span class="azul">SERVICIOS</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          <div class="four columns"><div id="padre2" class="cuadroPerfilPadre"><p><span class="primerPalabraPerfil">Apoyo</span> <br><span class="azul">ACADÉMICO</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          <div class="four columns"><div id="padre3" class="cuadroPerfilPadre"><p><span class="">Formacion</span> <br><span class="azul">INTEGRAL</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>        
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PERFIL INTERNATIONAL STUDENT-->
+
+    <div class="container marginInteriorBottom" id="perfilInternational">
+      <div class="row">
+        <div class="contenedorCuadrosEstudiante">
+          <div class="four columns"><div id="egresado" class="cuadroPerfilInternational"><p><span class="primerPalabraEgresado">Oferta</span> <br><span class="azul">ACADÉMICO</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          <div class="four columns"><div id="egresado2" class="cuadroPerfilInternational"><p><span class="azul">SERVICIOS</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UBICACION --> 
+
+    <div id="MenuUbicacionPrincipal">
+    </div>
+
+  	<div id="ubicacion" class="container marginEntreSecciones">
+    	<div class="row">
+      		<div class="menuUbicacion">
+        		<nav>
+         		 	<ul>
+            			<li>
+             			 	<span class="colorGrisOscuro">Estas en:</span> Universidad La Salle, Ciudad de México > Universidad La Salle <span class="colorGrisOscuro">> <div id="changeTextTitulo"> Home</div></span>
+            			</li>
+          			</ul>
+       		 	</nav>
+      		</div> 
+    	</div>
+  	</div>
+
+    <!-- Facultad -->
+
+    <div id="universidadShow"> 
+      <div class="container marginEntreSecciones">
+        <div class="row">
+          <div class="headerSubMenuUniversidad">
+            <div class="two columns tituloUniversidad">
+              <img src="../images/nuevosArtes/btn_seccion/universidad_la_salle.png"> 
+              <!--<img class="downArrowAccionSocial" src="images/accionSocial/icon_down_arrow.png">-->
+            </div>
+            <div class="ten columns subMenuUniversidad">
+              <div id="mostrarContenidoUniversidad" class="subMenuUnoUniversidad centro">Historia</div>
+              <div class="subMenuUnoUniversidad">Mision y <br> vision</div>
+              <div class="subMenuUnoUniversidad">Fundador Hno<br>Mariano Ramirez<br>Degollado</div>
+              <div class="subMenuUnoUniversidad">Directora Maria<br>Guadalupe<br>Castro Martinez</div>
+              <div class="subMenuUnoUniversidad">Acreditacion<br>COMAEM<br>2009-2014</div>
+              <div class="subMenuUnoUniversidad" style="padding-top: 9px;">Acreditacion<br>CONACYT-PNPC<br>2012-2015<br>Especialidad en<br>Medicina Interna</div>
+            </div>
+          </div>
+          <div class="contenedorTituloUniversidad">
+            <div class="tituloContenedorUniversidad">
+              <div class="textoTituloUniversidad">
+                <p>La Facultad Mexicana de Medicina de la Universidad La Salle, fue la primera Escuela de Medicina privada en la Ciudad de Mexico.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ocultarContenidoSubMenu">
+        <div class="contenedorImagenTextoUniversidad">
+          <div class="container">
+            <div class="contenedorDiagonalUniversidad"> 
+              <p class="descripcionTituloUniversidad">Vivir en la Republica es una experiencia compartida. Por este motivo, el respeto y el orden con indispensables. La consideracion hacia las personas y las instalaciones, la empatia y el consumo responsable de los recursos, conforman la base para poder garantizar un espacio agradable y familiar que tiene como eje principal el estudio y el desarrollo personal de los residentes.</p>
+
+              <div class="parrafoUniversidad">
+                <p>Las residentes pueden disfrutar de espacios creados especialmente para ello,pensando en sus necesidades y en su comodidad.</p>
+                <p>Todas las instalaciones de la residencia has sido creadas pensando en la comodidad y las necesidades de sus residentes.</p>
+                <h6>INSTALACIONES</h6>
+                <p>La residencia es una casa que fue acondicionada para poder ofrecer un lugar de descanso y estudio para aquellos estudiantes que deseen estar cerca de las instalaciones de la Univeridad.</p>
+                <p>Cuenta con una sala compartida para todos los residentes con televísor, un comedor con capacidad de 11 personas, área para la preparacion y conserva de alimentos, cuarto de servicio, terraza y un cuarto destinado para el personal de Limpieza y vigilancia que estará presente las 24 hrs del día.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Servicios Unidad Medica --> 
+  <div id="serviciosShow">
+    <div class="contenedorServicios marginEntreSecciones"> 
+      <div class="container">
+        <div class="row">
+          <div class="headerSubMenuServicios">
+            <div class="two columns tituloServicios">
+              <img src="images/nuevosArtes/btn_seccion/servicios.png"> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ocultarContenidoSubMenu">
+        <div class="container">
+            <div class="row">
+          		<div class="three columns"><div id="servicioUnidadMedica" class="cuadroPerfilPadre"><p><span class="azul">SGU</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          		<div class="three columns"><div id="servicioUnidadMedica2" class="cuadroPerfilPadre"><p><span class="azul">BIBLIOTECA</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          		<div class="three columns"><div id="servicioUnidadMedica3" class="cuadroPerfilPadre"><p><span class="azul">ULSA Bus</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>  
+          		<div class="three columns"><div id="servicioUnidadMedica4" class="cuadroPerfilPadre"><p><span class="azul">ESTACIONAMIENTO</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>  
+          		       
+       		</div>
+       		<div class="row marginEntreSecciones">
+       			<div class="three columns"><div id="servicioUnidadMedica5" class="cuadroPerfilPadre"><p><span class="">Hospedaje para</span> <br><span class="azul">ESTUDIANTES</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+      		</div>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+
+    <!-- Oferta Educativa  -->
+
+    <div id="ofertaAcademicaShow">
+      <div class="container marginEntreSecciones">
+        <div class="row">
+          
+          <div class="headerSubMenuOfertaAcedemica">
+            <div class="two columns tituloOfertaAcademica">
+              <img src="../images/nuevosArtes/btn_seccion/Oferta_Academica.png"> 
+              <!--<img class="downArrowAccionSocial" src="images/accionSocial/icon_down_arrow.png">-->
+            </div>
+            <div class="ten columns subMenuOfertaAcademica">
+              <div id="mostrarContenidoUniversidad" class="subMenuUnoOfertaAcademica centro">Licenciatura en <br>Medico Cirujano</div>
+              <div class="subMenuUnoOfertaAcademica" style="padding-top: 10px;">Centro de <br>Entrenamiento y<br>Simulacion<br>Avanzada</div>
+              <div class="subMenuUnoOfertaAcademica" style="padding-top: 10px;">Cursos de<br>Educacion<br>Medica<br>Continua</div>
+              <div class="subMenuUnoOfertaAcademica" style="padding-top: 10px;">Especialidades<br>Medicas y <br> Cursos de Posgrado</div>
+              <div class="subMenuUnoOfertaAcademica">Maestrias</div>
+              <div class="subMenuUnoOfertaAcademica">Intercambio</div>
+            </div>
+          </div>
+          
+          <div class="contenedorTituloOfertaAcademica">
+            <div class="tituloContenedorUniversidad">
+              <div class="textoTituloUniversidad">
+                <p>La Residencia Universitaria de la Universidad La Salle es un espacio donde el estudio y el desarrollo personal son una prioridad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ocultarContenidoSubMenu">
+        <div class="contenedorImagenTextoAccionSocial">
+          <div class="container">
+            <div class="contenedorDiagonalAccionSocial">
+                <p class="descripcionTituloAccionSocial">Vivir en la Republica es una experiencia compartida. Por este motivo, el respeto y el orden con indispensables. La consideracion hacia las personas y las instalaciones, la empatia y el consumo responsable de los recursos, conforman la base para poder garantizar un espacio agradable y familiar que tiene como eje principal el estudio y el desarrollo personal de los residentes.</p>
+
+                <div class="parrafoAccionSocial">
+                      <p>Las residentes pueden disfrutar de espacios creados especialmente para ello,pensando en sus necesidades y en su comodidad.</p>
+                      <p>Todas las instalaciones de la residencia has sido creadas pensando en la comodidad y las necesidades de sus residentes.</p>
+                      <h6>INSTALACIONES</h6>
+                      <p>La residencia es una casa que fue acondicionada para poder ofrecer un lugar de descanso y estudio para aquellos estudiantes que deseen estar cerca de las instalaciones de la Univeridad.</p>
+                      <p>Cuenta con una sala compartida para todos los residentes con televísor, un comedor con capacidad de 11 personas, área para la preparacion y conserva de alimentos, cuarto de servicio, terraza y un cuarto destinado para el personal de Limpieza y vigilancia que estará presente las 24 hrs del día.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div> 
+    </div>
+
+
+    <!-- Vida Campus -->
+
+    <div id="vidaShow">
+      <div class="contenedorInvestigacion marginEntreSecciones"> 
+        <div class="container">
+          <div class="row">
+            <div class="headerSubMenuInvestigacion">
+              <div class="two columns tituloServicios">
+                <img src="../images/nuevosArtes/btn_seccion/vida_estudiantil.png"> 
+              </div>
+            </div>
+            <div class="contenedorTituloServicios">
+              <div class="tituloContenedorVida">
+                <div class="textoTituloVida tituloMicroSitioVida">
+                	<h6>Comunidad</h6>
+                  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquad</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ocultarContenidoSubMenu marginEntreSecciones">
+        <div class="container">
+            <div class="row">
+          		<div class="four columns"><div id="vidaUnidadMedica" class="cuadroPerfilPadre"><p><span class="azul">SGU</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          		<div class="four columns"><div id="vidaUnidadMedica2" class="cuadroPerfilPadre"><p><span class="azul">BIBLIOTECA</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>
+          		<div class="four columns"><div id="vidaUnidadMedica3" class="cuadroPerfilPadre"><p><span class="azul">ULSA Bus</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div></div>  
+       		</div>
+        </div>
+      </div>
+    </div>   
+
+  <!--Vinculacion Empresarial-->
+
+  	<div id="vinculacionEmpresarialShow">
+    	<div class="contenedorEmpresarial marginEntreSecciones"> 
+      		<div class="container">
+        		<div class="row">
+          			<div class="headerSubMenuVinculacion">
+            			<div class="two columns tituloVinculacion">
+              				<img src="../images/nuevosArtes/btn_seccion/vinculacion_empresarial.png"> 
+            			</div>
+          			</div>
+
+          			<div class="contenedorFilaVinculacion">
+            			<div class="segundaFilaVinculacion">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+
+           				<div class="segundaFilaVinculacion activeVinculacion">
+              				<div class="textoVinculacionActive">
+                				Bolsa de Trabajo<br><br>En alianza con UNIVERSIA, trabajando.com y <br> OCC MUNDIAL contamos con un portal de <br>bolsa de trabajo y ferias de empleo, espacios<br>de interaccion, con el sector empresarial. Da clic<br> para mas información.</div>
+              			</div>
+          			</div>
+        		</div>
+      		</div> 
+    	</div> 
+  	</div>
+
+  <!--Accion social -->
+
+  	<div id="accionsocialShow">
+    	<div class="contenedorAccionSocial"> 
+      		<div class="container marginEntreSecciones">
+        		<div class="row">
+          			<div class="headerSubMenuAccionSocial">
+            			<div class="two columns tituloAccionSocial">
+              				<img src="../images/nuevosArtes/btn_seccion/accion-social.png"> 
+            			</div>
+          			</div>
+          
+          			<div class="ocultarContenidoSubMenu">
+            			<div class="contenedorTituloAccionSocial">
+              				<div class="tituloContenedorAccionSocial">
+                				<div class="textoTituloAccionSocial">
+                  					<p>Programa de oportunidades para el empleo a através de la tecnología en las Américas,Programa de oportunidades para el empleo a através de la tecnología en las Américas,</p>
+                				</div>
+              				</div>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+
+      		<div class="ocultarContenidoSubMenu">
+        		<div class="contenedorImagenTextoAccionSocial">
+          			<div class="container">
+           	 			<div class="contenedorDiagonalAccionSocial">
+                			<p class="descripcionTituloAccionSocial">Vivir en la Republica es una experiencia compartida. Por este motivo, el respeto y el orden con indispensables. La consideracion hacia las personas y las instalaciones, la empatia y el consumo responsable de los recursos, conforman la base para poder garantizar un espacio agradable y familiar que tiene como eje principal el estudio y el desarrollo personal de los residentes.</p>
+
+                			<div class="parrafoAccionSocial">
+                      		<p>Las residentes pueden disfrutar de espacios creados especialmente para ello,pensando en sus necesidades y en su comodidad.</p>
+                      		<p>Todas las instalaciones de la residencia has sido creadas pensando en la comodidad y las necesidades de sus residentes.</p>
+                      		<h6>INSTALACIONES</h6>
+                      		<p>La residencia es una casa que fue acondicionada para poder ofrecer un lugar de descanso y estudio para aquellos estudiantes que deseen estar cerca de las instalaciones de la Univeridad.</p>
+                      		<p>Cuenta con una sala compartida para todos los residentes con televísor, un comedor con capacidad de 11 personas, área para la preparacion y conserva de alimentos, cuarto de servicio, terraza y un cuarto destinado para el personal de Limpieza y vigilancia que estará presente las 24 hrs del día.</p>
+                			</div>
+              			</div>
+          			</div>
+        		</div>
+     		</div>
+    	</div> 
+  	</div>
+
+
+  <!-- Investigacion -->
+
+  	<div id="investigacionShow">
+    	<div class="contenedorInvestigacion marginEntreSecciones"> 
+      		<div class="container">
+        		<div class="row">
+          			<div class="headerSubMenuInvestigacion">
+            			<div class="two columns tituloVida">
+              				<img src="../images/nuevosArtes/btn_seccion/investigacion.png">
+            			</div>
+          			</div>
+          			<div class="contenedorTituloServicios">
+              			<div class="tituloContenedorVida">
+                			<div class="textoTituloVida tituloMicroSitioVida">
+                  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquad, sed do eiusmod tempor incididunt ut labore et dolore magna aliquad</p>
+                			</div>
+              			</div>
+            		</div>
+        		</div>
+      		</div>
+
+      		<div class="ocultarContenidoSubMenu">
+        		<div class="contenedorImagenTextoAccionSocial">
+          			<div class="container">
+           	 			<div class="contenedorDiagonalAccionSocial">
+                			<p class="descripcionTituloAccionSocial">Vivir en la Republica es una experiencia compartida. Por este motivo, el respeto y el orden con indispensables. La consideracion hacia las personas y las instalaciones, la empatia y el consumo responsable de los recursos, conforman la base para poder garantizar un espacio agradable y familiar que tiene como eje principal el estudio y el desarrollo personal de los residentes.</p>
+
+                			<div class="parrafoAccionSocial">
+                      		<p>Las residentes pueden disfrutar de espacios creados especialmente para ello,pensando en sus necesidades y en su comodidad.</p>
+                      		<p>Todas las instalaciones de la residencia has sido creadas pensando en la comodidad y las necesidades de sus residentes.</p>
+                      		<h6>INSTALACIONES</h6>
+                      		<p>La residencia es una casa que fue acondicionada para poder ofrecer un lugar de descanso y estudio para aquellos estudiantes que deseen estar cerca de las instalaciones de la Univeridad.</p>
+                      		<p>Cuenta con una sala compartida para todos los residentes con televísor, un comedor con capacidad de 11 personas, área para la preparacion y conserva de alimentos, cuarto de servicio, terraza y un cuarto destinado para el personal de Limpieza y vigilancia que estará presente las 24 hrs del día.</p>
+                			</div>
+              			</div>
+          			</div>
+        		</div>
+     		</div>
+    	</div> 
+  	</div>
+
+
+ 	<!-- CONTACTO -->
+
+  	<div id="contactoShow">
+    	<div class="contenedorContacto"> 
+      		<div class="container marginEntreSecciones">
+        		<div class="row">
+          			<div class="headerSubMenuContacto">
+            			<div class="two columns tituloContacto">
+              				<img src="../images/nuevosArtes/btn_seccion/contacto.png"> 
+            			</div>
+            			<div class=" ten subMenuAccionSocial">
+              				<div id="mostrarContenido" class="subMenuUnoContacto">Contacto</div>
+              				<div class="subMenuUnoContacto centro">Directorio<br>Teléfonico</div>
+            			</div>
+          			</div>
+
+          			<div class="ocultarContenidoSubMenu">
+           	 			<div class="contenedorTituloContacto">
+              				<div class="tituloContenedorContacto">
+                				<div class="textoTituloContacto">
+                  					<p>Benjamin Franklin 47<br> Col. Condesa, Delg. Cuauhtémoc <br>México, DF, CP 06140 <br><span class="telefonoContacto">52 (55) 5278 9500</span></p>
+                				</div>
+              				</div>
+            			</div>
+          			</div>
+
+          			<div class="contenedorFilaVinculacion">
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+            			<div class="directorioContacto">
+              				<div class="textoVinculacion">Capacitacion<br><span class="azulFuerte">Empresarial</span></div>
+            			</div>
+           				<div class="directorioContacto activeVinculacion">
+              				<div class="textoContactoActive">
+                				Bolsa de Trabajo<br><br>En alianza con UNIVERSIA, trabajando.com y <br></div>
+              			</div>
+          			</div>
+        		</div>
+      		</div>
+    	</div> 
+  	</div>
+
+  	<!-- CONTENIDO NOTICIAS SLIDER MORADO -->
+
+  	<div class="container marginEntreSecciones" id="desc_slider">
+  		<div class="row">
+  			<div class="desc">
+  				<div class="title_desc">
+  					<h3>XXIX FERIA DE POSGRADOS</h3>
+  				</div>
+  			</div> 
+  			<div class="desc_desc">
+  				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+  				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  			</div> 
+  		</div>	
+  	</div>
+
+
+
+  	<!-- NOTICIAS -->
+
+  	<div class="container marginApartirDeCalendario">
+    	<div class="row">
+        	<div class="three columns title_calendar">
+          		<p><img src="../images/nuevosArtes/calendario/calendario.png"> Noticias</p>
+        	</div>
+    	</div>
+  	</div>
+
+  <!-- Nuevo Efecto 
+  hovers -->
+
+  <div class="container marginEntreSecciones noticias">
+    <div id="effect-1" class="effects clearfix secondPart"> 
+    
+      <div class="imgNoticia destacada">
+        <div class="overlayTituloNoticiaDestacado">
+          <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+        </div>
+        <img src="../images/nuevosArtes/noticias/image_news6.png" alt="">
+        <div class="overlayNoticia">
+          <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .</p>
+          <a href="#" class="expand">+</a>
+        </div>
+      </div>
+
+      <div class="imgThumbnail">
+        <div class="tumbnhail imgNoticia">
+          <div class="overlayTituloNoticiaThumblair">
+            <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+          </div>
+          <img src="../images/nuevosArtes/noticias/image_news7.png" alt="">
+          <div class="overlayNoticia">
+            <h6>Lorem ipsum dolor</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adi</p>
+            <a href="#" class="expand">+</a>
+          </div>
+        </div>
+        <div class="tumbnhail imgNoticia">  
+          <div class="overlayTituloNoticiaThumblair">
+            <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+          </div>
+          <img src="../images/nuevosArtes/noticias/image_news8.png" alt="">
+          <div class="overlayNoticia">
+            <h6>Lorem ipsum dotur</h6>
+            <p>Lorem ipsum dolor sit ametmpor rem</p>
+              <a href="#" class="expand">+</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="imgNoticia">
+        <div class="overlayTituloNoticia">
+          <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+        </div>
+        <img src="../images/nuevosArtes/noticias/image_news3.png" alt="">
+        <div class="overlayNoticia">
+          <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolm.</p>
+          <a href="#" class="expand">+</a>
+        </div>
+      </div>
+      
+      <div class="imgNoticia">
+        <div class="overlayTituloNoticia">
+          <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+        </div>
+        <img src="../images/nuevosArtes/noticias/image_news4.png" alt="">
+        <div class="overlayNoticia">
+          <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="expand">+</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- CALENDARIO -->
+
+  	<div class="container marginApartirDeCalendario">
+    	<div class="row">
+        	<div class="three columns title_calendar">
+          		<p><img src="../images/nuevosArtes/calendario/calendario.png"> Calendario</p>
+        	</div>
+    	</div>
+  	</div>
+
+  	<div class="container " id="calendario">
+    	<div class="menuCalendario">
+      		<div class="two columns menuSecciones">  
+        		<ul>
+          			<li><button class="seccion academicas" id="openUno">Academicas</button></li>
+          			<li><button class="seccion academicas" id="openDos">Politica</button></li>
+          			<li><button class="seccion academicas" id="openTres">Grupos <br>Estudiantiles</button></li>
+          			<li><button class="seccion academicas" id="openCuatro">Desarrollo <br>y Espiritualidad</button></li>
+        		</ul>
+      		</div>
+      		<div class="ten columns contenedorFilasNoticias">
+        		<div class="four columns menuNoticiaCalendario">  
+          			<!-- Responsive calendar - START -->
+          			<div class="responsive-calendar">
+            			<div class="controls">
+              				../<a class="pull-left" data-go="prev"><div class="btn"><img class="fechas" src="images/nuevosArtes/left_arrow.png"></div></a>
+              				<h4><span data-head-month></span></h4>
+              				<a class="pull-right" data-go="next"><div class="btn"><img class="fechas" src="../images/nuevosArtes/right_arrow.png"></div></a>
+            			</div>
+            			<div class="day-headers">
+              				<div class="day header">L</div>
+              				<div class="day header">M</div>
+              				<div class="day header">M</div>
+              				<div class="day header">J</div>
+              				<div class="day header">V</div>
+              				<div class="day header">S</div>
+              				<div class="day header">D</div>
+            			</div>
+            			<div class="days" data-group="days"></div>
+        			</div>
+      
+      <!-- Responsive calendar - END -->
+        		</div>
+
+        		<div class="eight columns menuCalendario">  
+          			<div id="effect-3" class="effects clearfix"> 
+            			<div class="imgNoticiaCalendario">
+             	 			<div id="" class="overlayTituloCalendarioMicroSitio">
+               	 				<p class="title_calendario_micrositio">14 de mayo</p><p class="subtitle_calendario_micrositio">Titulo de la conferencia:</p><p class="desc_calendario_micrositio">El Posgrado en la insercion laboral</p><br>
+               	 				<p class="title_expositores">Expositor</p><p class="desc_expositores">Miro. Adrian Escamilla Palafox</p><p class="title_expositores">Cargo</p><p class="desc_expositores">Director General de Capacitacion y productividad laboral.</p>
+               	 				<p class="title_expositores">Institucion</p><p class="desc_expositores">Secretaria del Trabajo y Prevision social del gobierno Federal.</p><p class="title_expositores">Título de la conferencia</p><p class="desc_expositores">El mercado Laboral Mexicano: retos y oportunidades para los posgraduados</p>
+              				</div>
+              				<img src="../images/nuevosArtes/unidad_medica/gris.png" alt="">
+            			</div>
+      
+            			<div class="imgNoticiaCalendario2">
+              			
+              				<img src="../images/nuevosArtes/unidad_medica/calendario_mayo.png" alt="">
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+      	</div>
+    </div>
+
+  <!--SLider Prueba-->
+
+  <!-- CALENDARIO -->
+
+  <div class="container marginApartirDeCalendario" id="calendarioResponsive" >
+    <div class="row">
+      <div class="imagenesCalendarioResponsive">
+        <img src="../images/calendario/calendario_imagenes2.jpg">
+      </div>
+      <div class="controlSliderCalendario">
+        <div class="botonIzquierdo">
+          <img src="../images/calendario/botonDerecho.png">
+        </div>
+        <div class="descripcionEvento"></div>
+        <div class="botonDerecho">
+          <img src="../images/calendario/botonIzquierdo.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTICIAS  RESPONSIVE -->
+
+  <div class="container marginEntreSecciones" id="noticiasResponsive">
+    <div class="row">
+      <div class="six columns tituloNoticiasResponsive">
+        <p>NOTICIAS</p>
+      </div>
+      <div class="six columns noticiaResponsive">
+        <figure>
+            <img src="../images/noticias/news1.png">
+            <figcaption>
+              <h2>Una prueba</h2>
+              <p>Otra prueba Tres</p>
+            </figcaption>
+          </figure>
+      </div>
+      <div class="six columns noticiaResponsive">
+        <figure>
+          <img src="../images/noticias/news3.png">
+          <figcaption>
+            <h2>Una prueba</h2>
+            <p>Otra prueba Tres</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="six columns noticiaResponsive">
+        <figure>
+          <img src="../images/noticias/news7.png">
+          <figcaption>
+            <h2>Una prueba</h2>
+            <p>Otra prueba Tres</p>
+          </figcaption>
+        </figure>  
+      </div>
+      <div class="six columns noticiaResponsive">
+        <figure>
+          <img src="../images/noticias/news2.png">
+          <figcaption>
+            <h2>Una prueba</h2>
+            <p>Otra prueba Tres</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ACCESO DIRECTO RESPONSIVE-->
+
+  <div class="container marginApartirDeCalendario">
+    <section class="accesoDirectoResponsive">
+      <div class="row">
+        <div class="four columns">
+          <div class="primerCirculo">
+            <a href=""><img src="../images/accesoDirecto/egresados_blue.png" onmouseover="this.src='../images/accesoDirecto/egresados_red.png'" onmouseout="this.src='../images/accesoDirecto/egresados_blue.png'"></a><br>
+            <img src="../images/accesoDirecto/texto_actualizacion_egresados.png">
+          </div>
+          <div class="segundoCirculo">
+            <a href=""><img src="../images/accesoDirecto/egresados_blue.png" onmouseover="this.src='../images/accesoDirecto/egresados_red.png'" onmouseout="this.src='../images/accesoDirecto/egresados_blue.png'"></a><br>
+            <img src="../images/accesoDirecto/texto_actualizacion_egresados.png">
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="primerCirculo">
+            <a href=""><img src="../images/accesoDirecto/egresados_blue.png" onmouseover="this.src='../images/accesoDirecto/egresados_red.png'" onmouseout="this.src='../images/accesoDirecto/egresados_blue.png'"></a><br>
+            <img src="../images/accesoDirecto/texto_actualizacion_egresados.png">
+          </div>
+          <div class="segundoCirculo">
+            <a href=""><img src="../images/accesoDirecto/egresados_blue.png" onmouseover="this.src='../images/accesoDirecto/egresados_red.png'" onmouseout="this.src='../images/accesoDirecto/egresados_blue.png'"></a><br>
+            <img src="../images/accesoDirecto/texto_actualizacion_egresados.png">
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="primerCirculo">
+            <a href=""><img src="../images/accesoDirecto/egresados_blue.png" onmouseover="this.src='../images/accesoDirecto/egresados_red.png'" onmouseout="this.src='../images/accesoDirecto/egresados_blue.png'"></a><br>
+            <img src="../images/accesoDirecto/texto_actualizacion_egresados.png">
+          </div>
+          <div class="segundoCirculo">
+            <a href=""><img src="../images/accesoDirecto/egresados_blue.png" onmouseover="this.src='../images/accesoDirecto/egresados_red.png'" onmouseout="this.src='../images/accesoDirecto/egresados_blue.png'"></a><br>
+            <img src="../images/accesoDirecto/texto_actualizacion_egresados.png">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ACCESO DIRECTO -->
+
+  <div class="container marginApartirDeCalendario">
+    <section class="accesoDirecto">
+      <div class="row">
+        <div class="four columns">
+          <a href=""><img src="../images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png" onmouseover="this.src='../images/nuevosArtes/accesoDirecto/Button_Egresados_red.png'" onmouseout="this.src='../images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png'"></a><br>
+          <img src="../images/nuevosArtes/accesoDirecto/texto_actualizacion_egresados.png">
+        </div>
+        <div class="four columns">
+          <a href=""><img src="../images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png" onmouseover="this.src='../images/nuevosArtes/accesoDirecto/Button_Fichas_red.png'" onmouseout="this.src='../images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png'"></a><br>
+          <img src="../images/nuevosArtes/accesoDirecto/texto_descarga_ficha.png">
+        </div>
+        <div class="four columns">
+          <a href=""><img src="../images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png" onmouseover="this.src='../images/nuevosArtes/accesoDirecto/Button_Pagos_red.png'" onmouseout="this.src='../images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png'"></a><br>
+          <img src="../images/nuevosArtes/accesoDirecto/texto_pagos-por-internet.png">
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="container marginApartirDeCalendario">
+    <section class="accesoDirecto">
+      <div class="row">
+        <div class="four columns">
+          <a href=""><img src="../images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png" onmouseover="this.src='../images/nuevosArtes/accesoDirecto/Button_Facturacion_red.png'" onmouseout="this.src='../images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png'"></a><br>
+          <img src="../images/nuevosArtes/accesoDirecto/texto_factura-electronica.png">
+        </div>
+        <div class="four columns">
+          <a href=""><img src="../images/nuevosArtes/accesoDirecto/Button_profesionales.png" onmouseover="this.src='../images/nuevosArtes/accesoDirecto/Button_profesionales_red.png'" onmouseout="this.src='../images/nuevosArtes/accesoDirecto/Button_profesionales.png'"></a><br>
+          <img src="../images/nuevosArtes/accesoDirecto/texto_profesionales.png">
+        </div>
+        <div class="four columns">
+          <a href=""><img src="../images/nuevosArtes/accesoDirecto/Button_todo-en-1.png" onmouseover="this.src='../images/nuevosArtes/accesoDirecto/Button_todo-en-1_OVER.png'" onmouseout="this.src='../images/nuevosArtes/accesoDirecto/Button_todo-en-1.png'"></a><br>
+          <img src="../images/nuevosArtes/accesoDirecto/texto_todo.png">
+        </div>
+      </div>
+    </section>
+  </div>
+
+	<!--  FOOTER -->
+
+
+  <div class="redLaSalleContenedor">
+    <div class="container">
+        <div class="line">
+        	<p>Red La Salle</p>
+      	</div>
+    </div>  
+  </div>
+
+ 	<div class="preFooter">
+    	<div class="container">
+    		<div class="two columns logoProfesionales">
+    			<div class="iconoProfesionales">
+        			<img src="../images/nuevosArtes/footer/icon_ProfesionalesValor.png">
+      			</div>
+    		</div>
+    		<div class="ten columns">
+      			<div class="redLaSalle">
+       	 			<ul class="redLaSalleResponsiveUl">
+          				<li class="mapaSitio"><img src="../images/nuevosArtes/footer/icon_redArrow.png"><a href="">Mapa del Sitio</a></li>
+          				<li><img src="../images/nuevosArtes/footer/icon_redArrow.png"><a href="">Directorio</a></li>
+          				<li><img src="../images/nuevosArtes/footer/icon_redArrow.png"><a href="">Trabaja en La Salle</a></li>
+          				<li><img src="../images/nuevosArtes/footer/icon_redArrow.png"><a href="">Universidad Segura</a></li>
+          				<li><img src="../images/nuevosArtes/footer/icon_redArrow.png"><a href="">¿Como llegar?</a></li>
+        			</ul>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+
+
+
+  <!-- FOOTER RESPONSIVE -->
+
+	<div class="container">
+		<div class="redesSocialesResponsive">
+    		<ul>
+      			<li><a href="#"><img src="../images/redesSociales/icon_lista.png"></a></li>
+      			<li><a href="#"><img src="../images/redesSociales/icon_Facebook.png"></a></li>
+      			<li><a href="#"><img src="../images/redesSociales/icon_Twitter.png"></a></li>
+      			<li><a href="#"><img src="../images/redesSociales/icon_youtube.png"></a></li>
+      			<li><a href="#"><img src="../images/redesSociales/icon_instagram.png"></a></li>
+      			<li><a href="#"><img src="../images/redesSociales/icon_Pinterest.png"></a></li>
+      			<li><a href="#"><img src="../images/redesSociales/icon_vimeo.png"></a></li>
+      			<li><a href="#"><img src="../images/redesSociales/icon_check.png"></a></li>
+    		</ul>
+  		</div>
+  	</div>
+  	<div class="footer">
+    	<div class="container"> 
+      		<div class="columnasFooter" id="logosFooterGris">
+        		<div class="logosFooter">
+          			<img src="../images/nuevosArtes/footer/icon_LogoSalleUno.png"><br>
+          			<img src="../images/nuevosArtes/footer/icon_LogoSalleDos.png"><br>
+          			<p>Aviso de Privacidad</p>
+        		</div>
+      		</div>
+      		<div class="columnasFooter">
+        		<div class="listaLocalidades">
+          			<div class="listaUnoLocalidades">
+            			<ul>
+              				<li><a href="">Bajio</a></li>
+              				<li><a href="">Cancun</a></li>
+              				<li><a href="">Chihuahua</a></li>
+              				<li><a href="">Cuernavaca</a></li>
+              				<li><a href="">Laguna</a></li>
+              				<li><a href="">Monterrey</a></li>
+              				<li><a href="">Morelia</a></li>
+            			</ul>
+          			</div>
+          			<div class="listaDosLocalidades">
+            			<ul>
+              				<li><a href="">Nezahualcoyotl</a></li>
+              				<li><a href="">Noroeste</a></li>
+              				<li><a href="">Oaxaca</a></li>
+              				<li><a href="">Pachuca</a></li>
+              				<li><a href="">Puebla</a></li>
+              				<li><a href="">Saltillo</a></li>
+              				<li><a href="">Victoria</a></li>
+            			</ul>
+          			</div>
+        		</div>
+      		</div>
+      		<div class="columnasFooter " id="contactanosFooterGris" >
+        		<div class="contactanoFooter">
+          			<p class="tituloContactanos">Contáctanos: </p>
+          			<p class="telefonoContactanos">+52 1 5278-9500</p>
+          			<p>Benjamin Franklin 47 Col. Condesa.<br>Del. Cuauhtemoc México DF. CP 06140</p>
+        		</div>
+      		</div>
+    	</div>
+      <div id="logosFooterGrisResponsive">
+        <div class="logosFooterResponsive">
+          <div class="logoUnoResponsive">
+            <img src="../images/footer/icon_unosalle.png">
+          </div>
+          <div class="logoDosResponsive">
+            <img src="../images/footer/icon_dossalle.png">
+          </div>
+        </div>
+      </div>
+  	</div>
+
+  	<div class="acreditacion">
+    	<div class="container">
+     	 	<p>Proceso de Acreditacion La Salle<button id="btn_process_success" class="btn_process_success"> <img id="imageUp" class="rotate" src="../images/nuevosArtes/footer/icon_arrowAcreditacionDown.png">
+        <img id="downImageDown" class="rotate upImage" src="../images/nuevosArtes/footer/icon_arrowAcreditacionUp.png">
+        </button></p>
+      	</div>
+  	</div>
+
+  	<div class="postFooter" id="acreditacion_la_salle">
+    	<div class="container"> 
+      		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+      		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>    
+    	</div>
+  	</div>
+
+  	<!--AVISO DE PRIVACIDAD RESPONSIVE-->
+
+    <div class="avisoDePrivacidad">
+      <div class="container">
+        <p>Aviso de Privacidad</p>
+      </div>
+    </div>
+
+  <!-- MODALES A CREAR
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div data-remodal-id="modal2" role="dialog" aria-labelledby="modal2Title" aria-describedby="modal2Desc">
+    <div>
+      <!--<h2 id="modal2Title">Hola</h2>-->
+      <p id="modal2Desc">
+        <img style="width:100%;" src="../images/nuevosArtes/modales/prueba.png" alt="Eventos">
+      </p>
+    </div>
+    <!--<button data-remodal-action="confirm" class="remodal-confirm">lau</button>-->
+  </div>
+
+
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!--<script src="js/jquery.js" defer></script>-->
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="../js/gral/funciones.js" defer></script>
+  <script src="../js/mapImage/jquery.rwdImageMaps.js" defer></script>
+  <script src="../js/mapImage/jquery.rwdImageMaps.min.js" defer></script>
+  <script src="../js/modal/remodal.js" defer></script>
+  <script src="../js/modal/modales.js" defer></script> 
+  <script src="../js/calendario/responsive-calendar.js" defer></script>
+  <script src="../js/calendario/calendario.js" defer></script>
+  <script src="../js/slider/slider.min.js" defer></script>
+  <script src="../js/slider/script.js" defer></script>
+  <script src="../js/buttons/button.js" defer></script>
+  <script src="../js/sliderPrincipal/sliderPrincipal.js" defer></script>
+  <script src="../js/noticias/modernizr.js"></script>
+  <script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".imgNoticia").click(function(e){
+                if (!$(this).hasClass("hoverNoticia")) {
+                    $(this).addClass("hoverNoticia");
+                }
+            });
+            $(".imgNoticiaCalendario").click(function(e){
+                if (!$(this).hasClass("hoverCalendario")) {
+                    $(this).addClass("hoverCalendario");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".imgNoticiaCalendario").hasClass("hoverCalendario")) {
+                    $(this).closest(".imgNoticiaCalendario").removeClass("hoverCalendario");
+                }
+            });
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".imgNoticia").hasClass("hoverNoticia")) {
+                    $(this).closest(".imgNoticia").removeClass("hoverNoticia");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".imgNoticia").mouseenter(function(){
+                $(this).addClass("hoverNoticia");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hoverNoticia");
+            });
+
+
+            $(".imgNoticiaCalendario").mouseenter(function(){
+                $(this).addClass("hoverCalendario");
+                $('#tituloCalendario').hide("slow");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $('#tituloCalendario').show("slow");
+                $(this).removeClass("hoverCalendario");
+            });
+
+
+            $(".imgNoticiaCalendario2").mouseenter(function(){
+                $(this).addClass("hoverCalendario");
+                $('#tituloCalendario2').hide("slow");
+            })
+
+            // handle the mouseleave functionality
+
+
+
+            .mouseleave(function(){
+                $('#tituloCalendario2').show("slow");
+                $(this).removeClass("hoverCalendario");
+            });
+
+            $(".imgNoticiaCalendario3").mouseenter(function(){
+                $(this).addClass("hoverCalendario");
+                $('#tituloCalendario3').hide("slow");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $('#tituloCalendario3').show("slow");
+                $(this).removeClass("hoverCalendario");
+            });
+
+            $(".imgNoticiaCalendario4").mouseenter(function(){
+                $(this).addClass("hoverCalendario");
+                $('#tituloCalendario4').hide("slow");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $('#tituloCalendario4').show("slow");
+                $(this).removeClass("hoverCalendario");
+            });
+
+
+            $("#estudiante").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+                $(this).removeClass("azulFuerte");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+            $("#estudiante2").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+                $('#azulFuerte').removeClass("azulFuerte");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+            $("#estudiante3").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+            $("#estudiante4").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+
+            $("#perfil").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#perfil2").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#perfil3").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            /*DOCENTE*/
+
+            $("#docente").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#docente2").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#docente3").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+
+
+             /*ADMINISTRATIVO*/
+
+            $("#administrativo").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#administrativo2").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#administrativo3").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+
+            /*EGRESADO*/
+
+            $("#egresado").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#egregsado2").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            /*PADRE DE FAMILIA*/
+
+            $("#padre").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#padre2").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#padre3").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+             /* SERVICIOS UNIDAD MEDICA */
+
+            $("#servicioUnidadMedica").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#servicioUnidadMedica2").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#servicioUnidadMedica3").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+            $("#servicioUnidadMedica4").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+            $("#servicioUnidadMedica5").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+             /* VIDA UNIDAD MEDICA */
+
+            $("#vidaUnidadMedica").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#vidaUnidadMedica2").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+            $("#vidaUnidadMedica3").mouseenter(function(){
+                $(this).addClass("cuadroActive");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("cuadroActive");
+            });
+
+        }
+    });
+  </script>
+
+</body>
+</html>

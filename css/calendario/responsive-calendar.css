@@ -1,0 +1,131 @@
+..responsive-calendar{
+  width: 100%;
+}
+
+.responsive-calendar .controls {
+  text-align: center;
+}
+
+.responsive-calendar .controls a {
+  cursor: pointer;
+}
+
+.responsive-calendar .controls h4 {
+  display: inline;
+  font-size: 2.0rem !important;
+}
+
+.pull-left{
+    width: 20%;
+    float: left;
+    display: inline-block;
+}
+
+.pull-right{
+    width: 20%;
+    float: right;
+    display: inline-block;
+}
+
+
+
+.responsive-calendar .day-headers,
+.responsive-calendar .days {
+  font-size: 0;
+  margin: 5px;
+}
+
+.responsive-calendar .day {
+  display: inline-block;
+  position: relative;
+  font-size: 1.1rem;
+  width: 14.285714285714286%;
+  text-align: center;
+}
+
+.responsive-calendar .day a {
+  color: #000000;
+  display: block;
+  cursor: pointer;
+  padding: 20% 0 20% 0;
+}
+
+.responsive-calendar .day a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+
+.responsive-calendar .day.header {
+  border-bottom: 1px gray solid;
+}
+
+.responsive-calendar .day.active a {
+  background-color: #f22626;
+  color: #ffffff;
+}
+
+.responsive-calendar .day.active a:hover {
+  background-color: #f22626;
+}
+
+.responsive-calendar .day.active .not-current {
+  background-color: #f22626;
+  color: #ffffff;
+}
+
+.responsive-calendar .day.active .not-current:hover {
+  background-color: #bcdff5;
+}
+
+.responsive-calendar .day.not-current a {
+  color: #ddd;
+}
+
+.responsive-calendar .day .badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 1;
+}
+
+.responsive-calendar img{
+  width: 30% !important;
+  vertical-align: bottom;
+}
+
+/*MEDIAS QUERYS RESPONSIVE*/
+
+
+
+/* Larger than desktop */
+@media (max-width: 1000px) {
+  
+  /*RESPONSIVE CALENDARIO*/
+
+  .responsive-calendar .day {
+    font-size: 0.7rem !important;
+  }
+
+
+
+  .responsive-calendar .controls h4 {
+    font-size: 1.5rem !important;
+  }
+
+}
+
+
+/* Larger than tablet */
+
+
+@media (max-width: 750px) {
+
+  /*RESPONSIVE CALENDARIO*/
+
+  .responsive-calendar .controls h4 {
+    font-size: 1rem !important;
+  }
+
+}
+
+

@@ -1,0 +1,2901 @@
+.backgroundMenu{
+	background: url(../../images/nuevosArtes/header/menusinhamburguesa.png)no-repeat;
+	background-size: 100%;
+	z-index: 99999;
+}
+
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform:scale3d(.8,.8,.8);
+		transform:scale3d(.8,.8,.8)
+	}
+	20% {
+		-webkit-transform:scale3d(1.1,1.1,1.1);
+		transform:scale3d(1.1,1.1,1.1)
+	}
+	40% {
+		-webkit-transform:scale3d(.9,.9,.9);
+		transform:scale3d(.9,.9,.9)
+	}
+	60% {
+		-webkit-transform:scale3d(1.03,1.03,1.03);
+		transform:scale3d(1.03,1.03,1.03)
+	}
+	80% {
+		-webkit-transform:scale3d(.98,.97,.97);
+		transform:scale3d(.98,.97,.97)
+	}
+	100% {
+		-webkit-transform:scale3d(1,1,1);
+		transform:scale3d(1,1,1)
+	}
+}
+@keyframes bounce {
+	0% {
+		-moz-transform:scale3d(.8,.8,.8);
+		-ms-transform:scale3d(.8,.8,.8);
+		-webkit-transform:scale3d(.8,.8,.8);
+		transform:scale3d(.8,.8,.8)
+	}
+	20% {
+		-moz-transform:scale3d(1.1,1.1,1.1);
+		-ms-transform:scale3d(1.1,1.1,1.1);
+		-webkit-transform:scale3d(1.1,1.1,1.1);
+		transform:scale3d(1.1,1.1,1.1)
+	}
+	40% {
+		-moz-transform:scale3d(.9,.9,.9);
+		-ms-transform:scale3d(.9,.9,.9);
+		-webkit-transform:scale3d(.9,.9,.9);
+		transform:scale3d(.9,.9,.9)
+	}
+	60% {
+		-moz-transform:scale3d(1.03,1.03,1.03);
+		-ms-transform:scale3d(1.03,1.03,1.03);
+		-webkit-transform:scale3d(1.03,1.03,1.03);
+		transform:scale3d(1.03,1.03,1.03)
+	}
+	80% {
+		-moz-transform:scale3d(.98,.97,.97);
+		-ms-transform:scale3d(.98,.97,.97);
+		-webkit-transform:scale3d(.98,.97,.97);
+		transform:scale3d(.98,.97,.97)
+	}
+	100% {
+		-moz-transform:scale3d(1,1,1);
+		-ms-transform:scale3d(1,1,1);
+		-webkit-transform:scale3d(1,1,1);
+		transform:scale3d(1,1,1)
+	}
+}
+@-moz-keyframes going_back {
+	0% {
+		filter:blur(0);
+		-moz-transform:rotateX(0);
+		transform:rotateX(0)
+	}
+	65% {
+		filter:blur(5px)
+	}
+	100% {
+		filter:blur(0);
+		-moz-transform:scale(.2) translateY(20%);
+		transform:scale(.2) translateY(20%)
+	}
+}
+@-webkit-keyframes going_back {
+	0% {
+		-webkit-filter:blur(0);
+		filter:blur(0);
+		-webkit-transform:rotateX(0);
+		transform:rotateX(0)
+	}
+	65% {
+		-webkit-filter:blur(5px);
+		filter:blur(5px)
+	}
+	100% {
+		-webkit-filter:blur(0);
+		filter:blur(0);
+		-webkit-transform:scale(.2) translateY(20%);
+		transform:scale(.2) translateY(20%)
+	}
+}
+@keyframes going_back {
+	0% {
+		-webkit-filter:blur(0);
+		filter:blur(0);
+		-moz-transform:rotateX(0);
+		-ms-transform:rotateX(0);
+		-webkit-transform:rotateX(0);
+		transform:rotateX(0)
+	}
+	65% {
+		-webkit-filter:blur(5px);
+		filter:blur(5px)
+	}
+	100% {
+		-webkit-filter:blur(0);
+		filter:blur(0);
+		-moz-transform:scale(.2) translateY(20%);
+		-ms-transform:scale(.2) translateY(20%);
+		-webkit-transform:scale(.2) translateY(20%);
+		transform:scale(.2) translateY(20%)
+	}
+}
+@-moz-keyframes going_going_gone {
+	0% {
+		filter:blur(0);
+		opacity:1;
+		-moz-transform:scale(.2) translateY(20%);
+		transform:scale(.2) translateY(20%)
+	}
+	100% {
+		filter:blur(20px);
+		opacity:0;
+		-moz-transform:scale(0) translateY(-1250%);
+		transform:scale(0) translateY(-1250%)
+	}
+}
+@-webkit-keyframes going_going_gone {
+	0% {
+		-webkit-filter:blur(0);
+		filter:blur(0);
+		opacity:1;
+		-webkit-transform:scale(.2) translateY(20%);
+		transform:scale(.2) translateY(20%)
+	}
+	100% {
+		-webkit-filter:blur(20px);
+		filter:blur(20px);
+		opacity:0;
+		-webkit-transform:scale(0) translateY(-1250%);
+		transform:scale(0) translateY(-1250%)
+	}
+}
+@keyframes going_going_gone {
+	0% {
+		-webkit-filter:blur(0);
+		filter:blur(0);
+		opacity:1;
+		-moz-transform:scale(.2) translateY(20%);
+		-ms-transform:scale(.2) translateY(20%);
+		-webkit-transform:scale(.2) translateY(20%);
+		transform:scale(.2) translateY(20%)
+	}
+	100% {
+		-webkit-filter:blur(20px);
+		filter:blur(20px);
+		opacity:0;
+		-moz-transform:scale(0) translateY(-1250%);
+		-ms-transform:scale(0) translateY(-1250%);
+		-webkit-transform:scale(0) translateY(-1250%);
+		transform:scale(0) translateY(-1250%)
+	}
+}
+@-moz-keyframes hover {
+	0% {
+		-moz-transform:translateY(0);
+		transform:translateY(0)
+	}
+	50% {
+		-moz-transform:translateY(-10px);
+		transform:translateY(-10px)
+	}
+	100% {
+		-moz-transform:translateY(0);
+		transform:translateY(0)
+	}
+}
+@-webkit-keyframes hover {
+	0% {
+		-webkit-transform:translateY(0);
+		transform:translateY(0)
+	}
+	50% {
+		-webkit-transform:translateY(-10px);
+		transform:translateY(-10px)
+	}
+	100% {
+		-webkit-transform:translateY(0);
+		transform:translateY(0)
+	}
+}
+@keyframes hover {
+	0% {
+		-moz-transform:translateY(0);
+		-ms-transform:translateY(0);
+		-webkit-transform:translateY(0);
+		transform:translateY(0)
+	}
+	50% {
+		-moz-transform:translateY(-10px);
+		-ms-transform:translateY(-10px);
+		-webkit-transform:translateY(-10px);
+		transform:translateY(-10px)
+	}
+	100% {
+		-moz-transform:translateY(0);
+		-ms-transform:translateY(0);
+		-webkit-transform:translateY(0);
+		transform:translateY(0)
+	}
+}
+@-moz-keyframes trigger_after_animationend {
+	0%,100% {
+		opacity:1
+	}
+}
+@-webkit-keyframes trigger_after_animationend {
+	0%,100% {
+		opacity:1
+	}
+}
+@keyframes trigger_after_animationend {
+	0%,100% {
+		opacity:1
+	}
+}
+@-moz-keyframes loader_loop_center {
+	0% {
+		-moz-transform:rotate(0) scale(1);
+		transform:rotate(0) scale(1)
+	}
+	20% {
+		-moz-transform:rotate(5deg) scale(.9);
+		transform:rotate(5deg) scale(.9)
+	}
+	30% {
+		-moz-transform:rotate(0) scale(1);
+		transform:rotate(0) scale(1)
+	}
+}
+@-webkit-keyframes loader_loop_center {
+	0% {
+		-webkit-transform:rotate(0) scale(1);
+		transform:rotate(0) scale(1)
+	}
+	20% {
+		-webkit-transform:rotate(5deg) scale(.9);
+		transform:rotate(5deg) scale(.9)
+	}
+	30% {
+		-webkit-transform:rotate(0) scale(1);
+		transform:rotate(0) scale(1)
+	}
+}
+@keyframes loader_loop_center {
+	0% {
+		-moz-transform:rotate(0) scale(1);
+		-ms-transform:rotate(0) scale(1);
+		-webkit-transform:rotate(0) scale(1);
+		transform:rotate(0) scale(1)
+	}
+	20% {
+		-moz-transform:rotate(5deg) scale(.9);
+		-ms-transform:rotate(5deg) scale(.9);
+		-webkit-transform:rotate(5deg) scale(.9);
+		transform:rotate(5deg) scale(.9)
+	}
+	30% {
+		-moz-transform:rotate(0) scale(1);
+		-ms-transform:rotate(0) scale(1);
+		-webkit-transform:rotate(0) scale(1);
+		transform:rotate(0) scale(1)
+	}
+}
+@-moz-keyframes loader_loop_inner_1 {
+	0%,10% {
+		-moz-transform:rotate(-45deg) translateX(-16px);
+		transform:rotate(-45deg) translateX(-16px)
+	}
+	100%,40% {
+		-moz-transform:rotate(-45deg) translateX(16px);
+		transform:rotate(-45deg) translateX(16px)
+	}
+}
+@-webkit-keyframes loader_loop_inner_1 {
+	0%,10% {
+		-webkit-transform:rotate(-45deg) translateX(-16px);
+		transform:rotate(-45deg) translateX(-16px)
+	}
+	100%,40% {
+		-webkit-transform:rotate(-45deg) translateX(16px);
+		transform:rotate(-45deg) translateX(16px)
+	}
+}
+@keyframes loader_loop_inner_1 {
+	0%,10% {
+		-moz-transform:rotate(-45deg) translateX(-16px);
+		-ms-transform:rotate(-45deg) translateX(-16px);
+		-webkit-transform:rotate(-45deg) translateX(-16px);
+		transform:rotate(-45deg) translateX(-16px)
+	}
+	100%,40% {
+		-moz-transform:rotate(-45deg) translateX(16px);
+		-ms-transform:rotate(-45deg) translateX(16px);
+		-webkit-transform:rotate(-45deg) translateX(16px);
+		transform:rotate(-45deg) translateX(16px)
+	}
+}
+@-moz-keyframes loader_loop_inner_2 {
+	0%,10% {
+		-moz-transform:rotate(-135deg) translateX(-16px);
+		transform:rotate(-135deg) translateX(-16px)
+	}
+	100%,40% {
+		-moz-transform:rotate(-135deg) translateX(16px);
+		transform:rotate(-135deg) translateX(16px)
+	}
+}
+@-webkit-keyframes loader_loop_inner_2 {
+	0%,10% {
+		-webkit-transform:rotate(-135deg) translateX(-16px);
+		transform:rotate(-135deg) translateX(-16px)
+	}
+	100%,40% {
+		-webkit-transform:rotate(-135deg) translateX(16px);
+		transform:rotate(-135deg) translateX(16px)
+	}
+}
+@keyframes loader_loop_inner_2 {
+	0%,10% {
+		-moz-transform:rotate(-135deg) translateX(-16px);
+		-ms-transform:rotate(-135deg) translateX(-16px);
+		-webkit-transform:rotate(-135deg) translateX(-16px);
+		transform:rotate(-135deg) translateX(-16px)
+	}
+	100%,40% {
+		-moz-transform:rotate(-135deg) translateX(16px);
+		-ms-transform:rotate(-135deg) translateX(16px);
+		-webkit-transform:rotate(-135deg) translateX(16px);
+		transform:rotate(-135deg) translateX(16px)
+	}
+}
+@-moz-keyframes loader_loop_inner_3 {
+	0%,10% {
+		-moz-transform:rotate(-225deg) translateX(-16px);
+		transform:rotate(-225deg) translateX(-16px)
+	}
+	100%,40% {
+		-moz-transform:rotate(-225deg) translateX(16px);
+		transform:rotate(-225deg) translateX(16px)
+	}
+}
+@-webkit-keyframes loader_loop_inner_3 {
+	0%,10% {
+		-webkit-transform:rotate(-225deg) translateX(-16px);
+		transform:rotate(-225deg) translateX(-16px)
+	}
+	100%,40% {
+		-webkit-transform:rotate(-225deg) translateX(16px);
+		transform:rotate(-225deg) translateX(16px)
+	}
+}
+@keyframes loader_loop_inner_3 {
+	0%,10% {
+		-moz-transform:rotate(-225deg) translateX(-16px);
+		-ms-transform:rotate(-225deg) translateX(-16px);
+		-webkit-transform:rotate(-225deg) translateX(-16px);
+		transform:rotate(-225deg) translateX(-16px)
+	}
+	100%,40% {
+		-moz-transform:rotate(-225deg) translateX(16px);
+		-ms-transform:rotate(-225deg) translateX(16px);
+		-webkit-transform:rotate(-225deg) translateX(16px);
+		transform:rotate(-225deg) translateX(16px)
+	}
+}
+@-moz-keyframes loader_loop_inner_4 {
+	0%,10% {
+		-moz-transform:rotate(-315deg) translateX(-16px);
+		transform:rotate(-315deg) translateX(-16px)
+	}
+	100%,40% {
+		-moz-transform:rotate(-315deg) translateX(16px);
+		transform:rotate(-315deg) translateX(16px)
+	}
+}
+@-webkit-keyframes loader_loop_inner_4 {
+	0%,10% {
+		-webkit-transform:rotate(-315deg) translateX(-16px);
+		transform:rotate(-315deg) translateX(-16px)
+	}
+	100%,40% {
+		-webkit-transform:rotate(-315deg) translateX(16px);
+		transform:rotate(-315deg) translateX(16px)
+	}
+}
+@keyframes loader_loop_inner_4 {
+	0%,10% {
+		-moz-transform:rotate(-315deg) translateX(-16px);
+		-ms-transform:rotate(-315deg) translateX(-16px);
+		-webkit-transform:rotate(-315deg) translateX(-16px);
+		transform:rotate(-315deg) translateX(-16px)
+	}
+	100%,40% {
+		-moz-transform:rotate(-315deg) translateX(16px);
+		-ms-transform:rotate(-315deg) translateX(16px);
+		-webkit-transform:rotate(-315deg) translateX(16px);
+		transform:rotate(-315deg) translateX(16px)
+	}
+}
+@-moz-keyframes loader_loop_outer_1 {
+	0% {
+		-moz-transform:rotate(-45deg) translateX(-31px);
+		transform:rotate(-45deg) translateX(-31px)
+	}
+	100%,30% {
+		-moz-transform:rotate(-45deg) translateX(31px);
+		transform:rotate(-45deg) translateX(31px)
+	}
+}
+@-webkit-keyframes loader_loop_outer_1 {
+	0% {
+		-webkit-transform:rotate(-45deg) translateX(-31px);
+		transform:rotate(-45deg) translateX(-31px)
+	}
+	100%,30% {
+		-webkit-transform:rotate(-45deg) translateX(31px);
+		transform:rotate(-45deg) translateX(31px)
+	}
+}
+@keyframes loader_loop_outer_1 {
+	0% {
+		-moz-transform:rotate(-45deg) translateX(-31px);
+		-ms-transform:rotate(-45deg) translateX(-31px);
+		-webkit-transform:rotate(-45deg) translateX(-31px);
+		transform:rotate(-45deg) translateX(-31px)
+	}
+	100%,30% {
+		-moz-transform:rotate(-45deg) translateX(31px);
+		-ms-transform:rotate(-45deg) translateX(31px);
+		-webkit-transform:rotate(-45deg) translateX(31px);
+		transform:rotate(-45deg) translateX(31px)
+	}
+}
+@-moz-keyframes loader_loop_outer_2 {
+	0% {
+		-moz-transform:rotate(-135deg) translateX(-31px);
+		transform:rotate(-135deg) translateX(-31px)
+	}
+	100%,30% {
+		-moz-transform:rotate(-135deg) translateX(31px);
+		transform:rotate(-135deg) translateX(31px)
+	}
+}
+@-webkit-keyframes loader_loop_outer_2 {
+	0% {
+		-webkit-transform:rotate(-135deg) translateX(-31px);
+		transform:rotate(-135deg) translateX(-31px)
+	}
+	100%,30% {
+		-webkit-transform:rotate(-135deg) translateX(31px);
+		transform:rotate(-135deg) translateX(31px)
+	}
+}
+@keyframes loader_loop_outer_2 {
+	0% {
+		-moz-transform:rotate(-135deg) translateX(-31px);
+		-ms-transform:rotate(-135deg) translateX(-31px);
+		-webkit-transform:rotate(-135deg) translateX(-31px);
+		transform:rotate(-135deg) translateX(-31px)
+	}
+	100%,30% {
+		-moz-transform:rotate(-135deg) translateX(31px);
+		-ms-transform:rotate(-135deg) translateX(31px);
+		-webkit-transform:rotate(-135deg) translateX(31px);
+		transform:rotate(-135deg) translateX(31px)
+	}
+}
+@-moz-keyframes loader_loop_outer_3 {
+	0% {
+		-moz-transform:rotate(-225deg) translateX(-31px);
+		transform:rotate(-225deg) translateX(-31px)
+	}
+	100%,30% {
+		-moz-transform:rotate(-225deg) translateX(31px);
+		transform:rotate(-225deg) translateX(31px)
+	}
+}
+@-webkit-keyframes loader_loop_outer_3 {
+	0% {
+		-webkit-transform:rotate(-225deg) translateX(-31px);
+		transform:rotate(-225deg) translateX(-31px)
+	}
+	100%,30% {
+		-webkit-transform:rotate(-225deg) translateX(31px);
+		transform:rotate(-225deg) translateX(31px)
+	}
+}
+@keyframes loader_loop_outer_3 {
+	0% {
+		-moz-transform:rotate(-225deg) translateX(-31px);
+		-ms-transform:rotate(-225deg) translateX(-31px);
+		-webkit-transform:rotate(-225deg) translateX(-31px);
+		transform:rotate(-225deg) translateX(-31px)
+	}
+	100%,30% {
+		-moz-transform:rotate(-225deg) translateX(31px);
+		-ms-transform:rotate(-225deg) translateX(31px);
+		-webkit-transform:rotate(-225deg) translateX(31px);
+		transform:rotate(-225deg) translateX(31px)
+	}
+}
+@-moz-keyframes loader_loop_outer_4 {
+	0% {
+		-moz-transform:rotate(-315deg) translateX(-31px);
+		transform:rotate(-315deg) translateX(-31px)
+	}
+	100%,30% {
+		-moz-transform:rotate(-315deg) translateX(31px);
+		transform:rotate(-315deg) translateX(31px)
+	}
+}
+@-webkit-keyframes loader_loop_outer_4 {
+	0% {
+		-webkit-transform:rotate(-315deg) translateX(-31px);
+		transform:rotate(-315deg) translateX(-31px)
+	}
+	100%,30% {
+		-webkit-transform:rotate(-315deg) translateX(31px);
+		transform:rotate(-315deg) translateX(31px)
+	}
+}
+@keyframes loader_loop_outer_4 {
+	0% {
+		-moz-transform:rotate(-315deg) translateX(-31px);
+		-ms-transform:rotate(-315deg) translateX(-31px);
+		-webkit-transform:rotate(-315deg) translateX(-31px);
+		transform:rotate(-315deg) translateX(-31px)
+	}
+	100%,30% {
+		-moz-transform:rotate(-315deg) translateX(31px);
+		-ms-transform:rotate(-315deg) translateX(31px);
+		-webkit-transform:rotate(-315deg) translateX(31px);
+		transform:rotate(-315deg) translateX(31px)
+	}
+}
+@-moz-keyframes menu_exit {
+	0% {
+		-moz-transform:rotate(0) translateY(0);
+		transform:rotate(0) translateY(0)
+	}
+	25% {
+		-moz-transform:rotate(5deg) translateY(2px);
+		transform:rotate(5deg) translateY(2px)
+	}
+	100% {
+		-moz-transform:rotate(-15deg) translateY(-100px);
+		transform:rotate(-15deg) translateY(-100px)
+	}
+}
+@-webkit-keyframes menu_exit {
+	0% {
+		-webkit-transform:rotate(0) translateY(0);
+		transform:rotate(0) translateY(0)
+	}
+	25% {
+		-webkit-transform:rotate(5deg) translateY(2px);
+		transform:rotate(5deg) translateY(2px)
+	}
+	100% {
+		-webkit-transform:rotate(-15deg) translateY(-100px);
+		transform:rotate(-15deg) translateY(-100px)
+	}
+}
+@keyframes menu_exit {
+	0% {
+		-moz-transform:rotate(0) translateY(0);
+		-ms-transform:rotate(0) translateY(0);
+		-webkit-transform:rotate(0) translateY(0);
+		transform:rotate(0) translateY(0)
+	}
+	25% {
+		-moz-transform:rotate(5deg) translateY(2px);
+		-ms-transform:rotate(5deg) translateY(2px);
+		-webkit-transform:rotate(5deg) translateY(2px);
+		transform:rotate(5deg) translateY(2px)
+	}
+	100% {
+		-moz-transform:rotate(-15deg) translateY(-100px);
+		-ms-transform:rotate(-15deg) translateY(-100px);
+		-webkit-transform:rotate(-15deg) translateY(-100px);
+		transform:rotate(-15deg) translateY(-100px)
+	}
+}
+@-moz-keyframes menu_exit_universe {
+	0% {
+		opacity:1;
+		-moz-transform:scale(1);
+		transform:scale(1)
+	}
+	100% {
+		opacity:0;
+		-moz-transform:scale(0);
+		transform:scale(0)
+	}
+}
+@-webkit-keyframes menu_exit_universe {
+	0% {
+		opacity:1;
+		-webkit-transform:scale(1);
+		transform:scale(1)
+	}
+	100% {
+		opacity:0;
+		-webkit-transform:scale(0);
+		transform:scale(0)
+	}
+}
+@keyframes menu_exit_universe {
+	0% {
+		opacity:1;
+		-moz-transform:scale(1);
+		-ms-transform:scale(1);
+		-webkit-transform:scale(1);
+		transform:scale(1)
+	}
+	100% {
+		opacity:0;
+		-moz-transform:scale(0);
+		-ms-transform:scale(0);
+		-webkit-transform:scale(0);
+		transform:scale(0)
+	}
+}
+@-moz-keyframes menu_hover_bottom {
+	0% {
+		-moz-transform:rotate(0) translateY(0);
+		transform:rotate(0) translateY(0);
+		-moz-transform-origin:right bottom;
+		transform-origin:right bottom
+	}
+	25% {
+		-moz-transform:rotate(-15deg) translateY(1px);
+		transform:rotate(-15deg) translateY(1px);
+		-moz-transform-origin:left bottom;
+		transform-origin:left bottom
+	}
+	65% {
+		-moz-transform:rotate(15deg) translateY(2px);
+		transform:rotate(15deg) translateY(2px);
+		-moz-transform-origin:right bottom;
+		transform-origin:right bottom
+	}
+	100% {
+		-moz-transform:rotate(0) translateY(2px);
+		transform:rotate(0) translateY(2px);
+		-moz-transform-origin:center bottom;
+		transform-origin:center bottom
+	}
+}
+@-webkit-keyframes menu_hover_bottom {
+	0% {
+		-webkit-transform:rotate(0) translateY(0);
+		transform:rotate(0) translateY(0);
+		-webkit-transform-origin:right bottom;
+		transform-origin:right bottom
+	}
+	25% {
+		-webkit-transform:rotate(-15deg) translateY(1px);
+		transform:rotate(-15deg) translateY(1px);
+		-webkit-transform-origin:left bottom;
+		transform-origin:left bottom
+	}
+	65% {
+		-webkit-transform:rotate(15deg) translateY(2px);
+		transform:rotate(15deg) translateY(2px);
+		-webkit-transform-origin:right bottom;
+		transform-origin:right bottom
+	}
+	100% {
+		-webkit-transform:rotate(0) translateY(2px);
+		transform:rotate(0) translateY(2px);
+		-webkit-transform-origin:center bottom;
+		transform-origin:center bottom
+	}
+}
+@keyframes menu_hover_bottom {
+	0% {
+		-moz-transform:rotate(0) translateY(0);
+		-ms-transform:rotate(0) translateY(0);
+		-webkit-transform:rotate(0) translateY(0);
+		transform:rotate(0) translateY(0);
+		-moz-transform-origin:right bottom;
+		-ms-transform-origin:right bottom;
+		-webkit-transform-origin:right bottom;
+		transform-origin:right bottom
+	}
+	25% {
+		-moz-transform:rotate(-15deg) translateY(1px);
+		-ms-transform:rotate(-15deg) translateY(1px);
+		-webkit-transform:rotate(-15deg) translateY(1px);
+		transform:rotate(-15deg) translateY(1px);
+		-moz-transform-origin:left bottom;
+		-ms-transform-origin:left bottom;
+		-webkit-transform-origin:left bottom;
+		transform-origin:left bottom
+	}
+	65% {
+		-moz-transform:rotate(15deg) translateY(2px);
+		-ms-transform:rotate(15deg) translateY(2px);
+		-webkit-transform:rotate(15deg) translateY(2px);
+		transform:rotate(15deg) translateY(2px);
+		-moz-transform-origin:right bottom;
+		-ms-transform-origin:right bottom;
+		-webkit-transform-origin:right bottom;
+		transform-origin:right bottom
+	}
+	100% {
+		-moz-transform:rotate(0) translateY(2px);
+		-ms-transform:rotate(0) translateY(2px);
+		-webkit-transform:rotate(0) translateY(2px);
+		transform:rotate(0) translateY(2px);
+		-moz-transform-origin:center bottom;
+		-ms-transform-origin:center bottom;
+		-webkit-transform-origin:center bottom;
+		transform-origin:center bottom
+	}
+}
+@-moz-keyframes menu_hover_top {
+	0% {
+		-moz-transform:rotate(0) translateY(0);
+		transform:rotate(0) translateY(0);
+		-moz-transform-origin:left top;
+		transform-origin:left top
+	}
+	25% {
+		-moz-transform:rotate(15deg) translateY(-1px);
+		transform:rotate(15deg) translateY(-1px);
+		-moz-transform-origin:right top;
+		transform-origin:right top
+	}
+	85% {
+		-moz-transform:rotate(-15deg) translateY(-2px);
+		transform:rotate(-15deg) translateY(-2px);
+		-moz-transform-origin:left top;
+		transform-origin:left top
+	}
+	100% {
+		-moz-transform:rotate(0) translateY(-2px);
+		transform:rotate(0) translateY(-2px);
+		-moz-transform-origin:center top;
+		transform-origin:center top
+	}
+}
+@-webkit-keyframes menu_hover_top {
+	0% {
+		-webkit-transform:rotate(0) translateY(0);
+		transform:rotate(0) translateY(0);
+		-webkit-transform-origin:left top;
+		transform-origin:left top
+	}
+	25% {
+		-webkit-transform:rotate(15deg) translateY(-1px);
+		transform:rotate(15deg) translateY(-1px);
+		-webkit-transform-origin:right top;
+		transform-origin:right top
+	}
+	85% {
+		-webkit-transform:rotate(-15deg) translateY(-2px);
+		transform:rotate(-15deg) translateY(-2px);
+		-webkit-transform-origin:left top;
+		transform-origin:left top
+	}
+	100% {
+		-webkit-transform:rotate(0) translateY(-2px);
+		transform:rotate(0) translateY(-2px);
+		-webkit-transform-origin:center top;
+		transform-origin:center top
+	}
+}
+@keyframes menu_hover_top {
+	0% {
+		-moz-transform:rotate(0) translateY(0);
+		-ms-transform:rotate(0) translateY(0);
+		-webkit-transform:rotate(0) translateY(0);
+		transform:rotate(0) translateY(0);
+		-moz-transform-origin:left top;
+		-ms-transform-origin:left top;
+		-webkit-transform-origin:left top;
+		transform-origin:left top
+	}
+	25% {
+		-moz-transform:rotate(15deg) translateY(-1px);
+		-ms-transform:rotate(15deg) translateY(-1px);
+		-webkit-transform:rotate(15deg) translateY(-1px);
+		transform:rotate(15deg) translateY(-1px);
+		-moz-transform-origin:right top;
+		-ms-transform-origin:right top;
+		-webkit-transform-origin:right top;
+		transform-origin:right top
+	}
+	85% {
+		-moz-transform:rotate(-15deg) translateY(-2px);
+		-ms-transform:rotate(-15deg) translateY(-2px);
+		-webkit-transform:rotate(-15deg) translateY(-2px);
+		transform:rotate(-15deg) translateY(-2px);
+		-moz-transform-origin:left top;
+		-ms-transform-origin:left top;
+		-webkit-transform-origin:left top;
+		transform-origin:left top
+	}
+	100% {
+		-moz-transform:rotate(0) translateY(-2px);
+		-ms-transform:rotate(0) translateY(-2px);
+		-webkit-transform:rotate(0) translateY(-2px);
+		transform:rotate(0) translateY(-2px);
+		-moz-transform-origin:center top;
+		-ms-transform-origin:center top;
+		-webkit-transform-origin:center top;
+		transform-origin:center top
+	}
+}
+@-moz-keyframes pagination_loading {
+	0% {
+		-moz-transform:translateX(-100%);
+		transform:translateX(-100%)
+	}
+	100% {
+		-moz-transform:translateX(0);
+		transform:translateX(0)
+	}
+}
+@-webkit-keyframes pagination_loading {
+	0% {
+		-webkit-transform:translateX(-100%);
+		transform:translateX(-100%)
+	}
+	100% {
+		-webkit-transform:translateX(0);
+		transform:translateX(0)
+	}
+}
+@keyframes pagination_loading {
+	0% {
+		-moz-transform:translateX(-100%);
+		-ms-transform:translateX(-100%);
+		-webkit-transform:translateX(-100%);
+		transform:translateX(-100%)
+	}
+	100% {
+		-moz-transform:translateX(0);
+		-ms-transform:translateX(0);
+		-webkit-transform:translateX(0);
+		transform:translateX(0)
+	}
+}
+@-moz-keyframes shake {
+	0%,100% {
+		-moz-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+	10%,30%,50%,70%,90% {
+		-moz-transform:translate3d(-10px,0,0);
+		transform:translate3d(-10px,0,0)
+	}
+	20%,40%,60%,80% {
+		-moz-transform:translate3d(10px,0,0);
+		transform:translate3d(10px,0,0)
+	}
+}
+@-webkit-keyframes shake {
+	0%,100% {
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+	10%,30%,50%,70%,90% {
+		-webkit-transform:translate3d(-10px,0,0);
+		transform:translate3d(-10px,0,0)
+	}
+	20%,40%,60%,80% {
+		-webkit-transform:translate3d(10px,0,0);
+		transform:translate3d(10px,0,0)
+	}
+}
+@keyframes shake {
+	0%,100% {
+		-moz-transform:translate3d(0,0,0);
+		-ms-transform:translate3d(0,0,0);
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0)
+	}
+	10%,30%,50%,70%,90% {
+		-moz-transform:translate3d(-10px,0,0);
+		-ms-transform:translate3d(-10px,0,0);
+		-webkit-transform:translate3d(-10px,0,0);
+		transform:translate3d(-10px,0,0)
+	}
+	20%,40%,60%,80% {
+		-moz-transform:translate3d(10px,0,0);
+		-ms-transform:translate3d(10px,0,0);
+		-webkit-transform:translate3d(10px,0,0);
+		transform:translate3d(10px,0,0)
+	}
+}
+@-moz-keyframes simple_loader_loop {
+	0% {
+		-moz-transform:scale3d(1,1,1) rotate(0);
+		transform:scale3d(1,1,1) rotate(0)
+	}
+	33% {
+		-moz-transform:scale3d(1.1,1.1,1.1) rotate(0);
+		transform:scale3d(1.1,1.1,1.1) rotate(0)
+	}
+	66% {
+		-moz-transform:scale3d(1,1,1) rotate(0);
+		transform:scale3d(1,1,1) rotate(0)
+	}
+	100% {
+		-moz-transform:scale3d(1,1,1) rotate(90deg);
+		transform:scale3d(1,1,1) rotate(90deg)
+	}
+}
+@-webkit-keyframes simple_loader_loop {
+	0% {
+		-webkit-transform:scale3d(1,1,1) rotate(0);
+		transform:scale3d(1,1,1) rotate(0)
+	}
+	33% {
+		-webkit-transform:scale3d(1.1,1.1,1.1) rotate(0);
+		transform:scale3d(1.1,1.1,1.1) rotate(0)
+	}
+	66% {
+		-webkit-transform:scale3d(1,1,1) rotate(0);
+		transform:scale3d(1,1,1) rotate(0)
+	}
+	100% {
+		-webkit-transform:scale3d(1,1,1) rotate(90deg);
+		transform:scale3d(1,1,1) rotate(90deg)
+	}
+}
+@keyframes simple_loader_loop {
+	0% {
+		-moz-transform:scale3d(1,1,1) rotate(0);
+		-ms-transform:scale3d(1,1,1) rotate(0);
+		-webkit-transform:scale3d(1,1,1) rotate(0);
+		transform:scale3d(1,1,1) rotate(0)
+	}
+	33% {
+		-moz-transform:scale3d(1.1,1.1,1.1) rotate(0);
+		-ms-transform:scale3d(1.1,1.1,1.1) rotate(0);
+		-webkit-transform:scale3d(1.1,1.1,1.1) rotate(0);
+		transform:scale3d(1.1,1.1,1.1) rotate(0)
+	}
+	66% {
+		-moz-transform:scale3d(1,1,1) rotate(0);
+		-ms-transform:scale3d(1,1,1) rotate(0);
+		-webkit-transform:scale3d(1,1,1) rotate(0);
+		transform:scale3d(1,1,1) rotate(0)
+	}
+	100% {
+		-moz-transform:scale3d(1,1,1) rotate(90deg);
+		-ms-transform:scale3d(1,1,1) rotate(90deg);
+		-webkit-transform:scale3d(1,1,1) rotate(90deg);
+		transform:scale3d(1,1,1) rotate(90deg)
+	}
+}
+@-moz-keyframes simple_loader_loop_center {
+	0%,100% {
+		opacity:1
+	}
+}
+@-webkit-keyframes simple_loader_loop_center {
+	0%,100% {
+		opacity:1
+	}
+}
+@keyframes simple_loader_loop_center {
+	0%,100% {
+		opacity:1
+	}
+}
+@-moz-keyframes spin {
+	0% {
+		-moz-transform:rotate(0);
+		transform:rotate(0)
+	}
+	100% {
+		-moz-transform:rotate(360deg);
+		transform:rotate(360deg)
+	}
+}
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform:rotate(0);
+		transform:rotate(0)
+	}
+	100% {
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg)
+	}
+}
+@keyframes spin {
+	0% {
+		-moz-transform:rotate(0);
+		-ms-transform:rotate(0);
+		-webkit-transform:rotate(0);
+		transform:rotate(0)
+	}
+	100% {
+		-moz-transform:rotate(360deg);
+		-ms-transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg)
+	}
+}
+@-moz-keyframes spin_and_catch {
+	0% {
+		-moz-transform:rotate(0) scale(1);
+		transform:rotate(0) scale(1)
+	}
+	40%,60% {
+		-moz-transform:rotate(390deg) scale(1.15);
+		transform:rotate(390deg) scale(1.15)
+	}
+	90% {
+		-moz-transform:rotate(340deg) scale(1.2);
+		transform:rotate(340deg) scale(1.2)
+	}
+	100% {
+		-moz-transform:rotate(360deg) scale(1.15);
+		transform:rotate(360deg) scale(1.15)
+	}
+}
+@-webkit-keyframes spin_and_catch {
+	0% {
+		-webkit-transform:rotate(0) scale(1);
+		transform:rotate(0) scale(1)
+	}
+	40%,60% {
+		-webkit-transform:rotate(390deg) scale(1.15);
+		transform:rotate(390deg) scale(1.15)
+	}
+	90% {
+		-webkit-transform:rotate(340deg) scale(1.2);
+		transform:rotate(340deg) scale(1.2)
+	}
+	100% {
+		-webkit-transform:rotate(360deg) scale(1.15);
+		transform:rotate(360deg) scale(1.15)
+	}
+}
+@keyframes spin_and_catch {
+	0% {
+		-moz-transform:rotate(0) scale(1);
+		-ms-transform:rotate(0) scale(1);
+		-webkit-transform:rotate(0) scale(1);
+		transform:rotate(0) scale(1)
+	}
+	40%,60% {
+		-moz-transform:rotate(390deg) scale(1.15);
+		-ms-transform:rotate(390deg) scale(1.15);
+		-webkit-transform:rotate(390deg) scale(1.15);
+		transform:rotate(390deg) scale(1.15)
+	}
+	90% {
+		-moz-transform:rotate(340deg) scale(1.2);
+		-ms-transform:rotate(340deg) scale(1.2);
+		-webkit-transform:rotate(340deg) scale(1.2);
+		transform:rotate(340deg) scale(1.2)
+	}
+	100% {
+		-moz-transform:rotate(360deg) scale(1.15);
+		-ms-transform:rotate(360deg) scale(1.15);
+		-webkit-transform:rotate(360deg) scale(1.15);
+		transform:rotate(360deg) scale(1.15)
+	}
+}
+@-moz-keyframes tada {
+	0% {
+		-moz-transform:scale3d(1,1,1);
+		transform:scale3d(1,1,1)
+	}
+	20% {
+		-moz-transform:scale3d(.9,.9,.9);
+		transform:scale3d(.9,.9,.9)
+	}
+	40%,80% {
+		-moz-transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,3deg);
+		transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,3deg)
+	}
+	60% {
+		-moz-transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,-3deg);
+		transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,-3deg)
+	}
+	100% {
+		-moz-transform:scale3d(1.15,1.15,1.15);
+		transform:scale3d(1.15,1.15,1.15)
+	}
+}
+@-webkit-keyframes tada {
+	0% {
+		-webkit-transform:scale3d(1,1,1);
+		transform:scale3d(1,1,1)
+	}
+	20% {
+		-webkit-transform:scale3d(.9,.9,.9);
+		transform:scale3d(.9,.9,.9)
+	}
+	40%,80% {
+		-webkit-transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,3deg);
+		transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,3deg)
+	}
+	60% {
+		-webkit-transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,-3deg);
+		transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,-3deg)
+	}
+	100% {
+		-webkit-transform:scale3d(1.15,1.15,1.15);
+		transform:scale3d(1.15,1.15,1.15)
+	}
+}
+@keyframes tada {
+	0% {
+		-moz-transform:scale3d(1,1,1);
+		-ms-transform:scale3d(1,1,1);
+		-webkit-transform:scale3d(1,1,1);
+		transform:scale3d(1,1,1)
+	}
+	20% {
+		-moz-transform:scale3d(.9,.9,.9);
+		-ms-transform:scale3d(.9,.9,.9);
+		-webkit-transform:scale3d(.9,.9,.9);
+		transform:scale3d(.9,.9,.9)
+	}
+	40%,80% {
+		-moz-transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,3deg);
+		-ms-transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,3deg);
+		-webkit-transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,3deg);
+		transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,3deg)
+	}
+	60% {
+		-moz-transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,-3deg);
+		-ms-transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,-3deg);
+		-webkit-transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,-3deg);
+		transform:scale3d(1.2,1.2,1.2) rotate3d(0,0,1,-3deg)
+	}
+	100% {
+		-moz-transform:scale3d(1.15,1.15,1.15);
+		-ms-transform:scale3d(1.15,1.15,1.15);
+		-webkit-transform:scale3d(1.15,1.15,1.15);
+		transform:scale3d(1.15,1.15,1.15)
+	}
+}
+@-moz-keyframes wobble_up {
+	0% {
+		-moz-transform:rotateY(0) scale(1);
+		transform:rotateY(0) scale(1);
+		-moz-transform-origin:right center;
+		transform-origin:right center
+	}
+	33% {
+		-moz-transform:rotateY(-40deg) scale(1.05);
+		transform:rotateY(-40deg) scale(1.05);
+		-moz-transform-origin:left center;
+		transform-origin:left center
+	}
+	66% {
+		-moz-transform:rotateY(40deg) scale(1.1);
+		transform:rotateY(40deg) scale(1.1);
+		-moz-transform-origin:right center;
+		transform-origin:right center
+	}
+	100% {
+		-moz-transform:rotateY(0deg) scale(1.15);
+		transform:rotateY(0deg) scale(1.15)
+	}
+}
+@-webkit-keyframes wobble_up {
+	0% {
+		-webkit-transform:rotateY(0) scale(1);
+		transform:rotateY(0) scale(1);
+		-webkit-transform-origin:right center;
+		transform-origin:right center
+	}
+	33% {
+		-webkit-transform:rotateY(-40deg) scale(1.05);
+		transform:rotateY(-40deg) scale(1.05);
+		-webkit-transform-origin:left center;
+		transform-origin:left center
+	}
+	66% {
+		-webkit-transform:rotateY(40deg) scale(1.1);
+		transform:rotateY(40deg) scale(1.1);
+		-webkit-transform-origin:right center;
+		transform-origin:right center
+	}
+	100% {
+		-webkit-transform:rotateY(0deg) scale(1.15);
+		transform:rotateY(0deg) scale(1.15)
+	}
+}
+@keyframes wobble_up {
+	0% {
+		-moz-transform:rotateY(0) scale(1);
+		-ms-transform:rotateY(0) scale(1);
+		-webkit-transform:rotateY(0) scale(1);
+		transform:rotateY(0) scale(1);
+		-moz-transform-origin:right center;
+		-ms-transform-origin:right center;
+		-webkit-transform-origin:right center;
+		transform-origin:right center
+	}
+	33% {
+		-moz-transform:rotateY(-40deg) scale(1.05);
+		-ms-transform:rotateY(-40deg) scale(1.05);
+		-webkit-transform:rotateY(-40deg) scale(1.05);
+		transform:rotateY(-40deg) scale(1.05);
+		-moz-transform-origin:left center;
+		-ms-transform-origin:left center;
+		-webkit-transform-origin:left center;
+		transform-origin:left center
+	}
+	66% {
+		-moz-transform:rotateY(40deg) scale(1.1);
+		-ms-transform:rotateY(40deg) scale(1.1);
+		-webkit-transform:rotateY(40deg) scale(1.1);
+		transform:rotateY(40deg) scale(1.1);
+		-moz-transform-origin:right center;
+		-ms-transform-origin:right center;
+		-webkit-transform-origin:right center;
+		transform-origin:right center
+	}
+	100% {
+		-moz-transform:rotateY(0deg) scale(1.15);
+		-ms-transform:rotateY(0deg) scale(1.15);
+		-webkit-transform:rotateY(0deg) scale(1.15);
+		transform:rotateY(0deg) scale(1.15)
+	}
+}
+
+li {
+    margin-bottom: 1.5rem !important;
+}
+
+.em,em {
+	font-style:italic
+}
+q {
+	quotes:"“" "”" "‘" "’"
+}
+q:before {
+	content:open-quote;
+	margin-right:.25em
+}
+q:after {
+	content:close-quote;
+	margin-left:.25em
+}
+.strong,strong {
+	font-weight:700
+}
+#nav_main_open .primary ul,#the_universe .quote,.case_story_teaser .title,.clients_list .title,.full_screen_billboard .title,.h1,.intro_billboard .title,.split_billboard .title,.testimonial .quote {
+	font-family:GalaxieCopernicus,Georgia,serif;
+	font-size:1.71429em;
+	line-height:1.2em;
+	margin-bottom:1em
+}
+@media only screen and (min-width:650px) {
+	#nav_main_open .primary ul,#the_universe .quote,.case_story_teaser .title,.clients_list .title,.full_screen_billboard .title,.h1,.intro_billboard .title,.split_billboard .title,.testimonial .quote {
+		font-size:1.28571em
+	}
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_open .primary ul,#the_universe .quote,.case_story_teaser .title,.clients_list .title,.full_screen_billboard .title,.h1,.intro_billboard .title,.split_billboard .title,.testimonial .quote {
+		font-size:1.85714em
+	}
+}
+@media only screen and (min-width:1268px) {
+	#nav_main_open .primary ul,#the_universe .quote,.case_story_teaser .title,.clients_list .title,.full_screen_billboard .title,.h1,.intro_billboard .title,.split_billboard .title,.testimonial .quote {
+		font-size: 1.42857em;
+	}
+}
+#contact_form #nav_main_open .primary ul.title,#contact_form #the_universe .title.quote,#contact_form .case_story_teaser .title,#contact_form .clients_list .title,#contact_form .full_screen_billboard .title,#contact_form .h1.title,#contact_form .intro_billboard .title,#contact_form .split_billboard .title,#contact_form .testimonial .quote.title,#contact_methods #nav_main_open .primary ul.line,#contact_methods #the_universe .line.quote,#contact_methods .case_story_teaser .title.line,#contact_methods .clients_list .line.title,#contact_methods .full_screen_billboard .title.line,#contact_methods .h1.line,#contact_methods .intro_billboard .title.line,#contact_methods .split_billboard .title.line,#contact_methods .testimonial .quote.line,#footer_main #nav_main_open .primary ul.address,#footer_main #nav_main_open .primary ul.contact,#footer_main #the_universe .address.quote,#footer_main #the_universe .contact.quote,#footer_main .case_story_teaser .address.title,#footer_main .case_story_teaser .contact.title,#footer_main .clients_list .address.title,#footer_main .clients_list .contact.title,#footer_main .full_screen_billboard .address.title,#footer_main .full_screen_billboard .contact.title,#footer_main .h1.address,#footer_main .h1.contact,#footer_main .intro_billboard .address.title,#footer_main .intro_billboard .contact.title,#footer_main .split_billboard .address.title,#footer_main .split_billboard .contact.title,#footer_main .testimonial .address.quote,#footer_main .testimonial .contact.quote,#home_welcome #nav_main_open .primary ul.message,#home_welcome #the_universe .message.quote,#home_welcome .case_story_teaser .title.message,#home_welcome .clients_list .message.title,#home_welcome .full_screen_billboard .title.message,#home_welcome .h1.message,#home_welcome .intro_billboard .title.message,#home_welcome .split_billboard .title.message,#home_welcome .testimonial .quote.message,#nav_main_open .primary #contact_form ul.title,#nav_main_open .primary #contact_methods ul.line,#nav_main_open .primary #footer_main ul.address,#nav_main_open .primary #footer_main ul.contact,#nav_main_open .primary #home_welcome ul.message,#nav_main_open .primary #the_universe ul.quote,#nav_main_open .primary .case_story_quotes ul.quote,#nav_main_open .primary .case_story_stats ul.stat,#nav_main_open .primary .five_facts ul.description,#nav_main_open .primary .intro_icon ul.content,#nav_main_open .primary .team_member_detail ul.stat,#nav_main_open .primary .verbose_cta ul.content,#nav_main_open .primary ul p,#nav_main_open .primary ul.p,#the_universe #contact_form .title.quote,#the_universe #contact_methods .line.quote,#the_universe #footer_main .address.quote,#the_universe #footer_main .contact.quote,#the_universe #home_welcome .message.quote,#the_universe #nav_main_open .primary ul.quote,#the_universe .case_story_quotes .quote,#the_universe .case_story_stats .stat.quote,#the_universe .case_story_teaser .title.quote,#the_universe .clients_list .title.quote,#the_universe .five_facts .description.quote,#the_universe .full_screen_billboard .title.quote,#the_universe .intro_billboard .title.quote,#the_universe .intro_icon .content.quote,#the_universe .quote,#the_universe .quote p,#the_universe .split_billboard .title.quote,#the_universe .team_member_detail .stat.quote,#the_universe .testimonial .quote,#the_universe .verbose_cta .content.quote,.case_story_quotes #nav_main_open .primary ul.quote,.case_story_quotes #the_universe .quote,.case_story_quotes .case_story_teaser .title.quote,.case_story_quotes .clients_list .quote.title,.case_story_quotes .full_screen_billboard .title.quote,.case_story_quotes .h1.quote,.case_story_quotes .intro_billboard .title.quote,.case_story_quotes .split_billboard .title.quote,.case_story_quotes .testimonial .quote,.case_story_stats #nav_main_open .primary ul.stat,.case_story_stats #the_universe .stat.quote,.case_story_stats .case_story_teaser .title.stat,.case_story_stats .clients_list .stat.title,.case_story_stats .full_screen_billboard .title.stat,.case_story_stats .h1.stat,.case_story_stats .intro_billboard .title.stat,.case_story_stats .split_billboard .title.stat,.case_story_stats .testimonial .quote.stat,.case_story_teaser #contact_form .title,.case_story_teaser #contact_methods .title.line,.case_story_teaser #footer_main .address.title,.case_story_teaser #footer_main .contact.title,.case_story_teaser #home_welcome .title.message,.case_story_teaser #the_universe .title.quote,.case_story_teaser .case_story_quotes .title.quote,.case_story_teaser .case_story_stats .title.stat,.case_story_teaser .five_facts .title.description,.case_story_teaser .intro_icon .title.content,.case_story_teaser .p.title,.case_story_teaser .team_member_detail .title.stat,.case_story_teaser .title p,.case_story_teaser .verbose_cta .title.content,.clients_list #contact_form .title,.clients_list #contact_methods .line.title,.clients_list #footer_main .address.title,.clients_list #footer_main .contact.title,.clients_list #home_welcome .message.title,.clients_list #the_universe .title.quote,.clients_list .case_story_quotes .quote.title,.clients_list .case_story_stats .stat.title,.clients_list .five_facts .description.title,.clients_list .intro_icon .content.title,.clients_list .p.title,.clients_list .team_member_detail .stat.title,.clients_list .title p,.clients_list .verbose_cta .content.title,.five_facts #nav_main_open .primary ul.description,.five_facts #the_universe .description.quote,.five_facts .case_story_teaser .title.description,.five_facts .clients_list .description.title,.five_facts .full_screen_billboard .description.title,.five_facts .h1.description,.five_facts .intro_billboard .description.title,.five_facts .split_billboard .description.title,.five_facts .testimonial .description.quote,.full_screen_billboard #contact_form .title,.full_screen_billboard #contact_methods .title.line,.full_screen_billboard #footer_main .address.title,.full_screen_billboard #footer_main .contact.title,.full_screen_billboard #home_welcome .title.message,.full_screen_billboard #the_universe .title.quote,.full_screen_billboard .case_story_quotes .title.quote,.full_screen_billboard .case_story_stats .title.stat,.full_screen_billboard .five_facts .description.title,.full_screen_billboard .intro_icon .title.content,.full_screen_billboard .p.title,.full_screen_billboard .team_member_detail .title.stat,.full_screen_billboard .title p,.full_screen_billboard .verbose_cta .title.content,.h1 p,.h1.p,.intro_billboard #contact_form .title,.intro_billboard #contact_methods .title.line,.intro_billboard #footer_main .address.title,.intro_billboard #footer_main .contact.title,.intro_billboard #home_welcome .title.message,.intro_billboard #the_universe .title.quote,.intro_billboard .case_story_quotes .title.quote,.intro_billboard .case_story_stats .title.stat,.intro_billboard .five_facts .description.title,.intro_billboard .intro_icon .title.content,.intro_billboard .p.title,.intro_billboard .team_member_detail .title.stat,.intro_billboard .title p,.intro_billboard .verbose_cta .title.content,.intro_icon #nav_main_open .primary ul.content,.intro_icon #the_universe .content.quote,.intro_icon .case_story_teaser .title.content,.intro_icon .clients_list .content.title,.intro_icon .full_screen_billboard .title.content,.intro_icon .h1.content,.intro_icon .intro_billboard .title.content,.intro_icon .split_billboard .content.title,.intro_icon .testimonial .content.quote,.split_billboard #contact_form .title,.split_billboard #contact_methods .title.line,.split_billboard #footer_main .address.title,.split_billboard #footer_main .contact.title,.split_billboard #home_welcome .title.message,.split_billboard #the_universe .title.quote,.split_billboard .case_story_quotes .title.quote,.split_billboard .case_story_stats .title.stat,.split_billboard .five_facts .description.title,.split_billboard .intro_icon .content.title,.split_billboard .p.title,.split_billboard .team_member_detail .title.stat,.split_billboard .title p,.split_billboard .verbose_cta .title.content,.team_member_detail #nav_main_open .primary ul.stat,.team_member_detail #the_universe .stat.quote,.team_member_detail .case_story_teaser .title.stat,.team_member_detail .clients_list .stat.title,.team_member_detail .full_screen_billboard .title.stat,.team_member_detail .h1.stat,.team_member_detail .intro_billboard .title.stat,.team_member_detail .split_billboard .title.stat,.team_member_detail .testimonial .quote.stat,.testimonial #contact_form .quote.title,.testimonial #contact_methods .quote.line,.testimonial #footer_main .address.quote,.testimonial #footer_main .contact.quote,.testimonial #home_welcome .quote.message,.testimonial #the_universe .quote,.testimonial .case_story_quotes .quote,.testimonial .case_story_stats .quote.stat,.testimonial .five_facts .description.quote,.testimonial .intro_icon .content.quote,.testimonial .p.quote,.testimonial .quote p,.testimonial .team_member_detail .quote.stat,.testimonial .verbose_cta .quote.content,.verbose_cta #nav_main_open .primary ul.content,.verbose_cta #the_universe .content.quote,.verbose_cta .case_story_teaser .title.content,.verbose_cta .clients_list .content.title,.verbose_cta .full_screen_billboard .title.content,.verbose_cta .h1.content,.verbose_cta .intro_billboard .title.content,.verbose_cta .split_billboard .title.content,.verbose_cta .testimonial .quote.content {
+	line-height:1.56522em
+}
+#contact_form .title,#contact_methods .line,#home_billboard .middle_ground .tagline,#home_welcome .message,.case_story_walkthrough .title,.five_facts .description,.h2,.h3,.input_select_wrapper .decoy,.input_text,.input_text_rule,.input_textarea,.intro_icon .content,.team_member_detail .who .name,.verbose_cta .content {
+	font-family:GalaxieCopernicus,Georgia,serif;
+	font-size:1.14286em;
+	line-height:1.2em;
+	margin-bottom:1em
+}
+@media only screen and (min-width:375px) {
+	#home_billboard .middle_ground .tagline,.h2 {
+		font-size:1.28571em
+	}
+}
+@media only screen and (min-width:650px) {
+	#home_billboard .middle_ground .tagline,.h2 {
+		font-size:1.71429em
+	}
+}
+@media only screen and (min-width:1024px) {
+	#home_billboard .middle_ground .tagline,.h2 {
+		font-size:2.14286em
+	}
+}
+@media only screen and (min-width:1268px) {
+	#home_billboard .middle_ground .tagline,.h2 {
+		font-size:2.57143em
+	}
+}
+#contact_form #footer_main .address.title,#contact_form #footer_main .contact.title,#contact_form #the_universe .quote.title,#contact_form .case_story_quotes .quote.title,#contact_form .case_story_stats .stat.title,#contact_form .case_story_walkthrough .title,#contact_form .input_select_wrapper .decoy.title,#contact_form .input_text.title,#contact_form .input_text_rule.title,#contact_form .input_textarea.title,#contact_form .team_member_detail .stat.title,#contact_form .team_member_detail .who .name.title,#contact_form .title,#contact_form p .title,#contact_methods #footer_main .address.line,#contact_methods #footer_main .contact.line,#contact_methods #the_universe .quote.line,#contact_methods .case_story_quotes .quote.line,#contact_methods .case_story_stats .stat.line,#contact_methods .case_story_walkthrough .title.line,#contact_methods .input_select_wrapper .decoy.line,#contact_methods .input_text.line,#contact_methods .input_text_rule.line,#contact_methods .input_textarea.line,#contact_methods .line,#contact_methods .team_member_detail .stat.line,#contact_methods .team_member_detail .who .name.line,#contact_methods p .line,#footer_main #contact_form .address.title,#footer_main #contact_form .contact.title,#footer_main #contact_methods .address.line,#footer_main #contact_methods .contact.line,#footer_main #home_welcome .address.message,#footer_main #home_welcome .contact.message,#footer_main .address.input_text,#footer_main .address.input_text_rule,#footer_main .address.input_textarea,#footer_main .case_story_walkthrough .address.title,#footer_main .case_story_walkthrough .contact.title,#footer_main .contact.input_text,#footer_main .contact.input_text_rule,#footer_main .contact.input_textarea,#footer_main .five_facts .address.description,#footer_main .five_facts .contact.description,#footer_main .h3.address,#footer_main .h3.contact,#footer_main .input_select_wrapper .address.decoy,#footer_main .input_select_wrapper .contact.decoy,#footer_main .intro_icon .address.content,#footer_main .intro_icon .contact.content,#footer_main .team_member_detail .who .address.name,#footer_main .team_member_detail .who .contact.name,#footer_main .verbose_cta .address.content,#footer_main .verbose_cta .contact.content,#home_welcome #footer_main .address.message,#home_welcome #footer_main .contact.message,#home_welcome #the_universe .quote.message,#home_welcome .case_story_quotes .quote.message,#home_welcome .case_story_stats .stat.message,#home_welcome .case_story_walkthrough .title.message,#home_welcome .input_select_wrapper .decoy.message,#home_welcome .input_text.message,#home_welcome .input_text_rule.message,#home_welcome .input_textarea.message,#home_welcome .message,#home_welcome .team_member_detail .stat.message,#home_welcome .team_member_detail .who .name.message,#home_welcome p .message,#the_universe #contact_form .quote.title,#the_universe #contact_methods .quote.line,#the_universe #home_welcome .quote.message,#the_universe .case_story_quotes .h3.quote,#the_universe .case_story_quotes .quote.input_text,#the_universe .case_story_quotes .quote.input_text_rule,#the_universe .case_story_quotes .quote.input_textarea,#the_universe .case_story_walkthrough .case_story_quotes .quote.title,#the_universe .case_story_walkthrough .quote.title,#the_universe .five_facts .case_story_quotes .quote.description,#the_universe .five_facts .quote.description,#the_universe .h3.quote,#the_universe .input_select_wrapper .case_story_quotes .quote.decoy,#the_universe .input_select_wrapper .quote.decoy,#the_universe .intro_icon .case_story_quotes .quote.content,#the_universe .intro_icon .quote.content,#the_universe .quote.input_text,#the_universe .quote.input_text_rule,#the_universe .quote.input_textarea,#the_universe .team_member_detail .who .case_story_quotes .quote.name,#the_universe .team_member_detail .who .quote.name,#the_universe .verbose_cta .case_story_quotes .quote.content,#the_universe .verbose_cta .quote.content,.case_story_quotes #contact_form .quote.title,.case_story_quotes #contact_methods .quote.line,.case_story_quotes #home_welcome .quote.message,.case_story_quotes #the_universe .case_story_walkthrough .quote.title,.case_story_quotes #the_universe .five_facts .quote.description,.case_story_quotes #the_universe .h3.quote,.case_story_quotes #the_universe .input_select_wrapper .quote.decoy,.case_story_quotes #the_universe .intro_icon .quote.content,.case_story_quotes #the_universe .quote.input_text,.case_story_quotes #the_universe .quote.input_text_rule,.case_story_quotes #the_universe .quote.input_textarea,.case_story_quotes #the_universe .team_member_detail .who .quote.name,.case_story_quotes #the_universe .verbose_cta .quote.content,.case_story_quotes .case_story_walkthrough #the_universe .quote.title,.case_story_quotes .case_story_walkthrough .quote.title,.case_story_quotes .five_facts #the_universe .quote.description,.case_story_quotes .five_facts .quote.description,.case_story_quotes .h3.quote,.case_story_quotes .input_select_wrapper #the_universe .quote.decoy,.case_story_quotes .input_select_wrapper .decoy.quote,.case_story_quotes .input_text.quote,.case_story_quotes .input_text_rule.quote,.case_story_quotes .input_textarea.quote,.case_story_quotes .intro_icon #the_universe .quote.content,.case_story_quotes .intro_icon .quote.content,.case_story_quotes .team_member_detail .who #the_universe .quote.name,.case_story_quotes .team_member_detail .who .name.quote,.case_story_quotes .verbose_cta #the_universe .quote.content,.case_story_quotes .verbose_cta .quote.content,.case_story_stats #contact_form .stat.title,.case_story_stats #contact_methods .stat.line,.case_story_stats #home_welcome .stat.message,.case_story_stats .case_story_walkthrough .stat.title,.case_story_stats .five_facts .stat.description,.case_story_stats .h3.stat,.case_story_stats .input_select_wrapper .decoy.stat,.case_story_stats .input_text.stat,.case_story_stats .input_text_rule.stat,.case_story_stats .input_textarea.stat,.case_story_stats .intro_icon .stat.content,.case_story_stats .team_member_detail .who .stat.name,.case_story_stats .verbose_cta .stat.content,.case_story_walkthrough #contact_form .title,.case_story_walkthrough #contact_methods .title.line,.case_story_walkthrough #footer_main .address.title,.case_story_walkthrough #footer_main .contact.title,.case_story_walkthrough #home_welcome .title.message,.case_story_walkthrough #the_universe .case_story_quotes .quote.title,.case_story_walkthrough #the_universe .quote.title,.case_story_walkthrough .case_story_quotes .quote.title,.case_story_walkthrough .case_story_stats .stat.title,.case_story_walkthrough .five_facts .title.description,.case_story_walkthrough .intro_icon .title.content,.case_story_walkthrough .p.title,.case_story_walkthrough .team_member_detail .stat.title,.case_story_walkthrough .verbose_cta .title.content,.case_story_walkthrough p .title,.five_facts #footer_main .address.description,.five_facts #footer_main .contact.description,.five_facts #the_universe .case_story_quotes .quote.description,.five_facts #the_universe .quote.description,.five_facts .case_story_quotes .quote.description,.five_facts .case_story_stats .stat.description,.five_facts .case_story_walkthrough .title.description,.five_facts .description,.five_facts .description.input_textarea,.five_facts .input_select_wrapper .description.decoy,.five_facts .input_text.description,.five_facts .input_text_rule.description,.five_facts .team_member_detail .stat.description,.five_facts .team_member_detail .who .name.description,.five_facts p .description,.h3.p,.input_select_wrapper #contact_form .decoy.title,.input_select_wrapper #contact_methods .decoy.line,.input_select_wrapper #footer_main .address.decoy,.input_select_wrapper #footer_main .contact.decoy,.input_select_wrapper #home_welcome .decoy.message,.input_select_wrapper #the_universe .case_story_quotes .quote.decoy,.input_select_wrapper #the_universe .quote.decoy,.input_select_wrapper .case_story_quotes .decoy.quote,.input_select_wrapper .case_story_stats .decoy.stat,.input_select_wrapper .five_facts .description.decoy,.input_select_wrapper .intro_icon .decoy.content,.input_select_wrapper .p.decoy,.input_select_wrapper .team_member_detail .decoy.stat,.input_select_wrapper .verbose_cta .decoy.content,.input_select_wrapper p .decoy,.intro_icon #footer_main .address.content,.intro_icon #footer_main .contact.content,.intro_icon #the_universe .case_story_quotes .quote.content,.intro_icon #the_universe .quote.content,.intro_icon .case_story_quotes .quote.content,.intro_icon .case_story_stats .stat.content,.intro_icon .case_story_walkthrough .title.content,.intro_icon .content,.intro_icon .input_select_wrapper .decoy.content,.intro_icon .input_text.content,.intro_icon .input_text_rule.content,.intro_icon .input_textarea.content,.intro_icon .team_member_detail .stat.content,.intro_icon .team_member_detail .who .name.content,.intro_icon p .content,.p.input_text,.p.input_text_rule,.p.input_textarea,.team_member_detail #contact_form .stat.title,.team_member_detail #contact_methods .stat.line,.team_member_detail #home_welcome .stat.message,.team_member_detail .case_story_walkthrough .stat.title,.team_member_detail .five_facts .stat.description,.team_member_detail .h3.stat,.team_member_detail .input_select_wrapper .decoy.stat,.team_member_detail .input_text.stat,.team_member_detail .input_text_rule.stat,.team_member_detail .input_textarea.stat,.team_member_detail .intro_icon .stat.content,.team_member_detail .verbose_cta .stat.content,.team_member_detail .who #contact_form .name.title,.team_member_detail .who #contact_methods .name.line,.team_member_detail .who #footer_main .address.name,.team_member_detail .who #footer_main .contact.name,.team_member_detail .who #home_welcome .name.message,.team_member_detail .who #the_universe .case_story_quotes .quote.name,.team_member_detail .who #the_universe .quote.name,.team_member_detail .who .case_story_quotes .name.quote,.team_member_detail .who .case_story_stats .stat.name,.team_member_detail .who .five_facts .name.description,.team_member_detail .who .intro_icon .name.content,.team_member_detail .who .p.name,.team_member_detail .who .stat.name,.team_member_detail .who .verbose_cta .name.content,.team_member_detail .who p .name,.verbose_cta #footer_main .address.content,.verbose_cta #footer_main .contact.content,.verbose_cta #the_universe .case_story_quotes .quote.content,.verbose_cta #the_universe .quote.content,.verbose_cta .case_story_quotes .quote.content,.verbose_cta .case_story_stats .stat.content,.verbose_cta .case_story_walkthrough .title.content,.verbose_cta .content,.verbose_cta .input_select_wrapper .decoy.content,.verbose_cta .input_text.content,.verbose_cta .input_text_rule.content,.verbose_cta .input_textarea.content,.verbose_cta .team_member_detail .stat.content,.verbose_cta .team_member_detail .who .name.content,.verbose_cta p .content,p #contact_form .title,p #contact_methods .line,p #home_welcome .message,p .case_story_walkthrough .title,p .five_facts .description,p .h3,p .input_select_wrapper .decoy,p .input_text,p .input_text_rule,p .input_textarea,p .intro_icon .content,p .team_member_detail .who .name,p .verbose_cta .content {
+	line-height:1.71429em
+}
+@media only screen and (min-width:650px) {
+	#contact_form .title,#contact_methods .line,#home_welcome .message,.case_story_walkthrough .title,.five_facts .description,.h3,.input_select_wrapper .decoy,.input_text,.input_text_rule,.input_textarea,.intro_icon .content,.team_member_detail .who .name,.verbose_cta .content {
+		font-size:1.42857em
+	}
+}
+@media only screen and (min-width:1024px) {
+	#contact_form .title,#contact_methods .line,#home_welcome .message,.case_story_walkthrough .title,.five_facts .description,.h3,.input_select_wrapper .decoy,.input_text,.input_text_rule,.input_textarea,.intro_icon .content,.team_member_detail .who .name,.verbose_cta .content {
+		font-size:1.71429em
+	}
+}
+@media only screen and (min-width:1268px) {
+	#contact_form .title,#contact_methods .line,#home_welcome .message,.case_story_walkthrough .title,.five_facts .description,.h3,.input_select_wrapper .decoy,.input_text,.input_text_rule,.input_textarea,.intro_icon .content,.team_member_detail .who .name,.verbose_cta .content {
+		font-size:2em
+	}
+}
+#contact_form .case_story_walkthrough .title,#contact_form .timeline,#contact_methods .case_story_walkthrough .line,#footer_main .case_story_walkthrough .address,#footer_main .case_story_walkthrough .contact,#home_welcome .case_story_walkthrough .message,#the_universe .case_story_quotes .quote,#the_universe .case_story_walkthrough .quote,.case_story_quotes #the_universe .quote,.case_story_quotes .quote,.case_story_stats .case_story_walkthrough .stat,.case_story_walkthrough #contact_form .title,.case_story_walkthrough #contact_methods .line,.case_story_walkthrough #footer_main .address,.case_story_walkthrough #footer_main .contact,.case_story_walkthrough #home_welcome .message,.case_story_walkthrough #the_universe .quote,.case_story_walkthrough .case_story_stats .stat,.case_story_walkthrough .five_facts .description,.case_story_walkthrough .intro_icon .content,.case_story_walkthrough .p,.case_story_walkthrough .team_member_detail .stat,.case_story_walkthrough .verbose_cta .content,.five_facts .case_story_walkthrough .description,.h4,.intro_icon .case_story_walkthrough .content,.team_member_detail .case_story_walkthrough .stat,.verbose_cta .action,.verbose_cta .case_story_walkthrough .content {
+	font-family:GalaxieCopernicus,Georgia,serif;
+	line-height:1.2em;
+	margin-bottom:1em
+}
+#contact_form #contact_methods .timeline.line,#contact_form #footer_main .address.timeline,#contact_form #footer_main .contact.timeline,#contact_form #home_welcome .timeline.message,#contact_form #the_universe .quote.timeline,#contact_form .case_story_quotes .timeline.quote,#contact_form .case_story_quotes .title.quote,#contact_form .case_story_stats .stat.timeline,#contact_form .case_story_walkthrough .title,#contact_form .case_story_walkthrough .title.p,#contact_form .case_story_walkthrough p .title,#contact_form .five_facts .description.timeline,#contact_form .h4.title,#contact_form .intro_icon .content.timeline,#contact_form .p.timeline,#contact_form .team_member_detail .stat.timeline,#contact_form .timeline.title,#contact_form .verbose_cta .action.title,#contact_form .verbose_cta .content.timeline,#contact_form p .timeline,#contact_methods #contact_form .timeline.line,#contact_methods .case_story_quotes .line.quote,#contact_methods .case_story_walkthrough .line,#contact_methods .case_story_walkthrough .line.p,#contact_methods .case_story_walkthrough p .line,#contact_methods .h4.line,#contact_methods .verbose_cta .action.line,#footer_main #contact_form .address.timeline,#footer_main #contact_form .contact.timeline,#footer_main .case_story_quotes .address.quote,#footer_main .case_story_quotes .contact.quote,#footer_main .case_story_walkthrough .address,#footer_main .case_story_walkthrough .address.p,#footer_main .case_story_walkthrough .contact,#footer_main .case_story_walkthrough .contact.p,#footer_main .case_story_walkthrough p .address,#footer_main .case_story_walkthrough p .contact,#footer_main .h4.address,#footer_main .h4.contact,#footer_main .verbose_cta .address.action,#footer_main .verbose_cta .contact.action,#home_welcome #contact_form .timeline.message,#home_welcome .case_story_quotes .message.quote,#home_welcome .case_story_walkthrough .message,#home_welcome .case_story_walkthrough .message.p,#home_welcome .case_story_walkthrough p .message,#home_welcome .h4.message,#home_welcome .verbose_cta .action.message,#the_universe #contact_form .quote.timeline,#the_universe .case_story_quotes .case_story_stats .stat.quote,#the_universe .case_story_quotes .five_facts .description.quote,#the_universe .case_story_quotes .intro_icon .content.quote,#the_universe .case_story_quotes .quote,#the_universe .case_story_quotes .team_member_detail .stat.quote,#the_universe .case_story_quotes .verbose_cta .content.quote,#the_universe .case_story_quotes p .quote,#the_universe .case_story_walkthrough .quote,#the_universe .case_story_walkthrough p .quote,#the_universe .h4.quote,#the_universe .verbose_cta .quote.action,.case_story_quotes #contact_form .timeline.quote,.case_story_quotes #contact_form .title.quote,.case_story_quotes #contact_methods .line.quote,.case_story_quotes #footer_main .address.quote,.case_story_quotes #footer_main .contact.quote,.case_story_quotes #home_welcome .message.quote,.case_story_quotes #the_universe .case_story_stats .stat.quote,.case_story_quotes #the_universe .five_facts .description.quote,.case_story_quotes #the_universe .intro_icon .content.quote,.case_story_quotes #the_universe .quote,.case_story_quotes #the_universe .team_member_detail .stat.quote,.case_story_quotes #the_universe .verbose_cta .content.quote,.case_story_quotes #the_universe p .quote,.case_story_quotes .case_story_stats .stat.quote,.case_story_quotes .case_story_walkthrough .quote,.case_story_quotes .five_facts .description.quote,.case_story_quotes .intro_icon .content.quote,.case_story_quotes .quote,.case_story_quotes .team_member_detail .stat.quote,.case_story_quotes .verbose_cta .action.quote,.case_story_quotes .verbose_cta .content.quote,.case_story_quotes p .quote,.case_story_stats #contact_form .stat.timeline,.case_story_stats #the_universe .case_story_quotes .stat.quote,.case_story_stats .case_story_quotes #the_universe .stat.quote,.case_story_stats .case_story_quotes .stat.quote,.case_story_stats .case_story_walkthrough .stat,.case_story_stats .case_story_walkthrough .stat.p,.case_story_stats .case_story_walkthrough p .stat,.case_story_stats .h4.stat,.case_story_stats .verbose_cta .action.stat,.case_story_walkthrough #contact_form .title,.case_story_walkthrough #contact_form .title.p,.case_story_walkthrough #contact_form p .title,.case_story_walkthrough #contact_methods .line,.case_story_walkthrough #contact_methods .line.p,.case_story_walkthrough #contact_methods p .line,.case_story_walkthrough #footer_main .address,.case_story_walkthrough #footer_main .address.p,.case_story_walkthrough #footer_main .contact,.case_story_walkthrough #footer_main .contact.p,.case_story_walkthrough #footer_main p .address,.case_story_walkthrough #footer_main p .contact,.case_story_walkthrough #home_welcome .message,.case_story_walkthrough #home_welcome .message.p,.case_story_walkthrough #home_welcome p .message,.case_story_walkthrough #the_universe .quote,.case_story_walkthrough #the_universe p .quote,.case_story_walkthrough .case_story_quotes .quote,.case_story_walkthrough .case_story_stats .stat,.case_story_walkthrough .case_story_stats .stat.p,.case_story_walkthrough .case_story_stats p .stat,.case_story_walkthrough .five_facts .description,.case_story_walkthrough .five_facts .description.p,.case_story_walkthrough .five_facts p .description,.case_story_walkthrough .intro_icon .content,.case_story_walkthrough .intro_icon .content.p,.case_story_walkthrough .intro_icon p .content,.case_story_walkthrough .p,.case_story_walkthrough .team_member_detail .stat,.case_story_walkthrough .team_member_detail .stat.p,.case_story_walkthrough .team_member_detail p .stat,.case_story_walkthrough .verbose_cta .content,.case_story_walkthrough .verbose_cta .content.p,.case_story_walkthrough .verbose_cta p .content,.case_story_walkthrough p .p,.five_facts #contact_form .description.timeline,.five_facts #the_universe .case_story_quotes .description.quote,.five_facts .case_story_quotes #the_universe .description.quote,.five_facts .case_story_quotes .description.quote,.five_facts .case_story_walkthrough .description,.five_facts .case_story_walkthrough .description.p,.five_facts .case_story_walkthrough p .description,.five_facts .h4.description,.five_facts .verbose_cta .description.action,.h4.p,.intro_icon #contact_form .content.timeline,.intro_icon #the_universe .case_story_quotes .content.quote,.intro_icon .case_story_quotes #the_universe .content.quote,.intro_icon .case_story_quotes .content.quote,.intro_icon .case_story_walkthrough .content,.intro_icon .case_story_walkthrough .content.p,.intro_icon .case_story_walkthrough p .content,.intro_icon .h4.content,.intro_icon .verbose_cta .content.action,.team_member_detail #contact_form .stat.timeline,.team_member_detail #the_universe .case_story_quotes .stat.quote,.team_member_detail .case_story_quotes #the_universe .stat.quote,.team_member_detail .case_story_quotes .stat.quote,.team_member_detail .case_story_walkthrough .stat,.team_member_detail .case_story_walkthrough .stat.p,.team_member_detail .case_story_walkthrough p .stat,.team_member_detail .h4.stat,.team_member_detail .verbose_cta .action.stat,.verbose_cta #contact_form .action.title,.verbose_cta #contact_form .content.timeline,.verbose_cta #contact_methods .action.line,.verbose_cta #footer_main .address.action,.verbose_cta #footer_main .contact.action,.verbose_cta #home_welcome .action.message,.verbose_cta #the_universe .case_story_quotes .content.quote,.verbose_cta #the_universe .quote.action,.verbose_cta .action.content,.verbose_cta .case_story_quotes #the_universe .content.quote,.verbose_cta .case_story_quotes .action.quote,.verbose_cta .case_story_quotes .content.quote,.verbose_cta .case_story_stats .action.stat,.verbose_cta .case_story_walkthrough .content,.verbose_cta .case_story_walkthrough .content.p,.verbose_cta .case_story_walkthrough p .content,.verbose_cta .five_facts .description.action,.verbose_cta .h4.content,.verbose_cta .intro_icon .content.action,.verbose_cta .p.action,.verbose_cta .team_member_detail .action.stat,.verbose_cta p .action,p #contact_form .case_story_walkthrough .title,p #contact_form .timeline,p #contact_methods .case_story_walkthrough .line,p #footer_main .case_story_walkthrough .address,p #footer_main .case_story_walkthrough .contact,p #home_welcome .case_story_walkthrough .message,p #the_universe .case_story_quotes .quote,p #the_universe .case_story_walkthrough .quote,p .case_story_quotes #the_universe .quote,p .case_story_quotes .quote,p .case_story_stats .case_story_walkthrough .stat,p .case_story_walkthrough #contact_form .title,p .case_story_walkthrough #contact_methods .line,p .case_story_walkthrough #footer_main .address,p .case_story_walkthrough #footer_main .contact,p .case_story_walkthrough #home_welcome .message,p .case_story_walkthrough #the_universe .quote,p .case_story_walkthrough .case_story_stats .stat,p .case_story_walkthrough .five_facts .description,p .case_story_walkthrough .intro_icon .content,p .case_story_walkthrough .p,p .case_story_walkthrough .team_member_detail .stat,p .case_story_walkthrough .verbose_cta .content,p .five_facts .case_story_walkthrough .description,p .h4,p .intro_icon .case_story_walkthrough .content,p .team_member_detail .case_story_walkthrough .stat,p .verbose_cta .action,p .verbose_cta .case_story_walkthrough .content {
+	line-height:1.71429em
+}
+@media only screen and (min-width:650px) {
+	#contact_form .case_story_walkthrough .title,#contact_form .timeline,#contact_methods .case_story_walkthrough .line,#footer_main .case_story_walkthrough .address,#footer_main .case_story_walkthrough .contact,#home_welcome .case_story_walkthrough .message,#the_universe .case_story_quotes .quote,#the_universe .case_story_walkthrough .quote,.case_story_quotes #the_universe .quote,.case_story_quotes .quote,.case_story_stats .case_story_walkthrough .stat,.case_story_walkthrough #contact_form .title,.case_story_walkthrough #contact_methods .line,.case_story_walkthrough #footer_main .address,.case_story_walkthrough #footer_main .contact,.case_story_walkthrough #home_welcome .message,.case_story_walkthrough #the_universe .quote,.case_story_walkthrough .case_story_stats .stat,.case_story_walkthrough .five_facts .description,.case_story_walkthrough .intro_icon .content,.case_story_walkthrough .p,.case_story_walkthrough .team_member_detail .stat,.case_story_walkthrough .verbose_cta .content,.five_facts .case_story_walkthrough .description,.h4,.intro_icon .case_story_walkthrough .content,.team_member_detail .case_story_walkthrough .stat,.verbose_cta .action,.verbose_cta .case_story_walkthrough .content {
+		font-size:1.14286em
+	}
+}
+@media only screen and (min-width:1024px) {
+	#contact_form .case_story_walkthrough .title,#contact_form .timeline,#contact_methods .case_story_walkthrough .line,#footer_main .case_story_walkthrough .address,#footer_main .case_story_walkthrough .contact,#home_welcome .case_story_walkthrough .message,#the_universe .case_story_quotes .quote,#the_universe .case_story_walkthrough .quote,.case_story_quotes #the_universe .quote,.case_story_quotes .quote,.case_story_stats .case_story_walkthrough .stat,.case_story_walkthrough #contact_form .title,.case_story_walkthrough #contact_methods .line,.case_story_walkthrough #footer_main .address,.case_story_walkthrough #footer_main .contact,.case_story_walkthrough #home_welcome .message,.case_story_walkthrough #the_universe .quote,.case_story_walkthrough .case_story_stats .stat,.case_story_walkthrough .five_facts .description,.case_story_walkthrough .intro_icon .content,.case_story_walkthrough .p,.case_story_walkthrough .team_member_detail .stat,.case_story_walkthrough .verbose_cta .content,.five_facts .case_story_walkthrough .description,.h4,.intro_icon .case_story_walkthrough .content,.team_member_detail .case_story_walkthrough .stat,.verbose_cta .action,.verbose_cta .case_story_walkthrough .content {
+		font-size:1.28571em
+	}
+}
+@media only screen and (min-width:1268px) {
+	#contact_form .case_story_walkthrough .title,#contact_form .timeline,#contact_methods .case_story_walkthrough .line,#footer_main .case_story_walkthrough .address,#footer_main .case_story_walkthrough .contact,#home_welcome .case_story_walkthrough .message,#the_universe .case_story_quotes .quote,#the_universe .case_story_walkthrough .quote,.case_story_quotes #the_universe .quote,.case_story_quotes .quote,.case_story_stats .case_story_walkthrough .stat,.case_story_walkthrough #contact_form .title,.case_story_walkthrough #contact_methods .line,.case_story_walkthrough #footer_main .address,.case_story_walkthrough #footer_main .contact,.case_story_walkthrough #home_welcome .message,.case_story_walkthrough #the_universe .quote,.case_story_walkthrough .case_story_stats .stat,.case_story_walkthrough .five_facts .description,.case_story_walkthrough .intro_icon .content,.case_story_walkthrough .p,.case_story_walkthrough .team_member_detail .stat,.case_story_walkthrough .verbose_cta .content,.five_facts .case_story_walkthrough .description,.h4,.intro_icon .case_story_walkthrough .content,.team_member_detail .case_story_walkthrough .stat,.verbose_cta .action,.verbose_cta .case_story_walkthrough .content {
+		font-size:1.5em
+	}
+}
+#footer_main .address,#footer_main .contact,#footer_main .copyright,#footer_main .social,#footer_main .tagline,#nav_main_open .secondary ul,.h5,.team_member .info .job_title {
+	font-family:GalaxieCopernicus,Georgia,serif;
+	font-size:1em;
+	font-weight:500;
+	line-height:1.2em;
+	margin-bottom:1em
+}
+#contact_form #footer_main .copyright.title,#contact_form #footer_main .social.title,#contact_form #footer_main .tagline.title,#contact_form #footer_main .title.address,#contact_form #footer_main .title.contact,#contact_form #nav_main_open .secondary ul.title,#contact_form .h5.title,#contact_form .team_member .info .job_title.title,#contact_methods #footer_main .copyright.line,#contact_methods #footer_main .line.address,#contact_methods #footer_main .line.contact,#contact_methods #footer_main .social.line,#contact_methods #footer_main .tagline.line,#contact_methods #nav_main_open .secondary ul.line,#contact_methods .h5.line,#contact_methods .team_member .info .job_title.line,#footer_main #contact_form .copyright.title,#footer_main #contact_form .social.title,#footer_main #contact_form .tagline.title,#footer_main #contact_form .title.address,#footer_main #contact_form .title.contact,#footer_main #contact_methods .copyright.line,#footer_main #contact_methods .line.address,#footer_main #contact_methods .line.contact,#footer_main #contact_methods .social.line,#footer_main #contact_methods .tagline.line,#footer_main #home_welcome .copyright.message,#footer_main #home_welcome .message.address,#footer_main #home_welcome .message.contact,#footer_main #home_welcome .social.message,#footer_main #home_welcome .tagline.message,#footer_main #nav_main_open .secondary ul.address,#footer_main #nav_main_open .secondary ul.contact,#footer_main #the_universe .copyright.quote,#footer_main #the_universe .quote.address,#footer_main #the_universe .quote.contact,#footer_main #the_universe .social.quote,#footer_main #the_universe .tagline.quote,#footer_main .address,#footer_main .case_story_quotes .copyright.quote,#footer_main .case_story_quotes .quote.address,#footer_main .case_story_quotes .quote.contact,#footer_main .case_story_quotes .social.quote,#footer_main .case_story_quotes .tagline.quote,#footer_main .case_story_stats .copyright.stat,#footer_main .case_story_stats .social.stat,#footer_main .case_story_stats .stat.address,#footer_main .case_story_stats .stat.contact,#footer_main .case_story_stats .tagline.stat,#footer_main .contact,#footer_main .copyright.address,#footer_main .copyright.contact,#footer_main .five_facts .copyright.description,#footer_main .five_facts .description.address,#footer_main .five_facts .description.contact,#footer_main .five_facts .social.description,#footer_main .five_facts .tagline.description,#footer_main .intro_icon .content.address,#footer_main .intro_icon .content.contact,#footer_main .intro_icon .copyright.content,#footer_main .intro_icon .social.content,#footer_main .intro_icon .tagline.content,#footer_main .p.copyright,#footer_main .p.social,#footer_main .p.tagline,#footer_main .social.address,#footer_main .social.contact,#footer_main .tagline.address,#footer_main .tagline.contact,#footer_main .team_member .info .job_title.address,#footer_main .team_member .info .job_title.contact,#footer_main .team_member_detail .copyright.stat,#footer_main .team_member_detail .social.stat,#footer_main .team_member_detail .stat.address,#footer_main .team_member_detail .stat.contact,#footer_main .team_member_detail .tagline.stat,#footer_main .verbose_cta .content.address,#footer_main .verbose_cta .content.contact,#footer_main .verbose_cta .copyright.content,#footer_main .verbose_cta .social.content,#footer_main .verbose_cta .tagline.content,#footer_main p .address,#footer_main p .contact,#footer_main p .copyright,#footer_main p .social,#footer_main p .tagline,#home_welcome #footer_main .copyright.message,#home_welcome #footer_main .message.address,#home_welcome #footer_main .message.contact,#home_welcome #footer_main .social.message,#home_welcome #footer_main .tagline.message,#home_welcome #nav_main_open .secondary ul.message,#home_welcome .h5.message,#home_welcome .team_member .info .job_title.message,#nav_main_open .secondary #contact_form ul.title,#nav_main_open .secondary #contact_methods ul.line,#nav_main_open .secondary #footer_main ul.address,#nav_main_open .secondary #footer_main ul.contact,#nav_main_open .secondary #home_welcome ul.message,#nav_main_open .secondary #the_universe ul.quote,#nav_main_open .secondary .case_story_quotes ul.quote,#nav_main_open .secondary .case_story_stats ul.stat,#nav_main_open .secondary .five_facts ul.description,#nav_main_open .secondary .intro_icon ul.content,#nav_main_open .secondary .team_member_detail ul.stat,#nav_main_open .secondary .verbose_cta ul.content,#nav_main_open .secondary p ul,#nav_main_open .secondary ul.p,#the_universe #footer_main .copyright.quote,#the_universe #footer_main .quote.address,#the_universe #footer_main .quote.contact,#the_universe #footer_main .social.quote,#the_universe #footer_main .tagline.quote,#the_universe #nav_main_open .secondary ul.quote,#the_universe .case_story_quotes .h5.quote,#the_universe .h5.quote,#the_universe .team_member .info .case_story_quotes .quote.job_title,#the_universe .team_member .info .quote.job_title,.case_story_quotes #footer_main .copyright.quote,.case_story_quotes #footer_main .quote.address,.case_story_quotes #footer_main .quote.contact,.case_story_quotes #footer_main .social.quote,.case_story_quotes #footer_main .tagline.quote,.case_story_quotes #nav_main_open .secondary ul.quote,.case_story_quotes #the_universe .h5.quote,.case_story_quotes #the_universe .team_member .info .quote.job_title,.case_story_quotes .h5.quote,.case_story_quotes .team_member .info #the_universe .quote.job_title,.case_story_quotes .team_member .info .job_title.quote,.case_story_stats #footer_main .copyright.stat,.case_story_stats #footer_main .social.stat,.case_story_stats #footer_main .stat.address,.case_story_stats #footer_main .stat.contact,.case_story_stats #footer_main .tagline.stat,.case_story_stats #nav_main_open .secondary ul.stat,.case_story_stats .h5.stat,.case_story_stats .team_member .info .job_title.stat,.five_facts #footer_main .copyright.description,.five_facts #footer_main .description.address,.five_facts #footer_main .description.contact,.five_facts #footer_main .social.description,.five_facts #footer_main .tagline.description,.five_facts #nav_main_open .secondary ul.description,.five_facts .h5.description,.five_facts .team_member .info .description.job_title,.h5.p,.intro_icon #footer_main .content.address,.intro_icon #footer_main .content.contact,.intro_icon #footer_main .copyright.content,.intro_icon #footer_main .social.content,.intro_icon #footer_main .tagline.content,.intro_icon #nav_main_open .secondary ul.content,.intro_icon .h5.content,.intro_icon .team_member .info .content.job_title,.team_member .info #contact_form .job_title.title,.team_member .info #contact_methods .job_title.line,.team_member .info #footer_main .job_title.address,.team_member .info #footer_main .job_title.contact,.team_member .info #home_welcome .job_title.message,.team_member .info #the_universe .case_story_quotes .quote.job_title,.team_member .info #the_universe .quote.job_title,.team_member .info .case_story_quotes .job_title.quote,.team_member .info .case_story_stats .job_title.stat,.team_member .info .five_facts .description.job_title,.team_member .info .intro_icon .content.job_title,.team_member .info .p.job_title,.team_member .info .team_member_detail .job_title.stat,.team_member .info .verbose_cta .job_title.content,.team_member .info p .job_title,.team_member_detail #footer_main .copyright.stat,.team_member_detail #footer_main .social.stat,.team_member_detail #footer_main .stat.address,.team_member_detail #footer_main .stat.contact,.team_member_detail #footer_main .tagline.stat,.team_member_detail #nav_main_open .secondary ul.stat,.team_member_detail .h5.stat,.team_member_detail .team_member .info .job_title.stat,.verbose_cta #footer_main .content.address,.verbose_cta #footer_main .content.contact,.verbose_cta #footer_main .copyright.content,.verbose_cta #footer_main .social.content,.verbose_cta #footer_main .tagline.content,.verbose_cta #nav_main_open .secondary ul.content,.verbose_cta .h5.content,.verbose_cta .team_member .info .job_title.content,p #footer_main .address,p #footer_main .contact,p #footer_main .copyright,p #footer_main .social,p #footer_main .tagline,p #nav_main_open .secondary ul,p .h5,p .team_member .info .job_title {
+	line-height:1.625em
+}
+@media only screen and (min-width:1024px) {
+	#footer_main .address,#footer_main .contact,#footer_main .copyright,#footer_main .social,#footer_main .tagline,#nav_main_open .secondary ul,.h5,.team_member .info .job_title {
+		font-size:1.07143em
+	}
+}
+@media only screen and (min-width:1268px) {
+	#footer_main .address,#footer_main .contact,#footer_main .copyright,#footer_main .social,#footer_main .tagline,#nav_main_open .secondary ul,.h5,.team_member .info .job_title {
+		font-size:1.14286em
+	}
+}
+#contact_form .subtitle,#contact_methods h2,#nav_main_open .label,#the_universe .attribution,.case_story_quotes .name,.case_story_stats .quantity,.case_story_stats .title,.case_story_teaser .subtitle,.case_story_walkthrough .subtitle,.five_facts .title,.full_screen_billboard .subtitle,.h_label,.input_button,.input_label,.intro_billboard .subtitle,.intro_icon .intro,.services_list .title,.split_billboard .subtitle,.team_member .info .name,.team_member_detail .stat .quantity,.team_member_detail .who .title,.testimonial .attribution .name,.title_break .title,.verbose_cta .intro {
+	font-family:BrandonText,"Avenir Next","Helvetica Neue",Helvetica,sans-serif;
+	font-size:.85714em;
+	font-weight:900;
+	letter-spacing:.2em;
+	line-height:1.2em;
+	margin-bottom:1em;
+	text-transform:uppercase
+}
+@media only screen and (min-width:650px) {
+	#contact_form .subtitle,#contact_methods h2,#nav_main_open .label,#the_universe .attribution,.case_story_quotes .name,.case_story_stats .quantity,.case_story_stats .title,.case_story_teaser .subtitle,.case_story_walkthrough .subtitle,.five_facts .title,.full_screen_billboard .subtitle,.h_label,.input_button,.input_label,.intro_billboard .subtitle,.intro_icon .intro,.services_list .title,.split_billboard .subtitle,.team_member .info .name,.team_member_detail .stat .quantity,.team_member_detail .who .title,.testimonial .attribution .name,.title_break .title,.verbose_cta .intro {
+		font-size:.92857em
+	}
+}
+@media only screen and (min-width:1024px) {
+	#contact_form .subtitle,#contact_methods h2,#nav_main_open .label,#the_universe .attribution,.case_story_quotes .name,.case_story_stats .quantity,.case_story_stats .title,.case_story_teaser .subtitle,.case_story_walkthrough .subtitle,.five_facts .title,.full_screen_billboard .subtitle,.h_label,.input_button,.input_label,.intro_billboard .subtitle,.intro_icon .intro,.services_list .title,.split_billboard .subtitle,.team_member .info .name,.team_member_detail .stat .quantity,.team_member_detail .who .title,.testimonial .attribution .name,.title_break .title,.verbose_cta .intro {
+		font-size:1em
+	}
+}
+#contact_form .title,#contact_methods .line,#footer_main .address,#footer_main .contact,#home_welcome .message,#the_universe .quote,.case_story_quotes .quote,.case_story_stats .stat,.five_facts .description,.intro_icon .content,.p,.team_member_detail .stat,.verbose_cta .content,p {
+	line-height:1.77778em;
+	margin-bottom:1em
+}
+@media only screen and (min-width:650px) {
+	#contact_form .article.title,#contact_form article .title,#contact_methods .article.line,#contact_methods article .line,#footer_main .article.address,#footer_main .article.contact,#footer_main article .address,#footer_main article .contact,#home_welcome .article.message,#home_welcome article .message,#the_universe .article.quote,#the_universe article .quote,.case_story_quotes .article.quote,.case_story_quotes article .quote,.case_story_stats .article.stat,.case_story_stats article .stat,.five_facts .article.description,.five_facts article .description,.intro_icon .article.content,.intro_icon article .content,.p.article,.team_member_detail .article.stat,.team_member_detail article .stat,.verbose_cta .article.content,.verbose_cta article .content,article #contact_form .title,article #contact_methods .line,article #footer_main .address,article #footer_main .contact,article #home_welcome .message,article #the_universe .quote,article .case_story_quotes .quote,article .case_story_stats .stat,article .five_facts .description,article .intro_icon .content,article .p,article .team_member_detail .stat,article .verbose_cta .content,article p,p.article {
+		font-size:1.07143em
+	}
+}
+@media only screen and (min-width:1024px) {
+	#contact_form .article.title,#contact_form article .title,#contact_methods .article.line,#contact_methods article .line,#footer_main .article.address,#footer_main .article.contact,#footer_main article .address,#footer_main article .contact,#home_welcome .article.message,#home_welcome article .message,#the_universe .article.quote,#the_universe article .quote,.case_story_quotes .article.quote,.case_story_quotes article .quote,.case_story_stats .article.stat,.case_story_stats article .stat,.five_facts .article.description,.five_facts article .description,.intro_icon .article.content,.intro_icon article .content,.p.article,.team_member_detail .article.stat,.team_member_detail article .stat,.verbose_cta .article.content,.verbose_cta article .content,article #contact_form .title,article #contact_methods .line,article #footer_main .address,article #footer_main .contact,article #home_welcome .message,article #the_universe .quote,article .case_story_quotes .quote,article .case_story_stats .stat,article .five_facts .description,article .intro_icon .content,article .p,article .team_member_detail .stat,article .verbose_cta .content,article p,p.article {
+		font-size:1.14286em
+	}
+}
+@media only screen and (min-width:1268px) {
+	#contact_form .article.title,#contact_form article .title,#contact_methods .article.line,#contact_methods article .line,#footer_main .article.address,#footer_main .article.contact,#footer_main article .address,#footer_main article .contact,#home_welcome .article.message,#home_welcome article .message,#the_universe .article.quote,#the_universe article .quote,.case_story_quotes .article.quote,.case_story_quotes article .quote,.case_story_stats .article.stat,.case_story_stats article .stat,.five_facts .article.description,.five_facts article .description,.intro_icon .article.content,.intro_icon article .content,.p.article,.team_member_detail .article.stat,.team_member_detail article .stat,.verbose_cta .article.content,.verbose_cta article .content,article #contact_form .title,article #contact_methods .line,article #footer_main .address,article #footer_main .contact,article #home_welcome .message,article #the_universe .quote,article .case_story_quotes .quote,article .case_story_stats .stat,article .five_facts .description,article .intro_icon .content,article .p,article .team_member_detail .stat,article .verbose_cta .content,article p,p.article {
+		font-size:1.28571em
+	}
+}
+.caption,.case_story_walkthrough .hero_wrapper figcaption {
+	color:#666;
+	font-family:GalaxieCopernicus,Georgia,serif;
+	font-size:.92857em;
+	font-weight:400;
+	line-height:1.5em;
+	margin-bottom:1em;
+	text-align:left
+}
+@media only screen and (min-width:1024px) {
+	.caption,.case_story_walkthrough .hero_wrapper figcaption {
+		font-size:1em
+	}
+}
+@media only screen and (min-width:1268px) {
+	.caption,.case_story_walkthrough .hero_wrapper figcaption {
+		font-size:1.07143em
+	}
+}
+.caption:before,.case_story_walkthrough .hero_wrapper figcaption:before {
+	color:#1f1f1f;
+	font-size:.78571em;
+	font-weight:900;
+	letter-spacing:.2em;
+	text-transform:uppercase;
+	display:block;
+	font-family:BrandonText,"Avenir Next","Helvetica Neue",Helvetica,sans-serif;
+	line-height:1;
+	margin-bottom:.5em
+}
+#the_universe .quote,.quote {
+	text-indent:-.7em
+}
+#home_welcome .content,.content_wrapper {
+	margin:0 20px;
+	max-width:1180px;
+	position:relative
+}
+@media only screen and (min-width:1221px) {
+	#home_welcome .content,.content_wrapper {
+		margin:0 auto
+	}
+}
+#home_welcome .pad_top.content,.content_wrapper.pad_top {
+	padding-top:3em
+}
+*,:after,:before {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+a,a:active,a:focus,a:hover {
+	outline:0
+}
+
+#home_welcome .content,#nav_main_closed,.case_story_stats,.case_story_stats .content_wrapper,.content_wrapper,.form_controls,.form_field_full,.photo_grid .photos,.services_list {
+	zoom:1
+}
+#home_welcome .content:after,#home_welcome .content:before,#nav_main_closed:after,#nav_main_closed:before,.case_story_stats .content_wrapper:after,.case_story_stats .content_wrapper:before,.case_story_stats:after,.case_story_stats:before,.content_wrapper:after,.content_wrapper:before,.form_controls:after,.form_controls:before,.form_field_full:after,.form_field_full:before,.photo_grid .photos:after,.photo_grid .photos:before,.services_list:after,.services_list:before {
+	content:"\0020";
+	display:block;
+	height:0;
+	overflow:hidden
+}
+#home_welcome .content:after,#nav_main_closed:after,.case_story_stats .content_wrapper:after,.case_story_stats:after,.content_wrapper:after,.form_controls:after,.form_field_full:after,.photo_grid .photos:after,.services_list:after {
+	clear:both
+}
+#case_story.tnw .case_story_quotes .bg,.case_story_teaser .bg,.testimonial .bg {
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:0;
+	padding-top:200%;
+	position:absolute;
+	top:0;
+	width:100%
+}
+@media only screen and (min-width:532px) {
+	#case_story.tnw .case_story_quotes .bg,.case_story_teaser .bg,.testimonial .bg {
+		padding-top:150%
+	}
+}
+@media only screen and (min-width:768px) {
+	#case_story.tnw .case_story_quotes .bg,.case_story_teaser .bg,.testimonial .bg {
+		padding-top:85%
+	}
+}
+@media only screen and (min-width:1024px) {
+	#case_story.tnw .case_story_quotes .bg,.case_story_teaser .bg,.testimonial .bg {
+		padding-top:70%
+	}
+}
+@media only screen and (min-width:1268px) {
+	#case_story.tnw .case_story_quotes .bg,.case_story_teaser .bg,.testimonial .bg {
+		background-size:contain;
+		padding-top:56.25%
+	}
+}
+.case_story_stats .stat,.case_story_walkthrough .img_grid li,.intro_icon .content,.intro_icon .intro {
+	opacity:0;
+	-moz-transition:all .2s;
+	-o-transition:all .2s;
+	-webkit-transition:all .2s;
+	transition:all .2s;
+	-moz-transform:translateY(50px);
+	-ms-transform:translateY(50px);
+	-webkit-transform:translateY(50px);
+	transform:translateY(50px)
+}
+.case_story_stats .show.stat,.case_story_walkthrough .img_grid li.show,.intro_icon .show.content,.intro_icon .show.intro {
+	opacity:1;
+	-moz-transform:translateY(0);
+	-ms-transform:translateY(0);
+	-webkit-transform:translateY(0);
+	transform:translateY(0)
+}
+.verbose_cta .action a {
+	color:#fff;
+	font-weight:500
+}
+@media only screen and (min-width:1024px) {
+	.verbose_cta .action a {
+		-moz-transition:color .2s ease-out;
+		-o-transition:color .2s ease-out;
+		-webkit-transition:color .2s ease-out;
+		transition:color .2s ease-out
+	}
+	.verbose_cta .action a:hover {
+		color:#fff700
+	}
+}
+#footer_main .logo,#footer_main .social a,#home_welcome #nav_main_closed .content:before,#lightbox .close,#nav_main_closed #home_welcome .content:before,#nav_main_closed .content_wrapper:before,#nav_main_closed .dinng,#nav_main_closed .menu,#nav_main_open .close,#rocket_man,.clients_list .client,.input_required_mark,.intro_icon .icon,.pagination_nav a,.team_member_detail .mobile_slide_nav a {
+	background-repeat:no-repeat;
+	display:block;
+	overflow:hidden;
+	text-indent:1000%;
+	white-space:nowrap
+}
+#footer_main {
+	zoom:1;
+	background:#fff700;
+	bottom:0;
+	color:#736f00;
+	padding:75px 0;
+	position:-webkit-sticky;
+	position:sticky;
+	width:100%;
+	z-index:-2
+}
+#footer_main:after,#footer_main:before {
+	content:"\0020";
+	display:block;
+	height:0;
+	overflow:hidden
+}
+#footer_main:after {
+	clear:both
+}
+@media only screen and (min-width:1024px) {
+	#footer_main {
+		padding:90px 0
+	}
+}
+#case_story.lagoon #footer_main {
+	background:#ff0683
+}
+#case_story.stance #footer_main,#case_story.tnw #footer_main {
+	background:#fff
+}
+#footer_main .address,#footer_main .contact {
+	color:#736f00;
+	margin-bottom:1em
+}
+@media only screen and (min-width:650px) {
+	#footer_main .address,#footer_main .contact {
+		margin-bottom:2em
+	}
+}
+#case_story.lagoon #footer_main .address,#case_story.lagoon #footer_main .contact {
+	color:#012841
+}
+#case_story.stance #footer_main .address,#case_story.stance #footer_main .contact,#case_story.tnw #footer_main .address,#case_story.tnw #footer_main .contact {
+	color:#666
+}
+#footer_main .address a,#footer_main .contact a {
+	color:#736f00;
+	display:block
+}
+@media only screen and (min-width:1024px) {
+	#footer_main .address a,#footer_main .contact a {
+		-moz-transition:color .2s ease-out;
+		-o-transition:color .2s ease-out;
+		-webkit-transition:color .2s ease-out;
+		transition:color .2s ease-out
+	}
+	#footer_main .address a:hover,#footer_main .contact a:hover {
+		color:#000
+	}
+	#case_story.lagoon #footer_main .address a:hover,#case_story.lagoon #footer_main .contact a:hover {
+		color:#060003
+	}
+	#case_story.stance #footer_main .address a:hover,#case_story.stance #footer_main .contact a:hover,#case_story.tnw #footer_main .address a:hover,#case_story.tnw #footer_main .contact a:hover {
+		color:#4c4c4c
+	}
+}
+#case_story.lagoon #footer_main .address a,#case_story.lagoon #footer_main .contact a {
+	color:#6c0036
+}
+#case_story.stance #footer_main .address a,#case_story.stance #footer_main .contact a,#case_story.tnw #footer_main .address a,#case_story.tnw #footer_main .contact a {
+	color:#666
+}
+#footer_main .address .line,#footer_main .contact .line {
+	display:block
+}
+@media only screen and (min-width:650px) {
+	#footer_main .address {
+		float:right;
+		width:18em
+	}
+}
+#footer_main .brand {
+	margin-top:2em
+}
+@media only screen and (min-width:650px) {
+	#footer_main .brand {
+		margin-top:0;
+		position:absolute
+	}
+}
+@media only screen and (min-width:650px) {
+	#footer_main .contact {
+		float:right;
+		width:10em
+	}
+}
+#footer_main .copyright,#footer_main .tagline {
+	color:#a6a000;
+	font-family:BrandonText,"Avenir Next","Helvetica Neue",Helvetica,sans-serif
+}
+#case_story.lagoon #footer_main .copyright,#case_story.lagoon #footer_main .tagline {
+	color:#9f0050
+}
+#case_story.stance #footer_main .copyright,#case_story.stance #footer_main .tagline,#case_story.tnw #footer_main .copyright,#case_story.tnw #footer_main .tagline {
+	color:#999
+}
+@media only screen and (min-width:650px) {
+	#footer_main .copyright {
+		clear:both;
+		float:right;
+		width:10em
+	}
+}
+#footer_main .logo {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2065%2050%22%20enable-background%3D%22new%200%200%2065%2050%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M14.0244761%2C14.8244886h-1.1316042v20.3429146h1.1316042%20c0.7413101%2C0%2C1.0140152-0.4646378%2C1.0140152-1.6280556V16.4521503%20C15.0384912%2C15.2895241%2C14.7657862%2C14.8244886%2C14.0244761%2C14.8244886z%22%2F%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M61.0495758%2C4.5135045c-0.2531891-0.6994965-1.0518646-1.4112117-1.7556458-1.5720417%20c-17.5396156-3.9529953-35.0798645-3.9529953-52.6198006%2C0c-0.7034636%2C0.16083-1.5023775%2C0.8725452-1.7558813%2C1.5720417%20c-4.8900476%2C13.6421623-4.8900476%2C27.2845612%2C0%2C40.9266434c0.2537417%2C0.6994171%2C1.0521007%2C1.4111328%2C1.7558813%2C1.5721207%20c17.5399323%2C3.9525986%2C35.0801849%2C3.9525986%2C52.6198006%2C0c0.7037811-0.1609879%2C1.5024567-0.8727036%2C1.7556458-1.5721207%20C65.9402542%2C31.7980652%2C65.9402542%2C18.1556664%2C61.0495758%2C4.5135045z%20M17.7306309%2C22.6491508%20c-0.6223736%2C0.6168213-0.9795799%2C1.4256535-0.9795799%2C2.3473911c0%2C0.922533%2C0.3572063%2C1.7692909%2C0.9795799%2C2.4281635v5.8822441%20c0%2C3.3721962-1.4829369%2C4.5725899-3.5504827%2C4.5725899h-4.0183744V12.0738726h4.0183744%20c2.0675459%2C0%2C3.5504827%2C1.2009497%2C3.5504827%2C4.5723543V22.6491508z%20M23.2698708%2C37.8795395h-2.7310181V12.0738726h2.7310181%20V37.8795395z%20M34.3872299%2C37.8811264h-2.3800011V21.1420918l-0.6626816%2C3.7194862l-3.0045967%2C13.0195484h-2.145462V12.0754595%20h2.3798428v16.7774353l0.5847664-3.7584419l2.4977474-13.0189943h2.7303848V37.8811264z%20M45.4277039%2C37.8811264h-2.1453819%20L40.2785187%2C24.861578l-0.6632385-3.7194862v16.7390347h-2.3800011V12.0754595h2.7308617l2.4967155%2C13.0189943l0.5849228%2C3.7584419%20V12.0754595h2.3799248V37.8811264z%20M55.8061295%2C37.8795395H54.401741l-0.5075645-1.1231117%20c-0.4290924%2C0.9679947-1.3253593%2C1.433506-2.3788109%2C1.433506c-1.7562752%2C0-3.3952065-1.3947868-3.3952065-4.4174728v-6.452013%20c0.6317368-0.6183281%2C0.9958458-1.4323177%2C0.9958458-2.3622284c0-0.9292774-0.364109-1.7813511-0.9958458-2.4426823v-6.3350601%20c0-2.5961342%2C1.7177963-4.4166021%2C3.8237457-4.4166021c2.1070557%2C0%2C3.6287155%2C1.8204679%2C3.6287155%2C4.4166021v4.8825092h-2.4189606%20v-5.2313843c0-0.6967192-0.4686852-1.2390356-1.2097549-1.2390356c-0.7021141%2C0-1.1323967%2C0.5423164-1.1323967%2C1.2390356v18.444849%20c0%2C0.813118%2C0.3913231%2C1.3554344%2C1.1323967%2C1.3554344c0.7805061%2C0%2C1.1707993-0.5423164%2C1.1707993-1.3554344v-6.549366H52.100132%20V25.286068h3.7059975V37.8795395z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+	background-size:contain;
+	height:63px;
+	opacity:.55;
+	width:80px
+}
+#case_story.stance #footer_main .logo,#case_story.tnw #footer_main .logo {
+	opacity:1
+}
+@media only screen and (min-width:1024px) {
+	#footer_main .logo {
+		-moz-transition:opacity .2s ease-out;
+		-o-transition:opacity .2s ease-out;
+		-webkit-transition:opacity .2s ease-out;
+		transition:opacity .2s ease-out
+	}
+	#footer_main .logo:hover {
+		-moz-animation:tada .5s ease-out forwards;
+		-webkit-animation:tada .5s ease-out forwards;
+		animation:tada .5s ease-out forwards;
+		opacity:1
+	}
+}
+@media only screen and (min-width:650px) {
+	#footer_main .social {
+		float:right;
+		width:18em
+	}
+}
+#footer_main .social a {
+	background-position:center center;
+	background-size:100%;
+	display:inline-block;
+	height:16px;
+	margin-right:.5em;
+	opacity:.22;
+	width:16px
+}
+@media only screen and (min-width:1024px) {
+	#footer_main .social a {
+		-moz-transition:opacity .2s ease-out;
+		-o-transition:opacity .2s ease-out;
+		-webkit-transition:opacity .2s ease-out;
+		transition:opacity .2s ease-out
+	}
+	#footer_main .social a:hover {
+		-moz-animation:spin_and_catch .5s ease-out forwards;
+		-webkit-animation:spin_and_catch .5s ease-out forwards;
+		animation:spin_and_catch .5s ease-out forwards;
+		opacity:1
+	}
+}
+#footer_main .social a.behance {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M12.145813%2C12.3128052c0-1.5216064-1.187561-1.8739624-2.4783936-1.8739624H6.2718506v3.8329468h3.6658936%20C11.2285767%2C14.2717896%2C12.145813%2C13.7069092%2C12.145813%2C12.3128052z%22%2F%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M10.2080688%2C16.7289429H6.2718506v4.5223999h3.854187c1.479126%2C0%2C2.666687-0.5011597%2C2.666687-2.1685791%20S11.7904053%2C16.7289429%2C10.2080688%2C16.7289429z%22%2F%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M26.0015259%2C0H5.9984741C2.6879272%2C0%2C0%2C2.6879272%2C0%2C6.0015259v19.9969482%20C0%2C29.3120728%2C2.6879272%2C32%2C5.9984741%2C32h20.0030518C29.3120728%2C32%2C32%2C29.3120728%2C32%2C25.9984741V6.0015259%20C32%2C2.6879272%2C29.3120728%2C0%2C26.0015259%2C0z%20M20.0820312%2C8.7501831h6.6484375v1.6036377h-6.6484375V8.7501831z%20M10.6241455%2C24.0424805H2.666687V7.6446533h7.7296753c2.812439%2C0%2C5.248291%2C0.7926636%2C5.248291%2C4.0637817%20c0%2C1.6461182-0.7684326%2C2.7091675-2.2293091%2C3.4168091c2.0015259%2C0.5831909%2C2.9794922%2C2.1047974%2C2.9794922%2C4.1670532%20C16.3948364%2C22.6241455%2C13.6036377%2C24.0424805%2C10.6241455%2C24.0424805z%20M29.3120728%2C18.8944702h-8.5618896%20c0%2C1.8982544%2C0.9992676%2C3.0219727%2C2.9157104%2C3.0219727c0.9810181%2C0%2C2.2506104-0.5405884%2C2.5634155-1.5429077h2.8762207%20c-0.8777466%2C2.7092285-2.7091675%2C3.9818115-5.5641479%2C3.9818115c-3.7509766%2C0-6.0834961-2.520874-6.0834961-6.2293091%20c0-3.5626221%2C2.4783325-6.2930908%2C6.0834961-6.2930908c3.7296753%2C0%2C5.7919312%2C2.9369507%2C5.7919312%2C6.4388428%20C29.333313%2C18.4783325%2C29.333313%2C18.6879272%2C29.3120728%2C18.8944702z%22%2F%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M23.4593506%2C14.2930908c-1.5641479%2C0-2.605896%2C0.9779663-2.7091675%2C2.5390625h5.2908325%20C25.8952026%2C15.2710571%2C25.0842896%2C14.2930908%2C23.4593506%2C14.2930908z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E)
+}
+#footer_main .social a.facebook {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M26%2C32h-4V19.333334h4.2289753l0.6261406-4.666667H22v-2.9787235%20c0-1.3961506%2C0.5835857-2.333334%2C2.5835857-2.333334l2.7497463-0.0212765V5.0212765%20c-0.666666-0.0628166-2-0.1884499-3.7507591-0.1884499c-3.6859169%2C0-6.2492409%2C2.2502532-6.2492409%2C6.3758869v3.4579535h-4.666666%20v4.666667h4.666666V32H5.9999995c-3.3130701%2C0-6-2.6869297-6-6V6c0-3.3120568%2C2.6869302-6%2C6-6h20c3.3130684%2C0%2C6%2C2.6879432%2C6%2C6v20%20C32%2C29.3130703%2C29.3130684%2C32%2C26%2C32z%22%2F%3E%3C%2Fsvg%3E)
+}
+#footer_main .social a.instagram {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M32%2C27.896656C32%2C30.1458969%2C30.1458969%2C32%2C27.896656%2C32H4.103343%20c-2.2492402%2C0-4.1033435-1.8541031-4.1033435-4.103344V4.1043568C-0.0000006%2C1.8541033%2C1.8541028%2C0%2C4.103343%2C0H27.896656%20C30.1458969%2C0%2C32%2C1.8541033%2C32%2C4.1043568V27.896656z%20M28.3748722%2C13.5420465h-2.8125629%20c0.2715302%2C0.8541031%2C0.4174271%2C1.7912865%2C0.4174271%2C2.7294836c0%2C5.333334-4.4579544%2C9.6453896-9.9594727%2C9.6453896%20c-5.4792309%2C0-9.9371843-4.3120556-9.9371843-9.6453896c0-0.9381971%2C0.1458969-1.8753805%2C0.4174266-2.7294836H3.5623095v13.4994936%20c0%2C0.709219%2C0.5633233%2C1.2705173%2C1.2705166%2C1.2705173h22.2715302c0.7071934%2C0%2C1.2705154-0.5612984%2C1.2705154-1.2705173V13.5420465z%20M16.0202637%2C9.7082071c-3.5420475%2C0-6.4154015%2C2.7922993-6.4154015%2C6.2289762c0%2C3.4387035%2C2.873354%2C6.2289772%2C6.4154015%2C6.2289772%20c3.5623093%2C0%2C6.4376888-2.7902737%2C6.4376888-6.2289772C22.4579525%2C12.5005064%2C19.5825729%2C9.7082071%2C16.0202637%2C9.7082071z%20M28.3748722%2C5c0-0.7912869-0.6464024-1.43769-1.436676-1.43769h-3.6251259c-0.7923012%2C0-1.4387035%2C0.6464031-1.4387035%2C1.43769%20v3.4376898c0%2C0.7912865%2C0.6464024%2C1.4376898%2C1.4387035%2C1.4376898h3.6251259c0.7902737%2C0%2C1.436676-0.6464033%2C1.436676-1.4376898V5z%22%2F%3E%3C%2Fsvg%3E)
+}
+#footer_main .social a.linked_in {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M32%2C26c0%2C3.3130703-2.6869297%2C6-6%2C6H6c-3.3130698%2C0-6-2.6869297-6-6V6c0-3.3120568%2C2.6869302-6%2C6-6h20%20c3.3130703%2C0%2C6%2C2.6879432%2C6%2C6V26z%20M7.3758864%2C5.3748732c-1.6474161%2C0-2.7294831%2C1.0830803-2.7294831%2C2.5005069%20c0%2C1.3748736%2C1.0415401%2C2.4994931%2C2.6666665%2C2.4994931h0.0202637c1.687943%2C0%2C2.7294831-1.1246195%2C2.7294831-2.4994931%20C10.0425529%2C6.4579535%2C9.0212765%2C5.3748732%2C7.3758864%2C5.3748732z%20M9.7507601%2C26.7922993V12.333333H4.9381967v14.4589663H9.7507601z%20M27.0618038%2C26.7922993v-8.2917919c0-4.4376907-2.3748741-6.5005074-5.54002-6.5005074%20c-2.5835876%2C0-3.7304974%2C1.4376898-4.3546104%2C2.4376898h0.0405273V12.333333h-4.8125639c0%2C0%2C0.0628166%2C1.3546104%2C0%2C14.4589663%20h4.8125639v-8.0851059c0-0.4153996%2C0.0222893-0.8530903%2C0.1458969-1.1651459%20c0.3546085-0.8530903%2C1.1469097-1.750761%2C2.4802418-1.750761c1.7284698%2C0%2C2.4154015%2C1.3130703%2C2.4154015%2C3.272543v7.7284698%20H27.0618038z%22%2F%3E%3C%2Fsvg%3E)
+}
+#footer_main .social a.pinterest {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M32%2C6v20c0%2C3.3130703-2.6869297%2C6-6%2C6H10.8956432%20c0.6869307-0.9787235%2C1.8135767-2.666666%2C2.2492399-4.3748741c0%2C0%2C0.1884499-0.709219%2C1.1043568-4.3546085%20c0.563323%2C1.0618019%2C2.1681871%2C1.9797363%2C3.8763933%2C1.9797363c5.0820675%2C0%2C8.5410328-4.6464043%2C8.5410328-10.854104%20c0-4.6879425-3.9797363-9.0628166-10.0202637-9.0628166c-7.5217819%2C0-11.3130684%2C5.3961501-11.3130684%2C9.896656%20c0%2C2.7071934%2C1.0415397%2C5.1246204%2C3.2502532%2C6.0405273c0.3546095%2C0.1458969%2C0.6869297%2C0%2C0.7923002-0.3951378%20c0.0607901-0.2715302%2C0.2289762-0.9807491%2C0.3120565-1.272543c0.103343-0.3931103%2C0.0628166-0.5390072-0.2289772-0.873354%20c-0.6261396-0.7720356-1.0415401-1.7284698-1.0415401-3.126646c0-3.9989862%2C2.9989872-7.5612965%2C7.7912874-7.5612965%20c4.249239%2C0%2C6.5835857%2C2.5835867%2C6.5835857%2C6.0628166c0%2C4.5623093-2.0222893%2C8.4164124-5.0212765%2C8.4164124%20c-1.6453896%2C0-2.8956432-1.3738594-2.5005064-3.0638294c0.4802437-1.9979725%2C1.3961496-4.1661596%2C1.3961496-5.6028366%20c0-1.2917929-0.6869297-2.3748732-2.1256323-2.3748732c-1.6859169%2C0-3.0415401%2C1.7497463-3.0415401%2C4.0830803%20c0%2C0%2C0%2C1.4994936%2C0.5005064%2C2.5207701c-1.7284698%2C7.333334-2.0425529%2C8.6261387-2.0425529%2C8.6261387%20C9.4994936%2C28.6241131%2C9.6879435%2C30.8551159%2C9.8115501%2C32H6c-3.3130698%2C0-6-2.6869297-6-6V6c0-3.3120568%2C2.6869302-6%2C6-6h20%20C29.3130703%2C0%2C32%2C2.6879432%2C32%2C6z%22%2F%3E%3C%2Fsvg%3E)
+}
+#footer_main .social a.twitter {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M32%2C26c0%2C3.3130703-2.6869297%2C6-6%2C6H6c-3.3130698%2C0-6-2.6869297-6-6V6c0-3.3120568%2C2.6869302-6%2C6-6h20%20c3.3130703%2C0%2C6%2C2.6879432%2C6%2C6V26z%20M24.1458969%2C10.7497463c0.9159069-0.5410328%2C1.6048622-1.4164133%2C1.9371834-2.4376898%20C25.22999%2C8.8125629%2C24.2917938%2C9.1874371%2C23.290781%2C9.3748732C22.5005074%2C8.5207701%2C21.3535976%2C8%2C20.103344%2C8%20c-2.4154015%2C0-4.3748741%2C1.9584599-4.3748741%2C4.3748732c0%2C0.333334%2C0.0222902%2C0.6879435%2C0.1053705%2C1%20c-3.6453905-0.1874361-6.8753805-1.9169197-9.0415401-4.5835867C6.4174266%2C9.4376898%2C6.1884499%2C10.2087135%2C6.1884499%2C11%20c0%2C1.5207701%2C0.7071934%2C2.8541031%2C1.8946304%2C3.6453905C7.3535967%2C14.6251268%2C6.6666665%2C14.4164133%2C6%2C14.1043568%20c0%2C0%2C0%2C0.0202637%2C0%2C0.0415401c0%2C2.1256332%2C1.6048632%2C3.896656%2C3.6048632%2C4.2917938%20c-0.3748732%2C0.1033421-0.666667%2C0.1661587-1.0638294%2C0.1661587c-0.2695036%2C0-0.5410337-0.0425529-0.8125634-0.0830803%20c0.5633225%2C1.7304974%2C2.1681867%2C2.9989872%2C4.0830798%2C3.0415401c-1.4994936%2C1.1671734-3.3738604%2C1.8743668-5.436677%2C1.8743668%20c-0.35461%2C0-0.7092195-0.0202618-1.0415397-0.0607891c1.9371834%2C1.2279625%2C4.2289767%2C1.9574471%2C6.7092195%2C1.9574471%20c8.0405273%2C0%2C12.4579544-6.6666679%2C12.4579544-12.4579544c0-0.1874361%2C0-0.3748732-0.0222912-0.563323%20c0.8551178-0.6038494%2C1.6048641-1.3748732%2C2.1884499-2.2705164C25.8743668%2C10.3961496%2C25.0415401%2C10.6251268%2C24.1458969%2C10.7497463z%20%22%2F%3E%3C%2Fsvg%3E)
+}
+#footer_main .tagline {
+	font-weight:500;
+	margin-top:1em
+}
+@media only screen and (min-width:650px) {
+	#footer_main .tagline {
+		margin-top:22px
+	}
+}
+#lightbox {
+	height:100%;
+	left:0;
+	opacity:0;
+	position:fixed;
+	top:0;
+	visibility:hidden;
+	width:100%;
+	z-index:400
+}
+#lightbox.show {
+	opacity:1;
+	visibility:visible
+}
+#lightbox.show .content,#lightbox.show .overlay {
+	opacity:1
+}
+#lightbox.hiding .content {
+	opacity:0;
+	-moz-transition-delay:0s;
+	-o-transition-delay:0s;
+	-webkit-transition-delay:0s;
+	transition-delay:0s
+}
+#lightbox.hiding .overlay {
+	opacity:0;
+	-moz-transition-delay:.2s;
+	-o-transition-delay:.2s;
+	-webkit-transition-delay:.2s;
+	transition-delay:.2s
+}
+#lightbox .close {
+	background:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2050%2050%22%20enable-background%3D%22new%200%200%2050%2050%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M28.1753902%2C25.0023632l7.0231953-7.0123901c0.4279785-0.4273071%2C0.4226685-1.1409912-0.0119019-1.5750122%20l-1.5888062-1.5861807c-0.4345093-0.434021-1.1491089-0.439209-1.5772095-0.0119019l-7.0182514%2C7.0077505l-7.0122681-7.0227652%20c-0.4276123-0.4284058-1.1412964-0.4232178-1.5751343%2C0.0112915l-1.5863638%2C1.5886831%20c-0.4341431%2C0.4346313-0.4390259%2C1.1494141-0.0111084%2C1.5778198l7.0071402%2C7.0178833l-7.0228262%2C7.012331%20c-0.4284058%2C0.4276123-0.4232178%2C1.1412964%2C0.0112915%2C1.5750732l1.5886831%2C1.5864258%20c0.4346313%2C0.434082%2C1.1494141%2C0.4389648%2C1.5778198%2C0.0111084l7.0179443-7.007143l7.0124531%2C7.0231953%20c0.4273071%2C0.4280396%2C1.1409912%2C0.4227295%2C1.5750122-0.0119019l1.5861816-1.5888062%20c0.434021-0.4345093%2C0.439209-1.1491089%2C0.0119019-1.5772095L28.1753902%2C25.0023632z%22%2F%3E%3C%2Fsvg%3E);
+	cursor:pointer;
+	height:50px;
+	-moz-perspective:200px;
+	-webkit-perspective:200px;
+	perspective:200px;
+	right:0;
+	position:absolute;
+	top:0;
+	width:50px
+}
+html.cursor_enabled #lightbox .close:hover {
+	-moz-animation:wobble_up .4s ease-out forwards;
+	-webkit-animation:wobble_up .4s ease-out forwards;
+	animation:wobble_up .4s ease-out forwards
+}
+#lightbox .content {
+	cursor:pointer;
+	max-height:calc(100vh - 120px);
+	opacity:0;
+	position:relative;
+	top:50%;
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+	-moz-transition:opacity .2s ease-out .2s;
+	-o-transition:opacity .2s ease-out .2s;
+	-webkit-transition:opacity .2s ease-out;
+	-webkit-transition-delay:.2s;
+	transition:opacity .2s ease-out .2s
+}
+@media only screen and (min-width:1221px) {
+	#lightbox .content {
+		max-width:calc(100% - 40px)
+	}
+}
+#lightbox .content img {
+	display:block;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:100%
+}
+@media only screen and (orientation:landscape) {
+	#lightbox .content img {
+		max-height:100%;
+		width:auto
+	}
+}
+#lightbox .overlay {
+	background-color:#000;
+	cursor:pointer;
+	height:100%;
+	left:0;
+	opacity:0;
+	position:absolute;
+	top:0;
+	-moz-transition:opacity .2s ease-out;
+	-o-transition:opacity .2s ease-out;
+	-webkit-transition:opacity .2s ease-out;
+	transition:opacity .2s ease-out;
+	width:100%
+}
+#loader {
+	height:100%;
+	left:0;
+	overflow:hidden;
+	position:fixed;
+	top:0;
+	width:100%
+}
+#loader .mark {
+	height:100px;
+	margin:-50px auto 0;
+	opacity:0;
+	position:relative;
+	top:50%;
+	width:100px
+}
+#loader .mark path {
+	display:block;
+	-moz-transition:color .5s ease-out;
+	-o-transition:color .5s ease-out;
+	-webkit-transition:color .5s ease-out;
+	transition:color .5s ease-out
+}
+html.full_loader #loader .mark path {
+	-moz-transform-origin:center center;
+	-ms-transform-origin:center center;
+	-webkit-transform-origin:center center;
+	transform-origin:center center
+}
+#case_story.lagoon #loader .mark path {
+	fill:#ff0683
+}
+#case_story.stance #loader .mark path {
+	fill:#0084a9
+}
+#case_story.tnw #loader .mark path {
+	fill:#ff6000
+}
+html.full_loader #loader .mark .inner_1 {
+	-moz-transform:rotate(-45deg) translateX(-16px);
+	-ms-transform:rotate(-45deg) translateX(-16px);
+	-webkit-transform:rotate(-45deg) translateX(-16px);
+	transform:rotate(-45deg) translateX(-16px)
+}
+html.full_loader #loader .mark .inner_2 {
+	-moz-transform:rotate(-135deg) translateX(-16px);
+	-ms-transform:rotate(-135deg) translateX(-16px);
+	-webkit-transform:rotate(-135deg) translateX(-16px);
+	transform:rotate(-135deg) translateX(-16px)
+}
+html.full_loader #loader .mark .inner_3 {
+	-moz-transform:rotate(-225deg) translateX(-16px);
+	-ms-transform:rotate(-225deg) translateX(-16px);
+	-webkit-transform:rotate(-225deg) translateX(-16px);
+	transform:rotate(-225deg) translateX(-16px)
+}
+html.full_loader #loader .mark .inner_4 {
+	-moz-transform:rotate(-315deg) translateX(-16px);
+	-ms-transform:rotate(-315deg) translateX(-16px);
+	-webkit-transform:rotate(-315deg) translateX(-16px);
+	transform:rotate(-315deg) translateX(-16px)
+}
+html.full_loader #loader .mark .outer_1 {
+	-moz-transform:rotate(-45deg) translateX(-31px);
+	-ms-transform:rotate(-45deg) translateX(-31px);
+	-webkit-transform:rotate(-45deg) translateX(-31px);
+	transform:rotate(-45deg) translateX(-31px)
+}
+html.full_loader #loader .mark .outer_2 {
+	-moz-transform:rotate(-135deg) translateX(-31px);
+	-ms-transform:rotate(-135deg) translateX(-31px);
+	-webkit-transform:rotate(-135deg) translateX(-31px);
+	transform:rotate(-135deg) translateX(-31px)
+}
+html.full_loader #loader .mark .outer_3 {
+	-moz-transform:rotate(-225deg) translateX(-31px);
+	-ms-transform:rotate(-225deg) translateX(-31px);
+	-webkit-transform:rotate(-225deg) translateX(-31px);
+	transform:rotate(-225deg) translateX(-31px)
+}
+html.full_loader #loader .mark .outer_4 {
+	-moz-transform:rotate(-315deg) translateX(-31px);
+	-ms-transform:rotate(-315deg) translateX(-31px);
+	-webkit-transform:rotate(-315deg) translateX(-31px);
+	transform:rotate(-315deg) translateX(-31px)
+}
+html.simple_loader #loader .mark .inner_1 {
+	-moz-transform:translate(12px,12px);
+	-ms-transform:translate(12px,12px);
+	-webkit-transform:translate(12px,12px);
+	transform:translate(12px,12px)
+}
+html.simple_loader #loader .mark .inner_2 {
+	-moz-transform:translate(12px,-12px);
+	-ms-transform:translate(12px,-12px);
+	-webkit-transform:translate(12px,-12px);
+	transform:translate(12px,-12px)
+}
+html.simple_loader #loader .mark .inner_3 {
+	-moz-transform:translate(-12px,-12px);
+	-ms-transform:translate(-12px,-12px);
+	-webkit-transform:translate(-12px,-12px);
+	transform:translate(-12px,-12px)
+}
+html.simple_loader #loader .mark .inner_4 {
+	-moz-transform:translate(-12px,12px);
+	-ms-transform:translate(-12px,12px);
+	-webkit-transform:translate(-12px,12px);
+	transform:translate(-12px,12px)
+}
+html.simple_loader #loader .mark .outer_1 {
+	-moz-transform:translate(24px,24px);
+	-ms-transform:translate(24px,24px);
+	-webkit-transform:translate(24px,24px);
+	transform:translate(24px,24px)
+}
+html.simple_loader #loader .mark .outer_2 {
+	-moz-transform:translate(24px,-24px);
+	-ms-transform:translate(24px,-24px);
+	-webkit-transform:translate(24px,-24px);
+	transform:translate(24px,-24px)
+}
+html.simple_loader #loader .mark .outer_3 {
+	-moz-transform:translate(-24px,-24px);
+	-ms-transform:translate(-24px,-24px);
+	-webkit-transform:translate(-24px,-24px);
+	transform:translate(-24px,-24px)
+}
+html.simple_loader #loader .mark .outer_4 {
+	-moz-transform:translate(-24px,24px);
+	-ms-transform:translate(-24px,24px);
+	-webkit-transform:translate(-24px,24px);
+	transform:translate(-24px,24px)
+}
+html.full_loader #loader.enter .mark .center {
+	-moz-animation:loader_loop_center 2s infinite;
+	-webkit-animation:loader_loop_center 2s infinite;
+	animation:loader_loop_center 2s infinite
+}
+html.full_loader #loader.enter .mark .inner_1 {
+	-moz-animation:loader_loop_inner_1 2s infinite;
+	-webkit-animation:loader_loop_inner_1 2s infinite;
+	animation:loader_loop_inner_1 2s infinite
+}
+html.full_loader #loader.enter .mark .inner_2 {
+	-moz-animation:loader_loop_inner_2 2s infinite .05s;
+	-webkit-animation:loader_loop_inner_2 2s infinite .05s;
+	animation:loader_loop_inner_2 2s infinite .05s
+}
+html.full_loader #loader.enter .mark .inner_3 {
+	-moz-animation:loader_loop_inner_3 2s infinite .1s;
+	-webkit-animation:loader_loop_inner_3 2s infinite .1s;
+	animation:loader_loop_inner_3 2s infinite .1s
+}
+html.full_loader #loader.enter .mark .inner_4 {
+	-moz-animation:loader_loop_inner_4 2s infinite .15s;
+	-webkit-animation:loader_loop_inner_4 2s infinite .15s;
+	animation:loader_loop_inner_4 2s infinite .15s
+}
+html.full_loader #loader.enter .mark .outer_1 {
+	-moz-animation:loader_loop_outer_1 2s infinite;
+	-webkit-animation:loader_loop_outer_1 2s infinite;
+	animation:loader_loop_outer_1 2s infinite
+}
+html.full_loader #loader.enter .mark .outer_2 {
+	-moz-animation:loader_loop_outer_2 2s infinite .07s;
+	-webkit-animation:loader_loop_outer_2 2s infinite .07s;
+	animation:loader_loop_outer_2 2s infinite .07s
+}
+html.full_loader #loader.enter .mark .outer_3 {
+	-moz-animation:loader_loop_outer_3 2s infinite .14s;
+	-webkit-animation:loader_loop_outer_3 2s infinite .14s;
+	animation:loader_loop_outer_3 2s infinite .14s
+}
+html.full_loader #loader.enter .mark .outer_4 {
+	-moz-animation:loader_loop_outer_4 2s infinite .21s;
+	-webkit-animation:loader_loop_outer_4 2s infinite .21s;
+	animation:loader_loop_outer_4 2s infinite .21s
+}
+html.simple_loader #loader.enter .mark {
+	-moz-animation:simple_loader_loop 1.5s infinite;
+	-webkit-animation:simple_loader_loop 1.5s infinite;
+	animation:simple_loader_loop 1.5s infinite
+}
+html.simple_loader #loader.enter .mark .center {
+	-moz-animation:simple_loader_loop_center 1.5s infinite;
+	-webkit-animation:simple_loader_loop_center 1.5s infinite;
+	animation:simple_loader_loop_center 1.5s infinite
+}
+#loader.enter .mark {
+	opacity:1;
+	-moz-transition:opacity .2s ease-out;
+	-o-transition:opacity .2s ease-out;
+	-webkit-transition:opacity .2s ease-out;
+	transition:opacity .2s ease-out
+}
+html.full_loader #loader.exit .mark {
+	opacity:0;
+	-moz-transition:all .5s ease-out;
+	-o-transition:all .5s ease-out;
+	-webkit-transition:all .5s ease-out;
+	transition:all .5s ease-out
+}
+html.full_loader #loader.exit .mark .center {
+	-moz-transition:all .3s cubic-bezier(.25,.46,.45,.94);
+	-o-transition:all .3s cubic-bezier(.25,.46,.45,.94);
+	-webkit-transition:all .3s cubic-bezier(.25,.46,.45,.94);
+	transition:all .3s cubic-bezier(.25,.46,.45,.94);
+	-moz-transform:scale(0);
+	-ms-transform:scale(0);
+	-webkit-transform:scale(0);
+	transform:scale(0)
+}
+html.full_loader #loader.exit .mark .inner_1,html.full_loader #loader.exit .mark .inner_2,html.full_loader #loader.exit .mark .inner_3,html.full_loader #loader.exit .mark .inner_4,html.full_loader #loader.exit .mark .outer_1,html.full_loader #loader.exit .mark .outer_2,html.full_loader #loader.exit .mark .outer_3,html.full_loader #loader.exit .mark .outer_4 {
+	-moz-transition:all .5s cubic-bezier(.25,.46,.45,.94);
+	-o-transition:all .5s cubic-bezier(.25,.46,.45,.94);
+	-webkit-transition:all .5s cubic-bezier(.25,.46,.45,.94);
+	transition:all .5s cubic-bezier(.25,.46,.45,.94);
+	-moz-transform:rotate(-360deg) translateX(0);
+	-ms-transform:rotate(-360deg) translateX(0);
+	-webkit-transform:rotate(-360deg) translateX(0);
+	transform:rotate(-360deg) translateX(0)
+}
+html.simple_loader #loader.exit .mark {
+	opacity:1
+}
+html.simple_loader #loader.exit .mark svg {
+	-moz-transform-origin:center center;
+	-ms-transform-origin:center center;
+	-webkit-transform-origin:center center;
+	transform-origin:center center;
+	-moz-transform:scale3d(0,0,0) rotate(90deg);
+	-ms-transform:scale3d(0,0,0) rotate(90deg);
+	-webkit-transform:scale3d(0,0,0) rotate(90deg);
+	transform:scale3d(0,0,0) rotate(90deg);
+	-moz-transition:all .5s cubic-bezier(.19,1,.22,1);
+	-o-transition:all .5s cubic-bezier(.19,1,.22,1);
+	-webkit-transition:all .5s cubic-bezier(.19,1,.22,1);
+	transition:all .5s cubic-bezier(.19,1,.22,1)
+}
+#nav_main_closed {
+	height:50px;
+	position:fixed;
+	-moz-transition:all .2s ease-out;
+	-o-transition:all .2s ease-out;
+	-webkit-transition:all .2s ease-out;
+	transition:all .2s ease-out;
+	width:100%;
+	z-index:200
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_closed {
+		background: url(../images/header/menusinhamburguesa.png)no-repeat !important;
+  		background-size: 100%;
+		height:80px;
+		width:80px;
+		display: block !important;
+	}
+}
+#home_welcome #nav_main_closed .content:before,#nav_main_closed #home_welcome .content:before,#nav_main_closed .content_wrapper:before {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2050%2030%22%20enable-background%3D%22new%200%200%2050%2030%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M10.1896%2C6.8032022c0-3.3169427-1.4399109-4.4984889-3.4474397-4.4984889H2.8404825v25.3900719h3.9016778%20c2.0075288%2C0%2C3.4474397-1.1810627%2C3.4474397-4.4990501v-5.7873077c-0.6043644-0.6486244-0.9512014-1.4816504-0.9512014-2.3891325%20c0-0.9067535%2C0.346837-1.702776%2C0.9512014-2.309721V6.8032022z%20M7.5756388%2C23.4244843%20c0%2C1.1444931-0.2647862%2C1.6019917-0.9846087%2C1.6019917H5.4922438V5.0110669h1.0987864%20c0.7198224%2C0%2C0.9846087%2C0.4574986%2C0.9846087%2C1.6015105V23.4244843z%22%2F%3E%3Crect%20x%3D%2212.916213%22%20y%3D%222.3047123%22%20fill%3D%22%23FFFFFF%22%20width%3D%222.6517615%22%20height%3D%2225.3900719%22%2F%3E%3Cpolygon%20fill%3D%22%23FFFFFF%22%20points%3D%2226.3624744%2C27.6962624%2024.0515995%2C27.6962624%2024.0515995%2C11.2269278%2023.4081745%2C14.8863935%2020.4908295%2C27.6962624%2018.407692%2C27.6962624%2018.407692%2C2.3062892%2020.718298%2C2.3062892%2020.718298%2C18.8134613%2021.2862034%2C15.115694%2023.7115192%2C2.3062892%2026.3624744%2C2.3062892%20%22%2F%3E%3Cpolygon%20fill%3D%22%23FFFFFF%22%20points%3D%2237.0824776%2C27.6962624%2034.9993172%2C27.6962624%2032.0827599%2C14.8863935%2031.4388332%2C11.2269278%2031.4388332%2C27.6962624%2029.1279507%2C27.6962624%2029.1279507%2C2.3062892%2031.7794361%2C2.3062892%2034.2036896%2C15.115694%2034.7716026%2C18.8134613%2034.7716026%2C2.3062892%2037.0824776%2C2.3062892%20%22%2F%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M47.1595192%2C27.6947842h-1.363533l-0.4928474-1.1050014C44.8864326%2C27.5420971%2C44.0162392%2C28%2C42.993309%2C28%20c-1.7052689%2C0-3.2965469-1.3721218-3.2965469-4.346344v-6.3479137c0.6133766-0.6084213%2C0.9669495-1.4092016%2C0.9669495-2.3239822%20c0-0.9145346-0.3535728-1.7527494-0.9669495-2.4034624V6.3452802C39.6967621%2C3.7909925%2C41.364666%2C2%2C43.4095116%2C2%20c2.0458603%2C0%2C3.5232162%2C1.7909925%2C3.5232162%2C4.3452802v4.804029h-2.3486633V6.0019889%20c0-0.6856079-0.4550362-1.2190604-1.1745529-1.2190604c-0.6818275%2C0-1.0995941%2C0.5334525-1.0995941%2C1.2190604v18.1476154%20c0%2C0.800169%2C0.3799858%2C1.333622%2C1.0995941%2C1.333622c0.7578278%2C0%2C1.1368408-0.533453%2C1.1368408-1.333622v-6.4437141h-0.9851418%20v-2.4016008h3.5983086V27.6947842z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+	background-size:contain;
+	content:'';
+	height:30px;
+	opacity:0;
+	position:fixed;
+	right:10px;
+	top:10px;
+	width:50px;
+	-moz-transition:none;
+	-o-transition:none;
+	-webkit-transition:none;
+	transition:none
+}
+@media only screen and (min-width:1024px) {
+	#home_welcome #nav_main_closed .content:before,#nav_main_closed #home_welcome .content:before,#nav_main_closed .content_wrapper:before {
+		height:40px;
+		top:20px;
+		width:66px
+	}
+}
+#error #nav_main_closed #home_welcome .content:before,#error #nav_main_closed .content_wrapper:before,#home_welcome #error #nav_main_closed .content:before {
+	opacity:1
+}
+#home_welcome #nav_main_closed.bg .content:before,#nav_main_closed.bg #home_welcome .content:before,#nav_main_closed.bg .content_wrapper:before {
+	opacity:1;
+	-moz-transition:opacity .2s ease-out .2s;
+	-o-transition:opacity .2s ease-out .2s;
+	-webkit-transition:opacity .2s ease-out;
+	-webkit-transition-delay:.2s;
+	transition:opacity .2s ease-out .2s
+}
+#nav_main_closed.bg .dinng {
+	opacity:0;
+	pointer-events:none
+}
+#nav_main_closed.alt_yellow.bg {
+	background-color:rgba(255,247,0,.8)
+}
+#case_story.lagoon #nav_main_closed.alt_yellow.bg {
+	background-color:rgba(255,6,131,.8)
+}
+#case_story.stance #nav_main_closed.alt_yellow.bg {
+	background-color:rgba(255,255,255,.8)
+}
+#case_story.tnw #nav_main_closed.alt_yellow.bg {
+	background-color:rgba(27,162,170,.8)
+}
+#home_welcome #nav_main_closed.alt_yellow.bg .content:before,#nav_main_closed.alt_yellow.bg #home_welcome .content:before,#nav_main_closed.alt_yellow.bg .content_wrapper:before {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2050%2030%22%20enable-background%3D%22new%200%200%2050%2030%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M10.1896%2C6.8032022c0-3.3169427-1.4399109-4.4984889-3.4474397-4.4984889H2.8404825v25.3900719h3.9016778%20c2.0075288%2C0%2C3.4474397-1.1810627%2C3.4474397-4.4990501v-5.7873077c-0.6043644-0.6486244-0.9512014-1.4816504-0.9512014-2.3891325%20c0-0.9067535%2C0.346837-1.702776%2C0.9512014-2.309721V6.8032022z%20M7.5756388%2C23.4244843%20c0%2C1.1444931-0.2647862%2C1.6019917-0.9846087%2C1.6019917H5.4922438V5.0110669h1.0987864%20c0.7198224%2C0%2C0.9846087%2C0.4574986%2C0.9846087%2C1.6015105V23.4244843z%22%2F%3E%3Crect%20x%3D%2212.916213%22%20y%3D%222.3047123%22%20fill%3D%22%23000000%22%20width%3D%222.6517615%22%20height%3D%2225.3900719%22%2F%3E%3Cpolygon%20fill%3D%22%23000000%22%20points%3D%2226.3624744%2C27.6962624%2024.0515995%2C27.6962624%2024.0515995%2C11.2269278%2023.4081745%2C14.8863935%2020.4908295%2C27.6962624%2018.407692%2C27.6962624%2018.407692%2C2.3062892%2020.718298%2C2.3062892%2020.718298%2C18.8134613%2021.2862034%2C15.115694%2023.7115192%2C2.3062892%2026.3624744%2C2.3062892%20%22%2F%3E%3Cpolygon%20fill%3D%22%23000000%22%20points%3D%2237.0824776%2C27.6962624%2034.9993172%2C27.6962624%2032.0827599%2C14.8863935%2031.4388332%2C11.2269278%2031.4388332%2C27.6962624%2029.1279507%2C27.6962624%2029.1279507%2C2.3062892%2031.7794361%2C2.3062892%2034.2036896%2C15.115694%2034.7716026%2C18.8134613%2034.7716026%2C2.3062892%2037.0824776%2C2.3062892%20%22%2F%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M47.1595192%2C27.6947842h-1.363533l-0.4928474-1.1050014C44.8864326%2C27.5420971%2C44.0162392%2C28%2C42.993309%2C28%20c-1.7052689%2C0-3.2965469-1.3721218-3.2965469-4.346344v-6.3479137c0.6133766-0.6084213%2C0.9669495-1.4092016%2C0.9669495-2.3239822%20c0-0.9145346-0.3535728-1.7527494-0.9669495-2.4034624V6.3452802C39.6967621%2C3.7909925%2C41.364666%2C2%2C43.4095116%2C2%20c2.0458603%2C0%2C3.5232162%2C1.7909925%2C3.5232162%2C4.3452802v4.804029h-2.3486633V6.0019889%20c0-0.6856079-0.4550362-1.2190604-1.1745529-1.2190604c-0.6818275%2C0-1.0995941%2C0.5334525-1.0995941%2C1.2190604v18.1476154%20c0%2C0.800169%2C0.3799858%2C1.333622%2C1.0995941%2C1.333622c0.7578278%2C0%2C1.1368408-0.533453%2C1.1368408-1.333622v-6.4437141h-0.9851418%20v-2.4016008h3.5983086V27.6947842z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E)
+}
+#nav_main_closed.alt_yellow .dinng {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2050%2050%22%20enable-background%3D%22new%200%200%2050%2050%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M17.4628906%2C21.4226074l5.625%2C1.2597656l0.4946289-5.6694336h2.8798828l0.5400391%2C5.7143555%20l5.4897461-1.3046875l0.8999023%2C2.7446289l-5.2646484%2C2.25l2.9248047%2C4.8598633l-2.2949219%2C1.7099609l-3.824707-4.3198242%20l-3.6899414%2C4.2749023l-2.3398438-1.6650391l2.9697266-4.9047852l-5.2646484-2.25L17.4628906%2C21.4226074z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E)
+}
+#nav_main_closed.alt_yellow .menu .bottom,#nav_main_closed.alt_yellow .menu .middle,#nav_main_closed.alt_yellow .menu .top {
+	background-color:#000
+}
+#nav_main_closed.alt_white.bg {
+	background-color:rgba(255,255,255,.15)
+}
+#nav_main_closed.hide {
+	overflow:hidden
+}
+#home_welcome #nav_main_closed.hide .content:before,#nav_main_closed.hide #home_welcome .content:before,#nav_main_closed.hide .content_wrapper:before {
+	opacity:0;
+	-moz-transform:scale(0);
+	-ms-transform:scale(0);
+	-webkit-transform:scale(0);
+	transform:scale(0);
+	-moz-transition:all .2s ease-out;
+	-o-transition:all .2s ease-out;
+	-webkit-transition:all .2s ease-out;
+	transition:all .2s ease-out
+}
+#nav_main_closed.hide.bg {
+	background:0 0
+}
+#nav_main_closed.hide .dinng {
+	opacity:0;
+	-moz-transform:rotate(-360deg) scale(0);
+	-ms-transform:rotate(-360deg) scale(0);
+	-webkit-transform:rotate(-360deg) scale(0);
+	transform:rotate(-360deg) scale(0)
+}
+#nav_main_closed.hide .menu {
+	overflow:visible;
+	pointer-events:none
+}
+#nav_main_closed.hide .menu .bottom {
+	-moz-animation:menu_exit .5s ease-out .2s forwards;
+	-webkit-animation:menu_exit .5s ease-out .2s forwards;
+	animation:menu_exit .5s ease-out .2s forwards;
+	-moz-transform-origin:-100% top;
+	-ms-transform-origin:-100% top;
+	-webkit-transform-origin:-100% top;
+	transform-origin:-100% top
+}
+#nav_main_closed.hide .menu .middle {
+	-moz-animation:menu_exit .5s ease-out .1s forwards;
+	-webkit-animation:menu_exit .5s ease-out .1s forwards;
+	animation:menu_exit .5s ease-out .1s forwards;
+	-moz-transform-origin:-100% top;
+	-ms-transform-origin:-100% top;
+	-webkit-transform-origin:-100% top;
+	transform-origin:-100% top
+}
+#nav_main_closed.hide .menu .top {
+	-moz-animation:menu_exit .5s ease-out forwards;
+	-webkit-animation:menu_exit .5s ease-out forwards;
+	animation:menu_exit .5s ease-out forwards;
+	-moz-transform-origin:-100% top;
+	-ms-transform-origin:-100% top;
+	-webkit-transform-origin:-100% top;
+	transform-origin:-100% top
+}
+#nav_main_closed.hide_universe {
+	overflow:hidden
+}
+#nav_main_closed.hide_universe.bg {
+	background:0 0
+}
+#error #nav_main_closed.hide_universe #home_welcome .content:before,#error #nav_main_closed.hide_universe .content_wrapper:before,#home_welcome #error #nav_main_closed.hide_universe .content:before {
+	opacity:0
+}
+#nav_main_closed.hide_universe .dinng {
+	opacity:0;
+	-moz-transform:rotate(-360deg) scale(0);
+	-ms-transform:rotate(-360deg) scale(0);
+	-webkit-transform:rotate(-360deg) scale(0);
+	transform:rotate(-360deg) scale(0)
+}
+#nav_main_closed.hide_universe .menu {
+	overflow:visible;
+	pointer-events:none
+}
+#nav_main_closed.hide_universe .menu .bottom {
+	-moz-animation:menu_exit_universe .4s cubic-bezier(.19,1,.22,1) .2s forwards;
+	-webkit-animation:menu_exit_universe .4s cubic-bezier(.19,1,.22,1) .2s forwards;
+	animation:menu_exit_universe .4s cubic-bezier(.19,1,.22,1) .2s forwards
+}
+#nav_main_closed.hide_universe .menu .middle {
+	-moz-animation:menu_exit_universe .4s cubic-bezier(.19,1,.22,1) .1s forwards;
+	-webkit-animation:menu_exit_universe .4s cubic-bezier(.19,1,.22,1) .1s forwards;
+	animation:menu_exit_universe .4s cubic-bezier(.19,1,.22,1) .1s forwards
+}
+#nav_main_closed.hide_universe .menu .top {
+	-moz-animation:menu_exit_universe .4s cubic-bezier(.19,1,.22,1) 0s forwards;
+	-webkit-animation:menu_exit_universe .4s cubic-bezier(.19,1,.22,1) 0s forwards;
+	animation:menu_exit_universe .4s cubic-bezier(.19,1,.22,1) 0s forwards
+}
+#snav_main_closed.scroll_hide {
+	-moz-transform:translateY(-200%);
+	-ms-transform:translateY(-200%);
+	-webkit-transform:translateY(-200%);
+	transform:translateY(-200%)
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_closed.show .menu:hover .bottom {
+		-moz-animation:menu_hover_bottom .4s ease-out forwards;
+		-webkit-animation:menu_hover_bottom .4s ease-out forwards;
+		animation:menu_hover_bottom .4s ease-out forwards
+	}
+	#nav_main_closed.show .menu:hover .top {
+		-moz-animation:menu_hover_top .4s ease-out forwards;
+		-webkit-animation:menu_hover_top .4s ease-out forwards;
+		animation:menu_hover_top .4s ease-out forwards
+	}
+}
+#home_welcome #nav_main_closed .content,#nav_main_closed #home_welcome .content,#nav_main_closed .content_wrapper {
+	margin-left:0;
+	margin-right:0
+}
+@media only screen and (min-width:1221px) {
+	#home_welcome #nav_main_closed .content,#nav_main_closed #home_welcome .content,#nav_main_closed .content_wrapper {
+		margin-left:auto;
+		margin-right:auto
+	}
+}
+#nav_main_closed .dinng,#nav_main_closed .menu {
+	height:50px;
+	position:relative;
+	width:50px
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_closed .dinng,#nav_main_closed .menu {
+		top:15px
+	}
+}
+#nav_main_closed .dinng {
+	background-image:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2050%2050%22%20enable-background%3D%22new%200%200%2050%2050%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M17.4628906%2C21.4226074l5.625%2C1.2597656l0.4946289-5.6694336h2.8798828l0.5400391%2C5.7143555%20l5.4897461-1.3046875l0.8999023%2C2.7446289l-5.2646484%2C2.25l2.9248047%2C4.8598633l-2.2949219%2C1.7099609l-3.824707-4.3198242%20l-3.6899414%2C4.2749023l-2.3398438-1.6650391l2.9697266-4.9047852l-5.2646484-2.25L17.4628906%2C21.4226074z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:100%;
+	float:right;
+	-moz-transition:opacity .4s ease-out,-moz-transform .4s ease-out;
+	-o-transition:opacity .4s ease-out,-o-transform .4s ease-out;
+	-webkit-transition:opacity .4s ease-out,-webkit-transform .4s ease-out;
+	transition:opacity .4s ease-out,transform .4s ease-out
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_closed .dinng {
+		right:15px
+	}
+	#nav_main_closed .dinng:hover {
+		-moz-animation:spin_and_catch .5s ease-out forwards;
+		-webkit-animation:spin_and_catch .5s ease-out forwards;
+		animation:spin_and_catch .5s ease-out forwards
+	}
+}
+@media only screen and (min-width:1340px) {
+	#nav_main_closed .dinng {
+		margin-left:80px
+	}
+}
+#error #nav_main_closed .dinng {
+	display:none
+}
+#nav_main_closed .menu {
+	float:left;
+	position:relative;
+	-moz-transition:opacity .4s ease-out,-moz-transform .4s ease-out;
+	-o-transition:opacity .4s ease-out,-o-transform .4s ease-out;
+	-webkit-transition:opacity .4s ease-out,-webkit-transform .4s ease-out;
+	transition:opacity .4s ease-out,transform .4s ease-out
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_closed .menu {
+		float: right;
+    	top: -22px;
+	}
+}
+@media only screen and (min-width:1340px) {
+	#nav_main_closed .menu {
+		margin-right:-80px
+	}
+}
+#nav_main_closed .menu.fade {
+	opacity:0;
+	-moz-transform:scale(.7);
+	-ms-transform:scale(.7);
+	-webkit-transform:scale(.7);
+	transform:scale(.7);
+	-moz-transition:none;
+	-o-transition:none;
+	-webkit-transition:none;
+	transition:none
+}
+#nav_main_closed .menu .bottom,#nav_main_closed .menu .middle,#nav_main_closed .menu .top {
+ 	background: #fff;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    display: block;
+    height: 3px;
+    left: 12.5px;
+    position: absolute;
+    width: 18px;
+
+}
+#nav_main_closed .menu .bottom {
+	top:23px
+}
+#nav_main_closed .menu .middle {
+	top:18px;
+	-moz-transform-origin:center center;
+	-ms-transform-origin:center center;
+	-webkit-transform-origin:center center;
+	transform-origin:center center
+}
+#nav_main_closed .menu .top {
+	top:13px
+}
+#nav_main_open {
+	height:100%;
+	position:fixed;
+	-moz-transition:background-color 1s ease-out;
+	-o-transition:background-color 1s ease-out;
+	-webkit-transition:background-color 1s ease-out;
+	transition:background-color 1s ease-out;
+	width:100%;
+	z-index:300
+}
+#nav_main_open.hide {
+	display:none
+}
+#nav_main_open.show {
+	background-color:transparent;
+	display:block
+}
+#nav_main_open.show.overlay {
+	background-color:rgba(0,0,0,.85)
+}
+#nav_main_open .background .layer {
+	background:#fff;
+	height:300%;
+	position:absolute;
+	-moz-transform:rotate(45deg) translate(-125%,0);
+	-ms-transform:rotate(45deg) translate(-125%,0);
+	-webkit-transform:rotate(45deg) translate(-125%,0);
+	transform:rotate(45deg) translate(-125%,0);
+	-moz-transform-origin:top right;
+	-ms-transform-origin:top right;
+	-webkit-transform-origin:top right;
+	transform-origin:top right;
+	width:200%
+}
+#case_story.lagoon #nav_main_open .background .layer {
+	background:#ff0683
+}
+#case_story.stance #nav_main_open .background .layer {
+	background:#0084a9
+}
+#case_story.tnw #nav_main_open .background .layer {
+	background:#1ba2aa
+}
+#nav_main_open .background .layer.show {
+	-moz-transform:rotate(15deg) translate(-10%,0);
+	-ms-transform:rotate(15deg) translate(-10%,0);
+	-webkit-transform:rotate(15deg) translate(-10%,0);
+	transform:rotate(15deg) translate(-10%,0);
+	-moz-transition:-moz-transform .5s cubic-bezier(.23,1,.32,1);
+	-o-transition:-o-transform .5s cubic-bezier(.23,1,.32,1);
+	-webkit-transition:-webkit-transform .5s cubic-bezier(.23,1,.32,1);
+	transition:transform .5s cubic-bezier(.23,1,.32,1)
+}
+#nav_main_open .background .layer.show.exit {
+	-moz-transform:rotate(0deg) translate(-150%,0);
+	-ms-transform:rotate(0deg) translate(-150%,0);
+	-webkit-transform:rotate(0deg) translate(-150%,0);
+	transform:rotate(0deg) translate(-150%,0);
+	-moz-transition-timing-function:cubic-bezier(.755,.05,.855,.06);
+	-o-transition-timing-function:cubic-bezier(.755,.05,.855,.06);
+	-webkit-transition-timing-function:cubic-bezier(.755,.05,.855,.06);
+	transition-timing-function:cubic-bezier(.755,.05,.855,.06)
+}
+#nav_main_open .background .layer.layer_1 {
+	left:-86%;
+	opacity:1;
+	-moz-transition-delay:.17s;
+	-o-transition-delay:.17s;
+	-webkit-transition-delay:.17s;
+	transition-delay:.17s
+}
+@media only screen and (min-width:532px) {
+	#nav_main_open .background .layer.layer_1 {
+		left:-96%
+	}
+}
+@media only screen and (min-width:768px) {
+	#nav_main_open .background .layer.layer_1 {
+		left:-106%
+	}
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_open .background .layer.layer_1 {
+		left:-116%
+	}
+}
+@media only screen and (min-width:1268px) {
+	#nav_main_open .background .layer.layer_1 {
+		left:-120%
+	}
+}
+#nav_main_open .background .layer.layer_1.exit {
+	-moz-transition-delay:0s;
+	-o-transition-delay:0s;
+	-webkit-transition-delay:0s;
+	transition-delay:0s
+}
+#nav_main_open .background .layer.layer_2 {
+	left:-74%;
+	opacity:.2;
+	-moz-transition-delay:.12s;
+	-o-transition-delay:.12s;
+	-webkit-transition-delay:.12s;
+	transition-delay:.12s
+}
+@media only screen and (min-width:532px) {
+	#nav_main_open .background .layer.layer_2 {
+		left:-88%
+	}
+}
+@media only screen and (min-width:768px) {
+	#nav_main_open .background .layer.layer_2 {
+		left:-98%
+	}
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_open .background .layer.layer_2 {
+		left:-106%
+	}
+}
+@media only screen and (min-width:1268px) {
+	#nav_main_open .background .layer.layer_2 {
+		left:-114%
+	}
+}
+#nav_main_open .background .layer.layer_2.exit {
+	-moz-transition-delay:.05s;
+	-o-transition-delay:.05s;
+	-webkit-transition-delay:.05s;
+	transition-delay:.05s
+}
+#nav_main_open .background .layer.layer_3 {
+	left:-62%;
+	opacity:.2;
+	-moz-transition-delay:.07s;
+	-o-transition-delay:.07s;
+	-webkit-transition-delay:.07s;
+	transition-delay:.07s
+}
+@media only screen and (min-width:532px) {
+	#nav_main_open .background .layer.layer_3 {
+		left:-80%
+	}
+}
+@media only screen and (min-width:768px) {
+	#nav_main_open .background .layer.layer_3 {
+		left:-90%
+	}
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_open .background .layer.layer_3 {
+		left:-96%
+	}
+}
+@media only screen and (min-width:1268px) {
+	#nav_main_open .background .layer.layer_3 {
+		left:-108%
+	}
+}
+#nav_main_open .background .layer.layer_3.exit {
+	-moz-transition-delay:.1s;
+	-o-transition-delay:.1s;
+	-webkit-transition-delay:.1s;
+	transition-delay:.1s
+}
+#nav_main_open .background .layer.layer_4 {
+	left:-50%;
+	opacity:.2;
+	-moz-transition-delay:.02s;
+	-o-transition-delay:.02s;
+	-webkit-transition-delay:.02s;
+	transition-delay:.02s
+}
+@media only screen and (min-width:532px) {
+	#nav_main_open .background .layer.layer_4 {
+		left:-72%
+	}
+}
+@media only screen and (min-width:768px) {
+	#nav_main_open .background .layer.layer_4 {
+		left:-82%
+	}
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_open .background .layer.layer_4 {
+		left:-86%
+	}
+}
+@media only screen and (min-width:1268px) {
+	#nav_main_open .background .layer.layer_4 {
+		left:-102%
+	}
+}
+#nav_main_open .background .layer.layer_4.exit {
+	-moz-transition-delay:.15s;
+	-o-transition-delay:.15s;
+	-webkit-transition-delay:.15s;
+	transition-delay:.15s
+}
+#nav_main_open .background .layer.layer_5 {
+	left:-38%;
+	opacity:.2;
+	-moz-transition-delay:0;
+	-o-transition-delay:0;
+	-webkit-transition-delay:0;
+	transition-delay:0
+}
+@media only screen and (min-width:532px) {
+	#nav_main_open .background .layer.layer_5 {
+		left:-64%
+	}
+}
+@media only screen and (min-width:768px) {
+	#nav_main_open .background .layer.layer_5 {
+		left:-74%
+	}
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_open .background .layer.layer_5 {
+		left:-76%
+	}
+}
+@media only screen and (min-width:1268px) {
+	#nav_main_open .background .layer.layer_5 {
+		left:-96%
+	}
+}
+#nav_main_open .background .layer.layer_5.exit {
+	-moz-transition-delay:.2s;
+	-o-transition-delay:.2s;
+	-webkit-transition-delay:.2s;
+	transition-delay:.2s
+}
+#nav_main_open .close {
+	background:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2050%2050%22%20enable-background%3D%22new%200%200%2050%2050%22%3E%3Cpath%20d%3D%22M28.1753902%2C25.0023632l7.0231953-7.0123901c0.4279785-0.4273071%2C0.4226685-1.1409912-0.0119019-1.5750122%20l-1.5888062-1.5861807c-0.4345093-0.434021-1.1491089-0.439209-1.5772095-0.0119019l-7.0182514%2C7.0077505l-7.0122681-7.0227652%20c-0.4276123-0.4284058-1.1412964-0.4232178-1.5751343%2C0.0112915l-1.5863638%2C1.5886831%20c-0.4341431%2C0.4346313-0.4390259%2C1.1494141-0.0111084%2C1.5778198l7.0071402%2C7.0178833l-7.0228262%2C7.012331%20c-0.4284058%2C0.4276123-0.4232178%2C1.1412964%2C0.0112915%2C1.5750732l1.5886831%2C1.5864258%20c0.4346313%2C0.434082%2C1.1494141%2C0.4389648%2C1.5778198%2C0.0111084l7.0179443-7.007143l7.0124531%2C7.0231953%20c0.4273071%2C0.4280396%2C1.1409912%2C0.4227295%2C1.5750122-0.0119019l1.5861816-1.5888062%20c0.434021-0.4345093%2C0.439209-1.1491089%2C0.0119019-1.5772095L28.1753902%2C25.0023632z%22%2F%3E%3C%2Fsvg%3E);
+	height:50px;
+	-moz-perspective:200px;
+	-webkit-perspective:200px;
+	perspective:200px;
+	left:-20px;
+	position:relative;
+	-moz-transition:opacity .4s ease-out,-moz-transform .4s ease-out;
+	-o-transition:opacity .4s ease-out,-o-transform .4s ease-out;
+	-webkit-transition:opacity .4s ease-out,-webkit-transform .4s ease-out;
+	transition:opacity .4s ease-out,transform .4s ease-out;
+	width:50px;
+	z-index:-1
+}
+@media only screen and (min-width:768px) {
+	#nav_main_open .close {
+		left:15px;
+		top:15px
+	}
+	#nav_main_open .close:hover {
+		-moz-animation:wobble_up .4s ease-out forwards;
+		-webkit-animation:wobble_up .4s ease-out forwards;
+		animation:wobble_up .4s ease-out forwards
+	}
+}
+@media only screen and (min-width:1340px) {
+	#nav_main_open .close {
+		margin-left:-80px
+	}
+}
+#case_story #nav_main_open .close {
+	background:url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2050%2050%22%20enable-background%3D%22new%200%200%2050%2050%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M28.1753902%2C25.0023632l7.0231953-7.0123901c0.4279785-0.4273071%2C0.4226685-1.1409912-0.0119019-1.5750122%20l-1.5888062-1.5861807c-0.4345093-0.434021-1.1491089-0.439209-1.5772095-0.0119019l-7.0182514%2C7.0077505l-7.0122681-7.0227652%20c-0.4276123-0.4284058-1.1412964-0.4232178-1.5751343%2C0.0112915l-1.5863638%2C1.5886831%20c-0.4341431%2C0.4346313-0.4390259%2C1.1494141-0.0111084%2C1.5778198l7.0071402%2C7.0178833l-7.0228262%2C7.012331%20c-0.4284058%2C0.4276123-0.4232178%2C1.1412964%2C0.0112915%2C1.5750732l1.5886831%2C1.5864258%20c0.4346313%2C0.434082%2C1.1494141%2C0.4389648%2C1.5778198%2C0.0111084l7.0179443-7.007143l7.0124531%2C7.0231953%20c0.4273071%2C0.4280396%2C1.1409912%2C0.4227295%2C1.5750122-0.0119019l1.5861816-1.5888062%20c0.434021-0.4345093%2C0.439209-1.1491089%2C0.0119019-1.5772095L28.1753902%2C25.0023632z%22%2F%3E%3C%2Fsvg%3E)
+}
+#nav_main_open .close.fade {
+	opacity:0;
+	-moz-transform:scale(0);
+	-ms-transform:scale(0);
+	-webkit-transform:scale(0);
+	transform:scale(0)
+}
+#home_welcome #nav_main_open .content,#nav_main_open #home_welcome .content,#nav_main_open .content_wrapper {
+	height:100%;
+	opacity:0;
+	position:relative;
+	-moz-transform:translateY(-10px);
+	-ms-transform:translateY(-10px);
+	-webkit-transform:translateY(-10px);
+	transform:translateY(-10px);
+	-moz-transition:opacity .2s ease-out,-moz-transform .3s ease-out;
+	-o-transition:opacity .2s ease-out,-o-transform .3s ease-out;
+	-webkit-transition:opacity .2s ease-out,-webkit-transform .3s ease-out;
+	transition:opacity .2s ease-out,transform .3s ease-out
+}
+#home_welcome #nav_main_open .show.content,#nav_main_open #home_welcome .show.content,#nav_main_open .content_wrapper.show {
+	opacity:1;
+	-moz-transform:translateY(0);
+	-ms-transform:translateY(0);
+	-webkit-transform:translateY(0);
+	transform:translateY(0)
+}
+#nav_main_open .label {
+	color:#736f00
+}
+#case_story.lagoon #nav_main_open .label {
+	color:#9f0050
+}
+#case_story.stance #nav_main_open .label {
+	color:#003443
+}
+#case_story.tnw #nav_main_open .label {
+	color:#0d4e52
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_open .mobile {
+		display:none
+	}
+}
+#nav_main_open .primary {
+	position:absolute;
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+	top: 45%;
+}
+@media only screen and (min-width:768px) {
+	#nav_main_open .primary {
+		margin-left: 35px;
+	}
+}
+@media only screen and (min-width:1340px) {
+	#nav_main_open .primary {
+		margin-left:-53px
+	}
+}
+#nav_main_open .primary ul a {
+	color:#000;
+	display:block;
+	line-height:1.5em
+}
+#case_story #nav_main_open .primary ul a {
+	color:#fff
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_open .primary ul a {
+		-moz-transform-origin:left center;
+		-ms-transform-origin:left center;
+		-webkit-transform-origin:left center;
+		transform-origin:left center;
+		-moz-transition:all .2s ease-out;
+		-o-transition:all .2s ease-out;
+		-webkit-transition:all .2s ease-out;
+		transition:all .2s ease-out
+	}
+	#nav_main_open .primary ul a.negative_hover {
+		color:#a6a000
+	}
+	#case_story #nav_main_open .primary ul a.negative_hover {
+		color:rgba(255,255,255,.3)
+	}
+}
+#nav_main_open .secondary {
+	bottom:3em;
+	position:absolute
+}
+@media only screen and (min-width:768px) {
+	#nav_main_open .secondary {
+		margin-left:30px
+	}
+}
+@media only screen and (min-width:1340px) {
+	#nav_main_open .secondary {
+		margin-left:-53px
+	}
+}
+#nav_main_open .secondary ul {
+	line-height:1.8em
+}
+#nav_main_open .secondary ul a {
+	color:#736f00
+}
+#case_story #nav_main_open .secondary ul a {
+	color:rgba(255,255,255,.75)
+}
+@media only screen and (min-width:1024px) {
+	#nav_main_open .secondary ul a {
+		-moz-transition:color .2s ease-out;
+		-o-transition:color .2s ease-out;
+		-webkit-transition:color .2s ease-out;
+		transition:color .2s ease-out
+	}
+	#nav_main_open .secondary ul a:hover {
+		color:#000
+	}
+	#case_story #nav_main_open .secondary ul a:hover {
+		color:#fff
+	}
+}
+#nav_main_open .secondary ul a[target] {
+	font-style:italic
+}
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(32, 26, 83, 0.9);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../../images/fullScreen/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	height: 6px;
+	display: block;
+	min-height: 26px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.overlay ul li a {
+	font-size: 20px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #f0f0f0;
+}
+
+/* Effects */
+.overlay-door {
+	visibility: hidden;
+	width: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: width 0.5s 0.3s, visibility 0s 0.8s;
+	transition: width 0.5s 0.3s, visibility 0s 0.8s;
+}
+
+.overlay-door.open {
+	z-index: 99999;
+	visibility: visible;
+	width: 100%;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+}
+
+.overlay-door nav {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.overlay-door nav,
+.overlay-door .overlay-close {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+}
+
+.overlay-door.open nav,
+.overlay-door.open .overlay-close {
+	opacity: 1;
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.overlay-door.close nav,
+.overlay-door.close .overlay-close {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 20%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		font-size: 0.8em;
+		min-height: 5px;
+	}
+}

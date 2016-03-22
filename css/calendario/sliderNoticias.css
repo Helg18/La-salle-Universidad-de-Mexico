@@ -1,0 +1,144 @@
+@font-face {
+font-family: 'HelveticaBold';
+src: url("../fonts/HelveticaBold.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaRegular';
+src: url("../fonts/HelveticaRegular.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaLight';
+src: url("../fonts/HelveticaLight.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaUltraLight';
+src: url("../fonts/HelveticaUltraLight.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaThing';
+src: url("../fonts/HelveticaThing.otf") format("opentype");
+}
+
+
+.imgSliderNoticias {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imgSliderNoticias img{
+  width: 100%;
+}
+
+.overlayCalendarioFecha {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  background: url(../../images/nuevosArtes/calendario/image_redtriangle_responsive.png);
+  background-size: 100% 71%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  opacity: 0.9;
+}
+
+
+.text_btn_event_calendario{
+  position: absolute;
+  padding-left: 5%;
+  padding-top: 15%;
+}
+
+.text_btn_event_calendario h6{
+  font-family: 'HelveticaLight',arial;
+  color:#FFF;
+}
+
+.text_btn_event_calendario p{
+  font-family: 'HelveticaBold',arial;
+  color:#FFF;
+}
+
+.text_btn_event_calendario button{
+  padding: 0px;
+  border: 0px;
+  float: right;
+}
+
+
+.content_info_noticia_destacada_calendario_responsive{
+  background: #f4f6f5;
+  height:70px;
+  width: 100%;
+  margin-top: -7px;
+  font-size: 0.9em;
+}
+
+.text_info_noticia_destacada_calendario_responsive
+{
+  width: 70%;
+  margin: auto;
+  padding: 10px 30px 0 40px;
+}
+
+.text_info_noticia_destacada_calendario_responsive p{
+  margin-bottom: 0;
+}
+
+.type_event_calendar_responsive{
+  color: #666666;
+  font-family: 'HelveticaRegular';
+}
+
+.title_event_calendar_responsive{
+  color: #666666;
+  font-family: 'HelveticaBold';
+}
+
+.title_event_calendar_responsive span{
+  color: red;
+  font-family: 'HelveticaUltraLight';
+}
+
+.date_event_calendario_responsive{
+  width: 65%; 
+  display: inline-block;
+  margin-top: -55px;
+  float: left;
+  margin-left: 10%;
+  overflow: hidden;
+  font-family: 'HelveticaBold';
+}
+
+.date_event_calendario_responsive p{
+  font-size: 1.2em;
+  width: 50%;
+  float: left;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.date_event_calendario_responsive p:nth-child(1){
+  font-size: 7em;
+  padding: 10px 0px 0px 16px;
+  box-sizing: border-box; 
+}
+
+.date_event_calendario_responsive p:nth-child(2){
+  padding-top: 80px;
+  padding-right: 5px;
+  line-height: 18px;
+}
+
+.date_event_calendario_responsive span:nth-child(1){
+  font-size: 4.5em;
+}
+
+

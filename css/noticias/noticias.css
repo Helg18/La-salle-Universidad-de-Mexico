@@ -1,0 +1,506 @@
+@font-face {
+font-family: 'HelveticaBold';
+src: url("../fonts/HelveticaBold.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaRegular';
+src: url("../fonts/HelveticaRegular.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaLight';
+src: url("../fonts/HelveticaLight.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaUltraLight';
+src: url("../fonts/HelveticaUltraLight.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaThing';
+src: url("../fonts/HelveticaThing.otf") format("opentype");
+}
+
+
+/* ============================================================
+  GLOBAL
+============================================================ */
+
+.secondPart{
+  margin-top: -5px;
+}
+
+.effects {
+  padding-left: 0px;
+}
+
+.tumbnhail{
+  margin-left: 0px !important;
+  width: 100% !important;
+  margin-bottom: 0px !important;
+}
+.destacada{
+  width: 40% !important;
+  width: 102%;
+  margin-left: -1px;
+}
+
+.imgThumbnail{
+  position: relative;
+  float: left;
+  margin-bottom: 5px;
+  width: 20%;
+  overflow: hidden;
+}
+
+.effects .imgNoticia {
+  position: relative;
+  float: left;
+  width: 20%;
+  overflow: hidden;
+}
+
+.effects .imgNoticia:nth-child(n) {
+  margin-right: 0px;
+}
+.effects .imgNoticia:first-child {
+}
+.effects .imgNoticia:last-child {
+  margin-right: 0;
+}
+.effects .imgNoticia img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.effects .imgNoticiaCalendario{
+  position: relative;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+.effects .imgNoticiaCalendario2{
+  position: relative;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+.effects .imgNoticiaCalendario3{
+  position: relative;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+.effects .imgNoticiaCalendario4{
+  position: relative;
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+
+.effects .imgNoticiaCalendario:nth-child(n) {
+  margin-right: 0px;
+}
+.effects .imgNoticiaCalendario:first-child {
+  margin-left: 0px;
+}
+.effects .imgNoticiaCalendario:last-child {
+  margin-right: 0;
+}
+.effects .imgNoticiaCalendario img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.effects .imgNoticiaCalendario2 img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+.effects .imgNoticiaCalendario3 img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+.effects .imgNoticiaCalendario4 img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.tituloCalendario{
+    float: right;
+    bottom: 0px;
+    padding-top: 64px;
+    padding-right: 10px;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+}
+.tituloCalendario span{
+    font-weight: bold;
+}
+
+
+.overlayTituloNoticiaThumblair{
+  display: block;
+  position: absolute;
+  z-index: 5;
+  background: url(../../images/nuevosArtes/Noticias/image_news1_Backwhite.png);
+  background-size: 100%;
+  overflow: hidden;
+  width: 102%;
+  margin-left: -1px;
+  bottom: 0;
+}
+ 
+
+.overlayTituloNoticiaThumblair h6{
+  width: 90%;
+  padding-top: 15px;
+  margin: auto;
+  text-align: center;
+  font-size: 0.5em;
+  font-family: 'HelveticaBold',arial !important;
+  color: #606060;
+}
+
+
+
+.overlayTituloNoticiaDestacado{
+  display: block;
+  position: absolute;
+  z-index: 5;
+  background: url(../../images/nuevosArtes/Noticias/image_news1_Backwhite.png);
+  background-size: 100%;
+  overflow: hidden;
+  width: 102%;
+  margin-left: -1px;
+  bottom: 0;
+}
+ 
+
+.overlayTituloNoticiaDestacado h6{
+  width: 90%;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  margin: auto;
+  text-align: center;
+  font-size: 0.8em;
+  font-family: 'HelveticaBold',arial !important;
+  color: #606060;
+}
+
+
+.overlayTituloNoticia {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  background: url(../../images/nuevosArtes/Noticias/image_news1_Backwhite.png);
+  background-size: 100% 101%;
+  overflow: hidden;
+  width: 102%;
+  margin-left: -1px;
+  bottom: 0;
+}
+
+.overlayTituloCalendario {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background: rgba(243, 244, 243, 0.95);
+  background-size: 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-height: 283px;
+  text-align: center;
+  font-family: 'HelveticaRegular',arial;
+}
+
+.overlayTituloCalendario p{
+  text-align: center;
+  margin-top: 30%;
+}
+
+.overlayTituloCalendario img{
+  width: 20%;
+  margin:auto !important;
+}
+
+
+.overlayTituloNoticia h6{
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: auto;
+  text-align: center;
+  font-size: 0.8em;
+  font-family: 'HelveticaBold',arial !important;
+  color: #606060;
+}
+
+.overlayNoticia {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  background: rgba(0, 12, 73, 0.8);
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.overlayCalendario{
+   display: block;
+  position: absolute;
+  z-index: 20;
+  background: url(../../images/nuevosArtes/calendario/image_redtriangle.png);
+  background-size: 100%;
+  bottom: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: 'HelveticaRegular',arial;
+}
+
+.overlayCalendario a{
+  color: #fff;
+  font-family: 'HelveticaRegular',arial;
+}
+
+
+
+a.close-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  background-color: #000;
+  cursor: pointer;
+}
+a.close-overlay.hidden {
+  display: none;
+}
+
+.overlayNoticia h6{
+  width: 80%;
+  padding-top: 10px;
+  margin: auto;
+  text-align: right;
+  font-size: 1em;
+  font-family: 'HelveticaBold',arial !important;
+  color: #fff;
+}
+
+.overlayNoticia p{
+  width: 90%;
+  padding: 5px 0px 5px 0px;
+  margin: auto;
+  text-align: justify;
+  font-size: 0.8em;
+  font-family: 'HelveticaLight',arial !important;
+  color: #fff;
+}
+
+
+a.expand {
+  text-decoration: none;
+  display: block;
+  z-index: 100;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #fff;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  font-size: 40px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* ============================================================
+  EFFECT 1 - SLIDE IN BOTTOM
+============================================================ */
+#effect-1 .overlayNoticia {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
+#effect-1 .overlayNoticia a.expand {
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  margin: 0 auto -30px auto;
+}
+#effect-1 .imgNoticia.hoverNoticia .overlayNoticia {
+  height: 100%;
+}
+
+
+/* ============================================================
+  EFFECT 3 - SLIDE IN LEFT
+============================================================ */
+#effect-3 .overlayCalendario {
+  top: 48%;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 50%;
+}
+#effect-3 .overlayCalendario a.expand {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin: auto 0 auto -30px;
+}
+#effect-3 .imgNoticiaCalendario.hoverCalendario .overlayCalendario {
+  width: 100%;
+  bottom: 0;
+}
+
+#effect-3 .imgNoticiaCalendario2.hoverCalendario .overlayCalendario {
+  width: 100%;
+}
+
+#effect-3 .imgNoticiaCalendario3.hoverCalendario .overlayCalendario {
+  width: 100%;
+}
+
+#effect-3 .imgNoticiaCalendario4.hoverCalendario .overlayCalendario {
+  width: 100%;
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Oferta Academica
+
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+
+
+.overlayMenuBtn {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  background: url(../../images/nuevosArtes/oferta_educativa/facultad_pleca.png);
+  background-size: 100% 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  bottom: 0px;
+  opacity: 0.9;
+}
+
+
+
+.text_btn_menu_oferta{
+  position: absolute;
+  bottom: 0;
+  padding-left: 8%;
+}
+
+.text_btn_menu_oferta h6{
+  font-family: 'HelveticaLight',arial;
+  color:#FFF;
+  margin-bottom: 0px;
+}
+
+.text_btn_menu_oferta p{
+  font-family: 'HelveticaBold',arial;
+  color:#FFF;
+}
+
+.text_btn_menu_oferta button{
+  padding: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+  font-size: 15px;
+  color: #fff;
+  text-align: left;
+  line-height: 13px;
+}
+
+
+.effects .imgMenuNavegacion {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imgMenuNavegacion img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .effects .imgNoticia {
+    width: 20%;
+  }
+  .destacada{
+    width: 40% !important;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .effects .imgNoticia {
+    width: 100%;
+  }
+  .destacada{
+    width: 100%  !important;
+  }
+
+  .effects .imgNoticia:nth-child(n) {
+    margin-right: 0;
+  }
+  .effects .imgNoticia:first-child {
+    margin-left: 0;
+  }
+  .effects .imgNoticia:nth-child(2n-1) {
+    margin-left: 0;
+  }
+  .effects .imgNoticia:nth-child(2n) {
+    margin-right: 0;
+  }
+  .effects .imgNoticia:last-child {
+    margin-right: 0;
+  }
+  .effects .imgNoticia img {
+    width: 100%;
+  }
+  .secondPart{
+    display: none;
+  }
+}

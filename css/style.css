@@ -1,0 +1,6382 @@
+  /*FUENTES*/
+
+@font-face {
+font-family: 'HelveticaBold';
+src: url("../fonts/HelveticaBold.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaRegular';
+src: url("../fonts/HelveticaRegular.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaLight';
+src: url("../fonts/HelveticaLight.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaUltraLight';
+src: url("../fonts/HelveticaUltraLight.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'HelveticaThing';
+src: url("../fonts/HelveticaThing.otf") format("opentype");
+}
+
+
+
+/* GENERALES */
+
+
+.textAlignCenter{
+  text-align: center;
+}
+
+.azulLaSalle{
+  color:#0e124e;
+}
+
+.rojoLaSalle{
+  color:#d2202f;
+}
+
+.textHelveticaBold{
+  font-family: 'HelveticaBold',arial;
+
+}
+/* ACTIVES BUTTONS */
+
+.perfilActiveButtons{
+  background: red !important;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+
+.header{
+  margin-top: 0%;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+}
+#intro {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  height: 700px;
+}
+
+.feedback{
+    position: fixed;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    top: 100px;
+    right: 0px;
+    z-index: -1;
+}
+
+#bloque-img2 {
+  background: #fff;
+  padding-top: 1%;
+
+}
+
+
+
+/* GENERALES */
+
+.marginInteriorBottom{
+  margin-bottom: 1%;
+}
+
+
+.btnMenubtn{
+    font-family: 'HelveticaBold',arial;
+    color: #838383 ;
+    text-align: left;
+    padding: 8px;
+    border: 0;
+    border-radius: 0px;
+    font-size: 1.1rem;
+    line-height: 14px;
+    vertical-align: middle;
+}
+
+/* IDIOMA */
+
+  .contenedorIdioma {
+    width: 25%;
+  }
+
+  .contenedorIdioma img:nth-child(1){
+    margin-right: -14px;
+  }
+
+
+  .en{
+    margin-top: 10px;
+    width: 34px;
+  }
+  .es{
+    margin-top: 10px;
+    width: 34px;
+    margin-left: -13px;
+  }
+  .en img{
+
+    width: 100%;
+  }
+
+  .es img{
+    width: 100%; 
+  }
+
+
+  .contenedorIdioma[map] , map area{
+    border: none;
+    height: auto;
+    max-width: 45%;
+    width: auto;
+    outline: 0px !important;
+  }
+
+
+
+  /*BUSCADOR*/
+
+
+  .search{
+    padding-right: 18px !important;
+  }
+
+  .submit {
+    right: 56px;
+  }
+
+  .contenedorFormulario{
+    width: 56%;
+  }
+
+
+/* GENERALES COLORES Y CONTENEDORES */
+
+
+
+.marginEntreSecciones{
+  margin-top: 1.5%;
+}
+.marginApartirDeCalendario{
+  margin-top: 2.5%;
+}
+
+
+.botonPrueba{
+  margin-top: 2.5%;
+  transform: skewX(25deg);
+}
+
+.botonesMenu{
+  float: right;
+  width: 50%;height: auto;
+}
+
+.botonAnimacion{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.botonAnimacion:hover{
+  color: #fff;
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0,1,1,0);
+  content: "";
+  background: red;
+}
+
+.contenedorBotonesMenu{
+    width: 85%;
+    padding: 10px;
+    /* margin-top: 6%; */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* border-left: 37px solid transparent; */
+    transform: skewX(-25deg);
+}
+
+.botonUnoMenu{
+	margin-top: 15%;
+  	margin-left: 21%;
+}
+
+.botonDosMenu{
+  margin-left: 19%;
+}
+
+.botonTresMenu{
+  margin-left: 19%;
+}
+
+.botonCuatroMenu{
+  margin-left: 19%;
+}
+
+.botonCincoMenu{
+  margin-left: 20%;
+}
+
+.botonSeisMenu{
+  margin-left: 21%;
+}
+
+.botonSieteMenu{
+  margin-left: 21%;
+}
+
+.botonOchoMenu{
+  margin-left: 20%;
+  margin-bottom: 5%;
+}
+
+#video-container {
+  	position: absolute;
+  	left:0%;
+  	width: 100%    !important;
+  	height: auto   !important;
+  	overflow: hidden;
+
+}
+
+video {
+  position:absolute;
+  z-index:0;
+}
+
+video.fillWidth {
+  width: 100%;
+  z-index: -1;
+}
+
+
+
+
+
+
+/*Menu PERFILES*/
+
+.menuPerfiles ul li{
+  margin: 0.1%;
+  width: 14.08%;
+  list-style: none;
+  float: left;
+}
+
+.menuPerfiles a{
+  font-family: 'HelveticaBold',arial;
+  color: #838383;
+  text-align: left;
+  padding: 14px;
+  font-size: 1.4rem;
+  line-height: 14px;
+  vertical-align: middle;
+}
+
+.btnMenu{
+  background:#eeeeee;
+}
+
+.padre{
+  padding: 6px 0 0 10px !important;
+}
+
+
+.international{
+  padding: 6px 0 0 10px !important; 
+}
+
+
+
+
+
+
+/* MOUSE */
+
+.mouse{
+  text-align: center; 
+  margin: auto;
+  height: 72px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.mouse img{
+  width: 3%;
+  
+}
+
+.bounceMouse{
+  -webkit-animation: bounce 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: bounce 5s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {top: 0%;}
+  25% {top:25%;}
+  50% {top:50%;}
+  75% {top:25%;}
+  100% {top: 0%;}
+}
+
+@keyframes bounce {
+  0% {top: 0%;}
+  25% {top:25%;}
+  50% {top:50%;}
+  75% {top:25%;}
+  100% {top: 0%;}
+}
+
+
+
+
+
+
+
+/* NAV UBICACION DE SECCION */
+
+.menuUbicacion{
+  font-size: 0.7em;
+    /* background: #ededed; */
+    height: 27px;
+    padding-top: 2px;
+    padding-left: 20px;
+    border-left: 15px solid transparent;
+    border-bottom: 33px solid #ededed;
+}
+.menuUbicacion nav{
+  padding-top: 11px;
+}
+
+
+#changeTextTitulo{
+    display: inline-block;
+}
+
+li{
+  font-family: 'HelveticaLight';
+    color: #3c3c3c;
+    list-style: none;
+}
+
+
+
+.menuDerecho li:nth-child(1){
+  margin-top: 0px;  
+}
+
+.colorGrisOscuro{
+  font-family: 'HelveticaBold';
+  color: #22255e;
+  font-weight: bold;
+}
+
+
+
+/************************************************
+
+NAVEGACION PERFILES
+
+*************************************************/
+
+
+/************************************************
+Estudiante
+*************************************************/
+
+
+#aspirantes{
+  display: none;
+}
+.cuadroEstudiante{
+
+  width: 25%;
+  border: 1px solid #eeeeee;
+  max-height:250px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  color: #0b5caa;
+}
+.cuadroEstudiante p{
+  width: 100%;
+  height: 101px;
+  display: block;
+  text-align: center;
+  margin-right: 10%;
+  padding: 40px 30px 0px 0px;
+}
+.cuadroEstudiante a{
+  float: right;
+}
+
+.cuadroActive{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'HelveticaBold',arial;
+  background:#808c8e;
+}
+
+.azul{
+  font-family: 'HelveticaBold',arial;
+}
+
+
+
+/************************************************
+PERFIL ESTUDIANTE
+*************************************************/
+
+
+#perfilEstudiante{
+  display: none;
+}
+
+.cuadroPerfilEstudiante{
+  width: 100%;
+  border: 1px solid #eeeeee;
+  max-height:250px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  color: #0b5caa;
+  font-family: 'HelveticaBold',arial;
+
+}
+.cuadroPerfilEstudiante p{
+  width: 100%;
+  height: 101px;
+  display: block;
+  text-align: center;
+  margin-right: 10%;
+  padding: 40px 30px 0px 0px;
+}
+.cuadroPerfilEstudiante a{
+  float: right;
+}
+
+.cuadroActive{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'HelveticaBold',arial;
+  background:#808c8e;
+}
+
+.azul{
+  font-family: 'HelveticaBold',arial;
+}
+
+
+/************************************************
+PERFIL DOCENTE
+*************************************************/
+
+
+#perfilDocente{
+  display: none;
+}
+
+.primerPalabraDocen{
+  margin-right: 45px;
+}
+
+.cuadroPerfilDocente{
+  width: 100%;
+  border: 1px solid #eeeeee;
+  max-height:250px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  color: #0b5caa;
+}
+.cuadroPerfilDocente p{
+  width: 100%;
+  height: 101px;
+  display: block;
+  text-align: center;
+  margin-right: 10%;
+  padding: 40px 30px 0px 0px;
+}
+.cuadroPerfilDocente a{
+  float: right;
+}
+
+.cuadroActive{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'HelveticaBold',arial;
+  background:#808c8e;
+}
+
+.azul{
+  font-family: 'HelveticaBold',arial;
+}
+
+/************************************************
+PERFIL ADMINISTRATIVO
+*************************************************/
+
+
+#perfilAdministrativo{
+  display: none;
+}
+.primerPalabraAdmin{
+  margin-right: 45px;
+}
+.cuadroPerfilAdmin{
+  width: 100%;
+  border: 1px solid #eeeeee;
+  max-height:250px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  color: #0b5caa;
+}
+.cuadroPerfilAdmin p{
+  width: 100%;
+  height: 101px;
+  display: block;
+  text-align: center;
+  margin-right: 10%;
+  padding: 40px 30px 0px 0px;
+}
+.cuadroPerfilAdmin a{
+  float: right;
+}
+
+.cuadroActive{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'HelveticaBold',arial;
+  background:#808c8e;
+}
+
+.azul{
+  font-family: 'HelveticaBold',arial;
+}
+
+
+/************************************************
+PERFIL EGRESADO
+*************************************************/
+
+
+#perfilEgresado{
+  display: none;
+}
+
+.primerPalabraEgresado{
+  margin-right: 45px;
+}
+
+.cuadroPerfilEgresado{
+  width: 100%;
+  border: 1px solid #eeeeee;
+  max-height:250px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  color: #0b5caa;
+}
+.cuadroPerfilEgresado p{
+  width: 100%;
+  height: 101px;
+  display: block;
+  text-align: center;
+  margin-right: 10%;
+  padding: 40px 30px 0px 0px;
+}
+.cuadroPerfilEgresado a{
+  float: right;
+}
+
+.cuadroActive{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'HelveticaBold',arial;
+  background:#808c8e;
+}
+
+.azul{
+  font-family: 'HelveticaBold',arial;
+}
+
+
+/************************************************
+PERFIL EGRESADO
+*************************************************/
+
+
+#perfilPadre{
+  display: none;
+}
+
+.primerPalabraPerfil{
+  margin-right: 45px;
+}
+
+.cuadroPerfilPadre{
+  width: 100%;
+  border: 1px solid #eeeeee;
+  max-height:250px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  color: #0b5caa;
+}
+.cuadroPerfilPadre p{
+  width: 100%;
+  height: 101px;
+  display: block;
+  text-align: center;
+  margin-right: 10%;
+  padding: 40px 30px 0px 0px;
+}
+.cuadroPerfilPadre a{
+  float: right;
+}
+
+.cuadroActive{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'HelveticaBold',arial;
+  background:#808c8e;
+}
+
+.azul{
+  font-family: 'HelveticaBold',arial;
+}
+
+
+
+
+
+/************************************************
+PERFIL INTERNATIONAL
+*************************************************/
+
+
+#perfilInternational{
+  display: none;
+}
+
+.primerPalabraPerfil{
+  margin-right: 45px;
+}
+
+.cuadroPerfilInternational{
+  width: 100%;
+  border: 1px solid #eeeeee;
+  max-height:250px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  color: #0b5caa;
+}
+.cuadroPerfilInternational p{
+  width: 100%;
+  height: 101px;
+  display: block;
+  text-align: center;
+  margin-right: 10%;
+  padding: 40px 30px 0px 0px;
+}
+.cuadroPerfilInternational a{
+  float: right;
+}
+
+.cuadroActive{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'HelveticaBold',arial;
+  background:#808c8e;
+}
+
+.azul{
+  font-family: 'HelveticaBold',arial;
+}
+
+
+
+
+/*DDD  III  V  V     MM MM EEE NN  N UU UU 
+  D DD  I   V  V     M M M EE  N N N UU UU  
+  DDD  III   VV      M   M EEE N  NN UUUUU
+
+  PRINCIPAL
+*/
+
+
+/* UNIVERSIDAD LA SALLE */
+
+#universidadShow{
+  display:none;
+}
+
+.headerSubMenuUniversidad{
+  overflow: hidden;
+}
+
+.tituloUniversidad{
+  padding-top: 15px;
+}
+
+.subMenuUnoUniversidad{
+  width: 75px;
+  height: 75px;
+  background: #f5f5f5;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.accionUniversidad{
+  position: absolute;
+  margin-left: 4px;
+  color: #616161;
+  font-size: 1.4em;
+  margin-top: -9px;
+  font-family: 'HelveticaLight';
+  color: #434343;
+}
+
+.contenedorTituloUniversidad{
+  overflow: hidden;
+}
+
+.contenedorServicios{
+  height: auto;
+  overflow: 
+}
+
+.tituloServicios{
+  width: 100px;
+  padding-top: 40px;
+  height: 90px;
+  color: #838383;
+  font-size: 0.9em;
+  display: inline-block;
+  float: left;
+  margin-left: 87px;
+  font-family: 'HelveticaThing',arial;
+}
+
+.downArrowAccionSocial{
+  margin-left: 64px;
+  width: 36%;
+  margin-top: 38px;
+}
+
+.subMenuUniversidad{
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  font-size: 0.6em;
+  text-align: center;
+  font-family: 'HelveticaLight';
+  color: #434343;
+}
+
+
+
+.textoTituloUniversidad{
+  color: #ffffff;
+  font-size: 0.8em;
+  transform: skew(-30deg);
+  padding: 30px 30px 30px 30px;
+}
+
+
+.tituloContenedorUniversidad {
+  width: 55%;
+  margin: auto;
+  transform: skew(30deg);
+  background: red;
+  overflow: hidden;
+}
+  
+
+.tituloContenedorUniversidad p{
+  width: 80%;
+  margin: auto;
+}
+
+
+.contenedorTextosUniversidad {
+  overflow: hidden;
+  background: url(../images/nuevosArtes/servicios/img_parallax.png)no-repeat;
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+
+.centro{
+  background: #ff0000;
+  color: #ffffff;
+}
+
+.subMenuUnoServicios:hover{
+  background: #ff0000;
+  color: #ffffff;
+}
+
+.subMenuDos{
+  width: 70px;
+  height: 74px;
+  background: #f5f5f5;
+  margin :1px;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 19px;
+}
+
+.subMenuDos:hover{
+  background: #ff0000;
+  color: #ffffff;
+}
+
+
+.tituloContenedor{
+  width: 442px;
+  height: 151px;
+  position: absolute;
+  background: url(../images/nuevosArtes/accionSocial/title_poligon.png)no-repeat;
+  top: 151px;
+  left: 186px;
+  box-sizing: border-box;  
+  padding-top: 30px;
+}
+
+.textoTitulo{
+  color: #ffffff;
+  padding-left: 110px;
+}
+
+.tituloContenedor h6{
+  font-weight: bold;
+}
+
+.tituloContenedor p{
+  width: 210px;
+  font-size: 0.8em;
+}
+
+.tituloTabla{
+  text-align: center;
+  font-weight: bold;
+}
+
+.tablaServicios{
+  margin-top: 0px;
+} 
+
+.contenedorTituloServicios{
+  overflow: hidden;
+}
+
+.contenedorImagenTexto{
+  height: 513px;
+  background: url(../images/nuevosArtes/servicios/img_parallax.png)no-repeat;
+  background-size: 100%;
+  margin-bottom: 20px;
+} 
+
+.contenedorDiagonaTexto{
+  width: 1100px;
+  height: 513px;
+  margin:auto;
+  background: url(../images/nuevosArtes/diagonal.png)no-repeat;
+  background-size: 100% 100%;
+  margin-right: 0px;
+}
+  
+.descripcionServiciosDiagonal{
+  width: 563px;
+  margin-left: 165px;
+  padding-top: 60px;
+  text-align: justify;
+  font-size: 0.65em;
+}
+
+.parrafosServicios{
+    width: 325px;
+    margin-top: 43px;
+    margin-left: 400px;
+    font-size: 0.65em;
+    text-align: justify;
+  }
+
+  .parrafosServicios h6{
+    font-weight: bold;
+  }
+
+  .informesServicios{
+    width: 50%;
+    height: 250px;
+    display: inline-block;
+    float: left;
+    background: #f5f5f5;
+    text-align: center;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    padding: 60px;
+  }
+
+  .informesServiciosTitulo{
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  .hospedajeServicios{
+    width: 50%;
+    height: 250px;
+    display: inline-block;
+    float: left;
+    background: #eaeaea;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+
+  .hospedajeServicios img{
+    width: 8%;
+    margin-top: 18px;
+  }
+
+  .hospedajeServiciosTitulo{
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .hospedajeServiciosDescripcion{
+    width: 400px;
+    font-size: 0.7em;
+    text-align: center;
+    margin: auto;
+  }
+
+  .contenedorBotonesServicios{
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+.contenedorImagenTextoUniversidad{
+  height: auto;
+  overflow: hidden;
+  background: url(../images/nuevosArtes/laSalle/universidad_la_salle.png)no-repeat;
+  background-size: 100%;
+  margin-bottom: 20px;
+} 
+
+.contenedorDiagonalUniversidad{
+  width: 80%;
+  /* height: 513px; */
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  background: #fff;
+  transform: skewX(-145deg);
+}
+
+.descripcionTituloUniversidad{
+  width: 60%;
+  margin-top: 3%;
+  margin-left: 25%;
+  text-align: justify;
+  font-size: 0.65em;
+  transform: skewX(145deg);
+}
+
+.parrafoUniversidad{
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 30%;
+  font-size: 0.65em;
+  text-align: justify;
+  transform: skewX(145deg);
+}
+
+
+.video_universidad img{
+  width: 100%;
+}
+
+/* VINCULACON EMPRESARIAL */
+
+#ofertaAcademicaShow{
+  display: none;
+}
+
+.contenedorOfertaAcedemica{
+  overflow: hidden;
+  height: auto;
+}
+
+.headerSubMenuOfertaAcedemica{
+  overflow: hidden;
+}
+
+.tituloOfertaAcademica{
+  padding-top: 15px;
+}
+
+.subMenuOfertaAcademica{
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  font-size: 0.6em;
+  text-align: center;
+  font-family: 'HelveticaLight';
+  color: #434343;
+}
+
+.subMenuUnoOfertaAcademica{
+  width: 75px;
+  height: 75px;
+  background: #f5f5f5;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.contenedorTituloOfertaAcademica{
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+
+
+
+
+.tituloVinculacionEmpresarial{
+    padding-top: 40px;
+    height: 130px;
+    color: #838383;
+    font-size: 0.9em;
+  }
+
+  .downArrow{
+    margin-left: 84px;
+    width: 4%;
+    margin-top: 29px;
+  } 
+
+  .vinculacionEmpresaria{
+    position: absolute;
+    margin-left: 5px;
+    font-size: 1.4em;
+    margin-top: -9px;
+    font-family: 'HelveticaBold';
+    color: #838383;
+  }
+
+  .flechaVinculacion{
+    position: absolute;
+    z-index: 1;
+    position: relative;
+    z-index: 1;
+    left: -121px;
+    top: -38px;
+  }
+
+.padrePrimerFila{
+  max-height: 180px;
+  color: #0b5caa;
+}
+
+.azulFuerte{
+  color: #0b5caa;
+  font-weight: bold;
+}
+.primerFila{
+  height: 180px;
+  width: 33%;
+  background: #f5f5f5;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 60px;
+  margin: 1px;
+}
+
+.textoVinculacion{
+  text-align: left;
+  padding-left: 130px;
+}
+
+.padreSegundaFila{
+  max-height: 180px;
+}
+.segundaFila{
+  width: 33%;
+  height: 180px;
+  background: #f5f5f5;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 60px;
+  margin: 1px;
+  color: #0b5caa;
+}
+
+.segundaFilaBolsa{
+  width: 33%;
+  height: 180px;
+  color: #ffffff;
+  background: #0b5caa;
+  display: inline-block;
+  float: left;
+  font-size:0.7em;
+  padding-top:12px; 
+  padding-left: 40px; 
+  box-sizing: border-box;
+  margin: 1px;
+}
+
+.alianza{
+  padding-top: 5px;
+}
+
+.padreTercerFila{
+  max-height: 180px;
+  color: #0b5caa;
+}
+
+.tercerFila{
+  width: 33%;
+  height: 479px;
+  background: #f5f5f5;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 60px;
+  margin: 1px;
+}
+
+
+.menu_btns_licenciatura{
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10%;
+}
+
+.container_btn_licenciaturas{
+  width: 20%;
+  overflow: hidden;
+  display:inline-block;
+  float: left;
+  overflow: hidden;
+}
+
+.btn_ciencias_quimicas{
+
+}
+
+
+.container_submenu_btn_oferta{
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  overflow: hidden;
+}
+
+
+
+.container_title_icono_skew{
+  width: 30%;
+}
+
+.btn_submenu_skew{
+  width: 10%;
+}
+
+
+
+.menu_list_option_oferta{
+	width: 50%;
+	display: inline-block;
+	float: left;
+	overflow:hidden;
+}
+
+.menu_option_right_oferta{
+	width: 40%;
+	display: inline-block;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.4);
+	overflow:hidden;
+}
+
+
+.button_menu_right{
+	width: 85%;
+	font-size: 0.8em;
+	padding: 15px 0 10px 5px;
+	font-family: 'HelveticaLight',arial;
+	font-weight: bold;
+	color:#fff;
+    height: 40px;
+    border-left: 15px solid transparent;
+    border-bottom: 40px solid gray;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.button_menu_right:hover{
+	border-bottom: 40px solid #a52e1f;
+}	
+
+.button_menu_right_derecho_active{
+
+	border-bottom: 40px solid #a52e1f;
+}
+
+.btn_ultimate{
+	margin-bottom: 15%;
+}
+
+.button_menu_right img{
+    padding: 20px 10px 0px 3px;
+    vertical-align: bottom;
+}
+
+.container_list_select_option{
+	margin-top: 80%;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+p.textUno_title{
+	font-family: 'HelveticaLight',arial;
+	color: #a52e1f;
+	font-size: 2em;
+    box-sizing: border-box;
+    padding: 40px 0 0px 14px;
+    margin-bottom: 0;
+    line-height: 20px;
+    margin-top: 10%;
+}
+p.textDos_title{
+	color: #a52e1f;
+	font-size: 2em;
+    box-sizing: border-box;
+    padding: 15px 0 0px 14px;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+.container_list_select_option select{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background: #f4f6f5;
+    color: #fff;
+    border: 0px;
+    height: 40px;
+    border-radius: 0px !important;
+  }
+  
+  .flechita_facultades select {
+    background: url(../images/nuevosArtes/oferta_educativa/flechita_derecho.png) no-repeat 100% -4px gray !important;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+
+.container_submenu_btn_oferta{
+	display: none;
+}
+
+#id_container_select_btn_oferta{
+	display: none;
+}
+
+.container_select_btn_oferta{
+	overflow: hidden;
+}
+
+
+.container_title_icono_skew{
+ 	background: #a52e1f;
+ 	width: 21%;
+ 	display: inline-block;
+	float: left
+}
+.container_title_icono_skew img{
+ 	padding: 10px 10px 10px 30px;
+}
+
+.container_desc_selection_skew{
+	width: 79%;
+    display: inline-block;
+    float: left;
+    height: 87px;
+    margin-left: -22px;
+    background: #939393;
+    transform: skewX(-25deg);
+}
+
+.container_desc_selection_skew p{
+  width: 75%;
+  text-align: center;
+  color: #ffF;
+  margin: auto;
+  font-size: 0.8em;
+  padding: 3% 0 0 0;
+  transform: skewX(25deg);
+}
+
+.container_menu_select_skew_left{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+
+.container_menu_select_skew_right{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  background:#fff;
+}
+
+.container_image_select_skew{
+  width: 36%;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+
+.container_menu_skew_options{
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+  left: -7px;
+  display: inline-block;
+  background: url(../images/nuevosArtes/oferta_educativa/diagonal.png);
+  background-repeat: no-repeat;
+}
+
+
+.container_menu_skew_options h6{
+  font-family: 'HelveticaLight',arial;
+  color: #a52e1f;
+  margin-left: 45%;
+  margin-top: 10%;
+  font-size: 1.5em;
+  width: 30%;
+}
+
+.container_menu_skew_options p{
+  font-family: 'HelveticaBold',arial;
+  color: #5e5e5e;
+
+  font-size: 0.9em;
+  width: 30%;
+  line-height: 15px;
+}
+
+.text_modalidad{
+  margin-left: 40%;
+}
+
+.text_type{
+  margin-left: 35%;
+}
+.text_duration{
+  margin-left: 30%;
+}
+.text_credits{
+  margin-left: 25%;
+}
+.text_number{
+  margin-left: 20%;
+}
+.text_plain{
+  margin-left: 15%;
+}
+.text_sign{
+   margin-left: 10%;
+}
+
+
+#container_opt_select{
+  display: none;
+}
+
+.container_menu_skew_options span{
+  font-family: 'HelveticaLight',arial;
+}
+
+.container_menu_select_skew_left h6{
+  margin-top: 28%;
+  font-size: 0.9em;
+  font-family: 'HelveticaBold';
+  color: #5e5e5e;
+}
+
+.container_menu_select_skew_left p{
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  line-height: 14px;
+  font-family: 'HelveticaLight',arial;
+}
+
+.text_desc_selection_derecho{
+  margin-top: 10%;
+  text-align: justify;
+}
+
+.menu_navegacion_bottom_text_desc{
+  overflow: hidden;
+}
+
+.contanier_buttons_nav{
+  overflow: hidden;
+  float: right;
+}
+
+.menu_navegacion_bottom_text_desc button{
+  border: none;
+  margin-left: 10px;
+
+}
+
+
+.menu_navegacion_bottom_text_desc img{
+  vertical-align: middle;
+  padding: 0px 10px 0 10px;
+}
+
+
+
+/* VIDA EN CAMPUS  */
+
+#vidaShow{
+  display:none;
+}
+
+.contenedorVida{
+  overflow: hidden;
+  height: auto;
+}
+
+.headerSubMenuVida{
+  overflow: hidden;
+}
+
+.tituloOfertaAcademica{
+  padding-top: 15px;
+}
+
+.subMenuVida{
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  font-size: 0.6em;
+  text-align: center;
+  font-family: 'HelveticaLight';
+  color: #434343;
+}
+
+.subMenuUnoVida{
+  width: 75px;
+  height: 75px;
+  background: #f5f5f5;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.contenedorTituloVida{
+  overflow: hidden;
+}
+
+.cuadrosVida{
+  overflow: hidden;
+  width: 24.7%;
+  background: #f5f5f5;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  padding: 100px 0 140px 30px;
+  margin: 1px;
+}
+
+.cuadroVidaActivo{
+  overflow: hidden;
+  width: 24.7%;
+  color: #ffffff;
+  background: #0b5caa;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  padding: 31px 0 90px 5px;
+}
+
+.textoVida {
+  margin: auto;
+  text-align: left;
+  margin-left: 42%;
+  font-size: 1.3em;
+}
+
+.textoVidaActivo{
+  margin: auto;
+  text-align: left;
+  margin-left: 14%;
+  font-size: 1.1em;
+}
+
+
+.tituloContenedorVida {
+    width: 55%;
+    margin: auto;
+    transform: skew(30deg);
+    background: red;
+    overflow: hidden;
+}
+
+.tituloVida{
+  padding-top: 15px;
+}
+
+.textoTituloVida{
+  color: #ffffff;
+  font-size: 0.8em;
+  transform: skew(-30deg);
+  padding: 30px 30px 30px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tituloVinculacionEmpresarial{
+  padding-top: 40px;
+  height: 130px;
+  color: #838383;
+  font-size: 0.9em;
+}
+
+.downArrow{
+  margin-left: 84px;
+  width: 4%;
+  margin-top: 29px;
+}
+
+.vinculacionEmpresaria{
+  position: absolute;
+  margin-left: 18px;
+  color: #616161;
+  font-size: 1.4em;
+  margin-top: -9px;
+}
+
+.flechaVinculacion{
+  position: absolute;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+  left: -121px;
+  top: -38px;
+}
+
+.padrePrimerFilaVida{
+  margin-top: 30px;
+  max-height: 180px;
+  color: #0b5caa;
+}
+
+.azulFuerte{
+  color: #0b5caa;
+  font-weight: bold;
+}
+
+
+.textoVinculacion{
+  text-align: left;
+  padding-left: 130px;
+}
+
+.segundaFilaVida{
+  width: 24.94%;
+  height: 180px;
+  color: #ffffff;
+  background: #0b5caa;
+  display: inline-block;
+  float: left;
+  font-size:0.7em;
+  padding-top:30px; 
+  padding-left: 40px; 
+  box-sizing: border-box;
+  margin: 1px;
+}
+
+.tituloAzulVida{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+/*   INVESTIGACION   */
+
+#investigacionShow{
+  display:none;
+}
+
+.contenedorInvestigacion{
+  overflow: hidden;
+  height: auto;
+}
+
+.headerSubMenuInvestigacion{
+  overflow: hidden;
+}
+
+.tituloOfertaAcademica{
+  padding-top: 15px;
+}
+
+.subMenuVida{
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  font-size: 0.6em;
+  text-align: center;
+  font-family: 'HelveticaLight';
+  color: #434343;
+}
+
+.subMenuUnoVida{
+  width: 75px;
+  height: 75px;
+  background: #f5f5f5;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.contenedorTituloVida{
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.cuadroInvestigacionActive{
+  background: #818c8e;
+  color: #fff;
+}
+.cuadroInvestigacionActive h6{
+  background: #818c8e;
+  color: #fff;
+  font-weight: bold;
+}
+.cuadrosInvestigacion{
+  overflow: hidden;
+  width: 24.8%;
+  height: 240px; 
+  overflow: hidden;
+  border :1px solid #818c8e;
+  display: inline-block;
+  float: left;
+  margin: 1px;
+  padding-top: 10px;
+}
+
+.cuadrosInvestigacion h6{
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+
+}
+.cuadrosInvestigacion p{
+  width: 80%;
+  margin: auto;
+  font-size: 0.8em;
+  padding: 10px 0px 10px 18px;
+}
+
+.azulFuerteInvetigacion{
+  color: #0b5caa;
+  font-weight: bold;
+}
+
+.textoVida {
+  margin: auto;
+  text-align: left;
+  margin-left: 42%;
+  font-size: 1.3em;
+}
+
+.textoVidaActivo{
+  margin: auto;
+  text-align: left;
+  margin-left: 14%;
+  font-size: 1.1em;
+}
+
+
+.tituloContenedorVida {
+    width: 55%;
+    margin: auto;
+    transform: skew(30deg);
+    background: red;
+    overflow: hidden;
+}
+
+.tituloVida{
+  padding-top: 15px;
+}
+
+.textoTituloVida{
+  color: #ffffff;
+  font-size: 0.8em;
+  transform: skew(-30deg);
+  padding: 30px 30px 30px 30px;
+}
+
+
+
+
+
+
+
+/*SERVICIOS*/
+
+#serviciosShow{
+  display:none;
+}
+
+.contenedorServicios{
+  height: auto;
+  overflow: hidden;
+}
+
+.tituloServicios{
+  padding-top: 15px;
+}
+
+
+.contenedorTituloServicios{
+  overflow: hidden;
+}
+
+.tituloContenedorServicios {
+  width: 55%;
+  margin: auto;
+  transform: skew(30deg);
+  background: red;
+  overflow: hidden;
+}
+
+.textoTituloServicios{
+  color: #ffffff;
+  font-size: 0.8em;
+  transform: skew(-30deg);
+  padding: 30px 30px 30px 30px;
+}
+
+
+.contenedorImagenTextoServicios{
+  height: auto;
+  overflow: hidden;
+  background: url(../images/nuevosArtes/servicio/servicios.png)no-repeat;
+  background-size: 100%;
+  margin-bottom: 20px;
+} 
+
+.contenedorDiagonaTextoServicios{
+  width: 80%;
+  /* height: 513px; */
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  background: #fff;
+  transform: skewX(-145deg);
+}
+
+.descripcionTituloServicios{
+  width: 60%;
+  margin-top: 3%;
+  margin-left: 25%;
+  text-align: justify;
+  font-size: 0.65em;
+  transform: skewX(145deg);
+}
+
+.parrafoServicios{
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 30%;
+  font-size: 0.65em;
+  text-align: justify;
+  transform: skewX(145deg);
+}
+
+
+
+
+  .parrafosServicios h6{
+    font-weight: bold;
+  }
+
+  .informesServicios{
+    width: 50%;
+    height: 250px;
+    display: inline-block;
+    float: left;
+    background: #f5f5f5;
+    text-align: center;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    padding: 60px;
+  }
+
+  .informesServiciosTitulo{
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  .hospedajeServicios{
+    width: 50%;
+    height: 250px;
+    display: inline-block;
+    float: left;
+    background: #eaeaea;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+
+  .hospedajeServicios img{
+    width: 8%;
+    margin-top: 18px;
+  }
+
+  .hospedajeServiciosTitulo{
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .hospedajeServiciosDescripcion{
+    width: 400px;
+    font-size: 0.7em;
+    text-align: center;
+    margin: auto;
+  }
+
+  .contenedorBotonesServicios{
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+  .downArrowAccionSocial{
+    margin-left: 64px;
+    width: 36%;
+    margin-top: 38px;
+  }
+
+  .accionSocial{
+    position: absolute;
+    margin-left: 4px;
+    color: #616161;
+    font-size: 1.4em;
+    margin-top: -9px;
+    font-family: 'HelveticaLight';
+    color: #434343;
+  }
+
+  .subMenuUnoServicios{
+    width: 75px;
+    height: 75px;
+    background: #f5f5f5;
+    margin: 1px;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 25px;
+  }
+
+  .centro{
+    background: #ff0000;
+    color: #ffffff;
+  }
+
+  .subMenuUnoServicios:hover{
+    background: #ff0000;
+    color: #ffffff;
+  }
+
+  .subMenuDos{
+    width: 70px;
+    height: 74px;
+    background: #f5f5f5;
+    margin :1px;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 19px;
+  }
+
+  .subMenuDos:hover{
+    background: #ff0000;
+    color: #ffffff;
+  }
+
+
+  .tituloContenedor{
+    width: 442px;
+    height: 151px;
+    position: absolute;
+    background: url(../images/nuevosArtes/accionSocial/title_poligon.png)no-repeat;
+    top: 151px;
+    left: 186px;
+    box-sizing: border-box;  
+    padding-top: 30px;
+  }
+
+  .textoTitulo{
+    color: #ffffff;
+    padding-left: 110px;
+  }
+
+  .tituloContenedor h6{
+    font-weight: bold;
+  }
+
+  .tituloContenedor p{
+    width: 210px;
+    font-size: 0.8em;
+  }
+
+  .tituloTabla{
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .headerSubMenuServicios{
+    overflow: hidden;
+  }
+
+  .tablaServicios{
+    margin-top: 0px;
+  } 
+  .contenedorImagenTexto{
+    height: 513px;
+    background: url(../images/nuevosArtes/servicios/img_parallax.png)no-repeat;
+    background-size: 100%;
+    margin-bottom: 20px;
+  } 
+
+  .contenedorDiagonaTexto{
+    width: 1100px;
+    height: 513px;
+    margin:auto;
+    background: url(../images/nuevosArtes/diagonal.png)no-repeat;
+    background-size: 100% 100%;
+    margin-right: 0px;
+  }
+  
+  .descripcionServiciosDiagonal{
+    width: 563px;
+    margin-left: 165px;
+    padding-top: 60px;
+    text-align: justify;
+    font-size: 0.65em;
+  }
+
+  .parrafosServicios{
+    width: 325px;
+    margin-top: 43px;
+    margin-left: 400px;
+    font-size: 0.65em;
+    text-align: justify;
+  }
+
+  .parrafosServicios h6{
+    font-weight: bold;
+  }
+
+  .informesServicios{
+    width: 50%;
+    height: 250px;
+    display: inline-block;
+    float: left;
+    background: #f5f5f5;
+    text-align: center;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    padding: 60px;
+  }
+
+  .informesServiciosTitulo{
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  .hospedajeServicios{
+    width: 50%;
+    height: 250px;
+    display: inline-block;
+    float: left;
+    background: #eaeaea;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+
+  .hospedajeServicios img{
+    width: 8%;
+    margin-top: 18px;
+  }
+
+  .hospedajeServiciosTitulo{
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .hospedajeServiciosDescripcion{
+    width: 400px;
+    font-size: 0.7em;
+    text-align: center;
+    margin: auto;
+  }
+
+  .contenedorBotonesServicios{
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+/* VINCULACON EMPRESARIAL */
+
+#vinculacionEmpresarialShow{
+  display: none;
+}
+
+.contenedorEmpresarial{
+  overflow: hidden;
+}
+
+.headerSubMenuVinculacion{
+  overflow: hidden;
+}
+
+.tituloVinculacion{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+.contenedorFilaVinculacion{
+  width: 100%;
+  color: #0b5caa;
+  overflow: hidden;
+}
+
+.primerFilaVinculacion{
+  width: 33%;
+  display: inline-block;;
+  float: left;
+  margin: 0.1%;
+  background: #f5f5f5;
+}
+
+.segundaFilaVinculacion {
+    width: 33%;
+    display: inline-block;
+    float: left;
+    margin: 0.1%;
+    background: #f5f5f5;
+}
+
+.tercerFilaVinculacion {
+    width: 33%;
+    display: inline-block;
+    float: left;
+    margin: 0.1%;
+    background: #f5f5f5;
+}
+
+
+.textoVinculacion{
+  text-align: left;
+  box-sizing: border-box;
+  padding: 30% 20% 30% 40%;
+
+}
+
+.activeVinculacion{
+  width: 33%;
+  color: #ffffff;
+  background: #0b5caa !important; 
+  font-size:0.7em;
+  box-sizing: border-box;
+}
+
+.textoVinculacionActive{
+  text-align: left;
+  box-sizing: border-box;
+  padding: 8% 5% 30% 5%;
+}
+
+
+
+
+
+
+
+
+.tituloVinculacionEmpresarial{
+  padding-top: 40px;
+  height: 130px;
+  color: #838383;
+  font-size: 0.9em;
+}
+
+.downArrow{
+  margin-left: 84px;
+  width: 4%;
+  margin-top: 29px;
+}
+
+.vinculacionEmpresaria{
+    position: absolute;
+    margin-left: 5px;
+    font-size: 1.4em;
+    margin-top: -9px;
+    font-family: 'HelveticaBold';
+    color: #838383;
+}
+
+.flechaVinculacion{
+  position: absolute;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+  left: -121px;
+  top: -38px;
+}
+
+.azulFuerte{
+  color: #0b5caa;
+  font-weight: bold;
+}
+.primerFila{
+  height: 180px;
+  width: 33%;
+  background: #f5f5f5;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 60px;
+  margin: 1px;
+}
+.padreSegundaFila{
+  max-height: 180px;
+}
+.segundaFila{
+  width: 33%;
+  height: 180px;
+  background: #f5f5f5;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 60px;
+  margin: 1px;
+  color: #0b5caa;
+}
+
+.segundaFilaBolsa{
+  width: 33%;
+  height: 180px;
+  color: #ffffff;
+  background: #0b5caa;
+  display: inline-block;
+  float: left;
+  font-size:0.7em;
+  padding-top:12px; 
+  padding-left: 40px; 
+  box-sizing: border-box;
+  margin: 1px;
+}
+
+.alianza{
+  padding-top: 5px;
+}
+
+.padreTercerFila{
+  max-height: 180px;
+  color: #0b5caa;
+}
+
+.tercerFila{
+  width: 33%;
+  height: 180px;
+  background: #f5f5f5;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 60px;
+  margin: 1px;
+}
+
+
+/*ACCION SOCIAL*/
+
+
+#accionsocialShow{
+  display: none;
+}
+
+.contenedorAccionSocial{
+  overflow: hidden;
+}
+
+.headerSubMenuAccionSocial{
+  overflow: hidden;
+}
+
+.tituloAccionSocial{
+  padding-top: 15px;
+}
+
+.subMenuAccionSocial{
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  font-size: 0.6em;
+  text-align: center;
+  font-family: 'HelveticaLight';
+  color: #434343;
+}
+
+.subMenuUnoAccionSocial{
+  width: 75px;
+  height: 75px;
+  background: #f5f5f5;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.contenedorTituloAccionSocial{
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.tituloContenedorAccionSocial {
+  width: 55%;
+  margin: auto;
+  transform: skew(30deg);
+  background: red;
+  overflow: hidden;
+}
+
+.textoTituloAccionSocial{
+  color: #ffffff;
+  font-size: 0.8em;
+  transform: skew(-30deg);
+  padding: 30px 30px 30px 30px;
+}
+
+.contenedorImagenTextoAccionSocial{
+  height: auto;
+  overflow: hidden;
+  background: url(../images/nuevosArtes/laSalle/universidad_la_salle.png)no-repeat;
+  background-size: 100%;
+  margin-bottom: 20px;
+} 
+
+.contenedorDiagonalAccionSocial{
+  width: 80%;
+  /* height: 513px; */
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  background: #fff;
+  transform: skewX(-145deg);
+}
+
+
+.descripcionTituloAccionSocial{
+  width: 60%;
+  margin-top: 3%;
+  margin-left: 25%;
+  text-align: justify;
+  font-size: 0.65em;
+  transform: skewX(145deg);
+}
+
+.parrafoAccionSocial{
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 30%;
+  font-size: 0.65em;
+  text-align: justify;
+  transform: skewX(145deg);
+}
+
+
+.centro{
+  background: #ff0000;
+  color: #ffffff;
+  cursor: pointer
+}
+
+
+/*CONTACTO*/
+
+
+#contactoShow{
+  display:none;
+}
+
+.contenedorContacto{
+  overflow: hidden;
+}
+
+.headerSubMenuContacto{
+  overflow: hidden;
+}
+
+.tituloAccionSocial{
+  padding-top: 15px;
+}
+
+.subMenuContacto{
+  width: 510px;
+  height: 152px;
+  display: inline-block;
+  float: left;
+  font-size: 0.6em;
+  text-align: center;
+  font-family: 'HelveticaLight';
+  color: #434343;
+}
+
+.subMenuUnoContacto{
+  width: 75px;
+  height: 75px;
+  background: #f5f5f5;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.centro{
+  background: #ff0000;
+  color: #ffffff;
+}
+
+
+.contenedorTituloContacto{
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.tituloContenedorContacto {
+  width: 55%;
+  margin: auto;
+  transform: skew(30deg);
+  background: red;
+  overflow: hidden;
+  text-align: center;
+}
+
+.textoTituloContacto{
+  color: #ffffff;
+  font-size: 0.8em;
+  transform: skew(-30deg);
+  padding: 30px 30px 30px 30px;
+}
+
+.containerMapa{
+  overflow: hidden;
+  height: 350px;
+  background: url(../images/nuevosArtes/mapa/mapa.png)no-repeat;
+  background-size: 100%;
+}
+
+
+.formContacto{
+  text-align: center;
+  margin: 5% 0 5% 0;
+  width: 100%;
+}
+
+.formNombre{
+  width: 100%;
+  border-radius: 0 !important;
+  border: 1px solid #999999 !important;
+}
+
+.formEmail{
+  width: 49%;
+  display: inline-block;
+  float: right;
+  border-radius: 0 !important;
+  border: 1px solid #999999 !important;
+}
+
+.formTelefono{
+  width: 49%;
+  display: inline-block;
+  float: left;
+  border-radius: 0 !important;
+  border: 1px solid #999999 !important;
+}
+
+.comentario{
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  padding-left:25px;
+  padding-right: 25px;  
+  border-radius: 0 !important;
+  border: 1px solid #999999 !important;
+}
+
+.enviar{
+    border-radius: 0 !important;
+    background: #111d61 !important;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 0.5% 5% 4% 5% !important;
+}
+
+
+.telefonoContacto{
+  font-size: 2em;
+}
+
+
+
+
+.containerMapa img{
+  width: 4%;
+}
+
+.point{
+  margin-left: 618px;
+  margin-top: 144px;
+}
+
+
+
+
+
+
+
+
+/*ASPIRANTE*/
+
+#aspiranteShow{
+  display:none;
+}
+
+.contenedorAspirante{
+  height: 1060px;
+}
+.activeAspirantes{
+  background: #6c7a7b !important;
+  color: #ffffff !important;
+}
+
+.contenedorImagenAspirante{
+    height: 513px;
+    background: url(../images/nuevosArtes/aspirante/back.png)no-repeat;
+    background-size: 100%;
+    margin-bottom: 20px;
+} 
+
+.aspiranteSpan{
+    position: absolute;
+    margin-left: 5px;
+    font-size: 1.4em;
+    margin-top: -9px;
+    font-family: 'HelveticaBold';
+    color: #838383;
+}
+
+.tituloContenedorAspirante{
+  width: 442px;
+    height: 151px;
+    position: absolute;
+    background: url(../images/nuevosArtes/accionSocial/title_poligon.png)no-repeat;
+    top: 149px;
+    left: 186px;
+    box-sizing: border-box;
+    padding-top: 13px;
+    font-size: 0.75em;
+}
+
+.primerFilaAspiranteres{
+  height: 180px;
+    width: 24.5%;
+    background: #f5f5f5;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 60px;
+    margin: 1px;
+}
+
+
+.textoAspiranteBlanco{
+  text-align: left;
+    padding-left: 48px;
+    margin-top: -18px;
+}
+
+.flechaEnvio{
+    position: absolute;
+    float: right;
+    margin-left: 185px;
+    margin-top: 46px; 
+}
+
+.textoAspirante{
+  color: #0b5caa;
+  text-align: left;
+    padding-left: 48px;
+    margin-top: -18px;
+}
+
+
+
+/*DDD  III  V  V     MM MM EEE NN  N UU UU 
+  D DD  I   V  V     M M M EE  N N N UU UU  
+  DDD  III   VV      M   M EEE N  NN UUUUU
+
+  PRINCIPAL CIERRE
+*/
+
+
+
+
+
+
+
+/* SLIDER PRINCIPAL  Y DESCRIPCION DE NOTICIA  */
+
+.btn_slider{
+  border: 0 !important;
+}
+
+#desc_slider{
+  display: none;
+}
+
+
+#desc_noticias{
+  display: none;
+}
+
+
+.btn_noticia_more{
+  margin: auto;
+  text-align:center;
+  border: 0px;
+  margin-left: 30%;
+}
+
+.btn_noticia_more img{
+  margin:auto;
+  width: 50%;
+}
+
+.desc{
+    text-align: center;
+}
+
+.title_desc{
+  background: red;
+  width: 50%;
+  margin: auto;
+  -ms-transform: skewX(45deg); /* IE 9 */
+  -webkit-transform: skewX(45deg); /* Chrome, Safari, Opera */
+  transform: skewX(45deg);
+}
+
+.title_desc h3{
+  font-size: 2em;
+  color: #fff;
+  padding: 2% 0% 2% 0%;
+  -ms-transform: skewX(-45deg); /* IE 9 */
+  -webkit-transform: skewX(-45deg); /* Chrome, Safari, Opera */
+  transform: skewX(-45deg);
+}
+
+.desc_desc{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*PRINCIPAL MENU*/
+
+
+.menuPrincipalAzul{
+  position: absolute;
+  z-index: 2;
+  top: 31%;
+  right: 14%;
+}
+
+.menuPrincipalAzul ul li{
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+
+.contenedorFull{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#barrasParralaxIndex
+{
+  z-index: -1;
+  display: block;
+}
+
+.menuIndex nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menuIndex nav li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 150px;
+  transform: skewX(-16deg);
+  transition: all 0.3s;
+}
+
+.menuIndex nav a {
+  display: block;
+  color: #285064;
+  transition: all 0.3s;
+  transform: skewX(0deg);
+}
+
+.menuIndex nav a:hover {
+  color: #12242d;
+}
+
+.menuIndex nav span {
+  display: block;
+}
+
+
+.uno{
+  width: 300px;
+  height: 515px;
+  background: transparent url(../images/nuevosArtes/menuPerfiles/imagen/home_perfiles_aspirante.png)0px top no-repeat !important;
+  position: absolute;
+}
+
+.opcionUno{
+  margin-left: -82%;
+  width: 300px;
+  height: 515px;
+  background: transparent url(../images/nuevosArtes/menuPerfiles/imagen/home_perfiles_aspirante.png)0px top no-repeat !important;
+  background-position: 0% 0%;
+  transform: skewX(16deg);
+}
+
+.opcionDos{
+  width: 300px;
+  height: 515px;
+  background:url(../images/nuevosArtes/menuPerfiles/imagen/home_perfiles_estudiante.png) no-repeat !important;
+}
+
+
+
+
+@media all and (min-width: 690px) {
+
+  .menuIndex nav a:hover {
+    color: #fff;
+    background-color: #12242d;
+  }
+}
+
+
+
+.opcionesMenu{
+  width:300px; 
+  height:515px;
+}
+
+.botonUno{
+  width: 300px;
+  height: 515px;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+    -webkit-transform: skewX(-14.5deg) translate3d(0,0,0);
+    -khtml-transform: skewX(-14.5deg) translate3d(0,0,0);
+    -moz-transform: skewX(-14.5deg) translate3d(0,0,0);
+    -ms-transform: skewX(-14.5deg) translate3d(0,0,0);
+    -o-transform: skewX(-14.5deg) translate3d(0,0,0);
+    transform: skewX(-14.5deg) translate3d(0,0,0);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.botonUnoContenedor{
+  left: 0;
+}
+
+.bg-wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.back{
+  margin-left: 19%;
+  -webkit-transform: skewX(14.5deg) translate3d(0,0,0);
+  -khtml-transform: skewX(14.5deg) translate3d(0,0,0);
+  -moz-transform: skewX(14.5deg) translate3d(0,0,0);
+  -ms-transform: skewX(14.5deg) translate3d(0,0,0);
+  -o-transform: skewX(14.5deg) translate3d(0,0,0);
+  transform: skewX(14.5deg) translate3d(0,0,0);
+}
+
+#imagenSiete{
+  margin-left: -5%;
+}
+
+#imagenUno{
+  margin-left: 12.3%;
+}
+
+#imagenDos{
+  margin-left: 21.6%;
+}
+
+#imagenTres{
+  margin-left: 34.8%;
+}
+
+#imagenCuatro{
+  margin-left: 48%;
+}
+
+#imagenCinco{
+  margin-left: 61.3%;
+}
+
+#imagenSeis{
+  margin-left: 74.5%;
+}
+
+
+.contenedorBotonMenuRedesSociales{
+    margin-bottom: 38px;
+}
+
+.botonMenuRedesSociales{
+  width: 38px;
+  height: 38px;
+  border: none;
+  float: left;
+  padding: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  position: absolute;
+  background: #fff;
+
+}
+
+.contenedorBotonesRedesSociales{
+  display: none;
+}
+
+
+
+
+.redesSocialesIndex{
+  width: 40px;
+  position: absolute;
+  float:right;
+  clear:both;
+  top: 23%;
+  right: 0px;
+  z-index: 1;
+}
+
+.redesSocialesIndex li{
+  margin-bottom: -7px !important;
+  list-style: none;
+}
+
+.lasillistas{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+  background: url(../images/nuevosArtes/redesSociales/icon_correolasallistas_over.png);
+}
+
+.lasillistas:hover{
+  background: url(../images/nuevosArtes/redesSociales/icon_correolasallistas.png);
+}
+
+.facebook{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+
+  background: url(../images/nuevosArtes/redesSociales/icon_facebook.png);
+}
+.facebook:hover{
+  background: url(../images/nuevosArtes/redesSociales/icon_facebook_over.png);
+}
+
+.twitter{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+
+  background: url(../images/nuevosArtes/redesSociales/icon_twitter.png);
+}
+
+.twitter:hover{
+  background: url(../images/nuevosArtes/redesSociales/icon_Twitter_over.png);
+}
+
+
+.youtube{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+
+  background: url(../images/nuevosArtes/redesSociales/icon_youtube.png);
+}
+
+.youtube:hover{
+  background: url(../images/nuevosArtes/redesSociales/icon_youtube_over.png);
+}
+
+.instagram{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+  background: url(../images/nuevosArtes/redesSociales/icon_instagram.png);
+}
+
+.instagram:hover{
+  background: url(../images/nuevosArtes/redesSociales/icon_instagram_over.png);
+}
+
+.pinterest{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+  background: url(../images/nuevosArtes/redesSociales/icon_Pinterest.png);
+}
+
+.pinterest:hover{
+  background: url(../images/nuevosArtes/redesSociales/icon_pinterest_over.png);
+}
+
+.vimeo{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+  background: url(../images/nuevosArtes/redesSociales/icon_vimeo.png);
+}
+
+.vimeo:hover{
+  background: url(../images/nuevosArtes/redesSociales/icon_vimeo_over.png);
+}
+
+.foursquare{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+  background: url(../images/nuevosArtes/redesSociales/icon_Foursquare.png);
+}
+
+.foursquare:hover{
+  background: url(../images/nuevosArtes/redesSociales/icon_Foursquare_over.png);
+}
+
+
+
+
+
+/*HEADER*/
+header{
+  margin-top: 5%;
+}
+
+#barrasParralax
+{
+  display: block;
+}
+
+.logo img{
+  width: 40%;
+}
+
+
+.contenedorIdioma{
+  width: 35%;
+  display: inline-block;
+  float: left;
+  padding-left: 4%;
+  box-sizing: border-box;
+}
+
+.contenedorFormulario{
+  width: 45%;
+  display: inline-block;
+}
+
+.backgroundDiagonales{
+  text-align: center;
+  background-size: 100%;
+  position: absolute;
+  overflow: hidden;
+  height: auto;
+  margin: auto;
+  z-index: 1;
+}
+.backgroundDiagonales img{
+  width: 100%;
+}
+
+#buttonsHeader{
+  z-index: 2
+}
+
+.search{
+  width: 90%;
+  border-radius: 0px !important; 
+  font-size: 0.9em;
+  height: 35px !important;
+  padding-right: 30px !important;
+}
+
+.submit{
+  width: 47px;
+  padding: 0px !important;
+  border: none !important; 
+  background:url(../images/nuevosArtes/header/buscador.png)no-repeat !important;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 11.5%;
+}
+
+.searchBar{
+  margin-left: 1%;
+}
+
+.en{
+  outline:0 !important;
+  border: none !important; 
+  width: 28px;
+  padding: 0px !important;
+}
+
+.en:focus {outline:0 !important;}
+#en:focus {outline:0 !important;}
+
+.es{
+  outline:0 !important;
+  width: 35px;
+  padding: 0px !important;
+  border: none !important; 
+}
+
+.es:focus {outline:0 !important;}
+#es:focus {outline:0 !important;}
+
+.bannerPrincipals{
+  overflow: hidden;
+  width: 100%;
+  height: 550px;
+  object-fit: contain;
+  background: transparent 50% 0 fixed;
+}
+
+
+
+.bannerPrincipal{
+  overflow: hidden;
+  height: 840px;
+  background:url(../images/nuevosArtes/header/parallaxHome.png)no-repeat !important;
+  position: relative;
+  z-index: -1;
+
+}
+
+.bannerPrincipal img{
+  width: 100%;
+  z-index: -1;
+}
+
+
+
+
+
+
+/* BOTON MENU PRINCIPAL */
+
+.menuPrincipal{
+  width: 15%;
+  display: inline-block;
+}
+
+.buttonPrincipal{
+  width: 60px;
+  height: 46px;
+  padding: 0px !important;
+  border: none !important;
+  background: url(../images/nuevosArtes/header/menusinhamburguesa.png)no-repeat !important;
+  background-size: 100%;
+  position: fixed;
+  float: right;
+  top: 50px;
+}
+
+
+
+
+
+/*  MENU REDES SOCIALES */
+
+
+.redesSocialesResponsive{
+  display: none;
+}
+
+.redesSociales{
+  width: 40px;
+  position: absolute;
+  float:right;
+  clear:both;
+  top: 18%;
+  right: 0px;
+  z-index: 1;
+}
+.redesSociales li{
+  margin-bottom: -7px !important;
+  list-style: none;
+}
+
+
+
+
+/* NOTICIAS */
+
+.noticias{
+  overflow: hidden;
+}
+
+#noticiasResponsive{
+  display: none;
+}
+
+#noticias{
+  margin-bottom: 5%;
+}
+
+.seccionUno{
+  width: 100%;
+  overflow: hidden;
+}
+
+.seccionDos{
+  width: 100%;
+  overflow: hidden;
+  margin-top: -9px;
+}
+
+.primeraNoticiaSeccionUno{
+  display: inline-block;
+  width: 20%;
+}
+
+.primeraNoticiaSeccionUno img{
+  display:block;
+  position:relative;
+  z-index:10;
+  width: 100%;
+}
+
+.primeraNoticiaSeccionUno figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+
+.primeraNoticiaSeccionUno figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.primeraNoticiaSeccionUno figure figcaption {
+    background-size: 100% 100%;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.primeraNoticiaSeccionUno figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.primeraNoticiaSeccionUno figure:hover img,figure.hover img {
+  
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+
+.primeraNoticiaSeccionUno figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+
+
+
+.segundaNoticiaSeccionUno{
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+}
+
+.segundaNoticiaSeccionUno img{
+  display:block;
+  position:relative;
+  z-index:10;
+  width: 100%;
+}
+
+.segundaNoticiaSeccionUno figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+
+.segundaNoticiaSeccionUno figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.segundaNoticiaSeccionUno figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.segundaNoticiaSeccionUno figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.segundaNoticiaSeccionUno figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+
+.segundaNoticiaSeccionUno figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+
+.terceraNoticiaSeccionUno{
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+}
+
+.terceraNoticiaSeccionUno img{
+  display:block;
+  position:relative;
+  z-index:10;
+  width: 100%;
+}
+
+.terceraNoticiaSeccionUno figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+
+.terceraNoticiaSeccionUno figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.terceraNoticiaSeccionUno figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.terceraNoticiaSeccionUno figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.terceraNoticiaSeccionUno figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+
+.terceraNoticiaSeccionUno figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+
+
+.cuartaNoticiaSeccionUno{
+  display: inline-block;
+  width: 40%;
+  margin-left: -4px;
+}
+
+.cuartaNoticiaSeccionUno img{
+  display:block;
+  position:relative;
+  z-index:10;
+  width: 100%;
+}
+
+.cuartaNoticiaSeccionUno figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+
+.cuartaNoticiaSeccionUno figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.cuartaNoticiaSeccionUno figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.cuartaNoticiaSeccionUno figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.cuartaNoticiaSeccionUno figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+
+.cuartaNoticiaSeccionUno figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+
+
+.quintaNoticiaSeccionDos{
+  display: inline-block;
+  width: 40%;
+}
+
+
+.quintaNoticiaSeccionDos img{
+  display:block;
+  position:relative;
+  z-index:10;
+  width: 100%;
+}
+
+.quintaNoticiaSeccionDos figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+
+.quintaNoticiaSeccionDos figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.quintaNoticiaSeccionDos figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.quintaNoticiaSeccionDos figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.quintaNoticiaSeccionDos figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+
+.quintaNoticiaSeccionDos figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+
+.sextaNoticiaSeccionDos{
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+}
+
+.sextaNoticiaSeccionDos img{
+  display:block;
+  position:relative;
+  z-index:10;
+  width: 100%;
+}
+
+.sextaNoticiaSeccionDos figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+
+.sextaNoticiaSeccionDos figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.sextaNoticiaSeccionDos figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.sextaNoticiaSeccionDos figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.sextaNoticiaSeccionDos figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+
+.sextaNoticiaSeccionDos figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+
+
+.septimaNoticiaSeccionDos{
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+}
+
+.septimaNoticiaSeccionDos img{
+  display:block;
+  position:relative;
+  z-index:10;
+  width: 100%;
+}
+
+.septimaNoticiaSeccionDos figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+
+.septimaNoticiaSeccionDos figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.septimaNoticiaSeccionDos figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.septimaNoticiaSeccionDos figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.septimaNoticiaSeccionDos figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+
+.septimaNoticiaSeccionDos figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+.octavaNoticiaSeccionDos{
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+}
+
+.octavaNoticiaSeccionDos img{
+  display:block;
+  position:relative;
+  z-index:10;
+  width: 100%;
+}
+
+.octavaNoticiaSeccionDos figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+
+.octavaNoticiaSeccionDos figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.octavaNoticiaSeccionDos figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.octavaNoticiaSeccionDos figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.octavaNoticiaSeccionDos figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+
+.octavaNoticiaSeccionDos figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+
+
+/* HOVER */
+.hoverCapaUno{
+  color: #fff;
+  width: 256px;
+  height: 315px;
+  background: url(../images/nuevosArtes/noticias/news2.png);
+  background-size:100%;
+  text-align: center;
+  position: absolute;
+  display: none;
+}
+
+.descOver{
+  text-align: justify;
+  width: 180px;
+  font-size: 0.8em;
+  margin: auto;
+  font-family: 'HelveticaUltraLight',arial;
+}
+
+.hoverCapaUno img{
+  width: 20% !important;
+  margin-top: 32px;
+}
+
+.tituloHover{
+  text-align: right;
+    padding-right: 76px;
+    padding-top: 20px;
+    font-weight: bold;
+    font-family: 'HelveticaRegular',arial;
+}
+
+#noticiaDesc:hover .hoverCapaUno{
+  display: block; 
+}
+
+#noticiaDesc:hover .descNoticias{
+  display: none;  
+}
+
+.noticiaUnoDescripcion{
+  width: 180px;
+  font-size: 0.9em;
+  font-weight: bold;
+
+}
+
+.descNoticias{
+  display: block; 
+  width: 256px;
+    height: 100px;
+    background: url(../images/nuevosArtes/noticias/descripcion_noticias.png);
+    z-index: 1;
+    background-size: 100% 100%;
+    margin-top: 215px;
+    box-sizing: border-box;
+    padding: 33px;
+    position: absolute;
+    text-align: center;
+    font-family: 'HelveticaRegular',arial;
+    color: #444444;
+}
+
+.dosNoticia{
+  width: 256px;
+  height: 315px;
+  background: url(../images/nuevosArtes/noticias/news7.png);  
+  z-index: -1;
+}
+
+
+/* HOVER CAPA GRANDE */
+
+.hoverCapaGrande{
+  color: #fff;
+  width: 511px;
+  height: 315px;
+  background: url(../images/nuevosArtes/noticias/news2.png);
+  background-size:100%;
+  text-align: center;
+  position: absolute;
+  display: none;
+}
+
+.descOverGrande{
+  text-align: justify;
+  width: 300px;
+  font-size: 0.8em;
+  margin: auto;
+  font-family: 'HelveticaUltraLight',arial;
+}
+
+.hoverCapaGrande img{
+  width: 10% !important;
+  margin-top: 50px;
+}
+
+.tituloHoverGrande{
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+    font-family: 'HelveticaRegular',arial;
+}
+
+#noticiaDesc:hover .hoverCapaGrande{
+  display: block; 
+}
+
+#noticiaDesc:hover .descNoticiasGrande{
+  display: none;  
+}
+
+/* HOVER CAPA PEQUE */
+
+.hoverCapaPeque{
+  color: #fff;
+  width: 258px;
+  height: 158px;
+  background: url(../images/nuevosArtes/noticias/news2.png);
+  background-size:100%;
+  text-align: center;
+  position: absolute;
+  display: none;
+}
+
+.descOverPeque{
+  text-align: justify;
+  width: 220px;
+  font-size: 0.6em;
+  margin: auto;
+      font-family: 'HelveticaUltraLight',arial;
+}
+
+.hoverCapaPeque img{
+  width: 10% !important;
+  margin-top: 10px;
+}
+
+.tituloHoverPeque{
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 0.9em;
+      font-family: 'HelveticaRegular',arial;
+}
+
+#noticiaDesc:hover .hoverCapaPeque{
+  display: block; 
+}
+
+#noticiaDesc:hover .descNoticiasPeque{
+  display: none;  
+}
+
+
+
+.tresNoticia{
+  width: 256px;
+  height: 315px;
+  background: url(../images/nuevosArtes/noticias/news3.png);  
+  z-index: -1;
+}
+
+
+.cuatroNoticia{
+  width: 511px;
+  height: 316px;
+  background: url(../images/nuevosArtes/noticias/news4.png);  
+  z-index: -1;
+}
+
+
+.descNoticiasGrande{  
+  width: 511px;
+    height: 100px;
+    background: url(../images/nuevosArtes/noticias/Image_news2_BackWithe.png);
+    z-index: 1;
+    background-size: 100% 100%;
+    margin-top: 215px;
+    box-sizing: border-box;
+    padding: 33px;
+    position: absolute;
+    text-align: center;
+    font-family: 'HelveticaRegular',arial;
+    color: #444444;
+}
+
+.quintaNoticiaSeccion{
+  width: 511px;
+  height: 316px;
+  background: url(../images/nuevosArtes/noticias/news5.png);  
+  z-index: -1;
+}
+
+
+.descripcionNoticiaUno{
+    height: 140px;
+    background: url(../images/nuevosArtes/noticias/descripcion_noticias.png);
+    background-size: 100% 100%;
+    width: 100%;
+    z-index: 10;
+    margin-top: -145px;
+    position: relative;
+}
+
+
+
+
+.imagenUnoPeque{
+  width: 258px;
+    height: 158px;
+    background: url(../images/nuevosArtes/noticias/pequeUno.png); 
+  z-index: -1;
+}
+
+.imagenDosPeque{
+  width: 258px;
+    height: 158px;
+    background: url(../images/nuevosArtes/oticias/pequeDos.png); 
+  z-index: -1;
+}
+
+.descNoticiasPeque{ 
+  width: 258px;
+    height: 50px;
+    background: url(../images/nuevosArtes/noticias/descripcion_noticias.png);
+    z-index: 1;
+    background-size: 100% 100%;
+    margin-top: 77px;
+    box-sizing: border-box;
+    padding: 41px;
+    position: absolute;
+    text-align: center;
+}
+
+.noticiaUnoDescripcionPeque{
+  width: 258px;
+  font-size: 0.6em;
+  font-weight: bold;
+
+}
+
+
+
+.descripcionNoticiaUno{
+    height: 140px;
+    background: url(../images/nuevosArtes/noticias/descripcion_noticias.png);
+    background-size: 100% 100%;
+    width: 100%;
+    z-index: 10;
+    margin-top: -145px;
+    position: relative;
+}
+
+
+
+.sieteNoticia{
+  width: 256px;
+  height: 315px;
+  background: url(../images/nuevosArtes/noticias/news7.png);  
+  z-index: -1;
+}
+
+
+.ochoNoticia{
+  width: 256px;
+  height: 315px;
+  background: url(../images/nuevosArtes/noticias/news8.png);  
+  z-index: -1;
+}
+
+.descripcionNoticiaUnoPeque{
+    height: 73px;
+    background: url(../images/nuevosArtes/noticias/descripcion_noticias.png);
+    background-size: 100%;
+    width: 100%;
+    z-index: 10;
+    margin-top: -80px;
+    position: relative;
+}
+
+
+.quintaNoticiaSeccionUno{
+  display: inline-block;
+  width: 511px;
+}
+
+.quintaNoticiaSeccionUno img{
+  width: 100%;
+}
+
+
+.sextaNoticiaSeccionUno{
+  display: inline-block;
+  width: 256px;
+  margin-left: -4px;
+}
+
+.sextaNoticiaSeccionUno img{
+  width: 100%;
+}
+
+.septimaNoticiaSeccionUno{
+  display: inline-block;
+  width: 256px;
+  margin-left: -4px;
+}
+
+.septimaNoticiaSeccionUno img{
+  width: 100%;
+}
+
+.octavaNoticiaSeccionUno{
+  display: inline-block;
+  width: 256px;
+  margin-left: -4px;
+}
+
+.octavaNoticiaSeccionUno img{
+  width: 100%;
+}
+
+
+
+
+
+/* MENU CALENDARIO*/
+
+#calendarioResponsive{
+  display: none;
+}
+
+
+
+.title_calendar img{
+  padding-bottom: 7px;
+  vertical-align: middle;
+}
+
+
+.title_calendar{
+  font-size: 30px;
+  font-family: 'HelveticaUltraLight',arial;
+  color: #767676;
+}
+
+.menuCalendario{
+  height: auto;
+  overflow: hidden;
+  margin-left: 0%; 
+}
+.textoEnCapaOver{
+  position: absolute;
+  z-index: 2;
+  display: block;
+}
+
+
+.menuNoticiaCalendario{
+  width: 32.666667% !important;
+}
+
+.menuSecciones ul li{
+  list-style: none;
+  font-size: 0.7em;
+  width: 80%;
+}
+
+.menuSecciones li button{
+  color: #666666;
+  width: 100%;
+  border: none;
+  font-size: 10px;
+  text-align: left;
+  text-transform: none !important;
+  display: block;
+  text-decoration: none; 
+  height: 45px;
+  padding: 0px 15px;
+  line-height: 10px;
+}
+
+.menuSecciones ul li a:hover, ul li a:focus {
+  background:url(../images/nuevosArtes/btn_categoria.png);
+  background-size: 100% 100%;
+  color:#fff;
+}
+
+
+.menuSecciones ul li .seccion:hover, ul li .seccion:focus {
+  background:url(../images/nuevosArtes/btn_categoria.png);
+  background-size: 100% 100%;
+  color:#fff;
+}
+
+
+
+.menuSecciones li a{
+  color: #666666;
+  width: 100%;
+  padding: 11px 20px 8px 20px;
+  display: block;
+  text-decoration: none; 
+}
+
+.menuSeccionActive{
+  background:url(../images/nuevosArtes/btn_categoria.png);
+  background-size: 100% 100%;
+  color:#fff;
+}
+
+.active{
+  color:#fff !important; 
+}
+
+
+.overlayDateDestacado {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    background-size: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.date_event_destacado{
+  width: 50%; 
+  display: inline-block;
+  margin-top: -30px;
+  float: left;
+  overflow: hidden;
+  font-family: 'HelveticaBold';
+  background: #eeefef;
+}
+
+.date_event_destacado p{
+  font-size: 0.9em;
+  width: 50%;
+  float: left;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.date_event_destacado p:nth-child(1){
+  font-size: 6em;
+  padding: 10px 0px 0px 16px;
+  box-sizing: border-box;
+  
+}
+
+.date_event_destacado p:nth-child(2){
+  padding-top: 70px;
+  padding-right: 5px;
+  line-height: 18px;
+}
+
+.date_event_destacado span:nth-child(1){
+  font-size: 4.5em;
+}
+
+
+
+
+.desc_event_destacado{
+  width: 50%;
+  overflow: hidden;
+  background: red;
+  display: inline-block;
+  float: left;
+}
+
+.desc_text {
+  width: 60%; 
+  font-family: 'HelveticaBold',arial;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  padding: 10px 0px 0px 10px;
+
+}
+
+.desc_text p{
+ 
+  color: #fff;
+  font-size: 0.8em;
+
+}
+
+.desc_image{
+  width: 40%;
+  display: inline-block;
+}
+
+.desc_image img{
+  width: 50% !important;
+  margin-top: 50%;
+  margin-left: 15%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.backgroundGrisOpaco{
+  background: url(../images/nuevosArtes/calendario/back_opaco.png)no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+      display: inline-block;
+}
+
+.noticiaPrimerFila{
+  width: 50%;
+  background: url(../images/nuevosArtes/calendario/calendario_imagenes.jpg);
+}
+
+
+.noticiaPrimerFila{
+  width: 50%;
+  display: inline-block;
+  float: left;  
+}
+
+.capaHover{
+  background: whitesmoke;
+  position: relative;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.capaHover:hover{
+  opacity: 1;
+
+}
+.capaHover .textoEnCapaOver:hover{
+  display: none;
+}
+
+
+.contenedorFilasNoticias{
+  float: right;
+  margin-left: 0%;
+  width: 86.666667% !important;
+  margin-bottom: -7px;
+}
+
+.contenedorFilasNoticias img{
+  width: 100%;
+}
+
+
+.fechaDescripcionEventoDestacado{
+  height: 120px;
+  width: 28.25555%;
+  background: red;
+  position: absolute;
+}
+
+
+/*SLIDER DENTRO DE CALENDARIO*/
+
+#slider{
+  overflow: hidden;
+}
+
+ 
+ 
+/* ESTILOS DEL SLIDESHOW */
+ 
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:40%;margin:0;padding:5%;top: 0;position:absolute;}
+ 
+ 
+.bjqs-caption{
+color:black;
+background:whitesmoke;
+opacity:0.96;
+}
+ 
+/* BOTONERA UBICADA AL PIE DEL SLIDESHOW */
+ol.bjqs-markers{
+display: none;
+margin-top:35px;
+}
+ol.bjqs-markers li a{
+padding: 5px 10px;
+background: #000;
+color: #fff;
+margin: 5px;
+text-decoration: none;
+transition:background .5s ease;
+-webkit-transition:background .5s ease;
+-moz-transition:background .5s ease;
+-o-transition:background .5s ease;
+}
+li.active-marker a, ol.bjqs-markers li a:hover{
+display: none; 
+background:gray!important;
+}
+ 
+/* CONTROLES ATRAS Y ADELANTE */
+
+ul.bjqs-controls.v-centered li a {
+
+display: block;
+padding: 10px;
+background: whitesmoke;
+color: #000;
+text-decoration: none;
+opacity:.75;
+display: none; 
+transition:color .5s ease, background .5s ease;
+-webkit-transition:color .5s ease, background .5s ease;
+-moz-transition:color .5s ease, background .5s ease;
+-o-transition:color .5s ease, background .5s ease;
+}
+ul.bjqs-controls.v-centered li a:hover{
+
+    background:#000;
+    color:#fff;
+    display: none;
+}
+
+
+
+/* ACCESO DIRECTO*/
+
+.accesoDirecto{
+  text-align: center;
+  overflow: hidden;
+  display: block;
+}
+
+.accesoDirectoResponsive{
+  display: none;
+}
+
+
+/*PREFOOTER*/
+
+.preFooter{
+  font-family: 'HelveticaUltraLight',arial;
+  color: #838383;
+  overflow: hidden;
+    background: #fff;
+}
+
+.iconoProfesionales img{
+  width: 80%;
+}
+
+.redLaSalle{
+  float: right;
+}
+
+.redLaSalle img{
+  padding-left: 30px;
+}
+
+.redLaSalle a{
+  text-decoration: none;
+  font-size: 0.8em;
+  color: gray;
+  padding-left: 5px;
+}
+
+.redLaSalle ul>li {
+  display: inline;
+
+}
+.mapaSitio{
+  display: block;
+}
+
+
+/* RED LA SALLE */
+
+.redLaSalleContenedor {
+  height: 22px;
+  text-align: right;
+  font-family: 'HelveticaRegular',arial;
+  color: #838383;
+  padding-right: 46px;
+  background: #fff;
+}
+
+.redLaSalle{
+  display: block;
+}
+
+
+
+/*FOOTER*/
+
+.footer{
+  overflow: hidden;
+  background: gray;
+}
+
+.columnasFooter{
+  width: 33%;
+  display: inline-block;
+  float: left;
+
+}
+
+.listaUnoLocalidades{
+  width: 49.5%;
+  display: inline-block;
+  float: left;
+}
+
+.listaDosLocalidades{
+  width: 49.5%;
+  display: inline-block;
+  float: left;
+}
+
+#logosFooterGrisResponsive{
+    display: none;
+  }
+
+.logosFooter{
+  margin-top: 40px;
+}
+.logosFooter img{
+  margin-top: 30px;
+}
+
+.logosFooter p{
+  font-family: 'HelveticaBold',arial;
+  color: #fff;
+  margin-top: 60px;
+  font-size: 0.8em;
+
+}
+
+.listaLocalidades{
+  margin-top: 40px;
+  font-family: 'HelveticaUltraLight',arial;
+  color: #838383;
+}
+
+.listaLocalidades a{
+  text-decoration: none;
+  font-size: 0.7em;
+  color:#ffffff;
+}
+
+.contactanoFooter{
+  margin-top: 40px;
+  font-size: 0.8em;
+  font-family: 'HelveticaRegular',arial;
+  color: #fff;
+  float: right;
+
+}
+
+.tituloContactanos{
+  font-family: 'HelveticaBold',arial;
+  color: #fff;
+  font-size: 0.85em;
+}
+
+
+.telefonoContactanos{
+  font-family: 'HelveticaRegular',arial;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+
+/*ACREDITACION*/
+
+
+  #acreditacion_la_salle{
+    display: none;
+  }
+
+  .btn_process_success{
+    border: 0px !important;
+    width: 34px;
+    height: 26px;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .rotate:focus
+  {
+    padding-bottom: 15px;
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+  }
+
+
+    
+  .acreditacion{
+    height: 35px;
+    background: #eeeeee;
+    text-align: right;
+    font-family: 'HelveticaRegular',arial;
+    color: #838383;
+    font-weight: bold;
+    padding-top: 3px;
+  }
+
+  .upImage{
+    display: none;
+  }
+
+  .acreditacion img{
+    padding-bottom: 5px;
+    vertical-align: middle;
+  }
+
+
+/*POSTFOOTER*/
+
+.postFooter{
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 0.8em;
+  font-family: 'HelveticaUltraLight',arial;
+  color: #838383;
+}
+
+
+/* AVISO DE PRIVACIDAD */
+
+
+.avisoDePrivacidad{
+  display: none;
+
+}
+
+
+
+
+/**************************************************************************************
+***************************************************************************************
+
+
+***  ***  *  ****** ******  ******     ******   *  *******  *  *******
+*  **  *  *  *      *    *  *    *     *        *     *     *  *     *
+*      *  *  *      ****    *    *     *******  *     *     *  *     *
+*      *  *  ****** *    *  ******     *******  *     *     *  *******
+
+***************************************************************************************
+***************************************************************************************/
+
+
+
+
+
+
+
+/**************************************************************************************
+
+CIENCIAS QUIMICAS
+
+****************************************************************************************/
+
+#tituloMicroSitioCienciasQuimicas{
+  background: #2f80b6;
+}
+
+
+/**************************************************************************************
+
+FACULTAD DE DERECHO
+
+****************************************************************************************/
+
+#tituloMicroSitioDerecho{
+  background: #bd3b2f;
+}
+
+
+/**************************************************************************************
+
+FACULTAD DE INGENIERIA
+
+****************************************************************************************/
+
+#tituloMicroSitioIngenieria{
+  background: #2170a5;
+}
+
+
+/**************************************************************************************
+
+FACULTAD DE NEGOCIOS
+
+****************************************************************************************/
+
+#tituloMicroSitioNegocio{
+  background: #159839;
+}
+
+
+/**************************************************************************************
+
+FACULTAD DE CIENCIAS SOCIALES
+
+****************************************************************************************/
+
+#tituloMicroSitioCienciasSociales{
+  background: #0d3c7f;
+}
+
+
+
+
+/**************************************************************************************
+
+UNIDAD MEDICA
+
+****************************************************************************************/
+
+.tituloMicroSitioVida h6{
+  text-align: center !important;
+}
+
+#tituloMicroSitioMedicina{
+  background: #fecb2f;
+}
+
+.titleUnidadMedica{
+  font-family: 'HelveticaLight';
+  color: #fff;
+  padding: 15px 0px 15px 0px;
+}
+
+.titleUnidadMedica span{
+  font-family: 'HelveticaBold';
+  color: #fff;
+}
+
+
+.bannerPrincipalMicrositio{
+  background: url(../images/nuevosArtes/unidad_medica/unidad_medica.png);
+  background-size: 100%;
+}
+
+.overlayTituloCalendarioMicroSitio {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-size: 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-height: 283px;
+  text-align: center;
+  font-family: 'HelveticaRegular',arial;
+  padding: 20px;
+}
+
+.overlayTituloCalendarioMicroSitio p{
+  text-align: left;
+  margin-bottom: 0px;
+  line-height: 20px;
+}
+
+.overlayTituloCalendarioMicroSitio img{
+  width: 20%;
+  margin:auto !important;
+}
+
+
+.title_calendario_micrositio{
+  margin-top: 10%;
+  font-size: 2em;
+  color: #585858;
+  font-family: 'HelveticaBold',arial;
+}
+
+.subtitle_calendario_micrositio{
+  font-size: 1em;
+  color: #585858;
+  font-family: 'HelveticaBold',arial;
+}
+
+.desc_calendario_micrositio{
+  font-size: 0.7em;
+  color: #585858;
+  font-family: 'HelveticaRegular';
+}
+
+
+.title_expositores{
+  color: #c3c3c3;
+  font-size: 0.6em;
+  font-family: 'HelveticaBold';
+  line-height: 13px !important;
+}
+
+.desc_expositores{
+  color: #c3c3c3;
+  line-height: 13px !important;
+  font-size: 0.6em;
+  font-family: 'HelveticaLight';
+}
+
+
+
+.directorioContacto {
+    width: 19.8%;
+    display: inline-block;
+    float: left;
+    margin: 0.1%;
+    background: #f5f5f5;
+}
+
+.textoContactoActive {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15% 20% 25% 20%;
+}
+
+
+/**************************************************************************************
+
+FACULTAD DE FAMADYC
+
+****************************************************************************************/
+
+#tituloMicroSitioFamadyc{
+  background: #818d8d;
+}
+
+
+
+#responsiveMenuHeader{
+  display: none;
+}
+
+
+#bannerPrincipalResponsive{
+  display: none;
+}
+
+#opc_menu_principal{
+  display: none;
+}
+
+#perfilesResponsive{
+  display: none;
+}
+
+
+.titulosResponsive{
+  display: none;
+}
+
+#serviciosShowResponsive{
+  display: none;
+}
+
+#universidadShowResponsive{
+  display: none;
+}
+
+#ofertaAcademicaResponsive{
+  display: none;
+}
+
+#vidaShowResponsive{
+  display: none
+}
+
+#contactoShowResponsive{
+  display: none;
+}
+#logosResponsive{
+  display: none;
+}
+
+.footerLocalidades{
+  display: none;
+}
+
+.acreditacion_responsive{
+  display: none;
+}
+
+#acreditacion_la_salle_responsive{
+  display: none;
+}
+
+
+#vidaShowResponsive{
+    display:none ;
+}
+
+#vinculacionEmpresarialShowResponsive{
+  display: none;
+}
+
+#accionsocialShowResponsive{
+  display: none;
+}
+
+#investigacionShowResponsive{ 
+  display: none;
+}
+
+#perfilAspiranteResponsive{
+  display: none; 
+}
+
+#perfilDocenteResponsive{
+    display: none;
+}
+
+#perfilEstudianteResponsive{
+  display: none;
+}
+
+#perfilAdministrativoResponsive{
+  display: none; 
+}
+
+#perfilEgresadoResponsive{
+  display: none; 
+}
+
+#perfilPadresResponsive{
+  display: none; 
+}
+
+#perfilInternationalStudentResponsive{
+    display: none;
+}
+
+/*MEDIAS QUERYS RESPONSIVE*/
+
+
+
+/* Larger than desktop */
+@media (max-width: 1000px) {
+  
+  /*RESPONSIVE CALENDARIO*/
+
+  .responsive-calendar .day {
+    font-size: 0.9rem !important;
+  }
+
+  .responsive-calendar .controls h4 {
+    font-size: 1.5rem !important;
+  }
+
+  .btnMenubtn {
+    font-size: 0.8rem;
+  }
+
+}
+
+
+/* Larger than tablet */
+
+
+@media (max-width: 750px) {
+
+
+
+  .searchBar, .backgroundResponsive{
+    margin-left: 0px;
+  }
+  .searchBar, .backgroundResponsive{
+    background: #f4f6f5;
+  }
+
+
+  /* GENERALES */
+  .marginResponsive{
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  /* CONTENEDOR IDIOMAS*/
+
+  .contenedorIdioma {
+    padding-left: 2%;
+  }
+
+  /* MENU PRINCIPAL OPCIONES*/
+  .btn_menu_principal_responsive{
+    border: 0px;
+    border-radius: 0px;
+    width: 40px;
+    padding: 0px;
+    float: right;
+    background: url(../images/nuevosArtes/images_responsive/menuHamburguesaResponsive.png);
+  }
+
+  #opc_menu_principal{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+  }
+  
+  .opc_btn_menu_responsive{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .opc_btn_menu_responsive button{
+    border: 0px;
+    height: 30px;
+    color:#0e124e;
+  }
+
+  .opc_btn_menu_responsive hr{
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+    border-width: 0;
+    border-top: 1px solid #d2202f;
+  }
+
+  /*RESPONSIVE CALENDARIO*/
+
+  .responsive-calendar .controls h4 {
+    font-size: 1rem !important;
+  }
+
+  #ubicacion{
+    display: none;
+  }
+
+  #perfilesResponsive{
+    display: block;
+    text-align: center;
+  }
+
+  .perfilesResponsive{
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    background: #f4f6f5;
+    padding: 0 5px 0 5px;
+  }
+
+
+  .search{
+    background: transparent !important;
+    border: 0 !important;
+
+  }
+
+  .submit{
+    background: url(../images/nuevosArtes/header/btn_search_responsive.png)no-repeat !important;
+    background-size: 100%;
+    background-position: 12px 7px !important;
+   }
+
+  .perfilesResponsive button{
+    display: inline-block;
+    height: 38px;
+    padding: 0 0px;
+    color: #555;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: none;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    font-family: 'HelveticaBold',arial;
+    box-sizing: border-box;
+  }
+
+  .unoDerecha{
+    float: left;
+  }
+
+#responsiveMenuHeader{
+  display: block;
+}
+
+  .dosIzquierda{
+      float: right;
+  }
+
+  #bannerPrincipalResponsive{
+    display: block;
+  }
+
+  .bannerPrincipalResponsive{
+    overflow: hidden;
+  }
+
+  .bannerPrincipalResponsive img{
+    width: 100%;
+  }
+  .contenedorHeaderResponsive{
+    background: gray;
+  }
+
+  #buttonsHeader{
+    display: none;
+  }
+
+  .bannerPrincipals{
+    display: none;
+  }
+  #menuPerfiles{
+    display: none;
+  }
+
+  .titulosResponsive{
+    display: block;
+    text-align: center;
+  }
+
+  .titulosResponsive p{
+    font-family: 'HelveticaBold';
+    font-size: 0.6em;
+  }
+  .title_calendar img{
+    width: 10%;
+  }
+
+  #title_calendario{
+    display: none;
+  }
+
+
+  /*LOGOS RESPONSIVE UNIVERSIDADES*/
+
+  .logosResponsive{
+    display: block;
+    background: #a0a0a0;
+    padding: 15px 0 15px 0px;
+  }
+
+
+  /*FOOTER LOCALIDADES*/
+
+  .footer{
+    display: none;
+  }
+  .footerLocalidades{
+    overflow: hidden;
+    background: gray;
+
+  } 
+
+  .text_responsive_contacto{
+    text-align: center;
+    color: #fff;
+    font-size: 0.6em;
+    color: #eaeaea;
+    padding: 0 0 20px 0;
+  }
+  .text_responsive_title{
+    font-family: 'HelveticaBold',arial;
+    font-size: 2em !important;
+    color: #fff;
+    margin-bottom: -5px;
+  }
+
+  .text_responsive_telephone{
+    font-family: 'HelveticaRegular',arial;
+    font-size: 2.5em !important;
+    color: #fff;
+    margin-bottom: 0px;
+
+  }
+
+  /* ACREDITACION */
+
+  .acreditacion{
+    display: none;
+  }
+  .acreditacion_responsive{
+    display: block;    
+  }
+
+  #footerResponsive{
+   display: block; 
+  }
+
+  #logosResponsive{
+    display: block;
+  }
+  
+  .acreditacion_responsive{
+    background: #eeeeee;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+    color: #838383;
+    font-family: 'HelveticaRegular',arial;
+  }
+  #acreditacion_la_salle_responsive{
+    text-align: justify;
+  }
+
+  #acreditacion_la_salle_responsive{
+    display: block;
+  }
+
+  /* AVISO DE PRIVACIDAD */
+
+
+  .avisoDePrivacidad{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    background: #b5b5b5;
+    overflow: hidden;
+    display: block;
+    font-family: 'HelveticaBold',arial;
+  }
+
+  .avisoDePrivacidad p{
+    margin-bottom: 0px !important;
+  }
+
+  /* REDES SOCIALES RESPONSIVE */
+
+  
+  .redesSociales{
+    display: none;
+  }
+
+  .redesSocialesResponsive{
+    overflow: hidden;
+    display: block;
+    top: 350px;
+    right: 0px;
+    z-index: 1;
+    margin: auto;
+  }
+
+  .redesSocialesResponsive ul{
+    text-align: center;
+    margin-bottom:-9px !important;
+  }
+
+  .redesSocialesResponsive li{
+    margin-right: -4px;
+    margin-bottom: -7px !important;
+    list-style: none;
+    display: inline;
+  }
+
+  .redesSocialesResponsive a{
+    width: 50px;
+    height: 50px;
+  }
+  .redesSocialesResponsive img{
+    width: 12%;
+  }
+
+
+  /* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * *
+  *********************************************************** 
+
+   UNIDADES RESPONSIVES 
+
+  ************************************************************
+   * * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+
+  #universidadShow{
+    display: none;
+  }
+  #universidadShowResponsive{
+    display: none;
+  }
+
+  .subMenuResponsiveUniversidad select{
+    width: 100%;
+    background: #f4f6f5;
+    color: gray;
+    border: 0px;
+    height: 40px;
+    border-radius: 0px !important;
+  }
+  
+  .flechita select {
+    background: url(../images/nuevosArtes/arrow_select.png) no-repeat 100% 0px #fff !important;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .contenedorTituloUniversidadResponsive{
+    overflow: hidden;
+  }
+
+  .tituloContenedorUniversidadResponsive {
+    width: 100%;
+    margin: auto;
+    background: red;
+    transform: skew(30deg);
+
+  }
+  
+
+  .tituloContenedorUniversidadResponsive p{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    transform: skew(-30deg);
+    padding: 40px 20px 40px 20px;
+  }
+
+  .tituloContenedorUniversidadResponsive{
+    color: #ffffff;
+    font-size: 0.8em;
+  }
+
+  .imageTituloUniversidad{
+    transform: skew(-30deg);
+    overflow: hidden;
+    height: 200px;
+  } 
+
+  .container_image_responsive{
+    background: url(../images/nuevosArtes/laSalle/universidad_la_salle.png);
+    background-size: 100% 100%;
+    transform: skew(30deg);
+    height: 200px;
+    width: 100%;
+  }
+
+  .content_text_universidad_responsive{
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+  }
+  .content_text_universidad_responsive h6{
+    font-family: 'HelveticaBold',arial;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 0px;
+  }
+  .content_text_universidad_responsive p{
+    font-size: 0.8em;
+    font-family: 'HelveticaUltraLight',arial;
+    color: #838383
+  }
+
+  .video_universidad_responsive img{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+
+
+/* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+
+  Oferta Acedemica
+
+* * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+#ofertaAcademicaResponsive{
+  display: none;
+}
+
+.square{
+  float:left;
+  width: 16.6555555553%;
+  background: #fecb00;
+  height: 65px;
+}
+  
+.square:last-child{
+  margin-right:0;
+}
+.square:before{
+    content:"";
+    display:block;
+}
+
+
+.title_seccion_container{
+  text-align: center;
+  color: #fecb00;
+  font-size: 2.5rem;
+}
+
+
+
+
+.image_image_rsponsive_seccion img{
+  width: 100%;
+}
+
+
+.container_info_gral{
+  display: none;
+}
+.container_menu_opciones_plan_estudio{
+  overflow: hidden;
+}
+.square:hover{
+  background: transparent;
+}
+
+.square_active{
+  float:left;
+  width: 16.6555555553%;
+  height: 65px;
+  background: #fff;
+}
+
+.square button
+{
+  border: 0px ;
+}
+
+.btn_opc_1{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/1.png)no-repeat;
+  background-size: 70%;
+  background-position: 10px 15px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+.btn_opc_1:hover{
+  background: url(../images/nuevosArtes/images_responsive/1_OVER.png)no-repeat;
+  background-size: 70%;
+  background-position: 10px 15px;
+}
+
+.btn_opc_1_active{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/1_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+.btn_opc_2{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/6.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+} 
+
+.btn_opc_2:hover{
+  background: url(../images/nuevosArtes/images_responsive/2_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+}
+
+
+.btn_opc_2_active{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/2_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+.btn_opc_3{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/2.png)no-repeat;
+  background-size: 70%;
+  background-position: 10px 15px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+.btn_opc_3:hover{
+  background: url(../images/nuevosArtes/images_responsive/3_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+}
+
+.btn_opc_3_active{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/3_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+.btn_opc_4{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/3.png)no-repeat;
+  background-size: 80%;
+  background-position: 10px 10px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+.btn_opc_4:hover{
+  background: url(../images/nuevosArtes/images_responsive/4_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+}
+
+.btn_opc_4_active{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/4_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+
+
+
+.btn_opc_5{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/4.png)no-repeat;
+  background-size: 70%;
+  background-position: 15px 10px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+.btn_opc_5:hover{
+  background: url(../images/nuevosArtes/images_responsive/5_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+}
+
+
+
+.btn_opc_5_active{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/5_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+
+
+.btn_opc_6{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/5.png)no-repeat;
+  background-size: 50%;
+  background-position: 15px 10px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+.btn_opc_6:hover{
+  background: url(../images/nuevosArtes/images_responsive/6_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+}
+
+
+.btn_opc_6_active{
+  overflow: hidden;
+  background: url(../images/nuevosArtes/images_responsive/6_OVER.png)no-repeat;
+  background-size: 60%;
+  background-position: 10px 10px;
+  width: 16.6555555553%;
+  height: 65px;
+  border: 0px !important;
+}
+
+
+ .contenedor_text_responsive_skew_left_principal_menu_facultades{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background: gray;
+    transform: skew(20deg);
+}
+
+
+.content_text_gray{
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+    transform: skew(-20deg);
+    text-align:center;
+    font-family: 'HelveticaThing',arial;
+} 
+
+.content_text_gray p{
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+    color: #ffffff;
+    font-size: 0.8em;
+    padding: 30px 20px 40px 40px;
+}
+
+
+.title_seccion_container_subtitle{
+  text-align: center;
+  color: #fecb00;
+  font-size: 2rem;
+    margin-top: 10%;
+}
+
+.container_data_general_licenciatura {
+  overflow: hidden;
+} 
+
+.container_data_general_licenciatura p{
+  line-height: 20px;
+  margin-bottom: 0px;
+  color: #cccccc;
+  font-family: 'HelveticaLight',arial;
+  overflow: hidden;
+}
+
+.desc_licenciature{
+  font-weight: bold;
+  color: #333333 !important;
+  margin-bottom: 2em !important;
+}
+
+
+.table_data_left_licenciature{
+  width: 50%;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+}
+.table_data_right_licenciature{
+  width: 50%;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+}
+
+.contanier_list_course{
+  margin-top: 1%;
+  overflow: hidden;
+  background: #f1f1f1;
+  padding: 10px 0px 50px 0px;
+}
+
+.contanier_list_course h6{
+  font-size: 2em;
+  margin: auto;
+  text-align: center;
+  color: #fecb00 !important;
+}
+
+.contanier_list_course p{
+  text-align: left;
+  margin-left: 15%;
+  color: #9e9e9e;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+
+.container_video_licenciature{
+    margin-top: 10%;
+}
+
+.container_video_licenciature img{
+  width: 100%;
+}
+
+
+
+
+
+
+/* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+
+   Vida
+
+* * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  
+  #vidaShowResponsive{
+    display:none ;
+  }
+
+  .contenedor_text_responsive_skew_left_principal{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background: red;
+    transform: skew(20deg);
+  }
+
+  .contenedor_text_responsive_skew_left{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background: #f1f1f1;
+    transform: skew(20deg);
+  }
+
+  .content_text_red{
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+    transform: skew(-20deg);
+    text-align:center;
+  } 
+  .content_text_red p{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    color: #ffffff;
+    font-size: 0.8em;
+    padding: 100px 20px 40px 20px;
+  }
+  .contenedor_text_responsive_skew_right{
+    background: #f1f1f1;
+    transform: skew(-20deg);
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .content_text{
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+    transform: skew(20deg);
+    text-align:center;
+  }
+
+  .azulClaro{
+    color: #0b5caa;
+  }
+
+  .content_text p{
+    text-align: center;
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    font-size: 0.8em;
+    padding: 40px 20px 40px 20px;
+  }
+
+
+/* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+
+   Servicios
+
+* * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  #serviciosShowResponsive{
+    display: none;
+  }
+  .banner_seccion_responsive img{
+    width: 100%;
+  }
+  .text_info_seccion_responsive{
+    overflow: hidden;
+    padding: 15px 0px 0px 0px;
+  }
+  .text_info_seccion_responsive p{
+    text-align: justify;
+    color: #D1D1D1;
+    font-size: 0.7em;
+    font-family: 'HelveticaLight',arial;
+  }
+  .text_info_seccion_responsive h6{
+    color: #bcbaba;
+    font-size: 0.8em;
+    font-family: 'HelveticaBold',arial;
+  }
+
+  .title_seccion_responsive p{
+    text-align: center;
+    color:#555;
+    font-family: 'HelveticaBold',arial;
+    padding: 5% 0 2% 0;
+  }
+
+
+  .content_text_servicios_responsive{
+    overflow: hidden;
+    width: 90%;
+    padding: 10px 0px 10px 10px;
+    transform: skew(20deg);
+  }
+
+  .content_text_servicios_responsive p{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    font-size: 0.8em;
+    padding: 40px 20px 40px 20px;
+  }
+  .content_text_servicios_responsive h6{
+    padding: 40px 20px 0px 60px;
+    margin-bottom: 0px;
+  }
+
+  .content_text_servicios_responsive_left{
+    overflow: hidden;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    transform: skew(-20deg);
+  } 
+  
+  .content_text_servicios_responsive_left p{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    font-size: 0.8em;
+    padding: 40px 20px 40px 20px;
+  }
+  
+  .content_text_servicios_responsive_left h6{
+    padding: 40px 20px 0px 60px;
+    margin-bottom: 0px;
+  }
+
+  .text_info_seccion_student_international_responsive{
+    background: #f1f1f1;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+  }
+
+  .text_info_seccion_student_international_responsive h6{
+    font-family: 'HelveticaBold',arial;
+    padding: 20px 0px 10px 0; 
+    color:#555;
+  }
+
+  .text_info_seccion_student_international_responsive p{
+    color: #D1D1D1;
+    font-size: 0.7em;
+    font-family: 'HelveticaLight',arial; 
+  }
+
+
+/* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+
+   Vinculacion Empresarial
+
+* * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  #vinculacionEmpresarialShowResponsive{
+    display: none;
+  }
+
+  .more_vinculacion_responsive {
+    float: right;
+    text-decoration: none;
+  }
+
+  .more_vinculacion_responsive  img{
+    width: 30%;
+    vertical-align: middle;
+  }
+
+  .text_info_credit_seccion_responsive{
+    text-align: right;
+    padding: 20px 0px 10px 0px; 
+  }
+  .text_info_credit_seccion_responsive p {
+    color: #555;
+    font-size: 0.8em;
+    line-height: 10px;
+  }
+
+/* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+
+   Accion Social 
+
+* * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  #accionsocialShowResponsive{
+    display: none;
+  }
+
+
+/* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+
+   Investigacion
+
+* * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  #investigacionShowResponsive{ 
+    display: none;
+  }
+  
+  .investigacion_reponsive_container{
+    text-align: center;
+  }
+
+  .investigacion_cuadro_responsive{
+    overflow: hidden;
+    width: 43%;
+    overflow: hidden;
+    border :1px solid #eeeeee;
+    display: inline-block;
+    float: left;
+    margin: 10px;
+  }
+
+  .investigacion_cuadro_responsive p{
+    padding: 30% 0px 0px 0px;
+
+  }
+
+  .investigacion_cuadro_responsive img{
+    width: 44%;
+    float: right;
+  }
+
+
+
+
+  
+  #contactoShowResponsive{
+    display: none;
+  }
+  .container_map_responsive img{
+    width: 100%;
+  }
+  .title_ubicacion_responsive{
+    text-align: center;
+    padding: 20px 0 10px 0;
+    font-size: 1.2em;
+  }
+
+  .fomulario_contacto_responsive{
+    background: #ededed;
+    overflow: hidden;
+    padding: 0px 10px 0px 10px;
+  }
+  .fomulario_contacto_responsive p{
+    text-align: center;
+    color:#c1c1c1;
+    padding: 10% 0px 5% 0px;
+    font-size: 1.1em;
+  }
+
+  .fomulario_contacto_responsive input{
+    width: 100%;
+    background: transparent;
+    border-radius:0px;
+    border: 1px solid #8c8c8c;
+    color:#8c8c8c;
+  }
+
+  .text_area{
+    width: 100%;
+    height: 200px;
+    resize:none; 
+    border: 1px solid #8c8c8c;
+    color:#8c8c8c;
+    background: transparent;
+  }
+
+  .submit_form_responsive{
+    border:0 !important;
+    text-align: center;
+    margin: 0px 0% 5% 30%;
+    background: #0e124e !important;
+    color: #eee !important;
+    width: 40% !important;
+  }
+
+
+
+
+
+  /* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * *
+  *********************************************************** 
+
+   PERFILES RESPONSIVE
+
+  ************************************************************
+   * * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+
+  /* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+    Aspirante
+  * * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  #perfilAspiranteResponsive{
+    display: none; 
+  }
+
+
+
+  /* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+    Estudiante
+  * * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  .text_boton_active_perfiles_responsive{
+    color: #d2202f !important;
+  }
+
+  #perfilEstudianteResponsive{
+    display: none;
+  }
+
+  /* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+    Docente
+  * * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  #perfilDocenteResponsive{
+    display: none;
+  }
+
+  .title_list_responsive{
+    font-size: 1em;
+    overflow: hidden;
+    background: #eee;
+    padding: 10px 0 0px 10px;
+  }
+
+  .content_list_responsive p{
+    overflow: hidden;
+    padding: 0px;
+    height: 20px;
+    margin-bottom: 0px !important;
+  }
+
+  .content_list_responsive ul li{
+    overflow: hidden;
+    background: #818c8e;
+    margin-bottom: 0px !important;
+    padding:0px;
+    color: #f9f9f9;
+    font-family: 'HelveticaUltraLight',arial;
+    letter-spacing: 0.1rem;
+    font-size: 0.9em;
+    padding: 15px 0px 10px 10px;
+  }
+
+  .content_list_responsive img{
+    width: 9%;
+    vertical-align: middle;
+    float: right;
+    margin-right: 10%;
+  }
+
+  /* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+    Administrativo
+  * * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  #perfilAdministrativoResponsive{
+    display: none; 
+  }
+
+  /* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+    Administrativo
+  * * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  #perfilEgresadoResponsive{
+    display: none; 
+  }
+
+  /* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+    Padres
+  * * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  #perfilPadresResponsive{
+    display: none; 
+  }
+
+
+  /* * * * *  * * * * * * * * *  * ** * * *  * * * *  * * * 
+    Inernational Students
+  * * * * * * * * * * * ** * * * * * * * * * * * * * * * * */
+
+  #perfilInternationalStudentResponsive{
+    display: none;
+  }
+}
+
+
+/* Larger than phablet (also point when grid becomes active) */
+
+
+@media (max-width: 550px) {
+
+
+
+  .logo{
+    text-align: center;
+  }
+
+  /*Menu Principal*/
+  #menuNavegacionPrincipal{
+    display: none;
+  }
+
+
+  /*Barras Fondo Index*/
+
+  #barrasParralaxIndex{
+    display: none;
+  }
+
+  /*Barras Fondo Index*/
+
+
+  #barrasParralax{
+    display: none;
+  }
+  .menuPrincipal {
+    float: right;
+  }
+
+  .contenedorIdioma {
+    padding-left: 0px;
+  }
+
+  .buttonPrincipal{
+    width: 40px;
+    height: 36px;
+    padding: 0px !important;
+    border: none !important; 
+    background: url(../images/header/menuHamburguesaResponsive.png)no-repeat!important;
+    background-size: 100%;
+    position: static;
+    top: 42px;
+  }
+
+
+  /* NOTICIAS*/
+
+
+  #noticias{
+    display: none;
+  }
+
+  #noticiasResponsive{
+    display: block;
+  }
+  
+  .tituloNoticiasResponsive{
+    text-align: center;
+  }
+
+  .tituloNoticiasResponsive p {
+    font-weight: bold;
+  }
+
+  .noticiaResponsive img{
+    display:block;
+    position:relative;
+    z-index:10;
+    width: 100%;
+    margin: auto;
+  }
+
+  .noticiaResponsive figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+  }
+
+  .noticiaResponsive figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+  }
+
+  .noticiaResponsive figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+  }
+
+  .noticiaResponsive figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+  }
+
+  .noticiaResponsive figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+  }
+
+  .noticiaResponsive figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+  }
+
+  /* MENU CALENDARIO */
+
+  #calendario{
+  display: none;
+  }
+
+  .menuSecciones{
+    display: none;
+  }
+
+  .menuNoticiaCalendario{
+    display: none;
+    overflow: hidden;
+  }
+
+  #calendarioResponsive{
+    display: block;
+  }
+
+  .imagenesCalendarioResponsive{
+    text-align: center;
+  }
+
+  .botonIzquierdo{
+    width: 15%;
+    display: inline-block;
+    float: left;
+  }
+
+  .botonIzquierdo button{
+    border: none !important;
+    padding: 0px 0px !important;
+  }
+
+
+  .descripcionEvento{
+    width: 70%;
+    display: inline-block;
+    float: right;
+  }
+
+  .botonDerecho{
+    width: 15%;
+    float: right;
+    display: inline-block;
+  }
+
+  .botonDerecho button{
+    padding: 0px 0px !important;
+    border: none !important;
+  }
+
+
+  .controlSliderCalendario{
+    height: auto;
+    overflow: hidden;
+    margin-top: -7px;
+  }
+
+  .controlSliderCalendario img{
+    width: 100%
+  }
+
+  .imagenesCalendarioResponsive img{
+    width: 100%;
+  }
+
+
+  /*CALENDARIO FECHAS*/
+
+
+
+  /* ACCESO DIRECTO RESPONSIVE*/
+
+  .accesoDirecto{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+    display: none;
+  }
+
+  .accesoDirectoResponsive{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+    display: block;
+  }
+
+  .accesoDirectoResponsive img{
+    width: 55%;
+  }
+
+  .primerCirculo{
+    width: 50%;
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+  }
+
+  .segundoCirculo{
+    width: 50%;
+    display: inline-block;
+    overflow: hidden;
+
+  }
+
+
+  /* FOOTER */
+
+
+  .footer{
+    overflow: hidden;
+  }
+
+  
+  /* PROFESIONALES */
+
+
+  .logoProfesionales{
+    text-align: center;
+  }
+
+  .iconoProfesionales img{
+    width: 40%;
+  }
+
+  .mapaSitio{
+    display: none;  
+  }
+
+  
+
+  /* RED LA SALLE RESPONSIVE*/
+
+  
+  .redLaSalleContenedor{
+    display: none;  
+  }
+
+  .mapaSitio{
+    display: none !important;
+  }
+
+  .redLaSalleResponsiveUl{
+    text-align: center !important;
+  }
+  
+  .redLaSalle{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
+  /* LOGOS DENTRO DEL RESPONSIVE */
+
+  
+  #logosFooterGris{
+    display: none;
+  }
+
+  .columnasFooter{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #contactanosFooterGris{
+    display: none;
+  }
+
+  .listaLocalidades {
+    text-align: center;
+
+  }
+
+  .listaLocalidades a{
+    color: #eaeaea;
+  }
+
+  .listaDosLocalidades ul{
+    padding-left:0px;
+  }
+
+  #logosFooterGrisResponsive{
+    display: block;
+    background: #c4c4c4;
+    padding: 50px;
+  }
+
+  .logosFooterResponsive{
+    text-align: center;
+  }
+
+  .logoUnoResponsive{
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+
+  .logoDosResponsive{
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+  }
+
+
+  
+  /* ACREDITACION */
+
+  .acreditacion{
+    text-align: center;
+    padding: 20px;
+  }
+
+  .acreditacion img{
+    display: none;
+  }
+
+
+  /* SLIDER PRINCIPAL */
+
+}
+
+
+/* Larger than mobile */
+
+@media (max-width: 400px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+

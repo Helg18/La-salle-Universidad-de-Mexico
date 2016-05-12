@@ -9,7 +9,7 @@ jQuery(function() {
         // initial value, but these options will not work, if you've already saved state via theme settings panel.
         this.navHorizontal = false;
         this.fixedHeader = true;
-        this.themeActive = "theme-four";
+        this.themeActive = "theme-zero";
         this.navFull = false;
         this.navOffCanvas = false;
         // common selectors

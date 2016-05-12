@@ -29,42 +29,42 @@
   // the base DOM structure needed to create a modal
   var templates = {
     dialog:
-      "<div class='bootbox modal' tabindex='-1' role='dialog'>" +
-        "<div class='modal-dialog'>" +
-          "<div class='modal-content'>" +
-            "<div class='modal-body'><div class='bootbox-body'></div></div>" +
-          "</div>" +
-        "</div>" +
-      "</div>",
+    "<div class='bootbox modal' tabindex='-1' role='dialog'>" +
+    "<div class='modal-dialog'>" +
+    "<div class='modal-content'>" +
+    "<div class='modal-body'><div class='bootbox-body'></div></div>" +
+    "</div>" +
+    "</div>" +
+    "</div>",
     header:
-      "<div class='modal-header'>" +
-        "<h4 class='modal-title'></h4>" +
-      "</div>",
+    "<div class='modal-header'>" +
+    "<h4 class='modal-title'></h4>" +
+    "</div>",
     footer:
-      "<div class='modal-footer'></div>",
+        "<div class='modal-footer'></div>",
     closeButton:
-      "<button type='button' class='bootbox-close-button close' data-dismiss='modal' aria-hidden='true'>&times;</button>",
+        "<button type='button' class='bootbox-close-button close' data-dismiss='modal' aria-hidden='true'>&times;</button>",
     form:
-      "<form class='bootbox-form'></form>",
+        "<form class='bootbox-form'></form>",
     inputs: {
       text:
-        "<input class='bootbox-input bootbox-input-text form-control' autocomplete=off type=text />",
+          "<input class='bootbox-input bootbox-input-text form-control' autocomplete=off type=text />",
       textarea:
-        "<textarea class='bootbox-input bootbox-input-textarea form-control'></textarea>",
+          "<textarea class='bootbox-input bootbox-input-textarea form-control'></textarea>",
       email:
-        "<input class='bootbox-input bootbox-input-email form-control' autocomplete='off' type='email' />",
+          "<input class='bootbox-input bootbox-input-email form-control' autocomplete='off' type='email' />",
       select:
-        "<select class='bootbox-input bootbox-input-select form-control'></select>",
+          "<select class='bootbox-input bootbox-input-select form-control'></select>",
       checkbox:
-        "<div class='checkbox'><label><input class='bootbox-input bootbox-input-checkbox' type='checkbox' /></label></div>",
+          "<div class='checkbox'><label><input class='bootbox-input bootbox-input-checkbox' type='checkbox' /></label></div>",
       date:
-        "<input class='bootbox-input bootbox-input-date form-control' autocomplete=off type='date' />",
+          "<input class='bootbox-input bootbox-input-date form-control' autocomplete=off type='date' />",
       time:
-        "<input class='bootbox-input bootbox-input-time form-control' autocomplete=off type='time' />",
+          "<input class='bootbox-input bootbox-input-time form-control' autocomplete=off type='time' />",
       number:
-        "<input class='bootbox-input bootbox-input-number form-control' autocomplete=off type='number' />",
+          "<input class='bootbox-input bootbox-input-number form-control' autocomplete=off type='number' />",
       password:
-        "<input class='bootbox-input bootbox-input-password form-control' autocomplete='off' type='password' />"
+          "<input class='bootbox-input bootbox-input-password form-control' autocomplete='off' type='password' />"
     }
   };
 
@@ -217,18 +217,18 @@
    */
   function mergeArguments(defaults, args, properties) {
     return $.extend(
-      // deep merge
-      true,
-      // ensure the target is an empty, unreferenced object
-      {},
-      // the base options object for this type of dialog (often just buttons)
-      defaults,
-      // args could be an object or array; if it's an array properties will
-      // map it to a proper options object
-      mapArguments(
-        args,
-        properties
-      )
+        // deep merge
+        true,
+        // ensure the target is an empty, unreferenced object
+        {},
+        // the base options object for this type of dialog (often just buttons)
+        defaults,
+        // args could be an object or array; if it's an array properties will
+        // map it to a proper options object
+        mapArguments(
+            args,
+            properties
+        )
     );
   }
 
@@ -246,14 +246,14 @@
     // ensure the buttons properties generated, *after* merging
     // with user args are still valid against the supplied labels
     return validateButtons(
-      // merge the generated base properties with user supplied arguments
-      mergeArguments(
-        baseOptions,
-        args,
-        // if args.length > 1, properties specify how each arg maps to an object key
-        properties
-      ),
-      labels
+        // merge the generated base properties with user supplied arguments
+        mergeArguments(
+            baseOptions,
+            args,
+            // if args.length > 1, properties specify how each arg maps to an object key
+            properties
+        ),
+        labels
     );
   }
 
@@ -367,8 +367,8 @@
     };
 
     options = validateButtons(
-      mergeArguments(defaults, arguments, ["title", "callback"]),
-      ["cancel", "confirm"]
+        mergeArguments(defaults, arguments, ["title", "callback"]),
+        ["cancel", "confirm"]
     );
 
     // capture the user's show value; we always set this to false before
@@ -582,9 +582,9 @@
 
     if ($.fn.modal === undefined) {
       throw new Error(
-        "$.fn.modal is not defined; please double check you have included " +
-        "the Bootstrap JavaScript library. See http://getbootstrap.com/javascript/ " +
-        "for more details."
+          "$.fn.modal is not defined; please double check you have included " +
+          "the Bootstrap JavaScript library. See http://getbootstrap.com/javascript/ " +
+          "for more details."
       );
     }
 
@@ -593,7 +593,11 @@
       // @TODO I don't like this string appending to itself; bit dirty. Needs reworking
       // can we just build up button elements instead? slower but neater. Then button
       // can just become a template too
-      buttonStr += "<button data-bb-handler='" + key + "' type='button' class='btn " + button.className + "'>" + button.label + "</button>";
+      var tmp='';
+      if(button.label=='Cancel'){
+        tmp = 'data-dismiss="modal"';
+      }
+      buttonStr += "<button data-bb-handler='" + key + "' type='button' class='btn " + button.className + "' " + tmp + " data-dismiss='modal'>" + button.label + "</button>";
       callbacks[key] = button.callback;
     });
 
@@ -653,15 +657,15 @@
     });
 
     /*
-    dialog.on("show.bs.modal", function() {
-      // sadly this doesn't work; show is called *just* before
-      // the backdrop is added so we'd need a setTimeout hack or
-      // otherwise... leaving in as would be nice
-      if (options.backdrop) {
-        dialog.next(".modal-backdrop").addClass("bootbox-backdrop");
-      }
-    });
-    */
+     dialog.on("show.bs.modal", function() {
+     // sadly this doesn't work; show is called *just* before
+     // the backdrop is added so we'd need a setTimeout hack or
+     // otherwise... leaving in as would be nice
+     if (options.backdrop) {
+     dialog.next(".modal-backdrop").addClass("bootbox-backdrop");
+     }
+     });
+     */
 
     dialog.on("shown.bs.modal", function() {
       dialog.find(".btn-primary:first").focus();
@@ -749,20 +753,20 @@
     // methods, e.g. var d = bootbox.alert(); d.hide(); instead
     // of d.modal("hide");
 
-   /*
-    function BBDialog(elem) {
-      this.elem = elem;
-    }
+    /*
+     function BBDialog(elem) {
+     this.elem = elem;
+     }
 
-    BBDialog.prototype = {
-      hide: function() {
-        return this.elem.modal("hide");
-      },
-      show: function() {
-        return this.elem.modal("show");
-      }
-    };
-    */
+     BBDialog.prototype = {
+     hide: function() {
+     return this.elem.modal("hide");
+     },
+     show: function() {
+     return this.elem.modal("show");
+     }
+     };
+     */
 
     return dialog;
 

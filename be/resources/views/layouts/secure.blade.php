@@ -116,55 +116,14 @@
 
 				<!-- navigation -->
 				<ul class="list-unstyled clearfix nav-list mb15">
-					<li class="menu-dashboard">
+					<!--<li class="menu-dashboard">
 						<a href="{{url('home')}}">
 							<i class="ion ion-monitor"></i>
 							<span class="text">Dashboard</span>
 						</a>
-					</li>
+					</li>-->
 
-					@if(Shinobi::can('company.access'))
-
-						<li class="menu-quiz">
-							<a href="{{url('company/quiz')}}">
-								<i class="ion ion-clipboard"></i>
-								<span class="text">Encuestas</span>
-							</a>
-						</li>
-						<li class="menu-user">
-							<a href="{{url('company/user')}}">
-								<i class="ion ion-person"></i>
-								<span class="text">Usuarios</span>
-							</a>
-						</li>
-					@endif
-
-					@if(Shinobi::can('companies.access'))
-						<li class="menu-companies">
-							<a href="{{url('companies')}}">
-								<i class="ion ion-ios-briefcase"></i>
-								<span class="text">Empresas</span>
-							</a>
-						</li>
-					@endif
-
-					@if(Shinobi::can('nse.access'))
-						<li class="menu-nse">
-							<a href="javascript:;">
-								<i class="ion ion-ios-pie-outline"></i>
-								<span class="text">NSE</span>
-								<i class="arrow ion-chevron-left"></i>
-							</a>
-							<ul class="inner-drop list-unstyled">
-								<li><a href="{{url('nse/quiz')}}">Encuesta</a></li>
-								<li><a href="{{url('nse/level')}}">Niveles</a></li>
-							</ul>
-						</li>
-
-					@endif
-
-                    @if(Shinobi::can('config.access'))
-                    <li class="menu-config">
+					<li class="menu-config">
 						<a href="javascript:;">
 							<i class="ion ion-ios-settings-strong"></i>
 							<span class="text">Configuración</span>
@@ -172,27 +131,9 @@
 						</a>
 						<ul class="inner-drop list-unstyled">
 							<li><a href="{{url('config/user')}}">Usuarios</a></li>
-							<li><a href="{{url('config/plan')}}">Planes</a></li>
+
 						</ul>
 					</li>
-
-					@endif
-
-					@if(Shinobi::can('report.access'))
-					<li class="menu-report">
-						<a href="javascript:;">
-							<i class="ion ion-stats-bars"></i>
-							<span class="text">Reportes</span>
-							<i class="arrow ion-chevron-left"></i>
-						</a>
-						<ul class="inner-drop list-unstyled">
-							<li><a href="{{url('report/users')}}">Personas</a></li>
-							<li><a href="{{url('report/quizzes')}}">Encuestas respondidas</a></li>
-						</ul>
-
-
-					</li>
-					@endif
 
 
 

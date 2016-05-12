@@ -1,6 +1,11 @@
 @extends('layouts.secure')
 
 @section('content')
+
+    <div class="text-center mt30"><img src="{{asset('images/logo.png')}}" ></div>
+
+@endsection
+@section('content.bak')
     <div class="page page-dashboard">
 
         <div class="panel mb20 panel-default">

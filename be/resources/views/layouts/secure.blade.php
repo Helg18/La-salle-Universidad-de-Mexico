@@ -116,12 +116,15 @@
 
 				<!-- navigation -->
 				<ul class="list-unstyled clearfix nav-list mb15">
-					<!--<li class="menu-dashboard">
-						<a href="{{url('home')}}">
-							<i class="ion ion-monitor"></i>
-							<span class="text">Dashboard</span>
+
+					@foreach(\App\Models\Category::all() as $c)
+					<li class="menu-dashboard">
+						<a href="{{url('post?id=' . $c->id)}}">
+							<i class="ion ion-edit"></i>
+							<span class="text">{{$c->name}}</span>
 						</a>
-					</li>-->
+					</li>
+					@endforeach
 
 					<li class="menu-config">
 						<a href="javascript:;">

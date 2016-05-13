@@ -16,12 +16,12 @@ class CreatePostsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('title');
-            $table->string('subtitle');
-            $table->text('paragraph_1');
-            $table->text('paragraph_2');
-            $table->text('paragraph_3');
-            $table->string('picture');
-            $table->string('video');
+            $table->string('subtitle')->nullable();
+            $table->text('paragraph_1')->nullable();
+            $table->text('paragraph_2')->nullable();
+            $table->text('paragraph_3')->nullable();
+            $table->string('picture')->nullable();
+            $table->string('video')->nullable();
             $table->timestamps();
         });
     }

@@ -49,6 +49,8 @@ function Category1(){
         //console.log(post.paragraph1);
         $('.descripcionTituloUniversidad.ws').html(post.paragraph_1_html);
         $('.parrafoUniversidad.ws').html(post.paragraph_2_html);
+        $('.seccion_1.ws').html(post.video_iframe +" "+post.picture_html);
+
     }
 
     this.show();

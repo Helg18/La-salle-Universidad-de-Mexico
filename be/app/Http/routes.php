@@ -26,5 +26,8 @@ Route::controllers([
 Route::group(['prefix' => 'config'], function () {
     Route::resource('user', 'UserController');
     Route::get('user/{id}/status', 'UserController@status');
-
 });
+
+Route::delete('post/{id}/deleteimage', 'PostController@delete_image');
+Route::resource('post', 'PostController');
+//Route::get('user/{id}/status', 'UserController@status');

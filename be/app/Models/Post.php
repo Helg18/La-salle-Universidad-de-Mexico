@@ -19,6 +19,11 @@ class Post extends Model
         return $this->belongsToMany('App\Models\Category');
     }
 
+    public function posts(){
+        //return $this->hasMany('App\Models\Post','id','parent_id');
+        return self::where('parent_id',$this->id)->get();
+    }
+
     public function getParagraph1HtmlAttribute(){
         return nl2br($this->paragraph_1);
     }

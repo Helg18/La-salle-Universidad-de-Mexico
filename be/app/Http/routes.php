@@ -22,10 +22,15 @@ Route::controllers([
     'api/v1/frontend'           =>  'Api\V1FrontendController',
 ]);
 
-
 Route::group(['prefix' => 'config'], function () {
     Route::resource('user', 'UserController');
     Route::get('user/{id}/status', 'UserController@status');
+});
+
+Route::group(['prefix' => 'angular'], function () {
+    Route::get('{id}/posts', 'AngularController@posts');
+    Route::post('post', 'AngularController@save_post');
+    Route::delete('{id}/post', 'AngularController@delete_post');
 });
 
 Route::delete('post/{id}/deleteimage', 'PostController@delete_image');

@@ -80,6 +80,9 @@ elixir(function(mix) {
 
         'laravel.js',
 
+        'angular-post.js',
+        'angular-directives.js',
+
     ]);
 
 });

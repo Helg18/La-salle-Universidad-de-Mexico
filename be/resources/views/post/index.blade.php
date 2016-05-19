@@ -99,6 +99,7 @@
                     </div>
                 </div>
 
+                @if($Category->id != 2)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Parrafo 1</label>
                     <div class="col-md-10">
@@ -111,8 +112,10 @@
                         @endif
                     </div>
                 </div>
+                @endif
 
 
+                @if($Category->id != 2)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Parrafo 2</label>
                     <div class="col-md-10">
@@ -125,10 +128,11 @@
                         @endif
                     </div>
                 </div>
+                @endif
 
 
 
-
+                @if($Category->id != 2)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Código video Youtube</label>
                     <div class="col-md-7">
@@ -143,8 +147,10 @@
                         {!! $record ? $record->video_iframe('100','100') :'' !!}
                     </div>
                 </div>
+                @endif
 
 
+                @if($Category->id != 2)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Imagen</label>
                     <div class="col-md-7">
@@ -166,6 +172,7 @@
                         @endif
                     </div>
                 </div>
+                @endif
 
 
 
@@ -181,6 +188,32 @@
 
 
 		    </form>
+
+            @if($record && $Category->id ==2)
+                <script>var parent_id = '{{$record->id}}', category_id = '{{$Category->id}}';</script>
+                <div ng-controller="PostCtrl" class="ng-cloak">
+                    <hr />
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalPost(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar cuadro de información</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="post in posts">
+                                <td><a href="javascript: void(0);" ng-click="modalPost(post, 'Cuadro de información')">@{{post.title}}</a></td>
+                                <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deletePost(post)"><i class="fa fa-close"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                @include('post.modal')
+            @endif
+
 		</div>
 	</div>
 </div>

@@ -22,7 +22,7 @@
 
 
 </head>
-<body id="app" class="app off-canvas theme-zero" >
+<body id="app" class="app off-canvas theme-zero" data-ng-app="lasalle">
 	<!-- header -->
 	<header class="site-head" id="site-head">
 		<ul class="list-unstyled left-elems">

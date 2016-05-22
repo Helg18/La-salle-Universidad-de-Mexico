@@ -6380,3 +6380,12 @@ FACULTAD DE FAMADYC
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
+
+
+/* AJUSTES FERNANDO CASTILLO */
+  .cuadrosVida p{
+    display: none;
+  }
+.ocultarContenidoSubMenu .cuadroVidaActivo p{
+  display: inherit;
+}

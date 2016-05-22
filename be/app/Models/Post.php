@@ -12,7 +12,8 @@ class Post extends Model
         'paragraph_1_html',
         'paragraph_2_html',
         'video_iframe',
-        'picture_html'
+        'picture_html',
+        'children'
     ];
     //
     public function categories(){
@@ -98,5 +99,10 @@ class Post extends Model
         }
         $this->picture = null;
         $this->save();
+    }
+
+
+    public function getChildrenAttribute(){
+        return $this->posts();
     }
 }

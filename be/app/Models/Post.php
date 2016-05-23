@@ -14,6 +14,7 @@ class Post extends Model
         'paragraph_2_html',
         'video_iframe',
         'picture_html',
+        'picture_url',
         'children'
     ];
     //
@@ -69,6 +70,11 @@ class Post extends Model
         return $this->picture_html();
     }
 
+    public function getPictureUrlAttribute(){
+        if(!$this->picture) return "";
+        return asset('images/posts/' . $this->picture);
+    }
+
 
     function picture_html($width='100%'){
         if(!$this->picture) return "";
@@ -113,7 +119,7 @@ class Post extends Model
 
     public function calendarLabels($request){
 
-        if(!$this->categories()->find(4)) return;
+        if(!$request->labels || !$this->categories()->find(4)) return;
 
         $ids = [];
 

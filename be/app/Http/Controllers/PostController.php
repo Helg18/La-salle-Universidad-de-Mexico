@@ -36,7 +36,11 @@ class PostController extends Controller
     public function index(Request $request)
     {
         //
+
         if($request->id) $request->session()->put('category_id', $request->id);
+        if(!Session::get('category_id')){
+            return redirect('home');
+        }
         return $this->customIndex();
     }
 

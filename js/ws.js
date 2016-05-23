@@ -175,17 +175,43 @@ function Category3(){
 
 
 function calendario(){
-    var ul = $('#calendario .menuSecciones ul');
+    var ul = $('#calendario .menuSecciones ul')
+        noticia = '';
+
+    //Limpiando las categorias del calendario
     ul.html('');
-    //console.log(initial_data);
+
+    //Categorias del calendario
     $.each(initial_data.calendar_labels, function(index,label){
         ul.append('<li><button class="seccion academicas" id="openUno">' + label.name+ '</button></li>');
     });
 
-    $.each(initial_data.calendar, function(index,label){
+    //Escondiendo las 4 noticias
+    $('.effects.clearfix').children('div').hide();
+
+    //Mostrando solo las que existan
+    $.each(initial_data.calendar, function(index,post){
+
+        if(index==0){
+            noticia = '.imgNoticiaCalendario';
+        }else if(index==1){
+            noticia = '.imgNoticiaCalendario2';
+        }else if(index==2){
+            noticia = '.imgNoticiaCalendario3';
+        }else if(index==3){
+            noticia = '.imgNoticiaCalendario4';
+        }
+
+        $(noticia).show();
+        $(noticia + ' .title').html(post.title);
+        $(noticia + ' .tituloCalendario').html(post.title);
+        $(noticia + ' .img-post').attr('src',post.picture_url);
+
+
+
 
     });
 
-    $('.effects.clearfix div').hide();
+
 
 }

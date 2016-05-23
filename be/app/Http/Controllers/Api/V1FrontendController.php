@@ -8,6 +8,8 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Models\Category;
+use App\Models\CalendarLabel;
+use App\Models\Post;
 
 class V1FrontendController extends Controller
 {
@@ -22,6 +24,9 @@ class V1FrontendController extends Controller
     public function getInitialData(){
 
         $data = Category::allForJson();
-        return response()->json(['error'=>false,'categories'=>$data]);
+        $labels = CalendarLabel::all();
+        $calendar = Category::find(4)->posts()->limit(4)->get();
+
+        return response()->json(['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar]);
     }
 }

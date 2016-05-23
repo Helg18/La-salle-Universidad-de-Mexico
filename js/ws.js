@@ -21,6 +21,9 @@ function getInitialData(){
         C1 = new Category1();
         C2 = new Category2();
         C3 = new Category3();
+
+
+        calendario();
     });
 }
 
@@ -166,4 +169,23 @@ function Category3(){
     }
 
     this.show();
+}
+
+
+
+
+function calendario(){
+    var ul = $('#calendario .menuSecciones ul');
+    ul.html('');
+    //console.log(initial_data);
+    $.each(initial_data.calendar_labels, function(index,label){
+        ul.append('<li><button class="seccion academicas" id="openUno">' + label.name+ '</button></li>');
+    });
+
+    $.each(initial_data.calendar, function(index,label){
+
+    });
+
+    $('.effects.clearfix div').hide();
+
 }

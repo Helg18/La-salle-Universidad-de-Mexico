@@ -51,7 +51,7 @@
 									@foreach($records as $r)
 									<tr>
 									    <td><a href="{{url("post/{$r->id}/edit")}}">{{$r->title}}</a></td>
-									    <td>{{$r->created_at}}</td>
+									    <td>{{$r->categories()->find(4) ? $r->custom_date : $r->created_at}}</td>
 
 									    <td width="5%">
 									        <a href="{{url("post/{$r->id}")}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Eliminará permanentemente el registro. ¿Desea continuar?" class="md-fab md-primary md-button md-mini waves-effect"><i class="fa fa-remove"></i></a>
@@ -115,7 +115,7 @@
                 @endif
 
 
-                @if($Category->id != 2)
+                @if($Category->id != 2 && $Category->id != 4)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Parrafo 2</label>
                     <div class="col-md-10">
@@ -177,17 +177,56 @@
 
 
 
+
+
+                @if($Category->id ==4)
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Categorias del calendario</label>
+                        <div class="col-md-9">
+                            <select id="multiSelect" style="width: 100%" data-tags="true" multiple="multiple" name="labels[]">
+                                @foreach($CalendarLabels as $c)
+                                <option value="{{$c->id}}" {{$record && $record->labels()->find($c->id) ? 'selected' :''}}>{{$c->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Fecha</label>
+                        <div class="col-md-10">
+                            <!--<input type="text" class="form-control date" value="{{$record ? $record->date : old('date')}}" name="date" autocomplete="off">-->
+                            <div class="input-group date" >
+                                <input type="text" class="form-control" name="custom_date" value="{{$record ? $record->custom_date : old('custom_date')}}" autocomplete="off"/>
+											<span class="input-group-addon">
+												<i class=" ion ion-calendar"></i>
+											</span>
+                            </div>
+                            @if ($errors->has('custom_date'))
+                                <span class="alert alert-danger">
+                                <strong>{{ $errors->first('custom_date') }}</strong>
+                            </span>
+                            @endif
+                        </div>
+                    </div>
+
+                @endif
+
+
                 <div class="btn-group col-md-offset-2">
                     <!--<button class="btn btn-default">Borrar</button>-->
                     @if($record)
-                    <a href="{{url("post/{$record->id}")}}" data-method="delete"
-                      data-token="{{csrf_token()}}" data-confirm="Estas seguro?" class="btn btn-default">Borrar</a>
+                        <a href="{{url("post/{$record->id}")}}" data-method="delete"
+                           data-token="{{csrf_token()}}" data-confirm="Estas seguro?" class="btn btn-default">Borrar</a>
                     @endif
                     <button class="btn btn-success" type="submit">Guardar</button>
                 </div>
 
-
-		    </form>
+            </form>
 
             @if($record && $Category->id ==2)
                 <script>var parent_id = '{{$record->id}}', category_id = '{{$Category->id}}';</script>
@@ -213,6 +252,7 @@
 
                 @include('post.modal')
             @endif
+
 
 		</div>
 	</div>

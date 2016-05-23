@@ -77,6 +77,7 @@ elixir(function(mix) {
         '../template/scripts/app.js',
         '../template/scripts/tables.init.js',
         '../template/scripts/index.init.js',
+        '../template/scripts/form-elements.init.js',
 
         'laravel.js',
 

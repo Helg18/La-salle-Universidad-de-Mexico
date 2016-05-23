@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
+use App\Models\CalendarLabel;
 use App\Http\Requests\PostRequest;
 use Illuminate\Support\Facades\Session;
 
@@ -58,8 +59,9 @@ class PostController extends Controller
         $record->paragraph_3 = $request->paragraph_3;
         $record->video = Post::cleanYoutubeCode($request->video);
         $record->upload($request);
-
+        $record->custom_date = $request->custom_date;
         $record->save();
+        $record->calendarLabels($request);
 
         if($id=Session::get('category_id')){
             $record->categories()->attach($id);
@@ -93,6 +95,7 @@ class PostController extends Controller
      */
     public function update(PostRequest $request, $id)
     {
+        //dd($request->labels);
         //
         $record = Post::find($id);
         $record->title = $request->title;
@@ -102,7 +105,9 @@ class PostController extends Controller
         $record->paragraph_3 = $request->paragraph_3;
         $record->video = Post::cleanYoutubeCode($request->video);
         $record->upload($request);
+        $record->custom_date = $request->custom_date;
         $record->save();
+        $record->calendarLabels($request);
 
         return \Redirect::route('post.index')->with('success','Post actualizado exitosamente');
     }
@@ -131,7 +136,9 @@ class PostController extends Controller
             $Category = false;
         }
 
-        return view('post.index')->with(compact('records','record','Category'));
+        $CalendarLabels = CalendarLabel::all();
+
+        return view('post.index')->with(compact('records','record','Category', 'CalendarLabels'));
     }
 
 

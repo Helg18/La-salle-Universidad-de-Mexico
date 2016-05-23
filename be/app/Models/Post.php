@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\CalendarLabel;
 
 class Post extends Model
 {
@@ -18,6 +19,10 @@ class Post extends Model
     //
     public function categories(){
         return $this->belongsToMany('App\Models\Category');
+    }
+
+    public function labels(){
+        return $this->belongsToMany('App\Models\CalendarLabel');
     }
 
     public function posts(){
@@ -104,5 +109,23 @@ class Post extends Model
 
     public function getChildrenAttribute(){
         return $this->posts();
+    }
+
+    public function calendarLabels($request){
+
+        if(!$this->categories()->find(4)) return;
+
+        $ids = [];
+
+        foreach($request->labels as $l){
+            if(!CalendarLabel::find($l)){
+                $temp = CalendarLabel::create(['name'=>$l]);
+                $ids[] = $temp->id;
+            }else{
+                $ids[] = $l;
+            }
+        }
+
+        $this->labels()->sync($ids);
     }
 }

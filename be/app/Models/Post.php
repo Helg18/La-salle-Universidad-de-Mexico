@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\CalendarLabel;
+use App\Models\Category;
+use DB;
 
 class Post extends Model
 {
@@ -133,5 +135,18 @@ class Post extends Model
         }
 
         $this->labels()->sync($ids);
+    }
+
+    public static function forCalendar($request){
+        $tmp = Category::find(4)
+            ->posts()
+            ->whereRaw(DB::Raw("YEAR(custom_date) = '{$request->year}' AND MONTH(custom_date)='{$request->month}' "))
+            ;
+
+        if(CalendarLabel::find($request->label_id)){
+            $tmp->whereRaw(DB::Raw("posts.id IN (SELECT post_id FROM calendar_label_post  WHERE calendar_label_id={$request->label_id}  )"));
+        }
+
+        return $tmp->get();
     }
 }

@@ -4095,7 +4095,9 @@ header{
 }
 
 
-.menuSecciones ul li .seccion:hover, ul li .seccion:focus {
+.menuSecciones ul li .seccion:hover,
+.menuSecciones ul li .seccion.active,
+ul li .seccion:focus {
   background:url(../images/nuevosArtes/btn_categoria.png);
   background-size: 100% 100%;
   color:#fff;

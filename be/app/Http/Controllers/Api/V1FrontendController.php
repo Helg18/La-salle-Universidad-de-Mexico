@@ -25,8 +25,17 @@ class V1FrontendController extends Controller
 
         $data = Category::allForJson();
         $labels = CalendarLabel::all();
-        $calendar = Category::find(4)->posts()->limit(4)->get();
+        $calendar = Category::find(4)->posts()->limit(4)->orderBy('custom_date','desc')->get();
 
         return response()->json(['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar]);
+    }
+
+
+
+
+    public function postCalendarEvents(Request $request){
+
+        return response()->json(['error'=>false,'posts'=>Post::forCalendar($request)]);
+
     }
 }

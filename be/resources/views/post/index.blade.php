@@ -214,6 +214,20 @@
                         </div>
                     </div>
 
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Es destacada</label>
+                        <div class="col-md-9">
+                            <div class="ui-checkbox ui-checkbox-success ui-checkbox-circle">
+                                <label>
+                                    <input type="checkbox"  name="is_important" {{$record && $record->is_important ? 'checked' : ''}}>
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
                 @endif
 
 

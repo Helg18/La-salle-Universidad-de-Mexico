@@ -61,6 +61,7 @@ class PostController extends Controller
         $record->paragraph_1 = $request->paragraph_1;
         $record->paragraph_2 = $request->paragraph_2;
         $record->paragraph_3 = $request->paragraph_3;
+        $record->is_important = (bool)$request->is_important;
         $record->video = Post::cleanYoutubeCode($request->video);
         $record->upload($request);
         $record->custom_date = $request->custom_date;
@@ -108,6 +109,7 @@ class PostController extends Controller
         $record->paragraph_2 = $request->paragraph_2;
         $record->paragraph_3 = $request->paragraph_3;
         $record->video = Post::cleanYoutubeCode($request->video);
+        $record->is_important = (bool)$request->is_important;
         $record->upload($request);
         $record->custom_date = $request->custom_date;
         $record->save();

@@ -35,6 +35,7 @@ function getInitialData(){
 
 
         calendario();
+        calendario_importante();
     });
 }
 
@@ -339,4 +340,10 @@ function open_modal(element){
 
 
     modal.open();
+}
+
+
+
+function calendario_importante(){
+
 }

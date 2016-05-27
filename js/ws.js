@@ -6,7 +6,9 @@ var url = 'http://localhost:8000/api/v1/frontend/',
     C3 = {},
     current_posts = [],
     current_label = false,
-    current_yymm = false
+    current_yymm = false,
+    tmp_posts = [],
+    modal = ''
     ;
 
 
@@ -14,6 +16,12 @@ $(document).ready(function(){
 
     getInitialData();
     //cuadrosDeVida();
+
+
+     modal = $('[data-remodal-id=modal2]').remodal({
+        modifier: 'with-red-theme'
+    });
+
 
 });
 
@@ -260,6 +268,7 @@ function muestraPrevioEventos(posts, custom_date){
     //Escondiendo las 4 noticias
     $('.effects.clearfix').children('div').hide();
 
+    tmp_posts = posts;
     //Mostrando solo las que existan
     $.each(posts, function(index,post){
 
@@ -279,6 +288,8 @@ function muestraPrevioEventos(posts, custom_date){
         $(noticia + ' .title').html(post.title);
         $(noticia + ' .tituloCalendario').html(post.title);
         $(noticia + ' .img-post').attr('src',post.picture_url);
+        $(noticia + ' a').data('index',index);
+        //console.log($(noticia + ' a').data('index'));
 
 
     });
@@ -309,4 +320,23 @@ function marcaDiasCalendario(aamm){
         });
 
     });
+}
+
+
+
+
+
+
+function open_modal(element){
+    //console.log(element.);
+
+    post = tmp_posts[$(element).data('index')];
+    //console.log(post);
+    $('.custom-modal img').attr('src',post.picture_url);
+    $('.custom-modal h5').attr('src',post.title);
+    $('.custom-modal .text').attr('src',post.paragraph_1_html);
+
+
+
+    modal.open();
 }

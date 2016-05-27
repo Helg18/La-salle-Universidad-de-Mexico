@@ -2998,7 +2998,7 @@
               </div>        
               <img src="images/nuevosArtes/calendario/calendario_imagenes.jpg" class="img-post" alt="" style="max-width: 288px">
               <div class="overlayCalendario">
-                <a href="#modal2" class="tituloCalendario">Obra de teatro: <br><span>El lobo</span><br>por Tania Ruiz</a>
+                <a href="javascript: void(0)" onclick="open_modal(this)" class="tituloCalendario">Obra de teatro: <br><span>El lobo</span><br>por Tania Ruiz</a>
               </div>
             </div>
       
@@ -3008,7 +3008,7 @@
               </div>
               <img src="images/nuevosArtes/calendario/calendario_imagenes2.jpg" class="img-post" alt="" style="max-width: 288px">
               <div class="overlayCalendario">
-                <a href="#modal2" class="tituloCalendario">Obra de teatro: <br><span>Pinocho</span><br>por Tania Ruiz</a>
+                <a href="javascript: void(0)" onclick="open_modal(this)" class="tituloCalendario">Obra de teatro: <br><span>Pinocho</span><br>por Tania Ruiz</a>
               </div>
             </div>
 
@@ -3072,7 +3072,7 @@
               <img src="images/nuevosArtes/calendario/calendario_imagenes2.jpg" class="img-post" alt="" style="max-width: 288px">
             
               <div class="overlayCalendario">
-                <a href="#modal2" class="tituloCalendario">Obra de teatro:<br><span> Cita a ciegas</span><br>por Alejandro</a>
+                <a href="javascript: void(0)" onclick="open_modal(this)" class="tituloCalendario">Obra de teatro:<br><span> Cita a ciegas</span><br>por Alejandro</a>
               </div>
             </div> 
             
@@ -3082,7 +3082,7 @@
               </div>
               <img src="images/nuevosArtes/calendario/calendario_imagenes.jpg" class="img-post" alt="" style="max-width: 288px">
               <div class="overlayCalendario">
-                <a href="#modal2" class="tituloCalendario">Obra de teatro:<br><span> El caseron</span><br>por Roberto</a>
+                <a href="javascript: void(0)" onclick="open_modal(this)" class="tituloCalendario">Obra de teatro:<br><span> El caseron</span><br>por Roberto</a>
               </div>
             </div>
   
@@ -3645,11 +3645,21 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-  <div data-remodal-id="modal2" role="dialog" aria-labelledby="modal2Title" aria-describedby="modal2Desc">
+  <div data-remodal-id="modal2" role="dialog" aria-labelledby="modal2Title" aria-describedby="modal2Desc" class="custom-modal">
     <button data-remodal-action="confirm" class="remodal-confirm">X</button>
-    <p id="modal2Desc">
-      <img style="width:100%;" src="images/nuevosArtes/modales/prueba.png" alt="Eventos">
-    </p>
+
+      <!--<img style="width:100%;" src="images/nuevosArtes/modales/prueba.png" alt="Eventos">-->
+
+        <table width="100%" border="0">
+            <tr>
+                <td width="50%" valign="top"><img style="width:100%;" src="images/nuevosArtes/modales/prueba.png" alt="Eventos"></td>
+                <td width="50%" valign="top">
+                    <h5>Titulo</h5>
+                    <div class="text">Texto</div>
+                </td>
+            </tr>
+        </table>
+
   </div>
 
 
@@ -3673,7 +3683,7 @@
   <script src="js/menuFullScreen/1.js" defer></script>
   <script src="js/menuFullScreen/2.js" defer></script>
   <script src="js/modal/remodal.js" defer></script>
-  <script src="js/modal/modales.js" defer></script> 
+  <!--<script src="js/modal/modales.js" defer></script>-->
   <script src="js/calendario/responsive-calendar.js" defer></script>
   <!--<script src="js/calendario/calendario.js" defer></script>--> <!-- Se paso al ws.js -->
   <script src="js/slider/slider.min.js" defer></script>

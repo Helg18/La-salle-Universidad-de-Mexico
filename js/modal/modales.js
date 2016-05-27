@@ -35,6 +35,18 @@ $(document).on('cancellation', '.remodal', function () {
 //  });
 
 //  The second way to initialize:
-$('[data-remodal-id=modal2]').remodal({
+var modal = $('[data-remodal-id=modal2]').remodal({
   modifier: 'with-red-theme'
 });
+
+
+function test(que){
+  console.log(que);
+  modal.open();
+}
+
+/*$(document).on('opening', '.remodal', function (x,y) {
+  console.log(x);
+  console.log(y);
+  console.log('Modal is opening');
+});*/

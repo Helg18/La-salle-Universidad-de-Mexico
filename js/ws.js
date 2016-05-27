@@ -267,7 +267,7 @@ function muestraPrevioEventos(posts, custom_date){
     }
 
     //Escondiendo las 4 noticias
-    $('.effects.clearfix').children('div').hide();
+    $('.menuCalendario .effects.clearfix').children('div').hide();
 
     tmp_posts = posts;
     //Mostrando solo las que existan
@@ -345,5 +345,30 @@ function open_modal(element){
 
 
 function calendario_importante(){
+
+    var tmp = '.bjqs';
+
+    $(tmp).html('');
+    var html = '';
+
+    $.each(initial_data.calendar_important, function(index,post) {
+        html = html +
+            '<li>' +
+            '<div class="overlayDateDestacado">' +
+            '<div class="date_event_destacado"><p>'+post.custom_date_split.day_1+'</p><p><span>'+post.custom_date_split.day_2+'</span> '+post.custom_date_split.month+' '+post.custom_date_split.year+'</p></div>' +
+            '<div class="desc_event_destacado">' +
+            '<div class="desc_text"><p>'+post.title+'</p></div>' +
+            //'<div class="desc_image"><img src="images/nuevosArtes/calendario/Button_more.png"></div>' +
+            '</div>' +
+            '</div>' +
+            //'<img src="images/nuevosArtes/calendario/slider_congreso.png" alt=""  />' +
+            '<img src="'+post.picture_url+'" alt=""  />' +
+            '</li>';
+    });
+
+
+    $(tmp).html(html);
+
+    slider_calendar(); //esta funcion viene de /js/slider/script.js
 
 }

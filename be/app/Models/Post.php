@@ -17,7 +17,8 @@ class Post extends Model
         'video_iframe',
         'picture_html',
         'picture_url',
-        'children'
+        'children',
+        'custom_date_split'
     ];
     //
     public function categories(){
@@ -148,5 +149,23 @@ class Post extends Model
         }
 
         return $tmp->get();
+    }
+
+
+
+    public function getCustomDateSplitAttribute(){
+        if(!$this->custom_date) return [];
+        $months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+        $tmp = explode('-',$this->custom_date);
+        $time = strtotime($this->custom_date);
+        $day = date('d',$time);
+        return [
+            'month'=>$months[$tmp[1] -1],
+            'year'=>date('Y',$time),
+            'day_1'=>$day[0],
+            'day_2'=>$day[1],
+        ];
+
+
     }
 }

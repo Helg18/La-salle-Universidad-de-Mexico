@@ -27,8 +27,9 @@ class V1FrontendController extends Controller
         $labels = CalendarLabel::all();
         $calendar = Category::find(4)->posts()->limit(4)->orderBy('custom_date','desc')->get();
         $calendar_important = Category::find(4)->posts()->where('is_important',true)->limit(4)->orderBy('custom_date','desc')->get();
+        $blog = Category::find(5)->posts()->limit(9)->orderBy('created_at','desc')->get();
 
-        return response()->json(['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important]);
+        return response()->json(['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important, 'blog'=>$blog]);
     }
 
 

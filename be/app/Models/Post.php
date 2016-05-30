@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use App\Util;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\CalendarLabel;
 use App\Models\Category;
 use DB;
+
 
 class Post extends Model
 {
@@ -18,7 +20,8 @@ class Post extends Model
         'picture_html',
         'picture_url',
         'children',
-        'custom_date_split'
+        'custom_date_split',
+        'paragraph_1_small_html'
     ];
     //
     public function categories(){
@@ -167,5 +170,9 @@ class Post extends Model
         ];
 
 
+    }
+
+    public function getParagraph1SmallHtmlAttribute(){
+        return nl2br(Util::small_text($this->paragraph_1));
     }
 }

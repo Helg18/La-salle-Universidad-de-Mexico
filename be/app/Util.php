@@ -85,4 +85,20 @@ class Util{
             'events'    =>  Event::actives(true),
         ];
     }
+
+    static function small_text($texto, $limite=50){
+        $texto = trim($texto);
+        $texto = strip_tags($texto);
+        $tamano = strlen($texto);
+        $resultado = '';
+        if($tamano <= $limite){
+            return $texto;
+        }else{
+            $texto = substr($texto, 0, $limite);
+            $palabras = explode(' ', $texto);
+            $resultado = implode(' ', $palabras);
+            $resultado .= '...';
+        }
+        return $resultado;
+    }
 }

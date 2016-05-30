@@ -8,7 +8,8 @@ var url = 'http://localhost:8000/api/v1/frontend/',
     current_label = false,
     current_yymm = false,
     tmp_posts = [],
-    modal = ''
+    modal = '',
+    blog = []
     ;
 
 
@@ -36,6 +37,7 @@ function getInitialData(){
 
         calendario();
         calendario_importante();
+        noticias_blog();
     });
 }
 
@@ -370,5 +372,60 @@ function calendario_importante(){
     $(tmp).html(html);
 
     slider_calendar(); //esta funcion viene de /js/slider/script.js
+
+}
+
+
+function noticias_blog(){
+    $('.noticias').html('');
+    var tmp = '<div id="effect-1" class="effects clearfix">'
+        count = 0;
+
+    $.each(initial_data.blog, function(index,post) {
+        if(count>5){
+            tmp = tmp + '</div><div id="effect-1" class="effects clearfix">';
+            count=0;
+        }
+
+        tmp = tmp +
+            '<div class="imgNoticia">'+
+                '<div class="overlayTituloNoticia">'+
+                    '<h6>'+post.title+'</h6>'+
+                '</div>'+
+                '<img src="'+post.picture_url+'" alt="">'+
+                '<div class="overlayNoticia">'+
+                    '<h6>'+post.title+'</h6>'+
+                    '<p>'+post.paragraph_1_small_html+'.</p>'+
+                    '<button class="btn_noticia_more" data-index="'+index+'"><img src="images/nuevosArtes/Noticias/icon_more.png"></button>'+
+                '</div>'+
+            '</div>';
+
+        count+=1;
+    });
+
+    tmp = tmp + '</div>';
+    $('.noticias').html(tmp);
+    index(); //Esta funcion esta en el index.html
+    //funciones(); //Viene de funciones.js
+
+
+    $(".btn_noticia_more").on( "click", function() {
+
+        var index = $(this).data('index'),
+            post = initial_data.blog[index];
+
+        $('#desc_noticias h3').html(post.title);
+        $('#desc_noticias .desc_desc').html(post.paragraph_1_html);
+
+
+
+        if($('#desc_noticias').is(":visible") ){
+            $('#desc_noticias').hide("slow");
+        }else{
+            $('#desc_noticias').show("slow");
+            $("#changeTextTitulo").text('Noticias');
+        }
+    });
+
 
 }

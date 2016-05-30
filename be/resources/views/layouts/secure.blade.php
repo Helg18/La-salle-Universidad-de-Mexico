@@ -117,7 +117,7 @@
 				<!-- navigation -->
 				<ul class="list-unstyled clearfix nav-list mb15">
 
-					@foreach(\App\Models\Category::all() as $c)
+					@foreach(\App\Models\Category::ordered() as $c)
 					<li class="menu-dashboard">
 						<a href="{{url('post?id=' . $c->id)}}">
 							<i class="ion ion-edit"></i>

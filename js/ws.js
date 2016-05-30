@@ -4,6 +4,7 @@ var url = 'http://localhost:8000/api/v1/frontend/',
     C1 = {},
     C2 = {},
     C3 = {},
+    C6 = {},
     current_posts = [],
     current_label = false,
     current_yymm = false,
@@ -33,6 +34,7 @@ function getInitialData(){
         C1 = new Category1();
         C2 = new Category2();
         C3 = new Category3();
+        C6 = new Category6();
 
 
         calendario();
@@ -179,6 +181,44 @@ function Category3(){
         $('.descripcionTituloServicios.ws').html(post.paragraph_1_html);
         $('.parrafoServicios.ws').html(post.paragraph_2_html);
         $('.seccion_3.ws').html(post.video_iframe +" "+post.picture_html);
+
+    }
+
+    this.show();
+}
+
+
+
+function Category6(){
+    /** Acción social **/
+
+
+    var d       = initial_data.categories[5],
+        html    = '',
+        c       = {}
+        ;
+
+
+    this.show =  function(){
+        //console.log('Accion Social');
+        //console.log(d.posts);
+        $.each(d.posts, function(index,post){
+            html = html + '<div class="subMenuUnoAccionSocial" onclick="C6.showContent('+ index +')">' + post.title + '</div>';
+        });
+
+        $('.ten.subMenuAccionSocial.accion').html(html);
+        this.showContent(0);
+    }
+
+    this.showContent =  function(index){
+        var post = d.posts[index];
+        $('.textoTituloAccionSocial p').html(post.subtitle);
+        //console.log(post);
+        //console.log($('.descripcionTituloUniversidad.ws').html());
+        //console.log(post.paragraph1);
+        $('.descripcionTituloAccionSocial.ws').html(post.paragraph_1_html);
+        $('.parrafoAccionSocial.ws').html(post.paragraph_2_html);
+        $('.seccion_6.ws').html(post.video_iframe +" "+post.picture_html);
 
     }
 

@@ -29,4 +29,9 @@ class Category extends Model
 
         return $data;
     }
+
+
+    public static function ordered(){
+        return self::orderBy('order','asc')->get();
+    }
 }

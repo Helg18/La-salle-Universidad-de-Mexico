@@ -4604,6 +4604,18 @@ ul.bjqs-controls.v-centered li a:hover{
   font-size: 0.8em;
 }
 
+  .menuIconsRedes nav ul li{
+    display: inline-block;
+    padding: 2.2%;
+  }
+  
+  .menuIconsRedes nav ul{
+    margin-bottom: 0;
+  }
+  .menuIconsRedes nav ul li a:hover{
+    background: none;
+  }
+
 /*POSTFOOTER*/
 
 .postFooter{

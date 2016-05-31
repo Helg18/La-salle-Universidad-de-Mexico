@@ -41,6 +41,7 @@ function getInitialData(){
         calendario_importante();
         noticias_blog();
         vinculacion_empresarial();
+        investigacion();
     });
 }
 
@@ -127,7 +128,7 @@ function Category2(){
         });
 
 
-        $('.ocultarContenidoSubMenu .container .row').html(html);
+        $('#vidaShow .ocultarContenidoSubMenu .container .row').html(html);
 
         cuadrosDeVida();
 
@@ -511,4 +512,27 @@ function vinculacion_empresarial(){
     });
 
 
+}
+
+function investigacion(){
+
+    var tmp = '<div class="contenedorFilaVinculacion">';
+    $('#investigacionShow .ocultarContenidoSubMenu .row').html('');
+
+    $.each(initial_data.categories[7].posts, function(index,post) {
+        tmp = tmp +
+            '<div class="cuadrosInvestigacion">'+
+            '<h6>'+post.title+'</h6>'+
+            '<p>'+ post.paragraph_1_html+ '</p>'+
+            '</div>';
+    });
+    $('#investigacionShow .ocultarContenidoSubMenu .row').html(tmp);
+
+    $('#investigacionShow .ocultarContenidoSubMenu .row .cuadrosInvestigacion').mouseenter(function(){
+
+        $(this).addClass('cuadroInvestigacionActive');
+
+    }).mouseleave(function(){
+        $(this).removeClass('cuadroInvestigacionActive');
+    });
 }

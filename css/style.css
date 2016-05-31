@@ -2165,12 +2165,14 @@ p.textDos_title{
 }
 
 
-  #vinculacionEmpresarialShow :not(.activeVinculacion) .textoVinculacionActive{
+  #vinculacionEmpresarialShow :not(.activeVinculacion) .textoVinculacionActive,
+  #investigacionShow :not(.cuadroInvestigacionActive) p{
     display: none;
   }
 
 
-  .activeVinculacion .textoVinculacionActive{
+  .activeVinculacion .textoVinculacionActive,
+  .cuadroInvestigacionActive p{
     display: inherit !important;
   }
 

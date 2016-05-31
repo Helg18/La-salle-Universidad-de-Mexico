@@ -118,5 +118,7 @@ class Util{
                 self::utf8_encode_deep($input->$var);
             }
         }
+
+        //return $input;
     }
 }

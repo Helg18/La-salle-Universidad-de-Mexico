@@ -2164,8 +2164,9 @@ p.textDos_title{
   padding: 8% 5% 30% 5%;
 }
 
-
-
+.activeVinculacion .textoVinculacion{
+  display: none;
+}
 
 
 

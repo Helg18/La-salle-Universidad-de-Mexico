@@ -30,22 +30,8 @@ class V1FrontendController extends Controller
         $calendar_important = Category::find(4)->posts()->where('is_important',true)->limit(4)->orderBy('custom_date','desc')->get();
         $blog = Category::find(5)->posts()->limit(9)->orderBy('created_at','desc')->get();
 
-        Util::utf8_encode_deep($data);
-        Util::utf8_encode_deep($labels);
-        Util::utf8_encode_deep($calendar);
-        Util::utf8_encode_deep($calendar_important);
-        Util::utf8_encode_deep($blog);
-
-
-        $header = array (
-            'Content-Type' => 'application/json; charset=UTF-8',
-            'charset' => 'utf-8'
-        );
-
-        $responsecode = 200;
         return response()->json(
-            ['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important, 'blog'=>$blog],
-            $responsecode, $header, JSON_UNESCAPED_UNICODE
+            ['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important, 'blog'=>$blog]
         );
     }
 

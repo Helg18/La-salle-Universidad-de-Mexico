@@ -2164,9 +2164,19 @@ p.textDos_title{
   padding: 8% 5% 30% 5%;
 }
 
-.activeVinculacion .textoVinculacion{
-  display: none;
-}
+
+  #vinculacionEmpresarialShow :not(.activeVinculacion) .textoVinculacionActive{
+    display: none;
+  }
+
+
+  .activeVinculacion .textoVinculacionActive{
+    display: inherit !important;
+  }
+
+  .activeVinculacion .textoVinculacion{
+    display: none !important;
+  }
 
 
 

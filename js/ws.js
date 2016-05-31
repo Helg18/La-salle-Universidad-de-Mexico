@@ -40,6 +40,7 @@ function getInitialData(){
         calendario();
         calendario_importante();
         noticias_blog();
+        vinculacion_empresarial();
     });
 }
 
@@ -465,6 +466,48 @@ function noticias_blog(){
             $('#desc_noticias').show("slow");
             $("#changeTextTitulo").text('Noticias');
         }
+    });
+
+
+}
+
+
+
+function vinculacion_empresarial(){
+
+
+    $('#vinculacionEmpresarialShow .row').html('');
+    var tmp = '<div class="contenedorFilaVinculacion">'
+    count = 0;
+
+    $.each(initial_data.categories[6].posts, function(index,post) {
+        if(count>2){
+            tmp = tmp + '</div><div class="contenedorFilaVinculacion">';
+            count=0;
+        }
+
+        tmp = tmp +
+            '<div class="segundaFilaVinculacion">'+
+            '<div class="textoVinculacion">'+post.title+'</div>'+
+            '<div class="textoVinculacionActive">'+
+            //post.paragraph_1_html+
+            post.title+ '<br><br>'+
+            '<p>'+ post.paragraph_1_html+ '</p>'+
+            '</div>'+
+            '</div>';
+
+        count+=1;
+    });
+
+    tmp = tmp + '</div>';
+    $('#vinculacionEmpresarialShow .row').html(tmp);
+
+    $('#vinculacionEmpresarialShow .row .segundaFilaVinculacion').mouseenter(function(){
+
+        $(this).addClass('activeVinculacion');
+
+    }).mouseleave(function(){
+        $(this).removeClass('activeVinculacion');
     });
 
 

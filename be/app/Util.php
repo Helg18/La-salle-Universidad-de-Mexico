@@ -87,6 +87,7 @@ class Util{
     }
 
     static function small_text($texto, $limite=50){
+        return $texto;
         $texto = trim($texto);
         $texto = strip_tags($texto);
         $tamano = strlen($texto);

@@ -30,11 +30,11 @@ class V1FrontendController extends Controller
         $calendar_important = Category::find(4)->posts()->where('is_important',true)->limit(4)->orderBy('custom_date','desc')->get();
         $blog = Category::find(5)->posts()->limit(9)->orderBy('created_at','desc')->get();
 
-        $data = Util::utf8_converter($data);
-        $labels = Util::utf8_converter($labels);
-        $calendar = Util::utf8_converter($calendar);
-        $calendar_important = Util::utf8_converter($calendar_important);
-        $blog = Util::utf8_converter($blog);
+        $data = Util::utf8_encode_deep($data);
+        $labels = Util::utf8_encode_deep($labels);
+        $calendar = Util::utf8_encode_deep($calendar);
+        $calendar_important = Util::utf8_encode_deep($calendar_important);
+        $blog = Util::utf8_encode_deep($blog);
 
 
         $header = array (

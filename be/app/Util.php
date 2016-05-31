@@ -102,14 +102,21 @@ class Util{
         return $resultado;
     }
 
-    static function utf8_converter($array)
-    {
-        array_walk_recursive($array, function(&$item, $key){
-            if(is_string($item) && !mb_detect_encoding($item, 'utf-8', true)){
-                $item = utf8_encode($item);
+    static function utf8_encode_deep(&$input) {
+        if (is_string($input)) {
+            $input = utf8_encode($input);
+        } else if (is_array($input)) {
+            foreach ($input as &$value) {
+                self::utf8_encode_deep($value);
             }
-        });
 
-        return $array;
+            unset($value);
+        } else if (is_object($input)) {
+            $vars = array_keys(get_object_vars($input));
+
+            foreach ($vars as $var) {
+                self::utf8_encode_deep($input->$var);
+            }
+        }
     }
 }

@@ -2090,7 +2090,9 @@ html.simple_loader #loader.exit .mark svg {
 }
 #nav_main_closed {
 	height:50px;
+	top: 14%;
 	position:fixed;
+	right: 0;
 	-moz-transition:all .2s ease-out;
 	-o-transition:all .2s ease-out;
 	-webkit-transition:all .2s ease-out;
@@ -2341,7 +2343,7 @@ html.simple_loader #loader.exit .mark svg {
 }
 @media only screen and (min-width:1340px) {
 	#nav_main_closed .menu {
-		margin-right:-80px
+		margin-right:0px
 	}
 }
 #nav_main_closed .menu.fade {

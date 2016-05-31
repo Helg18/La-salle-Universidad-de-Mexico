@@ -37,7 +37,16 @@ class V1FrontendController extends Controller
         $blog = Util::utf8_converter($blog);
 
 
-        return response()->json(['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important, 'blog'=>$blog]);
+        $header = array (
+            'Content-Type' => 'application/json; charset=UTF-8',
+            'charset' => 'utf-8'
+        );
+
+        $responsecode = 200;
+        return response()->json(
+            ['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important, 'blog'=>$blog],
+            $responsecode, $header, JSON_UNESCAPED_UNICODE
+        );
     }
 
 

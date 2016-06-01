@@ -463,12 +463,12 @@ function noticias_blog(){
         tmp = tmp +
             '<div class="imgNoticia">'+
             '<div class="overlayTituloNoticia">'+
-            '<h6>'+post.title+'</h6>'+
+            '<h6>'+post.title.substring(0,50)+'... </h6>'+
             '</div>'+
             '<img src="'+post.picture_url+'" alt="">'+
             '<div class="overlayNoticia">'+
             '<h6>'+post.title+'</h6>'+
-            '<p>'+post.paragraph_1_small_html+'.</p>'+
+            '<p>'+post.paragraph_1_html.substring(0,50)+'...</p>'+
             '<button class="btn_noticia_more" data-index="'+index+'"><img src="images/nuevosArtes/Noticias/icon_more.png"></button>'+
             '</div>'+
             '</div>';

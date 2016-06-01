@@ -252,7 +252,7 @@ function Category9(){
 
     this.showContent =  function(index){
         var post = d.posts[index];
-        $('.textoTituloContacto p').html(post.paragraph_1_html);
+        $('#contactoShow .textoTituloContacto p').html(post.paragraph_1_html);
 
 
     }

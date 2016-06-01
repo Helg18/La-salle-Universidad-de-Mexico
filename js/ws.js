@@ -1,5 +1,4 @@
-var url = 'http://localhost:8000/api/v1/frontend/',
-    initial_data = {},
+var initial_data = {},
     C1 = {},
     C2 = {},
     C3 = {},
@@ -43,6 +42,7 @@ function getInitialData(){
         noticias_blog();
         vinculacion_empresarial();
         investigacion();
+        noticias();
     });
 }
 
@@ -566,4 +566,66 @@ function investigacion(){
     }).mouseleave(function(){
         $(this).removeClass('cuadroInvestigacionActive');
     });
+}
+
+
+
+
+
+function noticias(){
+
+//return false;
+    $('#ninja-slider ul').html('');
+    var tmp = ''
+
+
+    $.each(initial_data.categories[9].posts, function(index,post) {
+
+
+        tmp = tmp +
+            '<li>'+
+            '<a class="ns-img" href="'+post.picture_url+'"></a>'+
+
+            '<div class="barra_morada">'+
+            '<div class="caption cap1"><img src="images/nuevosArtes/banner/icono_noticias.png"></div>'+
+            '<div class="caption cap1 cap2">NOTICIAS</div>'+
+            '</div>'+
+
+            '<div class="barra_gris textRight">'+
+            '<div class="caption cap1gris">'+post.title+'</div>'+
+            '<div class="caption cap1 cap2gris">'+post.subtitle+'</div>'+
+            '<div class="caption cap1 cap3"><button  class="btn_slider" data-index="'+index+'"><img src="images/nuevosArtes/banner/icono_mas.png"></button></div>'+
+            '</div>'+
+            '</li>';
+
+
+    });
+
+
+    $('#ninja-slider ul').html(tmp);
+
+
+    nslider.init();
+
+
+    $("#ninja-slider .btn_slider").on( "click", function() {
+
+        var index = $(this).data('index'),
+            post = initial_data.categories[9].posts[index];
+
+        console.log(index);
+
+        $('#desc_slider .title_desc h3').html(post.title);
+        $('#desc_slider .desc_desc').html(post.paragraph_1_html);
+
+        if($('#desc_slider').is(":visible") ){
+            $('#desc_slider').hide("slow");
+        }else{
+            $('#desc_slider').show("slow");
+            $("#changeTextTitulo").text('Noticias');
+        }
+    });
+
+
+
 }

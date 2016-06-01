@@ -117,7 +117,7 @@
                 @endif
 
 
-                @if($Category->id != 2 && $Category->id != 4 && $Category->id != 5  && $Category->id != 7  && $Category->id != 8 && $Category->id != 9)
+                @if($Category->id != 2 && $Category->id != 4 && $Category->id != 5  && $Category->id != 7  && $Category->id != 8 && $Category->id != 9  && $Category->id != 10)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Parrafo 2</label>
                     <div class="col-md-10">
@@ -134,7 +134,7 @@
 
 
 
-                @if($Category->id != 2 && $Category->id != 5  && $Category->id != 7  && $Category->id != 8 && $Category->id != 9)
+                @if($Category->id != 2 && $Category->id != 5  && $Category->id != 7  && $Category->id != 8 && $Category->id != 9  && $Category->id != 10)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Código video Youtube</label>
                     <div class="col-md-7">
@@ -156,6 +156,13 @@
                 <div class="form-group">
                     <label class="col-md-2 control-label">Imagen</label>
                     <div class="col-md-7">
+                        <div class="alert alert-info">
+                            La imagen debe tener un tamaño de
+                            @if($Category->id ==10)
+                                960 x 466
+                            @endif
+                            pixeles
+                        </div>
                         <input type="file" class="form-control" value="{{$record ? $record->picture : old('picture')}}" name="picture" autocomplete="off">
                         @if ($errors->has('picture'))
                             <span class="alert alert-danger">

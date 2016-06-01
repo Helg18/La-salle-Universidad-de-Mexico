@@ -7,7 +7,7 @@ var nsOptions =
     delay: "default",
     transitionSpeed: "default",
     aspectRatio: "9:6",
-    initSliderByCallingInitFunc: false,
+    initSliderByCallingInitFunc: true,
     shuffle: false,
     startSlideIndex: 0, //0-based
     navigateByTap: true,

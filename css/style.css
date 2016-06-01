@@ -94,14 +94,14 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 }
 
 
-.btnMenubtn{
+.btnMenubtn {
     font-family: 'HelveticaBold',arial;
-    color: #838383 ;
+    color: #838383;
     text-align: left;
-    padding: 8px;
+    padding: 2px;
     border: 0;
     border-radius: 0px;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     line-height: 14px;
     vertical-align: middle;
 }
@@ -207,7 +207,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 }
 
 .botonUnoMenu{
-	margin-top: 15%;
+	margin-top: 0%;
   	margin-left: 21%;
 }
 
@@ -237,7 +237,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 
 .botonOchoMenu{
   margin-left: 20%;
-  margin-bottom: 5%;
+  margin-bottom: 0%;
 }
 
 #video-container {
@@ -3075,7 +3075,7 @@ header{
 .bannerPrincipals{
   overflow: hidden;
   width: 100%;
-  height: 550px;
+  height: 450px;
   object-fit: contain;
   background: transparent 50% 0 fixed;
 }

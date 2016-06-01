@@ -6417,3 +6417,13 @@ FACULTAD DE FAMADYC
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+
+.scroll-box {
+  /*background: #f4f4f4;*/
+  /*border: 2px solid rgba(0, 0, 0, 0.1);*/
+  height: 300px; /* maximum height of the box, feel free to change this! */
+  /*padding: 15px;*/
+  overflow-y: scroll;
+}

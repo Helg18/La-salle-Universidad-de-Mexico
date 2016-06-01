@@ -87,7 +87,7 @@
                     </div>
                 </div>
 
-                @if($Category->id != 5 && $Category->id != 7 && $Category->id != 8)
+                @if($Category->id != 5 && $Category->id != 7 && $Category->id != 8 && $Category->id != 9)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Subtitulo</label>
                     <div class="col-md-10">
@@ -117,7 +117,7 @@
                 @endif
 
 
-                @if($Category->id != 2 && $Category->id != 4 && $Category->id != 5  && $Category->id != 7  && $Category->id != 8)
+                @if($Category->id != 2 && $Category->id != 4 && $Category->id != 5  && $Category->id != 7  && $Category->id != 8 && $Category->id != 9)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Parrafo 2</label>
                     <div class="col-md-10">
@@ -134,7 +134,7 @@
 
 
 
-                @if($Category->id != 2 && $Category->id != 5  && $Category->id != 7  && $Category->id != 8)
+                @if($Category->id != 2 && $Category->id != 5  && $Category->id != 7  && $Category->id != 8 && $Category->id != 9)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Código video Youtube</label>
                     <div class="col-md-7">
@@ -152,7 +152,7 @@
                 @endif
 
 
-                @if($Category->id != 2  && $Category->id != 7  && $Category->id != 8)
+                @if($Category->id != 2  && $Category->id != 7  && $Category->id != 8 && $Category->id != 9)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Imagen</label>
                     <div class="col-md-7">

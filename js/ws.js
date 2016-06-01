@@ -5,6 +5,7 @@ var url = 'http://localhost:8000/api/v1/frontend/',
     C2 = {},
     C3 = {},
     C6 = {},
+    C9 = {},
     current_posts = [],
     current_label = false,
     current_yymm = false,
@@ -35,6 +36,7 @@ function getInitialData(){
         C2 = new Category2();
         C3 = new Category3();
         C6 = new Category6();
+        C9 = new Category9();
 
 
         calendario();
@@ -228,6 +230,36 @@ function Category6(){
 }
 
 
+
+function Category9(){
+    /** Contacto **/
+
+
+    var d       = initial_data.categories[8],
+        html    = '',
+        c       = {}
+        ;
+
+
+    this.show =  function(){
+
+        $.each(d.posts, function(index,post){
+            html = html + '<div class="subMenuUnoAccionSocial" onclick="C9.showContent('+ index +')">' + post.title + '</div>';
+        });
+
+        $('.ten.subMenuAccionSocial.contacto').html(html);
+        this.showContent(0);
+    }
+
+    this.showContent =  function(index){
+        var post = d.posts[index];
+        $('.textoTituloContacto p').html(post.paragraph_1_html);
+
+
+    }
+
+    this.show();
+}
 
 
 function calendario(){

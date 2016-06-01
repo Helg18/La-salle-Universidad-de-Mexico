@@ -7,6 +7,23 @@
     z-index: 2;
 }
 
+.cap1 img{
+    width:35% !important;
+}
+
+.container_imagen_titulo_section_slider{
+    margin-top: 140%;
+    margin-left: 25%;
+    color: #fff;
+}
+
+.container_titulo_description_slider{
+    margin-top: 20%;
+    color: #636363;
+    margin-right: 8%;
+    font-size: 0.8em;
+}
+
 .barra_gris{
     background: url(../../images/nuevosArtes/banner/barra_gris.png);
     height: 467px;
@@ -59,7 +76,7 @@
 }
 
 .responsiveSliderPrincipal{
-    padding-top: 48.6667% !important;
+    padding-top: 1.6667% !important;
 }
 
 #ninja-slider.fullscreen .fs-icon::before {

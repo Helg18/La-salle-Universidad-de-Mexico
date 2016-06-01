@@ -1,10 +1,10 @@
-
 var url = 'http://localhost:8000/api/v1/frontend/',
     initial_data = {},
     C1 = {},
     C2 = {},
     C3 = {},
     C6 = {},
+    C9 = {},
     current_posts = [],
     current_label = false,
     current_yymm = false,
@@ -20,7 +20,7 @@ $(document).ready(function(){
     //cuadrosDeVida();
 
 
-     modal = $('[data-remodal-id=modal2]').remodal({
+    modal = $('[data-remodal-id=modal2]').remodal({
         modifier: 'with-red-theme'
     });
 
@@ -35,6 +35,7 @@ function getInitialData(){
         C2 = new Category2();
         C3 = new Category3();
         C6 = new Category6();
+        C9 = new Category9();
 
 
         calendario();
@@ -50,9 +51,9 @@ function Category1(){
     /** Universidad La Salle **/
 
 
-        var d       = initial_data.categories[0],
-            html    = '',
-            c       = {}
+    var d       = initial_data.categories[0],
+        html    = '',
+        c       = {}
         ;
 
 
@@ -111,7 +112,7 @@ function Category2(){
 
     this.showContent =  function(index){
         var post = d.posts[index]
-            html = '';
+        html = '';
         $('.textoTituloVida p').html(post.subtitle);
 
         //$('.descripcionTituloUniversidad.ws').html(post.paragraph_1_html);
@@ -124,7 +125,7 @@ function Category2(){
                 '<h6 class="azulFuerteInvetigacion">' + child.title + '</h6>' +
                 '<p>' +child.paragraph_1_html+ '</p>' +
                 '</div>'
-                ;
+            ;
         });
 
 
@@ -229,10 +230,40 @@ function Category6(){
 
 
 
+function Category9(){
+    /** Contacto **/
+
+
+    var d       = initial_data.categories[8],
+        html    = '',
+        c       = {}
+        ;
+
+
+    this.show =  function(){
+
+        $.each(d.posts, function(index,post){
+            html = html + '<div class="subMenuUnoAccionSocial" onclick="C9.showContent('+ index +')">' + post.title + '</div>';
+        });
+
+        $('.ten.subMenuAccionSocial.contacto').html(html);
+        this.showContent(0);
+    }
+
+    this.showContent =  function(index){
+        var post = d.posts[index];
+        $('.textoTituloContacto p').html(post.paragraph_1_html);
+
+
+    }
+
+    this.show();
+}
+
 
 function calendario(){
     var ul = $('#calendario .menuSecciones ul')
-        noticia = '';
+    noticia = '';
 
     //Limpiando las categorias del calendario
     ul.html('');
@@ -268,11 +299,11 @@ function calendario(){
     $(".responsive-calendar").responsiveCalendar({
         time: initial_date,
         /*events: {
-            //"2016-01-18": {"number": 5, "url": ""},
-            "2016-01-18": {"url": "http://kreativeco.com"},
-            "2016-02-01": {"url": "javascript: alert('hola')"},
-            "2016-06-12": {}
-        },*/
+         //"2016-01-18": {"number": 5, "url": ""},
+         "2016-01-18": {"url": "http://kreativeco.com"},
+         "2016-02-01": {"url": "javascript: alert('hola')"},
+         "2016-06-12": {}
+         },*/
         onMonthChange: function(){
 
             //console.log(this);
@@ -378,8 +409,8 @@ function open_modal(element){
     post = tmp_posts[$(element).data('index')];
     //console.log(post);
     $('.custom-modal img').attr('src',post.picture_url);
-    $('.custom-modal h5').attr('src',post.title);
-    $('.custom-modal .text').attr('src',post.paragraph_1_html);
+    $('.custom-modal h5').html(post.title);
+    $('.custom-modal .text').html(post.paragraph_1_html);
 
 
 
@@ -402,10 +433,10 @@ function calendario_importante(){
             '<div class="date_event_destacado"><p>'+post.custom_date_split.day_1+'</p><p><span>'+post.custom_date_split.day_2+'</span> '+post.custom_date_split.month+' '+post.custom_date_split.year+'</p></div>' +
             '<div class="desc_event_destacado">' +
             '<div class="desc_text"><p>'+post.title+'</p></div>' +
-            //'<div class="desc_image"><img src="images/nuevosArtes/calendario/Button_more.png"></div>' +
+                //'<div class="desc_image"><img src="images/nuevosArtes/calendario/Button_more.png"></div>' +
             '</div>' +
             '</div>' +
-            //'<img src="images/nuevosArtes/calendario/slider_congreso.png" alt=""  />' +
+                //'<img src="images/nuevosArtes/calendario/slider_congreso.png" alt=""  />' +
             '<img src="'+post.picture_url+'" alt=""  />' +
             '</li>';
     });
@@ -421,7 +452,7 @@ function calendario_importante(){
 function noticias_blog(){
     $('.noticias').html('');
     var tmp = '<div id="effect-1" class="effects clearfix">'
-        count = 0;
+    count = 0;
 
     $.each(initial_data.blog, function(index,post) {
         if(count>5){
@@ -431,15 +462,15 @@ function noticias_blog(){
 
         tmp = tmp +
             '<div class="imgNoticia">'+
-                '<div class="overlayTituloNoticia">'+
-                    '<h6>'+post.title+'</h6>'+
-                '</div>'+
-                '<img src="'+post.picture_url+'" alt="">'+
-                '<div class="overlayNoticia">'+
-                    '<h6>'+post.title+'</h6>'+
-                    '<p>'+post.paragraph_1_small_html+'.</p>'+
-                    '<button class="btn_noticia_more" data-index="'+index+'"><img src="images/nuevosArtes/Noticias/icon_more.png"></button>'+
-                '</div>'+
+            '<div class="overlayTituloNoticia">'+
+            '<h6>'+post.title+'</h6>'+
+            '</div>'+
+            '<img src="'+post.picture_url+'" alt="">'+
+            '<div class="overlayNoticia">'+
+            '<h6>'+post.title+'</h6>'+
+            '<p>'+post.paragraph_1_small_html+'.</p>'+
+            '<button class="btn_noticia_more" data-index="'+index+'"><img src="images/nuevosArtes/Noticias/icon_more.png"></button>'+
+            '</div>'+
             '</div>';
 
         count+=1;
@@ -491,7 +522,7 @@ function vinculacion_empresarial(){
             '<div class="segundaFilaVinculacion">'+
             '<div class="textoVinculacion">'+post.title+'</div>'+
             '<div class="textoVinculacionActive">'+
-            //post.paragraph_1_html+
+                //post.paragraph_1_html+
             post.title+ '<br><br>'+
             '<p>'+ post.paragraph_1_html+ '</p>'+
             '</div>'+

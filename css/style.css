@@ -4372,6 +4372,11 @@ ul.bjqs-controls.v-centered li a:hover{
   display: block;
 }
 
+
+.circle img {
+  width: 80%;
+}
+
 .accesoDirectoResponsive{
   display: none;
 }
@@ -4512,6 +4517,40 @@ ul.bjqs-controls.v-centered li a:hover{
 }
 
 
+
+.telefonoContactanos span{
+  font-size: 1.2em;
+}
+
+
+
+.footer_new_row {
+  padding: 20px;
+}
+.footer_new_row a{
+  color: #fff;
+  font-size: 0.75em;
+  text-decoration: none;
+}
+
+.new_list_estados ul{
+  color: #fff;
+  font-size: 0.75em;
+  float: right;
+}
+
+.new_list_estados ul li{
+  display: inline-block;
+}
+
+.new_list_estados ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 10px;
+}
+
+
 /*ACREDITACION*/
 
 
@@ -4537,15 +4576,35 @@ ul.bjqs-controls.v-centered li a:hover{
 
     
   .acreditacion{
-    height: 35px;
+    padding: 10px;
     background: #eeeeee;
     text-align: right;
+    font-family: 'HelveticaRegular',arial;
+    color: #838383;
+    font-weight: bold;
+  }
+  .acreditacion p{
+    margin-bottom: 0px;
+  }
+
+   .acreditacion_white{
+    height: 35px;
     font-family: 'HelveticaRegular',arial;
     color: #838383;
     font-weight: bold;
     padding-top: 3px;
   }
 
+  .acreditacion_white a{
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 0.8em;
+    text-align: left;
+  }   
+
+  .rightTextFooterAcreditacion{
+    text-align: right;
+  }
   .upImage{
     display: none;
   }
@@ -4555,6 +4614,22 @@ ul.bjqs-controls.v-centered li a:hover{
     vertical-align: middle;
   }
 
+.white{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+  .menuIconsRedes nav ul li{
+    display: inline-block;
+    padding: 2.2%;
+  }
+  
+  .menuIconsRedes nav ul{
+    margin-bottom: 0;
+  }
+  .menuIconsRedes nav ul li a:hover{
+    background: none;
+  }
 
 /*POSTFOOTER*/
 

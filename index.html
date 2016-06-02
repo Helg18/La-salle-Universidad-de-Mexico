@@ -4229,6 +4229,24 @@
           }
       }
 
+      $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 600) {
+        $('#nav_main').show(1000);
+          
+      } else {
+        $('#nav_main').hide(1000); 
+      }
+    });
+
+
+    $(document).ready(function () {
+      $('#nav_main').on('click',function(){
+        $('html, body').animate({
+          scrollTop: $('#video-container').offset().top
+        }, 'slow');
+      });
+      });
   </script>
   
   <!-- Create:hdzlruben.

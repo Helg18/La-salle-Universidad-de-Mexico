@@ -362,7 +362,7 @@ function muestraPrevioEventos(posts, custom_date){
 
         $(noticia).show();
         $(noticia + ' .title').html(post.title);
-        $(noticia + ' .tituloCalendario').html(post.title);
+        $(noticia + ' .tituloCalendario').html(post.title.substring(0,30) + '...');
         $(noticia + ' .img-post').attr('src',post.picture_url);
         $(noticia + ' a').data('index',index);
         //console.log($(noticia + ' a').data('index'));

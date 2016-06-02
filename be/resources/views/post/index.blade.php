@@ -163,7 +163,7 @@
                             @elseif($Category->id ==4)
                                 300x300
                             @elseif($Category->id ==5)
-                                280x343
+                                280x343 pixeles en imagen normal y 560x343 en imagen destacada
                             @endif
                             pixeles
                         </div>
@@ -228,6 +228,11 @@
                     </div>
 
 
+
+
+                @endif
+
+                @if($Category->id ==4 || $Category->id ==5)
                     <div class="form-group">
                         <label class="col-md-2 control-label">Es destacada</label>
                         <div class="col-md-9">
@@ -240,7 +245,6 @@
                         </div>
 
                     </div>
-
                 @endif
 
 

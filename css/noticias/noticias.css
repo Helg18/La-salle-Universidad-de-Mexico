@@ -57,7 +57,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 
 .effects .imgNoticia {
   position: relative;
-  float: left;
+  float: right;
   width: 20%;
   overflow: hidden;
 }

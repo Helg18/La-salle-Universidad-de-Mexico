@@ -455,13 +455,15 @@ function noticias_blog(){
     count = 0;
 
     $.each(initial_data.blog, function(index,post) {
-        if(count>5){
+        if(count>4){
             tmp = tmp + '</div><div id="effect-1" class="effects clearfix">';
             count=0;
         }
 
+        var tmp2 = post.is_important ? 'destacada' : '';
+
         tmp = tmp +
-            '<div class="imgNoticia">'+
+            '<div class="imgNoticia '+tmp2+'">'+
             '<div class="overlayTituloNoticia">'+
             '<h6>'+post.title.substring(0,50)+'... </h6>'+
             '</div>'+
@@ -473,7 +475,13 @@ function noticias_blog(){
             '</div>'+
             '</div>';
 
-        count+=1;
+        if(post.is_important){
+            count+=2;
+        }else{
+            count+=1;
+        }
+        //console.log(count);
+
     });
 
     tmp = tmp + '</div>';

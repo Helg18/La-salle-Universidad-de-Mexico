@@ -48,14 +48,9 @@
 
 
   <!-- MENU PRINCIPAL -->
-  
-  <nav id="nav_main_closed" class=""> 
-    <a href="#"  class="menu backgroundMenu">Show Menu
-      <span class="top"></span>
-      <span class="middle"></span>
-      <span class="bottom"></span>  
-    </a>
-  </nav> 
+
+  <button id="nav_main" class="menuButtonScroll">
+  </button> 
   
   <!-- FIN MENU PRINCIPAL -->
   
@@ -4163,6 +4158,29 @@
       });
     });
 
+
+  </script>
+  <script type="text/javascript">
+    // EVENTO CUANDO SE MUEVE EL SCROLL, EL MISMO APLICA TAMBIEN CUANDO SE RESIZA
+
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 600) {
+        $('#nav_main').show(1000);
+          
+      } else {
+        $('#nav_main').hide(1000); 
+      }
+    });
+
+
+    $(document).ready(function () {
+      $('#nav_main').on('click',function(){
+        $('html, body').animate({
+          scrollTop: $('#video-container').offset().top
+        }, 'slow');
+      });
+      });
 
   </script>
 

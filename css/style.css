@@ -27,8 +27,20 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 
 
 
+
+
 /* GENERALES */
 
+.menuButtonScroll{
+  width: 40px;
+  height: 60px;
+  background: url(../images/nuevosArtes/btn_menu_scroll_top.png)no-repeat;
+  background-size: 100%;
+  border:none;
+  position: fixed;
+  right: 0;
+  display: none;
+}
 
 .textAlignCenter{
   text-align: center;

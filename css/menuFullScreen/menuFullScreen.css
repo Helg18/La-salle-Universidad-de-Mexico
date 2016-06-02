@@ -2102,11 +2102,8 @@ html.simple_loader #loader.exit .mark svg {
 }
 @media only screen and (min-width:1024px) {
 	#nav_main_closed {
-		background: url(../images/header/menusinhamburguesa.png)no-repeat !important;
-  		background-size: 100%;
-		height:80px;
-		width:80px;
-		display: block !important;
+		height:40px;
+		width:40px;
 	}
 }
 #home_welcome #nav_main_closed .content:before,#nav_main_closed #home_welcome .content:before,#nav_main_closed .content_wrapper:before {

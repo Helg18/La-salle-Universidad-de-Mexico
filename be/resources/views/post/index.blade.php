@@ -160,6 +160,10 @@
                             La imagen debe tener un tamaño de
                             @if($Category->id ==10)
                                 960 x 466
+                            @elseif($Category->id ==4)
+                                300x300
+                            @elseif($Category->id ==5)
+                                280x343
                             @endif
                             pixeles
                         </div>

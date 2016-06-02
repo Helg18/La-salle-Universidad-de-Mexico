@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="css/calendario/sliderNoticias.css" />
   <link rel="stylesheet" href="css/menuFullScreen/menuFullScreen.css" />
   <link rel="stylesheet" href="css/buttons/button.css">
+  <link rel="stylesheet" href="css/slider_menu_oferta/jquery.bxslider.css" />
 
 
   <!-- Favicon
@@ -3926,17 +3927,17 @@
   <script src="js/menuFullScreen/1.js" defer></script>
   <script src="js/menuFullScreen/2.js" defer></script>
   <script src="js/modal/remodal.js" defer></script>
-  <!--<script src="js/modal/modales.js" defer></script>-->
+  <script src="js/modal/modales.js" defer></script> 
   <script src="js/calendario/responsive-calendar.js" defer></script>
-  <!--<script src="js/calendario/calendario.js" defer></script>--> <!-- Se paso al ws.js -->
+  <script src="js/calendario/calendario.js" defer></script>
   <script src="js/slider/slider.min.js" defer></script>
   <script src="js/slider/script.js" defer></script>
   <script src="js/buttons/button.js" defer></script>
+  <script src="js/sliderPrincipal/sliderPrincipal.js" defer></script>
   <script src="js/noticias/modernizr.js"></script>
 
-  <script src="js/ws.config.js"></script>
-  <script src="js/ws.js"></script>
-
+  <!--<script src="js/ws.config.js"></script>
+  <script src="js/ws.js"></script>-->
 
   <script>
     
@@ -3960,6 +3961,13 @@
       });
     });
 
+ $(document).ready(function(){
+      $('.slider3').bxSliderPrincipal({
+        slideWidth: 1280,
+        minSlides: 1,
+        maxSlides: 1
+      });
+    });
 
 
 

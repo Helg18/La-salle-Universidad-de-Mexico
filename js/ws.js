@@ -455,12 +455,20 @@ function noticias_blog(){
     count = 0;
 
     $.each(initial_data.blog, function(index,post) {
-        if(count>4){
+
+
+        var tmp2 = post.is_important ? 'destacada' : '';
+
+        if(post.is_important){
+            count+=2;
+        }else{
+            count+=1;
+        }
+
+        if(count>5){
             tmp = tmp + '</div><div id="effect-1" class="effects clearfix">';
             count=0;
         }
-
-        var tmp2 = post.is_important ? 'destacada' : '';
 
         tmp = tmp +
             '<div class="imgNoticia '+tmp2+'">'+
@@ -475,11 +483,7 @@ function noticias_blog(){
             '</div>'+
             '</div>';
 
-        if(post.is_important){
-            count+=2;
-        }else{
-            count+=1;
-        }
+
         //console.log(count);
 
     });

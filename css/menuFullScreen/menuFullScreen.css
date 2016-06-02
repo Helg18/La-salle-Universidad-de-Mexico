@@ -1277,15 +1277,79 @@ q:after {
 	line-height:1.2em;
 	margin-bottom:1em
 }
+
+.container_imagen_titulo_section_slider {
+    margin-top: 84%;
+    margin-left: 15%;
+}
+.container_imagen_titulo_section_slider p{
+    font-size: 0.8em;
+}
+
+
+.container_titulo_description_slider {
+    margin-top: 20%;
+    color: #636363;
+    margin-right: 8%;
+    font-size: 0.45em;
+}
+
+.btn_slider img{
+	width: 50%;
+	margin-left: 85%;
+}
+
 @media only screen and (min-width:650px) {
 	#nav_main_open .primary ul,#the_universe .quote,.case_story_teaser .title,.clients_list .title,.full_screen_billboard .title,.h1,.intro_billboard .title,.split_billboard .title,.testimonial .quote {
 		font-size:1.28571em
+	}
+	.container_imagen_titulo_section_slider {
+    	margin-top: 84%;
+    	margin-left: 15%;
+	}
+	.container_imagen_titulo_section_slider p{
+    	font-size: 0.8em;
+	}
+
+
+	.container_titulo_description_slider {
+    	margin-top: 20%;
+    	color: #636363;
+    	margin-right: 8%;
+    	font-size: 0.55em;
+	}
+
+	.btn_slider img{
+		width: 55%;
+		margin-left: 85%;
 	}
 }
 @media only screen and (min-width:1024px) {
 	#nav_main_open .primary ul,#the_universe .quote,.case_story_teaser .title,.clients_list .title,.full_screen_billboard .title,.h1,.intro_billboard .title,.split_billboard .title,.testimonial .quote {
 		font-size:1.85714em
 	}
+
+	.container_imagen_titulo_section_slider {
+    	margin-top: 134%;
+    	margin-left: 15%;
+	}
+	.container_imagen_titulo_section_slider p{
+    	font-size: 0.8em;
+	}
+
+
+	.container_titulo_description_slider {
+    	margin-top: 20%;
+    	color: #636363;
+    	margin-right: 7%;
+    	font-size: 0.65em;
+	}
+
+	.btn_slider img{
+		width: 55%;
+		margin-left: 85%;
+	}
+	
 }
 @media only screen and (min-width:1268px) {
 	#nav_main_open .primary ul,#the_universe .quote,.case_story_teaser .title,.clients_list .title,.full_screen_billboard .title,.h1,.intro_billboard .title,.split_billboard .title,.testimonial .quote {
@@ -1414,6 +1478,7 @@ q:after {
 	#contact_form .article.title,#contact_form article .title,#contact_methods .article.line,#contact_methods article .line,#footer_main .article.address,#footer_main .article.contact,#footer_main article .address,#footer_main article .contact,#home_welcome .article.message,#home_welcome article .message,#the_universe .article.quote,#the_universe article .quote,.case_story_quotes .article.quote,.case_story_quotes article .quote,.case_story_stats .article.stat,.case_story_stats article .stat,.five_facts .article.description,.five_facts article .description,.intro_icon .article.content,.intro_icon article .content,.p.article,.team_member_detail .article.stat,.team_member_detail article .stat,.verbose_cta .article.content,.verbose_cta article .content,article #contact_form .title,article #contact_methods .line,article #footer_main .address,article #footer_main .contact,article #home_welcome .message,article #the_universe .quote,article .case_story_quotes .quote,article .case_story_stats .stat,article .five_facts .description,article .intro_icon .content,article .p,article .team_member_detail .stat,article .verbose_cta .content,article p,p.article {
 		font-size:1.14286em
 	}
+
 }
 @media only screen and (min-width:1268px) {
 	#contact_form .article.title,#contact_form article .title,#contact_methods .article.line,#contact_methods article .line,#footer_main .article.address,#footer_main .article.contact,#footer_main article .address,#footer_main article .contact,#home_welcome .article.message,#home_welcome article .message,#the_universe .article.quote,#the_universe article .quote,.case_story_quotes .article.quote,.case_story_quotes article .quote,.case_story_stats .article.stat,.case_story_stats article .stat,.five_facts .article.description,.five_facts article .description,.intro_icon .article.content,.intro_icon article .content,.p.article,.team_member_detail .article.stat,.team_member_detail article .stat,.verbose_cta .article.content,.verbose_cta article .content,article #contact_form .title,article #contact_methods .line,article #footer_main .address,article #footer_main .contact,article #home_welcome .message,article #the_universe .quote,article .case_story_quotes .quote,article .case_story_stats .stat,article .five_facts .description,article .intro_icon .content,article .p,article .team_member_detail .stat,article .verbose_cta .content,article p,p.article {
@@ -1506,6 +1571,8 @@ a,a:active,a:focus,a:hover {
 	#case_story.tnw .case_story_quotes .bg,.case_story_teaser .bg,.testimonial .bg {
 		padding-top:85%
 	}
+
+
 }
 @media only screen and (min-width:1024px) {
 	#case_story.tnw .case_story_quotes .bg,.case_story_teaser .bg,.testimonial .bg {
@@ -2590,6 +2657,7 @@ html.simple_loader #loader.exit .mark svg {
 	#nav_main_open .background .layer.layer_5 {
 		left:-64%
 	}
+
 }
 @media only screen and (min-width:768px) {
 	#nav_main_open .background .layer.layer_5 {

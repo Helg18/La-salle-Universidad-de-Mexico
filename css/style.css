@@ -32,6 +32,8 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 /* GENERALES */
 
 .menuButtonScroll{
+
+  display: none;
   width: 40px;
   height: 60px;
   background: url(../images/nuevosArtes/btn_menu_scroll_top.png)no-repeat;
@@ -39,7 +41,6 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
   border:none;
   position: fixed;
   right: 0;
-  display: none;
 }
 
 .textAlignCenter{
@@ -4976,6 +4977,13 @@ FACULTAD DE FAMADYC
 
 @media (max-width: 750px) {
 
+  .menuButtonScroll{
+    display: none !important;
+  }
+
+  .acreditacion_white{
+        display: none;
+  }
 
 
   .searchBar, .backgroundResponsive{

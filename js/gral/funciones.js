@@ -852,6 +852,17 @@ $(document).ready(function(){
         }
     });
 
+    $("#btn_proceso_acreditacion_responsive").on( "click", function() {
+
+        if($('#acreditacion_la_salle_responsive').is(":visible")){
+            $('#acreditacion_la_salle_responsive').hide("slow");
+        }else{
+            $('#acreditacion_la_salle_responsive').show("slow");      
+        }
+    });
+
+    
+
 });
  
 

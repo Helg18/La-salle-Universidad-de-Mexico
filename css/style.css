@@ -2679,6 +2679,11 @@ p.textDos_title{
     text-align: justify;
 }
 
+.desc_desc a{
+  text-decoration: none;
+  color: #d2202f;
+}
+
 
 
 
@@ -4043,8 +4048,6 @@ header{
 
 
 
-
-
 /* MENU CALENDARIO*/
 
 #calendarioResponsive{
@@ -4436,6 +4439,21 @@ ul.bjqs-controls.v-centered li a:hover{
 
 /*FOOTER*/
 
+.columnasDireccion{
+  width: 100%;
+  background: #b5b5b5;
+  overflow: hidden;
+}
+
+.content_footer_contact_responsive{
+  text-align: center;
+  font-size:0.8em;
+}
+
+.content_footer_contact_responsive p{
+  color: #fff;
+}
+
 .footer{
   overflow: hidden;
   background: gray;
@@ -4445,7 +4463,6 @@ ul.bjqs-controls.v-centered li a:hover{
   width: 33%;
   display: inline-block;
   float: left;
-
 }
 
 .listaUnoLocalidades{
@@ -4948,7 +4965,84 @@ FACULTAD DE FAMADYC
     display: none;
 }
 
+
+
+
+
+
+.container_notice{
+  color: #bfbfbf;
+  text-align: center;
+  font-family: 'HelveticaRegular',arial;
+}
+
+.container_notice img{
+  width: 100%;
+}
+
+.container_notice_desc{
+  padding: 10% 0 10% 0; 
+  background: #fff;
+}
+
+.container_notice_desc h4{
+  text-transform: uppercase;
+  color: #4c4c4c;
+  padding: 0 0 10% 0;
+}
+
+.container_notice_desc p{
+  text-align: justify;
+  color: #4c4c4c;
+}
+
+.share_notice {
+  border: 1px solid #f7f7f7;
+}
+
+.share_notice nav{
+  float: right;
+}
+.share_notice nav ul{
+  margin-bottom: 0;
+}
+.share_notice nav ul li{
+  display: inline-block;
+  padding: 10px;
+
+}
+
+.btn_next_back{
+  padding: 0 0 10% 0;
+}
+.btn_back{
+  text-transform: uppercase;
+  background: #d6d6d6;
+  color: #4c4c4c;
+  padding: 5px;
+    margin-bottom: 2%;
+
+}
+
+
+
+
+
+
+  #footerResponsive{
+   display: none; 
+  }
+
+
+  #columnasDireccionFooterResponsive{
+    display: none;
+  }
+
 /*MEDIAS QUERYS RESPONSIVE*/
+
+
+
+
 
 
 
@@ -4976,6 +5070,15 @@ FACULTAD DE FAMADYC
 
 
 @media (max-width: 750px) {
+
+  #footerResponsive{
+   display: block; 
+  }
+
+
+  #columnasDireccionFooterResponsive{
+    display: block;
+  }
 
   .menuButtonScroll{
     display: none !important;
@@ -5206,10 +5309,6 @@ FACULTAD DE FAMADYC
     display: block;    
   }
 
-  #footerResponsive{
-   display: block; 
-  }
-
   #logosResponsive{
     display: block;
   }
@@ -5226,14 +5325,18 @@ FACULTAD DE FAMADYC
   }
 
   #acreditacion_la_salle_responsive{
-    display: block;
+    display: none;
   }
 
+
+
+  .btn_acreditacion_responsive{
+    border: none;
+  } 
   /* AVISO DE PRIVACIDAD */
 
 
-  .avisoDePrivacidad{
-    color: #fff;
+  .avisoDePrivacidad {
     text-align: center;
     padding: 10px;
     font-size: 0.8em;
@@ -5243,8 +5346,9 @@ FACULTAD DE FAMADYC
     font-family: 'HelveticaBold',arial;
   }
 
-  .avisoDePrivacidad p{
-    margin-bottom: 0px !important;
+  .avisoDePrivacidad a{
+    text-decoration: none;
+    color: #fff;
   }
 
   /* REDES SOCIALES RESPONSIVE */
@@ -5252,6 +5356,10 @@ FACULTAD DE FAMADYC
   
   .redesSociales{
     display: none;
+  }
+
+  .back_redes_responsive{
+    background: #b5b5b5;
   }
 
   .redesSocialesResponsive{
@@ -5280,7 +5388,8 @@ FACULTAD DE FAMADYC
     height: 50px;
   }
   .redesSocialesResponsive img{
-    width: 12%;
+    width: 10%;
+    padding: 8px;
   }
 
 
@@ -6118,7 +6227,16 @@ FACULTAD DE FAMADYC
 
 
 @media (max-width: 550px) {
+  
 
+  .contenedorIdioma {
+    width: 30%;
+  }
+
+  .search {
+    width: 97%;
+    padding-right: 0px !important;
+  }
 
 
   .logo{
@@ -6405,10 +6523,6 @@ FACULTAD DE FAMADYC
   .columnasFooter{
     width: 100%;
     overflow: hidden;
-  }
-
-  #contactanosFooterGris{
-    display: none;
   }
 
   .listaLocalidades {

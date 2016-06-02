@@ -586,7 +586,7 @@ function investigacion(){
 
 function noticias(){
 
-//return false;
+return false;
     $('#ninja-slider ul').html('');
     var tmp = ''
 

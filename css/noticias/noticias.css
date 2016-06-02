@@ -476,7 +476,15 @@ a.expand {
 }
 @media only screen and (max-width: 520px) {
   .effects .imgNoticia {
-    width: 100%;
+    width: 70%;
+    margin: auto !important;
+    float: none;
+  }
+
+  .rest {
+    width: 70%;
+    margin: auto;
+    padding-left: 0px;
   }
   .destacada{
     width: 100%  !important;

@@ -57,7 +57,7 @@ function funciones(){
         if($('#contactoShow').is(":visible")) {
             $('#contactoShow').hide("slow");
         }
-
+        
     });
 
 
@@ -82,7 +82,7 @@ function funciones(){
         if($('#accionsocialShow').is(":visible")) {
             $('#accionsocialShow').hide("slow");
         }
-
+        
         if($('#vidaShow').is(":visible")) {
             $('#vidaShow').hide("slow");
         }
@@ -90,7 +90,7 @@ function funciones(){
         if($('#serviciosShow').is(":visible")) {
             $('#serviciosShow').hide("slow");
         }
-
+        
         if($('#investigacionShow').is(":visible")) {
             $('#investigacionShow').hide("slow");
         }
@@ -102,7 +102,7 @@ function funciones(){
     });
 
     $("#botonDos").click(function() {
-        $('html,body').animate({scrollTop: $("#MenuUbicacionPrincipal").offset().top}, 2000);
+            $('html,body').animate({scrollTop: $("#MenuUbicacionPrincipal").offset().top}, 2000);
     });
 
 
@@ -148,7 +148,7 @@ function funciones(){
     });
 
     $("#botonTres").click(function() {
-        $('html,body').animate({scrollTop: $("#MenuUbicacionPrincipal").offset().top}, 2000);
+            $('html,body').animate({scrollTop: $("#MenuUbicacionPrincipal").offset().top}, 2000);
     });
 
     $("#botonCuatro").on( "click", function() {
@@ -186,9 +186,9 @@ function funciones(){
         }
     });
 
-
+    
     $("#botonCuatro").click(function() {
-        $('html,body').animate({scrollTop: $("#MenuUbicacionPrincipal").offset().top}, 2000);
+            $('html,body').animate({scrollTop: $("#MenuUbicacionPrincipal").offset().top}, 2000);
     });
 
 
@@ -231,7 +231,7 @@ function funciones(){
         $('html,body').animate({scrollTop: $("#MenuUbicacionPrincipal").offset().top}, 2000);
     });
 
-
+    
     $("#botonSeis").on( "click", function() {
         //$('#galeriaClientes').hide(); //oculto mediante id
         //$('.target').hide(); //muestro mediante clase
@@ -249,7 +249,7 @@ function funciones(){
         if($('#ofertaAcademicaShow').is(":visible")) {
             $('#ofertaAcademicaShow').hide("slow");
         }
-
+         
 
         if($('#vinculacionEmpresarialShow').is(":visible")) {
             $('#vinculacionEmpresarialShow').hide("slow");
@@ -269,7 +269,7 @@ function funciones(){
         if($('#contactoShow').is(":visible")) {
             $('#contactoShow').hide("slow");
         }
-
+        
 
     });
 
@@ -295,11 +295,11 @@ function funciones(){
         if($('#ofertaAcademicaShow').is(":visible")) {
             $('#ofertaAcademicaShow').hide("slow");
         }
-
+        
         if($('#vinculacionEmpresarialShow').is(":visible")) {
             $('#vinculacionEmpresarialShow').hide("slow");
         }
-
+        
         if($('#accionsocialShow').is(":visible")) {
             $('#accionsocialShow').hide("slow");
         }
@@ -312,7 +312,7 @@ function funciones(){
             $('#vidaShow').hide("slow");
         }
 
-        if($('#contactoShow').is(":visible")) {
+         if($('#contactoShow').is(":visible")) {
             $('#contactoShow').hide("slow");
         }
 
@@ -343,11 +343,11 @@ function funciones(){
         if($('#ofertaAcademicaShow').is(":visible")) {
             $('#ofertaAcademicaShow').hide("slow");
         }
-
+        
         if($('#vinculacionEmpresarialShow').is(":visible")) {
             $('#vinculacionEmpresarialShow').hide("slow");
         }
-
+        
         if($('#accionsocialShow').is(":visible")) {
             $('#accionsocialShow').hide("slow");
         }
@@ -380,7 +380,7 @@ function funciones(){
         }else{
             $('#desc_slider').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
     $("#btn_more_slider_two").on( "click", function() {
 
@@ -389,7 +389,7 @@ function funciones(){
         }else{
             $('#desc_slider').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
     $("#btn_more_slider_three").on( "click", function() {
 
@@ -398,7 +398,7 @@ function funciones(){
         }else{
             $('#desc_slider').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
     $("#btn_more_slider_four").on( "click", function() {
 
@@ -407,7 +407,7 @@ function funciones(){
         }else{
             $('#desc_slider').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
 
     $("#btn_more_slider").click(function() {
@@ -418,7 +418,6 @@ function funciones(){
 
     /*NOTICIAS MAS*/
 
-
     $("#btn_more_noticia_uno").on( "click", function() {
 
         if($('#desc_noticias').is(":visible") ){
@@ -426,7 +425,7 @@ function funciones(){
         }else{
             $('#desc_noticias').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
 
     $("#btn_more_noticia_dos").on( "click", function() {
@@ -436,7 +435,7 @@ function funciones(){
         }else{
             $('#desc_noticias').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
 
     $("#btn_more_noticia_tres").on( "click", function() {
@@ -446,7 +445,7 @@ function funciones(){
         }else{
             $('#desc_noticias').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
 
 
@@ -457,7 +456,7 @@ function funciones(){
         }else{
             $('#desc_noticias').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
 
 
@@ -468,7 +467,7 @@ function funciones(){
         }else{
             $('#desc_noticias').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
 
 
@@ -479,7 +478,7 @@ function funciones(){
         }else{
             $('#desc_noticias').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
 
     $("#btn_more_noticia_siete").on( "click", function() {
@@ -489,7 +488,7 @@ function funciones(){
         }else{
             $('#desc_noticias').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
 
     $("#btn_more_noticia_ocho").on( "click", function() {
@@ -499,7 +498,7 @@ function funciones(){
         }else{
             $('#desc_noticias').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
 
     $("#btn_more_noticia_nueve").on( "click", function() {
@@ -509,7 +508,7 @@ function funciones(){
         }else{
             $('#desc_noticias').show("slow");
             $("#changeTextTitulo").text('Noticias');
-        }
+        }  
     });
 
 
@@ -524,7 +523,7 @@ function funciones(){
             $('#acreditacion_la_salle').show("slow");
             $('#downImageDown').show("slow");
             $('#imageUp').hide("slow");
-        }
+        } 
     });
 
     $("#btn_process_success").click(function() {
@@ -539,16 +538,16 @@ function funciones(){
 
         if($('#aspirantes').is(":visible") ){
             $('#aspirantes').hide("slow");
-            $(this).removeClass("perfilActiveButtons");
+             $(this).removeClass("perfilActiveButtons");
         }else{
             $('#aspirantes').show("slow");
-            $(this).addClass("perfilActiveButtons");
+             $(this).addClass("perfilActiveButtons");
         }
 
         if($('#perfilEstudiante').is(":visible")) {
             $('#perfilEstudiante').hide("slow");
             $('#botonEstudiante').removeClass("perfilActiveButtons");
-        }
+        } 
         if($('#perfilDocente').is(":visible")) {
             $('#perfilDocente').hide("slow");
             $('#botonDocente').removeClass("perfilActiveButtons");
@@ -581,8 +580,8 @@ function funciones(){
         }else{
             $('#perfilEstudiante').show("slow");
             $(this).addClass("perfilActiveButtons");
-        }
-
+        } 
+        
         if($('#aspirantes').is(":visible")) {
             $('#aspirantes').hide("slow");
             $('#botonAspirante').removeClass("perfilActiveButtons");
@@ -603,7 +602,7 @@ function funciones(){
             $('#perfilPadre').hide("slow");
             $('#botonPadre').removeClass("perfilActiveButtons");
         }
-        if($('#perfilInternational').is(":visible") ){
+         if($('#perfilInternational').is(":visible") ){
             $('#perfilInternational').hide("slow");
             $('#botonInternational').removeClass("perfilActiveButtons");
         }
@@ -617,8 +616,8 @@ function funciones(){
         }else{
             $('#perfilDocente').show("slow");
             $(this).addClass("perfilActiveButtons");
-        }
-
+        } 
+        
         if($('#aspirantes').is(":visible")) {
             $('#aspirantes').hide("slow");
             $('#botonAspirante').removeClass("perfilActiveButtons");
@@ -639,7 +638,7 @@ function funciones(){
             $('#perfilPadre').hide("slow");
             $('#botonPadre').removeClass("perfilActiveButtons");
         }
-        if($('#perfilInternational').is(":visible") ){
+         if($('#perfilInternational').is(":visible") ){
             $('#perfilInternational').hide("slow");
             $('#botonInternational').removeClass("perfilActiveButtons");
         }
@@ -654,8 +653,8 @@ function funciones(){
         }else{
             $('#perfilAdministrativo').show("slow");
             $(this).addClass("perfilActiveButtons");
-        }
-
+        } 
+        
         if($('#aspirantes').is(":visible")) {
             $('#aspirantes').hide("slow");
             $('#botonAspirante').removeClass("perfilActiveButtons");
@@ -676,7 +675,7 @@ function funciones(){
             $('#perfilPadre').hide("slow");
             $('#botonPadre').removeClass("perfilActiveButtons");
         }
-        if($('#perfilInternational').is(":visible") ){
+         if($('#perfilInternational').is(":visible") ){
             $('#perfilInternational').hide("slow");
             $('#botonInternational').removeClass("perfilActiveButtons");
         }
@@ -691,8 +690,8 @@ function funciones(){
         }else{
             $('#perfilEgresado').show("slow");
             $(this).addClass("perfilActiveButtons");
-        }
-
+        } 
+        
         if($('#aspirantes').is(":visible")) {
             $('#aspirantes').hide("slow");
             $('#botonAspirante').removeClass("perfilActiveButtons");
@@ -713,7 +712,7 @@ function funciones(){
             $('#perfilPadre').hide("slow");
             $('#botonPadre').removeClass("perfilActiveButtons");
         }
-        if($('#perfilInternational').is(":visible") ){
+         if($('#perfilInternational').is(":visible") ){
             $('#perfilInternational').hide("slow");
             $('#botonInternational').removeClass("perfilActiveButtons");
         }
@@ -729,7 +728,7 @@ function funciones(){
         }else{
             $('#perfilPadre').show("slow");
             $(this).addClass("perfilActiveButtons");
-        }
+        } 
 
         if($('#aspirantes').is(":visible")) {
             $('#aspirantes').hide("slow");
@@ -766,7 +765,7 @@ function funciones(){
         }else{
             $('#perfilInternational').show("slow");
             $(this).addClass("perfilActiveButtons");
-        }
+        } 
         if($('#aspirantes').is(":visible")) {
             $('#aspirantes').hide("slow");
             $('#botonAspirante').removeClass("perfilActiveButtons");
@@ -783,16 +782,16 @@ function funciones(){
             $('#perfilAdministrativo').hide("slow");
             $('#botonAdministrativo').removeClass("perfilActiveButtons");
         }
-        if($('#perfilEgresado').is(":visible") ){
+         if($('#perfilEgresado').is(":visible") ){
             $('#perfilEgresado').hide("slow");
             $('#botonEgresado').removeClass("perfilActiveButtons");
         }
         if($('#perfilPadre').is(":visible")) {
             $('#perfilPadre').hide("slow");
             $('#botonPadre').removeClass("perfilActiveButtons");
-        }
+        }        
     });
-
+    
 
 
     /*BOTONERA MENU OFERTA ACADEMICA*/
@@ -815,7 +814,7 @@ function funciones(){
             $('#btn_select_oferta_adm').removeClass("button_menu_right_derecho_active");
         }else{
             $('#id_container_select_btn_oferta').show("slow");
-            $('#btn_select_oferta_adm').addClass("button_menu_right_derecho_active");
+            $('#btn_select_oferta_adm').addClass("button_menu_right_derecho_active");        
         }
     });
     $("#btn_select_oferta_per").on( "click", function() {
@@ -825,7 +824,7 @@ function funciones(){
             $('#btn_select_oferta_per').removeClass("button_menu_right_derecho_active");
         }else{
             $('#id_container_select_btn_oferta').show("slow");
-            $('#btn_select_oferta_per').addClass("button_menu_right_derecho_active");
+            $('#btn_select_oferta_per').addClass("button_menu_right_derecho_active");        
         }
     });
     $("#btn_select_oferta_cou").on( "click", function() {
@@ -835,7 +834,7 @@ function funciones(){
             $('#btn_select_oferta_cou').removeClass("button_menu_right_derecho_active");
         }else{
             $('#id_container_select_btn_oferta').show("slow");
-            $('#btn_select_oferta_cou').addClass("button_menu_right_derecho_active");
+            $('#btn_select_oferta_cou').addClass("button_menu_right_derecho_active");        
         }
     });
     $("#btn_select_oferta_pla").on( "click", function() {
@@ -845,7 +844,7 @@ function funciones(){
             $('#btn_select_oferta_pla').removeClass("button_menu_right_derecho_active");
         }else{
             $('#id_container_select_btn_oferta').show("slow");
-            $('#btn_select_oferta_pla').addClass("button_menu_right_derecho_active");
+            $('#btn_select_oferta_pla').addClass("button_menu_right_derecho_active");        
         }
     });
     $("#btn_select_oferta_bec").on( "click", function() {
@@ -855,10 +854,23 @@ function funciones(){
             $('#btn_select_oferta_bec').removeClass("button_menu_right_derecho_active");
         }else{
             $('#id_container_select_btn_oferta').show("slow");
-            $('#btn_select_oferta_bec').addClass("button_menu_right_derecho_active");
+            $('#btn_select_oferta_bec').addClass("button_menu_right_derecho_active");        
         }
     });
+
+    $("#btn_proceso_acreditacion_responsive").on( "click", function() {
+
+        if($('#acreditacion_la_salle_responsive').is(":visible")){
+            $('#acreditacion_la_salle_responsive').hide("slow");
+        }else{
+            $('#acreditacion_la_salle_responsive').show("slow");      
+        }
+    });
+
+    
+
 }
+ 
 
 
 

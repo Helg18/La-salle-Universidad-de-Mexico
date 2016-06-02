@@ -30,6 +30,7 @@
 		transform:scale3d(1,1,1)
 	}
 }
+
 @keyframes bounce {
 	0% {
 		-moz-transform:scale3d(.8,.8,.8);
@@ -1277,19 +1278,88 @@ q:after {
 	line-height:1.2em;
 	margin-bottom:1em
 }
+
+.container_imagen_titulo_section_slider {
+    margin-top: 84%;
+    margin-left: 15%;
+}
+.container_imagen_titulo_section_slider p{
+    font-size: 0.8em;
+}
+
+
+.container_titulo_description_slider {
+    margin-top: 20%;
+    color: #636363;
+    margin-right: 8%;
+    font-size: 0.45em;
+}
+
+.btn_slider img{
+	width: 50%;
+	margin-left: 85%;
+}
+
 @media only screen and (min-width:650px) {
 	#nav_main_open .primary ul,#the_universe .quote,.case_story_teaser .title,.clients_list .title,.full_screen_billboard .title,.h1,.intro_billboard .title,.split_billboard .title,.testimonial .quote {
 		font-size:1.28571em
+	}
+	.container_imagen_titulo_section_slider {
+    	margin-top: 84%;
+    	margin-left: 15%;
+	}
+	.container_imagen_titulo_section_slider p{
+    	font-size: 0.8em;
+	}
+
+
+	.container_titulo_description_slider {
+    	margin-top: 20%;
+    	color: #636363;
+    	margin-right: 8%;
+    	font-size: 0.55em;
+	}
+
+	.btn_slider img{
+		width: 55%;
+		margin-left: 85%;
 	}
 }
 @media only screen and (min-width:1024px) {
 	#nav_main_open .primary ul,#the_universe .quote,.case_story_teaser .title,.clients_list .title,.full_screen_billboard .title,.h1,.intro_billboard .title,.split_billboard .title,.testimonial .quote {
 		font-size:1.85714em
 	}
+
+	.container_imagen_titulo_section_slider {
+    	margin-top: 134%;
+    	margin-left: 15%;
+	}
+	.container_imagen_titulo_section_slider p{
+    	font-size: 0.8em;
+	}
+
+
+	.container_titulo_description_slider {
+    	margin-top: 20%;
+    	color: #636363;
+    	margin-right: 7%;
+    	font-size: 0.65em;
+	}
+
+	.btn_slider img{
+		width: 55%;
+		margin-left: 85%;
+	}
+	
 }
 @media only screen and (min-width:1268px) {
+	
 	#nav_main_open .primary ul,#the_universe .quote,.case_story_teaser .title,.clients_list .title,.full_screen_billboard .title,.h1,.intro_billboard .title,.split_billboard .title,.testimonial .quote {
 		font-size: 1.42857em;
+	}
+
+	.container_titulo_description_slider {
+    	font-size: 1em;
 	}
 }
 #contact_form #nav_main_open .primary ul.title,#contact_form #the_universe .title.quote,#contact_form .case_story_teaser .title,#contact_form .clients_list .title,#contact_form .full_screen_billboard .title,#contact_form .h1.title,#contact_form .intro_billboard .title,#contact_form .split_billboard .title,#contact_form .testimonial .quote.title,#contact_methods #nav_main_open .primary ul.line,#contact_methods #the_universe .line.quote,#contact_methods .case_story_teaser .title.line,#contact_methods .clients_list .line.title,#contact_methods .full_screen_billboard .title.line,#contact_methods .h1.line,#contact_methods .intro_billboard .title.line,#contact_methods .split_billboard .title.line,#contact_methods .testimonial .quote.line,#footer_main #nav_main_open .primary ul.address,#footer_main #nav_main_open .primary ul.contact,#footer_main #the_universe .address.quote,#footer_main #the_universe .contact.quote,#footer_main .case_story_teaser .address.title,#footer_main .case_story_teaser .contact.title,#footer_main .clients_list .address.title,#footer_main .clients_list .contact.title,#footer_main .full_screen_billboard .address.title,#footer_main .full_screen_billboard .contact.title,#footer_main .h1.address,#footer_main .h1.contact,#footer_main .intro_billboard .address.title,#footer_main .intro_billboard .contact.title,#footer_main .split_billboard .address.title,#footer_main .split_billboard .contact.title,#footer_main .testimonial .address.quote,#footer_main .testimonial .contact.quote,#home_welcome #nav_main_open .primary ul.message,#home_welcome #the_universe .message.quote,#home_welcome .case_story_teaser .title.message,#home_welcome .clients_list .message.title,#home_welcome .full_screen_billboard .title.message,#home_welcome .h1.message,#home_welcome .intro_billboard .title.message,#home_welcome .split_billboard .title.message,#home_welcome .testimonial .quote.message,#nav_main_open .primary #contact_form ul.title,#nav_main_open .primary #contact_methods ul.line,#nav_main_open .primary #footer_main ul.address,#nav_main_open .primary #footer_main ul.contact,#nav_main_open .primary #home_welcome ul.message,#nav_main_open .primary #the_universe ul.quote,#nav_main_open .primary .case_story_quotes ul.quote,#nav_main_open .primary .case_story_stats ul.stat,#nav_main_open .primary .five_facts ul.description,#nav_main_open .primary .intro_icon ul.content,#nav_main_open .primary .team_member_detail ul.stat,#nav_main_open .primary .verbose_cta ul.content,#nav_main_open .primary ul p,#nav_main_open .primary ul.p,#the_universe #contact_form .title.quote,#the_universe #contact_methods .line.quote,#the_universe #footer_main .address.quote,#the_universe #footer_main .contact.quote,#the_universe #home_welcome .message.quote,#the_universe #nav_main_open .primary ul.quote,#the_universe .case_story_quotes .quote,#the_universe .case_story_stats .stat.quote,#the_universe .case_story_teaser .title.quote,#the_universe .clients_list .title.quote,#the_universe .five_facts .description.quote,#the_universe .full_screen_billboard .title.quote,#the_universe .intro_billboard .title.quote,#the_universe .intro_icon .content.quote,#the_universe .quote,#the_universe .quote p,#the_universe .split_billboard .title.quote,#the_universe .team_member_detail .stat.quote,#the_universe .testimonial .quote,#the_universe .verbose_cta .content.quote,.case_story_quotes #nav_main_open .primary ul.quote,.case_story_quotes #the_universe .quote,.case_story_quotes .case_story_teaser .title.quote,.case_story_quotes .clients_list .quote.title,.case_story_quotes .full_screen_billboard .title.quote,.case_story_quotes .h1.quote,.case_story_quotes .intro_billboard .title.quote,.case_story_quotes .split_billboard .title.quote,.case_story_quotes .testimonial .quote,.case_story_stats #nav_main_open .primary ul.stat,.case_story_stats #the_universe .stat.quote,.case_story_stats .case_story_teaser .title.stat,.case_story_stats .clients_list .stat.title,.case_story_stats .full_screen_billboard .title.stat,.case_story_stats .h1.stat,.case_story_stats .intro_billboard .title.stat,.case_story_stats .split_billboard .title.stat,.case_story_stats .testimonial .quote.stat,.case_story_teaser #contact_form .title,.case_story_teaser #contact_methods .title.line,.case_story_teaser #footer_main .address.title,.case_story_teaser #footer_main .contact.title,.case_story_teaser #home_welcome .title.message,.case_story_teaser #the_universe .title.quote,.case_story_teaser .case_story_quotes .title.quote,.case_story_teaser .case_story_stats .title.stat,.case_story_teaser .five_facts .title.description,.case_story_teaser .intro_icon .title.content,.case_story_teaser .p.title,.case_story_teaser .team_member_detail .title.stat,.case_story_teaser .title p,.case_story_teaser .verbose_cta .title.content,.clients_list #contact_form .title,.clients_list #contact_methods .line.title,.clients_list #footer_main .address.title,.clients_list #footer_main .contact.title,.clients_list #home_welcome .message.title,.clients_list #the_universe .title.quote,.clients_list .case_story_quotes .quote.title,.clients_list .case_story_stats .stat.title,.clients_list .five_facts .description.title,.clients_list .intro_icon .content.title,.clients_list .p.title,.clients_list .team_member_detail .stat.title,.clients_list .title p,.clients_list .verbose_cta .content.title,.five_facts #nav_main_open .primary ul.description,.five_facts #the_universe .description.quote,.five_facts .case_story_teaser .title.description,.five_facts .clients_list .description.title,.five_facts .full_screen_billboard .description.title,.five_facts .h1.description,.five_facts .intro_billboard .description.title,.five_facts .split_billboard .description.title,.five_facts .testimonial .description.quote,.full_screen_billboard #contact_form .title,.full_screen_billboard #contact_methods .title.line,.full_screen_billboard #footer_main .address.title,.full_screen_billboard #footer_main .contact.title,.full_screen_billboard #home_welcome .title.message,.full_screen_billboard #the_universe .title.quote,.full_screen_billboard .case_story_quotes .title.quote,.full_screen_billboard .case_story_stats .title.stat,.full_screen_billboard .five_facts .description.title,.full_screen_billboard .intro_icon .title.content,.full_screen_billboard .p.title,.full_screen_billboard .team_member_detail .title.stat,.full_screen_billboard .title p,.full_screen_billboard .verbose_cta .title.content,.h1 p,.h1.p,.intro_billboard #contact_form .title,.intro_billboard #contact_methods .title.line,.intro_billboard #footer_main .address.title,.intro_billboard #footer_main .contact.title,.intro_billboard #home_welcome .title.message,.intro_billboard #the_universe .title.quote,.intro_billboard .case_story_quotes .title.quote,.intro_billboard .case_story_stats .title.stat,.intro_billboard .five_facts .description.title,.intro_billboard .intro_icon .title.content,.intro_billboard .p.title,.intro_billboard .team_member_detail .title.stat,.intro_billboard .title p,.intro_billboard .verbose_cta .title.content,.intro_icon #nav_main_open .primary ul.content,.intro_icon #the_universe .content.quote,.intro_icon .case_story_teaser .title.content,.intro_icon .clients_list .content.title,.intro_icon .full_screen_billboard .title.content,.intro_icon .h1.content,.intro_icon .intro_billboard .title.content,.intro_icon .split_billboard .content.title,.intro_icon .testimonial .content.quote,.split_billboard #contact_form .title,.split_billboard #contact_methods .title.line,.split_billboard #footer_main .address.title,.split_billboard #footer_main .contact.title,.split_billboard #home_welcome .title.message,.split_billboard #the_universe .title.quote,.split_billboard .case_story_quotes .title.quote,.split_billboard .case_story_stats .title.stat,.split_billboard .five_facts .description.title,.split_billboard .intro_icon .content.title,.split_billboard .p.title,.split_billboard .team_member_detail .title.stat,.split_billboard .title p,.split_billboard .verbose_cta .title.content,.team_member_detail #nav_main_open .primary ul.stat,.team_member_detail #the_universe .stat.quote,.team_member_detail .case_story_teaser .title.stat,.team_member_detail .clients_list .stat.title,.team_member_detail .full_screen_billboard .title.stat,.team_member_detail .h1.stat,.team_member_detail .intro_billboard .title.stat,.team_member_detail .split_billboard .title.stat,.team_member_detail .testimonial .quote.stat,.testimonial #contact_form .quote.title,.testimonial #contact_methods .quote.line,.testimonial #footer_main .address.quote,.testimonial #footer_main .contact.quote,.testimonial #home_welcome .quote.message,.testimonial #the_universe .quote,.testimonial .case_story_quotes .quote,.testimonial .case_story_stats .quote.stat,.testimonial .five_facts .description.quote,.testimonial .intro_icon .content.quote,.testimonial .p.quote,.testimonial .quote p,.testimonial .team_member_detail .quote.stat,.testimonial .verbose_cta .quote.content,.verbose_cta #nav_main_open .primary ul.content,.verbose_cta #the_universe .content.quote,.verbose_cta .case_story_teaser .title.content,.verbose_cta .clients_list .content.title,.verbose_cta .full_screen_billboard .title.content,.verbose_cta .h1.content,.verbose_cta .intro_billboard .title.content,.verbose_cta .split_billboard .title.content,.verbose_cta .testimonial .quote.content {
@@ -1414,6 +1484,7 @@ q:after {
 	#contact_form .article.title,#contact_form article .title,#contact_methods .article.line,#contact_methods article .line,#footer_main .article.address,#footer_main .article.contact,#footer_main article .address,#footer_main article .contact,#home_welcome .article.message,#home_welcome article .message,#the_universe .article.quote,#the_universe article .quote,.case_story_quotes .article.quote,.case_story_quotes article .quote,.case_story_stats .article.stat,.case_story_stats article .stat,.five_facts .article.description,.five_facts article .description,.intro_icon .article.content,.intro_icon article .content,.p.article,.team_member_detail .article.stat,.team_member_detail article .stat,.verbose_cta .article.content,.verbose_cta article .content,article #contact_form .title,article #contact_methods .line,article #footer_main .address,article #footer_main .contact,article #home_welcome .message,article #the_universe .quote,article .case_story_quotes .quote,article .case_story_stats .stat,article .five_facts .description,article .intro_icon .content,article .p,article .team_member_detail .stat,article .verbose_cta .content,article p,p.article {
 		font-size:1.14286em
 	}
+
 }
 @media only screen and (min-width:1268px) {
 	#contact_form .article.title,#contact_form article .title,#contact_methods .article.line,#contact_methods article .line,#footer_main .article.address,#footer_main .article.contact,#footer_main article .address,#footer_main article .contact,#home_welcome .article.message,#home_welcome article .message,#the_universe .article.quote,#the_universe article .quote,.case_story_quotes .article.quote,.case_story_quotes article .quote,.case_story_stats .article.stat,.case_story_stats article .stat,.five_facts .article.description,.five_facts article .description,.intro_icon .article.content,.intro_icon article .content,.p.article,.team_member_detail .article.stat,.team_member_detail article .stat,.verbose_cta .article.content,.verbose_cta article .content,article #contact_form .title,article #contact_methods .line,article #footer_main .address,article #footer_main .contact,article #home_welcome .message,article #the_universe .quote,article .case_story_quotes .quote,article .case_story_stats .stat,article .five_facts .description,article .intro_icon .content,article .p,article .team_member_detail .stat,article .verbose_cta .content,article p,p.article {
@@ -1506,6 +1577,8 @@ a,a:active,a:focus,a:hover {
 	#case_story.tnw .case_story_quotes .bg,.case_story_teaser .bg,.testimonial .bg {
 		padding-top:85%
 	}
+
+
 }
 @media only screen and (min-width:1024px) {
 	#case_story.tnw .case_story_quotes .bg,.case_story_teaser .bg,.testimonial .bg {
@@ -2102,11 +2175,8 @@ html.simple_loader #loader.exit .mark svg {
 }
 @media only screen and (min-width:1024px) {
 	#nav_main_closed {
-		background: url(../images/header/menusinhamburguesa.png)no-repeat !important;
-  		background-size: 100%;
-		height:80px;
-		width:80px;
-		display: block !important;
+		height:40px;
+		width:40px;
 	}
 }
 #home_welcome #nav_main_closed .content:before,#nav_main_closed #home_welcome .content:before,#nav_main_closed .content_wrapper:before {
@@ -2593,6 +2663,7 @@ html.simple_loader #loader.exit .mark svg {
 	#nav_main_open .background .layer.layer_5 {
 		left:-64%
 	}
+
 }
 @media only screen and (min-width:768px) {
 	#nav_main_open .background .layer.layer_5 {

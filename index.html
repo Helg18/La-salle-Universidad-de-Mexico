@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="css/menuFullScreen/menuFullScreen.css" />
   <link rel="stylesheet" href="css/buttons/button.css">
   <link rel="stylesheet" href="css/slider_menu_oferta/jquery.bxslider.css" />
+  <link rel="stylesheet" href="css/slider_menu_oferta/jquery.bxPrincipal.css" />
   <link rel="stylesheet" href="css/slider_calendario_responsive/jqueryResponsive.bxslider.css" />
 
   <!-- Favicon
@@ -57,19 +58,14 @@
 
 
   <!-- MENU PRINCIPAL -->
-  
-  <nav id="nav_main_closed" class=""> 
-    <a href="#"  class="menu backgroundMenu">Show Menu
-      <span class="top"></span>
-      <span class="middle"></span>
-      <span class="bottom"></span>  
-    </a>
-  </nav> 
+
+  <button id="nav_main" class="menuButtonScroll">
+  </button> 
   
   <!-- FIN MENU PRINCIPAL -->
   
 
-  <!--  REDES SOCIALES
+  <!--  REDES SOCIALES 
   
   <div class="redesSociales">
     <div class="contenedorBotonMenuRedesSociales">
@@ -89,7 +85,7 @@
     </div>
   </div>
 
-	FIN REDES SOCIALES -->
+  FIN REDES SOCIALES -->
 
 
 
@@ -123,18 +119,7 @@
       				<input class="submit" type="submit" value="" />
       			</form>
       		</div>
-
-      		<div class="menuPrincipal">
-            <nav id="nav_main_closed" style="z-index:1000; display:block !important;" class=""> 
-              <a href="#"  class="menu backgroundMenu">Show Menu
-                <span class="top"></span>
-              	<span class="middle"></span>
-              	<span class="bottom"></span>  
-            	</a>
-          	</nav> 
-          </div>
       	</div>
-
       </header>
     </div>
   </div>
@@ -169,7 +154,7 @@
 				  	
           <div class="contenedorFormulario">
       			<form class="formSearch">
-      				<input class="search" type="text" name="search" placeholder="" />
+      				<input class="search" type="text" name="search" placeholder="Ingresa tu palabra..." />
       				<input class="submit" type="submit" value="" />
       			</form>
       		</div>
@@ -1127,7 +1112,7 @@
         <div class="headerSubMenuUniversidad">
           
           <div class="two columns tituloUniversidad">
-            <img src="images/nuevosArtes/btn_seccion/universidad_la_salle.png"> 
+            <img src="images/nuevosArtes/btn_seccion/somos_la_salle.png"> 
           </div>
             
           <div class="ten columns subMenuUniversidad">
@@ -1201,8 +1186,8 @@
         <div class="subMenuResponsiveUniversidad">
         	<div class="flechita">
         		<select>
-  						<option value="">La Salle hoyo</option>
-  						<option value="">Miision, Vision e Ideano</option>
+  						<option value="">La Salle hoy</option>
+  						<option value="">Mision, Vision e Ideano</option>
   						<option value="">Modelo Educativo</option>
  	 						<option value="">Acreditaciones</option>
  	 						<option value="">Plan de Desarrollo Institucional</option>
@@ -2140,6 +2125,7 @@
   <div id="vinculacionEmpresarialShow">
     <div class="contenedorEmpresarial marginEntreSecciones"> 
       <div class="container">
+        <div class="row">
 
           <div class="headerSubMenuVinculacion">
               <div class="two columns tituloVinculacion">
@@ -2503,10 +2489,10 @@
       
       <div class="row">
         <div class="investigacion_cuadro_responsive">   
-          <p class="azulFuerte">PROYECTOSS</p>
+          <p class="azulFuerte">PROYECTOS</p>
           <a href="#"><img src="images/nuevosArtes/images_responsive/ir.png"></a>
-        </div>
-
+        </div>  
+        
         <div class="investigacion_cuadro_responsive">
           <p class="azulFuerte">PUBLICACIONES</p>
           <a href="#"><img src="images/nuevosArtes/images_responsive/ir.png"></a>
@@ -2531,7 +2517,7 @@
 
 
   <!-- SECCION CONTACTO
- ––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  ––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div id="contactoShow">
       <div class="contenedorContacto">
@@ -2603,54 +2589,54 @@
 
 
   <div id="contactoShowResponsive">
-      <div class="contenedorInvestigacion marginEntreSecciones">
-          <div class="container">
-
-              <div class="row">
-
-                  <div class="subMenuResponsiveUniversidad">
-                      <div class="flechita">
-                          <select>
-                              <option value="">Contacto</option>
-                              <option value="">Direccion de Atención al Publico</option>
-                              <option value="">Organigrama<br>Institucional</option>
-                              <option value="">Mapas</option>
-                              <option value="">Como Llegar</option>
-                              <option value="">Redes Sociales Institucionales</option>
-                          </select>
-                      </div>
-                  </div>
-
-                  <div class="container_skew_text">
-                      <div class="contenedor_text_responsive_skew_left_principal">
-                          <div class="content_text_red">
-                              <p>Benjamin Franklin 47<br> Col. Condesa, Delg. Cuauhtémoc <br>México, DF, CP 06140 <br><span class="telefonoContacto">52 (55) 5278 9500</span></p>
-                          </div>
-                      </div>
-
-                      <div class="container_map_responsive">
-                          <img src="images/nuevosArtes/images_responsive/mapa_responsive.png">
-                      </div>
-                  </div>
-
-                  <div class="title_ubicacion_responsive">
-                      <p class="azulLaSalle textHelveticaBold">Cómo llegar</p>
-                  </div>
-
-                  <div class="fomulario_contacto_responsive">
-                      <p>Contáctanos</p>
-                      <input class="" type="text" placeholder="Nombre">
-                      <input class="" type="email" placeholder="Email">
-                      <input class="" type="text" placeholder="Teléfono">
-                      <textarea class="text_area" type="text" placeholder="Comentarios"></textarea>
-                      <input class="submit_form_responsive" type="submit" value="Enviar">
-                  </div>
-
-              </div>
-
+    <div class="contenedorInvestigacion marginEntreSecciones"> 
+      <div class="container">
+        
+        <div class="row">
+          
+          <div class="subMenuResponsiveUniversidad">
+            <div class="flechita">
+              <select>
+                <option value="">Contacto</option>
+                <option value="">Direccion de Atención al Publico</option>
+                <option value="">Organigrama<br>Institucional</option>
+                <option value="">Mapas</option>
+                <option value="">Como Llegar</option>
+                <option value="">Redes Sociales Institucionales</option>
+              </select>
+            </div>
           </div>
+          
+          <div class="container_skew_text">
+            <div class="contenedor_text_responsive_skew_left_principal">
+              <div class="content_text_red">
+                <p>Benjamin Franklin 47<br> Col. Condesa, Delg. Cuauhtémoc <br>México, DF, CP 06140 <br><span class="telefonoContacto">52 (55) 5278 9500</span></p>
+              </div>
+            </div>
+            
+            <div class="container_map_responsive">
+              <img src="images/nuevosArtes/images_responsive/mapa_responsive.png">
+            </div>
+          </div>
+
+          <div class="title_ubicacion_responsive">
+            <p class="azulLaSalle textHelveticaBold">Cómo llegar</p>
+          </div>
+          
+          <div class="fomulario_contacto_responsive">
+            <p>Contáctanos</p>
+            <input class="" type="text" placeholder="Nombre">
+            <input class="" type="email" placeholder="Email">
+            <input class="" type="text" placeholder="Teléfono">
+            <textarea class="text_area" type="text" placeholder="Comentarios"></textarea>
+            <input class="submit_form_responsive" type="submit" value="Enviar">
+          </div>
+
+        </div>
+
       </div>
-  </div>
+    </div>
+  </div> 
 
 
   <!-- FIN SECCIONES RESPONSIVA CONTACTO
@@ -2677,7 +2663,7 @@
 
 
 
-  <!-- SLIDER CON EFECTO Y BANNERS
+<!-- SLIDER CON EFECTO Y BANNERS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
@@ -2985,7 +2971,7 @@
 
 
 
-  <!-- CONTENIDO CALENDARIO
+<!-- CONTENIDO CALENDARIO
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div class="container " id="calendario">
@@ -3184,21 +3170,21 @@
   <!-- SECCION RESPONSIVE CALENDARIO RESPONSIVE
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="container marginApartirDeCalendario" id="calendarioResponsive" >
+  <div class="container marginApartirDeCalendario rest" id="calendarioResponsive" >
     <div class="row">
       
       <div class="slider2">
        
-        <div class="container_pic_slider slide">
+        <div class="container_pic_slider slide ">
           <div id="effect-1" class="effects clearfix"> 
-            <div class="imgSliderNoticias">
+            <div class="imgSliderNoticias ">
               <div class="overlayCalendarioFecha">
                 <div class="text_btn_event_calendario">
                   <div class="row">
                     <div class="date_event_calendario_responsive"><p>2</p><p><span>3</span> Agosto 2015</p></div>
                   </div>
                   <div class="row">
-                    <button><img src="images/nuevosArtes/Noticias/icon_more.png">
+                    <button><img src="images/nuevosArtes/noticias/icon_more.png">
                   </div>
                 </div>
               </div>
@@ -3222,7 +3208,7 @@
                     <div class="date_event_calendario_responsive"><p>2</p><p><span>5</span> enero 2016</p></div>
                   </div>
                   <div class="row">
-                    <button><img src="images/nuevosArtes/Noticias/icon_more.png">
+                    <button><img src="images/nuevosArtes/noticias/icon_more.png">
                   </div>
                 </div>
               </div>
@@ -3245,54 +3231,78 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-
-
-
+  
 
 
   <br /><br /><br />
 
+
+
   <!-- SECCION ACCESO DIRECTO 
   ––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="container marginApartirDeCalendario">
+  <!--<div class="container marginApartirDeCalendario">
     <section class="accesoDirecto">
       <div class="row">
 
-        <div class="two columns">
+        <div class="four columns">
           <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Egresados_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png'"></a><br>
           <img src="images/nuevosArtes/accesoDirecto/texto_actualizacion_egresados.png">
         </div>
 
-        <div class="two columns">
+        <div class="four columns">
           <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Fichas_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png'"></a><br>
           <img src="images/nuevosArtes/accesoDirecto/texto_descarga_ficha.png">
         </div>
 
-        <div class="two columns">
+        <div class="four columns">
           <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Pagos_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png'"></a><br>
           <img src="images/nuevosArtes/accesoDirecto/texto_pagos-por-internet.png">
         </div>
 
+      </div>
+    </section>
+  </div>-->
 
 
+  <div class="container marginApartirDeCalendario circle">
+    <section class="accesoDirecto">
+      <div class="row">
         <div class="two columns">
-          <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Facturacion_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png'"></a><br>
+          <div class="primerCirculo">
+            <a href="http://delasalle.ulsa.edu.mx/actualizacion/login.aspx" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Egresados_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png'"></a><br>
+            <img src="images/nuevosArtes/accesoDirecto/texto_actualizacion_egresados.png">
+          </div>
+        </div>
+        <div class="two columns">
+          <div class="segundoCirculo">
+            <a href="http://sgu.ulsa.edu.mx/psulsa/" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Fichas_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png'"></a><br>
+            <img src="images/nuevosArtes/accesoDirecto/texto_descarga_ficha.png">
+          </div>
+        </div>
+
+        <div class="two columns ">
+          <div class="primerCirculo">
+            <a href="http://sgu.ulsa.edu.mx/psulsa/" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Pagos_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png'"></a><br>
+            <img src="images/nuevosArtes/accesoDirecto/texto_pagos-por-internet.png">
+          </div>
+        </div>
+        <div class="two columns ">
+          <a href="http://delasalle.ulsa.mx/pagos/" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Facturacion_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png'"></a><br>
           <img src="images/nuevosArtes/accesoDirecto/texto_factura-electronica.png">
         </div>
 
         <div class="two columns">
-          <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_profesionales.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_profesionales_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_profesionales.png'"></a><br>
+          <a href="http://lasalle.mx/profesionalesconvalor/" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_profesionales.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_profesionales_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_profesionales.png'"></a><br>
           <img src="images/nuevosArtes/accesoDirecto/texto_profesionales.png">
         </div>
 
         <div class="two columns">
-          <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_todo-en-1.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_todo-en-1_OVER.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_todo-en-1.png'"></a><br>
+          <a href="http://hoy.lasalle.mx/nuevo-portal-de-pagos-en-linea/" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_todo-en-1.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_todo-en-1_OVER.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_todo-en-1.png'"></a><br>
           <img src="images/nuevosArtes/accesoDirecto/texto_todo.png">
         </div>
 
       </div>
-
     </section>
   </div>
 
@@ -3312,44 +3322,42 @@
 
   <div class="container marginApartirDeCalendario">
     <section class="accesoDirectoResponsive">
-      <div class="row">
-        
+      <div class="row">      
         <div class="two columns">
           <div class="primerCirculo">
-            <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Egresados_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png'"></a><br>
+            <a href="http://delasalle.ulsa.edu.mx/actualizacion/login.aspx" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Egresados_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png'"></a><br>
             <img src="images/nuevosArtes/accesoDirecto/texto_actualizacion_egresados.png">
           </div>
 
           <div class="segundoCirculo">
-            <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Fichas_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png'"></a><br>
+            <a href="http://sgu.ulsa.edu.mx/psulsa/" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Fichas_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png'"></a><br>
             <img src="images/nuevosArtes/accesoDirecto/texto_descarga_ficha.png">
           </div>
         </div>
 
         <div class="two columns">
           <div class="primerCirculo">
-            <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Pagos_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png'"></a><br>
+            <a href="http://sgu.ulsa.edu.mx/psulsa/" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Pagos_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png'"></a><br>
             <img src="images/nuevosArtes/accesoDirecto/texto_pagos-por-internet.png">
           </div>
 
           <div class="segundoCirculo">
-            <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Facturacion_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png'"></a><br>
+            <a href="http://delasalle.ulsa.mx/pagos/" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Facturacion_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png'"></a><br>
             <img src="images/nuevosArtes/accesoDirecto/texto_factura-electronica.png">
           </div>
         </div>
 
         <div class="two columns">
           <div class="primerCirculo">
-            <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_profesionales.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_profesionales_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_profesionales.png'"></a><br>
+            <a href="http://lasalle.mx/profesionalesconvalor/" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_profesionales.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_profesionales_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_profesionales.png'"></a><br>
             <img src="images/nuevosArtes/accesoDirecto/texto_profesionales.png">
           </div>
 
           <div class="segundoCirculo">
-            <a href=""><img src="images/nuevosArtes/accesoDirecto/Button_todo-en-1.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_todo-en-1_OVER.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_todo-en-1.png'"></a><br>
+            <a href="http://hoy.lasalle.mx/nuevo-portal-de-pagos-en-linea/" target="NEW"><img src="images/nuevosArtes/accesoDirecto/Button_todo-en-1.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_todo-en-1_OVER.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_todo-en-1.png'"></a><br>
             <img src="images/nuevosArtes/accesoDirecto/texto_todo.png">
           </div>
-        </div>
-        
+        </div>     
       </div>
     </section>
   </div>
@@ -3360,7 +3368,7 @@
 
 
 
-  <br /><br /><br />
+
 
 
 
@@ -3454,6 +3462,28 @@
 
 
 
+  <!--  SECCION ACREDITACION RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="acreditacion_responsive">
+    <div class="container">
+    <button id="btn_proceso_acreditacion_responsive" class="btn_acreditacion_responsive">Proceso de Acreditacion La Salle</button>
+    </div>
+  </div>
+
+
+  <div class="postFooter" id="acreditacion_la_salle_responsive">
+    <div class="container"> 
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>    
+    </div>
+  </div>
+
+  <!--  FIN SECCION ACREDITACION RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
 <!-- SECCION LOCALIDADES FOOTER 
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -3528,13 +3558,13 @@
           <nav>
             <ul>
               <li>
-                <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_1.png"></a>
+                <a href="https://www.facebook.com/LaSalleMX" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_1.png"></a>
               </li>
                <li>
-                <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_2.png"></a>
+                <a href="https://twitter.com/LaSalle_MX" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_2.png"></a>
               </li>
                <li>
-                <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_3.png"></a>
+                <a href="https://www.instagram.com/lasallemx/" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_3.png"></a>
               </li>
                <li>
                 <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_4.png"></a>
@@ -3546,19 +3576,19 @@
                 <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_6.png"></a>
               </li>
                <li>
-                <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_7.png"></a>
+                <a href="https://es.foursquare.com/v/universidad-la-salle/4b8ffab0f964a520c16d33e3?#tipsPage=2" target="_blank"><img src="images/nuevosArtes/footer_icons_red_social/social_7.png"></a>
               </li>
                <li>
                 <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_8.png"></a>
               </li>
               <li>
-                <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_9.png"></a>
+                <a href="https://vine.co/u/1033132484508213248" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_9.png"></a>
               </li>
               <li>
-                <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_10.png"></a>
+                <a href="https://www.pinterest.com/lasallemx/pins/" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_10.png"></a>
               </li>
               <li>
-                <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_11.png"></a>
+                <a href="https://www.youtube.com/user/LaSalleMX" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_11.png"></a>
               </li>
             </ul>
           </nav>
@@ -3568,20 +3598,20 @@
       </div>
       <div class="row new_list_estados">
         <ul>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Bajio</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Cancun</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Chihuahua</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Cuernavaca</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Laguna</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Monterrey</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Morelia</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Nezahualcoyotl</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Noroeste</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Oaxaca</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Pachuca</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Puebla</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Saltillo</a></li>
-          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="">Victoria</a></li>    
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://bajio.delasalle.edu.mx/">Bajio</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://lasallecancun.edu.mx/">Cancun</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://ulsachihuahua.edu.mx/">Chihuahua</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsac.edu.mx/">Cuernavaca</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsalaguna.edu.mx/">Laguna</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ceslas.mx/">Monterrey</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.lasallemorelia.edu.mx/">Morelia</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://ulsaneza.edu.mx/">Nezahualcoyotl</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsa-noroeste.edu.mx/">Noroeste</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsaoaxaca.edu.mx/">Oaxaca</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.lasallep.edu.mx/ulsaweb/index.php/">Pachuca</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.universidadlasallebenavente.edu.mx/">Puebla</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsasaltillo.edu.mx/">Saltillo</a></li>
+          <li><img src="images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsavictoria.edu.mx/">Victoria</a></li>    
         </ul>
       </div>
       <!---<div class="row contacto_new_contact">
@@ -3595,17 +3625,15 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-  <!-- SECCION FOOTER FULL RESPONSIVE 
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
  
 
 
   <!-- SECCION FOOTER FULL NOT RESPONSIVE 
-  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="footer" id="footerNotResponsive">
+  <div class="footer" id="footerResponsive">
     <div class="container"> 
 
       <div class="columnasFooter" id="logosFooterGris">
@@ -3621,38 +3649,29 @@
           
           <div class="listaUnoLocalidades">
             <ul>
-              <li><a href="">Bajio</a></li>
-              <li><a href="">Cancun</a></li>
-              <li><a href="">Chihuahua</a></li>
-              <li><a href="">Cuernavaca</a></li>
-              <li><a href="">Laguna</a></li>
-              <li><a href="">Monterrey</a></li>
-              <li><a href="">Morelia</a></li>
+              <li><a href="http://bajio.delasalle.edu.mx/" target="NEW">Bajio</a></li>
+              <li><a href="http://lasallecancun.edu.mx/" target="NEW">Cancun</a></li>
+              <li><a href="http://ulsachihuahua.edu.mx/" target="NEW">Chihuahua</a></li>
+              <li><a href="http://www.ulsac.edu.mx/" target="NEW">Cuernavaca</a></li>
+              <li><a href="http://www.ulsalaguna.edu.mx/" target="NEW">Laguna</a></li>
+              <li><a href="http://www.ceslas.mx/" target="NEW">Monterrey</a></li>
+              <li><a href="http://www.lasallemorelia.edu.mx/" target="NEW">Morelia</a></li>
             </ul>
           </div>
           
           <div class="listaDosLocalidades">
             <ul>
-              <li><a href="">Nezahualcoyotl</a></li>
-              <li><a href="">Noroeste</a></li>
-              <li><a href="">Oaxaca</a></li>
-              <li><a href="">Pachuca</a></li>
-              <li><a href="">Puebla</a></li>
-              <li><a href="">Saltillo</a></li>
-              <li><a href="">Victoria</a></li>
+              <li><a href="http://ulsaneza.edu.mx/" target="NEW">Nezahualcoyotl</a></li>
+              <li><a href="http://www.ulsa-noroeste.edu.mx/" target="NEW">Noroeste</a></li>
+              <li><a href="http://www.ulsaoaxaca.edu.mx/" target="NEW">Oaxaca</a></li>
+              <li><a href="http://www.lasallep.edu.mx/ulsaweb/index.php/" target="NEW">Pachuca</a></li>
+              <li><a href="http://www.universidadlasallebenavente.edu.mx/" target="NEW">Puebla</a></li>
+              <li><a href="http://www.ulsasaltillo.edu.mx/" target="NEW">Saltillo</a></li>
+              <li><a href="http://www.ulsavictoria.edu.mx/" target="NEW">Victoria</a></li>
             </ul>
           </div>
         </div>
       </div>
-
-      <div class="columnasFooter " id="contactanosFooterGris" >
-        <div class="contactanoFooter">
-          <p class="tituloContactanos">Contáctanos: </p>
-          <p class="telefonoContactanos">+52 1 5278-9500</p>
-          <p>Benjamin Franklin 47 Col. Condesa.<br>Del. Cuauhtemoc México DF. CP 06140</p>
-        </div>
-      </div>
-
     </div>
   </div>
 
@@ -3679,10 +3698,10 @@
 
   <div class="acreditacion_white">
     <div class="container">
-      <div class="two columns"><a href="#">Aviso de Privacidad</a></div>
-      <div class="two columns"><a href="#">Terminos y Condiciones</a></div>
+      <div class="two columns"><a href="http://delasalle.ulsa.mx/privacidad/" target="NEW">Aviso de Privacidad</a></div>
+      <div class="two columns"><a href="http://www.lasalle.mx/terminos-y-condiciones/" target="NEW">Terminos y Condiciones</a></div>
       <div class="seven columns rightTextFooterAcreditacion"><button id="btn_process_success" class="btn_process_success"> <img id="imageUp" class="rotate" src="images/nuevosArtes/footer/icon_redArrow.png">
-        <img id="downImageDown" class="rotate upImage" src="images/nuevosArtes/footer/icon_redArrow.png">
+        <img id="downImageDown" class="rotate upImage" src="images/nuevosArtes/footer/icon_redArrow.png.png">
         </button>Proceso de Acreditacion La Salle</div>
     </div>
   </div>
@@ -3712,64 +3731,60 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-
-
-
-
-
-  <!--  SECCION ACREDITACION RESPONSIVE
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <div class="acreditacion_responsive">
-    <div class="container">
-     	<p>Proceso de Acreditacion La Salle
-    </div>
-  </div>
-
-
-  <div class="postFooter" id="acreditacion_la_salle_responsive">
-    <div class="container"> 
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>    
-    </div>
-  </div>
-
-  <!--  FIN SECCION ACREDITACION RESPONSIVE
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
-
-
-
-
-
-
-
   <!--  SECCION REDES SOCIALES RESPONSIVE
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-	<div class="container">
-		<div class="redesSocialesResponsive">
+  <div class="back_redes_responsive">
+   <div class="container ">
+    <div class="redesSocialesResponsive">
     	<ul>
-      	<li><a href="#"><img src="images/nuevosArtes/redesResponsive/icon_lista.png"></a></li>
-      	<li><a href="https://www.facebook.com/LaSalleMX" target="_blank"><img src="images/nuevosArtes/redesResponsive/icon_Facebook.png"></a></li>
-      	<li><a href="https://twitter.com/LaSalle_MX" target="_blank"></a></li>
-      	<li><a href="https://www.youtube.com/user/LaSalleMX" target="_blank"><img src="images/nuevosArtes/redesResponsive/icon_youtube.png"></a></li>
-      	<li><a href="https://www.instagram.com/lasallemx/" target="_blank"><img src="images/nuevosArtes/redesResponsive/icon_instagram.png"></a></li>
-      	<li><a href="https://www.pinterest.com/lasallemx/pins/" target="_blank"><img src="images/nuevosArtes/redesResponsive/icon_Pinterest.png"></a></li>
-      	<li><a href="https://vine.co/u/1033132484508213248" target="_blank"><img src="images/nuevosArtes/redesResponsive/icon_vimeo.png"></a></li>
-      	<li><a href="https://es.foursquare.com/v/universidad-la-salle/4b8ffab0f964a520c16d33e3?#tipsPage=2" target="_blank"><img src="images/nuevosArtes/redesResponsive/icon_check.png"></a>
+        <li>
+          <a href="https://www.facebook.com/LaSalleMX" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_1.png"></a>
         </li>
-    	</ul>
-  	</div>
+        <li>
+          <a href="https://twitter.com/LaSalle_MX" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_2.png"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/lasallemx/" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_3.png"></a>
+        </li>
+        <li>
+          <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_4.png"></a>
+        </li>
+        <li>
+          <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_5.png"></a>
+        </li>
+        <li>
+          <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_6.png"></a>
+        </li>
+        <li>
+          <a href="https://es.foursquare.com/v/universidad-la-salle/4b8ffab0f964a520c16d33e3?#tipsPage=2" target="_blank"><img src="images/nuevosArtes/footer_icons_red_social/social_7.png"></a>
+        </li>
+        <li>
+          <a href="" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_8.png"></a>
+        </li>
+        <li>
+          <a href="https://vine.co/u/1033132484508213248" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_9.png"></a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.com/lasallemx/pins/" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_10.png"></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/LaSalleMX" target="NEW"><img src="images/nuevosArtes/footer_icons_red_social/social_11.png"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
   </div>
 
   <!--  FIN SECCION REDES SOCIALES RESPONSIVE
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
-
+  <div class="columnasDireccion">
+    <div class="container">
+      <div class="content_footer_contact_responsive" id="columnasDireccionFooterResponsive" >
+        <p class="telefonoContactanos">+52 1 5278-9500</p>
+        <p>Benjamin Franklin 47 Col. Condesa.<br>Del. Cuauhtemoc México DF. CP 06140</p>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -3782,11 +3797,25 @@
 
   <div class="avisoDePrivacidad">
     <div class="container">
-      <p>Aviso de Privacidad</p>
+      <a href="http://delasalle.ulsa.mx/privacidad/" target="NEW">Aviso de Privacidad</a>
     </div>
   </div>
 
-  <!--  FIN SECCION REDES SOCIALES RESPONSIVE
+  <!--  FIN SECCION AVISO DE PRIVACIDAD RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <!--  SECCION AVISO DE PRIVACIDAD RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="avisoDePrivacidad">
+    <div class="container">
+      <a href="http://www.lasalle.mx/terminos-y-condiciones/" target="NEW">Terminos y condiciones</a>
+    </div>
+  </div>
+
+
+  <!--  FIN SECCION AVISO DE PRIVACIDAD RESPONSIVE
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
@@ -3794,9 +3823,8 @@
 
 
 
-
   <!-- MODALES
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
   <div data-remodal-id="modal2" role="dialog" aria-labelledby="modal2Title" aria-describedby="modal2Desc" class="custom-modal">
@@ -3829,6 +3857,7 @@
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/jquery.bxsliderResponsive.js"></script>
+  <script src="js/jquery.bxSliderPrincipal.js"></script>
   <script src="js/parallax/script.js" defer></script>
   <script src="js/gral/funciones.js" defer></script>
   <script src="js/gral/funcionesResponsive.js" defer></script>
@@ -4134,6 +4163,7 @@
       }
 
   </script>
+
 
 </body>
 </html>

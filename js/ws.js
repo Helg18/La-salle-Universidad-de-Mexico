@@ -61,7 +61,7 @@ function Category1(){
         //console.log('Universidad La Salle');
         //console.log(d.posts);
         $.each(d.posts, function(index,post){
-            html = html + '<div class="subMenuUnoUniversidad" onclick="C1.showContent('+ index +')">' + post.title + '</div>';
+            html = html + '<div id="_btn_select" class="subMenuUnoUniversidad" onclick="C1.showContent('+ index +')">' + post.title + '</div>';
         });
 
         $('.ten.columns.subMenuUniversidad').html(html);

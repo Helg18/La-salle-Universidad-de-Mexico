@@ -40,6 +40,7 @@ class V1FrontendController extends Controller
                     case 1:
                     case 9:
 
+                        unset($data[$k]['posts'][$k2]['subtitle']);
                         unset($data[$k]['posts'][$k2]['paragraph_1']);
                         unset($data[$k]['posts'][$k2]['paragraph_2']);
                         unset($data[$k]['posts'][$k2]['paragraph_3']);

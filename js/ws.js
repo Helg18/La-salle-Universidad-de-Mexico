@@ -84,25 +84,31 @@ function Category1(){
 
         var html = '';
         //Recorremos a sus hijos
-        $.each(post.children, function(index,kid){
+        //console.log(post);
+        $.each(post.children, function(index2,kid){
             //Aqui armamos los cuadros del nuevo submenu el cual no existe
             //Con la variable kid tengo acceso a su hijo uno por uno
 
             //Ejemplo
-            html = html + '<div id="_btn_select" class="subMenuUnoUniversidad" onclick="C1.showContent2('+ index +')">' + post.title + '</div>';
+            html = html + '<div class="cuadrosSubmenu" onclick="C1.showContent2('+ index+',' + index2 +')"><h6>' + kid.title + '</h6></div>';
         });
 
         //Cuando termine pinto el nuevo submenu
 
-
+        //console.log(html);
+        $('#universidadShow .ten.columns.submenu').html(html);
+        this.showContent2(0,0);
     }
 
-    this.showContent2 =  function(index){
+    this.showContent2 =  function(index,index2){
+
         //Esta funcion pintaria el contenido que hay cuando le damos clic al nuevo submenu
-        var post = d.posts[index]; //leo el hijo y ya tengo acceso a el
+        var post = d.posts[index].children[index2]; //leo el hijo y ya tengo acceso a el
+
 
         //aqui ya pinto el contenido del texto
-
+        $('#universidadShow .textoTituloUniversidad p').html(post.subtitle);
+        $('#universidadShow .descripcionTituloUniversidad.ws').html(post.paragraph_1);
 
     }
 

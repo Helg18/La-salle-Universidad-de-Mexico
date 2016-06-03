@@ -9,7 +9,7 @@
         </div>
 
 
-        <div class="form-group form-group-sm ng-hide" ng-show="parent_id == 1">
+        <div class="form-group form-group-sm ng-hide" ng-show="parent_id == 1 || category_id == 1">
             <label class="control-label small">Subtitulo.</label>
             <input type="text" class="form-control" placeholder="" ng-model="post.subtitle">
         </div>

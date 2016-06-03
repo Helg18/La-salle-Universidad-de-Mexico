@@ -6654,3 +6654,19 @@ FACULTAD DE FAMADYC
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+  .cuadrosSubmenu {
+    overflow: hidden;
+    width: 100px;
+    height: 80px;
+    overflow: hidden;
+    border: 1px solid #818c8e;
+    display: inline-block;
+    float: left;
+    margin: 1px;
+    padding-top: 10px;
+  }
+
+  .cuadrosSubmenu h6{
+    font-size: 18px;
+  }

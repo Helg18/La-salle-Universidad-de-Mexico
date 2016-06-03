@@ -30,7 +30,7 @@ class V1FrontendController extends Controller
         $calendar_important = Category::find(4)->posts()->where('is_important',true)->limit(4)->orderBy('custom_date','desc')->get();
         $blog = Category::find(5)->posts()->limit(9)->orderBy('created_at','desc')->get();
 
-        $data = json_decode(json_encode($data),true, 512);
+        /*$data = json_decode(json_encode($data),true, 512);
 
         foreach($data as $k=>$v){
 
@@ -81,7 +81,7 @@ class V1FrontendController extends Controller
                 unset($data[$k]['posts'][$k2]['parent_id']);
                 unset($data[$k]['posts'][$k2]['pivot']);
             endforeach;
-        }
+        }*/
 
         //dd($data);
 

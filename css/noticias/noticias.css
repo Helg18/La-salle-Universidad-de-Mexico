@@ -145,15 +145,16 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 }
 
 .tituloCalendario{
-    float: right;
-    bottom: 0px;
-    padding-top: 64px;
-    padding-right: 10px;
-    font-size: 0.8em;
-    text-decoration: none;
-    color: #fff;
-    text-align: right;
+  float: right;
+  bottom: 0px;
+  padding-top: 81px;
+  padding-right: 14px;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #fff;
+  text-align: right;
 }
+
 .tituloCalendario span{
     font-weight: bold;
 }
@@ -375,7 +376,7 @@ a.expand {
   EFFECT 3 - SLIDE IN LEFT
 ============================================================ */
 #effect-3 .overlayCalendario {
-  top: 48%;
+  top: 50%;
   bottom: 0;
   left: 0;
   width: 0;

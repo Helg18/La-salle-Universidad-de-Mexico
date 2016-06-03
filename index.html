@@ -1088,14 +1088,14 @@
           </div>
             
           <div class="ten columns subMenuUniversidad">
-            <div id="mostrarContenidoUniversidad" class="subMenuUnoUniversidad centro">La Salle<br>hoy</div>
-            <div class="subMenuUnoUniversidad">Mision,<br>Vision e Ideano</div>
-            <div class="subMenuUnoUniversidad">Modelo<br>Educativo</div>
-            <div class="subMenuUnoUniversidad">Acreditaciones</div>
-            <div class="subMenuUnoUniversidad">Plan de <br>Desarrollo<br>Institucional</div>
-            <div class="subMenuUnoUniversidad">Reglamentos</div>
-            <div class="subMenuUnoUniversidad">Historia</div>
-            <div class="subMenuUnoUniversidad">Identidad</div>
+            <div id="_btn" class="subMenuUnoUniversidad">La Salle<br>hoy</div>
+            <div id="_btn" class="subMenuUnoUniversidad">Mision,<br>Vision e Ideano</div>
+            <div id="_btn" class="subMenuUnoUniversidad">Modelo<br>Educativo</div>
+            <div id="_btn" class="subMenuUnoUniversidad">Acreditaciones</div>
+            <div id="_btn" class="subMenuUnoUniversidad">Plan de <br>Desarrollo<br>Institucional</div>
+            <div id="_btn" class="subMenuUnoUniversidad">Reglamentos</div>
+            <div id="_btn" class="subMenuUnoUniversidad">Historia</div>
+            <div id="_btn" class="subMenuUnoUniversidad">Identidad</div>
           </div>
 
         </div>
@@ -4150,6 +4150,18 @@
         }, 'slow');
       });
       });
+
+
+      $(document).ready(function(){
+        $("_btn").on('click',function(){
+            $(this).addClass("subMenuActive");
+        });
+        $("_btn").on('click',function(){
+            $(this).removeClass("subMenuActive");
+        });
+      });
+
+
   </script>
   
   <!-- Create:hdzlruben.

@@ -765,6 +765,17 @@ PERFIL INTERNATIONAL
   box-sizing: border-box;
   padding-top: 25px;
 }
+  
+  .subMenuUnoUniversidad:hover{
+    background: red;
+    color: #fff;
+  }
+  
+  .subMenuActive{
+    background: red;
+    color: #fff;
+  }
+
 
 .accionUniversidad{
   position: absolute;
@@ -1551,8 +1562,9 @@ p.textDos_title{
   display: inline-block;
   float: left;
   box-sizing: border-box;
-  padding: 100px 0 140px 30px;
+  padding: 2% 2% 20% 2%;
   margin: 1px;
+  max-height: 140px;
 }
 
 .cuadroVidaActivo{
@@ -1563,7 +1575,8 @@ p.textDos_title{
   display: inline-block;
   float: left;
   box-sizing: border-box;
-  padding: 31px 0 90px 5px;
+  padding: 2% 2% 20% 2%;
+  max-height: 140px;
 }
 
 .textoVida {
@@ -4149,6 +4162,8 @@ header{
 }
 
 .active{
+  background: url(../images/nuevosArtes/btn_categoria.png);
+  background-size: 100% 100%;
   color:#fff !important; 
 }
 
@@ -4293,7 +4308,6 @@ header{
   float: right;
   margin-left: 0%;
   width: 86.666667% !important;
-  margin-bottom: -7px;
 }
 
 .contenedorFilasNoticias img{

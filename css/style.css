@@ -31,6 +31,18 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 
 /* GENERALES */
 
+
+.scroll-box-300 {
+  height: 400px; /* maximum height of the box, feel free to change this! */
+  overflow-y: scroll;
+}
+
+.scroll-box-150 {
+  height: 450px; /* maximum height of the box, feel free to change this! */
+  overflow-y: scroll;
+}
+
+
 .menuButtonScroll{
 
   display: none;
@@ -996,7 +1008,7 @@ PERFIL INTERNATIONAL
 } 
 
 .contenedorDiagonalUniversidad{
-  width: 80%;
+  width: 90%;
   /* height: 513px; */
   height: auto;
   overflow: hidden;
@@ -1006,13 +1018,16 @@ PERFIL INTERNATIONAL
 }
 
 .descripcionTituloUniversidad{
-  width: 60%;
-  margin-top: 3%;
-  margin-left: 25%;
-  text-align: justify;
-  font-size: 0.65em;
-  transform: skewX(145deg);
+    width: 53%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 24%;
+    text-align: justify;
+    font-size: 0.7em;
+    transform: skewX(145deg);
 }
+
+
 
 .parrafoUniversidad{
   width: 50%;
@@ -5071,6 +5086,38 @@ FACULTAD DE FAMADYC
 
 @media (max-width: 750px) {
 
+  /*.tituloContenedorUniversidad {
+    width: 100%;
+    transform: skew(0deg);
+  }*/
+
+  .title_desc {
+    width: 100%;
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+
+
+  .title_desc h3 {
+    font-size: 1.5em;
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    padding: 3% 3% 3% 3%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
   #footerResponsive{
    display: block; 
   }
@@ -6588,15 +6635,3 @@ FACULTAD DE FAMADYC
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
-
-
-
-.scroll-box-300 {
-  height: 300px; /* maximum height of the box, feel free to change this! */
-  overflow-y: scroll;
-}
-
-.scroll-box-150 {
-  height: 150px; /* maximum height of the box, feel free to change this! */
-  overflow-y: scroll;
-}

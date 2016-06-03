@@ -87,7 +87,7 @@
                     </div>
                 </div>
 
-                @if($Category->id != 5 && $Category->id != 7 && $Category->id != 8 && $Category->id != 9)
+                @if($Category->id != 1 && $Category->id != 5 && $Category->id != 7 && $Category->id != 8 && $Category->id != 9)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Subtitulo</label>
                     <div class="col-md-10">
@@ -101,7 +101,7 @@
                 </div>
                 @endif
 
-                @if($Category->id != 2 && $Category->id != 1)
+                @if($Category->id != 2 && $Category->id != 1 && $Category->id != 9)
                 <div class="form-group">
                     <label class="col-md-2 control-label">Parrafo 1</label>
                     <div class="col-md-10">
@@ -259,7 +259,7 @@
 
             </form>
 
-            @if($record && ($Category->id ==2 || $Category->id == 1))
+            @if($record && ($Category->id ==2 || $Category->id == 1 || $Category->id == 9))
                 <script>var parent_id = '{{$record->id}}', category_id = '{{$Category->id}}';</script>
                 <div ng-controller="PostCtrl" class="ng-cloak">
                     <hr />

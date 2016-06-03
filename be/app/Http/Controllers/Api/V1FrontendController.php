@@ -38,6 +38,7 @@ class V1FrontendController extends Controller
                 switch($v['id']):
 
                     case 1:
+                    case 9:
 
                         unset($data[$k]['posts'][$k2]['paragraph_1']);
                         unset($data[$k]['posts'][$k2]['paragraph_2']);

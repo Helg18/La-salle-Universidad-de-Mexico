@@ -69,15 +69,40 @@ function Category1(){
     }
 
 
+
     this.showContent =  function(index){
+        //Esta funcion pintaria el submenu
         var post = d.posts[index];
-        $('.textoTituloUniversidad p').html(post.subtitle);
-        //console.log(post);
-        //console.log($('.descripcionTituloUniversidad.ws').html());
-        //console.log(post.paragraph1);
-        $('.descripcionTituloUniversidad.ws').html(post.paragraph_1);
-        $('.parrafoUniversidad.ws').html(post.paragraph_1);
-        $('.seccion_1.ws').html(post.video_iframe + " " +post.picture_html);
+
+        //Comento lo que hacia originalmente
+        //ya que necesitamos meter un nuevo submenu
+        //***********
+        //$('.textoTituloUniversidad p').html(post.subtitle);
+        //$('.descripcionTituloUniversidad.ws').html(post.paragraph_1);
+        //$('.parrafoUniversidad.ws').html(post.paragraph_1);
+        //$('.seccion_1.ws').html(post.video_iframe + " " +post.picture_html);
+
+        var html = '';
+        //Recorremos a sus hijos
+        $.each(post.children, function(index,kid){
+            //Aqui armamos los cuadros del nuevo submenu el cual no existe
+            //Con la variable kid tengo acceso a su hijo uno por uno
+
+            //Ejemplo
+            html = html + '<div id="_btn_select" class="subMenuUnoUniversidad" onclick="C1.showContent2('+ index +')">' + post.title + '</div>';
+        });
+
+        //Cuando termine pinto el nuevo submenu
+
+
+    }
+
+    this.showContent2 =  function(index){
+        //Esta funcion pintaria el contenido que hay cuando le damos clic al nuevo submenu
+        var post = d.posts[index]; //leo el hijo y ya tengo acceso a el
+
+        //aqui ya pinto el contenido del texto
+
 
     }
 

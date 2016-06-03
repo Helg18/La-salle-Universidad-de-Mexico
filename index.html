@@ -3871,268 +3871,7 @@
       });
     });
 
-
-
-
-
-
-      function index(){
-          if (Modernizr.touch) {
-
-              // show the close overlay button
-              $(".close-overlay").removeClass("hidden");
-
-              // handle the adding of hover class when clicked
-              $(".imgNoticia").click(function(e){
-                  if (!$(this).hasClass("hoverNoticia")) {
-                      $(this).addClass("hoverNoticia");
-                  }
-              });
-
-              $(".imgNoticiaCalendario").click(function(e){
-                  if (!$(this).hasClass("hoverCalendario")) {
-                      $(this).addClass("hoverCalendario");
-                  }
-              });
-
-              // handle the closing of the overlay
-
-              $(".close-overlay").click(function(e){
-                  e.preventDefault();
-                  e.stopPropagation();
-                  if ($(this).closest(".imgNoticiaCalendario").hasClass("hoverCalendario")) {
-                      $(this).closest(".imgNoticiaCalendario").removeClass("hoverCalendario");
-                  }
-              });
-
-
-              $(".close-overlay").click(function(e){
-                  e.preventDefault();
-                  e.stopPropagation();
-                  if ($(this).closest(".imgNoticia").hasClass("hoverNoticia")) {
-                      $(this).closest(".imgNoticia").removeClass("hoverNoticia");
-                  }
-              });
-
-          } else {
-
-              // handle the mouseenter functionality
-              $(".imgNoticia").mouseenter(function(){
-                          $(this).addClass("hoverNoticia");
-                      })
-
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("hoverNoticia");
-                      });
-
-
-              $(".imgNoticiaCalendario").mouseenter(function(){
-                          $(this).addClass("hoverCalendario");
-                          $('#tituloCalendario').hide("slow");
-                      })
-
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $('#tituloCalendario').show("slow");
-                          $(this).removeClass("hoverCalendario");
-                      });
-
-
-              $(".imgNoticiaCalendario2").mouseenter(function(){
-                          $(this).addClass("hoverCalendario");
-                          $('#tituloCalendario2').hide("slow");
-                      })
-
-                      // handle the mouseleave functionality
-
-
-
-                      .mouseleave(function(){
-                          $('#tituloCalendario2').show("slow");
-                          $(this).removeClass("hoverCalendario");
-                      });
-
-              $(".imgNoticiaCalendario3").mouseenter(function(){
-                          $(this).addClass("hoverCalendario");
-                          $('#tituloCalendario3').hide("slow");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $('#tituloCalendario3').show("slow");
-                          $(this).removeClass("hoverCalendario");
-                      });
-
-              $(".imgNoticiaCalendario4").mouseenter(function(){
-                          $(this).addClass("hoverCalendario");
-                          $('#tituloCalendario4').hide("slow");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $('#tituloCalendario4').show("slow");
-                          $(this).removeClass("hoverCalendario");
-                      });
-
-
-              $("#estudiante").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                          $(this).removeClass("azulFuerte");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-              $("#estudiante2").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                          $('#azulFuerte').removeClass("azulFuerte");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-              $("#estudiante3").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-              $("#estudiante4").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-
-              $("#perfil").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              $("#perfil2").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              $("#perfil3").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              /*DOCENTE*/
-
-              $("#docente").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              $("#docente2").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              $("#docente3").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-
-
-              /*ADMINISTRATIVO*/
-
-              $("#administrativo").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              $("#administrativo2").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              $("#administrativo3").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-
-              /*EGRESADO*/
-
-              $("#egresado").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              $("#egregsado2").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              /*PADRE DE FAMILIA*/
-
-              $("#padre").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              $("#padre2").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-              $("#padre3").mouseenter(function(){
-                          $(this).addClass("cuadroActive");
-                      })
-                      // handle the mouseleave functionality
-                      .mouseleave(function(){
-                          $(this).removeClass("cuadroActive");
-                      });
-
-          }
-      }
-
-      $(document).scroll(function() {
+    $(document).scroll(function() {
       var y = $(this).scrollTop();
       if (y > 600) {
         $('#nav_main').show(1000);
@@ -4149,9 +3888,269 @@
           scrollTop: $('#video-container').offset().top
         }, 'slow');
       });
+    });
+
+    $(document).ready(function () {
+      $("#_btn_select").on('click',function() {  //use a class, since your ID gets mangled
+        $(this).addClass("redActive");      //add the class to the clicked element
+        alert('me presionaste');
       });
+    });
 
 
+
+
+
+
+
+    function index(){
+      if (Modernizr.touch) {
+              // show the close overlay button
+        $(".close-overlay").removeClass("hidden");
+
+              // handle the adding of hover class when clicked
+        $(".imgNoticia").click(function(e){
+          if (!$(this).hasClass("hoverNoticia")) {
+            $(this).addClass("hoverNoticia");
+          }
+        });
+
+        $(".imgNoticiaCalendario").click(function(e){
+          if (!$(this).hasClass("hoverCalendario")) {
+            $(this).addClass("hoverCalendario");
+          }
+        });
+
+        // handle the closing of the overlay
+
+        $(".close-overlay").click(function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          if ($(this).closest(".imgNoticiaCalendario").hasClass("hoverCalendario")) {
+            $(this).closest(".imgNoticiaCalendario").removeClass("hoverCalendario");
+          }
+        });
+
+        $(".close-overlay").click(function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          if ($(this).closest(".imgNoticia").hasClass("hoverNoticia")) {
+            $(this).closest(".imgNoticia").removeClass("hoverNoticia");
+          }
+        });
+
+      } else {
+
+        $(".imgNoticia").mouseenter(function(){
+          $(this).addClass("hoverNoticia");
+        })
+
+        // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("hoverNoticia");
+        });
+
+
+        $(".imgNoticiaCalendario").mouseenter(function(){
+          $(this).addClass("hoverCalendario");
+          $('#tituloCalendario').hide("slow");
+        })
+
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $('#tituloCalendario').show("slow");
+          $(this).removeClass("hoverCalendario");
+        });
+
+
+        $(".imgNoticiaCalendario2").mouseenter(function(){
+          $(this).addClass("hoverCalendario");
+          $('#tituloCalendario2').hide("slow");
+        })
+
+
+        .mouseleave(function(){
+          $('#tituloCalendario2').show("slow");
+          $(this).removeClass("hoverCalendario");
+        });
+
+        $(".imgNoticiaCalendario3").mouseenter(function(){
+          $(this).addClass("hoverCalendario");
+          $('#tituloCalendario3').hide("slow");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $('#tituloCalendario3').show("slow");
+          $(this).removeClass("hoverCalendario");
+        });
+
+        $(".imgNoticiaCalendario4").mouseenter(function(){
+          $(this).addClass("hoverCalendario");
+          $('#tituloCalendario4').hide("slow");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $('#tituloCalendario4').show("slow");
+          $(this).removeClass("hoverCalendario");
+        });
+
+
+        $("#estudiante").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+          $(this).removeClass("azulFuerte");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+                      
+        $("#estudiante2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+          $('#azulFuerte').removeClass("azulFuerte");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#estudiante3").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+                      
+        $("#estudiante4").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#perfil").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#perfil2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#perfil3").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+                      /*DOCENTE*/
+
+        $("#docente").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#docente2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#docente3").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        /*ADMINISTRATIVO*/
+
+        $("#administrativo").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#administrativo2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#administrativo3").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        /*EGRESADO*/
+
+        $("#egresado").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#egregsado2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        /*PADRE DE FAMILIA*/
+
+        $("#padre").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#padre2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#padre3").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+      }
+    }
   </script>
   
   <!-- Create:hdzlruben.

@@ -31,6 +31,10 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 
 /* GENERALES */
 
+.redActive{
+  background: red;
+  color: #fff;
+}
 
 .scroll-box-300 {
   height: 400px; /* maximum height of the box, feel free to change this! */
@@ -764,6 +768,7 @@ PERFIL INTERNATIONAL
   float: left;
   box-sizing: border-box;
   padding-top: 25px;
+  cursor: pointer;
 }
   
   .subMenuUnoUniversidad:hover{
@@ -1019,8 +1024,7 @@ PERFIL INTERNATIONAL
 } 
 
 .contenedorDiagonalUniversidad{
-  width: 90%;
-  /* height: 513px; */
+  width: 95%;
   height: auto;
   overflow: hidden;
   margin: auto;
@@ -1029,13 +1033,11 @@ PERFIL INTERNATIONAL
 }
 
 .descripcionTituloUniversidad{
-    width: 53%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 24%;
-    text-align: justify;
-    font-size: 0.7em;
-    transform: skewX(145deg);
+  width: 60%;
+  margin: 10% 0 0 12%;
+  text-align: justify;
+  font-size: 0.7em;
+  transform: skewX(145deg);
 }
 
 
@@ -5802,6 +5804,9 @@ FACULTAD DE FAMADYC
     font-size: 0.8em;
     padding: 30px 20px 40px 40px;
 }
+
+
+
 
 
 .title_seccion_container_subtitle{

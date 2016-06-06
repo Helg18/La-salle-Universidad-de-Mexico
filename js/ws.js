@@ -18,18 +18,66 @@ $(document).ready(function(){
     getInitialData();
     //cuadrosDeVida();
 
-
     modal = $('[data-remodal-id=modal2]').remodal({
         modifier: 'with-red-theme'
+    });
+
+
+    // $( "#postdl" ).bind("click", function() {
+    //     console.log(this.value);
+    // });
+
+    document.getElementById('buscar').addEventListener('change', function () {
+        var x = document.getElementById("postdls").options.length;
+        var datalists = document.getElementById("postdls");
+
+        console.log(this.value);
+
+        for(con=0;con<x;con++){
+            console.log(datalists.options.namedItem(this.value).value);
+        }
+        // console.log(x); 
+
+
     });
 
 
 });
 
 
+
 function getInitialData(){
     $.get( url + 'initial-data', function(data){
-        initial_data =data;
+
+
+        initial_data = data;
+
+        // console.log(initial_data.categories.length);
+
+        for (con=0;con<initial_data.categories.length;con++){
+
+            var d = initial_data.categories[con];
+            var datalist = $('#postdl');
+            var datalists = $('#postdls');
+
+             // console.log(initial_data.categories[con]);
+
+            $.each(d.posts, function(id,post){
+
+                //console.log(post.length);
+                var opt = $("<option  >"+ post.title +"</option>").attr("value", post.title );
+                var opts = $("<option id='"+post.title+"' >"+ post.title +"</option>").attr("value", post.id );
+                datalist.append(opt);    
+                datalists.append(opts);    
+
+            }); 
+
+        }
+
+
+
+        
+
         C1 = new Category1();
         C2 = new Category2();
         C3 = new Category3();
@@ -43,8 +91,10 @@ function getInitialData(){
         vinculacion_empresarial();
         investigacion();
         noticias();
+
     });
 }
+
 
 
 function Category1(){
@@ -56,13 +106,27 @@ function Category1(){
         c       = {}
         ;
 
+    
+
+  //console.log(d);
+
 
     this.show =  function(){
         //console.log('Universidad La Salle');
         //console.log(d.posts);
+        
+
         $.each(d.posts, function(index,post){
             html = html + '<div id="_btn_select" class="subMenuUnoUniversidad" onclick="C1.showContent('+ index +')">' + post.title + '</div>';
+              
+
         });
+
+
+
+        // $( ":option" ).click(function() {
+        //     console.log(1);
+        // });
 
         $('.ten.columns.subMenuUniversidad').html(html);
         this.showContent(0);
@@ -91,6 +155,8 @@ function Category1(){
 
             //Ejemplo
             html = html + '<div class="cuadrosSubmenu" onclick="C1.showContent2('+ index+',' + index2 +')"><h6>' + kid.title + '</h6></div>';
+
+
         });
 
         //Cuando termine pinto el nuevo submenu
@@ -136,6 +202,8 @@ function Category2(){
         //console.log(d.posts);
         $.each(d.posts, function(index,post){
             html = html + '<div class="subMenuUnoServicios" onclick="C2.showContent('+ index +')">' + post.title + '</div>';
+            // $("#postdl").append(new Option(post.title,index+'-'+1 ));
+
         });
 
         $('.ten.columns.subMenuAccionSocial.vidaestudiantil').html(html);
@@ -201,6 +269,7 @@ function Category3(){
         //console.log(d.posts);
         $.each(d.posts, function(index,post){
             html = html + '<div class="subMenuUnoServicios" onclick="C3.showContent('+ index +')">' + post.title + '</div>';
+            // $("#postdl").append(new Option(post.title,index+'-'+2 ));
         });
 
         $('.ten.columns.subMenuAccionSocial.servicios').html(html);
@@ -239,6 +308,7 @@ function Category6(){
         //console.log(d.posts);
         $.each(d.posts, function(index,post){
             html = html + '<div class="subMenuUnoAccionSocial" onclick="C6.showContent('+ index +')">' + post.title + '</div>';
+            // $("#postdl").append(new Option(post.title,index+'-'+5 ));
         });
 
         $('.ten.subMenuAccionSocial.accion').html(html);
@@ -276,6 +346,7 @@ function Category9(){
 
         $.each(d.posts, function(index,post){
             html = html + '<div class="subMenuUnoAccionSocial" onclick="C9.showContent('+ index +')">' + post.title + '</div>';
+            // $("#postdl").append(new Option(post.title,index+'-'+8 ));
         });
 
         $('.ten.subMenuAccionSocial.contacto').html(html);
@@ -511,7 +582,7 @@ function noticias_blog(){
             '<div class="overlayNoticia">'+
             '<h6>'+post.title+'</h6>'+
             '<p>'+post.paragraph_1_html.substring(0,50)+'...</p>'+
-            '<button class="btn_noticia_more" data-index="'+index+'"><img src="images/nuevosArtes/Noticias/icon_more.png"></button>'+
+            // '<button class="btn_noticia_more" data-index="'+index+'"><img src="images/nuevosArtes/Noticias/icon_more.png"></button>'+
             '</div>'+
             '</div>';
 
@@ -573,6 +644,7 @@ function vinculacion_empresarial(){
             '</div>';
 
         count+=1;
+        // $("#postdl").append(new Option(post.title,index+'-'+6 ));
     });
 
     tmp = tmp + '</div>';
@@ -600,6 +672,7 @@ function investigacion(){
             '<h6>'+post.title+'</h6>'+
             '<p>'+ post.paragraph_1_html+ '</p>'+
             '</div>';
+        // $("#postdl").append(new Option(post.title,index+'-'+7 ));
     });
     $('#investigacionShow .ocultarContenidoSubMenu .row').html(tmp);
 
@@ -642,6 +715,8 @@ return false;
             '</div>'+
             '</li>';
 
+            // $("#postdl").append(new Option(post.title,index+'-'+9 ));
+
 
     });
 
@@ -657,7 +732,7 @@ return false;
         var index = $(this).data('index'),
             post = initial_data.categories[9].posts[index];
 
-        console.log(index);
+        // console.log(index);
 
         $('#desc_slider .title_desc h3').html(post.title);
         $('#desc_slider .desc_desc').html(post.paragraph_1_html);
@@ -673,3 +748,9 @@ return false;
 
 
 }
+
+$("#postdl").select(function() {
+
+    console.log(this.value);
+
+});

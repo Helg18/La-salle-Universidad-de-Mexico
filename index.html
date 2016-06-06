@@ -80,8 +80,15 @@
 				  </div>		  	
           <div class="contenedorFormulario">
       			<form class="formSearch">
-      				<input class="search" type="text" name="search" placeholder="Ingresa tu busqueda" />
-      				<input class="submit" type="submit" value="" />
+      				<input id="buscar"   name="buscar" value="" class="search" type="text" list="postdl" name="search" placeholder="Ingresa tu busqueda" />
+
+              <datalist id="postdl" name='postdl'>
+                
+              </datalist>
+              <datalist id="postdls" name='postdls'>
+                
+              </datalist>
+      				<input onclick='return false;' class="submit" type="submit" value="" />
       			</form>
       		</div>
       	</div>

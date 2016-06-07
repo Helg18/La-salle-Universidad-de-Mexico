@@ -53,19 +53,28 @@ $(document).ready(function(){
             
             var x = document.getElementById("postdls").options.length;
             var datalists = document.getElementById("postdls");
-
+            var flag=0;
             for(con=0;con<x;con++){
 
                 // var resultado = datalists.options.namedItem(this.value).value;
                 // console.log(resultado);
 
                 var valorbuscar = document.getElementById("buscar").value;   
-                console.log(valorbuscar);
+                //console.log(valorbuscar);
                 
-                if(datalists.options.namedItem(valorbuscar).value !== null)
+                if(datalists.options.namedItem(valorbuscar).value !== null && flag==0)
                 {
-                   console.log(datalists.options.namedItem(valorbuscar).value);
-                }else{
+                   var id = datalists.options.namedItem(valorbuscar).value;
+
+                   $.post( url + 'posts',{id:id} ,function(data){
+
+                    console.log(data);
+                    
+                    window.location="notice.html";
+
+                   });
+
+                   flag=1;
                 }
         }
 
@@ -779,8 +788,3 @@ return false;
 
 }
 
-$("#postdl").select(function() {
-
-    console.log(this.value);
-
-});

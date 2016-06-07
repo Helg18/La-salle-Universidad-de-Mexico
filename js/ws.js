@@ -27,30 +27,52 @@ $(document).ready(function(){
     //     console.log(this.value);
     // });
 
-    document.getElementById('buscar').addEventListener('change', function () {
-        var x = document.getElementById("postdls").options.length;
-        var datalists = document.getElementById("postdls");
+    // document.getElementById('buscar').addEventListener('change', function () {
+    //     var x = document.getElementById("postdls").options.length;
+    //     var datalists = document.getElementById("postdls");
 
-        console.log(this.value);
+    //     console.log(this.value);
 
-        for(con=0;con<x;con++){
+    //     for(con=0;con<x;con++){
 
-            // var resultado = datalists.options.namedItem(this.value).value;
-
-            // console.log(resultado);
+    //         // var resultado = datalists.options.namedItem(this.value).value;
+    //         // console.log(resultado);
             
-             if(datalists.options.namedItem(this.value).value !== null)
-             {
-                console.log(datalists.options.namedItem(this.value).value);
-             }
-        }
-        // console.log(x); 
+    //          if(datalists.options.namedItem(this.value).value !== null)
+    //          {
+    //             console.log(datalists.options.namedItem(this.value).value);
+    //          }else{
 
+    //          }
+    //     }
+    //     // console.log(x); 
+
+    // });
+
+    $( "#buscarpost" ).click(function() {
+            
+            var x = document.getElementById("postdls").options.length;
+            var datalists = document.getElementById("postdls");
+
+            for(con=0;con<x;con++){
+
+                // var resultado = datalists.options.namedItem(this.value).value;
+                // console.log(resultado);
+
+                var valorbuscar = document.getElementById("buscar").value;   
+                console.log(valorbuscar);
+                
+                if(datalists.options.namedItem(valorbuscar).value !== null)
+                {
+                   console.log(datalists.options.namedItem(valorbuscar).value);
+                }else{
+                }
+        }
 
     });
 
 
-});
+    });
 
 
 

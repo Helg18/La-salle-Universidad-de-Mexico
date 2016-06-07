@@ -214,18 +214,17 @@
   
   <div class="container container_notice">
       <div class="row">
-        <h3>Noticias</h3>
-        <img src="images/nuevosArtes/imagen.png">
-        <div class="container_notice_desc">
-          <h4>victoria en el concurso de robot</h4>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" </p>
+        <h3 id="titlepost"></h3>
+        <img id="imgpost" >
+        <div id="divpara" class="">
+          
 
-          <p>in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
 
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"...in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" </p>
+
         </div>
       </div>
       <div class="row share_notice">
@@ -703,7 +702,7 @@
 
       var id = getUrlVars()["id"];
 
-      console.log(id);
+      // console.log(id);
 
 
       if(id!=0 && id!="")
@@ -711,7 +710,15 @@
 
          $.post( url + 'posts',{id:id} ,function(data){
 
-          console.log(data);
+          console.log(data.notice);
+
+          $('#titlepost').html(data.notice.title);
+          // $('#titlepost2').html(data.notice.paragraph_1);
+          
+          $('#divpara').html("<h4>"+data.notice.subtitle+"</h4>");
+          $('#divpara').html("<p text-align='justif' >"+data.notice.paragraph_1_html+"</p>");
+          $('#divpara').html("<p text-align='justif' >"+data.notice.paragraph_2_html+"</p>");
+          
 
          });
 

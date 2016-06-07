@@ -38,8 +38,6 @@ class V1FrontendController extends Controller
             );
         }
         
-
-
     }
 
     public function getInitialData(){

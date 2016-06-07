@@ -717,9 +717,9 @@
           $('#titlepost').append(data.notice.title);}else{$('#titlepost').text('Sin Titulo');}
 
           $('#divpara').append("<h4>"+data.notice.subtitle+"</h4>");
-          $('#divpara').append("<p text-align='justif' >"+data.notice.paragraph_1_html+"</p>");
+          $('#divpara').append("<h4>"+data.notice.paragraph_1_html+"</h4>");
           $("#imgpost").attr("src",data.notice.picture);
-          
+
           for(con=0;con<data.children.length;con++){
             $('#divchil').append("<p text-align='justif' >"+data.children[con].title+"</p>");
             $('#divchil').append("<p text-align='justif' >"+data.children[con].paragraph_1+"</p>");

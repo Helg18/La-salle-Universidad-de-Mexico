@@ -34,7 +34,15 @@ $(document).ready(function(){
         console.log(this.value);
 
         for(con=0;con<x;con++){
-            console.log(datalists.options.namedItem(this.value).value);
+
+            // var resultado = datalists.options.namedItem(this.value).value;
+
+            // console.log(resultado);
+            
+             if(datalists.options.namedItem(this.value).value !== null)
+             {
+                console.log(datalists.options.namedItem(this.value).value);
+             }
         }
         // console.log(x); 
 

@@ -219,13 +219,14 @@
         <div id="divpara" class="">
           
 
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-
-
+         
         </div>
+        <div id="divchil" class="">
+          
+
+         
+        </div>
+
       </div>
       <div class="row share_notice">
         <nav>
@@ -710,15 +711,19 @@
 
          $.post( url + 'posts',{id:id} ,function(data){
 
-          console.log(data.notice);
-
-          $('#titlepost').html(data.notice.title);
-          // $('#titlepost2').html(data.notice.paragraph_1);
+          console.log(data.notice.title);
           
-          $('#divpara').html("<h4>"+data.notice.subtitle+"</h4>");
-          $('#divpara').html("<p text-align='justif' >"+data.notice.paragraph_1_html+"</p>");
-          $('#divpara').html("<p text-align='justif' >"+data.notice.paragraph_2_html+"</p>");
+          if(data.notice.title != 'null'){
+          $('#titlepost').append(data.notice.title);}else{$('#titlepost').text('Sin Titulo');}
+
+          $('#divpara').append("<h4>"+data.notice.subtitle+"</h4>");
+          $('#divpara').append("<p text-align='justif' >"+data.notice.paragraph_1_html+"</p>");
           $("#imgpost").attr("src",data.notice.picture);
+          
+          for(con=0;con<data.children.length;con++){
+            $('#divchil').append("<p text-align='justif' >"+data.children[con].title+"</p>");
+            $('#divchil').append("<p text-align='justif' >"+data.children[con].paragraph_1+"</p>");
+          }
           
 
          });

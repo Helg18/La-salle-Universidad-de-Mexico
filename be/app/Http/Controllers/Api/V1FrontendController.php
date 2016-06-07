@@ -29,16 +29,22 @@ class V1FrontendController extends Controller
         if (count($post)) {
 
             $post->categories()->first(); 
+            
+            $children = $post->posts($request->id);
+
             return response()->json(
-                ['error'=>false,'notice'=>$post,'rows'=>count($post)]
+                ['error'=>false,'notice'=>$post,'rows'=>count($post),'children'=>$children]
             );
         } else{
             return response()->json(
-                ['error'=>false,'rows'=>0]
+                ['error'=>false,'rows'=>0,'children'=>0]
             );
         }
         
     }
+
+
+
 
     public function getInitialData(){
 

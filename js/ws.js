@@ -193,7 +193,7 @@ function Category1(){
             //Con la variable kid tengo acceso a su hijo uno por uno
 
             //Ejemplo
-            html = html + '<div class="cuadrosSubmenu" onclick="C1.showContent2('+ index+',' + index2 +')"><h6>' + kid.title + '</h6></div>';
+            html = html + '<div class="cuadrosSubmenu" onclick="C1.showContent2('+ index+',' + index2 +')">' + kid.title + '</div>';
 
 
         });
@@ -202,7 +202,7 @@ function Category1(){
 
         //console.log(html);
         $('#universidadShow .ten.columns.submenu').html(html);
-        this.showContent2(0,0);
+        this.showContent2(index,0);
     }
 
     this.showContent2 =  function(index,index2){
@@ -212,8 +212,8 @@ function Category1(){
 
 
         //aqui ya pinto el contenido del texto
-        $('#universidadShow .textoTituloUniversidad p').html(post.subtitle);
-        $('#universidadShow .descripcionTituloUniversidad.ws').html(post.paragraph_1);
+        $('#universidadShow .textoTituloUniversidad p').html(post.subtitle  ? post.subtitle : '');
+        $('#universidadShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
 
     }
 

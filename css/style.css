@@ -39,11 +39,15 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 .scroll-box-300 {
   height: 400px; /* maximum height of the box, feel free to change this! */
   overflow-y: scroll;
+  text-align: justify;
+  margin-top: 20px;
 }
 
 .scroll-box-150 {
   height: 450px; /* maximum height of the box, feel free to change this! */
   overflow-y: scroll;
+  text-align: justify;
+  margin-top: 20px;
 }
 
 
@@ -6657,14 +6661,15 @@ FACULTAD DE FAMADYC
 
   .cuadrosSubmenu {
     overflow: hidden;
-    width: 100px;
-    height: 80px;
+    /* width: 100px; */
+    /* height: 80px; */
     overflow: hidden;
-    border: 1px solid #818c8e;
+    /* border: 1px solid #818c8e; */
     display: inline-block;
     float: left;
     margin: 1px;
-    padding-top: 10px;
+    padding: 15px;
+    color: #ff0101;
   }
 
   .cuadrosSubmenu h6{

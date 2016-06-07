@@ -214,18 +214,17 @@
   
   <div class="container container_notice">
       <div class="row">
-        <h3>Noticias</h3>
-        <img src="images/nuevosArtes/imagen.png">
-        <div class="container_notice_desc">
-          <h4>victoria en el concurso de robot</h4>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" </p>
+        <h3 id="titlepost"></h3>
+        <img id="imgpost" >
+        <div id="divpara" class="">
+          
 
-          <p>in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
 
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"...in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" </p>
+
         </div>
       </div>
       <div class="row share_notice">
@@ -676,6 +675,8 @@
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/gral/funciones.js" defer></script>
   <script src="js/gral/funcionesResponsive.js" defer></script>
+  <script src="js/ws.config.js"></script>
+  <!-- <script src="js/ws.js" defer></script> -->
   
   <script type="text/javascript">
     // EVENTO CUANDO SE MUEVE EL SCROLL, EL MISMO APLICA TAMBIEN CUANDO SE RESIZA
@@ -697,7 +698,53 @@
           scrollTop: $('#video-container').offset().top
         }, 'slow');
       });
+
+
+      var id = getUrlVars()["id"];
+
+      // console.log(id);
+
+
+      if(id!=0 && id!="")
+      {                  
+
+         $.post( url + 'posts',{id:id} ,function(data){
+
+          console.log(data.notice);
+
+          $('#titlepost').html(data.notice.title);
+          // $('#titlepost2').html(data.notice.paragraph_1);
+          
+          $('#divpara').html("<h4>"+data.notice.subtitle+"</h4>");
+          $('#divpara').html("<p text-align='justif' >"+data.notice.paragraph_1_html+"</p>");
+          $('#divpara').html("<p text-align='justif' >"+data.notice.paragraph_2_html+"</p>");
+          
+
+         });
+
+         flag=1;
+      }
+       
+
+    
+
+
     });
+
+  
+  function getUrlVars()
+  {
+      var vars = [], hash;
+      var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for(var i = 0; i < hashes.length; i++)
+      {
+          hash = hashes[i].split('=');
+          vars.push(hash[0]);
+          vars[hash[0]] = hash[1];
+      }
+      return vars;
+  }
+
 
   </script>
 

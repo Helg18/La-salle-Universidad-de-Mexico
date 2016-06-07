@@ -25,11 +25,19 @@ class V1FrontendController extends Controller
 
         $post = Post::find($request->id);        
 
-        $post->categories()->first();
+        
+        if (count($post)) {
 
-        return response()->json(
-            ['error'=>false,'notice'=>$post]
-        );
+            $post->categories()->first(); 
+            return response()->json(
+                ['error'=>false,'notice'=>$post,'rows'=>count($post)]
+            );
+        } else{
+            return response()->json(
+                ['error'=>false,'rows'=>0]
+            );
+        }
+        
 
 
     }

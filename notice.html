@@ -676,6 +676,8 @@
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/gral/funciones.js" defer></script>
   <script src="js/gral/funcionesResponsive.js" defer></script>
+  <script src="js/ws.config.js"></script>
+  <!-- <script src="js/ws.js" defer></script> -->
   
   <script type="text/javascript">
     // EVENTO CUANDO SE MUEVE EL SCROLL, EL MISMO APLICA TAMBIEN CUANDO SE RESIZA
@@ -697,7 +699,45 @@
           scrollTop: $('#video-container').offset().top
         }, 'slow');
       });
+
+
+      var id = getUrlVars()["id"];
+
+      console.log(id);
+
+
+      if(id!=0 && id!="")
+      {                  
+
+         $.post( url + 'posts',{id:id} ,function(data){
+
+          console.log(data);
+
+         });
+
+         flag=1;
+      }
+       
+
+    
+
+
     });
+
+  
+  function getUrlVars()
+  {
+      var vars = [], hash;
+      var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for(var i = 0; i < hashes.length; i++)
+      {
+          hash = hashes[i].split('=');
+          vars.push(hash[0]);
+          vars[hash[0]] = hash[1];
+      }
+      return vars;
+  }
+
 
   </script>
 

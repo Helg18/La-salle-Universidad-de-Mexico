@@ -23,31 +23,7 @@ $(document).ready(function(){
     });
 
 
-    // $( "#postdl" ).bind("click", function() {
-    //     console.log(this.value);
-    // });
-
-    // document.getElementById('buscar').addEventListener('change', function () {
-    //     var x = document.getElementById("postdls").options.length;
-    //     var datalists = document.getElementById("postdls");
-
-    //     console.log(this.value);
-
-    //     for(con=0;con<x;con++){
-
-    //         // var resultado = datalists.options.namedItem(this.value).value;
-    //         // console.log(resultado);
-            
-    //          if(datalists.options.namedItem(this.value).value !== null)
-    //          {
-    //             console.log(datalists.options.namedItem(this.value).value);
-    //          }else{
-
-    //          }
-    //     }
-    //     // console.log(x); 
-
-    // });
+    
 
     $( "#buscarpost" ).click(function() {
             
@@ -68,9 +44,10 @@ $(document).ready(function(){
 
                    $.post( url + 'posts',{id:id} ,function(data){
 
-                    console.log(data);
                     
-                    window.location="notice.html";
+                    if(data.rows>0){
+                         window.location="notice.html?id="+id;
+                    }
 
                    });
 

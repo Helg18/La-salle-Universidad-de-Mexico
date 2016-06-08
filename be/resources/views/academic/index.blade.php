@@ -96,7 +96,7 @@
 
                 </div>
 
-                @if($type=='content')
+                @if($type=='content' || $type=='gray_box')
                     <div class="form-group">
                         <label class="col-md-2 control-label">Subtitulo</label>
                         <div class="col-md-10">
@@ -109,7 +109,8 @@
                         </div>
 
                     </div>
-
+                @endif
+                @if($type=='content')
                     <div class="form-group">
                         <label class="col-md-2 control-label">Parrafo principal</label>
                         <div class="col-md-10">

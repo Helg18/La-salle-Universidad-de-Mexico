@@ -35,4 +35,5 @@ Route::group(['prefix' => 'angular'], function () {
 
 Route::delete('post/{id}/deleteimage', 'PostController@delete_image');
 Route::resource('post', 'PostController');
+Route::resource('academic', 'AcademicOfferController');
 //Route::get('user/{id}/status', 'UserController@status');

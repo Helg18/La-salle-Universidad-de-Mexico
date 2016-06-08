@@ -126,6 +126,13 @@
 					</li>
 					@endforeach
 
+						<li class="menu-home">
+							<a href="{{url('academic')}}">
+								<i class="ion ion-edit"></i>
+								<span class="text">Oferta Academica</span>
+							</a>
+						</li>
+
 					<li class="menu-config">
 						<a href="javascript:;">
 							<i class="ion ion-ios-settings-strong"></i>

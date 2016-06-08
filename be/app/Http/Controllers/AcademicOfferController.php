@@ -39,7 +39,7 @@ class AcademicOfferController extends Controller
         $record->paragraph_1 = $request->paragraph_1;
         $record->paragraph_2 = $request->paragraph_2;
         $record->type = $request->type;
-        if($record->type!='slider'){
+        if($record->type!='gray_box'){
             $parent = Session::get('academic_last');
             $record->parent_id = $parent->id;
         }
@@ -81,7 +81,7 @@ class AcademicOfferController extends Controller
         $record->subtitle = $request->subtitle;
         $record->paragraph_1 = $request->paragraph_1;
         $record->paragraph_2 = $request->paragraph_2;
-        if($record->type!='slider'){
+        if($record->type!='gray_box'){
             $parent = Session::get('academic_last');
             $record->parent_id = $parent->id;
         }
@@ -115,14 +115,17 @@ class AcademicOfferController extends Controller
         if($record){
             $type = $record->type;
         }else{
-            $type = $request && $request->type ? $request->type : 'slider';
+            $type = $request && $request->type ? $request->type : 'gray_box';
         }
 
 
 
         $nextype=false;
 
-        if($type=='slider'):
+        if($type=='gray_box'):
+            $nextype = 'slider';
+
+        elseif($type=='slider'):
             $nextype = 'list_box';
 
         elseif($type=='list_box'):

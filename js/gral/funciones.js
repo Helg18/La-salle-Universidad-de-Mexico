@@ -102,7 +102,13 @@ function funciones(){
     });
 
     $("#botonDos").click(function() {
-            $('html,body').animate({scrollTop: $("#MenuUbicacionPrincipal").offset().top}, 2000);
+            $('html,body').animate({scrollTop: $("#MenuUbicacionPrincipal").offset().top}, 2000,"swing",function(){
+                $('.slider1').bxSlider({
+                    slideWidth: 199,
+                    minSlides: 2,
+                    maxSlides: 5
+                });
+            });
     });
 
 

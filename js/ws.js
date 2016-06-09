@@ -705,63 +705,167 @@ function investigacion(){
 
 
 
+// function noticias(){
+
+// return false;
+//     $('#ninja-slider ul').html('');
+//     var tmp = ''
+
+
+//     $.each(initial_data.categories[9].posts, function(index,post) {
+
+
+//         tmp = tmp +
+//             '<li>'+
+//             '<a class="ns-img" href="'+post.picture_url+'"></a>'+
+
+//             '<div class="barra_morada">'+
+//             '<div class="caption cap1"><img src="images/nuevosArtes/banner/icono_noticias.png"></div>'+
+//             '<div class="caption cap1 cap2">NOTICIAS</div>'+
+//             '</div>'+
+
+//             '<div class="barra_gris textRight">'+
+//             '<div class="caption cap1gris">'+post.title+'</div>'+
+//             '<div class="caption cap1 cap2gris">'+post.subtitle+'</div>'+
+//             '<div class="caption cap1 cap3"><button  class="btn_slider" data-index="'+index+'"><img src="images/nuevosArtes/banner/icono_mas.png"></button></div>'+
+//             '</div>'+
+//             '</li>';
+
+//             // $("#postdl").append(new Option(post.title,index+'-'+9 ));
+
+
+//     });
+
+
+//     $('#ninja-slider ul').html(tmp);
+
+
+//     nslider.init();
+
+
+//     $("#ninja-slider .btn_slider").on( "click", function() {
+
+//         var index = $(this).data('index'),
+//             post = initial_data.categories[9].posts[index];
+
+//         // console.log(index);
+
+//         $('#desc_slider .title_desc h3').html(post.title);
+//         $('#desc_slider .desc_desc').html(post.paragraph_1_html);
+
+//         if($('#desc_slider').is(":visible") ){
+//             $('#desc_slider').hide("slow");
+//         }else{
+//             $('#desc_slider').show("slow");
+//             $("#changeTextTitulo").text('Noticias');
+//         }
+//     });
+
+
+
+// }
+
 function noticias(){
 
-return false;
-    $('#ninja-slider ul').html('');
-    var tmp = ''
 
+    var tmpSlices = '';
+    var tmpindicator = '';
+
+    var con=0;
+
+    $('#myCarousel').append('<ol class="carousel-indicators"></ol>');
 
     $.each(initial_data.categories[9].posts, function(index,post) {
 
-
-        tmp = tmp +
-            '<li>'+
-            '<a class="ns-img" href="'+post.picture_url+'"></a>'+
-
-            '<div class="barra_morada">'+
-            '<div class="caption cap1"><img src="images/nuevosArtes/banner/icono_noticias.png"></div>'+
-            '<div class="caption cap1 cap2">NOTICIAS</div>'+
-            '</div>'+
-
-            '<div class="barra_gris textRight">'+
-            '<div class="caption cap1gris">'+post.title+'</div>'+
-            '<div class="caption cap1 cap2gris">'+post.subtitle+'</div>'+
-            '<div class="caption cap1 cap3"><button  class="btn_slider" data-index="'+index+'"><img src="images/nuevosArtes/banner/icono_mas.png"></button></div>'+
-            '</div>'+
-            '</li>';
-
-            // $("#postdl").append(new Option(post.title,index+'-'+9 ));
+        if(con=="" || con==0){
 
 
-    });
+            tmpindicator = tmpindicator + '<li data-target="#myCarousel" data-slide-to="'+con+'" class="active"></li>';
+            
+             
+            
+            
+            }else{
+            
+          
 
+            tmpindicator = tmpindicator +' <li data-target="#myCarousel" data-slide-to="'+con+'" class=""></li> ';
 
-    $('#ninja-slider ul').html(tmp);
+          
+            
 
-
-    nslider.init();
-
-
-    $("#ninja-slider .btn_slider").on( "click", function() {
-
-        var index = $(this).data('index'),
-            post = initial_data.categories[9].posts[index];
-
-        // console.log(index);
-
-        $('#desc_slider .title_desc h3').html(post.title);
-        $('#desc_slider .desc_desc').html(post.paragraph_1_html);
-
-        if($('#desc_slider').is(":visible") ){
-            $('#desc_slider').hide("slow");
-        }else{
-            $('#desc_slider').show("slow");
-            $("#changeTextTitulo").text('Noticias');
         }
+
+                      
+        
+        con=con+1;
+
     });
+
+    $('.carousel-indicators').append(tmpindicator);
+
+    con=0;
+
+    $.each(initial_data.categories[9].posts, function(index,post) {
+
+        if(con=="" || con==0){
+
+            tmpSlices = '<div class="item active">'+
+            '<img src="images/nuevosArtes/banner/banner_dos.png" alt="'+post.title+'">'+
+            '<div class="carousel-caption">'+
+            '<h3>'+post.title+'</h3>'+
+            '<p>'+post.subtitle+'</p> '+
+            '</div></div>';
+
+            $('.carousel-inner').append(tmpSlices);  
+
+            
+            }else{
+            
+            tmpSlices = '<div class="item ">'+
+            '<img src="images/nuevosArtes/banner/banner_dos.png" alt="'+post.title+'">'+
+            '<div class="carousel-caption">'+
+            '<h3>'+post.title+'</h3>'+
+            '<p>'+post.subtitle+'</p> '+
+            '</div></div>';
+
+            
+
+            $('.carousel-inner').append(tmpSlices);  
+            
+
+        }
+
+                      
+        
+        con=con+1;
+
+    });
+
+    
+    
+
+      
+    control = '<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">'+
+    '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>'+
+    '<span class="sr-only">Previous</span>'+
+    '</a>'+
+    '<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">'+
+    '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>'+
+    '<span class="sr-only">Next</span>'+
+    '</a>';
+
+
+    $('#myCarousel').append(control);        
+
+
+   
+
+    
 
 
 
 }
+
+
 

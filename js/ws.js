@@ -67,20 +67,13 @@ function getInitialData(){
 
 
         initial_data = data;
-
-        // console.log(initial_data.categories.length);
-
         for (con=0;con<initial_data.categories.length;con++){
 
             var d = initial_data.categories[con];
             var datalist = $('#postdl');
             var datalists = $('#postdls');
 
-             // console.log(initial_data.categories[con]);
-
             $.each(d.posts, function(id,post){
-
-                //console.log(post.length);
                 var opt = $("<option  >"+ post.title +"</option>").attr("value", post.title );
                 var opts = $("<option id='"+post.title+"' >"+ post.title +"</option>").attr("value", post.id );
                 datalist.append(opt);    
@@ -128,21 +121,12 @@ function Category1(){
 
 
     this.show =  function(){
-        //console.log('Universidad La Salle');
-        //console.log(d.posts);
+       
         
 
         $.each(d.posts, function(index,post){
             html = html + '<div id="_btn_select" class="subMenuUnoUniversidad" onclick="C1.showContent('+ index +')">' + post.title + '</div>';
-              
-
         });
-
-
-
-        // $( ":option" ).click(function() {
-        //     console.log(1);
-        // });
 
         $('.ten.columns.subMenuUniversidad').html(html);
         this.showContent(0);
@@ -214,11 +198,10 @@ function Category2(){
 
 
     this.show =  function(){
-        //console.log('Universidad La Salle');
-        //console.log(d.posts);
+        
         $.each(d.posts, function(index,post){
             html = html + '<div class="subMenuUnoServicios" onclick="C2.showContent('+ index +')">' + post.title + '</div>';
-            // $("#postdl").append(new Option(post.title,index+'-'+1 ));
+            
 
         });
 
@@ -231,10 +214,7 @@ function Category2(){
         html = '';
         $('.textoTituloVida p').html(post.subtitle);
 
-        //$('.descripcionTituloUniversidad.ws').html(post.paragraph_1_html);
-        //$('.parrafoUniversidad.ws').html(post.paragraph_2_html);
-        //$('.seccion_1.ws').html(post.video_iframe +" "+post.picture_html);
-
+        
 
         $.each(post.children, function(index,child){
             html = html + '<div class="cuadrosVida">' +
@@ -285,7 +265,7 @@ function Category3(){
         //console.log(d.posts);
         $.each(d.posts, function(index,post){
             html = html + '<div class="subMenuUnoServicios" onclick="C3.showContent('+ index +')">' + post.title + '</div>';
-            // $("#postdl").append(new Option(post.title,index+'-'+2 ));
+            
         });
 
         $('.ten.columns.subMenuAccionSocial.servicios').html(html);
@@ -295,9 +275,7 @@ function Category3(){
     this.showContent =  function(index){
         var post = d.posts[index];
         $('.textoTituloServicios p').html(post.subtitle);
-        //console.log(post);
-        //console.log($('.descripcionTituloUniversidad.ws').html());
-        //console.log(post.paragraph1);
+        
         $('.descripcionTituloServicios.ws').html(post.paragraph_1_html);
         $('.parrafoServicios.ws').html(post.paragraph_2_html);
         $('.seccion_3.ws').html(post.video_iframe +" "+post.picture_html);
@@ -320,11 +298,8 @@ function Category6(){
 
 
     this.show =  function(){
-        //console.log('Accion Social');
-        //console.log(d.posts);
         $.each(d.posts, function(index,post){
             html = html + '<div class="subMenuUnoAccionSocial" onclick="C6.showContent('+ index +')">' + post.title + '</div>';
-            // $("#postdl").append(new Option(post.title,index+'-'+5 ));
         });
 
         $('.ten.subMenuAccionSocial.accion').html(html);
@@ -334,9 +309,6 @@ function Category6(){
     this.showContent =  function(index){
         var post = d.posts[index];
         $('.textoTituloAccionSocial p').html(post.subtitle);
-        //console.log(post);
-        //console.log($('.descripcionTituloUniversidad.ws').html());
-        //console.log(post.paragraph1);
         $('.descripcionTituloAccionSocial.ws').html(post.paragraph_1_html);
         $('.parrafoAccionSocial.ws').html(post.paragraph_2_html);
         $('.seccion_6.ws').html(post.video_iframe +" "+post.picture_html);
@@ -362,7 +334,7 @@ function Category9(){
 
         $.each(d.posts, function(index,post){
             html = html + '<div class="subMenuUnoAccionSocial" onclick="C9.showContent('+ index +')">' + post.title + '</div>';
-            // $("#postdl").append(new Option(post.title,index+'-'+8 ));
+            
         });
 
         $('.ten.subMenuAccionSocial.contacto').html(html);
@@ -609,8 +581,7 @@ function noticias_blog(){
 
     tmp = tmp + '</div>';
     $('.noticias').html(tmp);
-    index(); //Esta funcion esta en el index.html
-    //funciones(); //Viene de funciones.js
+    index(); 
 
 
     $(".btn_noticia_more").on( "click", function() {
@@ -653,14 +624,11 @@ function vinculacion_empresarial(){
             '<div class="segundaFilaVinculacion">'+
             '<div class="textoVinculacion">'+post.title+'</div>'+
             '<div class="textoVinculacionActive">'+
-                //post.paragraph_1_html+
             post.title+ '<br><br>'+
             '<p>'+ post.paragraph_1_html+ '</p>'+
             '</div>'+
             '</div>';
-
         count+=1;
-        // $("#postdl").append(new Option(post.title,index+'-'+6 ));
     });
 
     tmp = tmp + '</div>';
@@ -688,7 +656,7 @@ function investigacion(){
             '<h6>'+post.title+'</h6>'+
             '<p>'+ post.paragraph_1_html+ '</p>'+
             '</div>';
-        // $("#postdl").append(new Option(post.title,index+'-'+7 ));
+        
     });
     $('#investigacionShow .ocultarContenidoSubMenu .row').html(tmp);
 
@@ -700,70 +668,6 @@ function investigacion(){
         $(this).removeClass('cuadroInvestigacionActive');
     });
 }
-
-
-
-
-
-// function noticias(){
-
-// return false;
-//     $('#ninja-slider ul').html('');
-//     var tmp = ''
-
-
-//     $.each(initial_data.categories[9].posts, function(index,post) {
-
-
-//         tmp = tmp +
-//             '<li>'+
-//             '<a class="ns-img" href="'+post.picture_url+'"></a>'+
-
-//             '<div class="barra_morada">'+
-//             '<div class="caption cap1"><img src="images/nuevosArtes/banner/icono_noticias.png"></div>'+
-//             '<div class="caption cap1 cap2">NOTICIAS</div>'+
-//             '</div>'+
-
-//             '<div class="barra_gris textRight">'+
-//             '<div class="caption cap1gris">'+post.title+'</div>'+
-//             '<div class="caption cap1 cap2gris">'+post.subtitle+'</div>'+
-//             '<div class="caption cap1 cap3"><button  class="btn_slider" data-index="'+index+'"><img src="images/nuevosArtes/banner/icono_mas.png"></button></div>'+
-//             '</div>'+
-//             '</li>';
-
-//             // $("#postdl").append(new Option(post.title,index+'-'+9 ));
-
-
-//     });
-
-
-//     $('#ninja-slider ul').html(tmp);
-
-
-//     nslider.init();
-
-
-//     $("#ninja-slider .btn_slider").on( "click", function() {
-
-//         var index = $(this).data('index'),
-//             post = initial_data.categories[9].posts[index];
-
-//         // console.log(index);
-
-//         $('#desc_slider .title_desc h3').html(post.title);
-//         $('#desc_slider .desc_desc').html(post.paragraph_1_html);
-
-//         if($('#desc_slider').is(":visible") ){
-//             $('#desc_slider').hide("slow");
-//         }else{
-//             $('#desc_slider').show("slow");
-//             $("#changeTextTitulo").text('Noticias');
-//         }
-//     });
-
-
-
-// }
 
 function noticias(){
 
@@ -798,7 +702,7 @@ function noticias(){
         if(con=="" || con==0){
 
             tmpSlices = '<div class="item active">'+
-            '<img src="'+post.picture_html+'" alt="'+post.title+'">'+
+            '<img src="'+post.picture_url+'" alt="'+post.title+'">'+
             '<div class="carousel-caption">'+
             '<h3>'+post.title+'</h3>'+
             '<p>'+post.subtitle+'</p> '+
@@ -810,7 +714,7 @@ function noticias(){
             }else{
             
             tmpSlices = '<div class="item ">'+
-            '<img src="'+post.picture_html+'" alt="'+post.title+'">'+
+            '<img src="'+post.picture_url+'" alt="'+post.title+'">'+
             '<div class="carousel-caption">'+
             '<h3>'+post.title+'</h3>'+
             '<p>'+post.subtitle+'</p> '+

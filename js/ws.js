@@ -93,7 +93,7 @@ function getInitialData(){
         C3 = new Category3();
         C6 = new Category6();
         C9 = new Category9();
-        AO = AcademicOffer();
+        AO = new AcademicOffer();
 
 
         calendario();
@@ -752,7 +752,7 @@ function AcademicOffer(){
 
     var html    = '';
 
-    this.showContent =  function(index){
+    this.showContent =  function(index,is_showed){
 
         var offer = initial_data.academic_offer[index];
 
@@ -762,7 +762,7 @@ function AcademicOffer(){
 
 
         //Slider
-        var html = '';
+        var html = '<div class="slider1">';
         $.each(offer.children, function(index2,slider){
 
             html = html + '<div class="container_btn_licenciaturas slide">' +
@@ -784,17 +784,21 @@ function AcademicOffer(){
 
 
         });
+        html = html + '</div>'
 
         //Cuando termine pinto el slider
 
         //console.log(html);
-        $('#ofertaAcademicaShow .slider1').html(html);
+        $('#ofertaAcademicaShow .parent_slider').html(html);
         console.log(html);
-        /*$('.slider1').bxSlider({
-            slideWidth: 199,
-            minSlides: 2,
-            maxSlides: 5
-        });*/
+        if(is_showed) {
+            console.log("ok");
+            $('#ofertaAcademicaShow .slider1').bxSlider({
+                slideWidth: 199,
+                minSlides: 2,
+                maxSlides: 5
+            });
+        }
         //this.showContent2(index,0);
 
     }
@@ -813,7 +817,7 @@ function AcademicOffer(){
 
 
     $.each(initial_data.academic_offer, function(index,offer){
-        html = html + '<div class="subMenuUnoOfertaAcademica" onclick="AO.showContent('+ index +')">' + offer.title + '</div>';
+        html = html + '<div class="subMenuUnoOfertaAcademica" onclick="AO.showContent('+ index +', 1)">' + offer.title + '</div>';
     });
 
     $('#ofertaAcademicaShow .ten.columns.subMenuOfertaAcademica').html(html);

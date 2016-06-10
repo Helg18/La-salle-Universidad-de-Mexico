@@ -10,7 +10,9 @@ var initial_data = {},
     tmp_posts = [],
     modal = '',
     blog = [],
-    AO = {}
+    AO = {},
+    offer = false,
+    slider = false
     ;
 
 
@@ -750,11 +752,15 @@ function noticias(){
 function AcademicOffer(){
     /** Oferta Academica **/
 
-    var html    = '';
+    var html    = ''
+        parent = this;
+
 
     this.showContent =  function(index,is_showed){
 
-        var offer = initial_data.academic_offer[index];
+        $('#container_menu_derecho').hide();
+
+        offer = initial_data.academic_offer[index];
 
 
         //Subtitulo
@@ -772,7 +778,7 @@ function AcademicOffer(){
                 '<div class="overlayMenuBtn">' +
                 '<div class="text_btn_menu_oferta">' +
                 //'<h6>FACULTAD DE</h6>' +
-                '<p><button id="btn_derecho">'+slider.title+'</button></p>' +
+                '<p><button class="btn_derecho" data-index="'+index2+'">'+slider.title+'</button></p>' +
                 '</div>' +
                 '</div>' +
 
@@ -788,9 +794,8 @@ function AcademicOffer(){
 
         //Cuando termine pinto el slider
 
-        //console.log(html);
         $('#ofertaAcademicaShow .parent_slider').html(html);
-        console.log(html);
+
         if(is_showed) {
             console.log("ok");
             $('#ofertaAcademicaShow .slider1').bxSlider({
@@ -799,20 +804,89 @@ function AcademicOffer(){
                 maxSlides: 5
             });
         }
-        //this.showContent2(index,0);
+
+        //Cuando doy click al titulo en el slider
+        $("#ofertaAcademicaShow .btn_derecho").on( "click", function() {
+
+            var index = $(this).data('index');
+
+            slider = offer.children[index];
+
+
+            //El titulo debe dividirse en dos lineas porque es un cuadro pequeño con letra grande
+            //** funcion para dividir palabras
+            var tmp = slider.title.split(/[ ,]+/),
+                title_1 = false,
+                title_2 = false,
+                txt='';
+            $.each(tmp, function(i,word){
+                txt = txt + " " + word;
+                if(txt.length>11 && !title_1){
+                    title_1 = txt;
+                    txt = '';
+                }
+            });
+            title_2 = txt;
+            //** Fin de funcion para dividir palabras
+
+            //Reemplazo el texto que sale arriba del listbox
+            $('#container_menu_derecho .textUno_title').html(title_1);
+            $('#container_menu_derecho .textDos_title').html(title_2);
+
+
+            //Reemplazo los valores del listbox
+            html = '';
+            $.each(slider.children, function(index_slider,list_box){
+                html = html + '<option value="'+index_slider+'">'+list_box.title+'</option>';
+            });
+            $('#container_menu_derecho select').html(html);
+
+            //Registro el evento onchange del select_box
+            $('#container_menu_derecho select').on('change',function(){
+                //console.log('valor del select');
+                //console.log($(this).val());
+               AO.showSidebar($(this).val());
+            });
+
+
+
+            //Mostrar/Ocultar el listbox y el menu
+            if($('#container_menu_derecho').is(":visible")){
+                $('#container_menu_derecho').hide("slow");
+            }else{
+                $('#container_menu_derecho').show("slow");
+            }
+
+            parent.showSidebar(0);
+        });
+
+
 
     }
 
-    this.showContent2 =  function(index,index2){
+    this.showSidebar =  function(index){
 
-        //Esta funcion pintaria el contenido que hay cuando le damos clic al nuevo submenu
-        var post = d.posts[index].children[index2]; //leo el hijo y ya tengo acceso a el
+        console.log(slider);
+        if(!slider) return false;
 
+        var html = '',
+            select_box = slider.children[index];
+        $.each(select_box.children, function(index,sidebar){
+            html = html + '<div class="button_menu_right btn_select_oferta_cou"><img src="images/nuevosArtes/oferta_educativa/icono_btn_cuota.png">'+sidebar.title+'</div>';
+        });
 
-        //aqui ya pinto el contenido del texto
-        $('#universidadShow .textoTituloUniversidad p').html(post.subtitle  ? post.subtitle : '');
-        $('#universidadShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
+        $('#container_menu_derecho .menu_option_right_oferta').html(html);
 
+        $(".btn_select_oferta_cou").on( "click", function() {
+
+            if($('#id_container_select_btn_oferta').is(":visible")){
+                $('#id_container_select_btn_oferta').hide("slow");
+                $('#btn_select_oferta_cou').removeClass("button_menu_right_derecho_active");
+            }else{
+                $('#id_container_select_btn_oferta').show("slow");
+                $('#btn_select_oferta_cou').addClass("button_menu_right_derecho_active");
+            }
+        });
     }
 
 

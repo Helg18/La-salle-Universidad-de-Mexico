@@ -8,7 +8,8 @@ class AcademicOffer extends Model
 {
     protected $appends = [
 
-        'children'
+        'children',
+        'picture_url'
     ];
 
     public function getChildrenAttribute(){
@@ -94,5 +95,11 @@ class AcademicOffer extends Model
 
         }
     }*/
+
+
+    public function getPictureUrlAttribute(){
+        if(!$this->picture) return "";
+        return asset('images/academic/' . $this->picture);
+    }
 
 }

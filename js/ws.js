@@ -9,7 +9,8 @@ var initial_data = {},
     current_yymm = false,
     tmp_posts = [],
     modal = '',
-    blog = []
+    blog = [],
+    AO = {}
     ;
 
 
@@ -92,6 +93,7 @@ function getInitialData(){
         C3 = new Category3();
         C6 = new Category6();
         C9 = new Category9();
+        AO = new AcademicOffer();
 
 
         calendario();
@@ -750,4 +752,79 @@ function noticias(){
 }
 
 
+function AcademicOffer(){
+    /** Oferta Academica **/
 
+    var html    = '';
+
+    this.showContent =  function(index,is_showed){
+
+        var offer = initial_data.academic_offer[index];
+
+
+        //Subtitulo
+        $('#ofertaAcademicaShow .textoTituloUniversidad p').html(offer.subtitle);
+
+
+        //Slider
+        var html = '<div class="slider1">';
+        $.each(offer.children, function(index2,slider){
+
+            html = html + '<div class="container_btn_licenciaturas slide">' +
+                '<div id="effect-1" class="effects clearfix">' +
+                '<div class="imgMenuNavegacion">' +
+
+                '<div class="overlayMenuBtn">' +
+                '<div class="text_btn_menu_oferta">' +
+                //'<h6>FACULTAD DE</h6>' +
+                '<p><button id="btn_derecho">'+slider.title+'</button></p>' +
+                '</div>' +
+                '</div>' +
+
+                '<img src="'+slider.picture_url+'" alt="">' +
+
+                '</div>' +
+                '</div>' +
+                '</div>';
+
+
+        });
+        html = html + '</div>'
+
+        //Cuando termine pinto el slider
+
+        //console.log(html);
+        $('#ofertaAcademicaShow .parent_slider').html(html);
+        console.log(html);
+        if(is_showed) {
+            console.log("ok");
+            $('#ofertaAcademicaShow .slider1').bxSlider({
+                slideWidth: 199,
+                minSlides: 2,
+                maxSlides: 5
+            });
+        }
+        //this.showContent2(index,0);
+
+    }
+
+    this.showContent2 =  function(index,index2){
+
+        //Esta funcion pintaria el contenido que hay cuando le damos clic al nuevo submenu
+        var post = d.posts[index].children[index2]; //leo el hijo y ya tengo acceso a el
+
+
+        //aqui ya pinto el contenido del texto
+        $('#universidadShow .textoTituloUniversidad p').html(post.subtitle  ? post.subtitle : '');
+        $('#universidadShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
+
+    }
+
+
+    $.each(initial_data.academic_offer, function(index,offer){
+        html = html + '<div class="subMenuUnoOfertaAcademica" onclick="AO.showContent('+ index +', 1)">' + offer.title + '</div>';
+    });
+
+    $('#ofertaAcademicaShow .ten.columns.subMenuOfertaAcademica').html(html);
+    this.showContent(0);
+}

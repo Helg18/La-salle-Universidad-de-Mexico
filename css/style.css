@@ -800,6 +800,10 @@ PERFIL INTERNATIONAL
   overflow: hidden;
 }
 
+.contenedorTituloContacto{
+  overflow: hidden;
+}
+
 .contenedorServicios{
   height: auto;
   overflow: 
@@ -842,6 +846,13 @@ PERFIL INTERNATIONAL
   padding: 30px 30px 30px 30px;
 }
 
+.tituloContenedorContacto {
+  width: 35%;
+  margin: auto;
+  transform: skew(30deg);
+  background: red;
+  overflow: hidden;
+}
 
 .tituloContenedorUniversidad {
   width: 55%;
@@ -2212,12 +2223,6 @@ p.textDos_title{
 }
 
 
-
-
-
-
-
-
 .tituloVinculacionEmpresarial{
   padding-top: 40px;
   height: 130px;
@@ -2475,7 +2480,7 @@ p.textDos_title{
 }
 
 .tituloContenedorContacto {
-  width: 55%;
+  width: 30%;
   margin: auto;
   transform: skew(30deg);
   background: red;

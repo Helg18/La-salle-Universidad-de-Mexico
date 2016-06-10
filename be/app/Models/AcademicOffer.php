@@ -6,6 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class AcademicOffer extends Model
 {
+    protected $appends = [
+
+        'children',
+        'picture_url'
+    ];
+
+    public function getChildrenAttribute(){
+        return $this->children();
+    }
 
     public static function sliders(){
         return self::where('parent_id',null)->get();
@@ -77,6 +86,20 @@ class AcademicOffer extends Model
 
 
         return implode(", ",$tmp);
+    }
+
+    /*public static function to_json(){
+        $tmp = [];
+
+        foreach($this->sliders() as $x){
+
+        }
+    }*/
+
+
+    public function getPictureUrlAttribute(){
+        if(!$this->picture) return "";
+        return asset('images/academic/' . $this->picture);
     }
 
 }

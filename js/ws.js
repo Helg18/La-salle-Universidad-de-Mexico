@@ -163,10 +163,6 @@ function Category1(){
 
 
         });
-
-        //Cuando termine pinto el nuevo submenu
-
-        //console.log(html);
         $('#universidadShow .ten.columns.submenu').html(html);
         this.showContent2(index,0);
     }
@@ -330,7 +326,7 @@ function Category9(){
     this.showContent =  function(index){
         htmls='';
         var post = d.posts[index];
-        $('#contactoShow .textoTituloContacto p').html(post.paragraph_1_html);
+        $('#contactoShow .textoTituloContacto p').html(post.title);
         $('#contactoShow .ten.columns.submenu').html(htmls);
         
         $.each(post.children, function(index2,kid){

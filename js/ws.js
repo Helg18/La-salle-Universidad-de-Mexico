@@ -348,9 +348,10 @@ function Category9(){
 
         //Esta funcion pintaria el contenido que hay cuando le damos clic al nuevo submenu
         var post = d.posts[index].children[index2]; //leo el hijo y ya tengo acceso a el
-
+        console.log(post);
         //aqui ya pinto el contenido del texto
-        $('#contactoShow .textoTituloContacto p').html(post.title  ? post.title : '');
+        // $('#contenedorTituloContactoc p').html(post.paragraph_1_small_html  ? post.paragraph_1_small_html : '');
+         $('.descripcionTituloContacto .contactoShow .contenedorDiagonalContacto  p').html(post.paragraph_1_small_html  ? post.paragraph_1_small_html : '');
         // $('#contactoShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
 
     }

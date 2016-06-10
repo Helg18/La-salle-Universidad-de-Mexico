@@ -171,7 +171,6 @@ function Category1(){
         //Esta funcion pintaria el contenido que hay cuando le damos clic al nuevo submenu
         var post = d.posts[index].children[index2]; //leo el hijo y ya tengo acceso a el
 
-
         //aqui ya pinto el contenido del texto
         $('#universidadShow .textoTituloUniversidad p').html(post.subtitle  ? post.subtitle : '');
         $('#universidadShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
@@ -180,12 +179,6 @@ function Category1(){
 
     this.show();
 }
-
-
-
-
-
-
 
 function Category2(){
     /** Vida Estudiantil **/
@@ -234,8 +227,6 @@ function Category2(){
     this.show();
 }
 
-
-
 function cuadrosDeVida(){
     $('.cuadrosVida').hover( function(){
         $('.cuadrosVida').removeClass('cuadroVidaActivo');
@@ -244,11 +235,6 @@ function cuadrosDeVida(){
         $('.cuadrosVida').removeClass('cuadroVidaActivo');
     });
 }
-
-
-
-
-
 
 function Category3(){
     /** Servicios **/
@@ -285,8 +271,6 @@ function Category3(){
     this.show();
 }
 
-
-
 function Category6(){
     /** Acción social **/
 
@@ -318,33 +302,54 @@ function Category6(){
     this.show();
 }
 
-
-
 function Category9(){
     /** Contacto **/
 
 
     var d       = initial_data.categories[8],
         html    = '',
+        htmls   = '',
         c       = {}
         ;
-
 
     this.show =  function(){
 
         $.each(d.posts, function(index,post){
             html = html + '<div class="subMenuUnoAccionSocial" onclick="C9.showContent('+ index +')">' + post.title + '</div>';
-            
         });
 
         $('.ten.subMenuAccionSocial.contacto').html(html);
         this.showContent(0);
     }
-
+    
     this.showContent =  function(index){
+        htmls='';
         var post = d.posts[index];
         $('#contactoShow .textoTituloContacto p').html(post.paragraph_1_html);
+        $('#contactoShow .ten.columns.submenu').html(htmls);
+        
+        $.each(post.children, function(index2,kid){
 
+            
+            if(kid.title != ""){
+                htmls = htmls + '<div class="cuadrosSubmenu" onclick="C9.showContent2('+ index+',' + index2 +')">' + kid.title + '</div>'; 
+                $('#contactoShow .ten.columns.submenu').html(htmls);
+            }else{$('#contactoShow .ten.columns.submenu').html('');}
+
+
+        });
+
+        
+    }
+
+    this.showContent2 =  function(index,index2){
+
+        //Esta funcion pintaria el contenido que hay cuando le damos clic al nuevo submenu
+        var post = d.posts[index].children[index2]; //leo el hijo y ya tengo acceso a el
+
+        //aqui ya pinto el contenido del texto
+        $('#contactoShow .textoTituloContacto p').html(post.title  ? post.title : '');
+        // $('#contactoShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
 
     }
 

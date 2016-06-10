@@ -1047,7 +1047,24 @@ PERFIL INTERNATIONAL
   transform: skewX(-145deg);
 }
 
+.contenedorDiagonalContacto{
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  background: #fff;
+  transform: skewX(-145deg);
+}
+
 .descripcionTituloUniversidad{
+  width: 60%;
+  margin: 10% 0 0 12%;
+  text-align: justify;
+  font-size: 0.7em;
+  transform: skewX(145deg);
+}
+
+.descripcionTituloContacto{
   width: 60%;
   margin: 10% 0 0 12%;
   text-align: justify;

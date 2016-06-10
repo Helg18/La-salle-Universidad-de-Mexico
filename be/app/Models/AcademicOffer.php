@@ -9,11 +9,21 @@ class AcademicOffer extends Model
     protected $appends = [
 
         'children',
-        'picture_url'
+        'picture_url',
+        'paragraph_1_html',
+        'paragraph_2_html',
     ];
 
     public function getChildrenAttribute(){
         return $this->children();
+    }
+
+    public function getParagraph1HtmlAttribute(){
+        return nl2br($this->paragraph_1);
+    }
+
+    public function getParagraph2HtmlAttribute(){
+        return nl2br($this->paragraph_2);
     }
 
     public static function sliders(){

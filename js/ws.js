@@ -12,7 +12,8 @@ var initial_data = {},
     blog = [],
     AO = {},
     offer = false,
-    slider = false
+    slider = false,
+    select_box = false
     ;
 
 
@@ -875,15 +876,26 @@ function AcademicOffer(){
         console.log(slider);
         if(!slider) return false;
 
-        var html = '',
-            select_box = slider.children[index];
+        var html = '';
+
+        select_box = slider.children[index];
         $.each(select_box.children, function(index,sidebar){
-            html = html + '<div class="button_menu_right btn_select_oferta_cou"><img src="images/nuevosArtes/oferta_educativa/icono_btn_cuota.png">'+sidebar.title+'</div>';
+            html = html + '<div class="button_menu_right btn_select_oferta_cou" data-index="'+index+'"><img src="images/nuevosArtes/oferta_educativa/icono_btn_cuota.png">'+sidebar.title+'</div>';
         });
 
         $('#container_menu_derecho .menu_option_right_oferta').html(html);
 
         $(".btn_select_oferta_cou").on( "click", function() {
+
+            //Cambiando el contenido del detalle
+            sidebar =  select_box.children[$(this).data('index')];
+            console.log(sidebar);
+
+            var e = '#id_container_select_btn_oferta';
+
+            $(e + ' .container_desc_selection_skew p').html(sidebar.subtitle);
+            $(e + ' .container_menu_select_skew_left').html(sidebar.paragraph_1_html);
+
 
             if($('#id_container_select_btn_oferta').is(":visible")){
                 $('#id_container_select_btn_oferta').hide("slow");

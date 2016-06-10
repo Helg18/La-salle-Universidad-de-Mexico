@@ -766,6 +766,7 @@ function AcademicOffer(){
     this.showContent =  function(index,is_showed){
 
         $('#container_menu_derecho').hide();
+        $('#id_container_select_btn_oferta').hide();
 
         offer = initial_data.academic_offer[index];
 
@@ -873,6 +874,7 @@ function AcademicOffer(){
 
     this.showSidebar =  function(index){
 
+        $('#id_container_select_btn_oferta').hide();
         console.log(slider);
         if(!slider) return false;
 
@@ -895,6 +897,9 @@ function AcademicOffer(){
 
             $(e + ' .container_desc_selection_skew p').html(sidebar.subtitle);
             $(e + ' .container_menu_select_skew_left').html(sidebar.paragraph_1_html);
+            $(e + ' .container_title_icono_skew img').attr('src',sidebar.picture_url_2);
+            $(e + ' .container_image_select_skew img').attr('src',sidebar.picture_url_3);
+
 
 
             if($('#id_container_select_btn_oferta').is(":visible")){

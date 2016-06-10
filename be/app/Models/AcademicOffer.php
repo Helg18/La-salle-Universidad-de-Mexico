@@ -10,6 +10,8 @@ class AcademicOffer extends Model
 
         'children',
         'picture_url',
+        'picture_url_2',
+        'picture_url_3',
         'paragraph_1_html',
         'paragraph_2_html',
     ];
@@ -51,6 +53,40 @@ class AcademicOffer extends Model
 
             $this->picture = $imageName;
         }
+
+        if($request->file('picture_2')) {
+
+            $old = $this->path_image() . $this->picture_2;
+            if(is_file($old)){
+                unlink($old);
+            }
+
+            $imageName = time() . '.' .
+                $request->file('picture_2')->getClientOriginalExtension();
+
+            $request->file('picture_2')->move(
+                $this->path_image(), $imageName
+            );
+
+            $this->picture_2 = $imageName;
+        }
+
+        if($request->file('picture_3')) {
+
+            $old = $this->path_image() . $this->picture_3;
+            if(is_file($old)){
+                unlink($old);
+            }
+
+            $imageName = time() . '.' .
+                $request->file('picture_3')->getClientOriginalExtension();
+
+            $request->file('picture_3')->move(
+                $this->path_image(), $imageName
+            );
+
+            $this->picture_3 = $imageName;
+        }
     }
 
     public function delete_image(){
@@ -67,6 +103,18 @@ class AcademicOffer extends Model
         if(!$this->picture) return "";
 
         return "<center><img src=\"".  asset('images/academic/'.$this->picture) ."\" width=\"{$width}\"></center>";
+    }
+
+    function picture_html2($width='100%'){
+        if(!$this->picture_2) return "";
+
+        return "<center><img src=\"".  asset('images/academic/'.$this->picture_2) ."\" width=\"{$width}\"></center>";
+    }
+
+    function picture_html3($width='100%'){
+        if(!$this->picture_3) return "";
+
+        return "<center><img src=\"".  asset('images/academic/'.$this->picture_3) ."\" width=\"{$width}\"></center>";
     }
 
     public function children(){
@@ -110,6 +158,16 @@ class AcademicOffer extends Model
     public function getPictureUrlAttribute(){
         if(!$this->picture) return "";
         return asset('images/academic/' . $this->picture);
+    }
+
+    public function getPictureUrl2Attribute(){
+        if(!$this->picture_2) return "";
+        return asset('images/academic/' . $this->picture_2);
+    }
+
+    public function getPictureUrl3Attribute(){
+        if(!$this->picture_3) return "";
+        return asset('images/academic/' . $this->picture_3);
     }
 
 }

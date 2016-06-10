@@ -176,6 +176,69 @@
                 </div>
                 @endif
 
+                @if($type=='sidebar')
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Imagen pleca izquierda</label>
+                        <div class="col-md-7">
+                            <div class="alert alert-info">
+
+                                    La imagen debe tener un tamaño de
+                                    120 x 160
+                                    pixeles png con fondo transparente y letras blancas
+
+                            </div>
+                            <input type="file" class="form-control"  name="picture_2" autocomplete="off">
+                            @if ($errors->has('picture_2'))
+                                <span class="alert alert-danger">
+                                <strong>{{ $errors->first('picture_2') }}</strong>
+                            </span>
+                            @endif
+                        </div>
+                        <div class="col-md-2" style="background-color: black;">
+                            {!! $record ? $record->picture_html2('100px') :'' !!}
+                        </div>
+
+                        <!--<div class="col-md-1">
+                            @if($record && $record->picture_html())
+                                <a href="{{url("post/{$record->id}/deleteimage")}}" data-method="delete"
+                                   data-token="{{csrf_token()}}" data-confirm="Estas seguro?" class="btn btn-danger btn-sm"><i class="ion-icon ion-close-round"></i></a>
+                            @endif
+                        </div>-->
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Imagen fondo izquierdo</label>
+                        <div class="col-md-7">
+                            <div class="alert alert-info">
+
+                                La imagen debe tener un tamaño de
+                                172 x 370
+                                pixeles
+
+                            </div>
+                            <input type="file" class="form-control"  name="picture_3" autocomplete="off">
+                            @if ($errors->has('picture_3'))
+                                <span class="alert alert-danger">
+                                <strong>{{ $errors->first('picture_3') }}</strong>
+                            </span>
+                            @endif
+                        </div>
+                        <div class="col-md-2">
+                            {!! $record ? $record->picture_html3('100px') :'' !!}
+                        </div>
+
+                        <!--<div class="col-md-1">
+                            @if($record && $record->picture_html())
+                                <a href="{{url("post/{$record->id}/deleteimage")}}" data-method="delete"
+                                   data-token="{{csrf_token()}}" data-confirm="Estas seguro?" class="btn btn-danger btn-sm"><i class="ion-icon ion-close-round"></i></a>
+                            @endif
+                                </div>-->
+                    </div>
+
+                @endif
+
                         <div class="btn-group">
                             <!--<button class="btn btn-default">Borrar</button>-->
                             @if($record)

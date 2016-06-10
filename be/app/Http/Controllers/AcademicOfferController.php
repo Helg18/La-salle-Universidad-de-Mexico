@@ -128,10 +128,11 @@ class AcademicOfferController extends Controller
             $nextype = 'sidebar';
 
         elseif($type=='sidebar'):
-            $nextype = 'content';
+            $nextype = false;
+        /*    $nextype = 'content';
 
         elseif($type=='content'):
-            $nextype = false;
+            $nextype = false;*/
 
         endif;
 

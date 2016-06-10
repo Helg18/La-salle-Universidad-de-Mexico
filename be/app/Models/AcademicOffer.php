@@ -44,7 +44,7 @@ class AcademicOffer extends Model
                 unlink($old);
             }
 
-            $imageName = time() . '.' .
+            $imageName = time() . '_1.' .
                 $request->file('picture')->getClientOriginalExtension();
 
             $request->file('picture')->move(
@@ -61,7 +61,7 @@ class AcademicOffer extends Model
                 unlink($old);
             }
 
-            $imageName = time() . '.' .
+            $imageName = time() . '_2.' .
                 $request->file('picture_2')->getClientOriginalExtension();
 
             $request->file('picture_2')->move(
@@ -78,7 +78,7 @@ class AcademicOffer extends Model
                 unlink($old);
             }
 
-            $imageName = time() . '.' .
+            $imageName = time() . '_3.' .
                 $request->file('picture_3')->getClientOriginalExtension();
 
             $request->file('picture_3')->move(

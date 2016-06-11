@@ -38,7 +38,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 
 .scroll-box-300 {
   height: 400px; /* maximum height of the box, feel free to change this! */
-  overflow-y: scroll !important;
+  overflow-y: scroll;
   text-align: justify;
   margin-top: 20px;
 }
@@ -1053,7 +1053,7 @@ PERFIL INTERNATIONAL
   overflow: hidden;
   margin: auto;
   background: #fff;
-  transform: skewX(-145deg);
+  /*transform: skewX(-145deg);*/
 }
 
 .descripcionTituloUniversidad{
@@ -1069,7 +1069,7 @@ PERFIL INTERNATIONAL
   margin: 10% 0 0 12%;
   text-align: justify;
   font-size: 0.7em;
-  transform: skewX(145deg);
+  /*transform: skewX(145deg);*/
 }
 
 
@@ -1424,7 +1424,7 @@ p.textDos_title{
   width: 50%;
   display: inline-block;
   float: left;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .container_menu_select_skew_right{

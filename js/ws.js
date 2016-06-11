@@ -711,7 +711,7 @@ function noticias(){
             tmpSlices = '<div class="item active">'+
             '<img src="'+post.picture_url+'" alt="'+post.title+'">'+
             '<div class="carousel-caption">'+
-            '<h3>'+post.title+'</h3>'+
+            '<h3><a href="notice.html?id='+post.id+'">'+post.title+'</a></h3>'+
             '<p>'+post.subtitle+'</p> '+
             '</div></div>';
 

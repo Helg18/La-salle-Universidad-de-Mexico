@@ -718,7 +718,7 @@
 
           $('#divpara').append("<h4>"+data.notice.subtitle+"</h4>");
           $('#divpara').append("<h4>"+data.notice.paragraph_1_html+"</h4>");
-          $("#imgpost").attr("src",data.notice.picture);
+          $("#imgpost").attr("src",data.notice.picture_url);
 
           for(con=0;con<data.children.length;con++){
             $('#divchil').append("<p text-align='justif' >"+data.children[con].title+"</p>");

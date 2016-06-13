@@ -105,6 +105,7 @@ function getInitialData(){
         vinculacion_empresarial();
         investigacion();
         noticias();
+        lineatiempo();
 
     });
 }
@@ -130,7 +131,7 @@ function Category1(){
         
 
         $.each(d.posts, function(index,post){
-            html = html + '<div id="_btn_select" class="subMenuUnoUniversidad" onclick="C1.showContent('+ index +')">' + post.title + '</div>';
+            html = html + '<div id="_btn_select'+index+'" class="subMenuUnoUniversidad" onclick="C1.showContent('+ index +')">' + post.title + '</div>';
         });
 
         $('.ten.columns.subMenuUniversidad').html(html);
@@ -165,6 +166,7 @@ function Category1(){
         });
         $('#universidadShow .ten.columns.submenu').html(html);
         this.showContent2(index,0);
+        ocultarCaorusel();
     }
 
     this.showContent2 =  function(index,index2){
@@ -175,6 +177,7 @@ function Category1(){
         //aqui ya pinto el contenido del texto
         $('#universidadShow .textoTituloUniversidad p').html(post.subtitle  ? post.subtitle : '');
         $('#universidadShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
+
 
     }
 
@@ -222,6 +225,7 @@ function Category2(){
         $('#vidaShow .ocultarContenidoSubMenu .container .row').html(html);
 
         cuadrosDeVida();
+        ocultarCaorusel();
 
     }
 
@@ -235,6 +239,44 @@ function cuadrosDeVida(){
     }, function(){
         $('.cuadrosVida').removeClass('cuadroVidaActivo');
     });
+}
+
+function ocultarCaorusel(){
+
+    $('#_btn_select0').click( function(){
+        $("#myCarouselLaSalle").css({ 'display': "none" });
+    });
+
+    $('#_btn_select1').click( function(){
+        $("#myCarouselLaSalle").css({ 'display': "none" });
+    });
+    $('#_btn_select2').click( function(){
+        $("#myCarouselLaSalle").css({ 'display': "none" });
+    });
+    $('#_btn_select3').click( function(){
+        $("#myCarouselLaSalle").css({ 'display': "none" });
+    });
+    $('#_btn_select4').click( function(){
+        $("#myCarouselLaSalle").css({ 'display': "none" });
+    });
+    $('#_btn_select5').click( function(){
+        $("#myCarouselLaSalle").css({ 'display': "none" });
+    });
+    $('#_btn_select7').click( function(){
+        $("#myCarouselLaSalle").css({ 'display': "none" });
+    });
+    $('#_btn_select8').click( function(){
+        $("#myCarouselLaSalle").css({ 'display': "none" });
+    });
+    
+}
+
+function mostrarCaorusel(){
+    
+    $('#_btn_select6').click( function(){
+        $("#myCarouselLaSalle").css({ 'display': "" });  
+    });
+
 }
 
 function Category3(){
@@ -266,6 +308,7 @@ function Category3(){
         $('.descripcionTituloServicios.ws').html(post.paragraph_1_html);
         $('.parrafoServicios.ws').html(post.paragraph_2_html);
         $('.seccion_3.ws').html(post.video_iframe +" "+post.picture_html);
+        ocultarCaorusel();
 
     }
 
@@ -282,25 +325,36 @@ function Category6(){
         ;
 
 
+
     this.show =  function(){
         $.each(d.posts, function(index,post){
-            html = html + '<div class="subMenuUnoAccionSocial" onclick="C6.showContent('+ index +')">' + post.title + '</div>';
+            html = html + '<div class="subMenuUnoAccionSocial" onclick="C6.showContent('+ index +'); ">' + post.title + '</div>';
         });
 
         $('.ten.subMenuAccionSocial.accion').html(html);
         this.showContent(0);
     }
 
+    this.onclick = function(){
+        console.log('Paso!');
+    }
+
     this.showContent =  function(index){
+
+        
+         
         var post = d.posts[index];
         $('.textoTituloAccionSocial p').html(post.subtitle);
         $('.descripcionTituloAccionSocial.ws').html(post.paragraph_1_html);
         $('.parrafoAccionSocial.ws').html(post.paragraph_2_html);
         $('.seccion_6.ws').html(post.video_iframe +" "+post.picture_html);
 
+        mostrarCaorusel();
+
     }
 
     this.show();
+
 }
 
 function Category9(){
@@ -339,6 +393,7 @@ function Category9(){
 
 
         });
+        ocultarCaorusel();
 
         
     }
@@ -496,11 +551,6 @@ function marcaDiasCalendario(aamm){
     });
 }
 
-
-
-
-
-
 function open_modal(element){
     //console.log(element.);
 
@@ -514,8 +564,6 @@ function open_modal(element){
 
     modal.open();
 }
-
-
 
 function calendario_importante(){
 
@@ -612,8 +660,6 @@ function noticias_blog(){
 
 }
 
-
-
 function vinculacion_empresarial(){
 
 
@@ -648,8 +694,6 @@ function vinculacion_empresarial(){
     }).mouseleave(function(){
         $(this).removeClass('activeVinculacion');
     });
-
-
 }
 
 function investigacion(){
@@ -676,6 +720,84 @@ function investigacion(){
     });
 }
 
+function lineatiempo(){
+
+
+    var tmpSliceslt = '';
+    var tmpindicator = '';
+
+    var con=0;
+    // $('#myCarouselLaSalle').html('');
+
+
+    $('#myCarouselLaSalle').append('<ol id="indi" class="carousel-indicators"></ol><div id="clt" class="carousel-inner" role="listbox">');
+
+    $.each(initial_data.categories[10].posts, function(index,post) {
+
+        if(con=="" || con==0){
+            tmpindicator = tmpindicator + '<li data-target="#myCarouselLaSalle" data-slide-to="'+con+'" class="active"></li>';
+            
+            }else{
+            tmpindicator = tmpindicator +' <li data-target="#myCarouselLaSalle" data-slide-to="'+con+'" class=""></li> ';
+
+        }
+        con=con+1;
+
+    });
+
+    $('#indi').append(tmpindicator);
+
+    con=0;
+
+     $.each(initial_data.categories[10].posts, function(index,post) {
+
+        if(con=="" || con==0){
+
+            tmpSliceslt = '<div class="item active">'+
+            '<img src="'+post.picture_url+'" alt="'+post.title+'">'+
+            '<div class="carousel-caption">'+
+            '<h3>'+post.title+'</h3>'+
+            '<p>'+post.subtitle+'</p> '+
+            '</div></div>';
+
+            $('#clt').append(tmpSliceslt);  
+            
+            }else{
+            
+            tmpSliceslt = '<div class="item ">'+
+            '<img src="'+post.picture_url+'" alt="'+post.title+'">'+
+            '<div class="carousel-caption">'+
+            '<h3>'+post.title+'</h3>'+
+            '<p>'+post.subtitle+'</p> '+
+            '</div></div>';
+            $('#clt').append(tmpSliceslt);  
+
+        }
+        con=con+1;
+
+
+    });
+
+
+
+    control = '<a class="left carousel-control" href="#myCarouselLaSalle" role="button" data-slide="prev">'+
+    '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>'+
+    '<span class="sr-only">Previous</span>'+
+    '</a>'+
+    '<a class="right carousel-control" href="#myCarouselLaSalle" role="button" data-slide="next">'+
+    '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>'+
+    '<span class="sr-only">Next</span>'+
+    '</a>';
+
+    $('#myCarouselLaSalle').append(control);  
+
+    document.getElementById("myCarouselLaSalle").style.display = "none";
+
+
+}
+
+
+
 function noticias(){
 
 
@@ -683,27 +805,7 @@ function noticias(){
     var tmpindicator = '';
 
     var con=0;
-
-    $('#myCarousel').append('<ol class="carousel-indicators"></ol>');
-
-    $.each(initial_data.categories[9].posts, function(index,post) {
-
-        if(con=="" || con==0){
-
-            tmpindicator = tmpindicator + '<li data-target="#myCarousel" data-slide-to="'+con+'" class="active"></li>';
-            
-            }else{
-            tmpindicator = tmpindicator +' <li data-target="#myCarousel" data-slide-to="'+con+'" class=""></li> ';
-
-        }
-        con=con+1;
-
-    });
-
-    $('.carousel-indicators').append(tmpindicator);
-
-    con=0;
-
+    
     $.each(initial_data.categories[9].posts, function(index,post) {
 
         if(con=="" || con==0){
@@ -715,7 +817,7 @@ function noticias(){
             '<p>'+post.subtitle+'</p> '+
             '</div></div>';
 
-            $('.carousel-inner').append(tmpSlices);  
+            $('#cinnn').append(tmpSlices);  
 
             
             }else{
@@ -727,9 +829,7 @@ function noticias(){
             '<p>'+post.subtitle+'</p> '+
             '</div></div>';
 
-            
-
-            $('.carousel-inner').append(tmpSlices);  
+            $('#cinnn').append(tmpSlices);  
             
 
         }
@@ -750,6 +850,7 @@ function noticias(){
     $('#myCarousel').append(control);        
 
 }
+
 
 
 function AcademicOffer(){
@@ -916,3 +1017,4 @@ function AcademicOffer(){
     $('#ofertaAcademicaShow .ten.columns.subMenuOfertaAcademica').html(html);
     this.showContent(0);
 }
+

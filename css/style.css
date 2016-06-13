@@ -198,6 +198,9 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 /* GENERALES COLORES Y CONTENEDORES */
 
 
+.marginEntreSeccionesLineaTiempo{
+  margin-top: 1.5%;
+}
 
 .marginEntreSecciones{
   margin-top: 1.5%;

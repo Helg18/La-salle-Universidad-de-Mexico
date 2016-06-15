@@ -810,6 +810,9 @@ function noticias(){
 
     $.each(initial_data.categories[9].posts, function(index,post) {
 
+        subtitle_1="";
+        title_1="";
+
         body_slider = '<div class="container_pic_slider slide"><div id="effect-1" class="effects clearfix responsiveSliderPrincipal"> <div id="imgsn'+index+'" class="imgSliderNoticias"> <div class="barra_morada"><div class="container_imagen_titulo_section_slider"><div class="caption cap1"><img src="images/nuevosArtes/banner/icono_noticias.png"></div><p>NOTICIAS</p> </div></div></div></div></div>';
         
         $('.slider3').append(body_slider);  
@@ -836,9 +839,7 @@ function noticias(){
         }
 
         
-
         detalle_p = '<p style="font-size:150%;">'+title_1+'</p>';
-
 
         if(post.subtitle.length>35){
         
@@ -851,7 +852,6 @@ function noticias(){
                     subtitle_1 = title_1+txt+"<br>";
                      txt = '';
                  }
-
 
             });
 

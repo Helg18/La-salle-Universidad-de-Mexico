@@ -823,7 +823,7 @@ function noticias(){
              $.each(tmp, function(i,word){
                 txt = txt + " " + word;
 
-                if(txt.length > 11 ){
+                if(txt.length > 25 ){
                      title_1 = title_1+txt+"<br>";
                      txt = '';
                  }
@@ -836,7 +836,26 @@ function noticias(){
         
 
         detalle_p = '<p>'+title_1+'</p>';
-        detalle_p_html = '<p>'+post.subtitle+'</p>';
+
+
+        if(post.subtitle.length>35){
+        
+            var tmp = post.subtitle.split(/[ ,]+/);
+
+             $.each(tmp, function(i,word){
+                txt = txt + " " + word;
+
+                if(txt.length > 25 ){
+                    subtitle_1 = title_1+txt+"<br>";
+                     txt = '';
+                 }
+
+
+            });
+
+        }
+
+        detalle_p_html = '<p>'+subtitle_1+'</p>';
 
         $('#ctds'+index).append(detalle_p);  
         $('#ctds'+index).append(detalle_p_html);  

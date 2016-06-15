@@ -818,14 +818,14 @@ function noticias(){
 
         $('#imgsn'+index).append(barra_gris);  
 
-        if(post.title.length>35){
+        if(post.title.length>25){
         
             var tmp = post.title.split(/[ ,]+/);
 
              $.each(tmp, function(i,word){
                 txt = txt + " " + word;
 
-                if(txt.length > 25 ){
+                if(txt.length > 20 ){
                      title_1 = title_1+txt+"<br>";
                      txt = '';
                  }

@@ -20,8 +20,6 @@ var initial_data = {},
 $(document).ready(function(){
 
     getInitialData();
-    //cuadrosDeVida();
-
     modal = $('[data-remodal-id=modal2]').remodal({
         modifier: 'with-red-theme'
     });
@@ -801,55 +799,96 @@ function lineatiempo(){
 function noticias(){
 
 
-    var tmpSlices = '';
-    var tmpindicator = '';
+    // var container_pic_slider="";
 
-    var con=0;
-    
+    $('.slider3').html(''); 
+
     $.each(initial_data.categories[9].posts, function(index,post) {
 
-        if(con=="" || con==0){
+        body_slider = '<div class="container_pic_slider slide"><div id="effect-1" class="effects clearfix responsiveSliderPrincipal"> <div id="imgsn'+index+'"" class="imgSliderNoticias"> <div class="barra_morada"><div class="container_imagen_titulo_section_slider"><div class="caption cap1"><img src="images/nuevosArtes/banner/icono_noticias.png"></div><p>NOTICIAS</p> </div></div></div></div></div>';
+        
+        $('.slider3').append(body_slider);  
 
-            tmpSlices = '<div class="item active">'+
-            '<a href="notice.html?id='+post.id+'"> <img src="'+post.picture_url+'" alt="'+post.title+'"></a>'+
-            '<div class="carousel-caption">'+
-            '<h3>'+post.title+'</h3>'+
-            '<p>'+post.subtitle+'</p> '+
-            '</div></div>';
+        barra_gris = '<div class="barra_gris textRight"> <div id="ctds'+index+'"" class="container_titulo_description_slider"> </div></div>';
 
-            $('#cinnn').append(tmpSlices);  
+        $('#imgsn'+index).append(barra_gris);  
 
-            
-            }else{
-            
-            tmpSlices = '<div class="item ">'+
-            '<a href="notice.html?id='+post.id+'"><img src="'+post.picture_url+'" alt="'+post.title+'"></a>'+
-            '<div class="carousel-caption">'+
-            '<h3>'+post.title+'</h3>'+
-            '<p>'+post.subtitle+'</p> '+
-            '</div></div>';
+        detalle_p = '<p>'+post.title+'</p>';
+        detalle_p_html = '<p>'+post.subtitle+'</p>';
 
-            $('#cinnn').append(tmpSlices);  
-            
+        $('#ctds'+index).append(detalle_p);  
+        $('#ctds'+index).append(detalle_p_html);  
 
-        }
+        boton = '<button id="btn_more_slider_one" class="btn_slider"><img src="images/nuevosArtes/banner/icono_mas.png"></button>';
 
-        con=con+1;
+        $('#ctds'+index).append(boton);  
 
+        imagen_mostrar = '<img src="images/nuevosArtes/banner/banner_dos.png"></img>';
+        
+
+        $('#imgsn'+index).append(imagen_mostrar);  
+
+
+        
     });
 
-    control = '<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">'+
-    '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>'+
-    '<span class="sr-only">Previous</span>'+
-    '</a>'+
-    '<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">'+
-    '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>'+
-    '<span class="sr-only">Next</span>'+
-    '</a>';
-
-    $('#myCarousel').append(control);        
+    $('.slider3').bxSliderPrincipal({});
 
 }
+
+
+// function noticias(){
+
+
+//     var tmpSlices = '';
+//     var tmpindicator = '';
+//     var con=0;
+    
+
+//     $.each(initial_data.categories[9].posts, function(index,post) {
+
+//         if(con=="" || con==0){
+
+//             tmpSlices = '<div class="item active">'+
+//             '<a href="notice.html?id='+post.id+'"> <img src="'+post.picture_url+'" alt="'+post.title+'"></a>'+
+//             '<div class="carousel-caption">'+
+//             '<h3>'+post.title+'</h3>'+
+//             '<p>'+post.subtitle+'</p> '+
+//             '</div></div>';
+
+//             $('#cinnn').append(tmpSlices);  
+
+            
+//             }else{
+            
+//             tmpSlices = '<div class="item ">'+
+//             '<a href="notice.html?id='+post.id+'"><img src="'+post.picture_url+'" alt="'+post.title+'"></a>'+
+//             '<div class="carousel-caption">'+
+//             '<h3>'+post.title+'</h3>'+
+//             '<p>'+post.subtitle+'</p> '+
+//             '</div></div>';
+
+//             $('#cinnn').append(tmpSlices);  
+            
+
+//         }
+
+//         con=con+1;
+
+//     });
+
+//     control = '<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">'+
+//     '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>'+
+//     '<span class="sr-only">Previous</span>'+
+//     '</a>'+
+//     '<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">'+
+//     '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>'+
+//     '<span class="sr-only">Next</span>'+
+//     '</a>';
+
+//     $('#myCarousel').append(control);        
+
+// }
 
 
 

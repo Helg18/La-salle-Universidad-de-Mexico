@@ -805,13 +805,15 @@ function noticias(){
 
     $.each(initial_data.categories[9].posts, function(index,post) {
 
-        body_slider = '<div class="container_pic_slider slide"><div id="effect-1" class="effects clearfix responsiveSliderPrincipal"> <div id="imgsn'+index+'"" class="imgSliderNoticias"> <div class="barra_morada"><div class="container_imagen_titulo_section_slider"><div class="caption cap1"><img src="images/nuevosArtes/banner/icono_noticias.png"></div><p>NOTICIAS</p> </div></div></div></div></div>';
+        body_slider = '<div class="container_pic_slider slide"><div id="effect-1" class="effects clearfix responsiveSliderPrincipal"> <div id="imgsn'+index+'" class="imgSliderNoticias"> <div class="barra_morada"><div class="container_imagen_titulo_section_slider"><div class="caption cap1"><img src="images/nuevosArtes/banner/icono_noticias.png"></div><p>NOTICIAS</p> </div></div></div></div></div>';
         
         $('.slider3').append(body_slider);  
 
         barra_gris = '<div class="barra_gris textRight"> <div id="ctds'+index+'"" class="container_titulo_description_slider"> </div></div>';
 
         $('#imgsn'+index).append(barra_gris);  
+
+        var tmp = post.title.split(/[ ,]+/),
 
         detalle_p = '<p>'+post.title+'</p>';
         detalle_p_html = '<p>'+post.subtitle+'</p>';

@@ -796,12 +796,15 @@ function lineatiempo(){
 
 
 
+
 function noticias(){
 
 
     // var container_pic_slider="";
 
     $('.slider3').html(''); 
+    txt="";
+    title_1="";
 
     $.each(initial_data.categories[9].posts, function(index,post) {
 
@@ -813,9 +816,26 @@ function noticias(){
 
         $('#imgsn'+index).append(barra_gris);  
 
-        var tmp = post.title.split(/[ ,]+/),
+        if(post.title.length>35){
+        
+            var tmp = post.title.split(/[ ,]+/);
 
-        detalle_p = '<p>'+post.title+'</p>';
+             $.each(tmp, function(i,word){
+                txt = txt + " " + word;
+
+                if(txt.length > 11 ){
+                     title_1 = title_1+txt+"<br>";
+                     txt = '';
+                 }
+
+
+            });
+
+        }
+
+        
+
+        detalle_p = '<p>'+title_1+'</p>';
         detalle_p_html = '<p>'+post.subtitle+'</p>';
 
         $('#ctds'+index).append(detalle_p);  
@@ -839,58 +859,7 @@ function noticias(){
 }
 
 
-// function noticias(){
 
-
-//     var tmpSlices = '';
-//     var tmpindicator = '';
-//     var con=0;
-    
-
-//     $.each(initial_data.categories[9].posts, function(index,post) {
-
-//         if(con=="" || con==0){
-
-//             tmpSlices = '<div class="item active">'+
-//             '<a href="notice.html?id='+post.id+'"> <img src="'+post.picture_url+'" alt="'+post.title+'"></a>'+
-//             '<div class="carousel-caption">'+
-//             '<h3>'+post.title+'</h3>'+
-//             '<p>'+post.subtitle+'</p> '+
-//             '</div></div>';
-
-//             $('#cinnn').append(tmpSlices);  
-
-            
-//             }else{
-            
-//             tmpSlices = '<div class="item ">'+
-//             '<a href="notice.html?id='+post.id+'"><img src="'+post.picture_url+'" alt="'+post.title+'"></a>'+
-//             '<div class="carousel-caption">'+
-//             '<h3>'+post.title+'</h3>'+
-//             '<p>'+post.subtitle+'</p> '+
-//             '</div></div>';
-
-//             $('#cinnn').append(tmpSlices);  
-            
-
-//         }
-
-//         con=con+1;
-
-//     });
-
-//     control = '<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">'+
-//     '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>'+
-//     '<span class="sr-only">Previous</span>'+
-//     '</a>'+
-//     '<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">'+
-//     '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>'+
-//     '<span class="sr-only">Next</span>'+
-//     '</a>';
-
-//     $('#myCarousel').append(control);        
-
-// }
 
 
 

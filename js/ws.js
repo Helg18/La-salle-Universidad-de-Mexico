@@ -805,6 +805,8 @@ function noticias(){
     $('.slider3').html(''); 
     txt="";
     title_1="";
+    detalle_p_html="";
+    subtitle_1="";
 
     $.each(initial_data.categories[9].posts, function(index,post) {
 
@@ -835,7 +837,7 @@ function noticias(){
 
         
 
-        detalle_p = '<p>'+title_1+'</p>';
+        detalle_p = '<p style="font-size:150%;">'+title_1+'</p>';
 
 
         if(post.subtitle.length>35){

@@ -979,7 +979,7 @@ function AcademicOffer(){
 
         select_box = slider.children[index];
         $.each(select_box.children, function(index,sidebar){
-            html = html + '<div class="button_menu_right btn_select_oferta_cou" data-index="'+index+'"><img src="images/nuevosArtes/oferta_educativa/icono_btn_cuota.png">'+sidebar.title+'</div>';
+            html = html + '<div class="button_menu_right btn_select_oferta_cou" data-index="'+index+'"><img src="'+ (sidebar.picture_url ? sidebar.picture_url : 'images/nuevosArtes/oferta_educativa/icono_btn_cuota.png')+'">'+sidebar.title+'</div>';
         });
 
         $('#container_menu_derecho .menu_option_right_oferta').html(html);

@@ -825,7 +825,7 @@ function noticias(){
 
         $('#ctds'+index).append(boton);  
 
-        imagen_mostrar = '<img src="'+post.picture_url+'"></img>';
+        imagen_mostrar = '<a href="notice.html?id='+post.id+'"><img src="'+post.picture_url+'"></img></a>';
         
 
         $('#imgsn'+index).append(imagen_mostrar);  

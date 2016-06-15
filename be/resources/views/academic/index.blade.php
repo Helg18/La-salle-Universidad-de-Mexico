@@ -163,8 +163,14 @@
                             </span>
                         @endif
                     </div>
-                    <div class="col-md-2">
-                        {!! $record ? $record->picture_html('100px') :'' !!}
+                    <div class="col-md-2" <?php if($type=='sidebar'): ?> style="background-color: black" <?php endif; ?>>
+
+                        @if($type=='sidebar')
+                            {!! $record ? $record->picture_html('26px') :'' !!}
+                            @else
+                            {!! $record ? $record->picture_html('100px') :'' !!}
+                            @endif
+
                     </div>
 
                     <div class="col-md-1">

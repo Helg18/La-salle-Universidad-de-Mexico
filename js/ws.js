@@ -789,7 +789,7 @@ function lineatiempo(){
 
     $('#myCarouselLaSalle').append(control);  
 
-    document.getElementById("myCarouselLaSalle").style.display = "none";
+    //document.getElementById("myCarouselLaSalle").style.display = "none";
 
 
 }
@@ -813,7 +813,7 @@ function noticias(){
         subtitle_1="";
         title_1="";
 
-        body_slider = '<div class="container_pic_slider slide"><div id="effect-1" class="effects clearfix responsiveSliderPrincipal"> <div id="imgsn'+index+'" class="imgSliderNoticias"> <div class="barra_morada"><div class="container_imagen_titulo_section_slider"><div class="caption cap1"><img src="images/nuevosArtes/banner/icono_noticias.png"></div><p>NOTICIAS</p> </div></div></div></div></div>';
+        body_slider = '<div class="container_pic_slider slide"><div id="effect-1" class="effects clearfix responsiveSliderPrincipal"> <div id="imgsn'+index+'" class="imgSliderNoticias"> <div class="barra_morada"><div class="container_imagen_titulo_section_slider"><div class="caption cap1"><a href="notice.html?id='+post.id+'"><img src="images/nuevosArtes/banner/icono_noticias.png"></a></div><p>NOTICIAS</p> </div></div></div></div></div>';
         
         $('.slider3').append(body_slider);  
 
@@ -866,7 +866,7 @@ function noticias(){
 
         $('#ctds'+index).append(boton);  
 
-        imagen_mostrar = '<a href="notice.html?id='+post.id+'"><img src="'+post.picture_url+'"></img></a>';
+        imagen_mostrar = '<img src="'+post.picture_url+'"></img>';
         
 
         $('#imgsn'+index).append(imagen_mostrar);  

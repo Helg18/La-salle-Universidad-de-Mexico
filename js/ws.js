@@ -828,7 +828,7 @@ function noticias(){
              $.each(tmp, function(i,word){
                 txt = txt + " " + word;
 
-                if(txt.length > 20 ){
+                if(txt.length > 15 ){
                      title_1 = title_1+txt+"<br>";
                      txt = '';
                  }

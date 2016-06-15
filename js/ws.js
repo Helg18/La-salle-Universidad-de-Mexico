@@ -823,7 +823,7 @@ function noticias(){
 
         $('#ctds'+index).append(boton);  
 
-        imagen_mostrar = '<img src="images/nuevosArtes/banner/banner_dos.png"></img>';
+        imagen_mostrar = '<img src="'+post.picture_url+'"></img>';
         
 
         $('#imgsn'+index).append(imagen_mostrar);  

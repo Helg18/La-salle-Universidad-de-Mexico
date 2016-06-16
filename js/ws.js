@@ -550,7 +550,7 @@ function open_modal(element){
     $('.custom-modal img').attr('src',post.picture_url);
     $('.custom-modal h5').html(post.title);
     // $('.custom-modal .text').html(post.paragraph_1_html);
-    $('#textogeneral').value(post.paragraph_1_html)
+    $('#textogeneral').val(post.paragraph_1_html)
 
 
 

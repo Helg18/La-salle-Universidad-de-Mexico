@@ -756,9 +756,9 @@ function lineatiempo(){
         if(con=="" || con==0){
 
             tmpSliceslt = '<div class="item active">'+
-            '<img src="'+post.picture_url+'" alt="'+post.title+'">'+
+            '<img src="'+post.picture_url+'" alt="'+post.subtitle+'">'+
             '<div class="carousel-caption">'+
-            '<h2>'+post.subtitle+'</h2>'+
+            '<h2>'+post.title+'</h2>'+
             '<p>'+post.paragraph_1+'</p> '+
             '</div></div>';
 
@@ -767,9 +767,9 @@ function lineatiempo(){
             }else{
             
             tmpSliceslt = '<div class="item ">'+
-            '<img src="'+post.picture_url+'" alt="'+post.title+'">'+
+            '<img src="'+post.picture_url+'" alt="'+post.subtitle+'">'+
             '<div class="carousel-caption">'+
-            '<h2>'+post.subtitle+'</h2>'+
+            '<h2>'+post.title+'</h2>'+
             '<p>'+post.paragraph_1+'</p> '+
             '</div></div>';
             $('#clt').append(tmpSliceslt);  

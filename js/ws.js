@@ -725,9 +725,7 @@ function lineatiempo(){
     var tmpindicator = '';
 
     var con=0;
-    // $('#myCarouselLaSalle').html('');
-
-
+    
     $('#myCarouselLaSalle').append('<ol id="indi" class="carousel-indicators"></ol><div id="clt" class="carousel-inner" role="listbox">');
 
     $.each(initial_data.categories[10].posts, function(index,post) {
@@ -776,8 +774,6 @@ function lineatiempo(){
 
     });
 
-
-
     control = '<a class="left carousel-control" href="#myCarouselLaSalle" role="button" data-slide="prev">'+
     '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>'+
     '<span class="sr-only">Previous</span>'+
@@ -789,9 +785,7 @@ function lineatiempo(){
 
     $('#myCarouselLaSalle').append(control);  
 
-    //document.getElementById("myCarouselLaSalle").style.display = "none";
-
-
+    document.getElementById("myCarouselLaSalle").style.display = "none";
 }
 
 

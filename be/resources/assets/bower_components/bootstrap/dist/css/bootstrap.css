@@ -6417,7 +6417,7 @@ button.close {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0);
 }
 .carousel-caption {
   position: absolute;

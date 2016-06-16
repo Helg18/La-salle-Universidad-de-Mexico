@@ -758,8 +758,8 @@ function lineatiempo(){
             tmpSliceslt = '<div class="item active">'+
             '<img src="'+post.picture_url+'" alt="'+post.title+'">'+
             '<div class="carousel-caption">'+
-            '<h3>'+post.title+'</h3>'+
-            '<p>'+post.subtitle+'</p> '+
+            '<h2>'+post.subtitle+'</h2>'+
+            '<p>'+post.paragraph_1+'</p> '+
             '</div></div>';
 
             $('#clt').append(tmpSliceslt);  
@@ -769,8 +769,8 @@ function lineatiempo(){
             tmpSliceslt = '<div class="item ">'+
             '<img src="'+post.picture_url+'" alt="'+post.title+'">'+
             '<div class="carousel-caption">'+
-            '<h3>'+post.title+'</h3>'+
-            '<p>'+post.subtitle+'</p> '+
+            '<h2>'+post.subtitle+'</h2>'+
+            '<p>'+post.paragraph_1+'</p> '+
             '</div></div>';
             $('#clt').append(tmpSliceslt);  
 
@@ -793,9 +793,6 @@ function lineatiempo(){
 
     document.getElementById("myCarouselLaSalle").style.display = "none";
 }
-
-
-
 
 function noticias(){
 
@@ -878,11 +875,6 @@ function noticias(){
     $('.slider3').bxSliderPrincipal({});
 
 }
-
-
-
-
-
 
 function AcademicOffer(){
     /** Oferta Academica **/

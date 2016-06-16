@@ -549,7 +549,8 @@ function open_modal(element){
     //console.log(post);
     $('.custom-modal img').attr('src',post.picture_url);
     $('.custom-modal h5').html(post.title);
-    $('.custom-modal .text').html(post.paragraph_1_html);
+    // $('.custom-modal .text').html(post.paragraph_1_html);
+    $('#textogeneral').html(post.paragraph_1_html)
 
 
 

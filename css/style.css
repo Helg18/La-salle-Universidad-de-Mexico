@@ -4464,7 +4464,7 @@ ul.bjqs-controls.v-centered li a:hover{
 
 
 .circle img {
-  width: 80%;
+  width: 70%;
 }
 
 .accesoDirectoResponsive{
@@ -4731,8 +4731,18 @@ ul.bjqs-controls.v-centered li a:hover{
   .menuIconsRedes nav ul{
     margin-bottom: 0;
   }
+
   .menuIconsRedes nav ul li a:hover{
     background: none;
+  }
+
+  .menuIconsRedes nav ul li a:active{
+    background: none;
+  }
+
+  .menuIconsRedes nav ul li a:link{
+    background: none;
+    
   }
 
 /*POSTFOOTER*/

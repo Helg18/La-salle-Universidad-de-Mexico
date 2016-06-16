@@ -65,8 +65,9 @@ $(document).ready(function(){
 
 
 function getInitialData(){
-    $.get( url + 'initial-data', function(data){
 
+
+    $.get( url + 'initial-data', function(data){
 
         initial_data = data;
         for (con=0;con<initial_data.categories.length;con++){
@@ -333,14 +334,8 @@ function Category6(){
         this.showContent(0);
     }
 
-    this.onclick = function(){
-        console.log('Paso!');
-    }
-
     this.showContent =  function(index){
 
-        
-         
         var post = d.posts[index];
         $('.textoTituloAccionSocial p').html(post.subtitle);
         $('.descripcionTituloAccionSocial.ws').html(post.paragraph_1_html);
@@ -400,7 +395,7 @@ function Category9(){
 
         //Esta funcion pintaria el contenido que hay cuando le damos clic al nuevo submenu
         var post = d.posts[index].children[index2]; //leo el hijo y ya tengo acceso a el
-        console.log(post);
+        // console.log(post);
         //aqui ya pinto el contenido del texto
         // $('#contenedorTituloContactoc p').html(post.paragraph_1_small_html  ? post.paragraph_1_small_html : '');
          $('.descripcionTituloContacto .contactoShow .contenedorDiagonalContacto  p').html(post.paragraph_1_small_html  ? post.paragraph_1_small_html : '');
@@ -482,7 +477,6 @@ function calendario(){
 
     muestraPrevioEventos(initial_data.calendar);
     marcaDiasCalendario({month: initial_month, year: initial_year});
-
 }
 
 function muestraPrevioEventos(posts, custom_date){
@@ -521,7 +515,6 @@ function muestraPrevioEventos(posts, custom_date){
 
     });
 }
-
 
 function marcaDiasCalendario(aamm){
 
@@ -589,7 +582,6 @@ function calendario_importante(){
     $(tmp).html(html);
 
     slider_calendar(); //esta funcion viene de /js/slider/script.js
-
 }
 
 

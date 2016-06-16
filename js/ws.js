@@ -214,7 +214,7 @@ function Category2(){
         $.each(post.children, function(index,child){
             html = html + '<div class="cuadrosVida">' +
                 '<h6 class="azulFuerteInvetigacion">' + child.title + '</h6>' +
-                '<p>' +child.paragraph_1_html+ '</p>' +
+                '<p class="scroll-box-140">' +child.paragraph_1_html+ '</p>' +
                 '</div>'
             ;
         });
@@ -674,16 +674,22 @@ function vinculacion_empresarial(){
         tmp = tmp +
             '<div class="segundaFilaVinculacion">'+
             '<div class="textoVinculacion">'+post.title+'</div>'+
-            '<div class="textoVinculacionActive">'+
-            post.title+ '<br><br>'+
-            '<p>'+ post.paragraph_1_html+ '</p>'+
+            '<div class="textoVinculacionActive scroll-box-140">'+
+            post.title+ '<br>'+
+            '<p >'+ post.paragraph_1_html+ '</p>'+
             '</div>'+
             '</div>';
+        /*tmp = tmp + '<div class="cuadrosVida">' +
+            '<h6 class="azulFuerteInvetigacion">' + post.title + '</h6>' +
+            '<p class="scroll-box-140">' +post.paragraph_1_html+ '</p>' +
+            '</div>'*/
+        ;
         count+=1;
     });
 
     tmp = tmp + '</div>';
     $('#vinculacionEmpresarialShow .row').html(tmp);
+
 
     $('#vinculacionEmpresarialShow .row .segundaFilaVinculacion').mouseenter(function(){
 

@@ -50,6 +50,13 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
   margin-top: 20px;
 }
 
+  .scroll-box-140 {
+    height: 140px; /* maximum height of the box, feel free to change this! */
+    overflow-y: scroll;
+    text-align: justify;
+    margin-top: 20px;
+  }
+
 
 .menuButtonScroll{
 
@@ -1604,6 +1611,10 @@ p.textDos_title{
   max-height: 140px;
 }
 
+  .cuadrosVida p{
+    display: none;
+  }
+
 .cuadroVidaActivo{
   overflow: hidden;
   width: 24.7%;
@@ -1615,6 +1626,14 @@ p.textDos_title{
   padding: 2% 2% 20% 2%;
   max-height: 140px;
 }
+
+  .cuadroVidaActivo p{
+    display: inherit !important;
+  }
+
+  .cuadroVidaActivo h6{
+    display: none !important;
+  }
 
 .textoVida {
   margin: auto;
@@ -2239,9 +2258,19 @@ p.textDos_title{
 .textoVinculacionActive{
   text-align: left;
   box-sizing: border-box;
-  padding: 8% 5% 30% 5%;
+  padding: 0px 5% 30% 5%;
 }
 
+  .textoVinculacionActive{
+    display: none;
+  }
+  .activeVinculacion .textoVinculacionActive{
+    display: inherit !important;
+  }
+
+  .activeVinculacion .textoVinculacion{
+    padding: 10% !important;
+  }
 
 .tituloVinculacionEmpresarial{
   padding-top: 40px;

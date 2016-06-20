@@ -395,7 +395,7 @@ function Category9(){
 		$('.descripcionTituloContacto').fadeIn('slow');	// Mostramos la descripcion del contacto
         //Esta funcion pintaria el contenido que hay cuando le damos clic al nuevo submenu
         var post = d.posts[index].children[index2]; //leo el hijo y ya tengo acceso a el
-        // console.log(post);
+        
         //aqui ya pinto el contenido del texto
         // $('#contenedorTituloContactoc p').html(post.paragraph_1_small_html  ? post.paragraph_1_small_html : '');
          $('.descripcionTituloContacto .contactoShow .contenedorDiagonalContacto  p').html(post.paragraph_1_small_html  ? post.paragraph_1_small_html : '');
@@ -414,7 +414,7 @@ function calendario(){
     //Limpiando las categorias del calendario
     ul.html('');
     
-    console.log(initial_data.calendar_labels);
+    
 
     //Categorias del calendario
     $.each(initial_data.calendar_labels, function(index,label){
@@ -465,7 +465,7 @@ function calendario(){
                 tmp.month==1;
                 tmp.year = tmp.year+1;
             }
-            //console.log(tmp);
+            
 
             marcaDiasCalendario(tmp);
 
@@ -481,7 +481,7 @@ function calendario(){
 
 function muestraPrevioEventos(posts, custom_date){
 
-    //console.log(current_posts);
+    
     if(!posts && custom_date){
         posts = current_posts[custom_date];
     }
@@ -523,11 +523,11 @@ function marcaDiasCalendario(aamm){
     current_yymm = aamm;
 
     $.post( url + 'calendar-events', aamm, function(data){
-        //console.log(data);
+        
         current_posts = [];
         $(".responsive-calendar").responsiveCalendar('clearAll');
         $.each(data.posts, function(index,post){
-            //calendar.events.push();
+            
             var obj = {};
             obj[post.custom_date] = {url: "javascript: muestraPrevioEventos(false,'" + post.custom_date + "')"};
 
@@ -543,15 +543,12 @@ function marcaDiasCalendario(aamm){
 }
 
 function open_modal(element){
-    //console.log(element.);
+    
 
     post = tmp_posts[$(element).data('index')];
-    //console.log(post);
+    
     $('.custom-modal img').attr('src',post.picture_url);
     $('.custom-modal h5').html(post.title);
-    // $('.custom-modal .text').html(post.paragraph_1_html);
-	
-    //$('#textogeneral').val(post.paragraph_1_html);
 	$('#textogeneral').html(post.paragraph_1_html); // Se puso como div y no como textarea
 
     modal.open();
@@ -571,10 +568,10 @@ function calendario_importante(){
             '<div class="date_event_destacado"><p>'+post.custom_date_split.day_1+'</p><p><span>'+post.custom_date_split.day_2+'</span> '+post.custom_date_split.month+' '+post.custom_date_split.year+'</p></div>' +
             '<div class="desc_event_destacado">' +
             '<div class="desc_text"><p>'+post.title+'</p></div>' +
-                //'<div class="desc_image"><img src="images/nuevosArtes/calendario/Button_more.png"></div>' +
+                
             '</div>' +
             '</div>' +
-                //'<img src="images/nuevosArtes/calendario/slider_congreso.png" alt=""  />' +
+            
             '<img src="'+post.picture_url+'" alt=""  />' +
             '</li>';
     });
@@ -616,12 +613,12 @@ function noticias_blog(){
             '<div class="overlayNoticia">'+
             '<h6>'+post.title+'</h6>'+
             '<p>'+post.paragraph_1_html.substring(0,50)+'...</p>'+
-            // '<button class="btn_noticia_more" data-index="'+index+'"><img src="images/nuevosArtes/Noticias/icon_more.png"></button>'+
+            
             '</div>'+
             '</div>';
 
 
-        //console.log(count);
+        
 
     });
 
@@ -672,10 +669,7 @@ function vinculacion_empresarial(){
             '<p >'+ post.paragraph_1_html+ '</p>'+
             '</div>'+
             '</div>';
-        /*tmp = tmp + '<div class="cuadrosVida">' +
-            '<h6 class="azulFuerteInvetigacion">' + post.title + '</h6>' +
-            '<p class="scroll-box-140">' +post.paragraph_1_html+ '</p>' +
-            '</div>'*/
+      
         ;
         count+=1;
     });
@@ -790,7 +784,7 @@ function lineatiempo(){
 function noticias(){
 
 
-    // var container_pic_slider="";
+    
 
     $('.slider3').html(''); 
     txt="";
@@ -914,7 +908,7 @@ function AcademicOffer(){
 
                 '<div class="overlayMenuBtn">' +
                 '<div class="text_btn_menu_oferta">' +
-                //'<h6>FACULTAD DE</h6>' +
+                
                 '<p><button class="btn_derecho" data-index="'+index2+'">'+title_1+'</button></p>' +
                 '</div>' +
                 '</div>' +
@@ -980,8 +974,7 @@ function AcademicOffer(){
 
             //Registro el evento onchange del select_box
             $('#container_menu_derecho select').on('change',function(){
-                //console.log('valor del select');
-                //console.log($(this).val());
+                
                AO.showSidebar($(this).val());
             });
 

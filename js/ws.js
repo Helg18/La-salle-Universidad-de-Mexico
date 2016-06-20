@@ -890,7 +890,23 @@ function AcademicOffer(){
 
         //Slider
         var html = '<div class="slider1">';
+        var txt="";
+        var title_1="";
+
+
         $.each(offer.children, function(index2,slider){
+
+            if(slider.title.length>16){
+                var tmp = slider.title.split(/[ ,]+/);
+                 $.each(tmp, function(i,word){
+                    txt = txt + " " + word;
+                    if(txt.length > 10 ){
+                         title_1 = title_1+txt+"<br>";
+                         txt = '';
+                     }
+                });
+            }
+
 
             html = html + '<div class="container_btn_licenciaturas slide">' +
                 '<div id="effect-1" class="effects clearfix">' +
@@ -899,7 +915,7 @@ function AcademicOffer(){
                 '<div class="overlayMenuBtn">' +
                 '<div class="text_btn_menu_oferta">' +
                 //'<h6>FACULTAD DE</h6>' +
-                '<p><button class="btn_derecho" data-index="'+index2+'">'+slider.title+'</button></p>' +
+                '<p><button class="btn_derecho" data-index="'+index2+'">'+title_1+'</button></p>' +
                 '</div>' +
                 '</div>' +
 

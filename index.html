@@ -43,11 +43,16 @@
   <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
 
   <style>
-      .carousel-indicators .active {
-
-        background-image: url("") !important; 
-
-      }  
+      .carousel-indicators .active { background-image: url("") !important; }  
+	  
+	  form.formContacto input,textarea{margin:0px 0px 3px 0px}
+	  .contenedorContacto .cuadrosSubmenu:hover{cursor:pointer}
+	  .contenedorDiagonalContacto p{text-align:justify;line-height:1.77778em;font-family:'HelveticaLight',arial !important;font-size:14px}
+	  td.img-noticia {padding-right:8px}
+	  div#textogeneral{ overflow-y: scroll; height: 272px; text-align: justify;font-family:'HelveticaLight',arial}
+	  .day-headers{margin-top:11px !important;}
+	  .titulo-modal{font-family:'HelveticaBold',arial}
+	  .containerMapa{background:none !important;height:100%}
   </style>
   
 
@@ -2974,7 +2979,7 @@
                     <br/>
                     <span class="tituloCalendario">Obra de teatro: <br><span>El lobo</span><br>por Tania Ruiz</span>
                     <br/>
-                    <img src="images/nuevosArtes/calendario/boton_mas_hover.png" style="width: 30px; position: relative; right: -250px;">
+                    <img src="images/nuevosArtes/calendario/boton_mas_hover.png" style="width: 30px; position: relative; right: -236px;">
                 </a>
               </div>
             </div>
@@ -2989,7 +2994,7 @@
                       <br/>
                       <span class="tituloCalendario">Obra de teatro: <br><span>El lobo</span><br>por Tania Ruiz</span>
                       <br/>
-                      <img src="images/nuevosArtes/calendario/boton_mas_hover.png" style="width: 30px; position: relative; right: -250px;">
+                      <img src="images/nuevosArtes/calendario/boton_mas_hover.png" style="width: 30px; position: relative; right: -236px;">
                   </a>
               </div>
             </div>
@@ -3058,7 +3063,7 @@
                       <br/>
                       <span class="tituloCalendario">Obra de teatro: <br><span>El lobo</span><br>por Tania Ruiz</span>
                       <br/>
-                      <img src="images/nuevosArtes/calendario/boton_mas_hover.png" style="width: 30px; position: relative; right: -250px;">
+                      <img src="images/nuevosArtes/calendario/boton_mas_hover.png" style="width: 30px; position: relative; right: -236px;">
                   </a>
               </div>
             </div> 
@@ -3073,7 +3078,7 @@
                       <br/>
                       <span class="tituloCalendario">Obra de teatro: <br><span>El lobo</span><br>por Tania Ruiz</span>
                       <br/>
-                      <img src="images/nuevosArtes/calendario/boton_mas_hover.png" style="width: 30px; position: relative; right: -250px;">
+                      <img src="images/nuevosArtes/calendario/boton_mas_hover.png" style="width: 30px; position: relative; right: -236px;">
                   </a>
               </div>
             </div>
@@ -3784,11 +3789,11 @@
 
       <table width="100%" border="0">
           <tr>
-              <td width="50%" valign="top"><img style="width:100%;" src="images/nuevosArtes/modales/prueba.png" alt="Eventos"></td>
+              <td width="50%" valign="top" class="img-noticia"><img style="width:100%;" src="images/nuevosArtes/modales/prueba.png" alt="Eventos"></td>
               <td width="50%" valign="top">
-                  <h5>Titulo</h5>
+                  <h5 class="titulo-modal">Titulo</h5>
                   <!-- <div class="text">Texto</div> -->
-                  <textarea name="textogeneral" id="textogeneral" cols="30" rows="100"></textarea>
+                  <div id="textogeneral" cols="30" rows="100"></div>
               </td>
           </tr>
       </table>
@@ -3819,7 +3824,7 @@
   <script src="js/modal/remodal.js" defer></script>
   <script src="js/modal/modales.js" defer></script> 
   <script src="js/calendario/responsive-calendar.js" defer></script>
-  <script src="js/calendario/calendario.js" defer></script>
+  <!-- <script src="js/calendario/calendario.js" defer></script> -->
   <script src="js/slider/slider.min.js" defer></script>
   <script src="js/slider/script.js" defer></script>
   <script src="js/buttons/button.js" defer></script>
@@ -4130,6 +4135,14 @@
 
       }
     }
+	$(document).ready(function () {
+		$('.descripcionTituloContacto').css('display','none');
+		$("a#botonOcho").click(function(){
+			if($('div#contactoShow').is(":hidden")){
+				$('.descripcionTituloContacto').css('display','none');
+			}
+		});
+	});
   </script>
   
   <!-- Create:hdzlruben.

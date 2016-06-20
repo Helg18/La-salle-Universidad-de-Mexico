@@ -22,6 +22,7 @@ class CreatePostsTable extends Migration
             $table->text('paragraph_3')->nullable();
             $table->string('picture')->nullable();
             $table->string('video')->nullable();
+            $table->integer('language');
             $table->timestamps();
         });
     }

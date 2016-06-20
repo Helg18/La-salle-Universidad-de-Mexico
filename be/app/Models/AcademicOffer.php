@@ -14,6 +14,7 @@ class AcademicOffer extends Model
         'picture_url_3',
         'paragraph_1_html',
         'paragraph_2_html',
+        
     ];
 
     public function getChildrenAttribute(){
@@ -28,10 +29,17 @@ class AcademicOffer extends Model
         return nl2br($this->paragraph_2);
     }
 
-    public static function sliders(){
-        return self::where('parent_id',null)->get();
+    public static function sliders($lang=1){
+        
+        if($lang==1 || $lang==2){
+            return self::where('parent_id',null)->where('language',$lang)->get();}
+        else{
+            return self::where('parent_id',null)->get();
+        }
+        
     }
-    //
+
+   
     private function path_image(){
         return base_path() . '/public/images/academic/';
     }

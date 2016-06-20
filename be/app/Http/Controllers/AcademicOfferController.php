@@ -39,6 +39,7 @@ class AcademicOfferController extends Controller
         $record->paragraph_1 = $request->paragraph_1;
         $record->paragraph_2 = $request->paragraph_2;
         $record->type = $request->type;
+        $record->language = $request->language;
         if($record->type!='gray_box'){
             $parent = Session::get('academic_last');
             $record->parent_id = $parent->id;
@@ -82,6 +83,7 @@ class AcademicOfferController extends Controller
         $record->paragraph_1 = $request->paragraph_1;
         $record->paragraph_2 = $request->paragraph_2;
         $record->upload($request);
+        $record->language = $request->language;
         $record->save();
 
 

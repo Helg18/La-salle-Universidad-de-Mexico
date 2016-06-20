@@ -15,6 +15,7 @@ class CreateCalendarLabelsTable extends Migration
         Schema::create('calendar_labels', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->integer('language');
             $table->timestamps();
         });
     }

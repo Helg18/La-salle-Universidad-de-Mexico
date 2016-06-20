@@ -7,5 +7,26 @@ use Illuminate\Database\Eloquent\Model;
 class CalendarLabel extends Model
 {
     //
-    protected $fillable = ['name'];
+    // protected $fillable = ['name'];
+
+
+    public static function allForJsonCategorie($lang){
+
+        $data = [];
+
+        foreach(self::all() as $c){
+
+             if($c->language==$lang){
+                $data[] = [
+                    'name'      =>  $c->name,
+                ];
+             }
+        }
+
+
+        return $data;
+
+    }
+
+
 }

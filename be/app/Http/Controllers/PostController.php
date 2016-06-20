@@ -65,6 +65,7 @@ class PostController extends Controller
         $record->video = Post::cleanYoutubeCode($request->video);
         $record->upload($request);
         $record->custom_date = $request->custom_date;
+        $record->language = $request->language;
         $record->save();
         $record->calendarLabels($request);
 
@@ -86,7 +87,6 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
         $record = Post::find($id);
         return $this->customIndex($record);
     }
@@ -112,6 +112,7 @@ class PostController extends Controller
         $record->is_important = (bool)$request->is_important;
         $record->upload($request);
         $record->custom_date = $request->custom_date;
+        $record->language = $request->language;
         $record->save();
         $record->calendarLabels($request);
 

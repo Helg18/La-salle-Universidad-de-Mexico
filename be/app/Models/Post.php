@@ -21,7 +21,8 @@ class Post extends Model
         'picture_url',
         'children',
         'custom_date_split',
-        'paragraph_1_small_html'
+        'paragraph_1_small_html',
+        
     ];
     //
     public function categories(){
@@ -33,7 +34,7 @@ class Post extends Model
     }
 
     public function posts(){
-        //return $this->hasMany('App\Models\Post','id','parent_id');
+        // return self::where('parent_id',$this->id)->where('language',$lang)->get();
         return self::where('parent_id',$this->id)->get();
     }
 

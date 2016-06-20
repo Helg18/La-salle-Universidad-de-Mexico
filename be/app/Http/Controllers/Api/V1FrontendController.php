@@ -45,22 +45,39 @@ class V1FrontendController extends Controller
     }
 
 
-
-
     public function getInitialData(){
 
-        $data = Category::allForJson();
-        $labels = CalendarLabel::all();
-        $calendar = Category::find(4)->posts()->limit(4)->orderBy('custom_date','desc')->get();
-        $calendar_important = Category::find(4)->posts()->where('is_important',true)->limit(4)->orderBy('custom_date','desc')->get();
-        $blog = Category::find(5)->posts()->limit(9)->orderBy('created_at','desc')->get();
-        $academic = AcademicOffer::sliders();
-
-
+        $data = Category::allForJson(1);
+        $labels = CalendarLabel::allForJsonCategorie(1);
+        $calendar = Category::find(4)->posts()->where('language',2)->limit(4)->orderBy('custom_date','desc')->get();
+        $calendar_important = Category::find(4)->posts()->where('is_important',true)->where('language',1)->limit(4)->orderBy('custom_date','desc')->get();
+        $blog = Category::find(5)->posts()->where('language',1)->limit(9)->orderBy('created_at','desc')->get();
+        $academic = AcademicOffer::sliders(1);
+        
         return response()->json(
             ['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important, 'blog'=>$blog, 'academic_offer'=>$academic]
         );
+
+        
     }
+
+
+    public function getInitialDataE(){
+
+        $data = Category::allForJson(2);
+        $labels = CalendarLabel::allForJsonCategorie(2);
+        $calendar = Category::find(4)->posts()->where('language',2)->limit(4)->orderBy('custom_date','desc')->get();
+        $calendar_important = Category::find(4)->posts()->where('is_important',true)->where('language',2)->limit(4)->orderBy('custom_date','desc')->get();
+        $blog = Category::find(5)->posts()->where('language',2)->limit(9)->orderBy('created_at','desc')->get();
+        $academic = AcademicOffer::sliders(2);
+        return response()->json(
+            ['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important, 'blog'=>$blog, 'academic_offer'=>$academic]
+        );
+
+        
+    }
+
+    
 
 
 

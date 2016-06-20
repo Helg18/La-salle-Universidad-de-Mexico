@@ -22,6 +22,7 @@ class CreateAcademicOffersTable extends Migration
             $table->string('picture')->nullable();
             $table->text('paragraph_1')->nullable();
             $table->text('paragraph_2')->nullable();
+            $table->integer('language');
             $table->timestamps();
         });
     }

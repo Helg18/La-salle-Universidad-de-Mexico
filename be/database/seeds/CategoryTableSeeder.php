@@ -20,6 +20,7 @@ class CategoryTableSeeder extends Seeder
 
         $x = new Category();
         $x->name = 'Universidad La Salle';
+        $x->language = 1;
         $x->save();
 
 

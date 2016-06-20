@@ -34,6 +34,7 @@ La residencia es una casa que fue acondicionada para poder ofrecer un lugar de d
 
 Cuenta con una sala compartida para todos los residentes con televísor, un comedor con capacidad de 11 personas, área para la preparacion y conserva de alimentos, cuarto de servicio, terraza y un cuarto destinado para el personal de Limpieza y vigilancia que estará presente las 24 hrs del día.
 EOF;
+        $x->language = 1;
         $x->save();
         $x->categories()->sync([1]);
 
@@ -42,6 +43,8 @@ EOF;
         $x->subtitle='Lorem';
         $x->paragraph_1 = 'Lorem';
         $x->paragraph_2 = 'Lorem';
+        $x->language = 1;
+
         $x->save();
         $x->categories()->sync([1]);
 
@@ -50,6 +53,7 @@ EOF;
         $x->subtitle='Lorem';
         $x->paragraph_1 = 'Lorem';
         $x->paragraph_2 = 'Lorem';
+        $x->language = 1;
         $x->save();
         $x->categories()->sync([1]);
 
@@ -58,6 +62,7 @@ EOF;
         $x->subtitle='Lorem';
         $x->paragraph_1 = 'Lorem';
         $x->paragraph_2 = 'Lorem';
+        $x->language = 1;
         $x->save();
         $x->categories()->sync([1]);
 
@@ -66,6 +71,7 @@ EOF;
         $x->subtitle='Lorem';
         $x->paragraph_1 = 'Lorem';
         $x->paragraph_2 = 'Lorem';
+        $x->language = 1;
         $x->save();
         $x->categories()->sync([1]);
 
@@ -74,6 +80,7 @@ EOF;
         $x->subtitle='Lorem';
         $x->paragraph_1 = 'Lorem';
         $x->paragraph_2 = 'Lorem';
+        $x->language = 1;
         $x->save();
         $x->categories()->sync([1]);
 
@@ -82,6 +89,7 @@ EOF;
         $x->subtitle='Lorem';
         $x->paragraph_1 = 'Lorem';
         $x->paragraph_2 = 'Lorem';
+        $x->language = 1;
         $x->save();
         $x->categories()->sync([1]);
 
@@ -90,6 +98,7 @@ EOF;
         $x->subtitle='Lorem';
         $x->paragraph_1 = 'Lorem';
         $x->paragraph_2 = 'Lorem';
+        $x->language = 1;
         $x->save();
         $x->categories()->sync([1]);
 

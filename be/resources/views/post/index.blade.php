@@ -151,6 +151,19 @@
                 </div>
                 @endif
 
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Idioma</label>
+                    
+                    <div class="col-md-9">
+                    <select name="language" id="language">
+                        <option {{ $record && $record->language==1 ? 'selected':'' }} value="1">Español</option>
+                        <option {{ $record && $record->language==2 ? 'selected':'' }} value="2">Ingles</option>
+                    </select>             
+
+                   
+                    </div>       
+                </div>
+
 
                 @if($Category->id != 2  && $Category->id != 7  && $Category->id != 8 && $Category->id != 9)
                 <div class="form-group">
@@ -246,6 +259,8 @@
 
                     </div>
                 @endif
+
+                
 
 
                 <div class="btn-group col-md-offset-2">

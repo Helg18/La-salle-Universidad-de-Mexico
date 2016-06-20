@@ -392,7 +392,7 @@ function Category9(){
     }
 
     this.showContent2 =  function(index,index2){
-
+		$('.descripcionTituloContacto').fadeIn('slow');	// Mostramos la descripcion del contacto
         //Esta funcion pintaria el contenido que hay cuando le damos clic al nuevo submenu
         var post = d.posts[index].children[index2]; //leo el hijo y ya tengo acceso a el
         // console.log(post);
@@ -437,8 +437,6 @@ function calendario(){
 
 
     })
-
-
 
     //Calendario de enmedio
 
@@ -550,9 +548,9 @@ function open_modal(element){
     $('.custom-modal img').attr('src',post.picture_url);
     $('.custom-modal h5').html(post.title);
     // $('.custom-modal .text').html(post.paragraph_1_html);
-    $('#textogeneral').val(post.paragraph_1_html);
-
-
+	
+    //$('#textogeneral').val(post.paragraph_1_html);
+	$('#textogeneral').html(post.paragraph_1_html); // Se puso como div y no como textarea
 
     modal.open();
 }
@@ -784,7 +782,7 @@ function lineatiempo(){
 
     $('#myCarouselLaSalle').append(control);  
 
-    document.getElementById("myCarouselLaSalle").style.display = "none";
+    //document.getElementById("myCarouselLaSalle").style.display = "none";
 }
 
 function noticias(){

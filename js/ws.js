@@ -13,18 +13,19 @@ var initial_data = {},
     AO = {},
     offer = false,
     slider = false,
-    select_box = false
-    ;
+    select_box = false;
 
 
 $(document).ready(function(){
 
-    getInitialData();
+    var id = getUrlVars()["id"];
+    if(id==0 || id==""){id=1;}
+
+    getInitialData(id);
+    
     modal = $('[data-remodal-id=modal2]').remodal({
         modifier: 'with-red-theme'
     });
-
-
     
 
     $( "#buscarpost" ).click(function() {
@@ -64,10 +65,13 @@ $(document).ready(function(){
 
 
 
-function getInitialData(){
+function getInitialData(lang){
 
+    if(lang==1 || lang=="" || lang==undefined){ruta = 'initial-data';}else{
+        ruta = 'initial-data-e';
+    }
 
-    $.get( url + 'initial-data', function(data){
+    $.get( url + ruta, function(data){
 
         initial_data = data;
         for (con=0;con<initial_data.categories.length;con++){
@@ -85,10 +89,6 @@ function getInitialData(){
             }); 
 
         }
-
-
-
-        
 
         C1 = new Category1();
         C2 = new Category2();
@@ -413,6 +413,8 @@ function calendario(){
 
     //Limpiando las categorias del calendario
     ul.html('');
+    
+    console.log(initial_data.calendar_labels);
 
     //Categorias del calendario
     $.each(initial_data.calendar_labels, function(index,label){
@@ -1050,3 +1052,17 @@ function AcademicOffer(){
     this.showContent(0);
 }
 
+
+
+function getUrlVars()
+  {
+      var vars = [], hash;
+      var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for(var i = 0; i < hashes.length; i++)
+      {
+          hash = hashes[i].split('=');
+          vars.push(hash[0]);
+          vars[hash[0]] = hash[1];
+      }
+      return vars;
+  }

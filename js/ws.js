@@ -473,8 +473,6 @@ function calendario(){
         }
     });
 
-
-
     muestraPrevioEventos(initial_data.calendar);
     marcaDiasCalendario({month: initial_month, year: initial_year});
 }
@@ -510,7 +508,6 @@ function muestraPrevioEventos(posts, custom_date){
         $(noticia + ' .tituloCalendario').html(post.title.substring(0,30) + '...');
         $(noticia + ' .img-post').attr('src',post.picture_url);
         $(noticia + ' a').data('index',index);
-        //console.log($(noticia + ' a').data('index'));
 
 
     });

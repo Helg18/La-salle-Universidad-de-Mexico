@@ -22,6 +22,8 @@ $(document).ready(function(){
     if(id==0 || id==""){id=1;}
 
     getInitialData(id);
+
+
     
     modal = $('[data-remodal-id=modal2]').remodal({
         modifier: 'with-red-theme'
@@ -35,11 +37,9 @@ $(document).ready(function(){
             var flag=0;
             for(con=0;con<x;con++){
 
-                // var resultado = datalists.options.namedItem(this.value).value;
-                // console.log(resultado);
-
+                
                 var valorbuscar = document.getElementById("buscar").value;   
-                //console.log(valorbuscar);
+                
                 
                 if(datalists.options.namedItem(valorbuscar).value !== null && flag==0)
                 {
@@ -105,6 +105,8 @@ function getInitialData(lang){
         investigacion();
         noticias();
         lineatiempo();
+
+        document.getElementById("myCarouselLaSalle").style.display = "none";
 
     });
 }
@@ -775,7 +777,7 @@ function lineatiempo(){
 
     $('#myCarouselLaSalle').append(control);  
 
-    //document.getElementById("myCarouselLaSalle").style.display = "none";
+    
 }
 
 function noticias(){

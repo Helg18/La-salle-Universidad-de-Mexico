@@ -61,7 +61,6 @@ class V1FrontendController extends Controller
         
     }
 
-
     public function getInitialDataE(){
 
         $data = Category::allForJson(2);
@@ -73,13 +72,8 @@ class V1FrontendController extends Controller
         return response()->json(
             ['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important, 'blog'=>$blog, 'academic_offer'=>$academic]
         );
-
         
     }
-
-    
-
-
 
 
     public function postCalendarEvents(Request $request){

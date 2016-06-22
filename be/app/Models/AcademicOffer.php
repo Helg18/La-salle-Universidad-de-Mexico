@@ -154,15 +154,6 @@ class AcademicOffer extends Model
         return implode(", ",$tmp);
     }
 
-    /*public static function to_json(){
-        $tmp = [];
-
-        foreach($this->sliders() as $x){
-
-        }
-    }*/
-
-
     public function getPictureUrlAttribute(){
         if(!$this->picture) return "";
         return asset('images/academic/' . $this->picture);

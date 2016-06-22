@@ -23,7 +23,6 @@ class AngularController extends Controller
     public function posts($id){
 
         $post = Post::find($id);
-        //dd($post->posts);
         return response()->json($post->posts());
     }
 
@@ -39,8 +38,6 @@ class AngularController extends Controller
         $post->parent_id = $request->parent_id;
         $post->language = $request->language;
         $post->save();
-
-
         return response()->json(['message'=>'Información guardada exitosamente']);
     }
 

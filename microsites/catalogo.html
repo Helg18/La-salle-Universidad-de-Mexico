@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+
+<!-- Jose -->
+  <!-- Create:hdzlruben.
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>La Salle</title>
+  <meta name="description" content="">
+  <meta name="author" content="Kreativeco">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Number Safari
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+  
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/noticias/noticias.css">
+  <link rel="stylesheet" href="../css/modal/remodal.css">
+  <link rel="stylesheet" href="../css/sliderPrincipal/sliderPrincipal.css"/>
+  <link rel="stylesheet" href="../css/modal/remodal-default-theme.css">
+  <link rel="stylesheet" href="../css/calendario/responsive-calendar.css">
+  <link rel="stylesheet" href="../css/calendario/sliderNoticias.css" />
+  <link rel="stylesheet" href="../css/menuFullScreen/menuFullScreen.css" />
+  <link rel="stylesheet" href="../css/buttons/button.css">
+  <link rel="stylesheet" href="../css/slider_menu_oferta/jquery.bxslider.css" />
+
+  <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
+
+  <style>
+      .carousel-indicators .active { background-image: url("") !important; }  
+	  
+
+	  .contenedorBotonesMenu{background:rgba(255, 255, 255, 0.9);height: 350px;}
+	  .contenedorFormulario2{ vertical-align: middle; position: relative; top: 30%; left: 10%; width: 90%;}
+	  .titulo-catalogo{font-family: 'Helvetica'; font-style: normal; color: #1f285d;}
+  </style>
+  
+
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="http://www.lasalle.mx/wp-content/themes/lasalle/images/favicon.ico">
+    <script>
+        var tmp = new Date(),
+            initial_date = tmp.getFullYear() + '-' + (tmp.getMonth()+1),
+            initial_year = tmp.getFullYear(),
+            initial_month = tmp.getMonth()+1
+                ;
+
+        //console.log(tmp);
+        //console.log(initial_date);
+    </script>
+
+</head>
+<body>
+  
+  <!-- BTN MENU PRINCIPAL -->
+  <button id="nav_main" class="menuButtonScroll"></button> 
+  <!-- FIN BTN MENU PRINCIPAL -->
+
+
+
+  <!--  MENU HEADER SEARCH -->
+  <div class="container" id="buttonsHeader">
+    <div class="row">
+      <header>      
+        <div class="six columns logo">
+          <img src="../images/nuevosArtes/header/logo.png" alt="La Salle">
+        </div>    
+        <div class="six columns searchBar">
+          <div class="contenedorIdioma">
+            <img class="" alt="En" src="../images/nuevosArtes/idioma_botones/button_english_selected.png" usemap="#en">
+            <map name="en" id="en">
+              <area alt="" title="" href="#" shape="poly" coords="10,1,17,9,2,30,33,31,41,7,38,3,13,1" />
+            </map>
+            <img class="" alt="Es" src="../images/nuevosArtes/idioma_botones/button_spanish_Selected.png" usemap="#es">
+            <map name="es" id="es">
+              <area alt="" title="" href="#" shape="poly" coords="10,1,17,9,2,30,33,31,41,7,38,3,13,1" />
+            </map>
+          </div>        
+          <div class="contenedorFormulario">
+            <form class="formSearch">
+              <input id="buscar"   name="buscar" value="" class="search" type="text" list="postdl" name="search" placeholder="Ingresa tu busqueda" />
+
+              <datalist id="postdl" name='postdl'>
+                
+              </datalist>
+              <datalist id="postdls" name='postdls'>
+                
+              </datalist>
+              <input id="buscarpost" onclick='return false;' class="submit" type="submit" value="" />
+            </form>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+
+  <!--  FIN HEADER SEARCH -->
+
+
+
+  <!-- SECCION RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- HEADER SEARCH RESPONSIVE -->
+
+  <div class="container " id="responsiveMenuHeader">
+    <div class="row">
+      <header>
+
+        <div class="six columns logo">
+          <img src="../images/nuevosArtes/header/logo.png" alt="La Salle">
+        </div>
+
+        <div class="six columns searchBar backgroundResponsive">
+          <div class="contenedorIdioma">
+            <img class="" alt="En" src="../images/nuevosArtes/idioma_botones/button_english_selected.png" usemap="#en">
+            <map name="en" id="en">
+              <area alt="" title="" href="#" shape="poly" coords="10,1,17,9,2,30,33,31,41,7,38,3,13,1" />
+            </map>
+            <img class="" alt="Es" src="../images/nuevosArtes/idioma_botones/button_spanish_Selected.png" usemap="#es">
+            <map name="es" id="es">
+              <area alt="" title="" href="#" shape="poly" coords="10,1,17,9,2,30,33,31,41,7,38,3,13,1" />
+            </map>
+          </div>
+            
+          <div class="contenedorFormulario">
+            <form class="formSearch">
+              <input class="search" type="text" name="search" placeholder="Ingresa tu palabra..." />
+              <input class="submit" type="submit" value="" />
+            </form>
+          </div>
+
+          <div class="menuPrincipal">
+            <button id="open_menu_principal" class="btn_menu_principal_responsive"></button>
+           </div>
+         </div>
+
+      </header>
+    </div>
+  </div>
+
+
+  <!-- FIN SECCION RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- FIN HEADER SEARCH RESPONSIVE -->
+
+
+  <!-- SECCION RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- MENU PRINCIPAL -->
+
+  <div class="container">
+    <div class="opc_btn_menu_responsive" id="opc_menu_principal">
+      
+      <div class="row">
+        <button id="botonUnoResponsive">Universidad La Salle</button>
+        <hr></hr>
+      </div>
+      
+      <div class="row">
+        <button id="botonDosResponsive">Oferta Educativa</button>
+        <hr></hr>
+      </div>
+      
+      <div class="row">
+        <button id="botonTresResponsive" >Vida en Estudiantil</button>
+        <hr></hr>
+      </div>
+      
+      <div class="row">
+        <button id="botonCuatroResponsive">Servicios</button>
+        <hr></hr>
+      </div>
+      
+      <div class="row">
+        <button id="botonCincoResponsive">Vinculación Empresarial</button>
+        <hr></hr>
+      </div>
+      
+      <div class="row">
+        <button id="botonSeisResponsive">Acción Social</button>
+        <hr></hr>
+      </div>
+      
+      <div class="row">
+        <button id="botonSieteResponsive">Investigación</button>
+        <hr></hr>
+      </div>
+      
+      <div class="row">
+        <button id="botonOchoResponsive">Contacto</button>
+        <hr></hr>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FIN SECCION RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- FIN MENU PRINCIPAL -->
+
+
+
+  <!--  SECCION RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--  MENU PERFILES Y BANNER -->
+
+
+
+  <div class="container bannerPrincipalResponsive" id="bannerPrincipalResponsive">
+    <div class="row">
+      <img src="../images/nuevosArtes/bannerPrincipal/home_banner.png">
+    </div>
+  </div>
+    
+  <div id="perfilesResponsive" class="container perfilesResponsive">
+    
+    <div class="row">
+      <button id="Aspirante"class="unoDerecha">Aspirante</button>
+      <button id="Estudiante">Estudiante</button>
+      <button id="Docente" class="dosIzquierda">Docente</button>
+    </div>
+      
+    <div class="row">
+      <button id="Administrativo" class="unoDerecha">Administrativo</button>
+      <button id="Egresado">Egresado</button>
+      <button id="Padres" class="dosIzquierda">Padre de Familia</button>
+    </div>
+      
+    <div class="row">
+      <button id="International">International Student</button>
+    </div>
+  </div>
+
+
+  <!--  FIN SECCION RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--  FIN MENU PERFILES Y BANNER -->
+
+
+
+  <!--  SECCION VIDEO Y MENU PRINCIPAL
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="bannerPrincipals marginEntreSecciones">
+    
+    <div id="video-container" >
+      <video autoplay loop muted class="fillWidth">
+        <source src="../images/nuevosArtes/video/nuevos.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="video/trailer.webm" type='video/webm; codecs="vp8, vorbis"' />
+        Video not supported.
+      </video>
+        
+      <div class="container">
+        <div class="botonesMenu" id="menuNavegacionPrincipal" style="width:100%">
+          <div class="contenedorBotonesMenu"> 
+            
+  
+            <div class="contenedorFormulario2">
+				<div>
+					<h3 class="titulo-catalogo">Cat&aacute;logo de Docentes y Especialistas</h3>
+				</div>
+            <form class="formSearch">
+              <input id="buscar" name="buscar" value="" class="search" type="text" list="postdl" placeholder="Ingresa tu busqueda" style="font-style: inherit;">
+
+              <datalist id="postdl" name="postdl">
+                
+              <option value="La Salle Hoy">La Salle Hoy</option><option value="Misión, Visión e Ideas">Misión, Visión e Ideas</option><option value="Modelo Educativo">Modelo Educativo</option><option value="Acreditaciones">Acreditaciones</option><option value="Plan de desarrollo Institucional">Plan de desarrollo Institucional</option><option value="Reglamento">Reglamento</option><option value="Historia">Historia</option><option value="Identidad ">Identidad </option><option value="Campus">Campus</option><option value="Arte y cultura">Arte y cultura</option><option value="Deportes">Deportes</option><option value="Aguilas La salle, grupos representativos">Aguilas La salle, grupos representativos</option><option value="Grupos Estudiantiles">Grupos Estudiantiles</option><option value="Desarrollo Humano y espiritualidad">Desarrollo Humano y espiritualidad</option><option value="La Salle por la tierra">La Salle por la tierra</option><option value="Universidad Segura">Universidad Segura</option><option value="Medios Institucionales">Medios Institucionales</option><option value="La condesa barrio Univeristario">La condesa barrio Univeristario</option><option value="Biblioteca">Biblioteca</option><option value="ULSABus">ULSABus</option><option value="Hospedaje para estudiantes">Hospedaje para estudiantes</option><option value="Renta de instalaciones">Renta de instalaciones</option><option value="Convenio con la Universidad de California">Convenio con la Universidad de California</option><option value="Rehabilitación de jardín aledaño a La Salle">Rehabilitación de jardín aledaño a La Salle</option><option value="MKT-DAY">MKT-DAY</option><option value="Aspectos bioéticos de la revolución genómica">Aspectos bioéticos de la revolución genómica</option><option value="Aspectos bioéticos de la revolución genómica">Aspectos bioéticos de la revolución genómica</option><option value="La Salle ante los nuevos retos del docente">La Salle ante los nuevos retos del docente</option><option value="Estancias investigación y académicas">Estancias investigación y académicas</option><option value="Rehabilitación de jardín aledaño a La Salle">Rehabilitación de jardín aledaño a La Salle</option><option value="American Society of Civil Engineers en La Salle">American Society of Civil Engineers en La Salle</option><option value="Servicio Social">Servicio Social</option><option value="Despacho Probono">Despacho Probono</option><option value="CADES">CADES</option><option value="Misiones">Misiones</option><option value="Regularización Académica ">Regularización Académica </option><option value="Centro Poeta ">Centro Poeta </option><option value="Impresión en braille">Impresión en braille</option><option value="Centros Comunitarios">Centros Comunitarios</option><option value="Consultorio Médico">Consultorio Médico</option><option value="Incubadora de Negocios">Incubadora de Negocios</option><option value="Negocios Familiares">Negocios Familiares</option><option value="Centro de Patentamiento">Centro de Patentamiento</option><option value="Capacitacion Empresarial">Capacitacion Empresarial</option><option value="Convenios Empresariales">Convenios Empresariales</option><option value="Bolsa de Trabajo">Bolsa de Trabajo</option><option value="Prácticas Profesionales">Prácticas Profesionales</option><option value="Especialistas y conferencistas">Especialistas y conferencistas</option><option value="Investigación">Investigación</option><option value="PROYECTOS">PROYECTOS</option><option value="PUBLICACIONES">PUBLICACIONES</option><option value="Direccion de Atención al Publico">Direccion de Atención al Publico</option><option value="Organigrama Institucional">Organigrama Institucional</option><option value="Mapas">Mapas</option><option value="¿Cómo llegar?">¿Cómo llegar?</option><option value="Redes sociales institucionales">Redes sociales institucionales</option><option value="Inscripción a los exámenes extraordinarios">Inscripción a los exámenes extraordinarios</option><option value="Inauguración de la capilla de Unidad Santa Teresa">Inauguración de la capilla de Unidad Santa Teresa</option><option value="Primera Etapa (1962-1967). Rector Dr. Manuel de Jesús Álvarez Campos, fsc">Primera Etapa (1962-1967). Rector Dr. Manuel de Jesús Álvarez Campos, fsc</option><option value="Segunda Etapa (1968-1974). Rector Dr. Guillermo Alba López, fsc ">Segunda Etapa (1968-1974). Rector Dr. Guillermo Alba López, fsc </option><option value="Tercera Etapa (1974-1983). Rector Dr. Francisco Leonel Cervantes Lechuga, fsc ">Tercera Etapa (1974-1983). Rector Dr. Francisco Leonel Cervantes Lechuga, fsc </option><option value="Cuarta Etapa (1983-1988). Rector Mtro. César Rangel Barrera, fsc">Cuarta Etapa (1983-1988). Rector Mtro. César Rangel Barrera, fsc</option><option value="Quinta Etapa (1988-1991). Rector Dr. José Cervantes Hernández, fsc">Quinta Etapa (1988-1991). Rector Dr. José Cervantes Hernández, fsc</option><option value="Sexta Etapa (1991-2000). Rector Dr. Lucio Tazzer De Schriver, fsc">Sexta Etapa (1991-2000). Rector Dr. Lucio Tazzer De Schriver, fsc</option><option value="Séptima Etapa (2000-2012). Rectores: Mtro. Raúl Valadez García, fsc (2000- 2006); Dr. Ambrosio Luna Salas, fsc (2006-2009); Mtro. Martín Rocha Pedrajo, fsc (2009-2011) y Mtro. Enrique González Álvarez, fsc (2011-…) ">Séptima Etapa (2000-2012). Rectores: Mtro. Raúl Valadez García, fsc (2000- 2006); Dr. Ambrosio Luna Salas, fsc (2006-2009); Mtro. Martín Rocha Pedrajo, fsc (2009-2011) y Mtro. Enrique González Álvarez, fsc (2011-…) </option></datalist>
+              <datalist id="postdls" name="postdls">
+                
+              <option id="La Salle Hoy" value="1">La Salle Hoy</option><option id="Misión, Visión e Ideas" value="2">Misión, Visión e Ideas</option><option id="Modelo Educativo" value="3">Modelo Educativo</option><option id="Acreditaciones" value="4">Acreditaciones</option><option id="Plan de desarrollo Institucional" value="5">Plan de desarrollo Institucional</option><option id="Reglamento" value="6">Reglamento</option><option id="Historia" value="7">Historia</option><option id="Identidad " value="54">Identidad </option><option id="Campus" value="11">Campus</option><option id="Arte y cultura" value="20">Arte y cultura</option><option id="Deportes" value="23">Deportes</option><option id="Aguilas La salle, grupos representativos" value="24">Aguilas La salle, grupos representativos</option><option id="Grupos Estudiantiles" value="25">Grupos Estudiantiles</option><option id="Desarrollo Humano y espiritualidad" value="26">Desarrollo Humano y espiritualidad</option><option id="La Salle por la tierra" value="27">La Salle por la tierra</option><option id="Universidad Segura" value="28">Universidad Segura</option><option id="Medios Institucionales" value="29">Medios Institucionales</option><option id="La condesa barrio Univeristario" value="30">La condesa barrio Univeristario</option><option id="Biblioteca" value="12">Biblioteca</option><option id="ULSABus" value="14">ULSABus</option><option id="Hospedaje para estudiantes" value="15">Hospedaje para estudiantes</option><option id="Renta de instalaciones" value="16">Renta de instalaciones</option><option id="Convenio con la Universidad de California" value="34">Convenio con la Universidad de California</option><option id="Rehabilitación de jardín aledaño a La Salle" value="106">Rehabilitación de jardín aledaño a La Salle</option><option id="MKT-DAY" value="110">MKT-DAY</option><option id="Aspectos bioéticos de la revolución genómica" value="111">Aspectos bioéticos de la revolución genómica</option><option id="Aspectos bioéticos de la revolución genómica" value="39">Aspectos bioéticos de la revolución genómica</option><option id="La Salle ante los nuevos retos del docente" value="44">La Salle ante los nuevos retos del docente</option><option id="Estancias investigación y académicas" value="82">Estancias investigación y académicas</option><option id="Rehabilitación de jardín aledaño a La Salle" value="104">Rehabilitación de jardín aledaño a La Salle</option><option id="American Society of Civil Engineers en La Salle" value="105">American Society of Civil Engineers en La Salle</option><option id="Servicio Social" value="83">Servicio Social</option><option id="Despacho Probono" value="84">Despacho Probono</option><option id="CADES" value="85">CADES</option><option id="Misiones" value="86">Misiones</option><option id="Regularización Académica " value="87">Regularización Académica </option><option id="Centro Poeta " value="88">Centro Poeta </option><option id="Impresión en braille" value="89">Impresión en braille</option><option id="Centros Comunitarios" value="90">Centros Comunitarios</option><option id="Consultorio Médico" value="91">Consultorio Médico</option><option id="Incubadora de Negocios" value="75">Incubadora de Negocios</option><option id="Negocios Familiares" value="76">Negocios Familiares</option><option id="Centro de Patentamiento" value="77">Centro de Patentamiento</option><option id="Capacitacion Empresarial" value="78">Capacitacion Empresarial</option><option id="Convenios Empresariales" value="79">Convenios Empresariales</option><option id="Bolsa de Trabajo" value="80">Bolsa de Trabajo</option><option id="Prácticas Profesionales" value="81">Prácticas Profesionales</option><option id="Especialistas y conferencistas" value="100">Especialistas y conferencistas</option><option id="Investigación" value="94">Investigación</option><option id="PROYECTOS" value="95">PROYECTOS</option><option id="PUBLICACIONES" value="96">PUBLICACIONES</option><option id="Direccion de Atención al Publico" value="98">Direccion de Atención al Publico</option><option id="Organigrama Institucional" value="99">Organigrama Institucional</option><option id="Mapas" value="101">Mapas</option><option id="¿Cómo llegar?" value="102">¿Cómo llegar?</option><option id="Redes sociales institucionales" value="103">Redes sociales institucionales</option><option id="Inscripción a los exámenes extraordinarios" value="108">Inscripción a los exámenes extraordinarios</option><option id="Inauguración de la capilla de Unidad Santa Teresa" value="109">Inauguración de la capilla de Unidad Santa Teresa</option><option id="Primera Etapa (1962-1967). Rector Dr. Manuel de Jesús Álvarez Campos, fsc" value="139">Primera Etapa (1962-1967). Rector Dr. Manuel de Jesús Álvarez Campos, fsc</option><option id="Segunda Etapa (1968-1974). Rector Dr. Guillermo Alba López, fsc " value="141">Segunda Etapa (1968-1974). Rector Dr. Guillermo Alba López, fsc </option><option id="Tercera Etapa (1974-1983). Rector Dr. Francisco Leonel Cervantes Lechuga, fsc " value="142">Tercera Etapa (1974-1983). Rector Dr. Francisco Leonel Cervantes Lechuga, fsc </option><option id="Cuarta Etapa (1983-1988). Rector Mtro. César Rangel Barrera, fsc" value="143">Cuarta Etapa (1983-1988). Rector Mtro. César Rangel Barrera, fsc</option><option id="Quinta Etapa (1988-1991). Rector Dr. José Cervantes Hernández, fsc" value="144">Quinta Etapa (1988-1991). Rector Dr. José Cervantes Hernández, fsc</option><option id="Sexta Etapa (1991-2000). Rector Dr. Lucio Tazzer De Schriver, fsc" value="145">Sexta Etapa (1991-2000). Rector Dr. Lucio Tazzer De Schriver, fsc</option><option id="Séptima Etapa (2000-2012). Rectores: Mtro. Raúl Valadez García, fsc (2000- 2006); Dr. Ambrosio Luna Salas, fsc (2006-2009); Mtro. Martín Rocha Pedrajo, fsc (2009-2011) y Mtro. Enrique González Álvarez, fsc (2011-…) " value="146">Séptima Etapa (2000-2012). Rectores: Mtro. Raúl Valadez García, fsc (2000- 2006); Dr. Ambrosio Luna Salas, fsc (2006-2009); Mtro. Martín Rocha Pedrajo, fsc (2009-2011) y Mtro. Enrique González Álvarez, fsc (2011-…) </option></datalist>
+              <input id="buscarpost" onclick="return false;" class="submit" type="submit" value="">
+            </form>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  FIN SECCION VIDEO Y MENU PRINCIPAL
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+  
+
+
+  <!--  SECCION MENU PERFILES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+ 
+
+
+  <!-- FIN SECCION ACCESO DIRECTO 
+  ––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+
+
+
+
+
+  <!-- SECCION RESPONSIVE ACCESOS DIRECTO 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="container marginApartirDeCalendario">
+    <section class="accesoDirectoResponsive">
+      <div class="row">      
+        <div class="two columns">
+          <div class="primerCirculo">
+            <a href="http://delasalle.ulsa.edu.mx/actualizacion/login.aspx" target="NEW"><img src="../images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Egresados_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Egresados_blue.png'"></a><br>
+            <img src="../images/nuevosArtes/accesoDirecto/texto_actualizacion_egresados.png">
+          </div>
+
+          <div class="segundoCirculo">
+            <a href="http://sgu.ulsa.edu.mx/psulsa/" target="NEW"><img src="../images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Fichas_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Fichas_blue.png'"></a><br>
+            <img src="../images/nuevosArtes/accesoDirecto/texto_descarga_ficha.png">
+          </div>
+        </div>
+
+        <div class="two columns">
+          <div class="primerCirculo">
+            <a href="http://sgu.ulsa.edu.mx/psulsa/" target="NEW"><img src="../images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Pagos_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Pagos_Blue.png'"></a><br>
+            <img src="../images/nuevosArtes/accesoDirecto/texto_pagos-por-internet.png">
+          </div>
+
+          <div class="segundoCirculo">
+            <a href="http://delasalle.ulsa.mx/pagos/" target="NEW"><img src="../images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_Facturacion_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_Facturacion_Blue.png'"></a><br>
+            <img src="../images/nuevosArtes/accesoDirecto/texto_factura-electronica.png">
+          </div>
+        </div>
+
+        <div class="two columns">
+          <div class="primerCirculo">
+            <a href="http://lasalle.mx/profesionalesconvalor/" target="NEW"><img src="../images/nuevosArtes/accesoDirecto/Button_profesionales.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_profesionales_red.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_profesionales.png'"></a><br>
+            <img src="../images/nuevosArtes/accesoDirecto/texto_profesionales.png">
+          </div>
+
+          <div class="segundoCirculo">
+            <a href="http://hoy.lasalle.mx/nuevo-portal-de-pagos-en-linea/" target="NEW"><img src="../images/nuevosArtes/accesoDirecto/Button_todo-en-1.png" onmouseover="this.src='images/nuevosArtes/accesoDirecto/Button_todo-en-1_OVER.png'" onmouseout="this.src='images/nuevosArtes/accesoDirecto/Button_todo-en-1.png'"></a><br>
+            <img src="../images/nuevosArtes/accesoDirecto/texto_todo.png">
+          </div>
+        </div>     
+      </div>
+    </section>
+  </div>
+  
+</div>
+
+<!-- FIN SECCION RESPONSIVE ACCESOS DIRECTO 
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+
+
+
+
+
+<!-- LINE TITLE SECCION FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!--<div class="redLaSalleContenedor">
+    <div class="container">
+      
+      <div class="line">
+        <p>Red La Salle</p>
+      </div>
+
+    </div>  
+  </div>-->
+
+<!-- FIN LINE TITLE SECCION FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+
+
+
+
+
+<!--  SECCION PREFOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="preFooter">
+    <div class="container">
+    
+      <div class="two columns logoProfesionales">
+        <div class="iconoProfesionales">
+          <img src="../images/nuevosArtes/footer/icon_ProfesionalesValor.png">
+        </div>
+      </div>
+
+      <div class="ten columns">
+        <div class="redLaSalle">
+          <ul class="redLaSalleResponsiveUl">
+            <li class="mapaSitio"><img src="../images/nuevosArtes/footer/icon_redArrow.png"><a href="">Mapa del Sitio</a></li>
+            <li><img src="../images/nuevosArtes/footer/icon_redArrow.png"><a href="">Directorio</a></li>
+            <li><img src="../images/nuevosArtes/footer/icon_redArrow.png"><a href="">Trabaja en La Salle</a></li>
+            <li><img src="../images/nuevosArtes/footer/icon_redArrow.png"><a href="">Universidad Segura</a></li>
+            <li><img src="../images/nuevosArtes/footer/icon_redArrow.png"><a href="">¿Como llegar?</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  FIN SECCION PREFOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+
+
+
+
+<!--  SECCION LOGOS FOOTER RESPONSIVE
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="footerResponsive logosResponsive" id="logosResponsive">
+    <div class="container"> 
+      <div class="logosFooterResponsive">
+        
+        <div class="logoUnoResponsive">
+          <img src="../images/nuevosArtes/footer/icon_LogoSalleUno.png">
+        </div>
+              
+        <div class="logoDosResponsive">
+          <img src="../images/nuevosArtes/footer/icon_LogoSalleDos.png">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- FIN SECCION LOGOS FOOTER RESPONSIVE
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+
+
+
+
+  <!--  SECCION ACREDITACION RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="acreditacion_responsive">
+    <div class="container">
+    <button id="btn_proceso_acreditacion_responsive" class="btn_acreditacion_responsive">Proceso de Acreditacion La Salle</button>
+    </div>
+  </div>
+
+
+  <div class="postFooter" id="acreditacion_la_salle_responsive">
+    <div class="container"> 
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>    
+    </div>
+  </div>
+
+  <!--  FIN SECCION ACREDITACION RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+<!-- SECCION LOCALIDADES FOOTER 
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="footerLocalidades">
+    <div class="container"> 
+      <div class="columnasFooter">
+        <div class="listaLocalidades">
+          
+          <div class="listaUnoLocalidades">
+            <ul>
+              <li><a href="">Bajio</a></li>
+              <li><a href="">Cancun</a></li>
+              <li><a href="">Chihuahua</a></li>
+              <li><a href="">Cuernavaca</a></li>
+              <li><a href="">Laguna</a></li>
+              <li><a href="">Monterrey</a></li>
+              <li><a href="">Morelia</a></li>
+            </ul>
+          </div>
+          
+          <div class="listaDosLocalidades">
+            <ul>
+              <li><a href="">Nezahualcoyotl</a></li>
+              <li><a href="">Noroeste</a></li>
+              <li><a href="">Oaxaca</a></li>
+              <li><a href="">Pachuca</a></li>
+              <li><a href="">Puebla</a></li>
+              <li><a href="">Saltillo</a></li>
+              <li><a href="">Victoria</a></li>
+            </ul>
+          </div>
+        </div>    
+      </div>
+
+      <div class="columnasFooter">
+        <div class="text_responsive_contacto">
+          <p class="text_responsive_title">Contáctanos: </p>
+          <p class="text_responsive_telephone">+52 1 5278-9500</p>
+          <p>Benjamin Franklin 47 Col. Condesa.<br>Del. Cuauhtemoc México DF. CP 06140</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIN SECCION LOCALIDADES FOOTER 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+  
+    <!-- SECCION FOOTER FULL RESPONSIVE 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="footer" id="not_responsive">
+    <div class="container"> 
+      <div class="row footer_new_row">
+        <!--<div style="color:transparent;" class="two columns">
+         .
+        </div>
+        <div class="two columns">
+         <img src="../images/nuevosArtes/footer/icon_ProfesionalesValor.png">
+        </div>-->
+        <div class="two columns">
+           <img src="../images/nuevosArtes/footer/icon_LogoSalleUno.png">
+        </div>
+        <div class="three columns">
+          <img src="../images/nuevosArtes/footer/icon_LogoSalleDos.png">
+        </div>
+
+        <div class="seven columns white menuIconsRedes">
+          <nav>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/LaSalleMX" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_1.png"></a>
+              </li>
+               <li>
+                <a href="https://twitter.com/LaSalle_MX" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_2.png"></a>
+              </li>
+               <li>
+                <a href="https://www.instagram.com/lasallemx/" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_3.png"></a>
+              </li>
+               <li>
+                <a href="" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_4.png"></a>
+              </li>
+               <li>
+                <a href="" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_5.png"></a>
+              </li>
+               <li>
+                <a href="" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_6.png"></a>
+              </li>
+               <li>
+                <a href="https://es.foursquare.com/v/universidad-la-salle/4b8ffab0f964a520c16d33e3?#tipsPage=2" target="_blank"><img src="../images/nuevosArtes/footer_icons_red_social/social_7.png"></a>
+              </li>
+               <li>
+                <a href="" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_8.png"></a>
+              </li>
+              <li>
+                <a href="https://vine.co/u/1033132484508213248" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_9.png"></a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/lasallemx/pins/" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_10.png"></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/user/LaSalleMX" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_11.png"></a>
+              </li>
+            </ul>
+          </nav>
+          <p>Benjamin Franklin 47 Col. Condesa. Del. Cuauhtemoc</p>
+          <p>Ciudad de México, 06140. <span>(+52) 5278-9500</span></p>
+        </div>
+      </div>
+      <div class="row new_list_estados">
+        <ul>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://bajio.delasalle.edu.mx/">Bajio</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://lasallecancun.edu.mx/">Cancun</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://ulsachihuahua.edu.mx/">Chihuahua</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsac.edu.mx/">Cuernavaca</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsalaguna.edu.mx/">Laguna</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ceslas.mx/">Monterrey</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.lasallemorelia.edu.mx/">Morelia</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://ulsaneza.edu.mx/">Nezahualcoyotl</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsa-noroeste.edu.mx/">Noroeste</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsaoaxaca.edu.mx/">Oaxaca</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.lasallep.edu.mx/ulsaweb/index.php/">Pachuca</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.universidadlasallebenavente.edu.mx/">Puebla</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsasaltillo.edu.mx/">Saltillo</a></li>
+          <li><img src="../images/nuevosArtes/footer/icon_whiteArrow.png"><a href="http://www.ulsavictoria.edu.mx/">Victoria</a></li>    
+        </ul>
+      </div>
+      <!---<div class="row contacto_new_contact">
+        <div class="six columns telefonoContactanos"><p>Contáctanos: <span>+52 1 5278-9500</span></p></div>
+        <div class="six columns contactanoFooter"> <p>Benjamin Franklin 47 Col. Condesa. Del. Cuauhtemoc México DF. CP 06140</p></div>
+      </div>-->
+    </div>
+  </div>
+
+  <!-- FIN SECCION FOOTER FULL RESPONSIVE 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+ 
+
+
+  <!-- SECCION FOOTER FULL NOT RESPONSIVE 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="footer" id="footerResponsive">
+    <div class="container"> 
+
+      <div class="columnasFooter" id="logosFooterGris">
+        <div class="logosFooter">
+          <img src="../images/nuevosArtes/footer/icon_LogoSalleUno.png"><br>
+          <img src="../images/nuevosArtes/footer/icon_LogoSalleDos.png"><br>
+          <p>Aviso de Privacidad</p>
+        </div>
+      </div>
+
+      <div class="columnasFooter">
+        <div class="listaLocalidades">
+          
+          <div class="listaUnoLocalidades">
+            <ul>
+              <li><a href="http://bajio.delasalle.edu.mx/" target="NEW">Bajio</a></li>
+              <li><a href="http://lasallecancun.edu.mx/" target="NEW">Cancun</a></li>
+              <li><a href="http://ulsachihuahua.edu.mx/" target="NEW">Chihuahua</a></li>
+              <li><a href="http://www.ulsac.edu.mx/" target="NEW">Cuernavaca</a></li>
+              <li><a href="http://www.ulsalaguna.edu.mx/" target="NEW">Laguna</a></li>
+              <li><a href="http://www.ceslas.mx/" target="NEW">Monterrey</a></li>
+              <li><a href="http://www.lasallemorelia.edu.mx/" target="NEW">Morelia</a></li>
+            </ul>
+          </div>
+          
+          <div class="listaDosLocalidades">
+            <ul>
+              <li><a href="http://ulsaneza.edu.mx/" target="NEW">Nezahualcoyotl</a></li>
+              <li><a href="http://www.ulsa-noroeste.edu.mx/" target="NEW">Noroeste</a></li>
+              <li><a href="http://www.ulsaoaxaca.edu.mx/" target="NEW">Oaxaca</a></li>
+              <li><a href="http://www.lasallep.edu.mx/ulsaweb/index.php/" target="NEW">Pachuca</a></li>
+              <li><a href="http://www.universidadlasallebenavente.edu.mx/" target="NEW">Puebla</a></li>
+              <li><a href="http://www.ulsasaltillo.edu.mx/" target="NEW">Saltillo</a></li>
+              <li><a href="http://www.ulsavictoria.edu.mx/" target="NEW">Victoria</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIN SECCION FOOTER FULL RESPONSIVE 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+
+
+
+
+
+  <!-- SECCION CONTENEDOR BOTON POSTFOOTER ACREDITACION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <div class="acreditacion">
+    <div style="text-align:center;"class="container">
+      <p>Profesionales con <span style="font-size:2em;" >Valor</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="acreditacion_white">
+    <div class="container">
+      <div class="two columns"><a href="http://delasalle.ulsa.mx/privacidad/" target="NEW">Aviso de Privacidad</a></div>
+      <div class="two columns"><a href="http://www.lasalle.mx/terminos-y-condiciones/" target="NEW">Terminos y Condiciones</a></div>
+      <div class="seven columns rightTextFooterAcreditacion"><button id="btn_process_success" class="btn_process_success"> <img id="imageUp" class="rotate" src="../images/nuevosArtes/footer/icon_redArrow.png">
+        <img id="downImageDown" class="rotate upImage" src="../images/nuevosArtes/footer/icon_redArrow.png">
+        </button>Proceso de Acreditacion La Salle</div>
+    </div>
+  </div>
+
+  <!-- FIN SECCION CONTENEDOR BOTON POSTFOOTER ACREDITACION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+
+
+
+
+
+
+
+  <!-- SECCION POSTFOOTER ACREDITACION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="postFooter" id="acreditacion_la_salle">
+    <div class="container"> 
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>    
+    </div>
+  </div>
+
+  <!-- FIN SECCION POSTFOOTER ACREDITACION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <!--  SECCION REDES SOCIALES RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="back_redes_responsive">
+   <div class="container ">
+    <div class="redesSocialesResponsive">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/LaSalleMX" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_1.png"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/LaSalle_MX" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_2.png"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/lasallemx/" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_3.png"></a>
+        </li>
+        <li>
+          <a href="" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_4.png"></a>
+        </li>
+        <li>
+          <a href="" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_5.png"></a>
+        </li>
+        <li>
+          <a href="" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_6.png"></a>
+        </li>
+        <li>
+          <a href="https://es.foursquare.com/v/universidad-la-salle/4b8ffab0f964a520c16d33e3?#tipsPage=2" target="_blank"><img src="../images/nuevosArtes/footer_icons_red_social/social_7.png"></a>
+        </li>
+        <li>
+          <a href="" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_8.png"></a>
+        </li>
+        <li>
+          <a href="https://vine.co/u/1033132484508213248" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_9.png"></a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.com/lasallemx/pins/" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_10.png"></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/LaSalleMX" target="NEW"><img src="../images/nuevosArtes/footer_icons_red_social/social_11.png"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <!--  FIN SECCION REDES SOCIALES RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="columnasDireccion">
+    <div class="container">
+      <div class="content_footer_contact_responsive" id="columnasDireccionFooterResponsive" >
+        <p class="telefonoContactanos">+52 1 5278-9500</p>
+        <p>Benjamin Franklin 47 Col. Condesa.<br>Del. Cuauhtemoc México DF. CP 06140</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!--  SECCION AVISO DE PRIVACIDAD RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="avisoDePrivacidad">
+    <div class="container">
+      <a href="http://delasalle.ulsa.mx/privacidad/" target="NEW">Aviso de Privacidad</a>
+    </div>
+  </div>
+
+  <!--  FIN SECCION AVISO DE PRIVACIDAD RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+  <!--  SECCION AVISO DE PRIVACIDAD RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="avisoDePrivacidad">
+    <div class="container">
+      <a href="http://www.lasalle.mx/terminos-y-condiciones/" target="NEW">Terminos y condiciones</a>
+    </div>
+  </div>
+
+
+  <!--  FIN SECCION AVISO DE PRIVACIDAD RESPONSIVE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+
+
+  <!-- MODALES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <div data-remodal-id="modal2" role="dialog" aria-labelledby="modal2Title" aria-describedby="modal2Desc" class="custom-modal">
+      <button data-remodal-action="confirm" class="remodal-confirm">X</button>
+
+      <!--<img style="width:100%;" src="../images/nuevosArtes/modales/prueba.png" alt="Eventos">-->
+
+      <table width="100%" border="0">
+          <tr>
+              <td width="50%" valign="top" class="img-noticia"><img style="width:100%;" src="../images/nuevosArtes/modales/prueba.png" alt="Eventos"></td>
+              <td width="50%" valign="top">
+                  <h5 class="titulo-modal">Titulo</h5>
+                  <!-- <div class="text">Texto</div> -->
+                  <div id="textogeneral" cols="30" rows="100"></div>
+              </td>
+          </tr>
+      </table>
+
+  </div>
+
+
+  <!-- FIN MODALES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="../js/jquery.bxslider.js"></script>
+  <script src="../js/jquery.bxsliderResponsive.js"></script>
+  <script src="../js/jquery.bxsliderPrincipal.js"></script>
+  <script src="../js/parallax/script.js" defer></script>
+  <script src="../js/gral/funciones.js" defer></script>
+  <script src="../js/gral/funcionesResponsive.js" defer></script>
+  <script src="../js/mapImage/jquery.rwdImageMaps.js" defer></script>
+  <script src="../js/mapImage/jquery.rwdImageMaps.min.js" defer></script>
+  <script src="../js/menuFullScreen/1.js" defer></script>
+  <script src="../js/menuFullScreen/2.js" defer></script>
+  <script src="../js/modal/remodal.js" defer></script>
+  <script src="../js/modal/modales.js" defer></script> 
+  <script src="../js/calendario/responsive-calendar.js" defer></script>
+  <!-- <script src="../js/calendario/calendario.js" defer></script> -->
+  <script src="../js/slider/slider.min.js" defer></script>
+  <script src="../js/slider/script.js" defer></script>
+  <script src="../js/buttons/button.js" defer></script>
+  <script src="../js/sliderPrincipal/sliderPrincipal.js" defer></script>
+  <script src="../js/noticias/modernizr.js"></script>
+
+  <script src="../css/bootstrap/js/bootstrap.min.js" ></script>
+
+
+  <script src="../js/ws.config.js"></script>
+  <script src="../js/ws.js"></script>
+
+  <script>
+    
+    $(document).ready(function(){
+      index();
+    });
+
+
+    
+    $(document).ready(function(){
+      $('.slider11').bxSlider({
+        slideWidth: 199,
+        minSlides: 2,
+        maxSlides: 5
+      });
+    });
+
+    $(document).ready(function(){
+      $('.slider2').bxSliderResponsiveCalendario({
+        slideWidth: 500,
+        minSlides: 1,
+        maxSlides: 1
+      });
+    });
+
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 600) {
+        $('#nav_main').show(1000);
+          
+      } else {
+        $('#nav_main').hide(1000); 
+      }
+    });
+
+
+    $(document).ready(function () {
+      $('#nav_main').on('click',function(){
+        $('html, body').animate({
+          scrollTop: $('#video-container').offset().top
+        }, 'slow');
+      });
+    });
+
+    $(document).ready(function () {
+      $("#_btn_select").on('click',function() {  //use a class, since your ID gets mangled
+        $(this).addClass("redActive");      //add the class to the clicked element
+        alert('me presionaste');
+      });
+    });
+
+    function index(){
+      if (Modernizr.touch) {
+              // show the close overlay button
+        $(".close-overlay").removeClass("hidden");
+
+              // handle the adding of hover class when clicked
+        $(".imgNoticia").click(function(e){
+          if (!$(this).hasClass("hoverNoticia")) {
+            $(this).addClass("hoverNoticia");
+          }
+        });
+
+        $(".imgNoticiaCalendario").click(function(e){
+          if (!$(this).hasClass("hoverCalendario")) {
+            $(this).addClass("hoverCalendario");
+          }
+        });
+
+        // handle the closing of the overlay
+
+        $(".close-overlay").click(function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          if ($(this).closest(".imgNoticiaCalendario").hasClass("hoverCalendario")) {
+            $(this).closest(".imgNoticiaCalendario").removeClass("hoverCalendario");
+          }
+        });
+
+        $(".close-overlay").click(function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          if ($(this).closest(".imgNoticia").hasClass("hoverNoticia")) {
+            $(this).closest(".imgNoticia").removeClass("hoverNoticia");
+          }
+        });
+
+      } else {
+
+        $(".imgNoticia").mouseenter(function(){
+          $(this).addClass("hoverNoticia");
+        })
+
+        // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("hoverNoticia");
+        });
+
+
+        $(".imgNoticiaCalendario").mouseenter(function(){
+          $(this).addClass("hoverCalendario");
+          $('#tituloCalendario').hide("slow");
+        })
+
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $('#tituloCalendario').show("slow");
+          $(this).removeClass("hoverCalendario");
+        });
+
+
+        $(".imgNoticiaCalendario2").mouseenter(function(){
+          $(this).addClass("hoverCalendario");
+          $('#tituloCalendario2').hide("slow");
+        })
+
+
+        .mouseleave(function(){
+          $('#tituloCalendario2').show("slow");
+          $(this).removeClass("hoverCalendario");
+        });
+
+        $(".imgNoticiaCalendario3").mouseenter(function(){
+          $(this).addClass("hoverCalendario");
+          $('#tituloCalendario3').hide("slow");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $('#tituloCalendario3').show("slow");
+          $(this).removeClass("hoverCalendario");
+        });
+
+        $(".imgNoticiaCalendario4").mouseenter(function(){
+          $(this).addClass("hoverCalendario");
+          $('#tituloCalendario4').hide("slow");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $('#tituloCalendario4').show("slow");
+          $(this).removeClass("hoverCalendario");
+        });
+
+
+        $("#estudiante").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+          $(this).removeClass("azulFuerte");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+                      
+        $("#estudiante2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+          $('#azulFuerte').removeClass("azulFuerte");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#estudiante3").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+                      
+        $("#estudiante4").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#perfil").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#perfil2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#perfil3").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+                      /*DOCENTE*/
+
+        $("#docente").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#docente2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#docente3").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        /*ADMINISTRATIVO*/
+
+        $("#administrativo").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#administrativo2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#administrativo3").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        /*EGRESADO*/
+
+        $("#egresado").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#egregsado2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        /*PADRE DE FAMILIA*/
+
+        $("#padre").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#padre2").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+        $("#padre3").mouseenter(function(){
+          $(this).addClass("cuadroActive");
+        })
+                      // handle the mouseleave functionality
+        .mouseleave(function(){
+          $(this).removeClass("cuadroActive");
+        });
+
+      }
+    }
+	$(document).ready(function () {
+		$('.descripcionTituloContacto').css('display','none');
+		$("a#botonOcho").click(function(){
+			if($('div#contactoShow').is(":hidden")){
+				$('.descripcionTituloContacto').css('display','none');
+			}
+		});
+	});
+  </script>
+  
+  <!-- Create:hdzlruben.
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

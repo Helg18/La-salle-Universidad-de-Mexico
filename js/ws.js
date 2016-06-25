@@ -845,7 +845,7 @@ function noticias(){
         $('#ctds'+index).append(detalle_p);  
         $('#ctds'+index).append(detalle_p_html);  
 
-        boton = '<button id="btn_more_slider_one" class="btn_slider"><img src="images/nuevosArtes/banner/icono_mas.png"></button>';
+        boton = '<button id="btn_more_slider_one" class="btn_slider"><a href="notice.html?id='+post.id+'"><img src="images/nuevosArtes/banner/icono_mas.png"></a></button>';
 
         $('#ctds'+index).append(boton);  
 

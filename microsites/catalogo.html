@@ -45,10 +45,11 @@
   <style>
       .carousel-indicators .active { background-image: url("") !important; }  
 	  
-
+.day-headers{margin-top: 11px !important;}
 	  .contenedorBotonesMenu{background:rgba(255, 255, 255, 0.9);height: 350px;}
 	  .contenedorFormulario2{ vertical-align: middle; position: relative; top: 30%; left: 10%; width: 90%;}
 	  .titulo-catalogo{font-family: 'Helvetica'; font-style: normal; color: #1f285d;}
+	  #banner-catalogo{background: url(../images/nuevosArtes/editoriales/edit10.jpg);background-size: 100%;background-position:0 24%;}
   </style>
   
 
@@ -262,24 +263,18 @@
 
   <div class="bannerPrincipals marginEntreSecciones">
     
-    <div id="video-container" >
-      <video autoplay loop muted class="fillWidth">
-        <source src="../images/nuevosArtes/video/nuevos.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        <source src="video/trailer.webm" type='video/webm; codecs="vp8, vorbis"' />
-        Video not supported.
-      </video>
-        
+    <div id="banner-catalogo" >
       <div class="container">
         <div class="botonesMenu" id="menuNavegacionPrincipal" style="width:100%">
           <div class="contenedorBotonesMenu"> 
             
   
-            <div class="contenedorFormulario2">
+            <div class="contenedorFormulario2" style="transform: skewX(25deg);">
 				<div>
 					<h3 class="titulo-catalogo">Cat&aacute;logo de Docentes y Especialistas</h3>
 				</div>
-            <form class="formSearch">
-              <input id="buscar" name="buscar" value="" class="search" type="text" list="postdl" placeholder="Ingresa tu busqueda" style="font-style: inherit;">
+            <form class="formSearch" action="catalogo_2.html">
+              <input id="buscar" name="buscar" value="" class="search" type="text" list="postdl" placeholder="Nombre, Facultad, Especialidad" style="font-style: inherit;">
 
               <datalist id="postdl" name="postdl">
                 
@@ -287,7 +282,7 @@
               <datalist id="postdls" name="postdls">
                 
               <option id="La Salle Hoy" value="1">La Salle Hoy</option><option id="Misión, Visión e Ideas" value="2">Misión, Visión e Ideas</option><option id="Modelo Educativo" value="3">Modelo Educativo</option><option id="Acreditaciones" value="4">Acreditaciones</option><option id="Plan de desarrollo Institucional" value="5">Plan de desarrollo Institucional</option><option id="Reglamento" value="6">Reglamento</option><option id="Historia" value="7">Historia</option><option id="Identidad " value="54">Identidad </option><option id="Campus" value="11">Campus</option><option id="Arte y cultura" value="20">Arte y cultura</option><option id="Deportes" value="23">Deportes</option><option id="Aguilas La salle, grupos representativos" value="24">Aguilas La salle, grupos representativos</option><option id="Grupos Estudiantiles" value="25">Grupos Estudiantiles</option><option id="Desarrollo Humano y espiritualidad" value="26">Desarrollo Humano y espiritualidad</option><option id="La Salle por la tierra" value="27">La Salle por la tierra</option><option id="Universidad Segura" value="28">Universidad Segura</option><option id="Medios Institucionales" value="29">Medios Institucionales</option><option id="La condesa barrio Univeristario" value="30">La condesa barrio Univeristario</option><option id="Biblioteca" value="12">Biblioteca</option><option id="ULSABus" value="14">ULSABus</option><option id="Hospedaje para estudiantes" value="15">Hospedaje para estudiantes</option><option id="Renta de instalaciones" value="16">Renta de instalaciones</option><option id="Convenio con la Universidad de California" value="34">Convenio con la Universidad de California</option><option id="Rehabilitación de jardín aledaño a La Salle" value="106">Rehabilitación de jardín aledaño a La Salle</option><option id="MKT-DAY" value="110">MKT-DAY</option><option id="Aspectos bioéticos de la revolución genómica" value="111">Aspectos bioéticos de la revolución genómica</option><option id="Aspectos bioéticos de la revolución genómica" value="39">Aspectos bioéticos de la revolución genómica</option><option id="La Salle ante los nuevos retos del docente" value="44">La Salle ante los nuevos retos del docente</option><option id="Estancias investigación y académicas" value="82">Estancias investigación y académicas</option><option id="Rehabilitación de jardín aledaño a La Salle" value="104">Rehabilitación de jardín aledaño a La Salle</option><option id="American Society of Civil Engineers en La Salle" value="105">American Society of Civil Engineers en La Salle</option><option id="Servicio Social" value="83">Servicio Social</option><option id="Despacho Probono" value="84">Despacho Probono</option><option id="CADES" value="85">CADES</option><option id="Misiones" value="86">Misiones</option><option id="Regularización Académica " value="87">Regularización Académica </option><option id="Centro Poeta " value="88">Centro Poeta </option><option id="Impresión en braille" value="89">Impresión en braille</option><option id="Centros Comunitarios" value="90">Centros Comunitarios</option><option id="Consultorio Médico" value="91">Consultorio Médico</option><option id="Incubadora de Negocios" value="75">Incubadora de Negocios</option><option id="Negocios Familiares" value="76">Negocios Familiares</option><option id="Centro de Patentamiento" value="77">Centro de Patentamiento</option><option id="Capacitacion Empresarial" value="78">Capacitacion Empresarial</option><option id="Convenios Empresariales" value="79">Convenios Empresariales</option><option id="Bolsa de Trabajo" value="80">Bolsa de Trabajo</option><option id="Prácticas Profesionales" value="81">Prácticas Profesionales</option><option id="Especialistas y conferencistas" value="100">Especialistas y conferencistas</option><option id="Investigación" value="94">Investigación</option><option id="PROYECTOS" value="95">PROYECTOS</option><option id="PUBLICACIONES" value="96">PUBLICACIONES</option><option id="Direccion de Atención al Publico" value="98">Direccion de Atención al Publico</option><option id="Organigrama Institucional" value="99">Organigrama Institucional</option><option id="Mapas" value="101">Mapas</option><option id="¿Cómo llegar?" value="102">¿Cómo llegar?</option><option id="Redes sociales institucionales" value="103">Redes sociales institucionales</option><option id="Inscripción a los exámenes extraordinarios" value="108">Inscripción a los exámenes extraordinarios</option><option id="Inauguración de la capilla de Unidad Santa Teresa" value="109">Inauguración de la capilla de Unidad Santa Teresa</option><option id="Primera Etapa (1962-1967). Rector Dr. Manuel de Jesús Álvarez Campos, fsc" value="139">Primera Etapa (1962-1967). Rector Dr. Manuel de Jesús Álvarez Campos, fsc</option><option id="Segunda Etapa (1968-1974). Rector Dr. Guillermo Alba López, fsc " value="141">Segunda Etapa (1968-1974). Rector Dr. Guillermo Alba López, fsc </option><option id="Tercera Etapa (1974-1983). Rector Dr. Francisco Leonel Cervantes Lechuga, fsc " value="142">Tercera Etapa (1974-1983). Rector Dr. Francisco Leonel Cervantes Lechuga, fsc </option><option id="Cuarta Etapa (1983-1988). Rector Mtro. César Rangel Barrera, fsc" value="143">Cuarta Etapa (1983-1988). Rector Mtro. César Rangel Barrera, fsc</option><option id="Quinta Etapa (1988-1991). Rector Dr. José Cervantes Hernández, fsc" value="144">Quinta Etapa (1988-1991). Rector Dr. José Cervantes Hernández, fsc</option><option id="Sexta Etapa (1991-2000). Rector Dr. Lucio Tazzer De Schriver, fsc" value="145">Sexta Etapa (1991-2000). Rector Dr. Lucio Tazzer De Schriver, fsc</option><option id="Séptima Etapa (2000-2012). Rectores: Mtro. Raúl Valadez García, fsc (2000- 2006); Dr. Ambrosio Luna Salas, fsc (2006-2009); Mtro. Martín Rocha Pedrajo, fsc (2009-2011) y Mtro. Enrique González Álvarez, fsc (2011-…) " value="146">Séptima Etapa (2000-2012). Rectores: Mtro. Raúl Valadez García, fsc (2000- 2006); Dr. Ambrosio Luna Salas, fsc (2006-2009); Mtro. Martín Rocha Pedrajo, fsc (2009-2011) y Mtro. Enrique González Álvarez, fsc (2011-…) </option></datalist>
-              <input id="buscarpost" onclick="return false;" class="submit" type="submit" value="">
+              <input id="buscarpost" onclick="window.location.href='catalogo_2.html';" class="submit" type="submit" value="" >
             </form>
           </div>
 

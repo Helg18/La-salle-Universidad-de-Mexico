@@ -549,13 +549,13 @@ function marcaDiasCalendario(aamm){
 function open_modal(element){
     
 
-    post = tmp_posts[$(element).data('index')];
+ //    post = tmp_posts[$(element).data('index')];
     
-    $('.custom-modal img').attr('src',post.picture_url);
-    $('.custom-modal h5').html(post.title);
-	$('#textogeneral').html(post.paragraph_1_html); // Se puso como div y no como textarea
+ //    $('.custom-modal img').attr('src',post.picture_url);
+ //    $('.custom-modal h5').html(post.title);
+	// $('#textogeneral').html(post.paragraph_1_html); // Se puso como div y no como textarea
 
-    modal.open();
+ //    modal.open();
 }
 
 function calendario_importante(){

@@ -155,7 +155,7 @@
                     <label class="col-md-2 control-label">Idioma</label>
                     
                     <div class="col-md-9">
-                    <select name="language" id="language">
+                    <select class="form-control" name="language" id="language">
                         <option {{ $record && $record->language==1 ? 'selected':'' }} value="1">Español</option>
                         <option {{ $record && $record->language==2 ? 'selected':'' }} value="2">Ingles</option>
                     </select>             
@@ -164,6 +164,34 @@
                     </div>       
                 </div>
 
+                 @if($Category->id ==4)
+
+                    
+
+
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Fecha/Hora</label>
+                        <div class="col-md-10">
+                            {{-- <input type="text" class="form-control date" value="{{$record ? $record->date : old('date')}}" name="date" autocomplete="off"> --}}
+                            <div class="input-group " >
+                                <input type="text" class="form-control" id='custom_date' name="custom_date" value="{{$record ? $record->custom_date : old('custom_date')}}" autocomplete="off"/>
+                                <span class="input-group-addon">
+                                    <i class=" ion ion-calendar"></i>
+                                </span>
+                            </div>
+                            @if ($errors->has('custom_date'))
+                                <span class="alert alert-danger">
+                                <strong>{{ $errors->first('custom_date') }}</strong>
+                            </span>
+                            @endif
+                        </div>
+                    </div>
+
+
+
+
+                @endif
 
                 @if($Category->id != 2  && $Category->id != 7  && $Category->id != 8 && $Category->id != 9)
                 <div class="form-group">
@@ -222,28 +250,13 @@
 
 
 
-                    <div class="form-group">
-                        <label class="col-md-2 control-label">Fecha</label>
-                        <div class="col-md-10">
-                            <!--<input type="text" class="form-control date" value="{{$record ? $record->date : old('date')}}" name="date" autocomplete="off">-->
-                            <div class="input-group date" >
-                                <input type="text" class="form-control" name="custom_date" value="{{$record ? $record->custom_date : old('custom_date')}}" autocomplete="off"/>
-											<span class="input-group-addon">
-												<i class=" ion ion-calendar"></i>
-											</span>
-                            </div>
-                            @if ($errors->has('custom_date'))
-                                <span class="alert alert-danger">
-                                <strong>{{ $errors->first('custom_date') }}</strong>
-                            </span>
-                            @endif
-                        </div>
-                    </div>
 
 
 
 
                 @endif
+               
+
 
                 @if($Category->id ==4 || $Category->id ==5)
                     <div class="form-group">

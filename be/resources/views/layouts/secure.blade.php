@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="{{ asset('css/all.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.min.css">
+	
+
 	<script>var numeral_format='0,0.00';</script>
 	<script>var url='{{url('/')}}/';</script>
 
@@ -242,6 +245,10 @@
 
 
 	<script src="{{asset('/js/all.js')}}"></script>
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js'></script>
+	
+	
 
 	@yield('script')
 
@@ -253,6 +260,19 @@
         return false;
       }
     });
+
+    $('#custom_date').datetimepicker({
+	formatTime:'h:i',
+	formatDate:'d.m.Y',
+	//defaultDate:'8.12.1986', // it's my birthday
+	defaultDate:'+03.01.1970', // it's my birthday
+	defaultTime:'10:00',
+	timepickerScrollbar:true
+});
+
+    $.datetimepicker.setLocale('es');
+
+
 
 
 

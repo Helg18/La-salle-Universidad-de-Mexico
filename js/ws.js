@@ -506,7 +506,29 @@ function muestraPrevioEventos(posts, custom_date){
         }
 
         $(noticia).show();
-        $(noticia + ' .title').html(post.title);
+        // var dt_to = $.datepicker.formatDate('dd-mm-yyyy', post.custom_date);
+        // var dt_to = dateFormat(post.custom_date, "dd-mm-yyyy");
+        // var d = new Date(post.custom_date)
+        // var date_formatiado = d.getDay()+'/'+d.getMonth()+'/'+d.getFullYear();
+
+        // Date.prototype.yyyymmdd = function() {
+        //     var yyyy = this.getFullYear().toString();
+        //     var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based
+        //     var dd  = (this.getDate()).toString();
+
+        //     return (dd[1]?dd:"0"+dd[0]) +'/'+ (mm[1]?mm:"0"+mm[0]) +'/'+ yyyy; // padding
+        // };
+
+        // console.log(post.custom_date);
+
+        // d = new Date(post.custom_date);
+        // d.setUTCDate(15); 
+        
+        // d.yyyymmdd();
+        d = moment(post.custom_date).format('MM/DD/YYYY h:mm:ss a');  
+     
+
+        $(noticia + ' .title').html('Fecha:'+d+'<br>'+post.title);
         $(noticia + ' .tituloCalendario').html(post.title.substring(0,30) + '...');
         $(noticia + ' .img-post').attr('src',post.picture_url);
         $(noticia + ' a').data('index',index);

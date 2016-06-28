@@ -421,8 +421,6 @@ function calendario(){
     //Categorias del calendario
     ul.append('<li><button class="seccion academicas active" id="openUno" data-label-id="0"> Todos </button></li>');
     
-    console.log(initial_data.calendar_labels);
-
     $.each(initial_data.calendar_labels, function(index,label){
         ul.append('<li><button class="seccion academicas" id="openUno" data-label-id="'+label.id+'">' + label.name+ '</button></li>');
     });
@@ -479,7 +477,7 @@ function calendario(){
         }
     });
 
-    muestraPrevioEventos(initial_data.calendar);
+    muestraPrevioEventos(initial_data.calendar_important);
     marcaDiasCalendario({month: initial_month, year: initial_year});
 }
 
@@ -574,10 +572,8 @@ function calendario_importante(){
             '<div class="date_event_destacado"><p>'+post.custom_date_split.day_1+'</p><p><span>'+post.custom_date_split.day_2+'</span> '+post.custom_date_split.month+' '+post.custom_date_split.year+'</p></div>' +
             '<div class="desc_event_destacado">' +
             '<div class="desc_text"><p>'+post.title+'</p></div>' +
-                
             '</div>' +
             '</div>' +
-            
             '<img src="'+post.picture_url+'" alt=""  />' +
             '</li>';
     });

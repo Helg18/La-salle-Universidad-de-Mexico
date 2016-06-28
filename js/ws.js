@@ -525,7 +525,7 @@ function muestraPrevioEventos(posts, custom_date){
         // d.setUTCDate(15); 
         
         // d.yyyymmdd();
-        d = moment(post.custom_date).format('MM/DD/YYYY h:mm:ss a');  
+        d = moment(post.custom_date).format('DD/MM/YYYY h:mm:ss a');  
      
 
         $(noticia + ' .title').html('Fecha:'+d+'<br>'+post.title);

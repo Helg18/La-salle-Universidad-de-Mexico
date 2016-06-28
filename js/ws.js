@@ -419,7 +419,7 @@ function calendario(){
     
 
     //Categorias del calendario
-    ul.append('<li><button class="seccion academicas" id="openUno" data-label-id="0"> Todos </button></li>');
+    ul.append('<li><button class="seccion academicas active" id="openUno" data-label-id="0"> Todos </button></li>');
     
     console.log(initial_data.calendar_labels);
 

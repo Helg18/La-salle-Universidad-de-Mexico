@@ -18,6 +18,7 @@ class CalendarLabel extends Model
 
              if($c->language==$lang){
                 $data[] = [
+                    'id'      =>  $c->id,
                     'name'      =>  $c->name,
                 ];
              }

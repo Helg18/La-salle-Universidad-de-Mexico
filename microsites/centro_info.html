@@ -45,12 +45,13 @@
   <style>
       .carousel-indicators .active { background-image: url("") !important; }  
 	  
-	  .header-azul{background: #1f285d;color: #fff; padding: 10px;}
+	  .header-azul{background: #1f285d !important;color: #fff; padding: 10px;margin-top:23px;}
 	  .menuPerfiles ul li{width:12.3% !important}
 	  .btnMenu .hover-bg{transform:skew(30deg);}
 	  .hover-bg.enter{left:91%}
 	  #fecha-hoy{font-family: 'HelveticaBold',arial;color: #838383; padding: 16px 0 0 0; border: 0; border-radius: 0px;font-size: 1.2rem; line-height: 14px; vertical-align: middle;}
 	  #titulo-seccion{font-family: 'HelveticaBold',arial;color: #838383; padding: 16px 0 0 0; border: 0; border-radius: 0px;font-size: 2.2rem; line-height: 14px; vertical-align: middle;}
+	  .day-headers{margin-top: 11px !important;}
   </style>
   
 
@@ -72,7 +73,15 @@
 
 </head>
 <body>
-  
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
   <!-- BTN MENU PRINCIPAL -->
   <button id="nav_main" class="menuButtonScroll"></button> 
   <!-- FIN BTN MENU PRINCIPAL -->
@@ -114,6 +123,13 @@
       </header>
     </div>
   </div>
+  <div id="tituloMicroSitioCienciasQuimicas" class="header-azul">
+    	<div class="container">
+    		<div class="titleUnidadMedica ">
+    			Bienvenid@s: <span>Centro de informaci&oacute;n Universidad La Salle<span>
+    		</div>
+    	</div>
+    </div>
 
   <!--  FIN HEADER SEARCH -->
 
@@ -273,19 +289,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
 
   <div id="menuPerfiles" class="container marginEntreSecciones segundo">
-	<div class="row header-azul">
-		<div class="col-md-12">
-			<div class="panel-heading">
-				<h3 class="panel-title">Bienvenid@s Centro de informaci&oacute;n Universidad La Salle</h3>
-			</div>
-		</div>
-	</div>
     <div class="row">
       <div class="menuPerfiles">
         <nav>
           <ul>
             <li>
-              <button class="btnMenu btnMenubtn skip" id="botonAspirante">
+              <button class="btnMenu btnMenubtn skip" id="botonAspirante"  onclick="window.location.href='centro_info.html';">
                 <span class="hover-bg reset">
                   <span class="hover-text reset"></span>
                 </span>
@@ -293,7 +302,7 @@
               </button>
             </li>
             <li>
-              <button class="btnMenu btnMenubtn skip"  id="botonEstudiante">
+              <button class="btnMenu btnMenubtn skip"  id="botonEstudiante"  onclick="window.location.href='noticias.html';">
                 <span class="hover-bg reset">
                   <span class="hover-text reset"></span>
                 </span>
@@ -301,7 +310,7 @@
               </button>
             </li>
             <li>
-              <button class="btnMenu btnMenubtn skip" id="botonDocente">
+              <button class="btnMenu btnMenubtn skip" id="botonDocente"  onclick="window.location.href='editoriales_home.html';">
                 <span class="hover-bg reset">
                   <span class="hover-text reset"></span>
                 </span>
@@ -309,7 +318,7 @@
               </button>
             </li>
             <li>
-              <button class="btnMenu btnMenubtn skip"  id="botonAdministrativo">
+              <button class="btnMenu btnMenubtn skip"  id="botonAdministrativo"  onclick="window.location.href='multimedia.html';">
                 <span class="hover-bg reset">
                   <span class="hover-text reset"></span>
                 </span>
@@ -317,7 +326,7 @@
               </button>
             </li>
             <li>
-              <button class="btnMenu btnMenubtn skip"  id="botonEgresado">
+              <button class="btnMenu btnMenubtn skip"  id="botonEgresado"  onclick="window.location.href='publicaciones.html';">
                 <span class="hover-bg reset">
                   <span class="hover-text reset"></span>
                 </span>
@@ -325,7 +334,7 @@
               </button>
             </li> 
             <li>
-              <button class="btnMenu btnMenubtn skip"  id="botonPadre">
+              <button class="btnMenu btnMenubtn skip"  id="botonPadre"  onclick="window.location.href='prensa.html';">
                 <span class="hover-bg reset">
                   <span class="hover-text reset"></span>
                 </span>
@@ -333,7 +342,7 @@
               </button>
             </li>   
             <li>
-              <button class="btnMenu btnMenubtn skip"  id="botonInternational">
+              <button class="btnMenu btnMenubtn skip"  id="botonInternational"  onclick="window.location.href='atencion_medios.html';">
                 <span class="hover-bg reset">
                   <span class="hover-text reset"></span>
                 </span>
@@ -341,7 +350,7 @@
               </button>
             </li>
 			<li>
-              <button class="btnMenu btnMenubtn skip"  id="botonInternational">
+              <button class="btnMenu btnMenubtn skip"  id="botonInternational"  onclick="window.location.href='lasalle_medios.html';">
                 <span class="hover-bg reset">
                   <span class="hover-text reset"></span>
                 </span>
@@ -2619,7 +2628,7 @@
   </div>
 
     
-  <div  class="container marginEntreSecciones">
+  <div  class="">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <div id="cinnn" class="carousel-inner" role="listbox">
   </div>   
@@ -2651,7 +2660,9 @@
     <div class="row">
 		<div class="col-sm-9">
 			<div id="effect-1" class="effects clearfix"> 
-			
+				<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;">
+					NOTICIAS
+				</div>
 			  <div class="imgNoticia">
 				<div class="overlayTituloNoticia">
 				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
@@ -2659,8 +2670,7 @@
 				<img src="../images/nuevosArtes/Noticias/image_news1.png" alt="">
 				<div class="overlayNoticia">
 				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
-				   <button id="btn_more_noticia_uno" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png"></button>
+				   <a href="editoriales.html" id="btn_more_noticia_uno" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
 				</div>
 
 			  </div>
@@ -2672,8 +2682,7 @@
 				<img src="../images/nuevosArtes/Noticias/image_news3.png" alt="">
 				<div class="overlayNoticia">
 				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-				   <button id="btn_more_noticia_dos" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png"></button>
+				   <a href="editoriales.html" id="btn_more_noticia_dos" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
 				</div>
 			  </div>
 			  
@@ -2684,8 +2693,7 @@
 				<img src="../images/nuevosArtes/Noticias/image_news2.png" alt="">
 				<div class="overlayNoticia">
 				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
-				   <button id="btn_more_noticia_tres" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png"></button>
+				   <a href="editoriales.html" id="btn_more_noticia_tres" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
 				</div>
 			  </div>
 
@@ -2696,16 +2704,16 @@
 				<img src="../images/nuevosArtes/Noticias/image_news5.png" alt="">
 				<div class="overlayNoticia">
 				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-				   <button id="btn_more_noticia_cuatro" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png"></button>
+				   <a href="editoriales.html" id="btn_more_noticia_cuatro" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
 				</div>
 			  </div>
 			
 			</div>
-			
+			<br>
 			<div id="effect-1" class="effects clearfix secondPart"> 
-			
+				<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;">
+					EDITORIALES
+				</div>
 			  <div class="imgNoticia destacada">
 				<div class="overlayTituloNoticiaDestacado">
 				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
@@ -2713,9 +2721,7 @@
 				<img src="../images/nuevosArtes/Noticias/image_news6.png" alt="">
 				<div class="overlayNoticia">
 				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .</p>
-				   <button id="btn_more_noticia_cinco" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png"></button>
+				   <a href="editoriales.html" id="btn_more_noticia_cinco" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
 				</div>
 			  </div>
 
@@ -2727,8 +2733,7 @@
 				  <img src="../images/nuevosArtes/Noticias/image_news7.png" alt="">
 				  <div class="overlayNoticia">
 					<h6>Lorem ipsum dolor</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adi</p>
-					 <button id="btn_more_noticia_seis" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png"></button>
+					 <a href="editoriales.html" id="btn_more_noticia_seis" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
 				  </div>
 				</div>
 				<div class="tumbnhail imgNoticia">  
@@ -2738,8 +2743,7 @@
 				  <img src="../images/nuevosArtes/Noticias/image_news8.png" alt="">
 				  <div class="overlayNoticia">
 					<h6>Lorem ipsum dotur</h6>
-					<p>Lorem ipsum dolor sit ametmpor rem</p>
-					   <button id="btn_more_noticia_siete" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png"></button>
+					   <a href="editoriales.html" id="btn_more_noticia_siete" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
 				  </div>
 				</div>
 			  </div>
@@ -2751,8 +2755,7 @@
 				<img src="../images/nuevosArtes/Noticias/image_news3.png" alt="">
 				<div class="overlayNoticia">
 				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolm.</p>
-				   <button id="btn_more_noticia_ocho" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png"></button>
+				   <a href="editoriales.html" id="btn_more_noticia_ocho" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
 				</div>
 			  </div>
 			  
@@ -2763,8 +2766,119 @@
 				<img src="../images/nuevosArtes/Noticias/image_news4.png" alt="">
 				<div class="overlayNoticia">
 				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				  <button id="btn_more_noticia_nueve" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png"></button>
+				  <a href="editoriales.html" id="btn_more_noticia_nueve" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
+				</div>
+			  </div>
+
+			</div>
+			<div id="effect-1" class="effects clearfix" style="margin-top:20px;"> 
+				<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;">
+					MULTIMEDIA
+				</div>
+			  <div class="imgNoticia">
+				<div class="overlayTituloNoticia">
+				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+				</div>
+				<img src="../images/nuevosArtes/Noticias/image_news1.png" alt="">
+				<div class="overlayNoticia">
+				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
+				   <a href="editoriales.html" id="btn_more_noticia_uno" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
+				</div>
+
+			  </div>
+			  
+			  <div class="imgNoticia">
+				<div class="overlayTituloNoticia">
+				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+				</div>
+				<img src="../images/nuevosArtes/Noticias/image_news3.png" alt="">
+				<div class="overlayNoticia">
+				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
+				   <a href="editoriales.html" id="btn_more_noticia_dos" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
+				</div>
+			  </div>
+			  
+			  <div class="imgNoticia">
+				<div class="overlayTituloNoticia">
+				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+				</div>
+				<img src="../images/nuevosArtes/Noticias/image_news2.png" alt="">
+				<div class="overlayNoticia">
+				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
+				   <a href="editoriales.html" id="btn_more_noticia_tres" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
+				</div>
+			  </div>
+
+			  <div class="imgNoticia destacada">
+				<div class="overlayTituloNoticiaDestacado">
+				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+				</div>
+				<img src="../images/nuevosArtes/Noticias/image_news5.png" alt="">
+				<div class="overlayNoticia">
+				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
+				   <a href="editoriales.html" id="btn_more_noticia_cuatro" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
+				</div>
+			  </div>
+			
+			</div>
+			<br>
+			<div id="effect-1" class="effects clearfix secondPart"> 
+				<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;">
+					PUBLICACIONES
+				</div>
+			  <div class="imgNoticia destacada">
+				<div class="overlayTituloNoticiaDestacado">
+				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+				</div>
+				<img src="../images/nuevosArtes/Noticias/image_news6.png" alt="">
+				<div class="overlayNoticia">
+				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
+				   <a href="editoriales.html" id="btn_more_noticia_cinco" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
+				</div>
+			  </div>
+
+			  <div class="imgThumbnail">
+				<div class="tumbnhail imgNoticia">
+				  <div class="overlayTituloNoticiaThumblair">
+					<h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+				  </div>
+				  <img src="../images/nuevosArtes/Noticias/image_news7.png" alt="">
+				  <div class="overlayNoticia">
+					<h6>Lorem ipsum dolor</h6>
+					 <a href="editoriales.html" id="btn_more_noticia_seis" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
+				  </div>
+				</div>
+				<div class="tumbnhail imgNoticia">  
+				  <div class="overlayTituloNoticiaThumblair">
+					<h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+				  </div>
+				  <img src="../images/nuevosArtes/Noticias/image_news8.png" alt="">
+				  <div class="overlayNoticia">
+					<h6>Lorem ipsum dotur</h6>
+					   <a href="editoriales.html" id="btn_more_noticia_siete" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="imgNoticia">
+				<div class="overlayTituloNoticia">
+				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+				</div>
+				<img src="../images/nuevosArtes/Noticias/image_news3.png" alt="">
+				<div class="overlayNoticia">
+				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
+				   <a href="editoriales.html" id="btn_more_noticia_ocho" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
+				</div>
+			  </div>
+			  
+			  <div class="imgNoticia">
+				<div class="overlayTituloNoticia">
+				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
+				</div>
+				<img src="../images/nuevosArtes/Noticias/image_news4.png" alt="">
+				<div class="overlayNoticia">
+				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
+				  <a href="editoriales.html" id="btn_more_noticia_nueve" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
 				</div>
 			  </div>
 
@@ -2822,19 +2936,7 @@
 
   <!-- CONTENIDO CALENDARIO
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<div class="contenedorFormulario" style="width: 96%;">
-            <form class="formSearch">
-              <input id="buscar"   name="buscar" value="" class="search" type="text" list="postdl" name="search" placeholder="Ingresa tu busqueda" />
-
-              <datalist id="postdl" name='postdl'>
-                
-              </datalist>
-              <datalist id="postdls" name='postdls'>
-                
-              </datalist>
-              <input id="buscarpost" onclick='return false;' class="submit" type="submit" value="" />
-            </form>
-          </div>
+	
     <div class="menuCalendario">
           <div class="responsive-calendar">
             <div class="controls">
@@ -2860,15 +2962,24 @@
 
 
     </div>
-
+<img src="../images/nuevosArtes/editoriales/loguito.png" style="margin-top:20px;width:100%">
   <!-- FIN CONTENIDO CALENDARIO
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 </div>
-
+	
 </div>
-
-
+<div class="row" style="margin-top:20px">
+	<div class="col-sm-4">
+		<div class="fb-page" data-href="https://www.facebook.com/LaSalleMX/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/LaSalleMX/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LaSalleMX/">La Salle</a></blockquote></div>
+	</div>
+	<div class="col-sm-4">
+		<div class="fb-page" data-href="https://www.facebook.com/LaSalleMX/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/LaSalleMX/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LaSalleMX/">La Salle</a></blockquote></div>
+	</div>
+	<div class="col-sm-4">
+		<div class="fb-page" data-href="https://www.facebook.com/LaSalleMX/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/LaSalleMX/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LaSalleMX/">La Salle</a></blockquote></div>
+	</div>
+</div>
 
   <!-- TTITULO SECCION CALENDARIO RESPONSIVE
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

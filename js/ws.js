@@ -721,22 +721,24 @@ function lineatiempo(){
 
     var con=0;
     
-    $('#myCarouselLaSalle').append('<ol id="indi" class="carousel-indicators"></ol><div id="clt" class="carousel-inner" role="listbox">');
+    // $('#myCarouselLaSalle').append('<ol id="indi" class="carousel-indicators"></ol><div id="clt" class="carousel-inner" role="listbox">');
 
-    $.each(initial_data.categories[10].posts, function(index,post) {
+    $('#myCarouselLaSalle').append('<div id="clt" class="carousel-inner" role="listbox">');
 
-        if(con=="" || con==0){
-            tmpindicator = tmpindicator + '<li data-target="#myCarouselLaSalle" data-slide-to="'+con+'" class="active"></li>';
+    // $.each(initial_data.categories[10].posts, function(index,post) {
+
+    //     if(con=="" || con==0){
+    //         tmpindicator = tmpindicator + '<li data-target="#myCarouselLaSalle" data-slide-to="'+con+'" class="active"></li>';
             
-            }else{
-            tmpindicator = tmpindicator +' <li data-target="#myCarouselLaSalle" data-slide-to="'+con+'" class=""></li> ';
+    //         }else{
+    //         tmpindicator = tmpindicator +' <li data-target="#myCarouselLaSalle" data-slide-to="'+con+'" class=""></li> ';
 
-        }
-        con=con+1;
+    //     }
+    //     con=con+1;
 
-    });
+    // });
 
-    $('#indi').append(tmpindicator);
+    // $('#indi').append(tmpindicator);
 
     con=0;
 

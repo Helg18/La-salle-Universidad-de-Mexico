@@ -752,7 +752,8 @@ function lineatiempo(){
             '<div class="carousel-caption">'+
             // '<h2>'+post.title+'</h2>'+
             '<h2></h2>'+
-            '<p>'+post.paragraph_1+'</p> '+
+            // '<p>'+post.paragraph_1+'</p> '+
+            '<p></p> '+
             '</div></div>';
 
             $('#clt').append(tmpSliceslt);  
@@ -765,7 +766,8 @@ function lineatiempo(){
             '<div class="carousel-caption">'+
             // '<h2>'+post.title+'</h2>'+
             '<h2></h2>'+
-            '<p>'+post.paragraph_1+'</p> '+
+            // '<p>'+post.paragraph_1+'</p> '+
+            '<p></p> '+
             '</div></div>';
             $('#clt').append(tmpSliceslt);  
 

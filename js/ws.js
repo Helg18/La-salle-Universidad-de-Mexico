@@ -177,6 +177,7 @@ function Category1(){
 
         //aqui ya pinto el contenido del texto
         $('#universidadShow .textoTituloUniversidad p').html(post.subtitle  ? post.subtitle : '');
+        // $('#universidadShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
         $('#universidadShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
 
 

@@ -149,10 +149,11 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
   bottom: 0px;
   padding-top: 81px;
   padding-right: 14px;
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-decoration: none;
   color: #fff;
   text-align: right;
+  font-family:'HelveticaBold'
 }
 
 .tituloCalendario span{
@@ -239,6 +240,8 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 .overlayTituloCalendario p{
   text-align: center;
   margin-top: 30%;
+  font-family:'HelveticaMedium', arial;
+  padding:4px;
 }
 
 .overlayTituloCalendario img{
@@ -254,7 +257,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
   margin: auto;
   text-align: center;
   font-size: 0.8em;
-  font-family: 'HelveticaBold',arial !important;
+  font-family: 'HelveticaMedium',arial !important;
   color: #606060;
 }
 
@@ -318,7 +321,7 @@ a.close-overlay.hidden {
   margin: auto;
   text-align: right;
   font-size: 1em;
-  font-family: 'HelveticaBold',arial !important;
+  font-family: 'HelveticaMedium',arial !important;
   color: #fff;
 }
 

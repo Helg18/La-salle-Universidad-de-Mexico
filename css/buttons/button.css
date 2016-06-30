@@ -129,6 +129,7 @@
   text-decoration: none;
   cursor: pointer;
   text-align: center;
+  text-transform:uppercase;
 }
 
 .btnMenu .hover-text {

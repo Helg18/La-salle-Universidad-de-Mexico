@@ -512,7 +512,7 @@ function muestraPrevioEventos(posts, custom_date){
         
         fecha_hora_mostrar = moment(post.custom_date).format('DD/MM/YYYY h:mm:ss a');  
      
-        $(noticia + ' .title').html('Fecha:'+fecha_hora_mostrar+'<br>'+post.title);
+        $(noticia + ' .title').html(post.title+'<br>'+'Fecha:'+fecha_hora_mostrar);
         $(noticia + ' .tituloCalendario').html(post.title.substring(0,30) + '...');
         $(noticia + ' .img-post').attr('src',post.picture_url);
         $(noticia + ' a').data('index',index);

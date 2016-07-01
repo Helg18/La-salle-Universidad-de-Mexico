@@ -213,7 +213,7 @@ function Category2(){
         html = '';
         $('.textoTituloVida p').html(post.subtitle);
 
-        html = html +'<div class="container">   <div class="main">';
+        html = html +'<div class="main">';
         html = html + '<ul id="og-grid" class="og-grid">';
 
         $.each(post.children, function(index,child){
@@ -225,7 +225,7 @@ function Category2(){
             // ;
 
             html = html + '<li>'+                        
-                    '<a href="https://secure.kreativeco.com/lasalle" data-largesrc="images/nuevosArtes/vida_estudiantil/1.jpg" data-title="Azuki bean" data-description="' +child.paragraph_1_html+ '">'+
+                    '<a href="#" data-largesrc="images/nuevosArtes/vida_estudiantil/1.jpg" data-title="Azuki bean" data-description= ""'+
                     '<span class="titulos-cuadros-azulitos">' + child.title + '</span><img src="images/nuevosArtes/vida_estudiantil/1.jpg" alt="img01"/>'+
                     '</a>'+
                     '</li>';
@@ -233,7 +233,7 @@ function Category2(){
 
         });
 
-        html = html +'<ul></div></div>';
+        html = html +'<ul></div>';
 
         $('#vidaShow .ocultarContenidoSubMenu .container .row').html(html);
 

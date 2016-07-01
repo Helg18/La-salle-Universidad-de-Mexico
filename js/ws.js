@@ -225,7 +225,7 @@ function Category2(){
             // ;
 
             html = html + '<li>'+                        
-                    '<a href="http://localhost/la_salle_web" data-largesrc="images/nuevosArtes/vida_estudiantil/1.jpg" data-title="Azuki bean" data-description="' +child.paragraph_1_html+ '">'+
+                    '<a href="https://secure.kreativeco.com/lasalle" data-largesrc="images/nuevosArtes/vida_estudiantil/1.jpg" data-title="Azuki bean" data-description="' +child.paragraph_1_html+ '">'+
                     '<span class="titulos-cuadros-azulitos">' + child.title + '</span><img src="images/nuevosArtes/vida_estudiantil/1.jpg" alt="img01"/>'+
                     '</a>'+
                     '</li>';

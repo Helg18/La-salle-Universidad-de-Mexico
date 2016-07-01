@@ -213,19 +213,31 @@ function Category2(){
         html = '';
         $('.textoTituloVida p').html(post.subtitle);
 
-        
+        html = html +'<div class="container">   <div class="main">';
+        html = html + '<ul id="og-grid" class="og-grid">';
 
         $.each(post.children, function(index,child){
-            html = html + '<div class="cuadrosVida">' +
-                '<h6 class="azulFuerteInvetigacion">' + child.title + '</h6>' +
-                '<p class="scroll-box-140">' +child.paragraph_1_html+ '</p>' +
-                '</div>'
-            ;
+
+            // html = html + '<div class="cuadrosVida">' +
+            //     '<h6 class="azulFuerteInvetigacion">' + child.title + '</h6>' +
+            //     '<p class="scroll-box-140">' +child.paragraph_1_html+ '</p>' +
+            //     '</div>'
+            // ;
+
+            html = html + '<li>'+                        
+                    '<a href="http://localhost/la_salle_web" data-largesrc="images/nuevosArtes/vida_estudiantil/1.jpg" data-title="Azuki bean" data-description="' +child.paragraph_1_html+ '">'+
+                    '<span class="titulos-cuadros-azulitos">' + child.title + '</span><img src="images/nuevosArtes/vida_estudiantil/1.jpg" alt="img01"/>'+
+                    '</a>'+
+                    '</li>';
+                    
+
         });
 
+        html = html +'<ul></div></div>';
 
         $('#vidaShow .ocultarContenidoSubMenu .container .row').html(html);
 
+        Grid.init();
         cuadrosDeVida();
         ocultarCaorusel();
 

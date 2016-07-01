@@ -41,6 +41,8 @@
   <link rel="stylesheet" href="css/slider_menu_oferta/jquery.bxslider.css" />
 
   <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+
 
   <style>
       .carousel-indicators .active { background-image: url("") !important; }  
@@ -3814,7 +3816,7 @@
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-
+  
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/jquery.bxsliderResponsive.js"></script>
@@ -3840,6 +3842,8 @@
 
   <script src="js/ws.config.js"></script>
   <script src="js/ws.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/grid.js"></script>
 
   <script>
     
@@ -3847,6 +3851,9 @@
       index();
     });
 
+    $(function() {
+        Grid.init();
+    });
 
     
     $(document).ready(function(){

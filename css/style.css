@@ -449,7 +449,7 @@ Estudiante
 }
 .cuadroEstudiante{
 
-  width: 25%;
+  width: 25% !important;
   border: 1px solid #eeeeee;
   max-height:250px;
   height: 100%;
@@ -457,6 +457,7 @@ Estudiante
   float: left;
   color: #0b5caa;
 }
+.contenedorCuadrosEstudiante .overlayNoticia{background:rgba(206, 7, 7, 0.8) !important}
 .cuadroEstudiante p{
   width: 100%;
   height: 101px;
@@ -470,10 +471,11 @@ Estudiante
 }
 
 .cuadroActive{
-  color: #fff;
+  /*color: #fff;
   text-transform: uppercase;
   font-family: 'HelveticaBold',arial;
-  background:#808c8e;
+  background:#808c8e;*/
+  height: 100%;
 }
 
 .azul{

@@ -238,7 +238,7 @@ function Category2(){
                           '<div class="arrow--up"></div>'+
                           '</div>'+
                           '<div class="image--expand">'+
-                          '<a href="#close-jump-0" class="expand__close"></a>'
+                          '<a href="#close-jump-0" class="expand__close"></a>'+
                           '<img class="image--large" src="http://lorempixel.com/400/400/fashion/8" alt="Fashion 8">'+
                           '<div class="descripcion-cuadros-azules">Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa </div>'+
                           '</div>'+

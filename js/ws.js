@@ -213,9 +213,9 @@ function Category2(){
         html = '';
         $('.textoTituloVida p').html(post.subtitle);
 
-        html = html +'<div class="main">';
-        html = html + '<ul id="og-grid" class="og-grid">';
-
+        html = html + '<section class="image-grid">';
+        // html = html + '<ul id="og-grid" class="og-grid">';
+        con=1;
         $.each(post.children, function(index,child){
 
             // html = html + '<div class="cuadrosVida">' +
@@ -224,20 +224,56 @@ function Category2(){
             //     '</div>'
             // ;
 
-            html = html + '<li>'+                        
-                    '<a href="#" data-largesrc="images/nuevosArtes/vida_estudiantil/1.jpg" data-title="Azuki bean" data-description= ""'+
-                    '<span class="titulos-cuadros-azulitos">' + child.title + '</span><img src="images/nuevosArtes/vida_estudiantil/1.jpg" alt="img01"/>'+
-                    '</a>'+
-                    '</li>';
+            // html = html + '<li>'+                        
+            //         '<a href="#" data-largesrc="images/nuevosArtes/vida_estudiantil/1.jpg" data-title="Azuki bean" data-description= ""'+
+            //         '<span class="titulos-cuadros-azulitos">' + child.title + '</span><img src="images/nuevosArtes/vida_estudiantil/1.jpg" alt="img01"/>'+
+            //         '</a>'+
+            //         '</li>';
+
+            html = html + '<article class="image__cell is-collapsed">'+
+                          '<div class="image--basic">'+
+                          '<span class="titulos-cuadros-azulitos">' + child.title + '</span>'+
+                          '<a href="#expand-jump-0"><img id="expand-jump-0" class="basic__img" src="images/nuevosArtes/vida_estudiantil/'+con+'.jpg" alt="Fashion 8"></a>'+
+                          '<div class="arrow--up"></div>'+
+                          '</div>'+
+                          '<div class="image--expand">'+
+                          // '<a href="#close-jump-0" class="expand__close"></a>'+
+                          '<img class="image--large" src="images/nuevosArtes/vida_estudiantil/'+con+'.jpg" alt="Fashion 8">'+
+                          '<div class="descripcion-cuadros-azules">' +child.paragraph_1_html+ '</div>'+
+                          '</div>'+
+                          '</article>';
                     
+                    con=con+1;
 
         });
 
-        html = html +'<ul></div>';
+        // html = html +'<ul></div>';
+        html = html + '</section>';
 
         $('#vidaShow .ocultarContenidoSubMenu .container .row').html(html);
 
-        Grid.init();
+        // Grid.init();
+
+         var $cell = $('.image__cell');
+
+        $cell.find('.image--basic').click(function() {
+          var $thisCell = $(this).closest('.image__cell');
+          
+          if ($thisCell.hasClass('is-collapsed')) {
+          $cell.not($thisCell).removeClass('is-expanded').addClass('is-collapsed');
+          $thisCell.removeClass('is-collapsed').addClass('is-expanded');
+          } else {
+          $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+          }
+        });
+
+        $cell.find('.expand__close').click(function(){
+          
+          var $thisCell = $(this).closest('.image__cell');
+          
+          $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+        });
+
         cuadrosDeVida();
         ocultarCaorusel();
 

@@ -27,7 +27,9 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 
 
 
-
+.headerSubMenuUniversidad .submenu{
+	margin-left:118px;
+}
 
 /* GENERALES */
 

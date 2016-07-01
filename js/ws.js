@@ -215,7 +215,7 @@ function Category2(){
 
         html = html + '<section class="image-grid">';
         // html = html + '<ul id="og-grid" class="og-grid">';
-
+        con=1;
         $.each(post.children, function(index,child){
 
             // html = html + '<div class="cuadrosVida">' +
@@ -233,16 +233,17 @@ function Category2(){
             html = html + '<article class="image__cell is-collapsed">'+
                           '<div class="image--basic">'+
                           '<span class="titulos-cuadros-azulitos">' + child.title + '</span>'+
-                          '<a href="#expand-jump-0"><img id="expand-jump-0" class="basic__img" src="images/nuevosArtes/vida_estudiantil/1.jpg" alt="Fashion 8"></a>'+
+                          '<a href="#expand-jump-0"><img id="expand-jump-0" class="basic__img" src="images/nuevosArtes/vida_estudiantil/'+con+'.jpg" alt="Fashion 8"></a>'+
                           '<div class="arrow--up"></div>'+
                           '</div>'+
                           '<div class="image--expand">'+
-                          '<a href="#close-jump-0" class="expand__close"></a>'+
-                          '<img class="image--large" src="images/nuevosArtes/vida_estudiantil/1.jpg" alt="Fashion 8">'+
+                          // '<a href="#close-jump-0" class="expand__close"></a>'+
+                          '<img class="image--large" src="images/nuevosArtes/vida_estudiantil/'+con+'.jpg" alt="Fashion 8">'+
                           '<div class="descripcion-cuadros-azules">' +child.paragraph_1_html+ '</div>'+
                           '</div>'+
                           '</article>';
                     
+                    con=con+1;
 
         });
 

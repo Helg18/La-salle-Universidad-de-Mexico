@@ -213,8 +213,8 @@ function Category2(){
         html = '';
         $('.textoTituloVida p').html(post.subtitle);
 
-        html = html +'<div class="main">';
-        html = html + '<ul id="og-grid" class="og-grid">';
+        html = html +'<div class="container">';
+        // html = html + '<ul id="og-grid" class="og-grid">';
 
         $.each(post.children, function(index,child){
 
@@ -224,20 +224,36 @@ function Category2(){
             //     '</div>'
             // ;
 
-            html = html + '<li>'+                        
-                    '<a href="#" data-largesrc="images/nuevosArtes/vida_estudiantil/1.jpg" data-title="Azuki bean" data-description= ""'+
-                    '<span class="titulos-cuadros-azulitos">' + child.title + '</span><img src="images/nuevosArtes/vida_estudiantil/1.jpg" alt="img01"/>'+
-                    '</a>'+
-                    '</li>';
+            // html = html + '<li>'+                        
+            //         '<a href="#" data-largesrc="images/nuevosArtes/vida_estudiantil/1.jpg" data-title="Azuki bean" data-description= ""'+
+            //         '<span class="titulos-cuadros-azulitos">' + child.title + '</span><img src="images/nuevosArtes/vida_estudiantil/1.jpg" alt="img01"/>'+
+            //         '</a>'+
+            //         '</li>';
+
+            html = html + '<section class="image-grid">'+
+                          '<article class="image__cell is-collapsed">'+
+                          '<div class="image--basic">'+
+                          '<span class="titulos-cuadros-azulitos">Titulo de ejemplo</span>'+
+                          '<a href="#expand-jump-0"><img id="expand-jump-0" class="basic__img" src="http://lorempixel.com/250/250/fashion/8" alt="Fashion 8"></a>'+
+                          '<div class="arrow--up"></div>'+
+                          '</div>'+
+                          '<div class="image--expand">'+
+                          '<a href="#close-jump-0" class="expand__close"></a>'
+                          '<img class="image--large" src="http://lorempixel.com/400/400/fashion/8" alt="Fashion 8">'+
+                          '<div class="descripcion-cuadros-azules">Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa Descripcion completa </div>'+
+                          '</div>'+
+                          '</article>'+
+                          '</section>';
                     
 
         });
 
-        html = html +'<ul></div>';
+        // html = html +'<ul></div>';
+        html = html +'</div>';
 
         $('#vidaShow .ocultarContenidoSubMenu .container .row').html(html);
 
-        Grid.init();
+        // Grid.init();
         cuadrosDeVida();
         ocultarCaorusel();
 

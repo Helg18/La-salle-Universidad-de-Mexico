@@ -55,8 +55,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
   text-align: justify; word-break: keep-all; white-space: pre-wrap; overflow-y: scroll; width: 100%; height: 280px; margin-bottom: 24px; box-shadow: 0px 7px 7px -5px rgb(85, 85, 85);padding:21px;font-family:'HelveticaLight',arial;
 
 }
-
-#scrollImagen2{   
+#scrollImagen2{
   width: 120%;
   /* height: 513px; */
   height: auto;
@@ -65,7 +64,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
  margin: 0px 0 0 -20%;
   background: #fff;
   transform: skewX(-145deg);
-}
+} 
 
   .scroll-box-140 {
     height: 140px; /* maximum height of the box, feel free to change this! */

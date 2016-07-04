@@ -61,7 +61,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
   height: auto;
   overflow: hidden;
  /* margin: auto; */
- margin: 0px 0 0 -20%;
+ margin: 0px 0 -10px -20%;
   background: #fff;
   transform: skewX(-145deg);
 } 

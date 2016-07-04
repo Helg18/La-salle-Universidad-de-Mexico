@@ -28,7 +28,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
 
 
 .headerSubMenuUniversidad .submenu{
-	margin-left:118px;
+	margin-left:156px;
 }
 
 /* GENERALES */
@@ -2472,6 +2472,26 @@ p.textDos_title{
  margin: 0px 0 0 -20%;
   background: #fff;
   transform: skewX(-145deg);
+}
+
+.contenedorDiagonalUniversidad-{
+  width: 120%;
+  /* height: 513px; */
+  height: auto;
+  overflow: hidden;
+ /* margin: auto; */
+ margin: 0px 0 0 -20%;
+  background: #fff;
+  transform: skewX(-145deg);
+}
+
+.descripcionTituloUniversidad-{
+	width: 60%;
+  margin-top: 3%;
+  margin-left: 25%;
+  text-align: justify;
+  font-size: 0.65em;
+  transform: skewX(145deg);
 }
 
 

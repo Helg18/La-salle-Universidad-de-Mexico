@@ -469,7 +469,7 @@ Estudiante
   float: left;
   color: #0b5caa;
 }
-.contenedorCuadrosEstudiante .overlayNoticia{background:rgba(206, 7, 7, 0.8) !important}
+.contenedorCuadrosEstudiante .overlayNoticia{background:rgba(171, 171, 171, 0.95) !important /*rgba(243, 244, 243, 0.95) !important; rgba(206, 7, 7, 0.8) !important */}
 .cuadroEstudiante p{
   width: 100%;
   height: 101px;

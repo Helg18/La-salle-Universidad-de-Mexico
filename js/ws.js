@@ -557,11 +557,23 @@ function muestraPrevioEventos(posts, custom_date){
         }
 
         $(noticia).show();
-        
+		
+        var NombresMeses = ["Enero", "Febrero", "Marzo","Abril", "Mayo", "Junio", "Julio","Agosto", "Septiembre", "Octubre","Noviembre", "Diciembre"];
         fecha_hora_mostrar = moment(post.custom_date).format('DD/MM/YYYY h:mm:ss a');  
+		
+		var fecha = new Date(fecha_hora_mostrar);
+		var dia = moment(post.custom_date).format('DD');
+		var mes = moment(post.custom_date).format('M');
+		var mes_name = NombresMeses[mes - 1];
+		var ano = moment(post.custom_date).format('YYYY');
+		
+		
      
-        $(noticia + ' .title').html(post.title+'<br>'+'Fecha:'+fecha_hora_mostrar);
-        $(noticia + ' .tituloCalendario').html(post.title.substring(0,30) + '...');
+       // $(noticia + ' .title').html(post.title+'<br>'+'Fecha:'+fecha_hora_mostrar);
+		$(noticia + ' .title').html(post.title);
+        //$(noticia + ' .tituloCalendario').html(post.title.substring(0,30) + '...');
+		$(noticia + ' .tituloCalendario2').html(post.title + '<br>' + 'Lugar: <br>' + fecha_hora_mostrar + '<br> Descripción: ');
+		$("#fecha-cal").html('<span>' + dia + '</span> ' + mes_name +' ' + ano);
         $(noticia + ' .img-post').attr('src',post.picture_url);
         $(noticia + ' a').data('index',index);
 
@@ -986,245 +998,8 @@ function AcademicOffer(){
 
         if(index==1){
 
-        html = '<div class="col-sm-12" id="contenedor-noticias">' +    
-                    '<div id="effect-1" class="effects clearfix">' +
-                        '<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;" id="encabezado-noticias1">' +
-                        'Facultad de Ciencias Químicas' +
-                        '</div>' +
-        '<div class="imgNoticia">' +
-            '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Ingenieria Ambiental</h6> ' +
-            '</div>'+
-            '<img src="images/nuevosArtes/Noticias/image_news1.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_uno" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia">' +
-        '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Ingenieria Quimica</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news3.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_dos" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia">' +
-            '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Quimica de Alimentos</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news2.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_tres" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia destacada">' + 
-            '<div class="overlayTituloNoticiaDestacado">' +
-                '<h6>Licenciatura Químico Farmacéutico Biólogo</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news5.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_cuatro" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-'</div>';
-
-
- html = html +'<div class="col-sm-12" id="contenedor-noticias">' +    
-                    '<div id="effect-1" class="effects clearfix">' +
-                        '<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;" id="encabezado-noticias1">' +
-                        'Faculta de Derecho' +
-                        '</div>' +
-        '<div class="imgNoticia">' +
-            '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Derecho</h6> ' +
-            '</div>'+
-            '<img src="images/nuevosArtes/Noticias/image_news1.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_uno" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia">' +
-        '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Relaciones Internacionales</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news3.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_dos" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        
-    '</div>' +
-'</div>';
-
-
- html = html + '<div class="col-sm-12" id="contenedor-noticias">' +    
-                    '<div id="effect-1" class="effects clearfix">' +
-                        '<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;" id="encabezado-noticias1">' +
-                        'Facultad de Ingeniería' +
-                        '</div>' +
-        '<div class="imgNoticia">' +
-            '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Ing. Cibernética y Sistema Computacionales</h6> ' +
-            '</div>'+
-            '<img src="images/nuevosArtes/Noticias/image_news1.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_uno" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia">' +
-        '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Ingenieria Civil</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news3.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_dos" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia">' +
-            '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Ingeniería Electrónica</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news2.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_tres" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia destacada">' + 
-            '<div class="overlayTituloNoticiaDestacado">' +
-                '<h6>Licenciatura en Ingeniería Industrial</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news5.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_cuatro" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-'</div>';
-
-
-html = html + '<div class="col-sm-12" id="contenedor-noticias">' +    
-                    '<div id="effect-1" class="effects clearfix">' +
-                        '<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;" id="encabezado-noticias1">' +
-                        'Facultad de Humanidades Ciencias Sociales' +
-                        '</div>' +
-        '<div class="imgNoticia">' +
-            '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Ciencias de la Educación</h6> ' +
-            '</div>'+
-            '<img src="images/nuevosArtes/Noticias/image_news1.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_uno" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia">' +
-        '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura Ciencias Religiosas</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news3.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_dos" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia">' +
-            '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Educación Primaria</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news2.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_tres" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia destacada">' + 
-            '<div class="overlayTituloNoticiaDestacado">' +
-                '<h6>Licenciatura en Filosofía</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news5.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_cuatro" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-'</div>';
-
-
-html = html +'<div class="col-sm-12" id="contenedor-noticias">' +    
-                    '<div id="effect-1" class="effects clearfix">' +
-                        '<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;" id="encabezado-noticias1">' +
-                        'Faculta Mexicana de Medicina' +
-                        '</div>' +
-        '<div class="imgNoticia">' +
-            '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Médico Cirújano</h6> ' +
-            '</div>'+
-            '<img src="images/nuevosArtes/Noticias/image_news1.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_uno" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        
-        
-    '</div>' +
-'</div>';
-
-
-
-html = html + '<div class="col-sm-12" id="contenedor-noticias">' +    
-                    '<div id="effect-1" class="effects clearfix">' +
-                        '<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;" id="encabezado-noticias1">' +
-                        'FAMADYC' +
-                        '</div>' +
-        '<div class="imgNoticia">' +
-            '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Arquitectura</h6> ' +
-            '</div>'+
-            '<img src="images/nuevosArtes/Noticias/image_news1.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_uno" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia">' +
-        '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura Ciencias de la Cumunicación</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news3.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_dos" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-        '<div class="imgNoticia">' +
-            '<div class="overlayTituloNoticia">' +
-                '<h6>Licenciatura en Diseño Gráfico y Digital</h6>' +
-            '</div>' +
-            '<img src="images/nuevosArtes/Noticias/image_news2.png" alt="">' +
-            '<div class="overlayNoticia">' +
-                '<h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>' +
-                '<a href="editoriales.html" id="btn_more_noticia_tres" class="btn_noticia_more"><img src="images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>' +
-            '</div>' +
-        '</div>' +
-       
-    '</div>' +
-'</div>';
-
-
+        html = '<div class="pull-left cont-filtro"> <div class="subMenuUnoOfertaAcademica filtro-mosaico" data-toggle="portfilter" data-target="all">Todos</div><div class="subMenuUnoOfertaAcademica filtro-mosaico" data-toggle="portfilter" data-target="ciencias">Facultad de Ciencias Qu&iacute;micas</div><div class="subMenuUnoOfertaAcademica filtro-mosaico" data-toggle="portfilter" data-target="derecho">Facultad de Derecho</div><div class="subMenuUnoOfertaAcademica filtro-mosaico" data-toggle="portfilter" data-target="ingenieria">Facultad de ingenier&iacute;a</div><div class="subMenuUnoOfertaAcademica filtro-mosaico" data-toggle="portfilter" data-target="negocios">Facultad de negocios</div><div class="subMenuUnoOfertaAcademica filtro-mosaico" data-toggle="portfilter" data-target="humanidades">Facultad de humanidades Ciencias Sociales</div><div class="subMenuUnoOfertaAcademica filtro-mosaico" data-toggle="portfilter" data-target="medicina">Facultad Mexicana de Medicina</div><div class="subMenuUnoOfertaAcademica filtro-mosaico" data-toggle="portfilter" data-target="famadyc">FAMADYC</div></div>';
+		html = html + '<br/><ul class="thumbnails gallery"> <li class="span3" data-tag="ciencias"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Ciencias</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="ciencias"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Ciencias</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="ciencias"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Ciencias</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="ciencias"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Ciencias</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="derecho"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Derecho</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="derecho"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Derecho</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="derecho"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Derecho</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="ingenieria"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Ingenier&iacute;a</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="ingenieria"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Ingenier&iacute;a</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="ingenieria"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Ingenier&iacute;a</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="ingenieria"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Ingenier&iacute;a</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="ingenieria"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Ingenier&iacute;a</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="negocios"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Negocios</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="humanidades"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Humanidades</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="humanidades"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Humanidades</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="medicina"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>Facultad de Medicina</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="famadyc"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>FAMADYC</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="famadyc"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia"> <h6>FAMADYC</h6> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li></ul><div class="push"></div>';
 
 }
 

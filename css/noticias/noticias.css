@@ -565,5 +565,5 @@ overflow:hidden;
 }
 .fecha-cal{font-size:14px !important;}
 .dia-cal{font-size:65px !important;}
-.not-pinocho .date_event_calendario_responsive{margin-top:0 !important}
+.not-pinocho .date_event_calendario_responsive{margin-top:0 !important;padding-top: 25px;height: 173px;}
 .not-pinocho .text_info_noticia_destacada_calendario_responsive{padding:17px 0px 0px 19px !important}

@@ -236,7 +236,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
   text-align: center;
   font-family: 'HelveticaRegular',arial;
 }
-.notcal:hover .overlayCalendario22{display:inherit !important}
+.notcal:hover .overlayCalendario22,.not-pinocho:hover .overlayCalendario22 {display:inherit !important}
 .overlayCalendario22 {
   position: absolute;
   z-index: 5;
@@ -548,7 +548,7 @@ a.expand {
     display: none;
   }
 }
-.not-pinocho{width:50% !important;display:block !important;}
+.not-pinocho{width:50% !important;display:block;}
 .cal-nuevo{
 background:url(../../images/nuevosArtes/calendario/image_redtriangle.png) !important;
 background-position:100%;
@@ -563,3 +563,7 @@ overflow:hidden;
 .letras-blancas{
     color: #fff !important;
 }
+.fecha-cal{font-size:14px !important;}
+.dia-cal{font-size:65px !important;}
+.not-pinocho .date_event_calendario_responsive{margin-top:0 !important}
+.not-pinocho .text_info_noticia_destacada_calendario_responsive{padding:17px 0px 0px 19px !important}

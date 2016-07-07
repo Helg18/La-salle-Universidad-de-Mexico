@@ -575,7 +575,7 @@ function muestraPrevioEventos(posts, custom_date){
 		$(noticia + ' .title').html(post.title);
         //$(noticia + ' .tituloCalendario').html(post.title.substring(0,30) + '...');
 		$(noticia + ' .tituloCalendario2').html(post.title + '<br>' + solo_fecha + '<br>' + solo_hora + '<br>' + post.paragraph_1_html.substring(0,50) + '...');
-		$("#fecha-cal").html('<span>' + dia + '</span> ' + mes_name +' ' + ano);
+		$(".fecha-cal").html('<span class="dia-cal">' + dia + '</span> ' + mes_name +' ' + ano);
         $(noticia + ' .img-post').attr('src',post.picture_url);
         $(noticia + ' a').data('index',index);
 

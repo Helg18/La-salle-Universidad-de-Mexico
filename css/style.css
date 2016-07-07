@@ -52,7 +52,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
   margin-top: 20px;
   
   /* Nuevos cambios */
-  text-align: justify; word-break: keep-all; white-space: pre-wrap; width: 100%; margin-bottom: 24px; box-shadow: 0px 7px 7px -5px rgb(85, 85, 85);padding:21px;font-family:'HelveticaLight',arial;
+  text-align: justify; word-break: keep-all; white-space: pre-wrap; width: 100%; margin-bottom: 11px; box-shadow: 0px 7px 7px -5px rgb(85, 85, 85);padding:21px;font-family:'HelveticaLight',arial;
 
 }
 #scrollImagen2{ 
@@ -6818,3 +6818,6 @@ FACULTAD DE FAMADYC
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255,0,0,0.4); 
 }
+#universidadShow .contenedorImagenTextoAccionSocial-{overflow:hidden;background-position:100% 98% !important;background-size:42% 85% !important;}
+#universidadShow .contenedorDiagonalUniversidad2{z-index: 5;overflow: visible !important;}
+#universidadShow  .descripcionTituloUniversidad-{background: #fff;}

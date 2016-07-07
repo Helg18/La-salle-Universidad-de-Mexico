@@ -15,9 +15,11 @@ a.thumbnail:hover,a.thumbnail:focus{border-color:#0088cc;-webkit-box-shadow:0 1p
   .filtro-mosaico{
     width:11.5%;
   }
-  .thumbnails  li.span3{margin-top:0;margin:-17px 0 0 0}
+  .thumbnails  li.span3{margin-top:0;margin:-17px 0 0 0;width:20%;overflow:hidden;}
   .thumbnail{margin-bottom:0 !important}
+  .thumbnail .overlayTituloNoticia{width:104%}
 }
 .filtro-mosaico{font-size: 0.7em;padding:12px;}
 .cont-filtro{width:100%;margin:20px;}
 .thumbnails .imgNoticia{position:relative}
+

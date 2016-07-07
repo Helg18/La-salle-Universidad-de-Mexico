@@ -548,3 +548,18 @@ a.expand {
     display: none;
   }
 }
+.not-pinocho{width:50% !important;display:block !important;}
+.cal-nuevo{
+background:url(../../images/nuevosArtes/calendario/image_redtriangle.png) !important;
+background-position:100%;
+overflow:hidden;
+  height:210px !important;
+  width: 100% !important;
+  font-size: 0.9em;
+  position:absolute !important;
+  top:26% !important;
+}
+.inner-triangulo{position: relative;top: 62%;left: 19%;width: 80%;}
+.letras-blancas{
+    color: #fff !important;
+}

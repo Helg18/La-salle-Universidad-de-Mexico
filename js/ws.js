@@ -561,6 +561,8 @@ function muestraPrevioEventos(posts, custom_date){
         var NombresMeses = ["Enero", "Febrero", "Marzo","Abril", "Mayo", "Junio", "Julio","Agosto", "Septiembre", "Octubre","Noviembre", "Diciembre"];
         fecha_hora_mostrar = moment(post.custom_date).format('DD/MM/YYYY h:mm:ss a');  
 		
+		var solo_fecha = moment(post.custom_date).format('DD/MM/YYYY');  
+		var solo_hora = moment(post.custom_date).format('h:mm a');  
 		var fecha = new Date(fecha_hora_mostrar);
 		var dia = moment(post.custom_date).format('DD');
 		var mes = moment(post.custom_date).format('M');
@@ -572,7 +574,7 @@ function muestraPrevioEventos(posts, custom_date){
        // $(noticia + ' .title').html(post.title+'<br>'+'Fecha:'+fecha_hora_mostrar);
 		$(noticia + ' .title').html(post.title);
         //$(noticia + ' .tituloCalendario').html(post.title.substring(0,30) + '...');
-		$(noticia + ' .tituloCalendario2').html(post.title + '<br>' + 'Lugar: <br>' + fecha_hora_mostrar + '<br> Descripción: ');
+		$(noticia + ' .tituloCalendario2').html(post.title + '<br>' + solo_fecha + '<br>' + solo_hora + '<br>' + post.paragraph_1_html.substring(0,50) + '...');
 		$("#fecha-cal").html('<span>' + dia + '</span> ' + mes_name +' ' + ano);
         $(noticia + ' .img-post').attr('src',post.picture_url);
         $(noticia + ' a').data('index',index);

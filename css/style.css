@@ -6818,6 +6818,6 @@ FACULTAD DE FAMADYC
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255,0,0,0.4); 
 }
-#universidadShow .contenedorImagenTextoAccionSocial-{overflow:hidden;background-position:100% 98% !important;background-size:42% 85% !important;}
-#universidadShow .contenedorDiagonalUniversidad2{z-index: 5;overflow: visible !important;}
-#universidadShow  .descripcionTituloUniversidad-{background: #fff;}
+#universidadShow .contenedorImagenTextoAccionSocial-{overflow:hidden;background-position:100% 0% !important;background-repeat:no-repeat;}
+#universidadShow .contenedorDiagonalUniversidad2{z-index: 5;overflow: visible !important;transform:none !important;background:none !important;}
+#universidadShow  .descripcionTituloUniversidad-{background: #fff;transform:none !important;}

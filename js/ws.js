@@ -212,7 +212,10 @@ function Category1(){
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","inherit"); // Descargables
-		}
+			//$(".carrusel-somos-salle").css("display","inherit"); // Carrusel
+		}else{
+			//$(".carrusel-somos-salle").css("display","none"); // Carrusel
+		}		
 		if(index == 5){	// Reglamentos
 			$("#mosaico-somos-salle").css("display","inherit");
 			$(".video-somos-salle").css("display","none");

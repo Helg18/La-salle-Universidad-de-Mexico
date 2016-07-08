@@ -179,8 +179,61 @@ function Category1(){
         $('#universidadShow .textoTituloUniversidad p').html(post.subtitle  ? post.subtitle : '');
         // $('#universidadShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
         $('#universidadShow .descripcionTituloUniversidad-.ws ').html(post.paragraph_1);
-
-
+		if(index == 0){ // Somos la salle
+			$("#mosaico-somos-salle").css("display","inherit");
+			$(".video-somos-salle").css("display","inherit");
+			$("div#imagenes-relacionadas").css("display","inherit"); // imagenes
+			$("div#links-referencia").css("display","inherit"); // Links
+			$("div#descargables").css("display","none"); // Descargables
+		}if(index == 1){ // Mision, Vision
+			$("#mosaico-somos-salle").css("display","none");
+			$(".video-somos-salle").css("display","none");
+			$("div#imagenes-relacionadas").css("display","none"); // imagenes
+			$("div#links-referencia").css("display","none"); // Links
+			$("div#descargables").css("display","none"); // Descargables
+		}
+		if(index == 2){ // Modelo educativo
+			$("#mosaico-somos-salle").css("display","inherit");
+			$(".video-somos-salle").css("display","inherit");
+			$("div#imagenes-relacionadas").css("display","none"); // imagenes
+			$("div#links-referencia").css("display","none"); // Links
+			$("div#descargables").css("display","inherit"); // Descargables
+		}
+		if(index == 3){	// Acreditaciones
+			$("#mosaico-somos-salle").css("display","inherit");
+			$(".video-somos-salle").css("display","none");
+			$("div#imagenes-relacionadas").css("display","none"); // imagenes
+			$("div#links-referencia").css("display","none"); // Links
+			$("div#descargables").css("display","none"); // Descargables
+		}
+		if(index == 4){	// PDI
+			$("div#mosaico-somos-salle").css("display","inherit");
+			$(".video-somos-salle").css("display","none");
+			$("div#imagenes-relacionadas").css("display","none"); // imagenes
+			$("div#links-referencia").css("display","none"); // Links
+			$("div#descargables").css("display","inherit"); // Descargables
+		}
+		if(index == 5){	// Reglamentos
+			$("#mosaico-somos-salle").css("display","inherit");
+			$(".video-somos-salle").css("display","none");
+			$("div#imagenes-relacionadas").css("display","none"); // imagenes
+			$("div#links-referencia").css("display","none"); // Links
+			$("div#descargables").css("display","inherit"); // Descargables
+		}
+		if(index == 6){	// Historia
+			$("#mosaico-somos-salle").css("display","none");
+			$(".video-somos-salle").css("display","none");
+			$("div#imagenes-relacionadas").css("display","none"); // imagenes
+			$("div#links-referencia").css("display","none"); // Links
+			$("div#descargables").css("display","none"); // Descargables
+		}
+		if(index == 7){	// Identidad
+			$("#mosaico-somos-salle").css("display","inherit");
+			$(".video-somos-salle").css("display","none");
+			$("div#imagenes-relacionadas").css("display","inherit"); // imagenes
+			$("div#links-referencia").css("display","none"); // Links
+			$("div#descargables").css("display","inherit"); // Descargables
+		}
     }
 
     this.show();

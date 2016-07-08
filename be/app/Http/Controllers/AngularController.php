@@ -36,9 +36,9 @@ class AngularController extends Controller
         $post->paragraph_2 = $request->paragraph_2;
         $post->paragraph_3 = $request->paragraph_3;
         $post->parent_id = $request->parent_id;
-        $post->language = $request->language;
+        $post->language = $request->languageS;
         $post->save();
-        
+
         return response()->json(['message'=>'Información guardada exitosamente']);
     }
 

@@ -567,3 +567,7 @@ overflow:hidden;
 .dia-cal{font-size:65px !important;}
 .not-pinocho .date_event_calendario_responsive{margin-top:0 !important;padding-top: 25px;height: 173px;}
 .not-pinocho .text_info_noticia_destacada_calendario_responsive{padding:17px 0px 0px 19px !important}
+.enlaces-google{width:50%;position:relative;float:left}
+.item-img-google{float:left;width:20%;height:auto;margin:3px;}
+.d-pdf{width:25%;position:relative;float:left;margin:3px;font-size:9px;padding:0;}
+.border-google{border-top:1px solid #fff;margin-top:4px;padding-top:8px;}

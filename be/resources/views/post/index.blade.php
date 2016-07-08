@@ -228,11 +228,6 @@
                 </div>
                 @endif
 
-
-
-
-
-
                 @if($Category->id ==4)
 
                     <div class="form-group">

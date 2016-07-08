@@ -205,6 +205,9 @@ function Category1(){
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","none"); // Descargables
+			$("div#tabla-excel").css("display","inherit"); // Tabla en modal
+		}else{
+			$("div#tabla-excel").css("display","none"); // Tabla en modal
 		}
 		if(index == 4){	// PDI
 			$("div#mosaico-somos-salle").css("display","inherit");

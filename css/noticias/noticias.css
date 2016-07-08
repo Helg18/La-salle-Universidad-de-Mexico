@@ -236,7 +236,7 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
   text-align: center;
   font-family: 'HelveticaRegular',arial;
 }
-.notcal:hover .overlayCalendario22{display:inherit !important}
+.notcal:hover .overlayCalendario22,.not-pinocho:hover .overlayCalendario22 {display:inherit !important}
 .overlayCalendario22 {
   position: absolute;
   z-index: 5;
@@ -246,10 +246,11 @@ src: url("../fonts/HelveticaThing.otf") format("opentype");
   width: 100%;
   height: 100%;
   max-height: 283px;
-  text-align: center;
+  text-align: left;
   font-family: 'HelveticaRegular',arial;
 top:0;
-padding-top:36%
+padding-top:36%;
+padding-left:6px;
 }
 .img-link-cal{width: 32px !important;position: relative;left: 42%;margin-top: 10px !important;}
 .tituloCalendario2{  
@@ -348,6 +349,10 @@ a.close-overlay.hidden {
   font-size: 1em;
   font-family: 'HelveticaMedium',arial !important;
   color: #fff;
+}
+
+.contenedorCuadrosEstudiante .overlayNoticia h6{
+	/*color: #000; */
 }
 
 .overlayNoticia p{
@@ -543,3 +548,26 @@ a.expand {
     display: none;
   }
 }
+.not-pinocho{width:50% !important;display:block;}
+.cal-nuevo{
+background:url(../../images/nuevosArtes/calendario/image_redtriangle.png) !important;
+background-position:100%;
+overflow:hidden;
+  height:210px !important;
+  width: 100% !important;
+  font-size: 0.9em;
+  position:absolute !important;
+  top:26% !important;
+}
+.inner-triangulo{position: relative;top: 62%;left: 19%;width: 80%;}
+.letras-blancas{
+    color: #fff !important;
+}
+.fecha-cal{font-size:14px !important;}
+.dia-cal{font-size:65px !important;}
+.not-pinocho .date_event_calendario_responsive{margin-top:0 !important;padding-top: 25px;height: 173px;}
+.not-pinocho .text_info_noticia_destacada_calendario_responsive{padding:17px 0px 0px 19px !important}
+.enlaces-google{width:50%;position:relative;float:left}
+.item-img-google{float:left;width:20%;height:auto;margin:3px;}
+.d-pdf{width:25%;position:relative;float:left;margin:3px;font-size:9px;padding:0;}
+.border-google{border-top:1px solid #fff;margin-top:4px;padding-top:8px;}

@@ -18,8 +18,6 @@
             <label class="control-label small">Parrafo.</label>
             <textarea rows="4" class="form-control" width="100%" ng-model="post.paragraph_1"></textarea>
         </div>
-
-
         <div class="form-group">
             <label class="control-label small">Idioma</label>
         
@@ -28,9 +26,7 @@
                 <option {{ $record && $record->language==2 ? 'selected':'' }} value="2">Ingles</option>
             </select>             
 
-    
         </div>
-
     </div>
     <div class="modal-footer">
         <button class="btn btn-primary" type="button" ng-click="ok()">Guardar</button>

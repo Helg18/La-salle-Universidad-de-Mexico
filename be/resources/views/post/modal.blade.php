@@ -19,6 +19,7 @@
             <textarea rows="4" class="form-control" width="100%" ng-model="post.paragraph_1"></textarea>
         </div>
 
+
         <div class="form-group">
             <label class="control-label small">Idioma</label>
         

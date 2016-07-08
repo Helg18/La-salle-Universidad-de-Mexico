@@ -580,3 +580,9 @@ overflow:hidden;
 .bgazulf{background:url(../../images/nuevosArtes/oferta_educativa/bgazulf.png) !important;}
 .bgrojo{background:url(../../images/nuevosArtes/oferta_educativa/bgrojo.png) !important;}
 li.span3 h5,li.span3 h6{color:#fff !important}
+.iconito-cal{
+    position: absolute;
+    bottom: 45px;
+    width: 30px !important;
+    right: 33px;
+}

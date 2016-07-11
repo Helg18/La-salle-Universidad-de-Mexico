@@ -588,3 +588,25 @@ li.span3 h5,li.span3 h6{color:#fff !important}
 }
 .excel td, .excel th{padding:4px;}
 .opcion-licenciatura{float:left;padding:6px;margin:13px 0 12px 0;width:16%;color:#fff;font-size:14px;cursor:pointer;}
+
+#mosaico-oferta-educativa-prepa article:hover  .overlay-mosaico{display:inherit !important}
+#mosaico-oferta-educativa article:hover  .overlay-mosaico{display:inherit !important}
+.overlay-mosaico{
+display:none;
+  position: absolute;
+  z-index: 5;
+  background: rgba(38, 72, 150, 0.95);
+  color:#fff;
+  font-size:23px;
+  background-size: 100%;
+  overflow: hidden;
+  width: 96%;
+  height: 100%;
+  max-height: 211px;
+  text-align: left;
+  font-family: 'HelveticaRegular',arial;
+top:0;
+padding-top:36%;
+padding-left:6px;
+text-align:center;
+}

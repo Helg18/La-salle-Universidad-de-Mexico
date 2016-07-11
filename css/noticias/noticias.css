@@ -587,4 +587,4 @@ li.span3 h5,li.span3 h6{color:#fff !important}
     right: 33px;
 }
 .excel td, .excel th{padding:4px;}
-.opcion-licenciatura{float:left;padding:6px;width:16%;color:#fff;font-size:16px;}
+.opcion-licenciatura{float:left;padding:6px;margin:13px 0 12px 0;width:16%;color:#fff;font-size:14px;cursor:pointer;}

@@ -448,7 +448,7 @@ a.expand {
 
 .overlayMenuBtn {
   display: block;
-  position: absolute;
+  position: relative;
   z-index: 5;
   background: url(../../images/nuevosArtes/oferta_educativa/facultad_pleca.png);
   background-size: 100% 100%;

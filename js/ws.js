@@ -168,6 +168,18 @@ function Category1(){
         $('#universidadShow .ten.columns.submenu').html(html);
         this.showContent2(index,0);
         ocultarCaorusel();
+		// Si es historia, va a quitar los submenus
+			if(index == 6){		
+				$(".cuadrosSubmenu").css("display","none");
+			}else{
+				$(".cuadrosSubmenu").css("display","inherit");
+			}
+		// Si es identidad va a mostrar un carousel
+			if(index == 7){
+				
+			}else{
+				
+			}
     }
 
     this.showContent2 =  function(index,index2){
@@ -337,7 +349,7 @@ function Category2(){
         ocultarCaorusel();
 
     }
-
+        $("#myCarouselLaSalle").css({ 'display': "inherit" });
     this.show();
 }
 
@@ -372,7 +384,7 @@ function ocultarCaorusel(){
         $("#myCarouselLaSalle").css({ 'display': "none" });
     });
     $('#_btn_select7').click( function(){
-        $("#myCarouselLaSalle").css({ 'display': "none" });
+        $("#myCarouselLaSalle").css({ 'display': "inherit" });	// Aqui se va a mostrar un carousel con diferente contenido, por ahora solo esta el mismo que el de la linea de tiempo, por eso se esta mostrando solo para verlo visualmente
     });
     $('#_btn_select8').click( function(){
         $("#myCarouselLaSalle").css({ 'display': "none" });

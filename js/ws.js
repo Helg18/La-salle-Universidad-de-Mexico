@@ -429,9 +429,37 @@ function Category3(){
         $('.descripcionTituloServicios.ws').html(post.paragraph_1_html);
         $('.parrafoServicios.ws').html(post.paragraph_2_html);
         $('.seccion_3.ws').html(post.video_iframe +" "+post.picture_html);
+		
         ocultarCaorusel();
-
-    }
+		
+		if(index == 1){
+			// Insertamos subtitulos de ulsabus
+			$(".contenedorDiagonaTextoServicios").append('<div class="contenedor-subtitulos-ulsabus"><div class="subtitulos-ulsabus">Ruta 1 <br>Glorieta Vaqueritos</div><div class="subtitulos-ulsabus">Ruta 2 <br>Indios Verdes</div><div class="subtitulos-ulsabus">Ruta 3 <br>Valle Dorado</div><div class="subtitulos-ulsabus">Ruta 4 <br>Aragón</div><div class="subtitulos-ulsabus">Ruta 5 <br>Perisur</div><div class="subtitulos-ulsabus">Ruta 6 <br>Torres Lindavista</div><div class="subtitulos-ulsabus">Ruta 7 <br>Mundo E</div><div class="subtitulos-ulsabus">Ruta 8 <br>Ecatepec</div></div>');
+			$('.seccion_3.ws').append('<div class="clearfix tabla-ulsabus" style="display: block;"><div class="alignleft"> <h4>Paradas de Venida</h4> <ul> <li> <div><strong>Estación del metro Cd. Azteca</strong></div><div>En la dulcería La Abejita sobre Av. Central</div><div>Horario 05:20am</div></li><li> <div><strong>Estación del Metro Plaza Aragón</strong></div><div>Puente peatonal del IMSS – sobre Av. Central</div><div>Horario 05:23am</div></li><li> <div><strong>Estación del metro Olimpica</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:27am</div></li><li> <div><strong>Estación del metro Ecatepec</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:29am</div></li><li> <div><strong>Estación del metro Muzquiz</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:33am</div></li><li> <div><strong>Estación del metro Río de los Remedios</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:37am</div></li><li> <div><strong>Estación del metro Impulsora</strong></div><div>Bajo el puente peatonal sobre Av. Central</div><div>Horario 05:39am</div></li><li> <div><strong>Estación del metro Nezahualcóyotl</strong></div><div>Bajo el puente peatonal sobre Av. Central</div><div>Horario 05:42am</div></li><li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill – En la biblioteca</div><div>Horario 06:30am</div></li></ul> </div><div class="alignleft"> <h4>Paradas de Regreso</h4> <ul> <li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill en la biblioteca</div><div>Horario 14:15hrs</div></li><li> <div><strong>Estación del metro Nezahualcóyotl</strong></div><div>En la gasolinería sobre Av. Central</div><div>Horario 15:36hrs</div></li><li> <div><strong>Estación del metro Impulsora</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario: 15:39hrs</div></li><li> <div><strong>Estación del metro Río de los Remedios</strong></div><div>Antes del puente peatonal sobre Av. Central</div><div>Horario 15:44hrs</div></li><li> <div><strong>Estación del metro Muzquiz</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:48hrs</div></li><li> <div><strong>Estación del metro Ecatepec</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:51hrs</div></li><li> <div><strong>Estación del metro Olimpica</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:54hrs</div></li><li> <div><strong>Estación del metro Plaza Aragón</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:57hrs</div></li><li> <div><strong>Estación del metro Cd. Azteca</strong></div><div>Pasando la estación del metro</div><div>Horario 14:00hrs</div></li></ul> </div></div>')
+			$("#mosaico-servicios").css("display","none");
+			$('.contacto-form').css('display','none');
+		}else{
+			$(".contenedor-subtitulos-ulsabus").remove();
+			$('div.tabla-ulsabus').remove();
+		}
+		if(index == 2){	// Hospedaje
+			$("#mosaico-servicios").css("display","inherit");
+			$('.contacto-form').css('display','none');
+			$("#mosaico-servicios").append('<div class="row cuadros-grises-servicios"><div class="col-md-6"><h5>INFORMES</h5><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper eros id tortor lacinia, mollis iaculis metus lobortis.</span></div><div class="col-md-6"><h5>INFORMES</h5><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper eros id tortor lacinia, mollis iaculis metus lobortis.</span></div></div>');
+		}else{
+			$('.cuadros-grises-servicios').remove();
+		}
+		if(index == 3){ // Renta de instalaciones
+			$('.contacto-form').css('display','inherit');
+			$("#mosaico-servicios").css("display","inherit");
+		}
+		if(index == 4){	// Estacionamiento
+			$("#mosaico-servicios").css("display","none");
+			$('.contacto-form').css('display','inherit');
+		}
+		
+	}
+	
 
     this.show();
 }

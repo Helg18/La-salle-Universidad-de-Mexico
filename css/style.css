@@ -1937,7 +1937,7 @@ p.textDos_title{
 .contenedorImagenTextoServicios{
   height: auto;
   overflow: hidden;
-  background: url(../images/nuevosArtes/servicio/servicios.png)no-repeat;
+ /* background: url(../images/nuevosArtes/servicio/servicios.png)no-repeat; */
   background-size: 100%;
   margin-bottom: 20px;
 } 
@@ -1949,7 +1949,7 @@ p.textDos_title{
   overflow: hidden;
   margin: auto;
   background: #fff;
-  transform: skewX(-145deg);
+ /* transform: skewX(-145deg); */
 }
 
 .descripcionTituloServicios{
@@ -1958,7 +1958,7 @@ p.textDos_title{
   margin-left: 25%;
   text-align: justify;
   font-size: 0.65em;
-  transform: skewX(145deg);
+ /* transform: skewX(145deg); */
 }
 
 .parrafoServicios{
@@ -1967,7 +1967,7 @@ p.textDos_title{
   margin-left: 30%;
   font-size: 0.65em;
   text-align: justify;
-  transform: skewX(145deg);
+ /* transform: skewX(145deg); */
 }
 
 
@@ -6821,3 +6821,15 @@ FACULTAD DE FAMADYC
 #universidadShow .contenedorImagenTextoAccionSocial-{overflow:hidden;background-position:100% 0% !important;background-repeat:no-repeat;}
 #universidadShow .contenedorDiagonalUniversidad2{z-index: 5;overflow: visible !important;transform:none !important;background:none !important;}
 #universidadShow  .descripcionTituloUniversidad-{background: #fff;transform:none !important;}
+.contenedor-subtitulos-ulsabus{width:100%;}
+.contenedor-subtitulos-ulsabus .subtitulos-ulsabus{width:12.5%;float:left;color:#23265e;font-size:13px;}
+.imagenes-servicios img, .tabla-ulsabus, .tabla-ulsabus .alignleft{width:50%;float:left;}
+.imagenes-servicios img{padding:14px;}
+.contact_form_widget{width:400px;text-align:center;box-shadow: 0px 6px 9px -6px #555;padding-bottom: 4px;margin-bottom: 16px;}
+.contact_form_widget p{font-size:11px;}
+.contact_form_widget .alignleft{float:left;width:50%;}
+.contact_form_widget input#nombre{width:100%;}
+.contact_form_widget input{height:10px;}
+.contact_form_widget textarea{width:100%;}
+.cuadros-grises-servicios{height:200px;margin-top:10px;}
+.cuadros-grises-servicios .col-md-6{background:rgba(210, 209, 209, 0.73);padding:30px 0 0 0;height:100%;border-right:2px solid #fff;text-align:center;}

@@ -12,7 +12,7 @@
   <title>La Salle</title>
   <meta name="description" content="">
   <meta name="author" content="Kreativeco">
-
+  
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
 
-  <!-- Prueba -->
+  
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/skeleton.css">
@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="../css/slider_menu_oferta/jquery.bxslider.css" />
 
   <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+
   <style>
       .carousel-indicators .active { background-image: url("") !important; }  
 	  
@@ -51,14 +51,11 @@
 	  .hover-bg.enter{left:91%}
 	  #fecha-hoy{font-family: 'HelveticaBold',arial;color: #838383; padding: 16px 0 0 0; border: 0; border-radius: 0px;font-size: 1.2rem; line-height: 14px; vertical-align: middle;}
 	  #titulo-seccion{font-family: 'HelveticaBold',arial;color: #838383; padding: 16px 0 0 0; border: 0; border-radius: 0px;font-size: 2.2rem; line-height: 14px; vertical-align: middle;}
-	  .cuadroEstudiante{width:48% !important;max-height:none;padding:20px;box-shadow:0px 0px 3px 0px #555;border:1px solid #eeeeee;margin:10px 2% 0 0}
-	  .cuadroEstudiante2{width:100% !important;max-height:none;padding:20px;box-shadow:0px 0px 3px 0px #555;border:1px solid #eeeeee;margin:0 0 10px 0}
 	  .day-headers{margin-top: 11px !important;}
-	  .cuadroEstudiante p{height:auto !important;padding:0px 30px 0px 0px !important}
   </style>
   
 
- 
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -76,7 +73,14 @@
 
 </head>
 <body>
-  
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <!-- BTN MENU PRINCIPAL -->
   <button id="nav_main" class="menuButtonScroll"></button> 
   <!-- FIN BTN MENU PRINCIPAL -->
@@ -1012,7 +1016,7 @@
 				<center id="fecha-hoy"></center>
 			</div>
 			<div class="col-md-12">
-				<center id="titulo-seccion">Multimedia</center>
+				<center id="titulo-seccion">Atenci&oacute;n a Medios</center>
 			</div>
 		</div>
     </div>
@@ -1020,11 +1024,35 @@
 
   <!--  FIN SECCION UBICACION
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-		
-
-
-
+	<br><br>
+	<div id="ubicacion" class="container" >	
+		<div class="row">
+			<div class="col-md-12" style="text-align: justify;">
+				<p>
+					Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+				</p>
+				<p>
+					Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<img src="../images/nuevosArtes/editoriales/edit5.png" style="float: left;margin-right:10px;">
+			</div>
+			<div class="col-md-4">
+				<h4>Lic. Alejandro Hern&aacute;ndez</h4>
+				<p>	Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+			</div>
+			<div class="col-md-2">
+				<img src="../images/nuevosArtes/editoriales/edit5.png" style="float: left;margin-right:10px;">
+			</div>
+			<div class="col-md-4">
+				<h4>Lic. Alejandro Hern&aacute;ndez</h4>
+				<p>	Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+			</div>
+		</div>
+	</div>
 
   
   <!--  SECCION UNIVERSIDAD LA SALLE
@@ -2653,35 +2681,18 @@
   
   <div class="container marginEntreSecciones ">
     <div class="row">
-		<div class="col-sm-8">
+		<div class="col-sm-12">
 			<div class="contenedorCuadrosEstudiante">
-				<iframe width="100%" height="300" src="https://www.youtube.com/embed/0c4l1MNzX9c" frameborder="0" allowfullscreen></iframe>
+				<div id="estudiante2" class="cuadroEstudiante"><p>Descargar</p><a href=""><img src="../images/nuevosArtes/editoriales/ir_d.png"></a></div>
+				<div id="estudiante2" class="cuadroEstudiante"><p>Semblanza<br><span class="azul">del Rector</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
+				<div id="estudiante2" class="cuadroEstudiante"><p>Semblanza<br><span class="azul">del Rector</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
+				<div id="estudiante2" class="cuadroEstudiante"><p>Semblanza<br><span class="azul">del Rector</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
 			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="contenedorCuadrosEstudiante">
-						<div id="estudiante2" class="cuadroEstudiante"><p>Revista<br><span class="azul">La Luci&eacute;rnaga</span></p><a href="" style="margin-bottom: 8px;"><img src="../images/nuevosArtes/editoriales/edit6.jpg" style="width:100%"></a> 
-							<div style="font-size: 12px;color: #9e9e9e;"><span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-thumbs-up"></i> Like </span> 
-							<span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"> <i class="fa fa-comment"></i> Comentar</span> 
-							<span style="box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-share"></i> Compartir</span></div>
-						</div>
-						<div id="estudiante2" class="cuadroEstudiante"><p>Revista<br><span class="azul">La Luci&eacute;rnaga</span></p><a href="" style="margin-bottom: 8px;"><img src="../images/nuevosArtes/editoriales/edit6.jpg" style="width:100%"></a> 
-							<div style="font-size: 12px;color: #9e9e9e;"><span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-thumbs-up"></i> Like </span> 
-							<span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"> <i class="fa fa-comment"></i> Comentar</span> 
-							<span style="box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-share"></i> Compartir</span></div>
-						</div>
-						<div id="estudiante2" class="cuadroEstudiante"><p>Revista<br><span class="azul">La Luci&eacute;rnaga</span></p><a href="" style="margin-bottom: 8px;"><img src="../images/nuevosArtes/editoriales/edit6.jpg" style="width:100%"></a> 
-							<div style="font-size: 12px;color: #9e9e9e;"><span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-thumbs-up"></i> Like </span> 
-							<span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"> <i class="fa fa-comment"></i> Comentar</span> 
-							<span style="box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-share"></i> Compartir</span></div>
-						</div>
-						<div id="estudiante2" class="cuadroEstudiante"><p>Revista<br><span class="azul">La Luci&eacute;rnaga</span></p><a href="" style="margin-bottom: 8px;"><img src="../images/nuevosArtes/editoriales/edit6.jpg" style="width:100%"></a> 
-							<div style="font-size: 12px;color: #9e9e9e;"><span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-thumbs-up"></i> Like </span> 
-							<span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"> <i class="fa fa-comment"></i> Comentar</span> 
-							<span style="box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-share"></i> Compartir</span></div>
-						</div>
-					</div>
-				</div>
+			<div class="contenedorCuadrosEstudiante">
+				<div id="estudiante2" class="cuadroEstudiante"><p>Semblanza<br><span class="azul">del Rector</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
+				<div id="estudiante2" class="cuadroEstudiante"><p>Semblanza<br><span class="azul">del Rector</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
+				<div id="estudiante2" class="cuadroEstudiante"><p>Semblanza<br><span class="azul">del Rector</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
+				<div id="estudiante2" class="cuadroEstudiante"><p>Semblanza<br><span class="azul">del Rector</span></p><a href=""><img src="../images/nuevosArtes/aspirante/ir.png"></a></div>
 			</div>
 		</div>
 
@@ -2724,49 +2735,21 @@
 
   <!-- FIN CONTENIDO DE NOTICIA SELECCIONADA
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	
+
+
+</div>
+
+<div class="row" style="margin-top:20px">
 	<div class="col-sm-4">
-
-
-
-
-
-
-
-  <!-- CONTENIDO CALENDARIO
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<div class="contenedorFormulario" style="width: 96%;">
-        <div class="row">
-			<div class="col-sm-12">
-				<div class="contenedorCuadrosEstudiante">
-					<div id="estudiante2" class="cuadroEstudiante2"><p>Revista<br><span class="azul">La Luci&eacute;rnaga</span></p><a href="" style="margin-bottom: 8px;"><img src="../images/nuevosArtes/editoriales/edit6.jpg" style="width:100%"></a> 
-							<div style="font-size: 12px;color: #9e9e9e;margin-top: 11px;"><span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-thumbs-up"></i> Like </span> 
-							<span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"> <i class="fa fa-comment"></i> Comentar</span> 
-							<span style="box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-share"></i> Compartir</span></div>
-						</div>
-					<div id="estudiante2" class="cuadroEstudiante2"><p>Revista<br><span class="azul">La Luci&eacute;rnaga</span></p><a href="" style="margin-bottom: 8px;"><img src="../images/nuevosArtes/editoriales/edit6.jpg" style="width:100%"></a> 
-							<div style="font-size: 12px;color: #9e9e9e;margin-top: 11px;"><span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-thumbs-up"></i> Like </span> 
-							<span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"> <i class="fa fa-comment"></i> Comentar</span> 
-							<span style="box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-share"></i> Compartir</span></div>
-						</div>
-					<div id="estudiante2" class="cuadroEstudiante2"><p>Revista<br><span class="azul">La Luci&eacute;rnaga</span></p><a href="" style="margin-bottom: 8px;"><img src="../images/nuevosArtes/editoriales/edit6.jpg" style="width:100%"></a> 
-							<div style="font-size: 12px;color: #9e9e9e;margin-top: 11px;"><span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-thumbs-up"></i> Like </span> 
-							<span style="margin-right: 15px;box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"> <i class="fa fa-comment"></i> Comentar</span> 
-							<span style="box-shadow: 0px 1px 7px -2px #555;padding: 3px;background: #f1f1f1;"><i class="fa fa-share"></i> Compartir</span></div>
-						</div>
-				</div>
-			</div>
-		</div>
+		<div class="fb-page" data-href="https://www.facebook.com/LaSalleMX/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/LaSalleMX/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LaSalleMX/">La Salle</a></blockquote></div>
 	</div>
-
-  <!-- FIN CONTENIDO CALENDARIO
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+	<div class="col-sm-4">
+		<div class="fb-page" data-href="https://www.facebook.com/LaSalleMX/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/LaSalleMX/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LaSalleMX/">La Salle</a></blockquote></div>
+	</div>
+	<div class="col-sm-4">
+		<div class="fb-page" data-href="https://www.facebook.com/LaSalleMX/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/LaSalleMX/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LaSalleMX/">La Salle</a></blockquote></div>
+	</div>
 </div>
-
-</div>
-
-
 
   <!-- TTITULO SECCION CALENDARIO RESPONSIVE
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

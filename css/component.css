@@ -21,7 +21,7 @@
   height: auto;
   margin: 0 auto;
 }
-.titulos-cuadros-azulitos{color:white;position:absolute;font-family:'Helvetica',font-size:12px;}
+.titulos-cuadros-azulitos{color:white;position:absolute;font-family:'Helvetica';font-size:12px;background:rgba(146, 146, 146, 0.3);width:95%;padding:10px 4px 0 2px}
 .descripcion-cuadros-azules{
     margin: 45px;
     color: white;

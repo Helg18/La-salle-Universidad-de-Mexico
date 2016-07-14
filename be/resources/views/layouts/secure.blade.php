@@ -136,6 +136,13 @@
 							</a>
 						</li>
 
+						<li class="menu-home">
+							<a href="{{url('centro')}}">
+								<i class="ion ion-edit"></i>
+								<span class="text">Centro de Infor.</span>
+							</a>
+						</li>
+
 					<li class="menu-config">
 						<a href="javascript:;">
 							<i class="ion ion-ios-settings-strong"></i>
@@ -145,6 +152,9 @@
 						<ul class="inner-drop list-unstyled">
 							<li><a href="{{url('config/user')}}">Usuarios</a></li>
 
+						</ul>
+						<ul class="inner-drop list-unstyled">
+							<li><a href="{{url('config/user')}}">Campos</a></li>
 						</ul>
 					</li>
 

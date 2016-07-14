@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategoriesNewsTable extends Migration
+class CreateCamposTable extends Migration
 {
     /**
      * Run the migrations.
@@ -11,13 +11,12 @@ class CreateCategoriesNewsTable extends Migration
      * @return void
      */
     public function up()
-    {  
-        Schema::create('categories_news', function (Blueprint $table) {
+    {
+        Schema::create('campos', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name');
-            $table->integer('language');
-            $table->integer('order');
+            $table->string('tipo');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateCategoriesNewsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('categories_news');
+         Schema::drop('estructura');
     }
 }

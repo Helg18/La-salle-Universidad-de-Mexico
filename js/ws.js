@@ -486,10 +486,16 @@ function Category3(){
 		if(index == 3){ // Renta de instalaciones
 			$('.contacto-form').css('display','inherit');
 			$("#mosaico-servicios").css("display","inherit");
+			$(".video-servicios").css("display","inherit");
+		}else{
+			$(".video-servicios").css("display","none");
 		}
 		if(index == 4){	// Estacionamiento
 			$("#mosaico-servicios").css("display","none");
 			$('.contacto-form').css('display','inherit');
+			$(".descripcionTituloServicios").append('<img src="images/nuevosArtes/servicio/mapa-mx.png" class="mapa-mx2">');	 // Imagen (por ahora) de un mapa
+		}else{
+			$(".mapa-mx2").remove();
 		}
 		
 	}

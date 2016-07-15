@@ -263,6 +263,26 @@ function Category1(){
 			}
 			
 		}
+		
+		if(index == 9){	// Red La Salle
+			if(index2 == 0){ // Universidades en mexico
+				$(".descripcionTituloUniversidad-").append('<img src="images/nuevosArtes/servicio/mapa-mx.png" class="mapa-mx">');
+				$("#azules-red").css("display","inherit");
+				$(".ul-mundo").css("display","none");
+			}else{
+				$(".mapa-mx").remove();
+			}
+			if(index2 == 1){ // Universidades en el mundo
+				$(".descripcionTituloUniversidad-").append('<img src="images/nuevosArtes/servicio/mapa-mundo.png" class="mapa-mundo">');
+				$("#azules-red").css("display","inherit");
+				$(".ul-mundo").css("display","inherit");				
+			}else{
+				$(".mapa-mundo").remove();
+			}
+		}else{
+			$("#azules-red").css("display","none");
+			$(".ul-mundo").css("display","none");	
+		}
     }
 
     this.show();

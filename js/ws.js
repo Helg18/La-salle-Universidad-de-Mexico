@@ -241,10 +241,10 @@ function Category1(){
 			$("div#descargables").css("display","inherit"); // Descargables
 		}
 		if(index == 6){	// Historia
-			$("#mosaico-somos-salle").css("display","none");
+			$("#mosaico-somos-salle").css("display","inherit");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
-			$("div#links-referencia").css("display","none"); // Links
+			$("div#links-referencia").css("display","inherit"); // Links
 			$("div#descargables").css("display","none"); // Descargables
 		}
 		if(index == 7){	// Identidad
@@ -262,6 +262,9 @@ function Category1(){
 				$("#mosaico-somos-salle-monumentos").css("display","none");
 			}
 			
+		}
+		if(index == 8){
+			$("#mosaico-somos-salle").css("display","none");
 		}
 		
 		if(index == 9){	// Red La Salle

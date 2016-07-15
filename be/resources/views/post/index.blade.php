@@ -12,7 +12,7 @@
 		<li class="{{ $record || count($errors)>0 ? 'active' : '' }}"><a href="#tab-create" data-toggle="tab">{{ $record ? 'EDITAR' : 'NUEVO' }}</a></li>
 	</ul>
 	<div class="tab-content">
-		<div class="tab-pane {{ $record|| count($errors)>0  ? '' : 'active' }}" id="tab-linearrow-one">
+		<div class="tab-pane {{ $record || count($errors)>0  ? '' : 'active' }}" id="tab-linearrow-one">
 
 <!-- Data Table -->
 

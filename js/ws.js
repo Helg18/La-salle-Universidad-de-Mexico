@@ -241,18 +241,50 @@ function Category1(){
 			$("div#descargables").css("display","inherit"); // Descargables
 		}
 		if(index == 6){	// Historia
-			$("#mosaico-somos-salle").css("display","none");
+			$("#mosaico-somos-salle").css("display","inherit");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
-			$("div#links-referencia").css("display","none"); // Links
+			$("div#links-referencia").css("display","inherit"); // Links
 			$("div#descargables").css("display","none"); // Descargables
 		}
 		if(index == 7){	// Identidad
-			$("#mosaico-somos-salle").css("display","inherit");
+			
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","inherit"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","inherit"); // Descargables
+			
+			if(index2 == 4){ // Submenú - Monumentos
+				$("#mosaico-somos-salle-monumentos").css("display","inherit");
+				$("#mosaico-somos-salle").css("display","none");
+			}else{
+				$("#mosaico-somos-salle").css("display","inherit");
+				$("#mosaico-somos-salle-monumentos").css("display","none");
+			}
+			
+		}
+		if(index == 8){
+			$("#mosaico-somos-salle").css("display","none");
+		}
+		
+		if(index == 9){	// Red La Salle
+			if(index2 == 0){ // Universidades en mexico
+				$(".descripcionTituloUniversidad-").append('<img src="images/nuevosArtes/servicio/mapa-mx.png" class="mapa-mx">');
+				$("#azules-red").css("display","inherit");
+				$(".ul-mundo").css("display","none");
+			}else{
+				$(".mapa-mx").remove();
+			}
+			if(index2 == 1){ // Universidades en el mundo
+				$(".descripcionTituloUniversidad-").append('<img src="images/nuevosArtes/servicio/mapa-mundo.png" class="mapa-mundo">');
+				$("#azules-red").css("display","inherit");
+				$(".ul-mundo").css("display","inherit");				
+			}else{
+				$(".mapa-mundo").remove();
+			}
+		}else{
+			$("#azules-red").css("display","none");
+			$(".ul-mundo").css("display","none");	
 		}
     }
 
@@ -1109,7 +1141,7 @@ function AcademicOffer(){
 		
 		// Licenciatura
         if(index==1 || index >= 1){	// Solo por ahora para que tenga contenido, se le dejo que los demas submenus muestren el mismo mosaico
-			html = '<div class="pull-left cont-filtro"> <div class="cuadrosSubmenu mosaico-filtro-todos" onclick="CambiarMosaico();" data-toggle="portfilter" data-target="all">Todos</div><div class="cuadrosSubmenu mosaico-filtro-facultad" onclick="CambiarMosaico();" data-toggle="portfilter" data-target="facultad">Facultad</div></div>';
+			//html = '<div class="pull-left cont-filtro"> <div class="cuadrosSubmenu mosaico-filtro-todos" onclick="CambiarMosaico();" data-toggle="portfilter" data-target="all">Todos</div><div class="cuadrosSubmenu mosaico-filtro-facultad" onclick="CambiarMosaico();" data-toggle="portfilter" data-target="facultad">Facultad</div></div>';
 			//html = html + '<br/><ul class="thumbnails gallery"> <li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bggris"> <h6>FAMADYC</h6> <h5>Licenciatura en Arquitectura</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bggris"> <h6>FAMADYC</h6> <h5>Licenciatura en Arquitectura</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulf"> <h6>Facultad de Humanidades</h6> <h5>Licenciatura en Filosof&iacute;a</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulf"> <h6>Facultad de Humanidades</h6> <h5>Licenciatura en Filosof&iacute;a</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgamarillo"> <h6>Facultad de Medicina</h6> <h5>Licenciatura en M&eacute;dico Cirujano</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgverde"> <h6>Facultad de Negocios</h6> <h5>Licenciatura en Contadur&iacute;a y Finanzas</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li></ul><div class="push"></div>';
 			$("#mosaico-oferta-educativa").css('display','inherit');
 		}else{
@@ -1252,6 +1284,5 @@ function getUrlVars()
       return vars;
   }
 function CambiarMosaico(){	// Funcion que debe cambiar el contenido del div #mosaico-oferta-educativa dependiendo el filtro seleccionado, por ahora solo hace un efecto que oculta y muestra lo mismo.
-			//$("div#mosaico-oferta-educativa").hide();
-			//$("div#mosaico-oferta-educativa").fadeIn('slow');
-		}
+	$('div.items-oferta-educativa').hide().delay(200).fadeIn('slow');				
+}

@@ -283,7 +283,7 @@
             </form>
 
             @if($record && ($Category->id ==2 || $Category->id == 1 || $Category->id == 9))
-                <script>var parent_id = '{{$record->id}}', category_id = '{{$Category->id}}';</script>
+                 <script>var parent_id = '{{$record->id}}', category_id = '{{$Category->id}}';</script>
                 <div ng-controller="PostCtrl" class="ng-cloak">
                     <hr />
 

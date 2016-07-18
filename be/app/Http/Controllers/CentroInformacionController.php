@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Models\CategoriasCentroInformacion;
-
+use App\Models\CentroInformacion;
+use Illuminate\Support\Collection;
+use App\Http\Controllers\Controller;
 
 class CentroInformacionController extends Controller
 {
@@ -24,11 +26,7 @@ class CentroInformacionController extends Controller
 		$categorias->name = $request->title;
 		$categorias->language = $request->language;
 		$categorias->order = $request->order;
-		if($request->tipo==0){
-			$categorias->id_padre = "#";	
-		}else{
-			$categorias->id_padre = $request->id_padre;
-		}
+		$categorias->id_padre = "#";			
 		$categorias->save();
 		$categorias = CategoriasCentroInformacion::all();
     	return view('centro.index')->with(compact('categorias'));
@@ -41,7 +39,12 @@ class CentroInformacionController extends Controller
     public function edit(Request $request){
 
      	$categorias_edit = CategoriasCentroInformacion::find($request->id);
-		return view('centro.index')->with(compact('categorias_edit'));        
+
+        $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id)->get()->toarray();
+
+        // dd($subcategorias_edit);
+
+		return view('centro.index')->with(compact('categorias_edit','subcategorias_edit'));        
 
 
      }
@@ -54,11 +57,7 @@ class CentroInformacionController extends Controller
      	$categorias->name = $request->title;
 		$categorias->language = $request->language;
 		$categorias->order = $request->order;
-		if($request->tipo==0){
-			$categorias->id_padre = "#";	
-		}else{
-			$categorias->id_padre = $request->id_padre;
-		}
+		$categorias->id_padre = "#";			
 		$categorias->save();
 
 		// return $this->index();
@@ -74,8 +73,11 @@ class CentroInformacionController extends Controller
         $categorias->delete();
 		return redirect('centro')->with('success','Centro de  Informacion se elimino exitosamente');       
 
+     }  
 
-     }   
+     public function news(){
+        return $this->belongsToMany('App\Models\CentroInformacion');
+    } 
      
 
 

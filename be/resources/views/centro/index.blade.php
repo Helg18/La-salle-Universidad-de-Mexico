@@ -28,11 +28,13 @@
             &nbsp;registros
         </div>
 
-        <form class="form-horizontal right col-lg-4" action="javascript:;">
-            <input type="text" class="form-control input-sm searchInput" placeholder="Buscar">
-        </form>
+       
 
         @if(isset($categorias))
+            <form class="form-horizontal right col-lg-4" action="javascript:;">
+                <input type="text" class="form-control input-sm searchInput" placeholder="Buscar">
+            </form>
+
             <div class="data-table">            
                     <table class="table table-bordered table-striped">
                         <thead>
@@ -62,6 +64,7 @@
                     </table>
             </div>
             </div>
+
         @else
 
          <div class="tab-pane " id="tab-create">
@@ -89,14 +92,11 @@
 
                 <div class="form-group">
                     <label class="col-md-2 control-label">Idioma</label>
-                    
                     <div class="col-md-9">
                     <select class="form-control" name="language" id="language">
                         <option  @if($categorias_edit->language == 1){{'selected'}} @endif value="1">Español</option>
                         <option  @if($categorias_edit->language == 2){{'selected'}} @endif value="2">Ingles</option>
                     </select>             
-
-                   
                     </div>       
                 </div>
 
@@ -107,91 +107,54 @@
                     </div>       
                 </div>
 
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label class="col-md-2 control-label">Tipo de Categoria</label>
                     <div class="col-md-9">
                     <select class="form-control" name="tipo" id="tipo">
                         <option  value="0">Padre</option>                        
                     </select>                               
                     </div>       
-                </div>
+                </div> --}}
+
                 <div class="btn-group col-md-offset-2">                   
                     <button class="btn btn-success" type="submit">Guardar</button>
                 </div>
 
             </form>
 
-
-        @endif
-
-
-
         </div>
-        @if(isset($categorias))
-        <div class="tab-pane " id="tab-create">
-            <form role="form" class="form-horizontal" method="POST" action="{{url('centro')}}"  enctype="multipart/form-data">
-            {!! csrf_field() !!}
+        @endif        
 
-               {{--  @if($record)
-                <input type="hidden" name="_method" value="PUT">
-                @endif --}}
+        @if(isset($subcategorias_edit) && count($subcategorias_edit)>0 )
 
-                <div class="form-group">
-                    <label class="col-md-2 control-label">Titulo</label>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" value="" name="title" autocomplete="off">
-                        @if ($errors->has('title'))
-                            <span class="alert alert-danger">
-                                <strong></strong>
-                            </span>
-                        @endif
-                    </div>
-                </div>
+        <script>var id_catgories_centro_noticia = '{{ $subcategorias_edit[0]['id_catgories_centro_noticia'] }}'</script>
 
-                <div class="form-group">
-                    <label class="col-md-2 control-label">Idioma</label>
-                    
-                    <div class="col-md-9">
-                    <select class="form-control" name="language" id="language">
-                        <option  value="1">Español</option>
-                        <option  value="2">Ingles</option>
-                    </select>             
+        <div ng-controller="CentroCtrl" class="ng-cloak">
+            <hr />
 
-                   
-                    </div>       
-                </div>
-
-                 <div class="form-group">
-                    <label class="col-md-2 control-label">Order</label>
-                    <div class="col-md-9">
-                    <input type="text" class="form-control" value="" name="order" autocomplete="off">                              
-                    </div>       
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-2 control-label">Tipo de Categoria</label>
-                    <div class="col-md-9">
-                    <select class="form-control" name="tipo" id="tipo">
-                        <option  value="0">Padre</option>                        
-                    </select>                               
-                    </div>       
-                </div>
-
-                 
-
-                     
-
-
-                <div class="btn-group col-md-offset-2">
-                   
-                    <button class="btn btn-success" type="submit">Guardar</button>
-                </div>
-
-            </form>
-
-            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar Sub-Categorias</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="centro in centros">
+                        <td><a href="javascript: void(0);" ng-click="modalCentros(centro, 'Cuadro de información')">@{{centro.title}}</a></td>
+                        <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        @endif
+
+    
+        @include('centro.modal')
+        @endif 
+
+
+        
+        
 
     </div>
 </div>

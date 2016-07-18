@@ -50161,11 +50161,140 @@ $(document).ready(function(){
     laravel.initialize();
 
 });
-var app = angular.module('lasalle',['ui.bootstrap']);
+var app = angular.module('lasalle',['ui.bootstrap'])
+
+.controller('CentroCtrl',['$scope', '$http', '$uibModal',function($scope, $http, $uibModal){
+
+        $scope.centros = [];
 
 
-app
-    .controller('PostCtrl',function($scope, $http, $uibModal){
+        $scope.modalCentros = function(centro, title){
+
+            if(!centro){
+                centro = {
+                    id: null,
+                    id_catgories_centro_noticia: id_catgories_centro_noticia,
+                    title: null,
+                    subtitle: null,
+                    paragraph_1: null,
+                    paragraph_2: null,
+                    paragraph_3: null,
+
+                }
+            }
+
+            var modalInstance = $uibModal.open({
+
+                templateUrl: 'myModalCContent.html',
+                controller: 'ModalInstanceCCtrl',
+                size: 'lg',
+                resolve: {
+                    title: function () {
+                        return title;
+                    },
+                    centro: function(){
+                        return centro;
+                    },
+
+
+                }
+            });
+
+            modalInstance.result.then(function (result) {
+                var centro = result.centro,
+                    files = result.files;
+
+                console.log(centro);
+                //console.log(question);
+                //console.log('f');
+                //console.log(files);
+
+                $http.post(url + 'angular/centros', centro).then(function(response){
+                    bootbox.alert(response.data.message);
+
+
+                    if(files){
+                        var formData = new FormData();
+                        angular.forEach(files, function (file) {
+                            formData.append(file.name, file);
+                        });
+
+                        $http.post(url + 'angular/question/' + response.data.id + '/images', formData, {
+                                transformRequest: angular.identity,
+                                headers: { 'Content-Type': undefined }
+                        })
+                        .success(function (a, b, c) {
+                            $scope.getQuestions();
+                        })
+                        .error(function (a, b, c) {
+                            console.log('error');
+                            console.log(a);
+                        });
+                    }else{
+                        $scope.getCentros();
+                    }
+
+                },function(err,status){
+                    bootbox.alert(err.data.message);
+                });
+
+            }, function () {
+                //$log.info('Modal dismissed at: ' + new Date());
+            });
+
+        }
+
+        $scope.getCentros = function(){
+            $http.get(url + 'angular/' + id_catgories_centro_noticia + '/centros').then(function(response){
+                // console.log(response.data);
+                $scope.centros = response.data;
+            });
+        }
+
+        $scope.deleteCentros = function (centro){
+            $http.delete(url + 'angular/' + centro.id + '/centros' ).then(function(response){
+                $scope.getCentros();
+            });
+        }
+
+        $scope.getCentros();
+    }])
+    .controller('ModalInstanceCCtrl',['$scope', '$uibModalInstance', 'title', 'centro', function ($scope, $uibModalInstance, title, centro) 
+    {
+
+        $scope.centro = centro;
+        // console.log(centro);
+        $scope.title = title;
+        $scope.category_id = 0;
+        // console.log(category_id);
+
+
+        $scope.ok = function () {
+
+            if(!$scope.centro.title){
+                bootbox.alert("Especifica el titulo");
+                return false;
+            }
+
+            /*if($scope.question.type=='Opcion Multiple Imagen' || $scope.question.type=='Opcion Unica Imagen'){
+                files = document.getElementById('files').files;
+
+            }else if($scope.question.type=='Tache Paloma Imagen' || $scope.question.type=='Dibujar sobre Imagen'){
+                files = document.getElementById('files2').files;
+            }*/
+
+            files = false;
+
+            $uibModalInstance.close({ centro: $scope.centro, files: files});
+        };
+
+        $scope.cancel = function () {
+            $uibModalInstance.dismiss('cancel');
+        };
+
+    }])
+
+    .controller('PostCtrl',['$scope', '$http', '$uibModal',function($scope, $http, $uibModal){
 
         $scope.posts = [];
 
@@ -50267,9 +50396,9 @@ app
         }
 
         $scope.getPosts();
-    })
+    }])
 
-    .controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, title, post) {
+    .controller('ModalInstanceCtrl',['$scope', '$uibModalInstance', 'title', 'post', function ($scope, $uibModalInstance, title, post) {
 
         $scope.post = post;
         $scope.title = title;
@@ -50283,8 +50412,6 @@ app
                 bootbox.alert("Especifica el titulo");
                 return false;
             }
-
-
 
             /*if($scope.question.type=='Opcion Multiple Imagen' || $scope.question.type=='Opcion Unica Imagen'){
                 files = document.getElementById('files').files;
@@ -50302,7 +50429,7 @@ app
             $uibModalInstance.dismiss('cancel');
         };
 
-    })
+    }]) 
 
 
 

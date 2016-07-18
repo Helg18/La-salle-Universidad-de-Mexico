@@ -34,6 +34,10 @@ class CentroInformacionController extends Controller
     	return view('centro.index')->with(compact('categorias'));
     }
 
+    /**
+     * @param Request $request
+     * @return $this
+     */
     public function edit(Request $request){
 
      	$categorias_edit = CategoriasCentroInformacion::find($request->id);

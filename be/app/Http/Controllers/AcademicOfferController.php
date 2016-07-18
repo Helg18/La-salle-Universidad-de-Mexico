@@ -104,9 +104,8 @@ class AcademicOfferController extends Controller
         return \Redirect::route('academic.index')->with('success','Información eliminada exitosamente');
     }
 
-
-
-    private function customIndex($record=false,$request=false){
+    private function customIndex($record=false,$request=false)
+    {
 
         $records = AcademicOffer::sliders();
 
@@ -115,7 +114,6 @@ class AcademicOfferController extends Controller
         }else{
             $type = $request && $request->type ? $request->type : 'gray_box';
         }
-
 
 
         $nextype=false;

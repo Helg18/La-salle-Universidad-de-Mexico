@@ -177,8 +177,8 @@
         @endif        
 
         @if(isset($subcategorias_edit) && count($subcategorias_edit)>0 )
-
-        <script>var id_catgories_centro_noticia = '{{ $subcategorias_edit[0]['id_catgories_centro_noticia'] }}'</script>
+            <script>var id_catgories_centro_noticia = '{{ $subcategorias_edit[0]['id_catgories_centro_noticia'] }}'</script>
+        
 
         <div ng-controller="CentroCtrl" class="ng-cloak">
             <hr />
@@ -199,10 +199,22 @@
             </table>
         </div>
 
-    
-        @include('centro.modal')
-        @endif 
+        @else
+        <script>var id_catgories_centro_noticia = '0'</script>
+        <div ng-controller="CentroCtrl" class="ng-cloak">
 
+        <table class="table">
+                <thead>
+                    <tr>
+                        <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar Sub-Categorias</th>
+                        <th></th>
+                    </tr>
+                </thead>
+        </table>
+        </div>
+        @include('centro.modal')
+        
+        @endif 
 
         
         

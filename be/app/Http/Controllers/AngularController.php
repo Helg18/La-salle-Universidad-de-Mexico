@@ -75,7 +75,7 @@ class AngularController extends Controller
         $centro->paragraph_1 = $request->paragraph_1;
         $centro->paragraph_2 = $request->paragraph_2;
         $centro->paragraph_3 = $request->paragraph_3;
-        $centro->language = $request->languageModel;
+        $centro->language = $request->languageCentro;
         $centro->video = '0';
         $centro->picture = '0';
         $centro->order = 0;

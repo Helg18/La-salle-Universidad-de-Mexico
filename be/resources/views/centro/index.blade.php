@@ -211,6 +211,12 @@
                         <th></th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr ng-repeat="centro in centros">
+                        <td><a href="javascript: void(0);" ng-click="modalCentros(centro, 'Cuadro de información')">@{{centro.title}}</a></td>
+                        <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td>
+                    </tr>
+                </tbody>
         </table>
         </div>
         @include('centro.modal')

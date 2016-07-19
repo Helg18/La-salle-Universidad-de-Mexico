@@ -21,7 +21,7 @@
         <div class="form-group">
             <label class="control-label small">Idioma</label>
         
-            <select class="form-control" name="languageModal" id="languageModal">
+            <select class="form-control" name="language" id="language">
                 <option {{ $record && $record->language==1 ? 'selected':'' }} value="1">Español</option>
                 <option {{ $record && $record->language==2 ? 'selected':'' }} value="2">Ingles</option>
             </select>             

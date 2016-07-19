@@ -50179,7 +50179,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     paragraph_1: null,
                     paragraph_2: null,
                     paragraph_3: null,
-                    languageModel: null,
+                    languageCentro: null,
 
                 }
             }
@@ -50204,9 +50204,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     files = result.files;
 
                 console.log(centro);
-                //console.log(question);
-                //console.log('f');
-                //console.log(files);
+                
 
                 $http.post(url + 'angular/centros', centro).then(function(response){
                     bootbox.alert(response.data.message);

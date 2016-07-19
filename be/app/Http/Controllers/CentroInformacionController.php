@@ -14,10 +14,26 @@ class CentroInformacionController extends Controller
 {
 
 	
+    // /**
+    //  * Create a new controller instance.
+    //  *
+    //  * @return void
+    //  */
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    //     // $this->middleware('module');
+
+    // }
 
     public function index(){
  		$categorias = CategoriasCentroInformacion::all();
     	return view('centro.index')->with(compact('categorias'));
+    }
+
+    public function buscar(Request $request){
+        $categorias = CategoriasCentroInformacion::find($request->id);
+        return view('post.index')->with(compact('records','record','categorias'));
     }
 
     public function add(Request $request){

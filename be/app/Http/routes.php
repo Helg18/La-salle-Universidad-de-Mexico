@@ -46,6 +46,7 @@ Route::delete('post/{id}/deleteimage', 'PostController@delete_image');
 Route::resource('post', 'PostController');
 Route::resource('academic', 'AcademicOfferController');
 
+Route::resource('buscar', 'CentroInformacionController');
 Route::get('centro', 'CentroInformacionController@index');
 Route::post('centro', 'CentroInformacionController@add');
 Route::get('centro/{id}/edit', 'CentroInformacionController@edit');

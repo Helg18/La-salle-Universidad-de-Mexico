@@ -50179,13 +50179,14 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     paragraph_1: null,
                     paragraph_2: null,
                     paragraph_3: null,
+                    languageModel: null,
 
                 }
             }
 
             var modalInstance = $uibModal.open({
 
-                templateUrl: 'myModalCContent.html',
+                templateUrl: 'myModal.html',
                 controller: 'ModalInstanceCCtrl',
                 size: 'lg',
                 resolve: {
@@ -50195,8 +50196,6 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     centro: function(){
                         return centro;
                     },
-
-
                 }
             });
 
@@ -50265,7 +50264,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
         $scope.centro = centro;
         // console.log(centro);
         $scope.title = title;
-        $scope.category_id = 0;
+        // $scope.category_id = 0;
         // console.log(category_id);
 
 

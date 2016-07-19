@@ -201,13 +201,13 @@
 
         @elseif(isset($subcategorias_edit) && count($subcategorias_edit)==0 )
 
-        <script>var id_catgories_centro_noticia = '0'</script>
+        <script>var id_catgories_centro_noticia = '{{ $categorias_edit->id }}'</script>
         <div ng-controller="CentroCtrl" class="ng-cloak">
 
         <table class="table">
                 <thead>
                     <tr>
-                        <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar Sub-Categorias</th>
+                        <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Sub-Categorias')"><i class="fa fa-plus"></i></button> Agregar Sub-Categorias</th>
                         <th></th>
                     </tr>
                 </thead>

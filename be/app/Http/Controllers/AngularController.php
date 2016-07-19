@@ -65,17 +65,21 @@ class AngularController extends Controller
     }
 
     public function save_centros(Request $request){
-        // if(!$post = Post::find($request->id)){
-        //     $post=new Post();
-        // }
-        // $post->title = $request->title;
-        // $post->subtitle = $request->subtitle;
-        // $post->paragraph_1 = $request->paragraph_1;
-        // $post->paragraph_2 = $request->paragraph_2;
-        // $post->paragraph_3 = $request->paragraph_3;
-        // $post->parent_id = $request->parent_id;
-        // $post->language = $request->languageModal;
-        // $post->save();
+        
+        if(!$centro = CentroInformacion::find($request->id)){
+            $centro=new CentroInformacion();
+        }
+        $centro->id_catgories_centro_noticia = $request->id_catgories_centro_noticia;
+        $centro->title = $request->title;
+        $centro->subtitle = $request->subtitle;
+        $centro->paragraph_1 = $request->paragraph_1;
+        $centro->paragraph_2 = $request->paragraph_2;
+        $centro->paragraph_3 = $request->paragraph_3;
+        $centro->language = $request->languageModal;
+        $centro->video = '0';
+        $centro->picture = '0';
+        $centro->order = 0;
+        $centro->save();
 
         return response()->json(['message'=>'Información guardada exitosamente']);
     }

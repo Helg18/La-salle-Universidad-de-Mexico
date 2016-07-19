@@ -199,7 +199,8 @@
             </table>
         </div>
 
-        @else
+        @elseif(isset($subcategorias_edit) && count($subcategorias_edit)==0 )
+
         <script>var id_catgories_centro_noticia = '0'</script>
         <div ng-controller="CentroCtrl" class="ng-cloak">
 

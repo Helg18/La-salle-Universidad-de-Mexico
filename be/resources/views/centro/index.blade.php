@@ -177,7 +177,7 @@
         @endif        
 
         @if(isset($subcategorias_edit) && count($subcategorias_edit)>0 )
-            <script>var id_catgories_centro_noticia = '{{ $subcategorias_edit[0]['id_catgories_centro_noticia'] }}'</script>
+            <script>var id_catgories_centro_noticia = '{{ $categorias_edit->id }}'</script>
         
 
         <div ng-controller="CentroCtrl" class="ng-cloak">
@@ -219,10 +219,11 @@
                 </tbody>
         </table>
         </div>
-        @include('centro.modal')
+        
         
         @endif 
 
+        @include('centro.modal')
         
         
 

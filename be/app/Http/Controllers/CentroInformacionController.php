@@ -56,7 +56,7 @@ class CentroInformacionController extends Controller
 
      	$categorias_edit = CategoriasCentroInformacion::find($request->id);
 
-        $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id)->get()->toarray();
+        $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id);
 
         // dd($subcategorias_edit);
 

@@ -54,7 +54,6 @@ class AngularController extends Controller
     public function centros($id){
 
         $centros = CentroInformacion::where('id_catgories_centro_noticia', '=', $id);
-
         return response()->json($centros->get());
     }
     
@@ -75,10 +74,10 @@ class AngularController extends Controller
         $centro->paragraph_1 = $request->paragraph_1;
         $centro->paragraph_2 = $request->paragraph_2;
         $centro->paragraph_3 = $request->paragraph_3;
-        $centro->language = $request->languageCentro;
-        $centro->video = '0';
-        $centro->picture = '0';
-        $centro->order = 0;
+        $centro->language = $request->language;
+        $centro->video = $request->video;
+        $centro->picture = $request->picture;
+        $centro->order = $request->order;
         $centro->save();
 
         return response()->json(['message'=>'Información guardada exitosamente']);

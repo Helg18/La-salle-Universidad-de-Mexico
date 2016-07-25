@@ -69,6 +69,8 @@ class CentroInformacionController extends Controller
     public function update(Request $request){
 
      	$categorias = CategoriasCentroInformacion::find($request->id);
+        
+        dd($request);
 
      	$categorias->name = $request->title;
 		$categorias->language = $request->language;

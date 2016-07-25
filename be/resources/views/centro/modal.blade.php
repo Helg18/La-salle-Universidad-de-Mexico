@@ -4,35 +4,56 @@
     </div>
     <div class="modal-body">
         <div class="form-group form-group-sm">
+            <label class="control-label small">Order.</label>
+            <input type="text" class="form-control" placeholder="" ng-model="centro.order">
+        </div>
+
+        <div class="form-group form-group-sm">
             <label class="control-label small">Titulo.</label>
             <input type="text" class="form-control" placeholder="" ng-model="centro.title">
         </div>
         
-        <div class="form-group form-group-sm">
-            <label class="control-label small">Subtitulo.</label>
+        <br>
+        <label class="control-label small">Ver Subtitulo.</label>
+        <input type="checkbox" ng-model="subhide " >
+        <div ng-show="subhide && centro.subtitle!=''" class="form-group form-group-sm">            
             <input type="text" class="form-control" placeholder="" ng-model="centro.subtitle">
         </div>
 
-        <div class="form-group" >
-            <label class="control-label small">Parrafo.1</label>
+        <br>
+        <label class="control-label small">Ver Parrafo.1</label>
+        <input type="checkbox"  ng-model="parr1" >
+        <div ng-show="parr1 && centro.paragraph_1!=''" class="form-group" >
             <textarea rows="4" class="form-control" width="100%" ng-model="centro.paragraph_1"></textarea>
         </div>
-        <div class="form-group" >
-            <label class="control-label small">Parrafo.2</label>
+        
+        <br>
+        <label class="control-label small">Ver Parrafo.2</label>
+        <input type="checkbox" ng-model="parr2 " >
+        <div ng-show="parr2 && centro.paragraph_2!=''" class="form-group" >
             <textarea rows="4" class="form-control" width="100%" ng-model="centro.paragraph_2"></textarea>
         </div>
-        <div class="form-group" >
-            <label class="control-label small">Parrafo.3</label>
+
+        <br>
+        <label class="control-label small">Ver Parrafo.3</label>
+        <input type="checkbox" ng-model="parr3 " >
+        <div ng-show="parr3 && centro.paragraph_3!=''" class="form-group" >
             <textarea rows="4" class="form-control" width="100%" ng-model="centro.paragraph_3"></textarea>
         </div>
-        <div class="form-group" >
-            <label class="control-label small">Imagen</label>
+
+
+        <br>
+        <label class="control-label small">Ver Imagen</label>
+        <input type="checkbox" ng-model="imag " >
+        <div ng-show="imag && centro.picture!=''" class="form-group" >
             <input type="file" class="form-control" ng-model="centro.picture">
         </div>
 
-        <div class="form-group" >
-            <label class="control-label small">Video</label>
-            <textarea rows="4" class="form-control" width="100%" ng-model="centro.video"></textarea>
+        <br>
+        <label class="control-label small">Ver Video</label>
+        <input type="checkbox" ng-model="videos " >
+        <div ng-show="videos && centro.video !=''" class="form-group" >
+            <input type="text" class="form-control" placeholder="Video" ng-model="centro.video">
         </div>
 
         <div class="form-group">

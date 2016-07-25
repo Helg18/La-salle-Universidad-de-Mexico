@@ -50168,7 +50168,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
         $scope.centros = [];
 
 
-        $scope.modalCentros = function(centro, title){
+        $scope.modalCentros = function(centro, title,order){
 
             if(!centro){
                 centro = {
@@ -50180,12 +50180,9 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     paragraph_2: null,
                     paragraph_3: null,
                     language: null,
-                    languageData: [
-								       {id: '1', name: 'Español'},
-								       {id: '2', name: 'Ingles'}								       
-								  ],
-                    pucture:null,
-                    video:null
+                    picture:null,
+                    video:null,
+                    order:null,
 
                 }
             }
@@ -50198,6 +50195,9 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                 resolve: {
                     title: function () {
                         return title;
+                    },
+                    order: function () {
+                        return order;
                     },
                     centro: function(){
                         return centro;
@@ -50249,13 +50249,14 @@ var app = angular.module('lasalle',['ui.bootstrap'])
 
         $scope.getCentros = function(){
             $http.get(url + 'angular/' + id_catgories_centro_noticia + '/centros').then(function(response){
-                // console.log(response.data);
+                 // console.log(response.data);
                 $scope.centros = response.data;
             });
         }
 
         $scope.deleteCentros = function (centro){
             $http.delete(url + 'angular/' + centro.id + '/centros' ).then(function(response){
+            	
                 $scope.getCentros();
             });
         }
@@ -50268,6 +50269,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
         $scope.centro = centro;
         // console.log(centro);
         $scope.title = title;
+        // $scope.order = order;
         // $scope.category_id = 0;
         // console.log(category_id);
 
@@ -50278,6 +50280,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                 bootbox.alert("Especifica el titulo");
                 return false;
             }
+            
 
             /*if($scope.question.type=='Opcion Multiple Imagen' || $scope.question.type=='Opcion Unica Imagen'){
                 files = document.getElementById('files').files;
@@ -50340,7 +50343,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     files = result.files
                     ;
 
-                console.log(post);
+                // console.log(post);
                 //console.log(question);
                 //console.log('f');
                 //console.log(files);

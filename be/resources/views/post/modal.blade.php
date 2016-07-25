@@ -21,9 +21,9 @@
         <div class="form-group">
             <label class="control-label small">Idioma</label>
         
-            <select class="form-control" name="language" id="language">
-                <option {{ $record && $record->language==1 ? 'selected':'' }} value="1">Español</option>
-                <option {{ $record && $record->language==2 ? 'selected':'' }} value="2">Ingles</option>
+            <select class="form-control" ng-model="post.language">
+                <option ng-selected="post.language==1" value="1">Español</option>
+                <option ng-selected="post.language==2" value="2">Ingles</option>
             </select>             
 
         </div>

@@ -25,12 +25,24 @@
             <label class="control-label small">Parrafo.3</label>
             <textarea rows="4" class="form-control" width="100%" ng-model="centro.paragraph_3"></textarea>
         </div>
+        <div class="form-group" >
+            <label class="control-label small">Imagen</label>
+            <input type="file" class="form-control" ng-model="centro.picture">
+        </div>
+
+        <div class="form-group" >
+            <label class="control-label small">Video</label>
+            <textarea rows="4" class="form-control" width="100%" ng-model="centro.video"></textarea>
+        </div>
+
         <div class="form-group">
             <label class="control-label small">Idioma</label>
         
-            <select class="form-control" ng-model="centro.languageCentro">
-                <option ng-selected="centro.languageCentro==1" value="1">Español</option>
-                <option ng-selected="centro.languageCentro==2" value="2">Ingles</option>
+            <select class="form-control" ng-model="centro.language">
+
+            <option ng-selected="centro.language==1" value="1">Español</option>
+            <option ng-selected="centro.language==2" value="2">Ingles</option>
+                
             </select>             
 
         </div>

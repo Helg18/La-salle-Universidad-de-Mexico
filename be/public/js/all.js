@@ -50179,7 +50179,13 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     paragraph_1: null,
                     paragraph_2: null,
                     paragraph_3: null,
-                    languageCentro: null,
+                    language: null,
+                    languageData: [
+								       {id: '1', name: 'Español'},
+								       {id: '2', name: 'Ingles'}								       
+								  ],
+                    pucture:null,
+                    video:null
 
                 }
             }
@@ -50307,6 +50313,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     paragraph_1: null,
                     paragraph_2: null,
                     paragraph_3: null,
+                    language:null
 
                 }
             }

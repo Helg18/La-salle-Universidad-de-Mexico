@@ -14,18 +14,6 @@ class CentroInformacionController extends Controller
 {
 
 	
-    // /**
-    //  * Create a new controller instance.
-    //  *
-    //  * @return void
-    //  */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    //     // $this->middleware('module');
-
-    // }
-
     public function index(){
  		$categorias = CategoriasCentroInformacion::all();
     	return view('centro.index')->with(compact('categorias'));
@@ -58,10 +46,7 @@ class CentroInformacionController extends Controller
 
         $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id);
 
-        // dd($subcategorias_edit);
-
 		return view('centro.index')->with(compact('categorias_edit','subcategorias_edit'));        
-
 
      }
 
@@ -69,8 +54,6 @@ class CentroInformacionController extends Controller
     public function update(Request $request){
 
      	$categorias = CategoriasCentroInformacion::find($request->id);
-        
-        dd($request);
 
      	$categorias->name = $request->title;
 		$categorias->language = $request->language;
@@ -78,8 +61,6 @@ class CentroInformacionController extends Controller
 		$categorias->id_padre = "#";			
 		$categorias->save();
 
-		// return $this->index();
-		// return view('centro.index')->with(compact('categorias_edit'));        
 		return redirect('centro')->with('success','Centro de  Informacion se registrado exitosamente');
 
 
@@ -96,10 +77,5 @@ class CentroInformacionController extends Controller
      public function news(){
         return $this->belongsToMany('App\Models\CentroInformacion');
     } 
-     
-
-
-
-
-    
+         
 }

@@ -41,7 +41,7 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Order</th>
-                                <th>Configurar</th>
+                                {{-- <th>Configurar</th> --}}
                                 <th>Eliminar</th>
                             </tr>
                         </thead>
@@ -51,7 +51,7 @@
                                 <tr>
                                     <td><a href="{{url("centro/{$r->id}/edit")}}" >{{$r->name}}</a></td>
                                     <td>{{ $r->order }}</td>
-                                    <td>{{ '' }}</td>
+                                    {{-- <td>{{ '' }}</td> --}}
 
                                     <td width="5%">
                                         <a href="{{url("centro/{$r->id}/delete")}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Eliminará permanentemente el registro. ¿Desea continuar?" class="md-fab md-primary md-button md-mini waves-effect"><i class="fa fa-remove"></i></a>

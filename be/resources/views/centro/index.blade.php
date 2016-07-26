@@ -115,7 +115,7 @@
         @else
 
          <div class="tab-pane " id="tab-create">
-            <form role="form" class="form-horizontal" method="POST" action="{{url("centro/{$categorias_edit->id}/update")}}""  enctype="multipart/form-data">
+            <form role="form" class="form-horizontal" method="POST" action="{{url("centro/{$categorias_edit->id}/update")}}"">
             {!! csrf_field() !!}
 
                {{--  @if($record)
@@ -180,15 +180,15 @@
                     
 
                         <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar Sub-Categorias</th>
-                        <th>Order</th>
+                        <th>Agregar SubCategoria</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="centro in centros">
-                        {{-- <td><a href="javascript: void(0);" ng-click="modalCentros(centro, 'Cuadro de información')">@{{centro.title}}</a></td> --}}
-                        <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" > @{{centro.title}}</a></td>
-                        <td><a href="javascript: void(0);" >@{{centro.order}}</a></td>
+                        <td><a href="javascript: void(0);" ng-click="modalCentros(centro, 'Cuadro de información')">@{{centro.title}}</a></td>
+                        {{-- <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" > @{{centro.title}}</a></td> --}}
+                        <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" >Agregar</a></td>
                         <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td>
                     </tr>
                 </tbody>

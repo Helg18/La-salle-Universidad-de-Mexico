@@ -5,11 +5,12 @@
 <?php use \Carbon\Carbon; ?>
 
 <h1>Sub-Categorias de Centro de Informacion</h1>
+<h1>{{ $subcategorias_edit->pluck('title')->first() }}</h1>
 
 <!-- tab style -->
 <div class="clearfix tabs-linearrow">
     <ul class="nav nav-tabs">
-
+        <li class="{{''}}"><a href="{{url("centro/{$subcategorias_edit->pluck('id_catgories_centro_noticia')->first()}/edit")}}" href="#tab-linearrow-one" -data-toggle="tab">CATEGORIAS</a></li>
         <li class="{{ isset($subsubcategorias_edit)  ? 'active' : '' }}"><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" href="#tab-linearrow-one" -data-toggle="tab">CONSULTAS</a></li>
 
         <li class="{{ !isset($subsubcategorias_edit)  ? 'active' : '' }}"><a href="#tab-create" data-toggle="tab">{{ isset($subsubcategorias_edit) ? 'NUEVO' : 'EDITAR' }}</a></li>
@@ -78,7 +79,7 @@
                 <div class="form-group form-group-sm">
                 <label class="control-label small">Order.</label>
                 <input type="text" class="form-control" placeholder="" name="order">
-                <input type="text" id="id_sub" name="id_sub" value="{{ $subcategorias_edit->pluck('id')->first() }}">
+                <input type="hidden" id="id_sub" name="id_sub" value="{{ $subcategorias_edit->pluck('id')->first() }}">
                 </div>
 
                 <div class="form-group form-group-sm">
@@ -119,7 +120,7 @@
                 <label class="control-label small">Ver Imagen</label>
                 <input type="checkbox"    ng-model=" imag " >
                 <div ng-show="imag  " ng-hide="  !imag " class="form-group" >
-                <input type="file" class="form-control" name="picture">
+                <input type="file" class="form-control" name="picture" size="5120">
                 </div>
 
                 <br>

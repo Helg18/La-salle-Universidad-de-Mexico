@@ -42,17 +42,21 @@ class CentroInformacionController extends Controller
      * @return $this
      */
     public function edit(Request $request){
+        
 
      	$categorias_edit = CategoriasCentroInformacion::find($request->id);
 
         $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id)->get();
-
+        
+        
 		return view('centro.index')->with(compact('categorias_edit','subcategorias_edit'));        
 
      }
 
 
     public function update(Request $request){
+
+     
 
      	$categorias = CategoriasCentroInformacion::find($request->id);
      	$categorias->name = $request->title;

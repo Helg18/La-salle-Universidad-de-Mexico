@@ -44,7 +44,7 @@
                 <div class="form-group form-group-sm">
                 <label class="control-label small">Order.</label>
                 <input type="text" class="form-control" placeholder="" name="order" value="{{ $subcategorias->order }}">
-                <input type="text" id="id_sub" name="id_sub" value="{{ $subcategorias_edit->pluck('id')->first() }}">
+                <input type="hidden" id="id_sub" name="id_sub" value="{{ $subcategorias_edit->pluck('id')->first() }}">
                 </div>
 
                 <div class="form-group form-group-sm">
@@ -85,7 +85,7 @@
                 <label class="control-label small">Ver Imagen</label>
                 <input type="checkbox"    ng-model=" imag " >
                 <div ng-show="imag  " ng-hide="  !imag " class="form-group" >
-                <input type="file" class="form-control" name="picture">
+                <input type="file" class="form-control" name="picture" size="5120">
                 </div>
 
                 <br>

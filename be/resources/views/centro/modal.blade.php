@@ -60,17 +60,13 @@
 
         <label class="control-label small">Ver Fecha/Hora</label>
 
-        <div class="form-group">
-            
-                
-                <div class="input-group " >
-                    <input type="text" class="form-control" ng-model="centro.fecha_evento" value="" />
-                    <span class="input-group-addon">
-                        <i class=" ion ion-calendar"></i>
-                    </span>
-                </div>
-                
-            
+        <div class="form-group">                
+            <div class="input-group " >
+                <input type="text" class="form-control" name='fecha_evento' id='fecha_evento' ng-model="centro.fecha_evento" value="" />
+                <span class="input-group-addon">
+                    <i class=" ion ion-calendar"></i>
+                </span>
+            </div>
         </div>
         
         <br>

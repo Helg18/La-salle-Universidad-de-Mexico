@@ -120,7 +120,7 @@
                 <label class="control-label small">Ver Imagen</label>
                 <input type="checkbox"    ng-model=" imag " >
                 <div ng-show="imag  " ng-hide="  !imag " class="form-group" >
-                <input type="file" class="form-control" name="picture" size="5120">
+                <input type="file" class="form-control" name="picture" size="20">
                 </div>
 
                 <br>

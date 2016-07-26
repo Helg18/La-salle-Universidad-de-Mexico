@@ -303,7 +303,23 @@
 $.datetimepicker.setLocale('es');
 
 
+$(function () {        
+    $('#picture').change(function () {
 
+        //because this is single file upload I use only first index
+        var f = this.files[0]
+
+        //here I CHECK if the FILE SIZE is bigger than 8 MB (numbers below are in bytes)
+        if (f.size > 2388608 || f.fileSize > 2388608)
+        {
+           //show an alert to the user
+           alert("Allowed file size exceeded. (Max. 2 MB)")
+
+           //reset file upload control
+           this.value = null;
+        }
+    })
+});
 
 
     </script>

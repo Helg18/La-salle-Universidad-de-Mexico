@@ -50166,8 +50166,6 @@ var app = angular.module('lasalle',['ui.bootstrap'])
 .controller('CentroCtrl',['$scope', '$http', '$uibModal',function($scope, $http, $uibModal){
 
         $scope.centros = [];
-
-
         $scope.modalCentros = function(centro, title,order){
 
             if(!centro){
@@ -50183,7 +50181,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     picture:null,
                     video:null,
                     order:null,
-
+                    fecha_evento:null
                 }
             }
 

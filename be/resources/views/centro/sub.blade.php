@@ -2,15 +2,15 @@
 
 @section('content')
 
-<h1>Centro de Informacion</h1>
+<h1>Sub-Categorias de Centro de Informacion</h1>
 
 <!-- tab style -->
 <div class="clearfix tabs-linearrow">
     <ul class="nav nav-tabs">
 
-        <li class="{{ isset($categorias)  ? 'active' : '' }}"><a href="{{url('centro')}}" href="#tab-linearrow-one" -data-toggle="tab">CONSULTAS</a></li>
+        <li class="{{ isset($categorias_edit)  ? 'active' : '' }}"><a href="{{url("subcentro/{$categorias_edit->pluck('id')->first()}/edit")}}" href="#tab-linearrow-one" -data-toggle="tab">CONSULTAS</a></li>
 
-        <li class="{{ !isset($categorias)  ? 'active' : '' }}"><a href="#tab-create" data-toggle="tab">{{ isset($categorias) ? 'NUEVO' : 'EDITAR' }}</a></li>
+        <li class="{{ !isset($categorias_edit)  ? 'active' : '' }}"><a href="#tab-create" data-toggle="tab">{{ isset($categorias_edit) ? 'NUEVO' : 'EDITAR' }}</a></li>
     </ul>
 
     <div class="tab-content">
@@ -30,7 +30,7 @@
 
        
 
-        @if(isset($categorias))
+        @if(isset($categorias_edit))
             <form class="form-horizontal right col-lg-4" action="javascript:;">
                 <input type="text" class="form-control input-sm searchInput" placeholder="Buscar">
             </form>
@@ -47,14 +47,14 @@
                         </thead>
                         <tbody>
                             
-                                @foreach($categorias as $r)
+                                @foreach($categorias_edit as $r)
                                 <tr>
-                                    <td><a href="{{url("centro/{$r->id}/edit")}}" >{{$r->name}}</a></td>
+                                    <td><a href="{{url("subcentro/{$r->id}/edit")}}" >{{$r->title}}</a></td>
                                     <td>{{ $r->order }}</td>
                                     {{-- <td>{{ '' }}</td> --}}
 
                                     <td width="5%">
-                                        <a href="{{url("centro/{$r->id}/delete")}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Eliminará permanentemente el registro. ¿Desea continuar?" class="md-fab md-primary md-button md-mini waves-effect"><i class="fa fa-remove"></i></a>
+                                        <a href="{{url("subcentro/{$r->id}/delete")}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Eliminará permanentemente el registro. ¿Desea continuar?" class="md-fab md-primary md-button md-mini waves-effect"><i class="fa fa-remove"></i></a>
                                     </td>
                                 </tr>
                                 @endforeach
@@ -67,7 +67,7 @@
             </div>
 
             <div class="tab-pane " id="tab-create">
-            <form role="form" class="form-horizontal" method="POST" action="{{url("centro")}}""  enctype="multipart/form-data">
+            <form role="form" class="form-horizontal" method="POST" action="{{url("subcentro")}}""  enctype="multipart/form-data">
             {!! csrf_field() !!}
 
                 <br>
@@ -115,7 +115,7 @@
         @else
 
          <div class="tab-pane " id="tab-create">
-            <form role="form" class="form-horizontal" method="POST" action="{{url("centro/{$categorias_edit->id}/update")}}""  enctype="multipart/form-data">
+            <form role="form" class="form-horizontal" method="POST" action="{{url("subcentro/{$categorias_edit->id}/update")}}""  enctype="multipart/form-data">
             {!! csrf_field() !!}
 
                {{--  @if($record)
@@ -177,8 +177,6 @@
             <table class="table">
                 <thead>
                     <tr>
-                    
-
                         <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar Sub-Categorias</th>
                         <th>Order</th>
                         <th></th>
@@ -186,8 +184,7 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="centro in centros">
-                        {{-- <td><a href="javascript: void(0);" ng-click="modalCentros(centro, 'Cuadro de información')">@{{centro.title}}</a></td> --}}
-                        <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" > @{{centro.title}}</a></td>
+                        <td><a href="javascript: void(0);" ng-click="modalCentros(centro, 'Cuadro de información')">@{{centro.title}}</a></td>
                         <td><a href="javascript: void(0);" >@{{centro.order}}</a></td>
                         <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td>
                     </tr>
@@ -211,7 +208,6 @@
 
                     <tr ng-repeat="centro in centros">
                         <td><a href="javascript: void(0);" ng-click="modalCentros(centro, 'Cuadro de información')">@{{centro.title}}</a></td>
-                        {{-- <td><a href="javascript: void(0);" >@{{centro.order}}</a></td> --}}
                         <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td>
                     </tr>
                 </tbody>

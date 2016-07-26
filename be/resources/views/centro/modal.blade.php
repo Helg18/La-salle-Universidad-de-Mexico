@@ -15,47 +15,65 @@
         
         <br>
         <label class="control-label small">Ver Subtitulo.</label>
-        <input type="checkbox" ng-checked=" centro.subtitle !='' "   ng-model=" subhide " >
-        <div ng-show=" subhide " ng-hide=" centro.subtitle =='' " class="form-group form-group-sm">            
+        <input type="checkbox" ng-model=" subhide " >
+        <div ng-show=" subhide || centro.subtitle " ng-hide=" !subhide && !centro.subtitle " class="form-group form-group-sm">            
             <input type="text" class="form-control" placeholder="" ng-model="centro.subtitle">
         </div>
 
         <br>
         <label class="control-label small">Ver Parrafo.1</label>
-        <input type="checkbox"  ng-checked=" centro.paragraph_1 !='' "   ng-model=" parr1 " >
-        <div ng-show="parr1 " ng-hide=" centro.paragraph_1 =='' " class="form-group" >
+        <input type="checkbox"  ng-model=" parr1 " >
+        <div ng-show="parr1 || centro.paragraph_1 " ng-hide="  !parr1 && !centro.paragraph_1 " class="form-group" >
             <textarea rows="4" class="form-control" width="100%" ng-model="centro.paragraph_1"></textarea>
         </div>
         
         <br>
         <label class="control-label small">Ver Parrafo.2</label>
-        <input type="checkbox" ng-checked=" centro.paragraph_2 !='' "   ng-model=" parr2 " >
-        <div ng-show="parr2 "  ng-hide=" centro.paragraph_2 =='' " class="form-group" >
+        <input type="checkbox" ng-model=" parr2 " >
+        <div ng-show="parr2 || centro.paragraph_2 " ng-hide="  !parr2 && !centro.paragraph_2 " class="form-group" >
             <textarea rows="4" class="form-control" width="100%" ng-model="centro.paragraph_2"></textarea>
         </div>
 
         <br>
         <label class="control-label small">Ver Parrafo.3</label>
-        <input type="checkbox" ng-checked=" centro.paragraph_3 !='' "   ng-model=" parr3 " >
-        <div ng-show="parr3 " ng-hide=" centro.paragraph_3 =='' " class="form-group" >
+        <input type="checkbox" ng-model=" parr3 " >
+        <div ng-show="parr3 || centro.paragraph_3 " ng-hide="  !parr3 && !centro.paragraph_3 " class="form-group" >
             <textarea rows="4" class="form-control" width="100%" ng-model="centro.paragraph_3"></textarea>
         </div>
 
 
         <br>
         <label class="control-label small">Ver Imagen</label>
-        <input type="checkbox" ng-checked=" centro.imag !='' "   ng-model=" imag " >
-        <div ng-show="imag " ng-hide=" centro.picture =='' " class="form-group" >
+        <input type="checkbox"    ng-model=" imag " >
+        <div ng-show="imag || centro.picture " ng-hide="  !imag && !centro.picture " class="form-group" >
             <input type="file" class="form-control" ng-model="centro.picture">
         </div>
 
         <br>
         <label class="control-label small">Ver Video</label>
-        <input type="checkbox" ng-checked=" centro.video !='' "   ng-model=" videos " >
-        <div ng-show="videos " ng-hide=" centro.video =='' "class="form-group" >
+        <input type="checkbox"    ng-model=" videos " >
+        <div ng-show="videos || centro.video " ng-hide="  !videos && !centro.video " class="form-group" >
             <input type="text" class="form-control" placeholder="Video" ng-model="centro.video">
         </div>
+        
+        <br>    
 
+        <label class="control-label small">Ver Fecha/Hora</label>
+
+        <div class="form-group">
+            
+                
+                <div class="input-group " >
+                    <input type="text" class="form-control" ng-model="centro.fecha_evento" value="" />
+                    <span class="input-group-addon">
+                        <i class=" ion ion-calendar"></i>
+                    </span>
+                </div>
+                
+            
+        </div>
+        
+        <br>
         <div class="form-group">
             <label class="control-label small">Idioma</label>
         

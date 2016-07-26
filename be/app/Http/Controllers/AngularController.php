@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\CentroInformacion;
 use App\Http\Requests;
+use Carbon\Carbon;
 
 
 class AngularController extends Controller
@@ -78,6 +79,8 @@ class AngularController extends Controller
         $centro->video = $request->video;
         $centro->picture = $request->picture;
         $centro->order = $request->order;
+        $now = Carbon::now();
+        $centro->order = $now;
         $centro->save();
 
         return response()->json(['message'=>'Información guardada exitosamente']);

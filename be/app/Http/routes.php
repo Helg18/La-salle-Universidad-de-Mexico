@@ -50,4 +50,9 @@ Route::post('centro', 'CentroInformacionController@add');
 Route::get('centro/{id}/edit', 'CentroInformacionController@edit');
 Route::post('centro/{id}/update', 'CentroInformacionController@update');
 Route::delete('centro/{id}/delete', 'CentroInformacionController@delete');
+
+
+// Route::resource('subbuscar', 'CentroSubCategoriaController');
+Route::get('subcentro/{id}/edit', 'CentroSubCategoriaController@edit');
+
 //Route::get('user/{id}/status', 'UserController@status');

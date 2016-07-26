@@ -31,6 +31,7 @@ class CentroInformacionController extends Controller
 		$categorias->language = $request->language;
 		$categorias->order = $request->order;
 		$categorias->id_padre = "#";			
+        $categorias->id_sub_categoria = "0";
 		$categorias->save();
 		$categorias = CategoriasCentroInformacion::all();
     	return view('centro.index')->with(compact('categorias'));
@@ -44,7 +45,7 @@ class CentroInformacionController extends Controller
 
      	$categorias_edit = CategoriasCentroInformacion::find($request->id);
 
-        $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id);
+        $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id)->get();
 
 		return view('centro.index')->with(compact('categorias_edit','subcategorias_edit'));        
 
@@ -54,15 +55,12 @@ class CentroInformacionController extends Controller
     public function update(Request $request){
 
      	$categorias = CategoriasCentroInformacion::find($request->id);
-
      	$categorias->name = $request->title;
 		$categorias->language = $request->language;
 		$categorias->order = $request->order;
 		$categorias->id_padre = "#";			
 		$categorias->save();
-
 		return redirect('centro')->with('success','Centro de  Informacion se registrado exitosamente');
-
 
      }  
 

@@ -2,15 +2,17 @@
 
 @section('content')
 
+<?php use \Carbon\Carbon; ?>
+
 <h1>Sub-Categorias de Centro de Informacion</h1>
 
 <!-- tab style -->
 <div class="clearfix tabs-linearrow">
     <ul class="nav nav-tabs">
 
-        <li class="{{ isset($categorias_edit)  ? 'active' : '' }}"><a href="{{url("subcentro/{$categorias_edit->pluck('id')->first()}/edit")}}" href="#tab-linearrow-one" -data-toggle="tab">CONSULTAS</a></li>
+        <li class="{{ isset($subsubcategorias_edit)  ? 'active' : '' }}"><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" href="#tab-linearrow-one" -data-toggle="tab">CONSULTAS</a></li>
 
-        <li class="{{ !isset($categorias_edit)  ? 'active' : '' }}"><a href="#tab-create" data-toggle="tab">{{ isset($categorias_edit) ? 'NUEVO' : 'EDITAR' }}</a></li>
+        <li class="{{ !isset($subsubcategorias_edit)  ? 'active' : '' }}"><a href="#tab-create" data-toggle="tab">{{ isset($subsubcategorias_edit) ? 'NUEVO' : 'EDITAR' }}</a></li>
     </ul>
 
     <div class="tab-content">
@@ -30,7 +32,7 @@
 
        
 
-        @if(isset($categorias_edit))
+        @if(isset($subsubcategorias_edit))
             <form class="form-horizontal right col-lg-4" action="javascript:;">
                 <input type="text" class="form-control input-sm searchInput" placeholder="Buscar">
             </form>
@@ -47,9 +49,9 @@
                         </thead>
                         <tbody>
                             
-                                @foreach($categorias_edit as $r)
+                                @foreach($subsubcategorias_edit as $r)
                                 <tr>
-                                    <td><a href="{{url("subcentro/{$r->id}/edit")}}" >{{$r->title}}</a></td>
+                                    <td><a href="{{url("subcentro/{$r->id}/editsub")}}" >{{$r->title}}</a></td>
                                     <td>{{ $r->order }}</td>
                                     {{-- <td>{{ '' }}</td> --}}
 
@@ -73,33 +75,88 @@
                 <br>
                 <br>
 
-                <div class="form-group">
-                    <label class="col-md-2 control-label">Titulo</label>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" value="" name="title" autocomplete="off">
-                        @if ($errors->has('title'))
-                            <span class="alert alert-danger">
-                                <strong></strong>
-                            </span>
-                        @endif
-                    </div>
+                <div class="form-group form-group-sm">
+                <label class="control-label small">Order.</label>
+                <input type="text" class="form-control" placeholder="" name="order">
+                <input type="text" id="id_sub" name="id_sub" value="{{ $subcategorias_edit->pluck('id')->first() }}">
                 </div>
 
-                <div class="form-group">
-                    <label class="col-md-2 control-label">Idioma</label>
-                    <div class="col-md-9">
-                    <select class="form-control" name="language" id="language">
-                        <option  value="1">Español</option>
-                        <option  value="2">Ingles</option>
-                    </select>             
-                    </div>       
+                <div class="form-group form-group-sm">
+                <label class="control-label small">Titulo.</label>
+                <input type="text" class="form-control" placeholder="" name="title">
                 </div>
 
-                 <div class="form-group">
-                    <label class="col-md-2 control-label">Order</label>
-                    <div class="col-md-9">
-                    <input type="text" class="form-control" value="" name="order" autocomplete="off">                              
-                    </div>       
+                <br>
+                <label class="control-label small">Ver Subtitulo.</label>
+                <input type="checkbox" ng-model=" subhide " >
+                <div ng-show=" subhide  " ng-hide=" !subhide " class="form-group form-group-sm">            
+                <input type="text" class="form-control" placeholder="" name="subtitle">
+                </div>
+
+                <br>
+                <label class="control-label small">Ver Parrafo.1</label>
+                <input type="checkbox"  ng-model=" parr1 " >
+                <div ng-show="parr1  " ng-hide="  !parr1  " class="form-group" >
+                <textarea rows="4" class="form-control" width="100%" name="paragraph_1"></textarea>
+                </div>
+
+                <br>
+                <label class="control-label small">Ver Parrafo.2</label>
+                <input type="checkbox" ng-model=" parr2 " >
+                <div ng-show="parr2 " ng-hide="  !parr2  " class="form-group" >
+                <textarea rows="4" class="form-control" width="100%" name="paragraph_2"></textarea>
+                </div>
+
+                <br>
+                <label class="control-label small">Ver Parrafo.3</label>
+                <input type="checkbox" ng-model=" parr3 " >
+                <div ng-show="parr3 " ng-hide="  !parr3  " class="form-group" >
+                <textarea rows="4" class="form-control" width="100%" name="paragraph_3"></textarea>
+                </div>
+
+
+                <br>
+                <label class="control-label small">Ver Imagen</label>
+                <input type="checkbox"    ng-model=" imag " >
+                <div ng-show="imag  " ng-hide="  !imag " class="form-group" >
+                <input type="file" class="form-control" name="picture">
+                </div>
+
+                <br>
+                <label class="control-label small">Ver Video</label>
+                <input type="checkbox"    ng-model=" videos " >
+                <div ng-show="videos " ng-hide="  !videos  " class="form-group" >
+                <input type="text" class="form-control" placeholder="Video" name="video">
+                </div>
+
+                <br>    
+
+                <label class="control-label small">Ver Fecha/Hora</label>
+
+                <div class="form-group">
+
+
+                <div class="input-group " >
+                    <input type="text" class="form-control" id="fecha_evento" name="fecha_evento" value="{{ Carbon::now() }}" />
+                    <span class="input-group-addon">
+                        <i class=" ion ion-calendar"></i>
+                    </span>
+                </div>
+
+
+                </div>
+
+                <br>
+                <div class="form-group">
+                <label class="control-label small">Idioma</label>
+
+                <select class="form-control" name="language">
+
+                <option  value="1">Español</option>
+                <option  value="2">Ingles</option>
+
+                </select>             
+
                 </div>
 
             
@@ -115,7 +172,7 @@
         @else
 
          <div class="tab-pane " id="tab-create">
-            <form role="form" class="form-horizontal" method="POST" action="{{url("subcentro/{$categorias_edit->id}/update")}}""  enctype="multipart/form-data">
+            <form role="form" class="form-horizontal" method="POST" action="{{url("subcentro/{$subsubcategorias_edit->pluck('id')->first()}/update")}}""  enctype="multipart/form-data">
             {!! csrf_field() !!}
 
                {{--  @if($record)
@@ -128,7 +185,7 @@
                 <div class="form-group">
                     <label class="col-md-2 control-label">Titulo</label>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" value="{{ $categorias_edit->name }}" name="title" autocomplete="off">
+                        <input type="text" class="form-control" value="{{ $subsubcategorias_edit->pluck('name')->first() }}" name="title" autocomplete="off">
                         @if ($errors->has('title'))
                             <span class="alert alert-danger">
                                 <strong></strong>
@@ -141,8 +198,8 @@
                     <label class="col-md-2 control-label">Idioma</label>
                     <div class="col-md-9">
                     <select class="form-control" name="language" id="language">
-                        <option  @if($categorias_edit->language == 1){{'selected'}} @endif value="1">Español</option>
-                        <option  @if($categorias_edit->language == 2){{'selected'}} @endif value="2">Ingles</option>
+                        <option  @if($subsubcategorias_edit->pluck('language')->first() == 1){{'selected'}} @endif value="1">Español</option>
+                        <option  @if($subsubcategorias_edit->pluck('language')->first() == 2){{'selected'}} @endif value="2">Ingles</option>
                     </select>             
                     </div>       
                 </div>
@@ -150,7 +207,7 @@
                  <div class="form-group">
                     <label class="col-md-2 control-label">Order</label>
                     <div class="col-md-9">
-                    <input type="text" class="form-control" value="{{ $categorias_edit->order }}" name="order" autocomplete="off">                              
+                    <input type="text" class="form-control" value="{{ $subsubcategorias_edit->pluck('order')->first() }}" name="order" autocomplete="off">                              
                     </div>       
                 </div>
 
@@ -168,10 +225,10 @@
         @endif        
 
         @if(isset($subcategorias_edit) && count($subcategorias_edit)>0 )
-            <script>var id_catgories_centro_noticia = '{{ $categorias_edit->id }}'</script>
+            <script>var id_catgories_centro_noticia = '{{ $subsubcategorias_edit->pluck('order')->first() }}'</script>
         
 
-        <div ng-controller="CentroCtrl" class="ng-cloak">
+        {{-- <div ng-controller="CentroCtrl" class="ng-cloak">
             <hr />
             
             <table class="table">
@@ -190,12 +247,12 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div> --}}
 
         @elseif(isset($subcategorias_edit) && count($subcategorias_edit)==0 )
 
-        <script>var id_catgories_centro_noticia = '{{ $categorias_edit->id }}'</script>
-        <div ng-controller="CentroCtrl" class="ng-cloak">
+        <script>var id_catgories_centro_noticia = '{{ $subsubcategorias_edit->pluck('id')->first() }}'</script>
+       {{--  <div ng-controller="CentroCtrl" class="ng-cloak">
 
         <table class="table">
                 <thead>
@@ -211,7 +268,7 @@
                         <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td>
                     </tr>
                 </tbody>
-        </table>
+        </table> --}}
         </div>
         
         

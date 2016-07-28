@@ -493,7 +493,7 @@ function Category3(){
 		if(index == 4){	// Estacionamiento
 			$("#mosaico-servicios").css("display","none");
 			$('.contacto-form').css('display','inherit');
-			$(".descripcionTituloServicios").append('<img src="images/nuevosArtes/servicio/mapa-mx.png" class="mapa-mx2">');	 // Imagen (por ahora) de un mapa
+			$(".descripcionTituloServicios").prepend('<img src="images/nuevosArtes/servicio/estacionamiento.png" class="mapa-estacionamiento">');	 // Imagen (por ahora) de un mapa
 		}else{
 			$(".mapa-mx2").remove();
 		}
@@ -1292,3 +1292,10 @@ function getUrlVars()
 function CambiarMosaico(){	// Funcion que debe cambiar el contenido del div #mosaico-oferta-educativa dependiendo el filtro seleccionado, por ahora solo hace un efecto que oculta y muestra lo mismo.
 	$('div.items-oferta-educativa').hide().delay(200).fadeIn('slow');				
 }
+
+// Tabs de universidades en el mundo
+	$(".seccion.academicas.tab").click(function(){
+		$('a.col-md-3.azul-col').hide(function(){
+			// Aqui se va a cambiar el contenido dinamico, 
+		}).delay(200).fadeIn('slow');				
+	})

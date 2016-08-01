@@ -271,16 +271,19 @@ function Category1(){
 			if(index2 == 0){ // Universidades en mexico
 				$(".descripcionTituloUniversidad-").append('<img src="images/nuevosArtes/servicio/mx.png" class="mapa-mx">');
 				$(".pines-mapa-mx").css("display","inherit"); // Pines
+				$(".row-mx").css("display","inherit");
+				$(".row-mundo").css("display","none");
 				$("#azules-red").css("display","inherit");
-				$(".ul-mundo").css("display","none");
 			}else{
 				$(".mapa-mx").remove();
 				$(".pines-mapa-mx").css("display","none");
 			}
 			if(index2 == 1){ // Universidades en el mundo
 				$(".descripcionTituloUniversidad-").append('<img src="images/nuevosArtes/servicio/mapa-mundo.png" class="mapa-mundo">');
+				$(".row-mundo").css("display","inherit");
+				$(".ul-mundo").css("display","inherit");				
+				$(".row-mx").css("display","none");		
 				$("#azules-red").css("display","inherit");
-				$(".ul-mundo").css("display","inherit");		
 				$(".pines-mapa-mundo").css("display","inherit"); // Pines
 			}else{
 				$(".pines-mapa-mundo").css("display","none");
@@ -1298,8 +1301,13 @@ function CambiarMosaico(){	// Funcion que debe cambiar el contenido del div #mos
 }
 
 // Tabs de universidades en el mundo
-	$(".seccion.academicas.tab").click(function(){
-		$('a.col-md-3.azul-col').hide(function(){
-			// Aqui se va a cambiar el contenido dinamico, 
-		}).delay(200).fadeIn('slow');				
-	})
+	function FiltroMapas(filtro){
+	//$(".seccion.academicas.tab").click(function(){
+		if(filtro == 'todos'){
+			$('a.asia,a.europe,a.north,a.south').show();
+		}else{
+			// Aqui se va a cambiar el contenido dinamico
+			$('a.asia,a.europe,a.north,a.south').hide();
+			$('a.'+filtro).fadeIn('slow');
+		}
+	}

@@ -9,14 +9,28 @@ use App\Http\Controllers\Controller;
 
 class V1CentroInformacionController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+
+    public function __construct()
     {
-        //
+        header("Access-Control-Allow-Origin: *");
+        header('Access-Control-Allow-Credentials: true');
+    }
+
+    
+    public function getInitialData(){
+
+        $data = Category::allForJson(1);
+        $labels = CalendarLabel::allForJsonCategorie(1);
+        $calendar = Category::find(4)->posts()->where('language',2)->limit(4)->orderBy('custom_date','desc')->get();
+        $calendar_important = Category::find(4)->posts()->where('is_important',true)->where('language',1)->limit(4)->orderBy('custom_date','desc')->get();
+        $blog = Category::find(5)->posts()->where('language',1)->limit(9)->orderBy('created_at','desc')->get();
+        $academic = AcademicOffer::sliders(1);
+        
+        return response()->json(
+            ['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important, 'blog'=>$blog, 'academic_offer'=>$academic]
+        );
+
+        
     }
 
     /**

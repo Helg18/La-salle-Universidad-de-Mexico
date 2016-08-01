@@ -46,7 +46,7 @@ class CentroInformacionController extends Controller
 
      	$categorias_edit = CategoriasCentroInformacion::find($request->id);
 
-        $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id)->get();
+        $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id)->where('id_sub_categoria', '=', 0)->get();
         
         
 		return view('centro.index')->with(compact('categorias_edit','subcategorias_edit'));        

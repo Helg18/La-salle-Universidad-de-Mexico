@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>Centro de Informacion</h1>
+<h1>Categorias de Centro de Información</h1>
 
 <!-- tab style -->
 <div class="clearfix tabs-linearrow">
@@ -179,8 +179,8 @@
                     <tr>
                     
 
-                        <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar Sub-Categorias</th>
-                        <th>Agregar SubCategoria</th>
+                        <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar Seccion</th>
+                        <th>Agregar Secciones de Sub-Categorias</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -188,7 +188,7 @@
                     <tr ng-repeat="centro in centros">
                         <td><a href="javascript: void(0);" ng-click="modalCentros(centro, 'Cuadro de información')">@{{centro.title}}</a></td>
                         {{-- <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" > @{{centro.title}}</a></td> --}}
-                        <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" >Agregar</a></td>
+                        <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" >Agregar Sección</a></td>
                         <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td>
                     </tr>
                 </tbody>

@@ -6844,16 +6844,144 @@ FACULTAD DE FAMADYC
 .mapa-estacionamiento{width:100%;margin-bottom:45px;}
 
 .pines-mapa-mx{position:absolute;z-index:2;top:6%;width:100%;height:89%;}
-.pines-mapa-mx .chihuahua{position:absolute;left:29%;top:21%;}
+.pines-mapa-mx .chihuahua{position:absolute;left:37%;top:21%;}
 .item-mapa-chihuahua:hover .chihuahua{display:none}
-.texto-pin-chihuahua{display:none;position:absolute;left:27%;top:21%;}
+.texto-pin-chihuahua{display:none;position:absolute;left:35%;top:21%;z-index:2}
 .item-mapa-chihuahua:hover .texto-pin-chihuahua{display:inherit !important}
 .texto-pin-chihuahua > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
 
+.pines-mapa-mx .noroeste{position:absolute;left:29%;top:21%;}
+.item-mapa-noroeste:hover .noroeste{display:none}
+.texto-pin-noroeste{display:none;position:absolute;left:27%;top:21%;z-index:2}
+.item-mapa-noroeste:hover .texto-pin-noroeste{display:inherit !important}
+.texto-pin-noroeste > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .saltillo{position:absolute;left:38%;top:36%;}
+.item-mapa-saltillo:hover .saltillo{display:none}
+.texto-pin-saltillo{display:none;position:absolute;left:36%;top:36%;z-index:2}
+.item-mapa-saltillo:hover .texto-pin-saltillo{display:inherit !important}
+.texto-pin-saltillo > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .laguna{position:absolute;left:39%;top:41%;}
+.item-mapa-laguna:hover .laguna{display:none}
+.texto-pin-laguna{display:none;position:absolute;left:37%;top:41%;z-index:2}
+.item-mapa-laguna:hover .texto-pin-laguna{display:inherit !important}
+.texto-pin-laguna > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .monterrey{position:absolute;left:51%;top:34%;}
+.item-mapa-monterrey:hover .monterrey{display:none}
+.texto-pin-monterrey{display:none;position:absolute;left:49%;top:34%;z-index:2}
+.item-mapa-monterrey:hover .texto-pin-monterrey{display:inherit !important}
+.texto-pin-monterrey > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .victoria{position:absolute;left:53%;top:46%;}
+.item-mapa-victoria:hover .victoria{display:none}
+.texto-pin-victoria{display:none;position:absolute;left:51%;top:46%;z-index:2}
+.item-mapa-victoria:hover .texto-pin-victoria{display:inherit !important}
+.texto-pin-victoria > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .bajio{position:absolute;left:45%;top:59%;}
+.item-mapa-bajio:hover .bajio{display:none}
+.texto-pin-bajio{display:none;position:absolute;left:43%;top:59%;z-index:2}
+.item-mapa-bajio:hover .texto-pin-bajio{display:inherit !important}
+.texto-pin-bajio > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .morelia{position:absolute;left:47%;top:65%;}
+.item-mapa-morelia:hover .morelia{display:none}
+.texto-pin-morelia{display:none;position:absolute;left:45%;top:65%;z-index:2}
+.item-mapa-morelia:hover .texto-pin-morelia{display:inherit !important}
+.texto-pin-morelia > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .pachuca{position:absolute;left:53%;top:59%;}
+.item-mapa-pachuca:hover .pachuca{display:none}
+.texto-pin-pachuca{display:none;position:absolute;left:51%;top:59%;z-index:2}
+.item-mapa-pachuca:hover .texto-pin-pachuca{display:inherit !important}
+.texto-pin-pachuca > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .puebla{position:absolute;left:56%;top:69%;}
+.item-mapa-puebla:hover .puebla{display:none}
+.texto-pin-puebla{display:none;position:absolute;left:54%;top:69%;z-index:2}
+.item-mapa-puebla:hover .texto-pin-puebla{display:inherit !important}
+.texto-pin-puebla > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .cuernavaca{position:absolute;left:53%;top:69%;}
+.item-mapa-cuernavaca:hover .cuernavaca{display:none}
+.texto-pin-cuernavaca{display:none;position:absolute;left:51%;top:69%;z-index:2}
+.item-mapa-cuernavaca:hover .texto-pin-cuernavaca{display:inherit !important}
+.texto-pin-cuernavaca > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .neza{position:absolute;left:53%;top:64%;}
+.item-mapa-neza:hover .neza{display:none}
+.texto-pin-neza{display:none;position:absolute;left:51%;top:64%;z-index:2}
+.item-mapa-neza:hover .texto-pin-neza{display:inherit !important}
+.texto-pin-neza > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .oaxaca{position:absolute;left:59%;top:77%;}
+.item-mapa-oaxaca:hover .oaxaca{display:none}
+.texto-pin-oaxaca{display:none;position:absolute;left:57%;top:77%;z-index:2}
+.item-mapa-oaxaca:hover .texto-pin-oaxaca{display:inherit !important}
+.texto-pin-oaxaca > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mx .cancun{position:absolute;left:80%;top:54%;}
+.item-mapa-cancun:hover .cancun{display:none}
+.texto-pin-cancun{display:none;position:absolute;left:78%;top:54%;z-index:2}
+.item-mapa-cancun:hover .texto-pin-cancun{display:inherit !important}
+.texto-pin-cancun > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
 
 .pines-mapa-mundo{position:absolute;z-index:2;top:6%;width:100%;height:89%;}
+
 .pines-mapa-mundo .mexico{position:absolute;left:22%;top:47%;}
-.item-mapa-mexico:hover .mexico{display:none}
-.texto-pin-mexico{display:none;position:absolute;left:19%;top:45%;}
-.item-mapa-mexico:hover .texto-pin-mexico{display:inherit !important}
+/*.item-mapa-mexico:hover .mexico{display:none}*/
+.texto-pin-mexico{display:none;position:absolute;left:19%;top:45%;z-index:2}
+/*.item-mapa-mexico:hover .texto-pin-mexico{display:inherit !important} */
 .texto-pin-mexico > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mundo .peru{position:absolute;left:27%;top:62%;}
+/*.item-mapa-peru:hover .peru{display:none}*/
+.texto-pin-peru{display:none;position:absolute;left:19%;top:45%;z-index:2}
+/*.item-mapa-peru:hover .texto-pin-peru{display:inherit !important} */
+.texto-pin-peru > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mundo .brasil{position:absolute;left:31%;top:54%;}
+/*.item-mapa-brasil:hover .brasil{display:none}*/
+.texto-pin-brasil{display:none;position:absolute;left:19%;top:45%;z-index:2}
+/*.item-mapa-brasil:hover .texto-pin-brasil{display:inherit !important} */
+.texto-pin-brasil > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mundo .espana{position:absolute;left:46%;top:37%;}
+/*.item-mapa-espana:hover .espana{display:none}*/
+.texto-pin-espana{display:none;position:absolute;left:19%;top:45%;z-index:2}
+/*.item-mapa-espana:hover .texto-pin-espana{display:inherit !important} */
+.texto-pin-espana > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mundo .turquia{position:absolute;left:52%;top:35%;}
+/*.item-mapa-turquia:hover .turquia{display:none}*/
+.texto-pin-turquia{display:none;position:absolute;left:19%;top:45%;z-index:2}
+/*.item-mapa-turquia:hover .texto-pin-turquia{display:inherit !important} */
+.texto-pin-turquia > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mundo .africa1{position:absolute;left:44%;top:49%;}
+/*.item-mapa-africa1:hover .africa1{display:none}*/
+.texto-pin-africa1{display:none;position:absolute;left:19%;top:45%;z-index:2}
+/*.item-mapa-africa1:hover .texto-pin-africa1{display:inherit !important} */
+.texto-pin-africa1 > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mundo .africa2{position:absolute;left:49%;top:49%;}
+/*.item-mapa-africa2:hover .africa2{display:none}*/
+.texto-pin-africa2{display:none;position:absolute;left:19%;top:45%;z-index:2}
+/*.item-mapa-africa2:hover .texto-pin-africa2{display:inherit !important} */
+.texto-pin-africa2 > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mundo .india{position:absolute;left:49%;top:49%;}
+/*.item-mapa-africa2:hover .africa2{display:none}*/
+.texto-pin-india{display:none;position:absolute;left:19%;top:45%;z-index:2}
+/*.item-mapa-africa2:hover .texto-pin-africa2{display:inherit !important} */
+.texto-pin-india > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+
+.pines-mapa-mundo .indonesia{position:absolute;left:75%;top:58%;}
+/*.item-mapa-africa2:hover .africa2{display:none}*/
+.texto-pin-indonesia{display:none;position:absolute;left:19%;top:45%;z-index:2}
+/*.item-mapa-africa2:hover .texto-pin-africa2{display:inherit !important} */
+.texto-pin-indonesia > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+

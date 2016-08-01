@@ -54,7 +54,7 @@ class AngularController extends Controller
 
     public function centros($id){
 
-        $centros = CentroInformacion::where('id_catgories_centro_noticia', '=', $id);
+        $centros = CentroInformacion::where('id_catgories_centro_noticia', '=', $id)->where('id_sub_categoria', '=', 0);
         return response()->json($centros->get());
     }
     

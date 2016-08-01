@@ -22,6 +22,10 @@ Route::controllers([
     'api/v1/frontend'           =>  'Api\V1FrontendController',
 ]);
 
+Route::controllers([
+    'api/v1/centro'           =>  'Api\V1CentroInformacionController',
+]);
+
 Route::group(['prefix' => 'config'], function () {
     Route::resource('user', 'UserController');
     Route::get('user/{id}/status', 'UserController@status');

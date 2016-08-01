@@ -80,9 +80,10 @@ class CentroSubCategoriaController extends Controller
 
     public function add(Request $request){
 
+        // dd($request);
 
         $subcentro=new CentroInformacion();
-        $subcentro->id_catgories_centro_noticia = 0;
+        $subcentro->id_catgories_centro_noticia = $request->id_categoria;
         $subcentro->id_sub_categoria = $request->id_sub;
         $subcentro->title = $request->title;
         $subcentro->subtitle = $request->subtitle;

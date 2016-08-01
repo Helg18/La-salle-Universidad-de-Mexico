@@ -55,6 +55,7 @@
                 <label class="control-label small">Order.</label>
                 <input type="text" class="form-control" placeholder="" name="order" value="{{ $subcategorias->order }}">
                 <input type="hidden" id="id_sub" name="id_sub" value="{{ $subcategorias_edit->pluck('id')->first() }}">
+                 <input type="hidden" id="id_categoria" name="id_categoria" value="{{ $subcategorias_edit->pluck('id_catgories_centro_noticia')->first() }}">
                 
                 </div>
 

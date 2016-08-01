@@ -57,7 +57,7 @@ class CentroSubCategoriaController extends Controller
     public function update(Request $request){
 
         $subcentro= CentroInformacion::find($request->id);
-        $subcentro->id_catgories_centro_noticia = 0;
+        $subcentro->id_catgories_centro_noticia = $request->id_categoria;
         $subcentro->id_sub_categoria = $request->id_sub;
         $subcentro->title = $request->title;
         $subcentro->subtitle = $request->subtitle;
@@ -67,6 +67,7 @@ class CentroSubCategoriaController extends Controller
         $subcentro->language = $request->language;
         $subcentro->video = $request->video;
         $subcentro->order = $request->order;
+        $subcentro->tipo = $request->tipo;
         $subcentro->fecha_evento = $request->fecha_evento;
         $subcentro->save();
         $this->images($request, $request->id);

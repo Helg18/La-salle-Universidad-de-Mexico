@@ -81,7 +81,8 @@ class AngularController extends Controller
         $centro->order = $request->order;
         $centro->id_sub_categoria = 0;
         $now = Carbon::now();
-        $centro->order = $now;
+        $centro->fecha_evento = $now;
+        $centro->order = $request->order;
         $centro->tipo = $request->tipo;
         $centro->save();
 

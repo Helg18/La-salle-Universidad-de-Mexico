@@ -6,7 +6,7 @@ function getInitialData(lang,id){
 
     $.get( urlc + ruta +'/'+id, function(data){
 
-        console.log(data);
+        // console.log(data);
 
     });
 }

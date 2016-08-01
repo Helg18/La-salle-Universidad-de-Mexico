@@ -40,6 +40,16 @@
 
                 <br>
                 <br>
+                
+                <div class="form-group form-group-sm">
+                    <label class="control-label small">Tipo.</label>
+                    <select class="form-control" id="tipo" name="tipo">
+
+                    <option @if($subcategorias->tipo==1)  {{ ' selected ' }} @endif value="1">Post</option>
+                    <option @if($subcategorias->tipo==2)  {{ ' selected ' }} @endif value="2">Calendar</option>
+
+                    </select>  
+                </div>
 
                 <div class="form-group form-group-sm">
                 <label class="control-label small">Order.</label>

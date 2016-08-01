@@ -4,6 +4,15 @@
     </div>
     <div class="modal-body">
         <div class="form-group form-group-sm">
+            <label class="control-label small">Tipo.</label>
+            <select class="form-control" ng-model="centro.tipo">
+
+            <option ng-selected="centro.tipo==1" value="1">Post</option>
+            <option ng-selected="centro.tipo==2" value="2">Calendar</option>
+
+            </select>  
+        </div>
+        <div class="form-group form-group-sm">
             <label class="control-label small">Order.</label>
             <input type="text" class="form-control" placeholder="" ng-model="centro.order">
         </div>
@@ -62,7 +71,7 @@
 
         <div class="form-group">                
             <div class="input-group " >
-                <input type="text" class="form-control" name='fecha_evento' id='fecha_evento' ng-model="centro.fecha_evento" value="" />
+                <input type="text" class="form-control"   name='fecha_evento' id='fecha_evento' ng-model=" centro.fecha_evento | date : 'dd/MM/y' "  />
                 <span class="input-group-addon">
                     <i class=" ion ion-calendar"></i>
                 </span>

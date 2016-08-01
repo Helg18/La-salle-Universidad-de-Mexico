@@ -2713,7 +2713,7 @@
 			
 			</div>
 			<br>
-			<div id="effect-1" class="effects clearfix secondPart"> 
+			<div id="effect-1" class="effects clearfix "> 
 				<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;">
 					EDITORIALES
 				</div>
@@ -2825,7 +2825,7 @@
 			
 			</div>
 			<br>
-			<div id="effect-1" class="effects clearfix secondPart"> 
+			<div id="effect-1" class="effects clearfix "> 
 				<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;">
 					PUBLICACIONES
 				</div>
@@ -3680,8 +3680,8 @@
   <!-- <script src="../css/bootstrap/js/bootstrap.min.js" ></script> -->
 
 
-  <!-- <script src="../js/ws.config.js"></script> -->
-  <!-- <script src="../js/ws.js"></script> -->
+  <script src="../js/ws.config.js"></script>
+  <script src="../js/centros.js"></script>
 
   <script>
     
@@ -3999,6 +3999,16 @@
 		var hoy = NombresDias[dia] + ' ' +  dia + ' de ' + NombresMeses[IndexMes] + ' de ' + Ano;
 		document.getElementById("fecha-hoy").innerHTML = hoy;
 	});	
+
+$(document).ready(function(){
+
+    var lang = getUrlVars()["lang"];
+    var id = 1;
+    if(lang==0 || lang==""){lang=1;}
+    getInitialData(lang,id);
+
+});
+
   </script>
   
   <!-- Create:hdzlruben.

@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Models\CategoriasCentroInformacion;
+use App\Models\CentroInformacion;
+
 
 class V1CentroInformacionController extends Controller
 {
@@ -17,17 +20,22 @@ class V1CentroInformacionController extends Controller
     }
 
     
-    public function getInitialData(){
+    public function getInitialData($id){
 
-        $data = Category::allForJson(1);
-        $labels = CalendarLabel::allForJsonCategorie(1);
-        $calendar = Category::find(4)->posts()->where('language',2)->limit(4)->orderBy('custom_date','desc')->get();
-        $calendar_important = Category::find(4)->posts()->where('is_important',true)->where('language',1)->limit(4)->orderBy('custom_date','desc')->get();
-        $blog = Category::find(5)->posts()->where('language',1)->limit(9)->orderBy('created_at','desc')->get();
-        $academic = AcademicOffer::sliders(1);
+        $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $id)
+        ->where('id_sub_categoria', '=', 0)
+        ->orderBy('order', 'desc')->get();
+
+        $subsubcategorias = array();
+
+        foreach ($subcategorias_edit as $key) {
+                $subsubcategorias = CentroInformacion::where('id_sub_categoria', '=', $key->id)->get();
+        }   
         
+        $calendar = array();
+
         return response()->json(
-            ['error'=>false,'categories'=>$data,'calendar_labels'=>$labels,'calendar'=>$calendar,'calendar_important'=>$calendar_important, 'blog'=>$blog, 'academic_offer'=>$academic]
+            ['error'=>false,'subcategorias'=>$subcategorias_edit,'calendar'=>$calendar,'subsubcategorias'=>$subsubcategorias]
         );
 
         

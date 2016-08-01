@@ -50167,6 +50167,8 @@ var app = angular.module('lasalle',['ui.bootstrap'])
 
         $scope.centros = [];
         $scope.modalCentros = function(centro, title,order){
+			fecha_evento_date = new Date();
+
 
             if(!centro){
                 centro = {
@@ -50181,7 +50183,8 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     picture:null,
                     video:null,
                     order:null,
-                    fecha_evento:null
+                    fecha_evento:fecha_evento_date,
+                    tipo:null
                 }
             }
 

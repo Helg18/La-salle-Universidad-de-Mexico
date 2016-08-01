@@ -23,7 +23,7 @@ Route::controllers([
 ]);
 
 Route::controllers([
-    'api/v1/centro'           =>  'Api\V1CentroInformacionController',
+    'api/v1/centroinformacion'             =>  'Api\V1CentroInformacionController',
 ]);
 
 Route::group(['prefix' => 'config'], function () {

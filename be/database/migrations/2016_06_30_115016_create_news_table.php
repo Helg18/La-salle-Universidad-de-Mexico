@@ -27,6 +27,7 @@ class CreateNewsTable extends Migration
             $table->integer('language');
             $table->integer('order');
             $table->dateTime('fecha_evento');
+            $table->integer('tipo');
             $table->timestamps();
         });
     }

@@ -79,8 +79,10 @@ class AngularController extends Controller
         $centro->video = $request->video;
         $centro->picture = $request->picture;
         $centro->order = $request->order;
+        $centro->id_sub_categoria = 0;
         $now = Carbon::now();
         $centro->order = $now;
+        $centro->tipo = $request->tipo;
         $centro->save();
 
         return response()->json(['message'=>'Información guardada exitosamente']);

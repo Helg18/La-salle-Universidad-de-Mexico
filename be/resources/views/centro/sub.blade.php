@@ -75,6 +75,16 @@
 
                 <br>
                 <br>
+                
+                <div class="form-group form-group-sm">
+                    <label class="control-label small">Tipo.</label>
+                    <select class="form-control" >
+
+                    <option  value="1">Post</option>
+                    <option  value="2">Calendar</option>
+
+                    </select>  
+                </div>
 
                 <div class="form-group form-group-sm">
                 <label class="control-label small">Order.</label>

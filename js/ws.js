@@ -269,17 +269,21 @@ function Category1(){
 		
 		if(index == 9){	// Red La Salle
 			if(index2 == 0){ // Universidades en mexico
-				$(".descripcionTituloUniversidad-").append('<img src="images/nuevosArtes/servicio/mapa-mx.png" class="mapa-mx">');
+				$(".descripcionTituloUniversidad-").append('<img src="images/nuevosArtes/servicio/mx.png" class="mapa-mx">');
+				$(".pines-mapa-mx").css("display","inherit"); // Pines
 				$("#azules-red").css("display","inherit");
 				$(".ul-mundo").css("display","none");
 			}else{
 				$(".mapa-mx").remove();
+				$(".pines-mapa-mx").css("display","none");
 			}
 			if(index2 == 1){ // Universidades en el mundo
 				$(".descripcionTituloUniversidad-").append('<img src="images/nuevosArtes/servicio/mapa-mundo.png" class="mapa-mundo">');
 				$("#azules-red").css("display","inherit");
-				$(".ul-mundo").css("display","inherit");				
+				$(".ul-mundo").css("display","inherit");		
+				$(".pines-mapa-mundo").css("display","inherit"); // Pines
 			}else{
+				$(".pines-mapa-mundo").css("display","none");
 				$(".mapa-mundo").remove();
 			}
 		}else{
@@ -495,7 +499,7 @@ function Category3(){
 			$('.contacto-form').css('display','inherit');
 			$(".descripcionTituloServicios").prepend('<img src="images/nuevosArtes/servicio/estacionamiento.png" class="mapa-estacionamiento">');	 // Imagen (por ahora) de un mapa
 		}else{
-			$(".mapa-mx2").remove();
+			$(".mapa-estacionamiento").remove();
 		}
 		
 	}

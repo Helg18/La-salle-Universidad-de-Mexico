@@ -498,11 +498,17 @@ function Category3(){
 			$(".video-servicios").css("display","none");
 		}
 		if(index == 4){	// Estacionamiento
+			
 			$("#mosaico-servicios").css("display","none");
 			$('.contacto-form').css('display','inherit');
-			$(".descripcionTituloServicios").prepend('<img src="images/nuevosArtes/servicio/estacionamiento.png" class="mapa-estacionamiento">');	 // Imagen (por ahora) de un mapa
+			var imgEstacionamiento = $('<img src="images/nuevosArtes/servicio/estacionamiento.jpg" class="mapa-estacionamiento">');
+			$(".descripcionTituloServicios").prepend(imgEstacionamiento);	 // Imagen (por ahora) de un mapa
+			$(".descripcionTituloServicios").attr('style','width: 100%;margin: 0;');			
+			$('#pines-estacionamiento').css('display','inherit');
 		}else{
 			$(".mapa-estacionamiento").remove();
+			$(".descripcionTituloServicios").attr('style','');
+			$('#pines-estacionamiento').css('display','none');
 		}
 		
 	}
@@ -1310,4 +1316,28 @@ function CambiarMosaico(){	// Funcion que debe cambiar el contenido del div #mos
 			$('a.asia,a.europe,a.north,a.south').hide();
 			$('a.'+filtro).fadeIn('slow');
 		}
+	}
+// Pines de estacionamiento
+	function OverPinEstacionamiento(elemento){
+		var pin = elemento.id;
+		$('img#' + pin).attr('src','images/nuevosArtes/servicio/pine2.png');
+	}
+	function NoOverPinEstacionamiento(elemento){
+		var pin = elemento.id;
+		if($('img#' + pin).hasClass("activo")){
+		
+		}else{
+			$('#pines-estacionamiento img#' + pin).each(function() {
+				$(this).attr('src','images/nuevosArtes/servicio/pine.png');
+			});
+		}
+	}
+	function Estacionamiento(elemento){
+		$('#pines-estacionamiento img').each(function() {
+			$(this).attr('src','images/nuevosArtes/servicio/pine.png');
+		});
+		var imagen = elemento.id;
+		$('img#' + imagen).addClass('activo');
+		$('img#' + imagen).attr('src','images/nuevosArtes/servicio/pine2.png');
+		$('img.mapa-estacionamiento').attr('src','images/nuevosArtes/servicio/estacionamiento/' + imagen + '.png');
 	}

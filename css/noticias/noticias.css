@@ -384,6 +384,26 @@ a.expand {
   border-radius: 30px;
 }
 
+/*****************************************
+ Efectos de centro de información
+*/
+.efectos-centro-info .overlayNoticia {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
+.efectos-centro-info .overlayNoticia a.expand {
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  margin: 0 auto -30px auto;
+}
+.efectos-centro-info .imgNoticia.hoverNoticia .overlayNoticia {
+  height: 100%;
+}
+
 /* ============================================================
   EFFECT 1 - SLIDE IN BOTTOM
 ============================================================ */

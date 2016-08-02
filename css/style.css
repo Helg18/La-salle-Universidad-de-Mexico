@@ -6841,7 +6841,26 @@ FACULTAD DE FAMADYC
 .azul-col{height:150px; background:#fff;color:#3db6dc;overflow:hidden;}
 .azul-col:hover{background:#3db6dc;color:#fff}
 .ul-estructura li{margin:0 !important}
+
+/* Mapa de estacionamiento */
 .mapa-estacionamiento{width:100%;margin-bottom:45px;}
+#pines-estacionamiento{position:absolute;z-index:2;top:0;width:100%;left:0;height:100%;}
+#pines-estacionamiento span{color:#fff;position:relative;left:-31px;top:-6px;height:0px;}
+#pines-estacionamiento img{width:62%}
+
+.item-estacionamiento-e1{position:absolute;left:54.4%;top:20.7%;}
+.item-estacionamiento-e2{position:absolute;left:50.4%;top:20.3%;}
+.item-estacionamiento-e3{position:absolute;left:42.5%;top:13.6%;}
+.item-estacionamiento-e4{position:absolute;left:10.5%;top:13.6%;}
+.item-estacionamiento-e5{position:absolute;left:18.5%;top:11.6%;}
+.item-estacionamiento-e6{position:absolute;left:30.5%;top:9.9%;}
+.item-estacionamiento-e7{position:absolute;left:8.9%;top:4.6%;}
+.item-estacionamiento-e8{position:absolute;left:59.4%;top:4.8%;}
+.item-estacionamiento-e9{position:absolute;left:77.1%;top:18.9%;}
+.item-estacionamiento-e10{position:absolute;left:55.7%;top:28.5%;}
+
+
+/* Mapa de mexico y pines */
 
 .pines-mapa-mx{position:absolute;z-index:2;top:6%;width:100%;height:89%;}
 .pines-mapa-mx .chihuahua{position:absolute;left:37%;top:21%;}
@@ -6928,7 +6947,7 @@ FACULTAD DE FAMADYC
 .item-mapa-cancun:hover .texto-pin-cancun{display:inherit !important}
 .texto-pin-cancun > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
 
-
+/* Mapa del mundo y pines */
 .pines-mapa-mundo{position:absolute;z-index:2;top:6%;width:100%;height:89%;}
 
 .pines-mapa-mundo .mexico{position:absolute;left:22%;top:47%;}

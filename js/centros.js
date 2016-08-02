@@ -6,7 +6,23 @@ function getInitialData(lang,id){
 
     $.get( urlc + ruta +'/'+id, function(data){
 
-        // console.log(data);
+         // console.log(data);
+        initial_data = data;
+
+        
+
+        // html = "<div id='effect-1' class='effects clearfix'></div>"
+        // $('.col-sm-9').html("<div id='effect-1' class='effects clearfix'></div>");
+
+         $.each(initial_data.subcategories, function(index,subcategorias) {
+            // console.log(subcategorias);
+            // html = html + "<div class='col-sm-12' style='background: #808080;text-align: center;color: #fff;'>"+subcategorias.title+"</div>"
+            console.log(initial_data.subcategorias[index].title);
+         });
+
+         // $('.effects clearfix').html(html);
+
+
 
     });
 }

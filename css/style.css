@@ -6821,8 +6821,8 @@ FACULTAD DE FAMADYC
 #universidadShow .contenedorImagenTextoAccionSocial-{overflow:hidden;background-position:100% 0% !important;background-repeat:no-repeat;}
 #universidadShow .contenedorDiagonalUniversidad2{z-index: 5;overflow: visible !important;transform:none !important;background:none !important;}
 #universidadShow  .descripcionTituloUniversidad-{background: #fff;transform:none !important;}
-.contenedor-subtitulos-ulsabus{width:100%;}
-.contenedor-subtitulos-ulsabus .subtitulos-ulsabus{width:12.5%;float:left;color:#23265e;font-size:13px;}
+.contenedor-subtitulos-ulsabus{width:100%;height:61px;}
+.contenedor-subtitulos-ulsabus .subtitulos-ulsabus{width:11%;float:left;color:#fff;font-size:13px;cursor:pointer;background:#23265e;padding:5px 2px 2px;margin:1px;height:100%;text-align:center;border-radius:3px;}
 .imagenes-servicios img, .tabla-ulsabus, .tabla-ulsabus .alignleft{width:50%;float:left;}
 .imagenes-servicios img{padding:14px;}
 .contact_form_widget{width:400px;text-align:center;box-shadow: 0px 6px 9px -6px #555;padding-bottom: 4px;margin-bottom: 16px;}

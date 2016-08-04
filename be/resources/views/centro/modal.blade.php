@@ -71,9 +71,9 @@
 
         <div class="form-group">                
             <div class="input-group " >
-                <input type="text" class="form-control"   name='fecha_evento' id='fecha_evento' ng-model=" centro.fecha_evento | date : 'dd/MM/y' "  />
+                <input type="text" ng-click="open($event)" class="form-control" datepicker-popup="shortTime"  is-open="opened" uib-datepicker-popup  ng-model="centro.fecha_evento"  />
                 <span class="input-group-addon">
-                    <i class=" ion ion-calendar"></i>
+                    <i ng-click="open($event)" class=" ion ion-calendar"></i>
                 </span>
             </div>
         </div>
@@ -95,4 +95,7 @@
         <button class="btn btn-primary" type="button" ng-click="ok()">Guardar</button>
         <button class="btn btn-default" type="button" ng-click="cancel()">Cancelar</button>
     </div>
+
+
 </script>
+s

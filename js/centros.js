@@ -1,31 +1,46 @@
+$(document).ready(function(){
+
+    var lang = getUrlVars()["lang"];
+    var id = 1;
+    if(lang==0 || lang==""){lang=1;}
+
+    getInitialData(lang,id);
+
+});
+
+
 function getInitialData(lang,id){
 
-    if(lang==1 || lang=="" || lang==undefined){ruta = 'initial-data';}else{
-        ruta = 'initial-data-e';
+        if(lang==1 || lang=="" || lang==undefined){ruta = 'initial-data';}else{
+            ruta = 'initial-data-e';
+        }
+
+        $.get( urlc + ruta +'/'+id, function(data){
+
+            initial_data = data;
+            
+
+            $('#principal').html("");
+            html="";
+             $.each(initial_data.subcategorias, function(index,subcategorias) {
+                
+                html = "<div class='col-sm-12 encabezados' >"+subcategorias.title+"</div>";
+                html = html + "<div id='imgnot"+index+"' class='imgNoticia'><div>";
+                $('#principal').append(html);
+
+                html = "<div class='overlayTituloNoticia'><h6>"+subcategorias.subtitle+"</h6></div>";
+                html = html + "<img src='../images/nuevosArtes/Noticias/image_news1.png' alt=''>"; 
+                html = html + "<div class='overlayNoticia'><h6>121212121212</h6><a href='editoriales.html' id='' class='btn_noticia_more'><img src='../images/nuevosArtes/Noticias/icon_more.png' class='encabezadosimg'></a></div>";
+                $('#imgnot'+index).append(html);
+                
+             });
+
+              // $('#principal').html(html);
+
+
+
+        });
     }
-
-    $.get( urlc + ruta +'/'+id, function(data){
-
-         // console.log(data);
-        initial_data = data;
-
-        
-
-        // html = "<div id='effect-1' class='effects clearfix'></div>"
-        // $('.col-sm-9').html("<div id='effect-1' class='effects clearfix'></div>");
-
-         $.each(initial_data.subcategories, function(index,subcategorias) {
-            // console.log(subcategorias);
-            // html = html + "<div class='col-sm-12' style='background: #808080;text-align: center;color: #fff;'>"+subcategorias.title+"</div>"
-            console.log(initial_data.subcategorias[index].title);
-         });
-
-         // $('.effects clearfix').html(html);
-
-
-
-    });
-}
 
 
 

@@ -41,20 +41,13 @@
   <link rel="stylesheet" href="../css/calendario/sliderNoticias.css" />
   <link rel="stylesheet" href="../css/menuFullScreen/menuFullScreen.css" />
   <link rel="stylesheet" href="../css/buttons/button.css">
+  <link rel="stylesheet" href="google/css/detalles.css">
   <link rel="stylesheet" href="../css/slider_menu_oferta/jquery.bxslider.css" />
 
   <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
 
   <style>
-      .carousel-indicators .active { background-image: url("") !important; }  
-	  
-	  .header-azul{background: #1f285d !important;color: #fff; padding: 10px;margin-top:23px;}
-	  .menuPerfiles ul li{width:12.3% !important}
-	  .btnMenu .hover-bg{transform:skew(30deg);}
-	  .hover-bg.enter{left:91%}
-	  #fecha-hoy{font-family: 'HelveticaBold',arial;color: #838383; padding: 16px 0 0 0; border: 0; border-radius: 0px;font-size: 1.2rem; line-height: 14px; vertical-align: middle;}
-	  #titulo-seccion{font-family: 'HelveticaBold',arial;color: #838383; padding: 16px 0 0 0; border: 0; border-radius: 0px;font-size: 2.2rem; line-height: 14px; vertical-align: middle;}
-	  .day-headers{margin-top: 11px !important;}
+    
   </style>
   
 
@@ -2661,58 +2654,8 @@
   
   <div class="container marginEntreSecciones ">
     <div class="row">
-		<div class="col-sm-9">
-			<div class="efectos-centro-info effects clearfix"> 
-
-				<div class="col-sm-12" style="background: #808080;text-align: center;color: #fff;">
-					NOTICIAS
-				</div>
-			  <div class="imgNoticia">
-				<div class="overlayTituloNoticia">
-				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
-				</div>
-				<img src="../images/nuevosArtes/Noticias/image_news1.png" alt="">
-				<div class="overlayNoticia">
-				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				   <a href="editoriales.html" id="btn_more_noticia_uno" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
-				</div>
-
-			  </div>
-			  
-			  <div class="imgNoticia">
-				<div class="overlayTituloNoticia">
-				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
-				</div>
-				<img src="../images/nuevosArtes/Noticias/image_news3.png" alt="">
-				<div class="overlayNoticia">
-				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				   <a href="editoriales.html" id="btn_more_noticia_dos" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
-				</div>
-			  </div>
-			  
-			  <div class="imgNoticia">
-				<div class="overlayTituloNoticia">
-				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
-				</div>
-				<img src="../images/nuevosArtes/Noticias/image_news2.png" alt="">
-				<div class="overlayNoticia">
-				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				   <a href="editoriales.html" id="btn_more_noticia_tres" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
-				</div>
-			  </div>
-
-			  <div class="imgNoticia destacada">
-				<div class="overlayTituloNoticiaDestacado">
-				  <h6>XXX JORNADA ACADEMICA<br>DE CIENCIAS QUIMICAS</h6>
-				</div>
-				<img src="../images/nuevosArtes/Noticias/image_news5.png" alt="">
-				<div class="overlayNoticia">
-				  <h6>Lorem ipsum dolor, consectetur Lorem ipsum</h6>
-				   <a href="editoriales.html" id="btn_more_noticia_cuatro" class="btn_noticia_more"><img src="../images/nuevosArtes/Noticias/icon_more.png" style="width: 20px;left: 44%;position: relative;"></a>
-				</div>
-			  </div>
+		<div id="principal" class="col-sm-9">
 			
-			</div>
 			
 		  </div>
 
@@ -3507,8 +3450,7 @@
   <!-- <script src="../css/bootstrap/js/bootstrap.min.js" ></script> -->
 
 
-  <script src="../js/ws.config.js"></script>
-  <script src="../js/centros.js"></script>
+
 
   <script>
     
@@ -3827,18 +3769,21 @@
 		document.getElementById("fecha-hoy").innerHTML = hoy;
 	});	
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-    var lang = getUrlVars()["lang"];
-    var id = 1;
-    if(lang==0 || lang==""){lang=1;}
-    getInitialData(lang,id);
+//     var lang = getUrlVars()["lang"];
+//     var id = 1;
+//     if(lang==0 || lang==""){lang=1;}
+//     getInitialData(lang,id);
 
-});
+// });
 
   </script>
   
   <!-- Create:hdzlruben.
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="../js/ws.config.js"></script>
+  <script src="../js/centros.js"></script>
 </body>
+
 </html>

@@ -50166,10 +50166,9 @@ var app = angular.module('lasalle',['ui.bootstrap'])
 .controller('CentroCtrl',['$scope', '$http', '$uibModal',function($scope, $http, $uibModal){
 
         $scope.centros = [];
+		
         $scope.modalCentros = function(centro, title,order){
 			fecha_evento_date = new Date();
-
-
             if(!centro){
                 centro = {
                     id: null,
@@ -50183,7 +50182,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     picture:null,
                     video:null,
                     order:null,
-                    fecha_evento:fecha_evento_date,
+                    fecha_evento:null,
                     tipo:null
                 }
             }
@@ -50248,6 +50247,8 @@ var app = angular.module('lasalle',['ui.bootstrap'])
 
         }
 
+
+
         $scope.getCentros = function(){
             $http.get(url + 'angular/' + id_catgories_centro_noticia + '/centros').then(function(response){
                  // console.log(response.data);
@@ -50268,13 +50269,17 @@ var app = angular.module('lasalle',['ui.bootstrap'])
     {
 
         $scope.centro = centro;
-        // console.log(centro);
+
         $scope.title = title;
-        // $scope.order = order;
-        // $scope.category_id = 0;
-        // console.log(category_id);
+ 
 
+		$scope.open = function($event) {
+		  $event.preventDefault();
+		  $event.stopPropagation();
 
+		  $scope.opened = true;
+		};
+		
         $scope.ok = function () {
 
             if(!$scope.centro.title){

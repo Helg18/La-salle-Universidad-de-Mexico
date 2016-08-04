@@ -62,5 +62,8 @@
 
 <!-- Dev only -->
 <script src="{{asset('/js/all.js')}}"></script>
+<script>
+    
+</script>
 </body>
 </html>

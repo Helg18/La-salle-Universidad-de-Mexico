@@ -32,3 +32,8 @@ div.bootbox.modal.fade.in {
 
 div.bootbox.modal.fade.in + div {
   z-index: 1060; }
+
+
+small i{
+  font-size: 12px !important;
+}

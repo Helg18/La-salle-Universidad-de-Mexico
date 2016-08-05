@@ -20,13 +20,13 @@ function getInitialData(lang,id){
             initial_data = data;
             
 
-            $('#principal').html("<div id='conten' class='efectos-centro-info effects clearfix'></div>");
+            $('#principal').html("");
             html="";
              $.each(initial_data.subcategorias, function(index,subcategorias) {
                 
                 html = "<div class='col-sm-12 encabezados' >"+subcategorias.title+"</div>";
                 html = html + "<div id='imgnot"+index+"' class='imgNoticia'><div>";
-                $('#conten').append(html);
+                $('#principal').append(html);
 
                 html = "<div class='overlayTituloNoticia'><h6>"+subcategorias.subtitle+"</h6></div>";
                 html = html + "<img src='../images/nuevosArtes/Noticias/image_news1.png' alt=''>"; 
@@ -42,12 +42,6 @@ function getInitialData(lang,id){
         });
     }
 
-
-// $("#imgnot0").mouseover(function() 
-//   {
-//     $( this ).addClass( 'imgNoticia hoverNoticia' );
-//   }
-//   );
 
 
 function getUrlVars()

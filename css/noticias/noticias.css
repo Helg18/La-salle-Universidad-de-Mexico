@@ -424,13 +424,6 @@ a.expand {
   height: 100%;
 }
 
-.imgNoticia:hover .overlayNoticia {
-  height: 100% !important
-}
-
-.imgNoticia .btn_noticia_more img{
-  width: 20px;left: 44%;position: relative;
-}
 
 /* ============================================================
   EFFECT 3 - SLIDE IN LEFT

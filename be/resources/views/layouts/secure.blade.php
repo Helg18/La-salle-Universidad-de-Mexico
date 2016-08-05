@@ -114,6 +114,7 @@
 					<div class="group">
 						<h5 class="name">{{Auth::user()->name}}</h5>
 						<small class="desig text-uppercase"></small>
+						<small><a href="{{ url('categories') }}"><i class="ion ion-edit"></i> Categorias</a></small>
 					</div>
 				</div>
 

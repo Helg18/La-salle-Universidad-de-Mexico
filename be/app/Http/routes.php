@@ -64,3 +64,14 @@ Route::post('subcentro',             'CentroSubCategoriaController@add');
 Route::delete('subcentro/{id}/delete', 'CentroSubCategoriaController@delete');
 
 //Route::get('user/{id}/status', 'UserController@status');
+
+//Route's de categories
+Route::get('categories', 'CategoriesController@index');
+Route::post('categories/add', 'CategoriesController@store');
+Route::get('categories/{id}/edit', 'CategoriesController@edit');
+Route::post('categories/{id}/update', 'CategoriesController@update');
+Route::any('categories/{id}/delete', 'CategoriesController@destroy');
+
+//Fin de categories
+
+//

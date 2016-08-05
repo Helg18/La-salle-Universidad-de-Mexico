@@ -15,8 +15,7 @@ class CreateNewsTable extends Migration
         Schema::create('news', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->integer('id_catgories_centro_noticia')->unsigned();
-            $table->integer('id_sub_categoria');
+            $table->integer('id_catgories_news');
             $table->string('title');
             $table->string('subtitle')->nullable();
             $table->text('paragraph_1')->nullable();
@@ -26,8 +25,6 @@ class CreateNewsTable extends Migration
             $table->string('video')->nullable();
             $table->integer('language');
             $table->integer('order');
-            $table->dateTime('fecha_evento');
-            $table->integer('tipo');
             $table->timestamps();
         });
     }

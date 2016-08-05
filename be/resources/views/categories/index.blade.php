@@ -41,7 +41,6 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Order</th>
-                                {{-- <th>Configurar</th> --}}
                                 <th>Eliminar</th>
                             </tr>
                         </thead>
@@ -221,7 +220,7 @@
         
         @endif 
 
-        @include('centro.modal')
+        @include('categories.modal')
         
         
 

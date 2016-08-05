@@ -116,7 +116,7 @@
 						<small class="desig text-uppercase"></small>
 						<small><a href="{{ url('categories') }}"><i class="ion ion-edit"></i> Categorias</a></small>
 					</div>
-				</div>
+				</div> 
 
 				<!-- navigation -->
 				<ul class="list-unstyled clearfix nav-list mb15">

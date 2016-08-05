@@ -44,6 +44,17 @@ Route::group(['prefix' => 'angular'], function () {
     /**Centros**/
 });
 
+
+//Route's de categories
+Route::get('categories', 'CategoriesController@index');
+Route::post('categories/add', 'CategoriesController@store');
+Route::get('categories/{id}/edit', 'CategoriesController@edit');
+Route::post('categories/{id}/update', 'CategoriesController@update');
+Route::delete('categories/{id}/delete', 'CategoriesController@destroy');
+//Fin de categories
+
+
+
 Route::delete('post/{id}/deleteimage', 'PostController@delete_image');
 Route::resource('post', 'PostController');
 Route::resource('academic', 'AcademicOfferController');

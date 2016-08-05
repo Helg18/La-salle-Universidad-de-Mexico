@@ -1,2 +1,6 @@
 .idea*
 js/ws.config.js
+.phpintel/*
+./phpintel/*
+.phpintel*/*
+.phpintel/*

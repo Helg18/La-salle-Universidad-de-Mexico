@@ -71,7 +71,5 @@ Route::post('categories/add', 'CategoriesController@store');
 Route::get('categories/{id}/edit', 'CategoriesController@edit');
 Route::post('categories/{id}/update', 'CategoriesController@update');
 Route::any('categories/{id}/delete', 'CategoriesController@destroy');
-
 //Fin de categories
 
-//

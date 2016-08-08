@@ -30,7 +30,7 @@ function getInitialData(lang,id){
 
                 html = "<div class='overlayTituloNoticia'><h6>"+subcategorias.subtitle+"</h6></div>";
                 html = html + "<img src='../images/nuevosArtes/Noticias/image_news1.png' alt=''>"; 
-                html = html + "<div class='overlayNoticia'><h6>121212121212</h6><a href='editoriales.html' id='' class='btn_noticia_more'><img src='../images/nuevosArtes/Noticias/icon_more.png' class='encabezadosimg'></a></div>";
+                html = html + "<div class='overlayNoticia'><h6>"+subcategorias.paragraph_1+"</h6><a href='editoriales.html' id='' class='btn_noticia_more'><img src='../images/nuevosArtes/Noticias/icon_more.png' class='encabezadosimg'></a></div>";
                 $('#imgnot'+index).append(html);
                 
              });

@@ -40,6 +40,7 @@ Route::group(['prefix' => 'angular'], function () {
 	/**Centros**/
 	Route::get('{id}/centros', 'AngularController@centros');
 	Route::post('centros', 'AngularController@save_centros');
+    Route::post('centros/images', 'AngularController@save_centros_images');
     Route::delete('{id}/centros', 'AngularController@delete_centros');
     /**Centros**/
 });

@@ -65,10 +65,11 @@ class AngularController extends Controller
     }
 
     public function save_centros(Request $request){
-        
+
         if(!$centro = CentroInformacion::find($request->id)){
             $centro=new CentroInformacion();
         }
+
         $centro->id_catgories_centro_noticia = $request->id_catgories_centro_noticia;
         $centro->title = $request->title;
         $centro->subtitle = $request->subtitle;
@@ -77,7 +78,6 @@ class AngularController extends Controller
         $centro->paragraph_3 = $request->paragraph_3;
         $centro->language = $request->language;
         $centro->video = $request->video;
-        $centro->picture = $request->picture;
         $centro->order = $request->order;
         $centro->id_sub_categoria = 0;
         $now = Carbon::now();
@@ -86,6 +86,15 @@ class AngularController extends Controller
         $centro->tipo = $request->tipo;
         $centro->save();
 
+        return response()->json(['message'=>'Información guardada exitosamente']);
+    }
+
+    public function save_centros_images(Request $request,$id){
+
+        dd($request);
+        
+        $centros_images = new CentroSubCategoriaController();
+        $centros_images->images($request, $id);
         return response()->json(['message'=>'Información guardada exitosamente']);
     }
 

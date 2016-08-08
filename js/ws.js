@@ -212,7 +212,7 @@ function Category1(){
 			$("div#descargables").css("display","inherit"); // Descargables
 		}
 		if(index == 3){	// Acreditaciones
-			$("#mosaico-somos-salle").css("display","inherit");
+			$("#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
@@ -551,7 +551,9 @@ function Category6(){
     }
 
     this.show();
-
+	
+	$('div.subMenuUnoAccionSocial').hide(); // No van submenus
+	$('div#mosaico-accion-social').show();	// Mostramos cuadro tipo google
 }
 
 function Category9(){
@@ -591,8 +593,23 @@ function Category9(){
 
         });
         ocultarCaorusel();
-
-        
+		
+		$('.formContacto').hide();
+		if(index == 0){
+			$('#overs-atencion').show();
+		}else{
+			$('#overs-atencion').hide();
+		}
+        if(index == 2){
+			$('#mosaico-contacto,.containerMapa').show();
+		}else{
+			$('#mosaico-contacto,.containerMapa').hide();
+		}
+		if(index == 3){
+			$('.formContacto').show();
+		}else{
+			$('.formContacto').hide();
+		}
     }
 
     this.showContent2 =  function(index,index2){
@@ -604,6 +621,8 @@ function Category9(){
         // $('#contenedorTituloContactoc p').html(post.paragraph_1_small_html  ? post.paragraph_1_small_html : '');
          $('.descripcionTituloContacto .contactoShow .contenedorDiagonalContacto  p').html(post.paragraph_1_small_html  ? post.paragraph_1_small_html : '');
         // $('#contactoShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
+		
+		
 
     }
 
@@ -907,6 +926,9 @@ function vinculacion_empresarial(){
 
 function investigacion(){
 
+	var submenus = '<div class="ten columns subMenuInvestigacion servicios"> <div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(0)">Investigadores</div><div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(1)">Grupos de Investigación</div><div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(2)">Proyectos de Investigación</div><div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(3)">Publicaciones</div></div>';
+	$('div.headerSubMenuInvestigacion').append(submenus);
+	
     var tmp = '<div class="contenedorFilaVinculacion">';
     $('#investigacionShow .ocultarContenidoSubMenu .row').html('');
 
@@ -927,6 +949,37 @@ function investigacion(){
     }).mouseleave(function(){
         $(this).removeClass('cuadroInvestigacionActive');
     });
+}
+
+function SubmenuInvestigacion(funcion){
+	// 1. Investigadores - de las click al cuadro y te lleva am Catálogo de Docentes
+	// 2. Grupos de Investigación - Información acomodada tipo oferta académica
+	// 3. Proyectos de Investigación - Infomración acomodada tipo oferta académica
+	// 4. Publicaciones - Texto con foto diagonal, abajo cuadros tipo oferta académica y abajo botón para que te lleve al repositorio de publicaciones
+	var mosaico = $('#mosaico-investigacion');
+	var repositorios = $('#descargar-repositorio-investigacion');
+	var texto = $('.contenedorImagenTextoInvestigacion');
+	
+	if(funcion == 0){
+		location.href = 'microsites/catalogo.html';
+	}
+	if(funcion == 1){
+		$('.cuadrosInvestigacion').hide();
+		mosaico.show();
+	}
+	if(funcion == 2){
+		$('.cuadrosInvestigacion').hide();
+		mosaico.show();
+	}
+	if(funcion == 3){
+		$('.cuadrosInvestigacion').hide();
+		texto.show();
+		mosaico.show();
+		repositorios.show();
+	}else{
+		texto.hide();
+		repositorios.hide();
+	}
 }
 
 function lineatiempo(){

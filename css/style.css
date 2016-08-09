@@ -916,7 +916,7 @@ PERFIL INTERNATIONAL
 .subMenuUnoServicios:hover{
   background: #ff0000;
   color: #ffffff;
-
+font-size:1.1em;
 }
 
 .subMenuDos{
@@ -6836,7 +6836,7 @@ FACULTAD DE FAMADYC
 .image--expand{background: #325499 !important;}
 .acre-mosaico{margin-top:17px;}
 .tiny_redl_bullet_ul li{line-height: 0px;list-style: inherit;}
-.link-servicios{background: #1f285d;color: #fff;padding: 7px;font-size:14px;border-radius: 2px;margin-left:27%;}
+.link-servicios{width:100%;position:absolute;bottom:0;left:0;}
 /*#mosaico-somos-salle-monumentos article.image__cell {max-height: 180px;overflow: hidden;} */
 .azul-col{height:150px; background:#fff;color:#3db6dc;overflow:hidden;}
 .azul-col:hover{background:#3db6dc;color:#fff}
@@ -7022,3 +7022,23 @@ FACULTAD DE FAMADYC
   }
 #descargar-repositorio-investigacion{width:100%;;display:block}
 .contenedorImagenTextoInvestigacion{overflow:hidden;background-position:100% 0% !important;background-repeat:no-repeat;width:120%;}
+#selecciono-plan{width:100%;}
+#selecciono-plan .numeritos{width:22%;float:left;margin:5px;background:#555;color:#fff;font-size:27px;height:180px;padding:5%;text-align:center;}
+#selecciono-plan .numeritos:hover{background:#fff;color:#555;}
+#selecciono-plan .numeritos:hover h5{font-size:14px;display:block;}
+#selecciono-plan .numeritos h5{display:none}
+
+.cuadros-perfiles{height:200px;margin-top:10px;width:100%;}
+.cuadros-perfiles .col-md-6{background:rgba(210, 209, 209, 0.73);padding:30px 0 0 0;height:100%;border-right:2px solid #fff;text-align:center;}
+.hojita-contacto{margin-top:15px;}
+.hojita-contacto .col-md-6 img{width:128px;margin-left:31%;}
+.hojita-contacto .campos input{width:100%;}
+
+.links-historia{width:100%;}
+.links-historia .numeritos{width:22%;float:left;margin:5px;background:#555;color:#fff;font-size:27px;height:180px;padding:5%;text-align:center;}
+.links-historia .numeritos:hover{background:#fff;color:#555;}
+.links-historia .numeritos:hover h5{font-size:14px;display:block;}
+.links-historia .numeritos h5{display:none}
+
+.contenedor-subtitulos-semestres{width:100%;height:61px;}
+.contenedor-subtitulos-semestres .subtitulos-ulsabus{width:11%;float:left;color:#fff;font-size:13px;cursor:pointer;background:#23265e;padding:5px 2px 2px;margin:1px;height:100%;text-align:center;border-radius:3px;}

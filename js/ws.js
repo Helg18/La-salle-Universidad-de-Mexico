@@ -219,9 +219,11 @@ function Category1(){
 			$("div#descargables").css("display","none"); // Descargables
 			$("div#tabla-excel").css("display","inherit"); // Tabla en modal
 			$(".acre-mosaico").css("display","inherit"); // Mosaico de acreditaciones
+			$("#tabla-acreditaciones").css("display","inherit");
 		}else{
 			$("div#tabla-excel").css("display","none"); // Tabla en modal
 			$(".acre-mosaico").css("display","none"); // Mosaico de acreditaciones
+			$("#tabla-acreditaciones").css("display","none");
 		}
 		if(index == 4){	// PDI
 			$("div#mosaico-somos-salle").css("display","inherit");
@@ -241,19 +243,27 @@ function Category1(){
 			$("div#descargables").css("display","inherit"); // Descargables
 		}
 		if(index == 6){	// Historia
-			$("#mosaico-somos-salle").css("display","inherit");
+			$("#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","inherit"); // Links
 			$("div#descargables").css("display","none"); // Descargables
+			$("#links-historia").css("display","inherit");
+		}else{
+			$("#links-historia").css("display","none");
 		}
 		if(index == 7){	// Identidad
+			
 			
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","inherit"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","inherit"); // Descargables
-			
+			if(index2 == 0){
+				$('#universidadShow  .descripcionTituloUniversidad-').css('box-shadow','none');
+			}else{
+				$('#universidadShow  .descripcionTituloUniversidad-').css('box-shadow','0px 7px 7px -5px rgb(85, 85, 85)');
+			}
 			if(index2 == 4){ // Submenú - Monumentos
 				$("#mosaico-somos-salle-monumentos").css("display","inherit");
 				$("#mosaico-somos-salle").css("display","none");
@@ -289,9 +299,12 @@ function Category1(){
 				$(".pines-mapa-mundo").css("display","none");
 				$(".mapa-mundo").remove();
 			}
+			$("#mosaico-somos-salle").css("display","none");
 		}else{
 			$("#azules-red").css("display","none");
 			$(".ul-mundo").css("display","none");	
+			$(".pines-mapa-mx").css("display","none");	
+			$(".pines-mapa-mundo").css("display","none");	
 		}
     }
 
@@ -316,7 +329,7 @@ function Category2(){
 
         });
 
-        $('.ten.columns.subMenuAccionSocial.vidaestudiantil').html(html);
+        $('.eleven.columns.subMenuAccionSocial.vidaestudiantil').html(html);
         this.showContent(0);
     }
 
@@ -388,10 +401,16 @@ function Category2(){
 
         cuadrosDeVida();
         ocultarCaorusel();
-
+		if(index == 10){ // Redes sociales
+			var redes = '<div class="alignleft social_widget_left redesitas"><ul class="swul"> <li class="sw_heading">Redes Sociales: </li><li>- AIESEC <span class="alignright"><a href="https://www.facebook.com/AIESECinLaSalle"  class="sm_fb_icon"></a></span></li><li>- Grupo Juvenil de Apoyo <span class="alignright"><a href="https://www.facebook.com/LaSalleMx.GrupoJuvenildeApoyo" class="sm_fb_icon"></a></span></li><li>- Proacceso <span class="alignright"><a href="https://www.facebook.com/proacceso.ulsa"  class="sm_fb_icon"></a></span></li><li>- Radar <span class="alignright"><a href="https://www.facebook.com/Lasallemxradar" class="sm_fb_icon"></a></span></li><li>- ROTARACT <span class="alignright"><a href=" https://www.facebook.com/Lasallemxradar" class="sm_fb_icon"></a></span></li><li>- Grupo de apoyo CIEL <span class="alignright"><a href="https://www.facebook.com/grupodeapoyoalCIEL" class="sm_fb_icon"></a></span></li><li>- Hidroponia <span class="alignright"><a href="https://www.facebook.com/Lasallemxradar" class="sm_fb_icon"></a></span></li><li>- ULSAMUN <span class="alignright"><a href="https://www.facebook.com/LasallemxUlsamunr" class="sm_fb_icon"></a></span></li><li>- Q´PET <span class="alignright"><a href="https://www.facebook.com/Lasallemxradar" class="sm_fb_icon"></a></span></li><li>- Sinapsis <span class="alignright"><a href="https://www.facebook.com/pages/LaSalleMXSinapsis" class="sm_fb_icon"></a></span></li></ul></div>';
+			 $('#vidaShow .ocultarContenidoSubMenu .container .row').html(redes);
+		}else{
+			
+		}
     }
         $("#myCarouselLaSalle").css({ 'display': "inherit" });
     this.show();
+	
 }
 
 function cuadrosDeVida(){
@@ -473,6 +492,12 @@ function Category3(){
 		
         ocultarCaorusel();
 		
+		if(index == 0){
+			$("#mosaico-servicios").css("display","none");
+			$("#slide-hospedaje").css("display","inherit");
+		}else{
+			$("#slide-hospedaje").css("display","none");
+		}
 		if(index == 1){
 			// Insertamos subtitulos de ulsabus
 			$(".contenedorDiagonaTextoServicios").append('<div class="contenedor-subtitulos-ulsabus"> <div class="subtitulos-ulsabus" onclick="ulsabus(1);">Ruta 1 <br>Glorieta Vaqueritos</div><div class="subtitulos-ulsabus" onclick="ulsabus(2);">Ruta 2 <br>Indios Verdes</div><div class="subtitulos-ulsabus" onclick="ulsabus(3);">Ruta 3 <br>Valle Dorado</div><div class="subtitulos-ulsabus" onclick="ulsabus(4);">Ruta 4 <br>Aragón</div><div class="subtitulos-ulsabus" onclick="ulsabus(5);">Ruta 5 <br>Perisur</div><div class="subtitulos-ulsabus" onclick="ulsabus(6);">Ruta 6 <br>Torres Lindavista</div><div class="subtitulos-ulsabus" onclick="ulsabus(7);">Ruta 7 <br>Mundo E</div><div class="subtitulos-ulsabus" onclick="ulsabus(8);">Ruta 8 <br>Ecatepec</div></div>');
@@ -595,17 +620,22 @@ function Category9(){
         ocultarCaorusel();
 		
 		$('.formContacto').hide();
-		if(index == 0){
+		if(index == 0){ // Direccion de atención al público
 			$('#overs-atencion').show();
 		}else{
 			$('#overs-atencion').hide();
 		}
-        if(index == 2){
+		if(index == 1){ // Mapas slider
+			$('#slide-mapas').show();
+		}else{
+			$('#slide-mapas').hide();
+		}
+        if(index == 2){	// Como llegar
 			$('#mosaico-contacto,.containerMapa').show();
 		}else{
 			$('#mosaico-contacto,.containerMapa').hide();
 		}
-		if(index == 3){
+		if(index == 3){	 // Contacto
 			$('.formContacto').show();
 		}else{
 			$('.formContacto').hide();
@@ -629,6 +659,9 @@ function Category9(){
     this.show();
 }
 
+$('#mosaico-contacto article').click(function(){ // El mapa debe cambiar el src del iframe google Map para cambiar la ubicación en base al item seleccionado en el mosaico tipo google
+	$('div.containerMapa').fadeOut().delay(1000).fadeIn();	
+});
 
 function calendario(){
     var ul = $('#calendario .menuSecciones ul')
@@ -927,7 +960,7 @@ function vinculacion_empresarial(){
 function investigacion(){
 
 	var submenus = '<div class="ten columns subMenuInvestigacion servicios"> <div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(0)">Investigadores</div><div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(1)">Grupos de Investigación</div><div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(2)">Proyectos de Investigación</div><div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(3)">Publicaciones</div></div>';
-	$('div.headerSubMenuInvestigacion').append(submenus);
+	$('div.esta-investigacion').append(submenus);
 	
     var tmp = '<div class="contenedorFilaVinculacion">';
     $('#investigacionShow .ocultarContenidoSubMenu .row').html('');
@@ -1406,4 +1439,14 @@ function CambiarMosaico(){	// Funcion que debe cambiar el contenido del div #mos
 		if(ruta == 7){$('div.tabla-ulsabus').html('<div class="alignleft"> <h4>Paradas de Venida</h4> <ul> <li> <div><strong>Periférico y Cuauhtémoc</strong></div><div>Mundo E en el parabus</div><div>Horario 5:30am</div></li><li> <div><strong>Periférico y Francisco I. Madero</strong></div><div>En el hotel Parque Satélite</div><div>Horario 5:33am</div></li><li> <div><strong>Manuel E. Isaguirre y Federico T. de la Chica</strong></div><div>En el minisuper “K”</div><div>Horario 5:42am</div></li><li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill en la biblioteca</div><div>Horario 6:30am</div></li></ul> </div><div class="alignleft"> <h4>Paradas de Regreso</h4> <ul> <li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill en la biblioteca</div><div>Horario 14:15hrs</div></li><li> <div><strong>Av. Marina y Circuitos Científicos</strong></div><div>A un costado del Walmart</div><div>Horario 15:08hrs</div></li><li> <div><strong>Calle Viveros de la Colina y Periférico</strong></div><div>Fraccionamiento Plazas de la Colina</div><div>Horario 15:18hrs</div></li><li> <div><strong>Calle Sor Juana Inés de la Cruz y Periférico</strong></div><div>En el puente peatonal de Mundo E</div><div>Horario 15:25hrs</div></li></ul> </div>');}
 		if(ruta == 8){$('div.tabla-ulsabus').html('<div class="alignleft"> <h4>Paradas de Venida</h4> <ul> <li> <div><strong>Estación del metro Cd. Azteca</strong></div><div>En la dulcería La Abejita sobre Av. Central</div><div>Horario 05:20am</div></li><li> <div><strong>Estación del Metro Plaza Aragón</strong></div><div>Puente peatonal del IMSS – sobre Av. Central</div><div>Horario 05:23am</div></li><li> <div><strong>Estación del metro Olimpica</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:27am</div></li><li> <div><strong>Estación del metro Ecatepec</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:29am</div></li><li> <div><strong>Estación del metro Muzquiz</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:33am</div></li><li> <div><strong>Estación del metro Río de los Remedios</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:37am</div></li><li> <div><strong>Estación del metro Impulsora</strong></div><div>Bajo el puente peatonal sobre Av. Central</div><div>Horario 05:39am</div></li><li> <div><strong>Estación del metro Nezahualcóyotl</strong></div><div>Bajo el puente peatonal sobre Av. Central</div><div>Horario 05:42am</div></li><li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill – En la biblioteca</div><div>Horario 06:30am</div></li></ul> </div><div class="alignleft"> <h4>Paradas de Regreso</h4> <ul> <li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill en la biblioteca</div><div>Horario 14:15hrs</div></li><li> <div><strong>Estación del metro Nezahualcóyotl</strong></div><div>En la gasolinería sobre Av. Central</div><div>Horario 15:36hrs</div></li><li> <div><strong>Estación del metro Impulsora</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario: 15:39hrs</div></li><li> <div><strong>Estación del metro Río de los Remedios</strong></div><div>Antes del puente peatonal sobre Av. Central</div><div>Horario 15:44hrs</div></li><li> <div><strong>Estación del metro Muzquiz</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:48hrs</div></li><li> <div><strong>Estación del metro Ecatepec</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:51hrs</div></li><li> <div><strong>Estación del metro Olimpica</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:54hrs</div></li><li> <div><strong>Estación del metro Plaza Aragón</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:57hrs</div></li><li> <div><strong>Estación del metro Cd. Azteca</strong></div><div>Pasando la estación del metro</div><div>Horario 14:00hrs</div></li></ul> </div>');}
 		$('.imagenes-servicios center img').attr('src','images/nuevosArtes/servicio/ulsabus/' + ruta + '.png');
+	}
+// Mostrar opciones de oferta educativa
+	function MostrarOpcionesOferta(div){
+		$('.item-selecciono').hide();
+		$('#selecciono-'+div).show();
+	}
+// Cambiar datos de tabla de cuotas en el menu - Oferta Educativa
+	function OfertaCuotas(titulo){
+		$('#titulo-semestre').html('Cuota '+ titulo);
+		// Falta cambiar dinamicamente los datos de la tabla
 	}

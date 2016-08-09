@@ -71,7 +71,7 @@
 
         <div class="form-group">                
             <div class="input-group " >
-                <input type="text" ng-click="open($event)" class="form-control" datepicker-popup="shortTime"  is-open="opened" uib-datepicker-popup  ng-model="centro.fecha_evento"  />
+                <input type="text" ng-click="open($event)" class="form-control" datepicker-popup="shortDate"  is-open="opened" uib-datepicker-popup  ng-model="centro.fecha_evento"  />
                 <span class="input-group-addon">
                     <i ng-click="open($event)" class=" ion ion-calendar"></i>
                 </span>

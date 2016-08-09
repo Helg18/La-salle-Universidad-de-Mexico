@@ -50182,7 +50182,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                     picture:null,
                     video:null,
                     order:null,
-                    fecha_evento:null,
+                    fecha_evento:fecha_evento_date,
                     tipo:null
                 }
             }

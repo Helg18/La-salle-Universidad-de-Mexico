@@ -289,14 +289,6 @@
 	timepickerScrollbar:true
 });
 
-  $('#fecha_evento_modal').datetimepicker({
-    formatTime:'h:i',
-    formatDate:'d.m.Y',
-    //defaultDate:'8.12.1986', // it's my birthday
-    defaultDate:'+03.01.1970', // it's my birthday
-    defaultTime:'10:00',
-    timepickerScrollbar:true
-});
 
 
 

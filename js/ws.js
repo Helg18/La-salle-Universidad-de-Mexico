@@ -1293,7 +1293,7 @@ $.each(offer.children, function(llave, valor){
         $.each(offer.children[primero].children[segundo].children, function(tercero, nietos){
           //console.log('Tercero ' + nietos.title);
         html = html + '         <div class="opcion-licenciatura">';
-    		html = html + '             <img src="images/nuevosArtes/oferta_educativa/objetivo.png"> '+offer.children[0].children[0].children[0].title;
+    		html = html + '             <img src="images/nuevosArtes/oferta_educativa/objetivo.png"> '+nietos.title;
     		html = html + '         </div>';
         });     
 

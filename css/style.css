@@ -7028,11 +7028,19 @@ FACULTAD DE FAMADYC
 #selecciono-plan .numeritos:hover h5{font-size:14px;display:block;overflow-y:scroll;height:75%;text-align:left;}
 #selecciono-plan .numeritos h5{display:none}
 
+#selecciono-becas{width:100%;}
+#selecciono-becas .numeritos{width:22%;float:left;margin:5px;background:#555;color:#fff;font-size:14px;height:180px;padding:5%;text-align:center;}
+#selecciono-becas .numeritos:hover{background:#fff;color:#555;padding:1%;}
+#selecciono-becas .numeritos:hover h5{font-size:14px;display:block;overflow-y:scroll;height:75%;text-align:left;}
+#selecciono-becas .numeritos h5{display:none}
+
 .cuadros-perfiles{height:auto;margin-top:10px;width:100%;}
 .cuadros-perfiles .col-md-6{background:rgba(210, 209, 209, 0.73);padding:30px 0 0 0;height:100%;border-right:2px solid #fff;text-align:justify;padding:20px;}
 .hojita-contacto{margin-top:15px;}
-.hojita-contacto .col-md-6 img{width:128px;margin-left:31%;}
+.hojita-contacto .col-md-6 img{width:237px;margin-left:25%;}
 .hojita-contacto .campos input{width:100%;}
+
+.asesor_contenido{margin:10px 0;padding:0 20px;border-bottom:1px solid #838587;}
 
 .links-historia{width:100%;}
 .links-historia .numeritos{width:22%;float:left;margin:5px;background:#555;color:#fff;font-size:27px;height:180px;padding:5%;text-align:center;}

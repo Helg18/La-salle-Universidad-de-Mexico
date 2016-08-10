@@ -1240,108 +1240,41 @@ function AcademicOffer(){
         // Preparatoria
         if(index==0){  
 
-        /*
-        $.each(offer.children, function(primero,title){
-          console.log('Primero '+title.title);
+					$.each(offer.children, function(llave, valor){
+					    $.each(offer.children, function(primero,title){
 
-          $.each(offer.children[primero].children, function(segundo, nietas){
-            console.log('Segundo'+ nietas.title);
+					      $.each(offer.children[primero].children, function(segundo, nietas){
+					      	//nietas son los hijos del padre de la entidad superior
+					      	html = html + '<section>';
+					      	html = html + ' <article class="image__cell is-collapsed">';
+					      	html = html + '     <div class="image--basic">';
+					      	html = html + '         <span class="titulos-cuadros-azulitos">';
+					      	html = html + '         </span>';
+					      	html = html + '         <a href="#expand-jump-0">';
+					      	html = html + '             <img id="expand-jump-0" class="basic__img" src="'+nietas.picture_url+'" alt="'+nietas.title+'">';
+					      	html = html + '         </a>';
+					      	html = html + '         <div class="overlay-mosaico">'+nietas.title+'</div>';
+							    html = html + '         <div class="arrow--up">';
+							    html = html + '         </div>';
+							    html = html + '     </div>';
+							    html = html + '     <div class="image--expand" style="background: #325499;">';
+							    html = html + '         <div class="opcion-licenciatura">';
 
-            $.each(offer.children[primero].children[0].children[segundo], function(tercero, nietos){
-              console.log('Tercero');
+					        $.each(offer.children[primero].children[segundo].children, function(tercero, nietos){
+					        	//nietos es la variable para acceder a los atributos del padre que corresponden al abuelo
+					        html = html + '         <div class="opcion-licenciatura">';
+					    		html = html + '             <img src="'+nietos.picture_url+'"> '+nietos.title;
+					    		html = html + '         </div>';
+					        });     
 
-              $.each(offer.children[primero].children[0].children[segundo].children[tercero], function(final, nietoss){
-                console.log('---> '+nietoss.title);
+					        html = html + '     </div>';
+					        html = html + ' </article>';
+					        html = html + '</section>';
 
-              });
-            });     
-          });
-        });
-         */ 
-            
-            //console.log('!-> '+offer.children[0].children[0].children[0].title);
-$.each(offer.children, function(llave, valor){
-    /*console.log('Jesucristo '+valor.title);
-    console.log('Jehova '+offer.children[0].children[0].children[0].title);
-    console.log('Jehova '+offer.children[0].children[0].children[0].title);
-    console.log('Jehova '+offer.children[0].children[0].children[1].title);
-    console.log('Jehova '+offer.children[0].children[0].children[2].title);
-    console.log('Jehova '+offer.children[0].children[0].children[3].title);
-    console.log('Jehova '+offer.children[0].children[0].children[4].title);*/
+					      });
+					    });
 
-
-    $.each(offer.children, function(primero,title){
-    	//console.log('1 Primero '+title.title);
-      //console.log('Primero '+title.title);
-
-      $.each(offer.children[primero].children, function(segundo, nietas){
-      	html = html + '<section>';
-      	html = html + ' <article class="image__cell is-collapsed">';
-      	html = html + '     <div class="image--basic">';
-      	html = html + '         <span class="titulos-cuadros-azulitos">';
-      	html = html + '         </span>';
-      	html = html + '         <a href="#expand-jump-0">';
-      	html = html + '             <img id="expand-jump-0" class="basic__img" src="images/nuevosArtes/Noticias/ejemplo.png" alt="Fashion 8">';
-      	html = html + '         </a>';
-      	html = html + '         <div class="overlay-mosaico">'+nietas.title+'</div>';
-		    html = html + '         <div class="arrow--up">';
-		    html = html + '         </div>';
-		    html = html + '     </div>';
-		    html = html + '     <div class="image--expand" style="background: #325499;">';
-		    html = html + '         <div class="opcion-licenciatura">';
-
-        $.each(offer.children[primero].children[segundo].children, function(tercero, nietos){
-          //console.log('Tercero ' + nietos.title);
-        html = html + '         <div class="opcion-licenciatura">';
-    		html = html + '             <img src="images/nuevosArtes/oferta_educativa/objetivo.png"> '+nietos.title;
-    		html = html + '         </div>';
-        });     
-
-        html = html + '     </div>';
-        html = html + ' </article>';
-        html = html + '</section>';
-
-      });
-    });
-
-
-
-
-
-    /*html = html + '<section>';
-    html = html + ' <article class="image__cell is-collapsed">';
-    html = html + '     <div class="image--basic">';
-    html = html + '         <span class="titulos-cuadros-azulitos">';
-    html = html + '         </span>';
-    html = html + '         <a href="#expand-jump-0">';
-    html = html + '             <img id="expand-jump-0" class="basic__img" src="images/nuevosArtes/Noticias/ejemplo.png" alt="Fashion 8">';
-    html = html + '         </a>';
-    html = html + '         <div class="overlay-mosaico">'+valor.title+'</div>';
-    html = html + '         <div class="arrow--up">';
-    html = html + '         </div>';
-    html = html + '     </div>';
-    html = html + '     <div class="image--expand" style="background: #325499;">';
-    html = html + '         <div class="opcion-licenciatura">';
-    html = html + '             <img src="images/nuevosArtes/oferta_educativa/objetivo.png"> '+offer.children[0].children[0].children[0].title;
-    html = html + '         </div>';
-    html = html + '         <div class="opcion-licenciatura">';
-    html = html + '             <img src="images/nuevosArtes/oferta_educativa/admision.png"> '+offer.children[0].children[0].children[1].title;
-    html = html + '         </div>';
-    html = html + '         <div class="opcion-licenciatura">';
-    html = html + '             <img src="images/nuevosArtes/oferta_educativa/perfil.png"> '+offer.children[0].children[0].children[2].title;
-    html = html + '         </div>';
-    html = html + '         <div class="opcion-licenciatura">';
-    html = html + '             <img src="images/nuevosArtes/oferta_educativa/cuotas.png"> '+offer.children[0].children[0].children[3].title;
-    html = html + '         </div>';
-    html = html + '         <div class="opcion-licenciatura">';
-    html = html + '             <img src="images/nuevosArtes/oferta_educativa/plan.png"> '+offer.children[0].children[0].children[4].title;
-    html = html + '         </div>';
-    html = html + '     </div>';
-    html = html + ' </article>';
-    html = html + '</section>';*/
-
-        //html = html + '<section><article class="image__cell is-collapsed"><div class="image--basic"><span class="titulos-cuadros-azulitos"></span><a href="#expand-jump-0"><img id="expand-jump-0" class="basic__img" src="images/nuevosArtes/Noticias/ejemplo.png" alt="Fashion 8"></a><div class="overlay-mosaico">'+valor.title'</div><div class="arrow--up"></div></div><div class="image--expand" style="background: #325499;"><div class="opcion-licenciatura"><img src="images/nuevosArtes/oferta_educativa/objetivo.png"> '+offer.children[0].children[0].children[0].title+'</div><div class="opcion-licenciatura"><img src="images/nuevosArtes/oferta_educativa/admision.png"> '+offer.children[0].children[0].children[1].title+'</div><div class="opcion-licenciatura"><img src="images/nuevosArtes/oferta_educativa/perfil.png"> '+offer.children[0].children[0].children[2].title+'</div><div class="opcion-licenciatura"><img src="images/nuevosArtes/oferta_educativa/cuotas.png"> '+offer.children[0].children[0].children[3].title+'</div><div class="opcion-licenciatura"><img src="images/nuevosArtes/oferta_educativa/plan.png"> '+offer.children[0].children[0].children[4].title+'</div></div></article></section>';
-});           
+					});           
             $("#mosaico-oferta-educativa-prepa").css('display','inherit');
         }else{
             $("#mosaico-oferta-educativa-prepa").css('display','none');

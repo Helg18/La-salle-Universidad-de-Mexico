@@ -1251,41 +1251,72 @@ function AcademicOffer(){
         // Preparatoria
         if(index==0){  
 
-					$.each(offer.children, function(llave, valor){
-					    $.each(offer.children, function(primero,title){
 
+html = html + '        	<div class="container" style="display:inherit" id="mosaico-oferta-educativa-prepa">';
+html = html + '        		<div class="row">';
+html = html + '        			 <section class="image-grid">';
+var incrementado = 0;
+					    $.each(offer.children, function(primero,title){
 					      $.each(offer.children[primero].children, function(segundo, nietas){
 					      	//nietas son los hijos del padre de la entidad superior
-					      	html = html + '<section>';
-					      	html = html + ' <article class="image__cell is-collapsed">';
-					      	html = html + '     <div class="image--basic">';
-					      	html = html + '         <span class="titulos-cuadros-azulitos">';
-					      	html = html + '         </span>';
-					      	html = html + '         <a href="#expand-jump-0">';
-					      	html = html + '             <img id="expand-jump-0" class="basic__img" src="'+nietas.picture_url+'" alt="'+nietas.title+'">';
-					      	html = html + '         </a>';
-					      	html = html + '         <div class="overlay-mosaico">'+nietas.title+'</div>';
-							    html = html + '         <div class="arrow--up">';
-							    html = html + '         </div>';
-							    html = html + '     </div>';
-							    html = html + '     <div class="image--expand" style="background: #325499;">';
-							    html = html + '         <div class="opcion-licenciatura">';
-
+html = html + '        				<article class="image__cell is-collapsed">';
+html = html + '        					<div class="image--basic" id="cuadrito_'+incrementado+'" onclick="ampliar_cuadrito(this);"><span class="titulos-cuadros-azulitos"></span>';
+html = html + '        						<a href="#expand-jump-0"><img id="expand-jump-0" class="basic__img" src="'+nietas.picture_url+'" alt="'+nietas.title+'">';
+html = html + '        							<div class="etiquetas-oferta">';
+html = html + '        								<h5>'+nietas.title+'</h5>';
+html = html + '        								<small>'+title.title+'</small>';
+html = html + '        							</div>';
+html = html + '        						</a>';
+html = html + '        						<div class="overlay-mosaico">Escuela Preparatoria</div>';
+html = html + '        						<div class="arrow--up"></div>';
+html = html + '        					</div>';
+html = html + '        					<div class="image--expand" style="background: #325499;">';
+html = html + '        						<img class="image--large" src="'+nietas.picture_url+'" alt="'+nietas.title+'">';
+html = html + '        						<div class="lista-opciones">';
+html = html + '        							<table class="tg">';
+html = html + '        							  <tr>';
+html = html + '        								<th class="tg-yw4l">Modalidad Escolarizada</th>';
+html = html + '        								<th class="tg-yw4l">Tipo de ciclo Semestral</th>';
+html = html + '        							  </tr>';
+html = html + '        							  <tr>';
+html = html + '        								<td class="tg-yw4l">Duración: 16 semanas</td>';
+html = html + '        								<td class="tg-yw4l">Créditos a cubrir: 370.24</td>';
+html = html + '        							  </tr>';
+html = html + '        							  <tr>';
+html = html + '        								<td class="tg-yw4l">Número de semestres: 9</td>';
+html = html + '        								<td class="tg-yw4l">Plan de estudios: 2015</td>';
+html = html + '        							  </tr>';
+html = html + '        							  <tr>';
+html = html + '        								<td class="tg-yw4l" colspan="2">Antecedentes académicos de ingreso<br>Bachillerato o equivalente en el área química biológica o físico matemático.</td>';
+html = html + '        							  </tr>';
+html = html + '        							</table>';
+incrementado++;
 					        $.each(offer.children[primero].children[segundo].children, function(tercero, nietos){
 					        	//nietos es la variable para acceder a los atributos del padre que corresponden al abuelo
-					        html = html + '         <div class="opcion-licenciatura">';
-					    		html = html + '             <img src="'+nietos.picture_url+'"> '+nietos.title;
-					    		html = html + '         </div>';
+html = html + '        							<div class="opcion-licenciatura" onclick="MostrarOpcionesOferta(\''+nietos.title+'\');">';
+html = html + '        								<img src="'+nietos.picture_url+'">'+nietos.title;
+html = html + '        							</div>';
 					        });     
-
-					        html = html + '     </div>';
-					        html = html + ' </article>';
-					        html = html + '</section>';
-
+html = html + '        						</div>';
+html = html + '        					</div>';
+html = html + '        				</article>';
 					      });
 					    });
+html = html + '        			</section> ';
+html = html + '        		</div>';
+html = html + '        	</div>';
 
-					});           
+	
+
+
+
+
+
+
+
+
+
+
             $("#mosaico-oferta-educativa-prepa").css('display','inherit');
         }else{
             $("#mosaico-oferta-educativa-prepa").css('display','none');
@@ -1495,4 +1526,27 @@ function CambiarMosaico(){	// Funcion que debe cambiar el contenido del div #mos
 	function OfertaCuotas(titulo){
 		$('#titulo-semestre').html('Cuota '+ titulo);
 		// Falta cambiar dinamicamente los datos de la tabla
+	}
+
+	function ampliar_cuadrito(data){
+		var id = data.id;
+		var $cell = $('.image__cell');
+
+      $cell.find('.image--basic').click(function() {
+        var $thisCell = $(this).closest('.image__cell');
+        
+        if ($thisCell.hasClass('is-collapsed')) {
+        $cell.not($thisCell).removeClass('is-expanded').addClass('is-collapsed');
+        $thisCell.removeClass('is-collapsed').addClass('is-expanded');
+        } else {
+        $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+        }
+      });
+
+      $cell.find('.expand__close').click(function(){
+        
+        var $thisCell = $(this).closest('.image__cell');
+        
+        $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+      });
 	}

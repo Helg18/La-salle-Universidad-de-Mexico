@@ -1260,7 +1260,7 @@ function AcademicOffer(){
         // Preparatoria
         if(index==0){  
 
-					$.each(offer.children, function(llave, valor){
+			/*		$.each(offer.children, function(llave, valor){
 					    $.each(offer.children, function(primero,title){
 
 					      $.each(offer.children[primero].children, function(segundo, nietas){
@@ -1294,7 +1294,8 @@ function AcademicOffer(){
 					      });
 					    });
 
-					});           
+					}); 
+				*/
             $("#mosaico-oferta-educativa-prepa").css('display','inherit');
         }else{
             $("#mosaico-oferta-educativa-prepa").css('display','none');

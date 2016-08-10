@@ -614,7 +614,8 @@ li.span3 h5,li.span3 h6{color:#fff !important}
     right: 33px;
 }
 .excel td, .excel th{padding:4px;}
-.opcion-licenciatura{float:left;padding:6px;margin:13px 0 12px 0;width:16%;color:#fff;font-size:14px;cursor:pointer;}
+.opcion-licenciatura{float:left;padding:6px;margin:13px 0 12px 0;width:33%;color:#fff;font-size:14px;cursor:pointer;}
+.lista-opciones{width:50%;float:right;margin:4px;}
 
 #mosaico-oferta-educativa-prepa article:hover  .overlay-mosaico{display:inherit !important}
 #mosaico-oferta-educativa article:hover  .overlay-mosaico{display:inherit !important}
@@ -637,3 +638,7 @@ padding-top:36%;
 padding-left:6px;
 text-align:center;
 }
+.tg  {border-collapse:collapse;border-spacing:0;width:82%;margin-top:10px;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;background:#3992e0}
+.tg .tg-yw4l{vertical-align:top;color:#fff;text-align:center;}

@@ -192,20 +192,23 @@ function Category1(){
         // $('#universidadShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
         $('#universidadShow .descripcionTituloUniversidad-.ws ').html(post.paragraph_1);
 		if(index == 0){ // Somos la salle
-			$("#mosaico-somos-salle").css("display","inherit");
+			$("#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","inherit");
 			$("div#imagenes-relacionadas").css("display","inherit"); // imagenes
 			$("div#links-referencia").css("display","inherit"); // Links
 			$("div#descargables").css("display","none"); // Descargables
+			$("#links-historia").css("display","inherit");
 		}if(index == 1){ // Mision, Vision
 			$("#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","none"); // Descargables
+			$("#links-historia").css("display","none");
 		}
 		if(index == 2){ // Modelo educativo
-			$("#mosaico-somos-salle").css("display","inherit");
+			$("#mosaico-somos-salle").css("display","none");
+			$("#links-historia").css("display","inherit");
 			$(".video-somos-salle").css("display","inherit");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
@@ -220,27 +223,32 @@ function Category1(){
 			$("div#tabla-excel").css("display","inherit"); // Tabla en modal
 			$(".acre-mosaico").css("display","inherit"); // Mosaico de acreditaciones
 			$("#tabla-acreditaciones").css("display","inherit");
+			$("#links-historia").css("display","none");
 		}else{
 			$("div#tabla-excel").css("display","none"); // Tabla en modal
 			$(".acre-mosaico").css("display","none"); // Mosaico de acreditaciones
 			$("#tabla-acreditaciones").css("display","none");
 		}
 		if(index == 4){	// PDI
-			$("div#mosaico-somos-salle").css("display","inherit");
+			$("div#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","inherit"); // Descargables
 			//$(".carrusel-somos-salle").css("display","inherit"); // Carrusel
+			$("#links-historia").css("display","inherit");
+			$("#carusel-somos-salle").css("display","inherit"); // Carusel de fotos PDI
 		}else{
 			//$(".carrusel-somos-salle").css("display","none"); // Carrusel
+			$("#carusel-somos-salle").css("display","none"); // Carusel de fotos PDI
 		}		
 		if(index == 5){	// Reglamentos
-			$("#mosaico-somos-salle").css("display","inherit");
+			$("#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","inherit"); // Descargables
+			$("#links-historia").css("display","inherit");
 		}
 		if(index == 6){	// Historia
 			$("#mosaico-somos-salle").css("display","none");
@@ -249,8 +257,6 @@ function Category1(){
 			$("div#links-referencia").css("display","inherit"); // Links
 			$("div#descargables").css("display","none"); // Descargables
 			$("#links-historia").css("display","inherit");
-		}else{
-			$("#links-historia").css("display","none");
 		}
 		if(index == 7){	// Identidad
 			
@@ -271,10 +277,14 @@ function Category1(){
 				$("#mosaico-somos-salle").css("display","inherit");
 				$("#mosaico-somos-salle-monumentos").css("display","none");
 			}
-			
+			$("#links-historia").css("display","none");
 		}
 		if(index == 8){
 			$("#mosaico-somos-salle").css("display","none");
+			$("#links-historia").css("display","none");
+			$("#universidadShow .descripcionTituloUniversidad-").css("line-height","7px");// Agregamos menos espacio en bullets
+		}else{
+			$("#universidadShow .descripcionTituloUniversidad-").css("line-height","inherit");// Espacio en bullets
 		}
 		
 		if(index == 9){	// Red La Salle
@@ -300,6 +310,7 @@ function Category1(){
 				$(".mapa-mundo").remove();
 			}
 			$("#mosaico-somos-salle").css("display","none");
+			$("#links-historia").css("display","none");
 		}else{
 			$("#azules-red").css("display","none");
 			$(".ul-mundo").css("display","none");	

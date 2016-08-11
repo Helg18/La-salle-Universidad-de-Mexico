@@ -511,7 +511,7 @@ function Category3(){
 			$("#slide-hospedaje").css("display","none");
 			$(".link-servicios").css("display","none");
 		}
-		if(index == 1){
+		if(index == 1){ // ULSABUS
 			// Insertamos subtitulos de ulsabus
 			$(".contenedorDiagonaTextoServicios").append('<div class="contenedor-subtitulos-ulsabus"> <div class="subtitulos-ulsabus" onclick="ulsabus(1);">Ruta 1 <br>Glorieta Vaqueritos</div><div class="subtitulos-ulsabus" onclick="ulsabus(2);">Ruta 2 <br>Indios Verdes</div><div class="subtitulos-ulsabus" onclick="ulsabus(3);">Ruta 3 <br>Valle Dorado</div><div class="subtitulos-ulsabus" onclick="ulsabus(4);">Ruta 4 <br>Aragón</div><div class="subtitulos-ulsabus" onclick="ulsabus(5);">Ruta 5 <br>Perisur</div><div class="subtitulos-ulsabus" onclick="ulsabus(6);">Ruta 6 <br>Torres Lindavista</div><div class="subtitulos-ulsabus" onclick="ulsabus(7);">Ruta 7 <br>Mundo E</div><div class="subtitulos-ulsabus" onclick="ulsabus(8);">Ruta 8 <br>Ecatepec</div></div>');
 			$('.seccion_3.ws').append('<div class="clearfix tabla-ulsabus" style="display: block;"><div class="alignleft"> <h4>Paradas de Venida</h4> <ul> <li> <div><strong>Miramontes y Periférico</strong></div><div>Bajando el puente viniendo de Xochimilco</div><div>Horario 5:50am</div></li><li> <div><strong>Miramontes y Calzada del Hueso</strong></div><div>En la parada del camión (Liverpool)</div><div>Horario 5:51am</div></li><li> <div><strong>Miramontes y Calzada de las Bombas</strong></div><div>En la esquina de la Alameda Sur</div><div>Horario 5:55am</div></li><li> <div><strong>Miramontes tienda Soriana</strong></div><div>En la Soriana en la parada del camión</div><div>Horario 5:58am</div></li><li> <div><strong>Miramontes y Calzada de la Virgen</strong></div><div>En la tienda del Oxxo</div><div>Horario 6:01am</div></li><li> <div><strong>Miramontes y Avenida Tasqueña</strong></div><div>En la Farmacia del Ahorro</div><div>Horario 6:04am</div></li><li> <div><strong>Miguel Ángel de Quevedo y Pacifico</strong></div><div>En la parada del camión de la Bahía</div><div>Horario 6:10am</div></li><li> <div><strong>Miguel Ángel de Quevedo y Melchor Ocampo</strong></div><div>Frente a la tienda Mega Comercial Mexicana</div><div>Horario 6:13am</div></li><li> <div><strong>Miguel Ángel de Quevedo y Av. Universidad</strong></div><div>En la parada del camión Esquina Av. Universidad</div><div>Horario 6:15am</div></li><li> <div><strong>Miguel Ángel de Quevedo y Av. Insurgentes</strong></div><div>Frente a la Europea</div><div>Horario 6:17am</div></li><li> <div><strong>Av. Insurgentes #1940</strong></div><div>En la panadería El Globo</div><div>Horario 6:18am</div></li><li> <div><strong>Av. Insurgentes y Calle Francia</strong></div><div>En la esquina de calle Francia</div><div>Horario 6:19am</div></li><li> <div><strong>Av. Insurgentes y Rio Mixcoac</strong></div><div>Frente a la Comercial Mexicana</div><div>Horario 6:20am</div></li><li> <div><strong>Río Mixcoac y Calle Cataluña</strong></div><div>En la esquina de calle Cataluña</div><div>Horario 6:22am</div></li><li> <div><strong>Av. Patriotismo y Río Mixcoac</strong></div><div>En el puente peatonal</div><div>Horario 6:25am</div></li><li> <div><strong>Av. Patriotismo y Calle 17</strong></div><div>En la esquina de calle 17</div><div>Horario 6:28am</div></li><li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill en la Biblioteca</div><div>Horario 6:30am</div></li></ul> </div><div class="alignleft"> <h4>Paradas de Regreso</h4> <ul> <li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill en la Biblioteca</div><div>Horario 14:15hrs</div></li><li> <div><strong>Avenida Revolución y Calle 2</strong></div><div>En la esquina de calle 2</div><div>Horario 14:27hrs</div></li><li> <div><strong>Avenida Revolución y Calle 17</strong></div><div>En el hotel Holiday Inn</div><div>Horario 14:29hrs</div></li><li> <div><strong>Río Mixcoac y Avenida Revolución</strong></div><div>En la Feria</div><div>Horario 14:31hrs</div></li><li> <div><strong>Río Mixcoac e Insurgentes</strong></div><div>En la tienda Interceramic</div><div>Horario 14:32hrs</div></li><li> <div><strong>Av. Universidad y Calle 5 de Mayo</strong></div><div>En la tienda Oxxo</div><div>Horario 14:34hrs</div></li><li> <div><strong>Av. Universidad y Minerva</strong></div><div>En el Samborns</div><div>Horario 14:36hrs</div></li><li> <div><strong>Av. Universidad y Miguel A. de Quevedo</strong></div><div>En la panadería Santo Domingo</div><div>Horario 14:40hrs</div></li><li> <div><strong>Miguel A. de Quevedo y Melchor Ocampo</strong></div><div>En la Mega Comercial parada del camión</div><div>Horario 14:48hrs</div></li><li> <div><strong>Miguel Ángel de Quevedo y Pacifico</strong></div><div>En la gasolinería en la esquina</div><div>Horario 14:51hrs</div></li><li> <div><strong>Metro Tasqueña</strong></div><div>En la bahía de trolebuses</div><div>Horario 14:56hrs</div></li><li> <div><strong>Miramontes y Tasqueña</strong></div><div>Frente a la Farmacia del Ahorro</div><div>Horario 14:57hrs</div></li><li> <div><strong>Miramontes y Calzada de la Virgen</strong></div><div>En la esquina de Calzada de la Virgen</div><div>Horario 14:59hrs</div></li><li> <div><strong>Miramontes tienda Soriana</strong></div><div>En la panadería La Estrella frente al Soriana</div><div>Horario 15:02hrs</div></li><li> <div><strong>Miramontes y Mar de la Tranquilidad</strong></div><div>En la nevería La Michoacana</div><div>Horario 15:05hrs</div></li><li> <div><strong>Miramontes y Av. Tzinas</strong></div><div>En la tienda del Oxxo</div><div>Horario 15:07hrs</div></li><li> <div><strong>Miramontes y Calzada de las Bombas</strong></div><div>En el banco Banorte</div><div>Horario 15:09</div></li><li> <div><strong>Miramontes y Calzada del Hueso</strong></div><div>En la Comercial Mexicana</div><div>Horario 15:15hrs</div></li><li> <div><strong>Miramontes y Avenida de las Brujas</strong></div><div>En la papelería Lumen</div><div>Horario 15:18hrs</div></li><li> <div><strong>Miramontes y Avenida Acoxpa</strong></div><div>En el Sanborns</div><div>Horario 15:20hrs</div></li><li> <div><strong>Glorieta de Vaqueritos</strong></div><div>Puente peatonal antes de subir los puentes de la glorieta</div><div>Horario 15:25</div></li></ul> </div></div>')
@@ -527,9 +527,9 @@ function Category3(){
 		if(index == 2){	// Hospedaje
 			$("#mosaico-servicios").css("display","inherit");
 			$('.contacto-form').css('display','none');
-			$("#mosaico-servicios").append('<div class="row cuadros-grises-servicios"><div class="col-md-6"><h5>INFORMES</h5><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper eros id tortor lacinia, mollis iaculis metus lobortis.</span></div><div class="col-md-6"><h5>INFORMES</h5><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper eros id tortor lacinia, mollis iaculis metus lobortis.</span></div></div>');
+			//$("#mosaico-servicios").append('<div class="row cuadros-grises-servicios"><div class="col-md-6"><h5>INFORMES</h5><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper eros id tortor lacinia, mollis iaculis metus lobortis.</span></div><div class="col-md-6"><h5>INFORMES</h5><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper eros id tortor lacinia, mollis iaculis metus lobortis.</span></div></div>');
 		}else{
-			$('.cuadros-grises-servicios').remove();
+			//$('.cuadros-grises-servicios').remove();
 		}
 		if(index == 3){ // Renta de instalaciones
 			$('.contacto-form').css('display','inherit');
@@ -999,6 +999,9 @@ function investigacion(){
     }).mouseleave(function(){
         $(this).removeClass('cuadroInvestigacionActive');
     });
+	// Cambio: Se debe quitar desde el admin loss cuadros de investigación y mostrar el texto a continuación
+		var CajaTexto = '<div class="contenedorImagenTextoInvestigacion investigacion-default" style="background: url(&quot;images/nuevosArtes/banner/auditorioimg.jpg&quot;) no-repeat fixed;"> <div class="container"> <div class="contenedorDiagonalUniversidad2" id="scrollImagen2"> <p class="descripcionTituloUniversidad- ws scroll-box-150"> - La investigación es el nombre que recibe la actividad profesional universitaria que goza de un amplio prestigio social cuyo proceso largo y complejo permite la búsqueda de la verdad.En el quehacer universitario la función de investigación es fundamento de la Misión de la Universidad La Salle y la razón primordial para el cumplimiento de sus objetivos centrados en la cultura integral de sus estudiantes y en el logro de la Misión Educativa Lasallista.<br>- La investigación en las universidades del SEULSA está orientada a la búsqueda sistemática y creativa, realizada con el fin de avanzar en la frontera del conocimiento sobre la naturaleza, el hombre, la cultura, la sociedad y sus interrelaciones, así como la aplicación y evaluación de estos conocimientos y sus tecnologías. <br>- La Universidad La Salle tiene como objetivo la generación y aplicación del conocimiento, mediante la investigación, desarrollo e innovación en temas que sean pertinentes para coadyuvar al desarrollo institucional. Promover la realización de proyectos sustentables colaborativos de generación y/o aplicación innovadora del conocimiento cuyos resultados aporten soluciones pertinentes y de calidad a problemáticas relevantes del entorno social y económico local y global, estableciendo vínculos con los diversos actores económicos y sociales a nivel nacional e internacional. </p></div></div></div>';
+		$('#investigacionShow .ocultarContenidoSubMenu .row').html(CajaTexto);
 }
 
 function SubmenuInvestigacion(funcion){
@@ -1009,7 +1012,7 @@ function SubmenuInvestigacion(funcion){
 	var mosaico = $('#mosaico-investigacion');
 	var repositorios = $('#descargar-repositorio-investigacion');
 	var texto = $('.contenedorImagenTextoInvestigacion');
-	
+	if(funcion != ""){$('.investigacion-default').remove();}
 	if(funcion == 0){
 		location.href = 'microsites/catalogo.html';
 	}
@@ -1257,13 +1260,17 @@ function AcademicOffer(){
         // Preparatoria
         if(index==0){  
 
+<<<<<<< HEAD
+=======
+			/*		$.each(offer.children, function(llave, valor){
+					    $.each(offer.children, function(primero,title){
+>>>>>>> add6183ff46f63664f54aa8084e0935ff706a660
 
 html = html + '        	<div class="container" style="display:inherit" id="mosaico-oferta-educativa-prepa">';
 html = html + '        		<div class="row">';
 html = html + '        			 <section class="image-grid">';
 var incrementado = 0;
 					    $.each(offer.children, function(primero,title){
-
 					      $.each(offer.children[primero].children, function(segundo, nietas){
 					      	//nietas son los hijos del padre de la entidad superior
 html = html + '        				<article class="image__cell is-collapsed">';
@@ -1324,6 +1331,11 @@ html = html + '        	</div>';
 
 
 
+<<<<<<< HEAD
+=======
+					}); 
+				*/
+>>>>>>> add6183ff46f63664f54aa8084e0935ff706a660
             $("#mosaico-oferta-educativa-prepa").css('display','inherit');
         }else{
             $("#mosaico-oferta-educativa-prepa").css('display','none');

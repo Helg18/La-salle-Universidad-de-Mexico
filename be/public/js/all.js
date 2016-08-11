@@ -50209,7 +50209,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                 var centro = result.centro,
                     files = result.files;
 
-                console.log(centro);
+                console.log(files);
                 
 
                 $http.post(url + 'angular/centros', centro).then(function(response){
@@ -50222,7 +50222,7 @@ var app = angular.module('lasalle',['ui.bootstrap'])
                             formData.append(file.name, file);
                         });
 
-                        $http.post(url + 'angular/question/' + response.data.id + '/images', formData, {
+                        $http.post(url + 'angular/centros/' + response.data.id + '/images', formData, {
                                 transformRequest: angular.identity,
                                 headers: { 'Content-Type': undefined }
                         })

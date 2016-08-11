@@ -916,7 +916,7 @@ PERFIL INTERNATIONAL
 .subMenuUnoServicios:hover{
   background: #ff0000;
   color: #ffffff;
-
+font-size:1.1em;
 }
 
 .subMenuDos{
@@ -2259,7 +2259,8 @@ p.textDos_title{
     float: left;
     margin: 0.1%;
     background: #f5f5f5;
-	box-shadow:2px 4px 19px -9px #555
+	box-shadow:2px 4px 19px -9px #555;
+	height:230px;
 }
 
 .tercerFilaVinculacion {
@@ -2274,7 +2275,7 @@ p.textDos_title{
 .textoVinculacion{
   text-align: center;
   box-sizing: border-box;
-  padding: 30% 20% 30% 40%;
+  padding: 30% 27% 30% 31%;
 	font-family:'HelveticaLight'
 }
 
@@ -6836,7 +6837,7 @@ FACULTAD DE FAMADYC
 .image--expand{background: #325499 !important;}
 .acre-mosaico{margin-top:17px;}
 .tiny_redl_bullet_ul li{line-height: 0px;list-style: inherit;}
-.link-servicios{background: #1f285d;color: #fff;padding: 7px;font-size:14px;border-radius: 2px;margin-left:27%;}
+.link-servicios{width:100%;position:relative;bottom:0;left:0;}
 /*#mosaico-somos-salle-monumentos article.image__cell {max-height: 180px;overflow: hidden;} */
 .azul-col{height:150px; background:#fff;color:#3db6dc;overflow:hidden;}
 .azul-col:hover{background:#3db6dc;color:#fff}
@@ -7003,4 +7004,56 @@ FACULTAD DE FAMADYC
 .texto-pin-indonesia{display:none;position:absolute;left:19%;top:45%;z-index:2}
 /*.item-mapa-africa2:hover .texto-pin-africa2{display:inherit !important} */
 .texto-pin-indonesia > span{position:absolute;left: 0;width: 92px;font-size: 10px;color: white;padding: 10px 0 10px 6px;top:0}
+.subMenuUnoInvestigacion:hover{
+  background: #ff0000;
+  color: #ffffff;
 
+}
+.subMenuUnoInvestigacion{
+    width: 75px;
+    height: 75px;
+    background: #f5f5f5;
+    margin: 1px;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    padding: 25px 2px 0 3px;
+  cursor: pointer;
+  font-size:11px;
+  }
+#descargar-repositorio-investigacion{width:100%;;display:block}
+.contenedorImagenTextoInvestigacion{overflow:hidden;background-position:100% 0% !important;background-repeat:no-repeat;width:120%;}
+#selecciono-plan{width:100%;}
+#selecciono-plan .numeritos{width:22%;float:left;margin:5px;background:#555;color:#fff;font-size:27px;height:180px;padding:5%;text-align:center;}
+#selecciono-plan .numeritos:hover{background:#fff;color:#555;padding:1%;}
+#selecciono-plan .numeritos:hover h5{font-size:14px;display:block;overflow-y:scroll;height:75%;text-align:left;}
+#selecciono-plan .numeritos h5{display:none}
+
+#selecciono-becas{width:100%;}
+#selecciono-becas .numeritos{width:22%;float:left;margin:5px;background:#555;color:#fff;font-size:14px;height:180px;padding:5%;text-align:center;}
+#selecciono-becas .numeritos:hover{background:#fff;color:#555;padding:1%;}
+#selecciono-becas .numeritos:hover h5{font-size:14px;display:block;overflow-y:scroll;height:75%;text-align:left;}
+#selecciono-becas .numeritos h5{display:none}
+
+.cuadros-perfiles{height:auto;margin-top:10px;width:100%;}
+.cuadros-perfiles .col-md-6{background:rgba(210, 209, 209, 0.73);padding:30px 0 0 0;height:100%;border-right:2px solid #fff;text-align:justify;padding:20px;}
+.hojita-contacto{margin-top:15px;}
+.hojita-contacto .col-md-6 img{width:237px;margin-left:25%;}
+.hojita-contacto .campos input{width:100%;}
+
+.asesor_contenido{margin:10px 0;padding:0 20px;border-bottom:1px solid #838587;}
+
+.links-historia{width:100%;}
+.links-historia .numeritos{width:22%;float:left;margin:5px;background:#555;color:#fff;font-size:27px;height:180px;padding:5%;text-align:center;}
+.links-historia .numeritos:hover{background:#fff;color:#555;}
+.links-historia .numeritos:hover h5{font-size:14px;display:block;}
+.links-historia .numeritos h5{display:none}
+
+.etiquetas-oferta{background-image:url('../images/nuevosArtes/oferta_educativa/bgazulm.png');width: 95%;position:absolute;bottom: 10px;padding: 13px;color: #fff;text-align: center;}
+
+.texto-admision strong{float:left;font-size:15px;}
+
+#descargables-ulsabus a:hover img{border-bottom:2px solid #555}
+
+.contenedor-subtitulos-semestres{width:100%;height:61px;}
+.contenedor-subtitulos-semestres .subtitulos-ulsabus{width:11%;float:left;color:#fff;font-size:13px;cursor:pointer;background:#23265e;padding:5px 2px 2px;margin:1px;height:100%;text-align:center;border-radius:3px;}

@@ -78,6 +78,8 @@ class CentroSubCategoriaController extends Controller
         return redirect('subcentro/'.$request->id_sub.'/edit')->with(compact('subsubcategorias_edit','subcategorias_edit','success','La Sub-Categoria se modifico exitosamente'));
 
     }
+    
+    
 
     public function add(Request $request){
 
@@ -106,7 +108,7 @@ class CentroSubCategoriaController extends Controller
     }
 
     public function images(Request $request, $id){
-
+        
         $subcentro= CentroInformacion::find($id);
         $files = $request->files;
         if($subcentro && $files){

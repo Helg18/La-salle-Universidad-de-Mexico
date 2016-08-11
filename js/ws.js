@@ -192,68 +192,84 @@ function Category1(){
         // $('#universidadShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
         $('#universidadShow .descripcionTituloUniversidad-.ws ').html(post.paragraph_1);
 		if(index == 0){ // Somos la salle
-			$("#mosaico-somos-salle").css("display","inherit");
+			$("#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","inherit");
 			$("div#imagenes-relacionadas").css("display","inherit"); // imagenes
 			$("div#links-referencia").css("display","inherit"); // Links
 			$("div#descargables").css("display","none"); // Descargables
+			$("#links-historia").css("display","inherit");
 		}if(index == 1){ // Mision, Vision
 			$("#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","none"); // Descargables
+			$("#links-historia").css("display","none");
 		}
 		if(index == 2){ // Modelo educativo
-			$("#mosaico-somos-salle").css("display","inherit");
+			$("#mosaico-somos-salle").css("display","none");
+			$("#links-historia").css("display","inherit");
 			$(".video-somos-salle").css("display","inherit");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","inherit"); // Descargables
 		}
 		if(index == 3){	// Acreditaciones
-			$("#mosaico-somos-salle").css("display","inherit");
+			$("#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","none"); // Descargables
 			$("div#tabla-excel").css("display","inherit"); // Tabla en modal
 			$(".acre-mosaico").css("display","inherit"); // Mosaico de acreditaciones
+			$("#tabla-acreditaciones").css("display","inherit");
+			$("#links-historia").css("display","none");
 		}else{
 			$("div#tabla-excel").css("display","none"); // Tabla en modal
 			$(".acre-mosaico").css("display","none"); // Mosaico de acreditaciones
+			$("#tabla-acreditaciones").css("display","none");
 		}
 		if(index == 4){	// PDI
-			$("div#mosaico-somos-salle").css("display","inherit");
+			$("div#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","inherit"); // Descargables
 			//$(".carrusel-somos-salle").css("display","inherit"); // Carrusel
+			$("#links-historia").css("display","inherit");
+			$("#carusel-somos-salle").css("display","inherit"); // Carusel de fotos PDI
 		}else{
 			//$(".carrusel-somos-salle").css("display","none"); // Carrusel
+			$("#carusel-somos-salle").css("display","none"); // Carusel de fotos PDI
 		}		
 		if(index == 5){	// Reglamentos
-			$("#mosaico-somos-salle").css("display","inherit");
+			$("#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","inherit"); // Descargables
+			$("#links-historia").css("display","inherit");
 		}
 		if(index == 6){	// Historia
-			$("#mosaico-somos-salle").css("display","inherit");
+			$("#mosaico-somos-salle").css("display","none");
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","none"); // imagenes
 			$("div#links-referencia").css("display","inherit"); // Links
 			$("div#descargables").css("display","none"); // Descargables
+			$("#links-historia").css("display","inherit");
 		}
 		if(index == 7){	// Identidad
+			
 			
 			$(".video-somos-salle").css("display","none");
 			$("div#imagenes-relacionadas").css("display","inherit"); // imagenes
 			$("div#links-referencia").css("display","none"); // Links
 			$("div#descargables").css("display","inherit"); // Descargables
-			
+			if(index2 == 0){
+				$('#universidadShow  .descripcionTituloUniversidad-').css('box-shadow','none');
+			}else{
+				$('#universidadShow  .descripcionTituloUniversidad-').css('box-shadow','0px 7px 7px -5px rgb(85, 85, 85)');
+			}
 			if(index2 == 4){ // Submenú - Monumentos
 				$("#mosaico-somos-salle-monumentos").css("display","inherit");
 				$("#mosaico-somos-salle").css("display","none");
@@ -261,10 +277,14 @@ function Category1(){
 				$("#mosaico-somos-salle").css("display","inherit");
 				$("#mosaico-somos-salle-monumentos").css("display","none");
 			}
-			
+			$("#links-historia").css("display","none");
 		}
 		if(index == 8){
 			$("#mosaico-somos-salle").css("display","none");
+			$("#links-historia").css("display","none");
+			$("#universidadShow .descripcionTituloUniversidad-").css("line-height","7px");// Agregamos menos espacio en bullets
+		}else{
+			$("#universidadShow .descripcionTituloUniversidad-").css("line-height","inherit");// Espacio en bullets
 		}
 		
 		if(index == 9){	// Red La Salle
@@ -289,9 +309,13 @@ function Category1(){
 				$(".pines-mapa-mundo").css("display","none");
 				$(".mapa-mundo").remove();
 			}
+			$("#mosaico-somos-salle").css("display","none");
+			$("#links-historia").css("display","none");
 		}else{
 			$("#azules-red").css("display","none");
 			$(".ul-mundo").css("display","none");	
+			$(".pines-mapa-mx").css("display","none");	
+			$(".pines-mapa-mundo").css("display","none");	
 		}
     }
 
@@ -316,7 +340,7 @@ function Category2(){
 
         });
 
-        $('.ten.columns.subMenuAccionSocial.vidaestudiantil').html(html);
+        $('.eleven.columns.subMenuAccionSocial.vidaestudiantil').html(html);
         this.showContent(0);
     }
 
@@ -388,10 +412,16 @@ function Category2(){
 
         cuadrosDeVida();
         ocultarCaorusel();
-
+		if(index == 10){ // Redes sociales
+			var redes = '<div class="alignleft social_widget_left redesitas"><ul class="swul"> <li class="sw_heading">Redes Sociales: </li><li>- AIESEC <span class="alignright"><a href="https://www.facebook.com/AIESECinLaSalle"  class="sm_fb_icon"></a></span></li><li>- Grupo Juvenil de Apoyo <span class="alignright"><a href="https://www.facebook.com/LaSalleMx.GrupoJuvenildeApoyo" class="sm_fb_icon"></a></span></li><li>- Proacceso <span class="alignright"><a href="https://www.facebook.com/proacceso.ulsa"  class="sm_fb_icon"></a></span></li><li>- Radar <span class="alignright"><a href="https://www.facebook.com/Lasallemxradar" class="sm_fb_icon"></a></span></li><li>- ROTARACT <span class="alignright"><a href=" https://www.facebook.com/Lasallemxradar" class="sm_fb_icon"></a></span></li><li>- Grupo de apoyo CIEL <span class="alignright"><a href="https://www.facebook.com/grupodeapoyoalCIEL" class="sm_fb_icon"></a></span></li><li>- Hidroponia <span class="alignright"><a href="https://www.facebook.com/Lasallemxradar" class="sm_fb_icon"></a></span></li><li>- ULSAMUN <span class="alignright"><a href="https://www.facebook.com/LasallemxUlsamunr" class="sm_fb_icon"></a></span></li><li>- Q´PET <span class="alignright"><a href="https://www.facebook.com/Lasallemxradar" class="sm_fb_icon"></a></span></li><li>- Sinapsis <span class="alignright"><a href="https://www.facebook.com/pages/LaSalleMXSinapsis" class="sm_fb_icon"></a></span></li></ul></div>';
+			 $('#vidaShow .ocultarContenidoSubMenu .container .row').html(redes);
+		}else{
+			
+		}
     }
         $("#myCarouselLaSalle").css({ 'display': "inherit" });
     this.show();
+	
 }
 
 function cuadrosDeVida(){
@@ -473,6 +503,14 @@ function Category3(){
 		
         ocultarCaorusel();
 		
+		if(index == 0){
+			$("#mosaico-servicios").css("display","none");
+			$("#slide-hospedaje").css("display","inherit");
+			$(".link-servicios").css("display","block");
+		}else{
+			$("#slide-hospedaje").css("display","none");
+			$(".link-servicios").css("display","none");
+		}
 		if(index == 1){
 			// Insertamos subtitulos de ulsabus
 			$(".contenedorDiagonaTextoServicios").append('<div class="contenedor-subtitulos-ulsabus"> <div class="subtitulos-ulsabus" onclick="ulsabus(1);">Ruta 1 <br>Glorieta Vaqueritos</div><div class="subtitulos-ulsabus" onclick="ulsabus(2);">Ruta 2 <br>Indios Verdes</div><div class="subtitulos-ulsabus" onclick="ulsabus(3);">Ruta 3 <br>Valle Dorado</div><div class="subtitulos-ulsabus" onclick="ulsabus(4);">Ruta 4 <br>Aragón</div><div class="subtitulos-ulsabus" onclick="ulsabus(5);">Ruta 5 <br>Perisur</div><div class="subtitulos-ulsabus" onclick="ulsabus(6);">Ruta 6 <br>Torres Lindavista</div><div class="subtitulos-ulsabus" onclick="ulsabus(7);">Ruta 7 <br>Mundo E</div><div class="subtitulos-ulsabus" onclick="ulsabus(8);">Ruta 8 <br>Ecatepec</div></div>');
@@ -480,9 +518,11 @@ function Category3(){
 			$('.imagenes-servicios center img').attr('src','images/nuevosArtes/servicio/ulsabus/1.png');
 			$("#mosaico-servicios").css("display","none");
 			$('.contacto-form').css('display','none');
+			$('#descargables-ulsabus').css('display','block');
 		}else{
 			$(".contenedor-subtitulos-ulsabus").remove();
 			$('div.tabla-ulsabus').remove();
+			$('#descargables-ulsabus').css('display','none');
 		}
 		if(index == 2){	// Hospedaje
 			$("#mosaico-servicios").css("display","inherit");
@@ -506,10 +546,12 @@ function Category3(){
 			$(".descripcionTituloServicios").prepend(imgEstacionamiento);	 // Imagen (por ahora) de un mapa
 			$(".descripcionTituloServicios").attr('style','width: 100%;margin: 0;');			
 			$('#pines-estacionamiento').css('display','inherit');
+			$("div.contenedorDiagonaTextoServicios").append('<div class="row cuadros-grises-servicios"> <div class="col-md-6"> <h5>Contacto Estacionamientos Confeccionados</h5><span>Operadora Central<br>5278 9500 x 5072 </span></div><div class="col-md-6"> <h5>Contacto Estacionamientos Propios</h5><span>Universidad La Salle<br>Lic. David Antonio Zepeda Vega<br>Jefe de Servicios Administrativos<br>david.zepeda@ulsa.mx<br>Seguridad, Servicios e Infraestructura<br>5278 9500 x 5025</span></div></div>');
 		}else{
 			$(".mapa-estacionamiento").remove();
 			$(".descripcionTituloServicios").attr('style','');
 			$('#pines-estacionamiento').css('display','none');
+			$('.cuadros-grises-servicios').remove();
 		}
 		
 	}
@@ -551,7 +593,9 @@ function Category6(){
     }
 
     this.show();
-
+	
+	$('div.subMenuUnoAccionSocial').hide(); // No van submenus
+	$('div#mosaico-accion-social').show();	// Mostramos cuadro tipo google
 }
 
 function Category9(){
@@ -591,8 +635,28 @@ function Category9(){
 
         });
         ocultarCaorusel();
-
-        
+		
+		$('.formContacto').hide();
+		if(index == 0){ // Direccion de atención al público
+			$('#overs-atencion').show();
+		}else{
+			$('#overs-atencion').hide();
+		}
+		if(index == 1){ // Mapas slider
+			$('#slide-mapas').show();
+		}else{
+			$('#slide-mapas').hide();
+		}
+        if(index == 2){	// Como llegar
+			$('#mosaico-contacto,.containerMapa').show();
+		}else{
+			$('#mosaico-contacto,.containerMapa').hide();
+		}
+		if(index == 3){	 // Contacto
+			$('.formContacto').show();
+		}else{
+			$('.formContacto').hide();
+		}
     }
 
     this.showContent2 =  function(index,index2){
@@ -604,12 +668,17 @@ function Category9(){
         // $('#contenedorTituloContactoc p').html(post.paragraph_1_small_html  ? post.paragraph_1_small_html : '');
          $('.descripcionTituloContacto .contactoShow .contenedorDiagonalContacto  p').html(post.paragraph_1_small_html  ? post.paragraph_1_small_html : '');
         // $('#contactoShow .descripcionTituloUniversidad-.ws').html(post.paragraph_1);
+		
+		
 
     }
 
     this.show();
 }
 
+$('#mosaico-contacto article').click(function(){ // El mapa debe cambiar el src del iframe google Map para cambiar la ubicación en base al item seleccionado en el mosaico tipo google
+	$('div.containerMapa').fadeOut().delay(1000).fadeIn();	
+});
 
 function calendario(){
     var ul = $('#calendario .menuSecciones ul')
@@ -907,6 +976,9 @@ function vinculacion_empresarial(){
 
 function investigacion(){
 
+	var submenus = '<div class="ten columns subMenuInvestigacion servicios"> <div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(0)">Investigadores</div><div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(1)">Grupos de Investigación</div><div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(2)">Proyectos de Investigación</div><div class="subMenuUnoInvestigacion" onclick="SubmenuInvestigacion(3)">Publicaciones</div></div>';
+	$('div.esta-investigacion').append(submenus);
+	
     var tmp = '<div class="contenedorFilaVinculacion">';
     $('#investigacionShow .ocultarContenidoSubMenu .row').html('');
 
@@ -927,6 +999,37 @@ function investigacion(){
     }).mouseleave(function(){
         $(this).removeClass('cuadroInvestigacionActive');
     });
+}
+
+function SubmenuInvestigacion(funcion){
+	// 1. Investigadores - de las click al cuadro y te lleva am Catálogo de Docentes
+	// 2. Grupos de Investigación - Información acomodada tipo oferta académica
+	// 3. Proyectos de Investigación - Infomración acomodada tipo oferta académica
+	// 4. Publicaciones - Texto con foto diagonal, abajo cuadros tipo oferta académica y abajo botón para que te lleve al repositorio de publicaciones
+	var mosaico = $('#mosaico-investigacion');
+	var repositorios = $('#descargar-repositorio-investigacion');
+	var texto = $('.contenedorImagenTextoInvestigacion');
+	
+	if(funcion == 0){
+		location.href = 'microsites/catalogo.html';
+	}
+	if(funcion == 1){
+		$('.cuadrosInvestigacion').hide();
+		mosaico.show();
+	}
+	if(funcion == 2){
+		$('.cuadrosInvestigacion').hide();
+		mosaico.show();
+	}
+	if(funcion == 3){
+		$('.cuadrosInvestigacion').hide();
+		texto.show();
+		mosaico.show();
+		repositorios.show();
+	}else{
+		texto.hide();
+		repositorios.hide();
+	}
 }
 
 function lineatiempo(){
@@ -1122,7 +1225,7 @@ function AcademicOffer(){
                 var tmp = slider.title.split(/[ ,]+/);
                  $.each(tmp, function(i,word){
                     txt = txt + " " + word;
-                    if(txt.length > 10 ){
+                    if(txt.length > 20 ){
                          title_1 = title_1+txt+"<br>";
                          txt = '';
                      }
@@ -1150,20 +1253,372 @@ function AcademicOffer(){
 
         });
         html = html + '</div>'
-		
-		// Preparatoria
-        if(index==0){	
-			//html = html + '<br/><ul class="thumbnails gallery"> <li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bggris"> <h6>FAMADYC</h6> <h5>Licenciatura en Arquitectura</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bggris"> <h6>FAMADYC</h6> <h5>Licenciatura en Arquitectura</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulf"> <h6>Facultad de Humanidades</h6> <h5>Licenciatura en Filosof&iacute;a</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulf"> <h6>Facultad de Humanidades</h6> <h5>Licenciatura en Filosof&iacute;a</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgamarillo"> <h6>Facultad de Medicina</h6> <h5>Licenciatura en M&eacute;dico Cirujano</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgverde"> <h6>Facultad de Negocios</h6> <h5>Licenciatura en Contadur&iacute;a y Finanzas</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li></ul><div class="push"></div>';
-			$("#mosaico-oferta-educativa-prepa").css('display','inherit');
-		}else{
-			$("#mosaico-oferta-educativa-prepa").css('display','none');
-		}
-		
-		// Licenciatura
-        if(index==1 || index >= 1){	// Solo por ahora para que tenga contenido, se le dejo que los demas submenus muestren el mismo mosaico
-			//html = '<div class="pull-left cont-filtro"> <div class="cuadrosSubmenu mosaico-filtro-todos" onclick="CambiarMosaico();" data-toggle="portfilter" data-target="all">Todos</div><div class="cuadrosSubmenu mosaico-filtro-facultad" onclick="CambiarMosaico();" data-toggle="portfilter" data-target="facultad">Facultad</div></div>';
-			//html = html + '<br/><ul class="thumbnails gallery"> <li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bggris"> <h6>FAMADYC</h6> <h5>Licenciatura en Arquitectura</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bggris"> <h6>FAMADYC</h6> <h5>Licenciatura en Arquitectura</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulf"> <h6>Facultad de Humanidades</h6> <h5>Licenciatura en Filosof&iacute;a</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulf"> <h6>Facultad de Humanidades</h6> <h5>Licenciatura en Filosof&iacute;a</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgamarillo"> <h6>Facultad de Medicina</h6> <h5>Licenciatura en M&eacute;dico Cirujano</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgverde"> <h6>Facultad de Negocios</h6> <h5>Licenciatura en Contadur&iacute;a y Finanzas</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li></ul><div class="push"></div>';
-			$("#mosaico-oferta-educativa").css('display','inherit');
+        
+        // Preparatoria
+        if(index==0){  
+
+
+html = html + '        	<div class="container" style="display:inherit" id="mosaico-oferta-educativa-prepa">';
+html = html + '        		<div class="row">';
+html = html + '        			 <section class="image-grid">';
+var incrementado = 0;
+					    $.each(offer.children, function(primero,title){
+
+					      $.each(offer.children[primero].children, function(segundo, nietas){
+					      	//nietas son los hijos del padre de la entidad superior
+html = html + '        				<article class="image__cell is-collapsed">';
+html = html + '        					<div class="image--basic" id="cuadrito_'+incrementado+'" onclick="ampliar_cuadrito(this);"><span class="titulos-cuadros-azulitos"></span>';
+html = html + '        						<a href="#expand-jump-0"><img id="expand-jump-0" class="basic__img" src="'+nietas.picture_url+'" alt="'+nietas.title+'">';
+html = html + '        							<div class="etiquetas-oferta">';
+html = html + '        								<h5>'+nietas.title+'</h5>';
+html = html + '        								<small>'+title.title+'</small>';
+html = html + '        							</div>';
+html = html + '        						</a>';
+html = html + '        						<div class="overlay-mosaico">'+nietas.title+'</div>';
+html = html + '        						<div class="arrow--up"></div>';
+html = html + '        					</div>';
+html = html + '        					<div class="image--expand" style="background: #325499;">';
+html = html + '        						<img class="image--large" src="'+nietas.picture_url+'" alt="'+nietas.title+'">';
+html = html + '        						<div class="lista-opciones">';
+html = html + '        							<table class="tg">';
+html = html + '        							  <tr>';
+html = html + '        								<th class="tg-yw4l">Modalidad Escolarizada</th>';
+html = html + '        								<th class="tg-yw4l">Tipo de ciclo Semestral</th>';
+html = html + '        							  </tr>';
+html = html + '        							  <tr>';
+html = html + '        								<td class="tg-yw4l">Duración: 16 semanas</td>';
+html = html + '        								<td class="tg-yw4l">Créditos a cubrir: 370.24</td>';
+html = html + '        							  </tr>';
+html = html + '        							  <tr>';
+html = html + '        								<td class="tg-yw4l">Número de semestres: 9</td>';
+html = html + '        								<td class="tg-yw4l">Plan de estudios: 2015</td>';
+html = html + '        							  </tr>';
+html = html + '        							  <tr>';
+html = html + '        								<td class="tg-yw4l" colspan="2">Antecedentes académicos de ingreso<br>Bachillerato o equivalente en el área química biológica o físico matemático.</td>';
+html = html + '        							  </tr>';
+html = html + '        							</table>';
+incrementado++;
+					        $.each(offer.children[primero].children[segundo].children, function(tercero, nietos){
+					        	//nietos es la variable para acceder a los atributos del padre que corresponden al abuelo
+html = html + '        							<div class="opcion-licenciatura" onclick="MostrarOpcionesOferta(\''+nietos.title.toLowerCase()+'\');">';
+html = html + '        								<img src="'+nietos.picture_url+'">'+nietos.title;
+html = html + '        							</div>';
+					        });     
+html = html + '        						</div>';
+html = html + '        					</div>';
+html = html + '        				</article>';
+					      });
+					    });
+html = html + '        			</section> ';
+html = html + '        		</div>';
+html = html + '        	</div>';
+
+
+
+
+
+
+	
+					    $.each(offer.children, function(uno,title){
+					      $.each(offer.children[uno].children, function(dos, nietas){
+					        $.each(offer.children[uno].children[dos].children, function(tres, nietos){
+					        	html = html + '			<div id="contenido-oferta-dinamico">';
+					        	html = html + '				<div class="contenedorTituloServicios item-selecciono" id="selecciono-'+nietos.title.toLowerCase()+'+" style="display:none">';
+					        	html = html + '					<div class="tituloContenedorServicios"> ';
+					        	html = html + '						<div class="textoTituloServicios diagonal-roja-oferta">';
+					        	html = html + '							<span>';
+					        	html = html +                 nietos.paragraph_1;
+					        	html = html + '							</span>';
+					        	html = html + '						</div>';
+					        	html = html + '					</div>';
+					        	html = html + '			</div>';
+					        	html = html + '		</div>';
+					        });
+					      });
+					    });
+
+
+/********************************************************************************************************************************************/
+/********************************************************************************************************************************************/
+/********************************************************************************************************************************************
+
+			<div id="contenido-oferta-dinamico">
+				<div class="contenedorTituloServicios item-selecciono" id="selecciono-objetivos" style="display:none">
+					<div class="tituloContenedorServicios"> 
+						<div class="textoTituloServicios diagonal-roja-oferta">
+							<span>
+								Formar profesionistas con capacidades para identificar y evaluar la problemática ambiental, que les permitan desarrollar e implementar soluciones de ingeniería y ciencias ambientales con una visión holística y, con base en los recursos propios de la disciplina, establecer medidas de prevención, control y restauración del entorno, así como participar en la planeación de un desarrollo sustentable.
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="overs-plan-estudios item-selecciono" id="selecciono-plan" style="display:none">
+					<div class="numeritos">1
+						<h5>- Álgebra superior
+							<br>- Cálculo de una variable
+							<br>- Física avanzada
+							<br>- Química general
+							<br>- Química y sociedad
+							<br>- Laboratorio básico de ciencias
+							<br>- Procesos y expresión del pensamiento
+						</h5>
+					</div>
+				</div>
+				<div class="cuadros-perfiles item-selecciono" id="selecciono-perfiles" style="display:none">
+					<div class="col-md-6">
+						<h4>Perfil de ingreso</h4>
+						<span>
+							Es recomendable que el interesado en Estudiar la Licenciatura en Ingeniería Ambiental cuente con las siguientes características:
+							<br>
+							<strong>Antecedentes Académicos:</strong>
+							<br>- Bachillerato o equivalente en el área química bilógica o físico-matemática
+							<br><strong>Conocimientos:</strong>
+							<br>- Conceptos y principios básicos de ciencias exactas: Biología, Química, Matemáticas y Física
+							<br>- Manejo Básico de sustancias, material y equipo de laboratorio
+							<br>- Nociones generales de la metodología científica
+							<br>- Comprensión básica de textos en lengua inglesa
+							<br><strong>Habilidades:</strong>
+							<br>- Capacidad de observación de fenómenos naturales
+							<br>- Pensamiento lógico – analítico
+							<br>- Capacidad de síntesis
+							<br>- Abstracción de la realidad
+							<br>- Solución de problemas desde una perspectiva reflexiva y lógico matemática
+							<br>- Expresión oral y escrita
+							<br>- Capacidad para la investigación y trabajo en el laboratorio
+							<br><strong>Actitudes:</strong>
+							<br>- Principios de ética y de respeto
+							<br>- Disposición para solucionar problemas de los entornos social y natural
+							<br>- Autodisciplina y responsabilidad para el estudio
+							<br>- Apertura para el conocimiento científico y humanístico
+							<br>- Disposición para el diálogo y el trabajo en equipo
+							<br>- Reconocimiento y aceptación de la diversidad cultural, creencias, valores, ideas y prácticas sociales
+						</span>
+					</div>
+					<div class="col-md-6">
+						<h4>Perfil de los egresados</h4>
+						<span>Al término de la Licenciatura, los egresados serán capaces de:</span>
+						<br>- Desarrollar y adaptar tecnología orientada a prevenir, controlar y mitigar efectos adversos al ambiente y la salud pública derivados de las actividades productivas.
+						<br>- Realizar y evaluar sistemas de gestión ambiental acordes con la legislación y normatividad nacional e internacional que deriven en altos estándares de ecoeficiencia para la operación de las empresas, de proyectos y de procesos a fin de mantener la integridad de los ecosistemas sin comprometer la calidad de vida de la sociedad.
+						<br>- Emplear herramientas de las ciencias en el diagnóstico del estatus ambiental que provean información y soporten decisiones en el diseño de políticas públicas orientadas a mitigar los efectos adversos sobre los ecosistemas y la salud pública.
+						<br>- Desarrollar actividades de investigación e integrar proyectos tanto del ámbito administrativo como del científico y/o de desarrollo tecnológico, orientados a la preservación y mejoramiento del medio ambiente.
+						<br>- Desarrollar actividades de asesoría, a fin de transmitir el valor del medio ambiente, así como desarrollar programas educativos para concientizar y divulgar temas ambientales y de seguridad.
+						<br>- Diseñar y gestionar proyectos vinculados a su desarrollo profesional ocupacional, con actitud emprendedora e innovadora, bajo un enfoque de sustentabilidad y de responsabilidad social, a partir del trabajo multidisciplinar y colaborativo, considerando las características de la sociedad actual a nivel local y global.
+						<br>- Incorporar en su práctica profesional, la utilización de estrategias de autorregulación y comunicación eficaz en español e inglés, así como las TIC1 como herramientas para la gestión de información y la actualización permanente en su campo disciplinar, con el fin de favorecer el intercambio de ideas en contextos multidisciplinarios tanto académicos como profesionales.
+						<br>- Consolidar una actitud de respeto y valoración por sí mismo, los demás y diversas culturas incluida la propia, así como contraer un compromiso de servicio a nivel personal y profesional hacia la sociedad actual, a partir de la reflexión y definición de sus posturas con respecto a los valores trascendentes de la existencia humana.
+					</div>
+				</div>
+				<div class="contenedorImagenTextoInvestigacion item-selecciono" id="selecciono-admision" style="background: url(images/nuevosArtes/banner/auditorioimg.jpg)no-repeat;background-attachment: fixed;display:none">
+					<div class="container">
+						<div class="contenedorDiagonalUniversidad2" id="scrollImagen2">
+							<p class="descripcionTituloUniversidad- ws scroll-box-150 texto-admision">
+								<strong>Requisitos y procedimiento de admisión para primer ingreso licenciatura</strong><br>
+								<strong>Requisitos</strong>
+									<br>- Tener todas las materias aprobadas.
+									<br>- Llenar solicitud para el exámen de admisión.<br>
+								<strong>Documentos a presentar</strong>
+									<br>- Tener todas las materias aprobadas.
+									<br>- Fotocopia de las calificaciones de los tres últimos grados de bachillerato, inclusive las que esta cursando.
+									<br>- Copia de las calificaciones de 1o, 2o y 3o de Bachillerato (si son obtenidas a través de internet, deberán venir selladas por la escuela).
+									<br>- No se aceptan constancias de calificaciones.
+									<br>- Fotocopia del acta de nacimiento (En caso de alumnos extranjeros: fotocopia de calidad migratoria y equivalencia de estudios nivel bachillerato).
+									<br>- Fotocopia del recibo telefónico.
+									<br>- Dos fotografías tamaño infantil (iguales y recientes).
+									<br>- Costo del examen de admisión $ 475.00
+									<br>- Estudiantes de La Salle preguntar por requisitos.
+									<br>- Anexar Fotocopia de la CURP.
+								<strong>El trámite de admisión se realiza en la Dirección de Gestión Escolar</strong>
+								<br><strong>Horario</strong>
+									<br>- Lunes a viernes de 9:00 a 18:00 h. Sábados de 8:00 a 14:00 h.
+									<br>- Teléfono: (55) 52 78 95 00 Ext: 2445 y 2448
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="overs-becas item-selecciono" id="selecciono-becas" style="display:none">
+					<div class="numeritos">Becas para licenciatura SEP (por convocatoria)
+						<h5>Las becas a otorgar pueden ser en porcentajes desde el 5 hasta el 50% y comprenden el concepto de pago inicial y las colegiaturas del período a cursar. Las solicitudes se llenarán en las fechas y horarios publicados en la:
+							<br>- Convocatoria de becas
+							<br>La convocatoria se publica en la página de La Salle y durante el mes de julio en los pizarrones de cada Escuela o Facultad. Toda solicitud requiere de estudio socio-económico y la cantidad de becas a distribuir dependerá del presupuesto disponible. Las becas son intransferibles entre personas, instituciones o cambios de carrera: si un alumno posee beca La Salle, deberá renunciar a ella para obtener la beca SEP., ya que no son acumulativas.
+							<br>- Requisitos
+							<br>• El solicitante debe estar inscrito en el período vigente.
+							<br>• Ser de nacionalidad mexicana.
+							<br>• Tener un promedio académico del último ciclo escolar de 8.0 mínimo.
+							<br>• No adeudar materias
+							<br>• Necesitar de la ayuda financiera.
+							<br>La solicitud de beca no implica el otorgamiento o incremento de la misma, ya que el presupuesto es limitado, pudiendo solicitarla otra vez en la siguiente convocatoria. El Comité de Becas, no tendrá relación alguna con los solicitantes, ya que de esta manera será más justa y equitativa la asignación de porcentajes de beca, evitando que los miembros del Comité se vean obligados con recomendaciones y favoritismos, que afecten la toma de decisiones, por ello es obligatorio el estudio socio-económico. El estudiante podrá conservar su beca, semestre a semestre, si mantiene un promedio mínimo de 8.0 y no tiene materias reprobadas al final de cada ciclo escolar, de lo contrario la beca desaparecerá del sistema de pagos y por ningún motivo se le devolverá.
+						</h5>
+					</div>
+					<div class="numeritos">Beca de Continuidad
+						<h5>
+						La Beca de Continuidad, es del 20% y la otorga Rectoría a los alumnos que inician la licenciatura y vienen de escuelas Lasallistas con promedio mínimo de 8.0, estas becas aplican solo en el concepto de colegiaturas.
+						</h5>
+					</div>
+					<div class="numeritos">Beca apoyo familiar
+						<h5>
+						La beca apoyo familiar, es del 40%, se requiere promedio mínimo de 8.0, se otorga para quien ingrese y tenga hermano(s) estudiando en La Salle México (debe coincidir por lo menos 1 semestre/año con el otro hermano). Aplica solo a colegiaturas.
+						</h5>
+					</div>
+					<div class="numeritos">Beca pase directo
+						<h5>
+						La beca pase directo, es del 20%, se requiere promedio mínimo de 9.0, se otorga a egresados de Colegios con Pase Directo. Aplica solo a colegiaturas.No aplica para la licenciatura de Médico Cirujano.
+
+						</h5>
+					</div>
+					<div class="numeritos">Beca pertenencia
+						<h5>
+						La beca pertenencia, es del 30%, se requiere promedio de mínimo de 8.0, se otorga a quienes han realizado todos sus estudios en colegios Lasallistas. Aplica solo a colegiaturas y se debe presentar la carta de adhesión Lasallista.
+
+						</h5>
+					</div>
+					<div class="numeritos">Beca empresa
+						<h5>
+						La beca empresa, es del 10% al 20%, se requiere promedio mínimo de 8.0, se otorga a hijos de trabajadores de empresas con convenio. Excepto medicina,filosofía, ciencias de la comunicación y ciencias religiosas.Aplica solo a colegiaturas.
+
+						</h5>
+					</div>
+					<div class="numeritos">Beca Reconocimiento:
+						<h5>
+						La beca de reconocimiento se otorga a alumnos con promedio mínimo de 8.0 o superior, que hayan realizado su trámite directamente con el Asesor de Proyecto Universitario correspondiente a la carrera de su interés. Esta puede ser del 10% al 30% dependiendo del promedio y la situación económica del alumno. Este programa tiene un presupuesto limitado, por lo que se debe realizar el trámite de manera oportuna, la solicitud de la beca no implica el otorgamiento de la misma. Esta beca se puede acumular con la beca de continuidad y/o beca de pase directo. Aplica solo a colegiaturas.
+
+						</h5>
+					</div>
+					<div class="numeritos">Crédito educativo Santander
+						<h5>
+						Se requiere promedio mínimo de 7.0, sin materias reprobadas, se tramita en la sucursal del banco dentro de la universidad.
+
+						</h5>
+					</div>
+				</div>
+				<div class="container item-selecciono" id="selecciono-fotografia" style="width: 100%;display:none">
+					  <div id="slider-fotografia" class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+						  <div class="item active">
+							<img src="images/nuevosArtes/Noticias/image_news5.png" width="100%" height="345">
+							<div class="carousel-caption">
+							  <h3>Chania</h3>
+							  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+							</div>
+						  </div>
+						  <div class="item">
+							<img src="images/nuevosArtes/Noticias/image_news5.png" width="100%" height="345">
+							<div class="carousel-caption">
+							  <h3>Chania</h3>
+							  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+							</div>
+						  </div>
+						</div>
+					   <!-- Left and right controls -->
+						<a class="left carousel-control" href="#slider-fotografia" role="button" data-slide="prev">
+						  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						  <span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#slider-fotografia" role="button" data-slide="next">
+						  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						  <span class="sr-only">Next</span>
+						</a>
+					  </div>
+				</div>
+				<div class="hojita-contacto item-selecciono" id="selecciono-contacto" style="display:none">
+					<div class="col-md-6">
+						<img src="images/nuevosArtes/oferta_educativa/asesora.jpg">
+					</div>
+					<div class="col-md-6 campos">
+						<div class="asesor_contenido" style="display: block;">
+							<strong>QFB. Gabriela Olivares Mendoza</strong>
+							<br> Asesor de Proyecto Universitario
+							<br>
+							<br>
+							<strong>Correo</strong>
+							<br> Gabriela.olivares@ulsa.mx
+							<br>
+							<br>
+							<strong>Teléfono:</strong>
+							<br> 52 78 95 00 Ext. 2338
+							<br>
+							<br> Si tienes alguna duda acerca de la Licenciatura en Ingeniería Ambiental, comunícate con el Asesor de Proyecto Universitario, quien te orientará en tu proceso de selección.
+							<br>
+							<br> 
+						</div>
+					</div>
+				</div>
+				<div class="item-selecciono" id="selecciono-cuotas" style="display:none">
+					<div class="contenedor-subtitulos-semestres">
+						<div class="subtitulos-ulsabus" onclick="OfertaCuotas('Primer Semestre');">Primer Semestre</div>
+						<div class="subtitulos-ulsabus" onclick="OfertaCuotas('Segundo Semestre');">Segundo Semestre</div>
+						<div class="subtitulos-ulsabus" onclick="OfertaCuotas('Tercer Semestre');">Tercer Semestre</div>
+						<div class="subtitulos-ulsabus" onclick="OfertaCuotas('Cuarto Semestre');">Cuarto Semestre</div>
+						<div class="subtitulos-ulsabus" onclick="OfertaCuotas('Quinto Semestre');">Quinto Semestre</div>
+						<div class="subtitulos-ulsabus" onclick="OfertaCuotas('Sexto Semestre');">Sexto Semestre</div>
+						<div class="subtitulos-ulsabus" onclick="OfertaCuotas('Séptimo Semestre');">Séptimo Semestre</div>
+						<div class="subtitulos-ulsabus" onclick="OfertaCuotas('Octavo Semestre');">Octavo Semestre</div>
+					</div>
+					<div class="container">
+						<h3 id="titulo-semestre">Cuota Primer Semestre</h3>
+						<table class="outer_table" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+
+									<td>
+										<table class="cuotas_table inner_table dtable" width="100%" cellspacing="0" cellpadding="4">
+											<tbody>
+												<tr>
+													<th colspan="2">CUOTAS</th>
+												</tr>
+												<tr>
+													<td class="dtable_col dtable_col1 blue_txt"><em>Pago Inicial*</em></td>
+													<td class="dtable_col dtable_col2">$14,201.40</td>
+												</tr>
+												<tr class="dtable_content_row first">
+													<td class="blue_txt"><em>Colegiaturas (4)</em></td>
+													<td>$11,771.40</td>
+												</tr>
+												<tr class="dtable_content_row">
+													<td class="blue_txt"><em>Total del semestre</em></td>
+													<td>$61,287.00</td>
+												</tr>
+												<tr class="dtable_content_row">
+													<td colspan="2"><em>Nota 1: Cuotas sujetas a cambio sin previo aviso</em></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p> * Nota 1: El concepto del Texto de Apoyo Metodológico no está incluido.Para más información consultar la sección Cuotas Texto de Apoyo Metodológico al final de la página.</p>
+						<p> * Nota 2: Los siguientes conceptos ya están incluidos en el pago inicial:</p>
+						<ul class="tiny_inherit_bullet_ul">
+							<li><strong>Seguro de gastos médicos:</strong> $1,000.00 *Cuota sujeta a cambio</li>
+							<li><strong>Cuota solidaria:</strong> $970.00</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+/********************************************************************************************************************************************/
+/********************************************************************************************************************************************/
+/********************************************************************************************************************************************/
+
+
+
+
+
+
+            $("#mosaico-oferta-educativa-prepa").css('display','inherit');
+        }else{
+            $("#mosaico-oferta-educativa-prepa").css('display','none');
+        }
+        
+        // Licenciatura
+        if(index==1 || index >= 1){ // Solo por ahora para que tenga contenido, se le dejo que los demas submenus muestren el mismo mosaico
+            //html = '<div class="pull-left cont-filtro"> <div class="cuadrosSubmenu mosaico-filtro-todos" onclick="CambiarMosaico();" data-toggle="portfilter" data-target="all">Todos</div><div class="cuadrosSubmenu mosaico-filtro-facultad" onclick="CambiarMosaico();" data-toggle="portfilter" data-target="facultad">Facultad</div></div>';
+            //html = html + '<br/><ul class="thumbnails gallery"> <li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulm"> <h6>Facultad de Ciencias</h6> <h5>Licenciatura en Ciencias</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgrojo"> <h6>Facultad de Derecho</h6> <h5>Licenciatura en Derecho</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bggris"> <h6>FAMADYC</h6> <h5>Licenciatura en Arquitectura</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bggris"> <h6>FAMADYC</h6> <h5>Licenciatura en Arquitectura</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulf"> <h6>Facultad de Humanidades</h6> <h5>Licenciatura en Filosof&iacute;a</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazulf"> <h6>Facultad de Humanidades</h6> <h5>Licenciatura en Filosof&iacute;a</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgazul"> <h6>Facultad de Ingenier&iacute;a</h6> <h5>Licenciatura en Ingenier&iacute;a Civ&iacute;l</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgamarillo"> <h6>Facultad de Medicina</h6> <h5>Licenciatura en M&eacute;dico Cirujano</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li><li class="span3" data-tag="facultad"> <div class="thumbnail"> <div class="imgNoticia"> <div class="overlayTituloNoticia bgverde"> <h6>Facultad de Negocios</h6> <h5>Licenciatura en Contadur&iacute;a y Finanzas</h5> </div><img src="images/nuevosArtes/Noticias/image_news1.png" alt=""> </div></div></li></ul><div class="push"></div>';
+            $("#mosaico-oferta-educativa").css('display','inherit');
 		}else{
 			$("#mosaico-oferta-educativa").css('display','none');
 		}
@@ -1353,4 +1808,37 @@ function CambiarMosaico(){	// Funcion que debe cambiar el contenido del div #mos
 		if(ruta == 7){$('div.tabla-ulsabus').html('<div class="alignleft"> <h4>Paradas de Venida</h4> <ul> <li> <div><strong>Periférico y Cuauhtémoc</strong></div><div>Mundo E en el parabus</div><div>Horario 5:30am</div></li><li> <div><strong>Periférico y Francisco I. Madero</strong></div><div>En el hotel Parque Satélite</div><div>Horario 5:33am</div></li><li> <div><strong>Manuel E. Isaguirre y Federico T. de la Chica</strong></div><div>En el minisuper “K”</div><div>Horario 5:42am</div></li><li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill en la biblioteca</div><div>Horario 6:30am</div></li></ul> </div><div class="alignleft"> <h4>Paradas de Regreso</h4> <ul> <li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill en la biblioteca</div><div>Horario 14:15hrs</div></li><li> <div><strong>Av. Marina y Circuitos Científicos</strong></div><div>A un costado del Walmart</div><div>Horario 15:08hrs</div></li><li> <div><strong>Calle Viveros de la Colina y Periférico</strong></div><div>Fraccionamiento Plazas de la Colina</div><div>Horario 15:18hrs</div></li><li> <div><strong>Calle Sor Juana Inés de la Cruz y Periférico</strong></div><div>En el puente peatonal de Mundo E</div><div>Horario 15:25hrs</div></li></ul> </div>');}
 		if(ruta == 8){$('div.tabla-ulsabus').html('<div class="alignleft"> <h4>Paradas de Venida</h4> <ul> <li> <div><strong>Estación del metro Cd. Azteca</strong></div><div>En la dulcería La Abejita sobre Av. Central</div><div>Horario 05:20am</div></li><li> <div><strong>Estación del Metro Plaza Aragón</strong></div><div>Puente peatonal del IMSS – sobre Av. Central</div><div>Horario 05:23am</div></li><li> <div><strong>Estación del metro Olimpica</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:27am</div></li><li> <div><strong>Estación del metro Ecatepec</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:29am</div></li><li> <div><strong>Estación del metro Muzquiz</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:33am</div></li><li> <div><strong>Estación del metro Río de los Remedios</strong></div><div>Puente peatonal sobre Av. Central</div><div>Horario 05:37am</div></li><li> <div><strong>Estación del metro Impulsora</strong></div><div>Bajo el puente peatonal sobre Av. Central</div><div>Horario 05:39am</div></li><li> <div><strong>Estación del metro Nezahualcóyotl</strong></div><div>Bajo el puente peatonal sobre Av. Central</div><div>Horario 05:42am</div></li><li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill – En la biblioteca</div><div>Horario 06:30am</div></li></ul> </div><div class="alignleft"> <h4>Paradas de Regreso</h4> <ul> <li> <div><strong>Universidad La Salle</strong></div><div>Calle Benjamín Hill en la biblioteca</div><div>Horario 14:15hrs</div></li><li> <div><strong>Estación del metro Nezahualcóyotl</strong></div><div>En la gasolinería sobre Av. Central</div><div>Horario 15:36hrs</div></li><li> <div><strong>Estación del metro Impulsora</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario: 15:39hrs</div></li><li> <div><strong>Estación del metro Río de los Remedios</strong></div><div>Antes del puente peatonal sobre Av. Central</div><div>Horario 15:44hrs</div></li><li> <div><strong>Estación del metro Muzquiz</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:48hrs</div></li><li> <div><strong>Estación del metro Ecatepec</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:51hrs</div></li><li> <div><strong>Estación del metro Olimpica</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:54hrs</div></li><li> <div><strong>Estación del metro Plaza Aragón</strong></div><div>En el puente peatonal sobre Av. Central</div><div>Horario 15:57hrs</div></li><li> <div><strong>Estación del metro Cd. Azteca</strong></div><div>Pasando la estación del metro</div><div>Horario 14:00hrs</div></li></ul> </div>');}
 		$('.imagenes-servicios center img').attr('src','images/nuevosArtes/servicio/ulsabus/' + ruta + '.png');
+	}
+// Mostrar opciones de oferta educativa
+	function MostrarOpcionesOferta(div){
+		$('.item-selecciono').hide();
+		$('#selecciono-'+div).show();
+	}
+// Cambiar datos de tabla de cuotas en el menu - Oferta Educativa
+	function OfertaCuotas(titulo){
+		$('#titulo-semestre').html('Cuota '+ titulo);
+		// Falta cambiar dinamicamente los datos de la tabla
+	}
+
+	function ampliar_cuadrito(data){
+		var id = data.id;
+		var $cell = $('.image__cell');
+
+      $cell.find('.image--basic').click(function() {
+        var $thisCell = $(this).closest('.image__cell');
+        
+        if ($thisCell.hasClass('is-collapsed')) {
+        $cell.not($thisCell).removeClass('is-expanded').addClass('is-collapsed');
+        $thisCell.removeClass('is-collapsed').addClass('is-expanded');
+        } else {
+        $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+        }
+      });
+
+      $cell.find('.expand__close').click(function(){
+        
+        var $thisCell = $(this).closest('.image__cell');
+        
+        $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+      });
 	}

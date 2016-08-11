@@ -40,6 +40,7 @@ Route::group(['prefix' => 'angular'], function () {
 	/**Centros**/
 	Route::get('{id}/centros', 'AngularController@centros');
 	Route::post('centros', 'AngularController@save_centros');
+    Route::post('centros/images', 'AngularController@save_centros_images');
     Route::delete('{id}/centros', 'AngularController@delete_centros');
     /**Centros**/
 });
@@ -64,3 +65,12 @@ Route::post('subcentro',             'CentroSubCategoriaController@add');
 Route::delete('subcentro/{id}/delete', 'CentroSubCategoriaController@delete');
 
 //Route::get('user/{id}/status', 'UserController@status');
+
+//Route's de categories
+Route::get('categories', 'CategoriesController@index');
+Route::post('categories/add', 'CategoriesController@store');
+Route::get('categories/{id}/edit', 'CategoriesController@edit');
+Route::post('categories/{id}/update', 'CategoriesController@update');
+Route::any('categories/{id}/delete', 'CategoriesController@destroy');
+//Fin de categories
+

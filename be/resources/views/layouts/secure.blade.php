@@ -120,6 +120,13 @@
 				<!-- navigation -->
 				<ul class="list-unstyled clearfix nav-list mb15">
 
+					<li class="menu-dashboard">
+						<a href="{{url('categories')}}">
+							<i class="ion ion-edit"></i>
+							<span class="text">Categorias</span>
+						</a>
+					</li>
+
 					@foreach(\App\Models\Category::ordered() as $c)
 					<li class="menu-dashboard">
 						<a href="{{url('post?id=' . $c->id)}}">

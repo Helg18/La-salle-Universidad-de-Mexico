@@ -180,6 +180,7 @@
                     
 
                         <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar Seccion</th>
+                        <th>Order</th>
                         <th>Agregar Secciones de Sub-Categorias</th>
                         <th></th>
                     </tr>
@@ -192,6 +193,7 @@
                         {{-- <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" > @{{centro.title}}</a></td> --}}
                         
                         <td>{{ $r->title }}</td>
+                        <td>{{ $r->order }}</td>
                         <td><a href="{{url("subcentro/{$r->id }/edit")}}" >Agregar Sección</a></td>
                         <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td>
                     </tr>

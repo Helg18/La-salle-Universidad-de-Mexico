@@ -22,22 +22,24 @@ class V1CentroInformacionController extends Controller
     
     public function getInitialData($id){
 
-        $subcategorias_edit = CentroInformacion::where('id_catgories_centro_noticia', '=', $id)
+        $subcategorias = CentroInformacion::where('id_catgories_centro_noticia', '=', $id)
         ->where('id_sub_categoria', '=', 0)
-        ->orderBy('order', 'desc')->get();
+        ->orderBy('order','desc')->get();
+
+        // dd($subcategorias);
 
         $subsubcategorias = array();
         $calendar = array();
 
-        foreach ($subcategorias_edit as $key) {
+        foreach ($subcategorias as $key) {
                 $subsubcategorias = CentroInformacion::where('id_sub_categoria', '=', $key->id)->where('tipo', '=', 1)->get();
-                $calendar = CentroInformacion::where('id_sub_categoria', '=', $key->id)->where('tipo', '=', 2)->get();
+                $calendar = CentroInformacion::where('id_sub_categoria', '=', $key->id)->where('tipo', '=', 2)->orderBy('order', 'asc')->get();
         }   
         
        
 
         return response()->json(
-            ['error'=>false,'subcategorias'=>$subcategorias_edit,'calendar'=>$calendar,'subsubcategorias'=>$subsubcategorias]
+            ['error'=>false,'subcategorias'=>$subcategorias,'calendar'=>$calendar,'subsubcategorias'=>$subsubcategorias]
         );
 
         

@@ -32,6 +32,7 @@ class CentroInformacionController extends Controller
 		$categorias->order = $request->order;
 		$categorias->id_padre = "#";			
         $categorias->id_sub_categoria = "0";
+        $categorias->estado = $request->estado;
 		$categorias->save();
 		$categorias = CategoriasCentroInformacion::all();
     	return view('centro.index')->with(compact('categorias'));
@@ -62,7 +63,8 @@ class CentroInformacionController extends Controller
      	$categorias->name = $request->title;
 		$categorias->language = $request->language;
 		$categorias->order = $request->order;
-		$categorias->id_padre = "#";			
+		$categorias->id_padre = "#";	
+        $categorias->estado = $request->estado;		
 		$categorias->save();
 		return redirect('centro')->with('success','Centro de  Informacion se registrado exitosamente');
 

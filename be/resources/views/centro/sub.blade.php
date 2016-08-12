@@ -44,7 +44,7 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Order</th>
-                                {{-- <th>Configurar</th> --}}
+                                <th>Estado</th>
                                 <th>Eliminar</th>
                             </tr>
                         </thead>
@@ -54,6 +54,7 @@
                                 <tr>
                                     <td><a href="{{url("subcentro/{$r->id}/editsub")}}" >{{$r->title}}</a></td>
                                     <td>{{ $r->order }}</td>
+                                     <td> @if($r->estado==1) {{ 'Activo' }} @else {{'No Activo'}} @endif </td>
                                     {{-- <td>{{ '' }}</td> --}}
 
                                     <td width="5%">
@@ -75,6 +76,16 @@
 
                 <br>
                 <br>
+
+                <div class="form-group form-group-sm">
+                    <label class="control-label small">Estado</label>
+                    <select class="form-control" id="estado" name="estado">
+
+                    <option @if( $subcategorias_edit->pluck('estado')->first()==0 )  {{ ' selected ' }} @endif value="0">No Activo</option>
+                    <option @if( $subcategorias_edit->pluck('estado')->first()==1 )  {{ ' selected ' }} @endif value="1">Activo</option>
+
+                    </select>  
+                </div>
                 
                 <div class="form-group form-group-sm">
                     <label class="control-label small">Tipo.</label>

@@ -42,6 +42,16 @@
                 <br>
                 
                 <div class="form-group form-group-sm">
+                    <label class="control-label small">Estado</label>
+                    <select class="form-control" id="estado" name="estado">
+
+                    <option @if($subcategorias->estado==0)  {{ ' selected ' }} @endif value="0">No Activo</option>
+                    <option @if($subcategorias->estado==1)  {{ ' selected ' }} @endif value="1">Activo</option>
+
+                    </select>  
+                </div>
+
+                <div class="form-group form-group-sm">
                     <label class="control-label small">Tipo.</label>
                     <select class="form-control" id="tipo" name="tipo">
 

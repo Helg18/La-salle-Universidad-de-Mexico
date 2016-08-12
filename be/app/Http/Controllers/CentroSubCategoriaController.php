@@ -69,6 +69,7 @@ class CentroSubCategoriaController extends Controller
         $subcentro->order = $request->order;
         $subcentro->tipo = $request->tipo;
         $subcentro->fecha_evento = $request->fecha_evento;
+        $subcentro->estado = $request->estado;
         $subcentro->save();
         $this->images($request, $request->id);
 
@@ -97,7 +98,7 @@ class CentroSubCategoriaController extends Controller
         $subcentro->video = $request->video;
         $subcentro->order = $request->order;
         $subcentro->fecha_evento = $request->fecha_evento;
-        // $subcentro->picture = $request->picture;
+        $subcentro->estado = $request->estado;
         $subcentro->save();
         $this->images($request, $subcentro->id);
         

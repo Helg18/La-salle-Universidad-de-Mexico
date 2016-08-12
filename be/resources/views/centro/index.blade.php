@@ -124,6 +124,17 @@
 
                 <br>
                 <br>
+        
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Estado</label>
+                    <div class="col-md-9">
+                    <select class="form-control" name="estado" id="estado">
+                        <option  @if($categorias_edit->estado == 1){{'selected'}} @endif value="1">Activo</option>
+                        <option  @if($categorias_edit->estado == 0){{'selected'}} @endif value="0">No Activo</option>
+                    </select>             
+                    </div>       
+                </div>
+
 
                 <div class="form-group">
                     <label class="col-md-2 control-label">Titulo</label>
@@ -179,9 +190,9 @@
                     <tr>
                     
 
-                        <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar Seccion</th>
+                        <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar SubCategorias</th>
                         <th>Order</th>
-                        <th>Agregar Secciones de Sub-Categorias</th>
+                        <th>Agregar Secciones a las Sub-Categorias</th>
                         <th></th>
                     </tr>
                 </thead>

@@ -95,6 +95,25 @@ class CentroSubCategoriaController extends Controller
         return redirect('subcentro/'.$request->id_sub.'/edit')->with(compact('subsubcategorias_edit','subcategorias_edit','success','La Sub-Categoria se modifico exitosamente'));
 
     }
+
+    public function updatecategoria(Request $request){
+        $subcentro= CentroInformacion::find($request->id);
+        $subcentro->title = $request->title;
+        $subcentro->subtitle = $request->subtitle;
+        $subcentro->paragraph_1 = $request->paragraph_1;
+        $subcentro->paragraph_2 = $request->paragraph_2;
+        $subcentro->paragraph_3 = $request->paragraph_3;
+        $subcentro->language = $request->language;
+        $subcentro->video = $request->video;
+        $subcentro->order = $request->order;
+        $subcentro->tipo = $request->tipo;
+        $subcentro->fecha_evento = $request->fecha_evento;
+        $subcentro->estado = $request->estado;
+        $subcentro->save();
+        $this->images($request, $request->id);
+        $subcategorias = CentroInformacion::where('id', '=', $request->id)->get();
+        return redirect('centro/'.$request->id_categoria.'/edit')->with(compact('subcategorias','success','La Sub-Categoria se modifico exitosamente'));
+    }
     
     
 

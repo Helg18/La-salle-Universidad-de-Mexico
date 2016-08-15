@@ -59,11 +59,11 @@ Route::delete('centro/{id}/delete', 'CentroInformacionController@delete');
 
 // Route::resource('subbuscar', 'CentroSubCategoriaController');
 Route::get('subcentro/{id}/edit',    'CentroSubCategoriaController@edit');
+Route::get('subcentro/{id}/editcategoria',    'CentroSubCategoriaController@editcategoria');
 Route::get('subcentro/{id}/editsub', 'CentroSubCategoriaController@editsub');
 Route::post('subcentro/{id}/update',  'CentroSubCategoriaController@update');
 Route::post('subcentro',             'CentroSubCategoriaController@add');
 Route::delete('subcentro/{id}/delete', 'CentroSubCategoriaController@delete');
-
 //Route::get('user/{id}/status', 'UserController@status');
 
 //Route's de categories

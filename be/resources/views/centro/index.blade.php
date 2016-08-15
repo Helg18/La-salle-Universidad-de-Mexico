@@ -41,7 +41,7 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Order</th>
-                                {{-- <th>Configurar</th> --}}
+                                <th>Estado</th>
                                 <th>Eliminar</th>
                             </tr>
                         </thead>
@@ -51,7 +51,7 @@
                                 <tr>
                                     <td><a href="{{url("centro/{$r->id}/edit")}}" >{{$r->name}}</a></td>
                                     <td>{{ $r->order }}</td>
-                                    {{-- <td>{{ '' }}</td> --}}
+                                    <td>@if($r->estado == 1) {{'Activo'}} @else {{'No Activo'}} @endif</td>
 
                                     <td width="5%">
                                         <a href="{{url("centro/{$r->id}/delete")}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Eliminará permanentemente el registro. ¿Desea continuar?" class="md-fab md-primary md-button md-mini waves-effect"><i class="fa fa-remove"></i></a>
@@ -72,6 +72,15 @@
 
                 <br>
                 <br>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Estado</label>
+                    <div class="col-md-9">
+                    <select class="form-control" name="estado" id="estado">
+                        <option  value="1">Activo</option>
+                        <option  value="0">No ACtivo</option>
+                    </select>             
+                    </div>       
+                </div>
 
                 <div class="form-group">
                     <label class="col-md-2 control-label">Titulo</label>
@@ -202,8 +211,10 @@
                     <tr>
                         {{-- <td><a href="javascript: void(0);" ng-click="modalCentros(centro, 'Cuadro de información')">@{{centro.title}}</a></td> --}}
                         {{-- <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" > @{{centro.title}}</a></td> --}}
+
+
                         
-                        <td>{{ $r->title }}</td>
+                        <td> <a href="{{ url("subcentro/{$r->id}/editcategoria") }}">{{ $r->title }}</a></td>
                         <td>{{ $r->order }}</td>
                         <td><a href="{{url("subcentro/{$r->id }/edit")}}" >Agregar Sección</a></td>
                         <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td>

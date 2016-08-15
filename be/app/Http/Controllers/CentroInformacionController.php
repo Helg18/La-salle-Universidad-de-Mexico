@@ -31,7 +31,6 @@ class CentroInformacionController extends Controller
 		$categorias->language = $request->language;
 		$categorias->order = $request->order;
 		$categorias->id_padre = "#";			
-        $categorias->id_sub_categoria = "0";
         $categorias->estado = $request->estado;
 		$categorias->save();
 		$categorias = CategoriasCentroInformacion::all();

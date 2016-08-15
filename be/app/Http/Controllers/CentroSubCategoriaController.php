@@ -36,6 +36,22 @@ class CentroSubCategoriaController extends Controller
      * @return $this
      */
 
+    public function editcategoria(Request $request){
+
+        // $subsubcategorias_edit = CentroInformacion::where('id_sub_categoria', '=', $request->id)->get();
+
+        $subcategorias = CentroInformacion::where('id', '=', $request->id)->get();
+
+        return view('centro.categoria')->with(compact('subcategorias')); 
+
+     }
+
+
+      /**
+     * @param Request $request
+     * @return $this
+     */
+
     public function editsub(Request $request){
         
         $subcategorias = CentroInformacion::find($request->id);

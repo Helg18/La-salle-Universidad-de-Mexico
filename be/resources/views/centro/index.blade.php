@@ -40,6 +40,7 @@
                         <thead>
                             <tr>
                                 <th>Nombre</th>
+                                <th>Title</th>
                                 <th>Order</th>
                                 <th>Estado</th>
                                 <th>Eliminar</th>
@@ -50,6 +51,7 @@
                                 @foreach($categorias as $r)
                                 <tr>
                                     <td><a href="{{url("centro/{$r->id}/edit")}}" >{{$r->name}}</a></td>
+                                    <td><a href="{{url("centro/{$r->id}/edit")}}" >{{$r->title}}</a></td>
                                     <td>{{ $r->order }}</td>
                                     <td>@if($r->estado == 1) {{'Activo'}} @else {{'No Activo'}} @endif</td>
 
@@ -83,6 +85,17 @@
                 </div>
 
                 <div class="form-group">
+                    <label class="col-md-2 control-label">Nombre</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" value="" name="name" autocomplete="off">
+                        @if ($errors->has('name'))
+                            <span class="alert alert-danger">
+                                <strong></strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+                  <div class="form-group">
                     <label class="col-md-2 control-label">Titulo</label>
                     <div class="col-md-10">
                         <input type="text" class="form-control" value="" name="title" autocomplete="off">
@@ -144,6 +157,17 @@
                     </div>       
                 </div>
 
+                 <div class="form-group">
+                    <label class="col-md-2 control-label">Nombre</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" value="{{ $categorias_edit->title }}" name="nombre" autocomplete="off">
+                        @if ($errors->has('name'))
+                            <span class="alert alert-danger">
+                                <strong></strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
 
                 <div class="form-group">
                     <label class="col-md-2 control-label">Titulo</label>

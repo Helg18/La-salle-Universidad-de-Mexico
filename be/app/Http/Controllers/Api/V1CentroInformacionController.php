@@ -26,7 +26,9 @@ class V1CentroInformacionController extends Controller
         ->where('id_sub_categoria', '=', 0)->where('estado', '=', 1)
         ->orderBy('order','desc')->get();
 
-        // dd($subcategorias);
+        $categorias = CategoriasCentroInformacion::where('estado', '=', 1)->orderBy('order','asc')->get();
+
+        
 
         $subsubcategorias = array();
         $calendar = array();
@@ -39,7 +41,7 @@ class V1CentroInformacionController extends Controller
        
 
         return response()->json(
-            ['error'=>false,'subcategorias'=>$subcategorias,'calendar'=>$calendar,'subsubcategorias'=>$subsubcategorias]
+            ['error'=>false,'subcategorias'=>$subcategorias,'calendar'=>$calendar,'subsubcategorias'=>$subsubcategorias,'categorias'=>$categorias]
         );
 
         

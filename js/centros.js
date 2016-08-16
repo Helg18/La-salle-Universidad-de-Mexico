@@ -1,7 +1,12 @@
 $(document).ready(function(){
 
     var lang = getUrlVars()["lang"];
-    var id = 1;
+    var id = getUrlVars()["id"];
+
+    if(id=="" || id==undefined){
+      id=1;
+    }
+
     if(lang==0 || lang==""){lang=1;}
 
     getInitialData(lang,id);
@@ -50,6 +55,26 @@ function getInitialData(lang,id){
                 
              
              });
+
+             $('#menuPrincipalCentro').html("");
+
+             $.each(initial_data.categorias, function(index,categorias) {
+
+                html = '<li><button class="btnMenu btnMenubtn skip" id="botonAspirante"  onclick="'+ "window.location.href='centro_info.html?id="+categorias.id+"';" +'"';
+                html = html + '<span class="hover-bg reset">';
+                html = html + '<span class="hover-text reset"></span>';
+                html = html + '</span>'+categorias.title+'</button></li>';
+
+                $('#menuPrincipalCentro').append(html);
+
+                html="";
+
+
+             });
+
+
+
+
 
         });
     }

@@ -160,7 +160,7 @@
                  <div class="form-group">
                     <label class="col-md-2 control-label">Nombre</label>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" value="{{ $categorias_edit->title }}" name="nombre" autocomplete="off">
+                        <input type="text" class="form-control" value="{{ $categorias_edit->name }}" name="nombre" autocomplete="off">
                         @if ($errors->has('name'))
                             <span class="alert alert-danger">
                                 <strong></strong>
@@ -172,7 +172,7 @@
                 <div class="form-group">
                     <label class="col-md-2 control-label">Titulo</label>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" value="{{ $categorias_edit->name }}" name="title" autocomplete="off">
+                        <input type="text" class="form-control" value="{{ $categorias_edit->title }}" name="title" autocomplete="off">
                         @if ($errors->has('title'))
                             <span class="alert alert-danger">
                                 <strong></strong>

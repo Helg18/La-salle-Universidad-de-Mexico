@@ -60,7 +60,7 @@ function getInitialData(lang,id){
 
              $.each(initial_data.categorias, function(index,categorias) {
 
-                html = '<li><button class="btnMenu btnMenubtn skip" id="botonAspirante"  onclick="'+ "window.location.href='centro_info.html?id="+categorias.id+"';" +'"';
+                html = '<li><button class="btnMenu btnMenubtn skip" id="botonAspirante" onmouseover="HacerEfecto(this);"  onclick="'+ "window.location.href='centro_info.html?id="+categorias.id+"';" +'">';
                 html = html + '<span class="hover-bg reset">';
                 html = html + '<span class="hover-text reset"></span>';
                 html = html + '</span>'+categorias.title+'</button></li>';
@@ -92,3 +92,17 @@ function getUrlVars()
       }
       return vars;
   }
+  
+function HacerEfecto(dato){
+	var id = dato.id;
+	$('button#'+id).hover(
+		function(){ 
+			$('button#'+id).find( "span" ).addClass('enter');
+			$('button#'+id).find( "span" ).removeClass('reset');
+		},
+		function(){
+			$('button#'+id).find( "span" ).removeClass('enter');
+		$('button#'+id).find( "span" ).addClass('reset');
+		}
+	);
+}

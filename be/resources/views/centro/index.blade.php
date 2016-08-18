@@ -106,6 +106,18 @@
                         @endif
                     </div>
                 </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Parrafo</label>
+                    <div class="col-md-10">
+                        <textarea rows="4" class="form-control" width="100%" name="paragraph_1"></textarea>
+                        @if ($errors->has('paragraph_1'))
+
+                            <span class="alert alert-danger">
+                                <strong></strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
 
                 <div class="form-group">
                     <label class="col-md-2 control-label">Idioma</label>
@@ -169,11 +181,26 @@
                     </div>
                 </div>
 
+
+
                 <div class="form-group">
                     <label class="col-md-2 control-label">Titulo</label>
                     <div class="col-md-10">
                         <input type="text" class="form-control" value="{{ $categorias_edit->title }}" name="title" autocomplete="off">
                         @if ($errors->has('title'))
+                            <span class="alert alert-danger">
+                                <strong></strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+
+                 <div class="form-group">
+                    <label class="col-md-2 control-label">Parrafo</label>
+                    <div class="col-md-10">
+                        <textarea rows="4" class="form-control" width="100%" name="paragraph_1">{{$categorias_edit->paragraph_1}}</textarea>
+                        @if ($errors->has('paragraph_1'))
+
                             <span class="alert alert-danger">
                                 <strong></strong>
                             </span>

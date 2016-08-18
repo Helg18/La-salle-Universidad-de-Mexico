@@ -58,13 +58,19 @@ function getInitialData(lang,id){
 
              $('#menuPrincipalCentro').html("");
 
+            // <button class="btnMenu btnMenubtn skip" id="botonAspirante"  onclick="window.location.href='centro_info.html';">
+            // <span class="hover-bg reset">
+            // <span class="hover-text reset"></span>
+            // </span>
+            // HOME
+            // </button>
+            // </li>
+
+            con=1;
              $.each(initial_data.categorias, function(index,categorias) {
 
                 html = '<li><button class="btnMenu btnMenubtn skip" id="botonAspirante"  onclick="'+ "window.location.href='centro_info.html?id="+categorias.id+"';" +'"';
-                html = html + '<span class="hover-bg reset">';
-                html = html + '<span class="hover-text reset"></span>';
-                html = html + '</span>'+categorias.title+'</button></li>';
-
+                html = html + '<span id="spanbg" class="hover-bg reset"> <span id="spanreset" class="hover-text reset"></span></span>'+categorias.title+'</button></li>';
                 $('#menuPrincipalCentro').append(html);
 
                 html="";

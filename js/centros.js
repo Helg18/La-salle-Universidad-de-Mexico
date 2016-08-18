@@ -60,7 +60,7 @@ function getInitialData(lang,id){
 
              $.each(initial_data.categorias, function(index,categorias) {
 
-                html = '<li><button class="btnMenu btnMenubtn skip" onmouseover="HacerEfecto(this);"  onclick="'+ "window.location.href='centro_info.html?id="+categorias.id+"';" +'">';
+                html = '<li><button class="btnMenu btnMenubtn skip" id="boton'+index+'" onmouseover="HacerEfecto(this);"  onclick="'+ "window.location.href='centro_info.html?id="+categorias.id+"';" +'">';
                 html = html + '<span class="hover-bg reset">';
                 html = html + '<span class="hover-text reset"></span>';
                 html = html + '</span>'+categorias.title+'</button></li>';

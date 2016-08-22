@@ -15,6 +15,21 @@ class CentroSubCategoriaController extends Controller
 {
    
 
+   /**
+     * @param Request $request
+     * @return $this
+     */
+
+    public function new(Request $request){
+
+        $subcategorias = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id)->get();
+
+        return view('centro.new')->with(compact('subcategorias')); 
+
+     }
+
+
+
 	 /**
 	 * @param Request $request
 	 * @return $this
@@ -61,13 +76,13 @@ class CentroSubCategoriaController extends Controller
      }
 
     public function delete($id){
-
         $categorias = CentroInformacion::find($id);
         $id_sub = $categorias->id_sub_categoria;
+        $id_cat = $categorias->id_catgories_centro_noticia;
         $categorias->delete();
         $subsubcategorias_edit = CentroInformacion::where('id_sub_categoria', '=', $id_sub)->get();
         $subcategorias_edit = CentroInformacion::where('id', '=', $id_sub)->get();
-        return redirect('subcentro/'.$id_sub.'/edit')->with(compact('subsubcategorias_edit','subcategorias_edit','success','Sub-Categoria se Elimino exitosamente'));      
+        return redirect('centro/'.$id_cat.'/edit');      
      }  
 
     public function update(Request $request){
@@ -140,6 +155,33 @@ class CentroSubCategoriaController extends Controller
         $subsubcategorias_edit = CentroInformacion::where('id_sub_categoria', '=', $request->id_sub)->get();
         $subcategorias_edit = CentroInformacion::where('id', '=', $request->id_sub)->get();
         return redirect('subcentro/'.$request->id_sub.'/edit')->with(compact('subsubcategorias_edit','subcategorias_edit','success','Centro de  Informacion se registrado exitosamente'));
+
+    }
+
+
+    public function addsubcategoria(Request $request){
+
+        // dd($request);
+
+        $subcentro=new CentroInformacion();
+        $subcentro->id_catgories_centro_noticia = $request->centro;
+        $subcentro->id_sub_categoria = 0;
+        $subcentro->title = $request->title;
+        $subcentro->subtitle = $request->subtitle;
+        $subcentro->paragraph_1 = $request->paragraph_1;
+        $subcentro->paragraph_2 = $request->paragraph_2;
+        $subcentro->paragraph_3 = $request->paragraph_3;
+        $subcentro->language = $request->language;
+        $subcentro->video = $request->video;
+        $subcentro->order = $request->order;
+        $subcentro->fecha_evento = $request->fecha_evento;
+        $subcentro->estado = $request->estado;
+        $subcentro->save();
+        $this->images($request, $subcentro->id);
+        
+        $subsubcategorias_edit = CentroInformacion::where('id_sub_categoria', '=', $request->centro)->get();
+        $subcategorias_edit = CentroInformacion::where('id', '=', $subcentro->id)->get();
+        return redirect('centro/'.$request->centro.'/edit')->with(compact('subsubcategorias_edit','subcategorias_edit','success','Centro de  Informacion se registrado exitosamente'));
 
     }
 

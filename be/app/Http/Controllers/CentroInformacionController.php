@@ -27,7 +27,7 @@ class CentroInformacionController extends Controller
     public function add(Request $request){
 
  		$categorias = new CategoriasCentroInformacion();
-		$categorias->name = $request->nombre;
+		$categorias->name = $request->name;
 		$categorias->language = $request->language;
 		$categorias->order = $request->order;
 		$categorias->id_padre = "#";			

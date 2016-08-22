@@ -35,11 +35,8 @@ function getInitialData(lang,id){
                              
                 $.each(initial_data.subsubcategorias, function(index2,subsubcategorias) {
                     html='';
-                    
-
                     if(subsubcategorias.id_sub_categoria == subcategorias.id)
                     {
-
                       html = html + "<div id='imgnot"+con+"' class='imgNoticia'><div>";
                       $('#conten').append(html); 
 
@@ -49,8 +46,6 @@ function getInitialData(lang,id){
                       $('#imgnot'+con).append(html);
                       con=con+1;   
                     }
-                    
-
                 });
                 
              

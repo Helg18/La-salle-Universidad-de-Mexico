@@ -250,7 +250,12 @@
                     <tr>
                     
 
-                        <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar SubCategorias</th>
+                        {{-- <th><button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ng-click="modalCentros(false, 'Cuadro de información')"><i class="fa fa-plus"></i></button> Agregar SubCategorias</th> --}}
+                        <th>
+                        
+                        {{-- <button type="button" class="btn btn-xs btn-info btn-rounded waves-effect" ><i class="fa fa-plus"></i></button> Agregar SubCategorias --}}
+                        <a href="{{url("subcentro/$categorias_edit->id/new")}}" data-method="get" class="btn btn-xs btn-info btn-rounded waves-effect"><i class="fa fa-plus"></i>Agregar SubCategorias</a>
+                        </th>
                         <th>Order</th>
                         <th>Agregar Secciones a las Sub-Categorias</th>
                         <th></th>
@@ -259,16 +264,25 @@
                 <tbody>
                     {{-- <tr ng-repeat="centro in centros"> --}}
                     @foreach($subcategorias_edit as $r)
-                    <tr>
+                    {{-- <tr> --}}
                         {{-- <td><a href="javascript: void(0);" ng-click="modalCentros(centro, 'Cuadro de información')">@{{centro.title}}</a></td> --}}
+                        {{-- <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" >@{{centro.title}}</a></td> --}}
+                        {{-- <td>@{{centro.order}}</td> --}}
+                        {{-- <td></td> --}}
                         {{-- <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id')->first()}/edit")}}" > @{{centro.title}}</a></td> --}}
 
 
                         
                         <td> <a href="{{ url("subcentro/{$r->id}/editcategoria") }}">{{ $r->title }}</a></td>
+                        {{-- <td> <a href="{{ url("subcentro/{$subcategorias_edit->pluck('id')}/editcategoria") }}">{{ $subcategorias_edit->pluck('title') }}</a></td> --}}
                         <td>{{ $r->order }}</td>
+                        {{-- <td>{{ $subcategorias_edit->pluck('order') }}</td> --}}
                         <td><a href="{{url("subcentro/{$r->id }/edit")}}" >Agregar Sección</a></td>
-                        <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td>
+                        {{-- <td><a href="{{url("subcentro/{$subcategorias_edit->pluck('id') }/edit")}}" >Agregar Sección</a></td> --}}
+                        {{-- <td width="1%"><button type="button" class="btn btn-danger btn-rounded btn-xs waves-effect" ng-confirm-click="Estas seguro?" ng-click="deleteCentros(centro)"><i class="fa fa-close"></i></button></td> --}}
+                        <td width="5%">
+                                <a href="{{url("subcentro/{$r->id}/delete")}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Eliminará permanentemente el registro. ¿Desea continuar?" class="md-fab md-primary md-button md-mini waves-effect"><i class="fa fa-remove"></i></a>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>

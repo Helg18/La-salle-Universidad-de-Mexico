@@ -65,7 +65,7 @@ Route::post('subcentro/{id}/update',  'CentroSubCategoriaController@update');
 Route::post('subcentro/{id}/updatecategoria',  'CentroSubCategoriaController@updatecategoria');
 Route::post('subcentro',             'CentroSubCategoriaController@add');
 Route::post('subcentro/new',             'CentroSubCategoriaController@addsubcategoria');
-Route::get('subcentro/{id}/new',             'CentroSubCategoriaController@new');
+Route::get('subcentro/{id}/new',             'CentroSubCategoriaController@newcate');
 Route::delete('subcentro/{id}/delete', 'CentroSubCategoriaController@delete');
 //Route::get('user/{id}/status', 'UserController@status');
 

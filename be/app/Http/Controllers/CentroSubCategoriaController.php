@@ -20,7 +20,7 @@ class CentroSubCategoriaController extends Controller
      * @return $this
      */
 
-    public function new(Request $request){
+    public function newcate(Request $request){
 
         $subcategorias = CentroInformacion::where('id_catgories_centro_noticia', '=', $request->id)->get();
 

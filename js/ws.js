@@ -545,7 +545,7 @@ function Category3(){
 			
 			$("#mosaico-servicios").css("display","none");
 			$('.contacto-form').css('display','inherit');
-			var imgEstacionamiento = $('<img src="images/nuevosArtes/servicio/estacionamiento.jpg" class="mapa-estacionamiento">');
+			var imgEstacionamiento = $('<img src="images/nuevosArtes/servicio/estacionamiento_2.png" class="mapa-estacionamiento">');
 			$(".descripcionTituloServicios").prepend(imgEstacionamiento);	 // Imagen (por ahora) de un mapa
 			$(".descripcionTituloServicios").attr('style','width: 100%;margin: 0;');			
 			$('#pines-estacionamiento').css('display','inherit');

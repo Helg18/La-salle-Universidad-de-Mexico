@@ -615,7 +615,7 @@ li.span3 h5,li.span3 h6{color:#fff !important}
 }
 .excel td, .excel th{padding:4px;}
 .opcion-licenciatura{float:left;padding:6px;margin:13px 0 12px 0;width:33%;color:#fff;font-size:14px;cursor:pointer;}
-.lista-opciones{width:50%;float:right;margin:4px;}
+.lista-opciones{width: 65%;float: left;margin: 0px;}
 
 #mosaico-oferta-educativa-prepa article:hover  .overlay-mosaico{display:inherit !important}
 #mosaico-oferta-educativa article:hover  .overlay-mosaico{display:inherit !important}

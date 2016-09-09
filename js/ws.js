@@ -599,6 +599,7 @@ function Category6(){
 	
 	$('div.subMenuUnoAccionSocial').hide(); // No van submenus
 	$('div#mosaico-accion-social').show();	// Mostramos cuadro tipo google
+	$('div#videos-accion-social').show();	// Mostramos carusel de videos
 }
 
 function Category9(){

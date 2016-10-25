@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+.idea*
+js/ws.config.js
+.phpintel/*
+./phpintel/*
+.phpintel*/*
+.phpintel/*
+=======
+vendor/
+node_modules/
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+bootstrap/cache/
+.env.*.php
+.env.php
+.env
+
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+.rocketeer/
+>>>>>>> 1fd709ec626cc9293353afaf20ccaab1b323cae6
